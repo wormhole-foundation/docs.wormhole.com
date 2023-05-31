@@ -6,9 +6,9 @@ description: >-
 
 # Overview: Liquid Markets
 
-Last updated: May 2023&#x20;
+Last updated: May 2023
 
-Updates:Updated liquid markets for Sui&#x20;
+Updates:Updated liquid markets for Sui
 
 ## How to navigate this guide
 
@@ -18,7 +18,7 @@ Periodically check back here to see if new markets have been added to our suppor
 
 **Origin chain:** The chain on which you currently have your funds that you want to bridge.
 
-**Target chain:** The chain on which you want to receive tokens.&#x20;
+**Target chain:** The chain on which you want to receive tokens.
 
 _Example_: If you want to send ETH(Wormhole) from Ethereum (origin chain) to Solana (target chain). You need to chose this tab: ETH -> SOL
 
@@ -32,9 +32,9 @@ _Example_: If you want to send ETH(Wormhole) from Ethereum (origin chain) to Sol
 
 **Notes:** additional information
 
-### Portal naming conventions&#x20;
+### Portal naming conventions
 
-Check out the [Wormhole Token list](https://github.com/certusone/wormhole-token-list/blob/main/README.md) for more details.&#x20;
+Check out the [Wormhole Token list](https://github.com/certusone/wormhole-token-list/blob/main/README.md) for more details.
 
 ## Target chain: Solana
 

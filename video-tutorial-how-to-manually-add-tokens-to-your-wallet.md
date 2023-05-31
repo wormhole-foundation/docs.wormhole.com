@@ -7,7 +7,7 @@ description: >-
 
 # Video Tutorial: How to manually add tokens to your wallet
 
-### 🦊Metamask&#x20;
+### 🦊Metamask
 
 **Q: How do I manually add a token to my Metamask wallet?**
 
@@ -51,7 +51,7 @@ Video Tutorial: How to manually add a token to your Terra Station wallet
 
 1\) Navigate to your Terra Finder transaction ([https://finder.terra.money/](https://finder.terra.money/))
 
-2\) Scroll down to "show logs"&#x20;
+2\) Scroll down to "show logs"
 
 ![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.40.56 (1).png>)
 
@@ -65,8 +65,8 @@ Video Tutorial: How to manually add a token to your Terra Station wallet
 
 ### 📞 Contact us
 
-If you have any questions, please reach out to Wormhole's community managers on [Discord.](https://discord.gg/wormholecrypto)&#x20;
+If you have any questions, please reach out to Wormhole's community managers on [Discord.](https://discord.gg/wormholecrypto)
 
 {% hint style="danger" %}
-Beware of scams. Admins will never DM you first!&#x20;
+Beware of scams. Admins will never DM you first!
 {% endhint %}

@@ -1,6 +1,6 @@
 # Tutorial: Token registration
 
-The token register allows users and protocols to register any token for the first time on any chain. Registering a token will incur a small fee.&#x20;
+The token register allows users and protocols to register any token for the first time on any chain. Registering a token will incur a small fee.
 
 {% hint style="warning" %}
 Before registering a token, please check out our [token register documentation](./) to ensure your token symbol and name appear correctly on explorers.
@@ -11,7 +11,7 @@ Before registering a token, please check out our [token register documentation](
 ### 1. Source
 
 * Go to [https://www.portalbridge.com/#/register](https://www.portalbridge.com/#/register)
-* Select the source chain of the token&#x20;
+* Select the source chain of the token
 * Connect your wallet
 * In "Asset", paste in the token contract code of the token you want to register
 * Click "Next"
@@ -20,13 +20,13 @@ Before registering a token, please check out our [token register documentation](
 
 ### 2. Target
 
-* Select the target chain that you want to register the token on&#x20;
+* Select the target chain that you want to register the token on
 * Connect the target chain wallet
-* Click "Next"&#x20;
+* Click "Next"
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.13.52 pm.png>)
 
-### 3. Send attestation&#x20;
+### 3. Send attestation
 
 * Click "Attest"
 * Approve the wallet pop-up
@@ -35,7 +35,7 @@ Before registering a token, please check out our [token register documentation](
 
 ### 4. Create wrapped token
 
-* Click "Create"&#x20;
+* Click "Create"
 * Approve the wallet pop-up
 
 {% hint style="info" %}
@@ -46,4 +46,4 @@ There will be four wallet approval pop-ups when creating a wrapped token on Sola
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.20.59 pm.png>)
 
-🎉 You've sucessfully registered your token on the target chain now!&#x20;
+🎉 You've sucessfully registered your token on the target chain now!

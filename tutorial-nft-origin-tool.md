@@ -1,10 +1,10 @@
 # Tutorial: NFT Origin tool
 
-Users may use the NFT Origin tool to help manually verify the authenticity of an NFT.&#x20;
+Users may use the NFT Origin tool to help manually verify the authenticity of an NFT.
 
-_Note: The tool only tell you the origin of a NFT which can help you to verify it manually. It will not tell you whether a NFT is a real or fake._&#x20;
+_Note: The tool only tell you the origin of a NFT which can help you to verify it manually. It will not tell you whether a NFT is a real or fake._
 
-## For NFTs sent from Solana -> Ethereum&#x20;
+## For NFTs sent from Solana -> Ethereum
 
 #### Using the NFT origin tool:
 
@@ -37,22 +37,22 @@ On Solscan, we can compare the creator addresses with another NFT on a verified 
 
 When you compare the two, the two creator addresses & update authority are identical so you can manually verify that the piece is authentic.
 
-## Example of a Fake NFT sent to Ethereum&#x20;
+## Example of a Fake NFT sent to Ethereum
 
 Link: [https://twitter.com/wormholecrypto/status/1441773766137106454](https://twitter.com/wormholecrypto/status/1441773766137106454)
 
-## For NFTs sent from Ethereum -> Solana&#x20;
+## For NFTs sent from Ethereum -> Solana
 
 #### Using the NFT origin tool:
 
 * Navigate to the NFT origin tool via [https://portalbridge.com/#/nft-origin-verifier](https://portalbridge.com/#/nft-origin-verifier)
 * Select the chain the NFT is currently on (Solana) & connect your wallet
-* Paste the address&#x20;
+* Paste the address
 * Click View on Opensea
 
 ![](<.gitbook/assets/Screen Shot 2021-09-27 at 1.28.05 am.png>)
 
-* On Opensea, you can tell that this piece has been verified, hence is not a replica.&#x20;
+* On Opensea, you can tell that this piece has been verified, hence is not a replica.
 
 ![](<.gitbook/assets/Screen Shot 2021-09-27 at 1.29.33 am.png>)
 

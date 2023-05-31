@@ -5,8 +5,7 @@
 {% endhint %}
 
 
-
-## 📖What is Wormhole?&#x20;
+## 📖What is Wormhole?
 
 Wormhole is a generic message passing protocol that connects to multiple chains including Ethereum, Solana, Binance Smart Chain, Polygon, Avalanche, Algorand, Fantom, Karura, Celo, Acala, Aptos and Arbitrum.
 
@@ -37,7 +36,7 @@ To learn more, follow us on Twitter [@wormholecrypto.](https://twitter.com/wormh
 
 {% embed url="https://youtu.be/ngnWF5widJU" %}
 
-## 🌏Join our community&#x20;
+## 🌏Join our community
 
 * [Discord](https://discord.gg/hJfuptmg6b)
 * [Twitter](https://twitter.com/wormholecrypto)

@@ -32,21 +32,21 @@ E) Insert the desired amount and click "Next"
 
 ### 2. Target
 
-A) Connect your target chain wallet&#x20;
+A) Connect your target chain wallet
 
 ![](<.gitbook/assets/Screen Shot 2022-06-06 at 6.26.47 pm.png>)
 
 B) Select the target chain gas fee payment method
 
-In this example, we use the manual payment method&#x20;
+In this example, we use the manual payment method
 
 {% hint style="info" %}
-For eligible tokens, users have the option to use the automatic payment method where the relayer will pay for target chain fees.&#x20;
+For eligible tokens, users have the option to use the automatic payment method where the relayer will pay for target chain fees.
 {% endhint %}
 
 ![](<.gitbook/assets/Screen Shot 2022-06-06 at 6.28.38 pm.png>)
 
-C) Click "Next"&#x20;
+C) Click "Next"
 
 ### 3. Send Tokens
 

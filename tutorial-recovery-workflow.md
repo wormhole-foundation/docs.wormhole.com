@@ -7,7 +7,7 @@ description: >-
 
 # Tutorial: Token/NFT Redeem Workflow
 
-### Redeem Workflow&#x20;
+### Redeem Workflow
 
 1. Head to [ ](https://portalbridge.com/#/redeem)[https://portalbridge.com/#/redeem](https://portalbridge.com/#/redeem) or click the redeem tab
 2. Select the type - 'Token' or 'NFT'
@@ -15,7 +15,7 @@ description: >-
 4. Input the source transaction only. The rest of the fields will auto populate.
 5. Click "Recover" and you will be redirected to the transfer page to complete the transaction.
 6. Click "Redeem" and approve the wallet pop up
-7. Success! You've successfully redeemed your tokens!&#x20;
+7. Success! You've successfully redeemed your tokens!
 
 ![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.32.36 pm.png>)
 
@@ -49,23 +49,23 @@ For EVM chains, the source transaction can be found by:
 
 ![](<.gitbook/assets/Screen Shot 2021-10-13 at 7.10.10 pm.png>)
 
-### ⛓Solana&#x20;
+### ⛓Solana
 
 There are several ways to find your source transaction on Solana.
 
 **Method 1:**
 
-The source transaction can be found in the "Send Tokens" section.&#x20;
+The source transaction can be found in the "Send Tokens" section.
 
 ![](<.gitbook/assets/Screen Shot 2022-06-09 at 4.08.37 pm.png>)
 
-#### Method 2 (Solana wallet):&#x20;
+#### Method 2 (Solana wallet):
 
-You can also find the source transaction within your Solana wallet. Using Phantom wallet as an example below:&#x20;
+You can also find the source transaction within your Solana wallet. Using Phantom wallet as an example below:
 
 * Click on the transaction tab in the Phantom wallet, if it was the last transaction you made, this will be on the top of the list
 * Click the corresponding transaction which will open the Solana Explorer
-* The source transaction will be the **signature** of the transaction&#x20;
+* The source transaction will be the **signature** of the transaction
 
 ![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.18.23 pm.png>)
 
@@ -73,7 +73,7 @@ You can also find the source transaction within your Solana wallet. Using Phanto
 
 **Method 3 (Block explorer):**
 
-You can also find the source transaction by using a Solana block explorer such as [Solscan](https://solscan.io/).&#x20;
+You can also find the source transaction by using a Solana block explorer such as [Solscan](https://solscan.io/).
 
 1. Search your wallet address in the Solana block explorer
 2. Find the corresponding source transaction
