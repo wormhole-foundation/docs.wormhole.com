@@ -1,3 +1,13 @@
+
+### VAAs
+
+Since this is the data structure that will be used most frequently, it deserves its own page with all the details any dev might ever need.
+
+Describe the limitations (no double redeem, max payload size, ...)
+Describe each field in detail
+Describe the types of VAAs (attest, governance, cct)
+Describe the binary encoding/decoding
+
 # VAAs
 
 > :interrobang:Developing on Wormhole? Check out [the book](https://book.wormhole.com)! :book:

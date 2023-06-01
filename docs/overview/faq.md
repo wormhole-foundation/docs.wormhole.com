@@ -2,9 +2,7 @@
 description: This page collects and answers the most commonly asked questions.
 ---
 
-# FAQs
-
-> :interrobang:Developing on Wormhole? Check out [the book](https://book.wormhole.com)! :book:
+# FAQ
 
 ## ？General FAQ
 

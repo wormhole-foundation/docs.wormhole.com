@@ -1,3 +1,18 @@
+Introduction
+------------
+
+
+A single (not *too* long) page to introduce wormhole and motivate its use.
+
+It should highlight both what it is (message passing, tooling, base layer) and what it is not (token bridge, ... what else do people think? )
+
+It should mention cost to send messages but link off to details
+
+It should list the currently connected chains but link off to details
+
+Simple Diagrams to show the flow of message passing
+
+
 # Introduction
 
 {% hint style="danger" %}

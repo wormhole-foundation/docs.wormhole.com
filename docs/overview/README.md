@@ -1,5 +1,10 @@
 # Overview
 
+Higher level introduction of the concepts and motivation. Readable by all audiences.
+
+
+# Overview
+
 <mark style="color:red;">**Check out the new**</mark> [<mark style="color:blue;">**xDapp Development Book**</mark>](https://book.wormholenetwork.com/) <mark style="color:red;">**for a much more updated set of docs.**</mark>
 
 Wormhole at its core is a decentralized notary. Wormhole works by monitoring a set of chains for messages emitted by smart contracts on those chains. The resulting messages are then routed to target chains, allowing a form of cross chain message passing.

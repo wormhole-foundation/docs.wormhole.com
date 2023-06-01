@@ -1,3 +1,44 @@
+# Guide
+
+Lower level introduction of programming concepts. Readable by devs / ops/ Technical&Curious
+
+
+## Introduction
+
+A single page to enumerate the prerequisites for development. 
+
+Provide Options or path depending on the level of integration
+
+- High level: WH Connect
+- Mid Level: SDK + relayer
+- Low Level: Core contract
+
+Index of the tutorials/demos (with tags for difficulty or subject covered?)
+
+<aside>
+💡 **Examples/Snippets**
+
+Throughout the pages in the guide section, there should be code examples/snippets of code. Each should be small (<~10LOC, no imports, cp/pastable) and link off to the full example *somewhere,* that is in a runnable state.
+
+The examples should lend themselves to be indexed for SEO and provide enough context that an LLM will be able to find relevant ones when asked.
+
+At minimum we should have the following examples for **each** chain:
+
+**On Chain**
+
+- Publish an message on-chain
+- Receive a message on-chain
+
+**Off Chain**
+
+- Attest a new token
+- Fetch a VAA and decode it
+- Redeem VAA
+
+</aside>
+
+
+
 # Core Concepts
 
 > :interrobang:Developing on Wormhole? Check out [the book](https://book.wormhole.com)! :book:
