@@ -1,76 +1,48 @@
 # Table of contents
 
+## Overview
+
+***
+
 * [Introduction](README.md)
-* [Core Concepts](core-concepts/README.md)
-  * [Portal Payloads](core-concepts/portal-payloads.md)
-  * [VAA Format](core-concepts/vaa-format.md)
-* [FAQs](faqs.md)
-* [Ethereum Merge FAQ](ethereum-merge-faq.md)
-* [Tools](tools/README.md)
-  * [Javascript SDK](tools/javascript-sdk.md)
-  * [Wormhole Explorer](tools/wormhole-explorer.md)
+* [Core Concepts](overview/core-concepts.md)
+* [Security](overview/security.md)
+* [Protocol Spotlight](overview/protocol-spotlight.md)
+* [FAQ](overview/faq.md)
 
-## Examples
+## Guide
 
 ***
 
-* [Sending Messages](sending-messages/README.md)
-  * [EVM On Chain Message](sending-messages/evm-on-chain-message.md)
-* [Relaying](relaying.md)
-* [Receiving Messages](receiving-messages.md)
+* [Introduction](guide/README.md)
+* [Dev Environment Setup](guide/dev-env.md)
+* [Tutorials](guide/tutorials/README.md)
+  * [Hello Universe](guide/tutorials/hello-universe.md)
+  * [WH Connect](guide/tutorials/wh-connect.md)
+  * [Generic Relayer](guide/tutorials/generic-relayer.md)
+  * [Message Passing](guide/tutorials/message-passing.md)
+* [Demos](guide/demos/README.md)
+* [Components](guide/components/README.md)
+  * [VAAs](guide/components/vaa.md)
+  * [Relayer](guide/components/relayer.md)
+* [Troubleshooting/Debugging](guide/troubleshooting.md)
 
-## Portal Token Bridge Examples <a href="#portal-examples" id="portal-examples"></a>
-
-* [EVM to Solana](portal-examples/evm-to-solana.md)
-* [Token Transfer with Relayer Fee (Polygon to Oasis)](portal-examples/token-transfer-with-relayer-fee-polygon-to-oasis.md)
-
-## Portal Bridge  <a href="#portal" id="portal"></a>
-
-***
-
-* [Overview: Liquid Markets](overview-liquid-markets.md)
-* [Video Tutorial: How to use Portal](video-tutorial-how-to-use-portal.md)
-* [Video Tutorial: How to manually add tokens to your wallet](video-tutorial-how-to-manually-add-tokens-to-your-wallet.md)
-* [Tutorial: Token/NFT Redeem Workflow](tutorial-recovery-workflow.md)
-* [Tutorial: NFT Portal](tutorial-nft-bridge.md)
-* [Tutorial: NFT Origin tool](tutorial-nft-origin-tool.md)
-* [Tutorial: How to send USDC from Solana to Ethereum](tutorial-how-to-send-usdc-from-solana-to-ethereum.md)
-* [Tutorial: How to send USDC from Ethereum to Solana](tutorial-how-to-send-usdc-from-ethereum-to-solana.md)
-* [Video Tutorial: How to use the Token Origin Verifier](video-tutorial-how-to-use-the-token-origin-verifier.md)
-* [Token Register](token-register/README.md)
-  * [Tutorial: Token registration](token-register/tutorial-token-register.md)
-
-## Developers
+## Reference
 
 ***
 
-* [Overview](overview.md)
-* [Contracts](contracts.md)
-* [Guardians](guardians.md)
-* [VAAs](vaas.md)
-* [Lifetime of a Message](lifetime-of-a-message.md)
-* [Governance](governance.md)
-* [APIs](api-docs/README.md)
-  * [Guardian](api-docs/guardian.md)
-  * [Wormscan](api-docs/wormscan.md)
-* [Existing Applications](existing-applications/README.md)
-  * [Token Bridge](existing-applications/token-bridge.md)
-  * [NFT Bridge](existing-applications/nft-bridge.md)
-* [JavaScript SDK](javascript-sdk/README.md)
-  * [First Transfer](javascript-sdk/first-transfer.md)
-  * [Token Transfer with Relayer Fee (Polygon to Oasis)](javascript-sdk/token-transfer-with-relayer-fee-polygon-to-oasis.md)
-* [Tutorials](developer-tutorials.md)
+* [Terminology/Glossary](reference/glossary.md)
+* [CLI Docs](reference/cli-docs/README.md)
+* [SDK Docs](reference/sdk-docs/README.md)
+* [REST API](reference/api-docs/README.md)
+* [Contracts Details](reference/chains/README.md)
+* [Parameters/Config](reference/parameters.md)
 
-## Links
+## See Also
 
-* [Portal Bridge ](https://www.portalbridge.com/#/transfer)
-* [NFT bridge](https://www.portalbridge.com/#/nft)
-* [Discord](https://discord.gg/hJfuptmg6b)
-* [Twitter](https://twitter.com/wormholecrypto)
-* [Github](https://github.com/certusone/wormhole)
-* [Portal Stats](https://www.portalbridge.com/#/stats)
-* [Wormhole Explorer](https://wormholenetwork.com/en/explorer)
 
-***
 
-* [xDapp Book](https://book.wormholenetwork.com/)
+
+
+<!-- <a href="#portal-examples" id="portal-examples"></a> --> 
+
