@@ -50,7 +50,7 @@
 * [VAAs](vaas.md)
 * [Lifetime of a Message](lifetime-of-a-message.md)
 * [Governance](governance.md)
-* [APIs](api-docs/docs/README.md)
+* [APIs](api-docs/README.md)
 * [Existing Applications](existing-applications/README.md)
   * [Token Bridge](existing-applications/token-bridge.md)
   * [NFT Bridge](existing-applications/nft-bridge.md)
