@@ -51,6 +51,8 @@
 * [Lifetime of a Message](lifetime-of-a-message.md)
 * [Governance](governance.md)
 * [APIs](api-docs/README.md)
+  * [Guardian](api-docs/guardian.md)
+  * [Wormscan](api-docs/wormscan.md)
 * [Existing Applications](existing-applications/README.md)
   * [Token Bridge](existing-applications/token-bridge.md)
   * [NFT Bridge](existing-applications/nft-bridge.md)
