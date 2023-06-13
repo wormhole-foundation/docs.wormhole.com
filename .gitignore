@@ -1,0 +1,6 @@
+# we check out repos to `tmp` in the scripts dir when 
+# fetching consts or generating docs
+./scripts/scripts/tmp/
+
+
+node_modules/
