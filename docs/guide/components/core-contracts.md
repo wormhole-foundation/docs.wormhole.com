@@ -28,7 +28,6 @@ The method signature for publishing messages
 
 - **consistencyLevel** - The level of finality to reach before emitting the Wormhole VAA. This is a defense against reorgs and rollbacks. See [this table](../../reference/parameters.md#finality) for specific settings.
 
-<!-- TODO: used?? -->
 - **nonce** - An index number for the message that is used to produce Batch VAAs.
 
 #### Returns

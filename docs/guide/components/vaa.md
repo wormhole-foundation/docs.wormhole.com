@@ -78,12 +78,12 @@ Note that Chain B is agnostic as to how the tokens on the sending side were lock
 The Transfer event above is missing an important detail. While the program on Chain B can trust the message to inform it of token lockup events, it has no way to know what the token being locked up actually is. The address alone is a meaningless value to most users. To solve this, the Token Bridge supports token attestation. Chain A emits a message containing metadata about an address, which Chain B can store in order to learn the name, symbol, and decimal precision of a token address. The message format for this action is as so:
 
 ```rust
-u8         payload_id = 2   // 
-[32]byte   token_address    // 
-u16        token_chain      // 
-u8         decimals         // 
-[32]byte   symbol           // 
-[32]byte   name             // 
+u8         payload_id = 2   // Attestation
+[32]byte   token_address    // Address of the originating token contract
+u16        token_chain      // Chain ID of the originating token 
+u8         decimals         // Number of decimals this token should have (max 8)
+[32]byte   symbol           // Short name of asset
+[32]byte   name             // Full name of asset
 ```
 
 An important detail of the token bridge is that an attestation is in fact required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.\*\*\*\*
@@ -94,13 +94,14 @@ An important detail of the token bridge is that an attestation is in fact requir
 The Transfer event above is missing an important detail. While the program on Chain B can trust the message to inform it of token lockup events, it has no way to know what the token being locked up actually is. The address alone is a meaningless value to most users. To solve this, the Token Bridge supports token attestation. Chain A emits a message containing metadata about an address, which Chain B can store in order to learn the name, symbol, and decimal precision of a token address. The message format for this action is as so:
 
 ```rust
-u8         payload_id = 3 // 
-[32]byte   token_address  // 
-u16        token_chain    // 
-u8         decimals       // 
-[32]byte   symbol         // 
-[32]byte   name           // 
-[]byte     payload        // 
+u8      payload_id = 3 // Token Transfer with Message 
+u256    amount         // Amount of tokens being transferred.
+u8[32]  token_address  // Address on the source chain.
+u16     token_chain    // Numeric ID for the source chain.
+u8[32]  to             // Address on the destination chain.
+u16     to_chain       // Numeric ID for the destination chain.
+u256    fee            // Portion of amount paid to a relayer.
+[]byte  payload        // Message, arbitrary bytes, app specific
 ```
 
 
@@ -114,10 +115,10 @@ Governance VAAs don't have a `payload_id` field like the above formats, they're 
 Governance messages contain pre-defined actions, which can target the various wormhole modules currently deployed on chain. The structure contains the following fields:
 
 ```rust
-u8[32]  module         Contains a right-aligned module identifier
-u8      action         Predefined governance action to execute
-u16     chain          Chain the action is targeting, 0 = all chains
-...     args           Arguments to the action
+u8[32]  module // Contains a right-aligned module identifier
+u8      action // Predefined governance action to execute
+u16     chain  // Chain the action is targeting, 0 = all chains
+...     args   // Arguments to the action
 ```
 
 Here is an example message containing a governance action triggering a code upgrade to the solana core contract. The module field here is a right-aligned encoding of the ASCII "Core", represented as a 32 byte hex string.

@@ -50,7 +50,10 @@ They'll use the standard Wormhole test mnemonic (`myth like bonus scare over pro
 ## Run Solana Chain
 
 `npm run solana` will start up a Solana chain and load in Core Bridge (`Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o`) and Token Bridge (`B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE`) accounts.
+
+<!-- 
 TODO: Add emitter registrations for token bridge.
+-->
 
 ## Run Wormhole
 

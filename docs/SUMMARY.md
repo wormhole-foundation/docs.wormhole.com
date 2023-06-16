@@ -22,19 +22,18 @@
   * [Tilt](./guide/dev-env/tilt.md)
   * [Tooling](./guide/dev-env/tooling.md)
 * [Tutorials](./guide/tutorials/README.md)
-  * [Quick Integration](./guide/tutorials/quick-start/README.md)
+  * [Quick Start](./guide/tutorials/quick-start/README.md)
     * [WH Connect](./guide/tutorials/quick-start/wh-connect.md)
     * [Hello Universe](./guide/tutorials/quick-start/hello-universe.md)
     * [SDK and API](./guide/tutorials/quick-start/sdk-api.md)
-  * [Protocol Integration](./guide/tutorials/app-integration/README.md)
+  * [App Integration](./guide/tutorials/app-integration/README.md)
     * [xAssets](./guide/tutorials/app-integration/xassets.md)
     * [Message Passing](./guide/tutorials/app-integration/message-passing.md)
-    * [Generic Relayer](./guide/tutorials/app-integration/generic-relayer.md)
   * [Protocol Development](./guide/tutorials/protocol-development/README.md)
     * [Specialized Relayer](./guide/tutorials/protocol-development/specialized-relayer.md)
     * [Protocol Design](./guide/tutorials/protocol-development/protocol-design.md)
 * [Demos](./guide/demos/README.md)
-* [Troubleshooting/Debugging](./guide/troubleshooting.md)
+<!-- * [Troubleshooting/Debugging](./guide/troubleshooting.md) -->
 
 
 ## Reference

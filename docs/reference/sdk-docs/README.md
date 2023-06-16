@@ -1,7 +1,5 @@
 # Wormhole Typescript SDK
 
-<!-- TODO: Rust docs? WH-Connect SDK docs? -->
-
 Many applications using wormhole may require a frontend to interact with the underlying smart contracts. 
 
 Wormhole provides an SDK with utilities for developers that includes:

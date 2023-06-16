@@ -1,6 +1,3 @@
-# Security
-
-<!-- TODO: entire page needs edit -->
 
 ## Core Security Assumptions
 
