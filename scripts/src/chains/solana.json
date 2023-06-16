@@ -1,0 +1,15 @@
+{
+  "title": "Solana",
+  "homepage": "https://solana.com/",
+  "developer": {
+    "docs": [
+      {
+        "url": "https://solana.com/developers"
+      }
+    ]
+  },
+  "finality": {
+    "confirmed": 0,
+    "finalized": 1
+  }
+}

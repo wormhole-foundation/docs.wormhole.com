@@ -1,0 +1,20 @@
+{
+  "homepage": "https://celo.org/",
+  "title": "Celo",
+  "explorer": [
+    {
+      "url": "https://explorer.celo.org/mainnet/"
+    },
+    {
+      "url": "https://celoscan.io/"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://docs.celo.org/"
+      }
+    ]
+  },
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Base",
+  "homepage": "https://base.org/",
+  "developer": {
+    "docs": [
+      {
+        "url": "https://docs.base.org/"
+      }
+    ]
+  },
+  "explorer": [
+    {
+      "url": "https://goerli.basescan.org/",
+      "description": "Etherscan"
+    },
+    {
+      "url": "https://base-goerli.blockscout.com/",
+      "description": "Blockscout"
+    }
+  ],
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

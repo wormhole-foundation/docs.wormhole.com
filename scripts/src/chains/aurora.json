@@ -1,0 +1,19 @@
+{
+  "title": "Aurora",
+  "homepage": "https://aurora.dev/",
+  "explorer": [
+    {
+      "url": "https://explorer.aurora.dev/",
+      "description": "Block Explorer"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://doc.aurora.dev/",
+        "description": "Developer docs"
+      }
+    ]
+  },
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

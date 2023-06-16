@@ -1,0 +1,6 @@
+{
+  "finality": {
+    "confirmed": 0,
+    "finalized": 1
+  }
+}

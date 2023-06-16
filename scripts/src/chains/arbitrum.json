@@ -1,0 +1,22 @@
+{
+  "title": "Arbitrum",
+  "homepage": "https://arbitrum.io/",
+  "explorer": [
+    {
+      "url": "https://arbiscan.io/",
+      "description": "Arbitrum Explorer"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://developer.arbitrum.io/getting-started-devs",
+        "description": "Developer Docs"
+      }
+    ]
+  },
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
+}

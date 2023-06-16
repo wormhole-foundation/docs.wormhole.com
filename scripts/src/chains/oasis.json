@@ -1,0 +1,5 @@
+{
+  "title": "Oasis",
+  "homepage": "https://oasisprotocol.org/",
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}
