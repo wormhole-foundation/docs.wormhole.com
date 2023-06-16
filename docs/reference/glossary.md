@@ -53,10 +53,6 @@ A Spy is a daemon that eavesdrops on the messages passed between Guardians, typi
 
 A daemon that is configured to monitor a blockchain node and observe messages emitted by the wormhole contracts.
 
-## Wormchain
-
-[Wormchain](../guide/components/wormchain.md) is a purpose-built cosmos blockchain which aids the Guardian Network and allows for formal interaction with the Guardians.
-
 ## xChain
 
 Term that refers to the full range of cross-blockchain interoperability.

@@ -37,5 +37,3 @@ There are a number of Ecosystem Contracts that can be used for a specific purpos
 
   - [**Specialized Relayers**](../guide/components/relayer.md#specialized-relayers) - Relayers that only handle VAAs for a specific protocol or xDapp. They can execute custom logic off-chain, which can reduce gas costs and increase cross-chain compatibility. Currently, xDapp developers are responsible for developing and hosting specialized relayers.
   - [**Generic Relayers**](../guide/components/relayer.md#automatic-relayers) - A decentralized relayer network which delivers messages that are requested on-chain via the Wormhole Relay Contract. Also referred to as `Automatic Relayers`
-
-- [**Wormchain**](../guide/components/wormchain.md) - A purpose-built cosmos blockchain which aids the Guardian Network and allows for formal interaction with the Guardians.
