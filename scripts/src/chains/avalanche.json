@@ -1,0 +1,21 @@
+{
+  "homepage": "https://www.avax.network/",
+  "title": "Avalanche",
+  "explorer": [
+    {
+      "url": "https://snowtrace.io/",
+      "description": "C-Chain Block Explorer"
+    },
+    {
+      "url": "https://subnets.avax.network/"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://docs.avax.network/"
+      }
+    ]
+  },
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

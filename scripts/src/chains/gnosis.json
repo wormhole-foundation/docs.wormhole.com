@@ -1,0 +1,12 @@
+{
+  "title": "Gnosis",
+  "homepage": "https://www.gnosis.io/",
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "developer": {
+    "docs": [
+      {
+        "url": "https://www.gnosis.io/developers"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "homepage": "https://acala.network/",
+  "title": "Acala",
+  "explorer": [
+    {
+      "url": "https://acala.subscan.io/"
+    },
+    {
+      "url": "https://blockscout.acala.network/"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://evmdocs.acala.network/"
+      }
+    ]
+  },
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

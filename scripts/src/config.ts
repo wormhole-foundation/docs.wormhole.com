@@ -1,6 +1,5 @@
 import * as wh from "@certusone/wormhole-sdk";
-
-import _details from './configuration.json';
+import fs from 'fs';
 
 const mainnetContracts: wh.ChainContracts = wh.CONTRACTS.MAINNET;
 const testnetContracts: wh.ChainContracts = wh.CONTRACTS.TESTNET;
@@ -60,17 +59,26 @@ export interface ExtraDetails {
   contractSource?: string // url to core contract
 };
 
-//export const EXTRA_DETAILS: Record<string, ExtraDetails> = 
+function getChainDetails(name: string): ExtraDetails {
+  try {
+    const details = fs.readFileSync(`./src/chains/${name}.json`)
+    return JSON.parse(details.toString()) as ExtraDetails
+  }catch(e){
+    console.error("No detail file for ", name)
+  }
+  return {} as ExtraDetails
+}
 
 export function getDocChains(): DocChain[] {
 
-  const details = _details as Record<string, ExtraDetails>
 
   const chains: DocChain[] = [];
   for (const [cn, cid] of Object.entries(wh.CHAINS)) {
     if (cid === 0) continue;
 
     const name = wh.toChainName(cid);
+
+    const details = getChainDetails(name);
 
     const docChain = {
       name: cn,
@@ -79,7 +87,7 @@ export function getDocChains(): DocChain[] {
       mainnet: mainnetContracts[name] || {},
       testnet: testnetContracts[name] || {},
       devnet: devnetContracts[name] || {},
-      extraDetails: details[name],
+      extraDetails: details,
     }
 
 

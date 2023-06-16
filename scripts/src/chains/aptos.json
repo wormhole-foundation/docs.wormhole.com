@@ -1,0 +1,26 @@
+{
+  "title": "Aptos",
+  "homepage": "https://aptosfoundation.org/",
+  "explorer": [
+    {
+      "url": "https://explorer.aptoslabs.com/",
+      "description": "Aptos Explorer"
+    },
+    {
+      "url": "https://aptoscan.com/",
+      "description": "AptoScan"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://aptos.dev/",
+        "description": "Developer Docs"
+      }
+    ]
+  },
+  "contractSource": "aptos/wormhole/sources/wormhole.move",
+  "finality": {
+    "finalized": 0
+  }
+}

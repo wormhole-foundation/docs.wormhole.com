@@ -1,0 +1,5 @@
+{
+  "title": "Moonbeam",
+  "homepage": "https://moonbeam.network/",
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

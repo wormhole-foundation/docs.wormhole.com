@@ -1,0 +1,17 @@
+{
+  "homepage": "https://fantom.foundation/",
+  "title": "Fantom",
+  "developer": {
+    "docs": [
+      {
+        "url": "https://docs.fantom.foundation/"
+      }
+    ]
+  },
+  "explorer": [
+    {
+      "url": "https://ftmscan.com/"
+    }
+  ],
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

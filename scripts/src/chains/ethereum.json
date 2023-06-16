@@ -1,0 +1,22 @@
+{
+  "homepage": "https://ethereum.org/",
+  "title": "Ethereum",
+  "developer": {
+    "docs": [
+      {
+        "url": "https://ethereum.org/en/developers/docs/"
+      }
+    ]
+  },
+  "explorer": [
+    {
+      "url": "https://etherscan.io/"
+    }
+  ],
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized",
+    "safe": 201
+  }
+}

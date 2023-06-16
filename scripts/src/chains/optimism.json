@@ -1,0 +1,9 @@
+{
+  "title": "Optimisim",
+  "homepage": "https://www.optimism.io/",
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
+}

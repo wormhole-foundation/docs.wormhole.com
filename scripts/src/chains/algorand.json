@@ -1,0 +1,26 @@
+{
+  "homepage": "https://algorand.com",
+  "title": "Algorand",
+  "explorer": [
+    {
+      "url": "https://algoexplorer.io/",
+      "description": "Algoexplorer"
+    },
+    {
+      "url": "https://algoscan.app",
+      "description": "AlgoScan"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://developer.algorand.org",
+        "description": "Developer Docs"
+      }
+    ]
+  },
+  "contractSource": "algorand/wormhole_core.py",
+  "finality": {
+    "finalized": 0
+  }
+}

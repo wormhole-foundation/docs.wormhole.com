@@ -1,0 +1,22 @@
+{
+  "title": "BNB Smart Chain (BSC)",
+  "homepage": "https://www.bnbchain.org/en/smartChain",
+  "explorer": [
+    {
+      "url": "https://bscscan.com/",
+      "description": "Etherscan"
+    }
+  ],
+  "developer": {
+    "docs": [
+      {
+        "url": "https://docs.bnbchain.org/docs/learn/intro"
+      }
+    ]
+  },
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "number of blocks"
+  }
+}

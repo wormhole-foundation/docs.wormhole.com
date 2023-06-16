@@ -1,0 +1,9 @@
+{
+  "title": "Polygon",
+  "homepage": "https://polygon.technology/",
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
+}
