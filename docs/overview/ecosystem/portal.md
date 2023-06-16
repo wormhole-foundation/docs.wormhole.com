@@ -74,6 +74,3 @@ CCTs allow xDapp contracts to easily perform simple xAsset transfers, but have t
 - An arbitrary byte array can be appended to the transfer and can be used to easily pass additional information to the recipient contract.
 - The CCT VAA redeem can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations which the contract wants to perform as part of the redeem transaction must be executed.
 
----
-
-In the next section, we'll discuss Wormchain and some upcoming features it will enable.

@@ -17,7 +17,6 @@
   * [Spy](./guide/components/spy.md)
   * [API](./guide/components/api.md)
   * [Core Contracts](./guide/components/core-contracts.md)
-  * [Wormchain](./guide/components/wormchain.md)
 * [Development Environment](./guide/dev-env/README.md)
   * [Wormhole Local Validator](./guide/dev-env/wormhole-local-validator.md)
   * [Tilt](./guide/dev-env/tilt.md)
