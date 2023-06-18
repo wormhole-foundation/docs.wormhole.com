@@ -28,9 +28,8 @@ Get integrated with wormhole using smart contracts and the SDK to submit and rel
 
 1) [xAsset Transfer](./app-integration/xassets.md)
     - Introduces the use of a protocol built on top of Wormhole to transfer assets across chains. 
-3) [Debugging](./app-integration/debugging.md)
+3) [Message Passing](./app-integration/message-passing.md)
     - Covers some details on debugging issues related to using the Wormhole protocol. 
-
 
 
 ## Protocol Development 
