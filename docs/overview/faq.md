@@ -23,6 +23,10 @@ Beware of scams. Admins will never DM or message you first
 ...
 -->
 
+{% hint style="info" %}
+The old FAQ is still available [here](../archive/faqs.md)
+{% endhint %}
+
 
 ## 📞 Contact
 
