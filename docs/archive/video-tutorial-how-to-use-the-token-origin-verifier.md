@@ -16,9 +16,9 @@ Video Tutorial: How to use the Token Origin Verifier
 
 2\) Go to [https://www.portalbridge.com/#/token-origin-verifier](https://www.portalbridge.com/#/token-origin-verifier) or access the Token Origin Verifier on the Portal bridge Tokens tab.&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 10.44.32 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 10.44.32 pm.png>)
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 10.45.58 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 10.45.58 pm.png>)
 
 3\) Select the correct source chain and paste the token address. This should auto-populate the origin chain of the token and token name. &#x20;
 
@@ -26,17 +26,17 @@ Video Tutorial: How to use the Token Origin Verifier
 Note: For EVM chains, you will need to connect your wallet.&#x20;
 {% endhint %}
 
-![In this example, we can see that this token on Ethereum originally came from Solana and the token in SOL. ](<.gitbook/assets/Screen Shot 2022-06-09 at 10.53.21 pm.png>)
+![In this example, we can see that this token on Ethereum originally came from Solana and the token in SOL. ](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 10.53.21 pm.png>)
 
 
 
 4\) To find more details about the token, hover on top of the token name and click "View on explorer"
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 10.55.37 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 10.55.37 pm.png>)
 
 5\) In the explorer you can find all the details about the origin token
 
-![](<.gitbook/assets/Screen Shot 2022-06-14 at 2.41.17 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-14 at 2.41.17 pm.png>)
 
 
 
@@ -44,7 +44,7 @@ Note: For EVM chains, you will need to connect your wallet.&#x20;
 
 1\) Go to [https://www.portalbridge.com/#/token-origin-verifier](https://www.portalbridge.com/#/token-origin-verifier) or access the Token Origin Verifier on the Portal bridge Tokens tab.&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-14 at 2.49.56 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-14 at 2.49.56 pm.png>)
 
 2\) Select the origin chain&#x20;
 
@@ -54,14 +54,14 @@ Note: For EVM chains, you will need to connect your wallet.&#x20;
 
 _In this example, we select wrapped Ether from Ethereum_&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-14 at 2.54.48 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-14 at 2.54.48 pm.png>)
 
 5\) In the "Bridge Results" box,  select a chain in the dropdown menu to see the result of bridging this token.
 
 _In this example, we select Solana._&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-14 at 2.57.41 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-14 at 2.57.41 pm.png>)
 
 6\) You can now view the details of the bridged token. Click "View on explorer/Solscan" to find out more details
 
-![](<.gitbook/assets/Screen Shot 2022-06-14 at 3.00.20 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-14 at 3.00.20 pm.png>)

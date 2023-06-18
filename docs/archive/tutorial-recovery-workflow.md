@@ -17,15 +17,15 @@ description: >-
 6. Click "Redeem" and approve the wallet pop up
 7. Success! You've successfully redeemed your tokens!&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.32.36 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.32.36 pm.png>)
 
 {% hint style="info" %}
 _If you see any error messages, please check out our FAQs_[ _here_](faqs.md#common-error-messages)
 {% endhint %}
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.33.30 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.33.30 pm.png>)
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.37.40 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.37.40 pm.png>)
 
 ### ❓Where can I find the source transaction?
 
@@ -35,7 +35,7 @@ _If you see any error messages, please check out our FAQs_[ _here_](faqs.md#comm
 
 The source transaction can be found from the Tokens tab in "Send tokens"
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.41.38 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.41.38 pm.png>)
 
 **Method 2 (Block explorer):**
 
@@ -45,9 +45,9 @@ For EVM chains, the source transaction can be found by:
 * Find the corresponding transaction hash with "Transfer Tokens" & click the link
 * The source transaction will be the transaction hash
 
-![](<.gitbook/assets/Screen Shot 2021-09-19 at 8.31.46 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-19 at 8.31.46 pm.png>)
 
-![](<.gitbook/assets/Screen Shot 2021-10-13 at 7.10.10 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-13 at 7.10.10 pm.png>)
 
 ### ⛓Solana&#x20;
 
@@ -57,7 +57,7 @@ There are several ways to find your source transaction on Solana.
 
 The source transaction can be found in the "Send Tokens" section.&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 4.08.37 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 4.08.37 pm.png>)
 
 #### Method 2 (Solana wallet):&#x20;
 
@@ -67,9 +67,9 @@ You can also find the source transaction within your Solana wallet. Using Phanto
 * Click the corresponding transaction which will open the Solana Explorer
 * The source transaction will be the **signature** of the transaction&#x20;
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.18.23 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.18.23 pm.png>)
 
-![](<.gitbook/assets/Screen Shot 2022-06-09 at 8.19.37 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-06-09 at 8.19.37 pm.png>)
 
 **Method 3 (Block explorer):**
 

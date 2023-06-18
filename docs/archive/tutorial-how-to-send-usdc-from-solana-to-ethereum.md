@@ -19,11 +19,11 @@ First, you will need USDCet (Wormhole from Ethereum) in order to transfer the to
 * Click "Swap"
 * Approve the wallet pop up
 
-![](<.gitbook/assets/Screenshot 2022-01-20 at 17.57.01.png>)
+![](<../.gitbook/assets/archive/Screenshot 2022-01-20 at 17.57.01.png>)
 
 * Now you have USDC (Wormhole)
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 7.44.31 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 7.44.31 pm.png>)
 
 
 
@@ -37,7 +37,7 @@ First, you will need USDCet (Wormhole from Ethereum) in order to transfer the to
 
 _Note: Warning will come up if you have a low ETH balance as you may not be able to pay the gas fees associated with the transaction._
 
-![](<.gitbook/assets/Screenshot 2022-01-20 at 18.02.43.png>)
+![](<../.gitbook/assets/archive/Screenshot 2022-01-20 at 18.02.43.png>)
 
 ### **Step 3 - Target**
 
@@ -45,7 +45,7 @@ _Note: Warning will come up if you have a low ETH balance as you may not be able
 * Connect your wallet
 * Click "Next"
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 7.48.40 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 7.48.40 pm.png>)
 
 ‌
 
@@ -54,7 +54,7 @@ _Note: Warning will come up if you have a low ETH balance as you may not be able
 * Click _"_Transfer"
 * Approve wallet pop up
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 7.52.04 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 7.52.04 pm.png>)
 
 * Wait for 32 confirmations on Solana
 
@@ -66,6 +66,6 @@ _Note: Warning will come up if you have a low ETH balance as you may not be able
 * Approve the wallet pop up
 * You've successfully sent your tokens and will receive USDC on Ethereum🎉
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 8.13.47 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 8.13.47 pm.png>)
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 8.14.37 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 8.14.37 pm.png>)

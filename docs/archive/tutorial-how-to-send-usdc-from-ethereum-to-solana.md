@@ -21,14 +21,14 @@ Head to [https://portalbridge.com/#/transfer](https://portalbridge.com/#/transfe
 
 _Note: Warning will come up if you have a low ETH balance_
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.13.09 am (1).png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.13.09 am (1).png>)
 
 ### **Step 2 - Target**
 
 * Select Solana as your target chain
 * Connect your wallet
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.14.21 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.14.21 am.png>)
 
 If this is your first time sending the token to Solana, you will need to create a token account.
 
@@ -46,15 +46,15 @@ _Optional: Select "Approve unlimited tokens" (This option is recommended for use
 
 * Accept wallet approval pop up‌
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.15.42 am (1).png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.15.42 am (1).png>)
 
 * Click "Transfer"
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.17.02 am (1).png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.17.02 am (1).png>)
 
 * Wait for 15 confirmations on Ethereum
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.18.35 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.18.35 am.png>)
 
 ‌_Note: Once you approve the transfer, you must complete the transaction. If you navigate away from this page, you will need to complete the_ [_redeem workflow_](tutorial-recovery-workflow.md)
 
@@ -63,12 +63,12 @@ _Optional: Select "Approve unlimited tokens" (This option is recommended for use
 * Make sure to click "Redeem"
 * Approve the multiple wallet approvals
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.22.20 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.22.20 am.png>)
 
 * You've successfully sent your tokens 🎉
 * You can view the successful transaction on Solana Explorer by clicking "view on explorer"
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.22.41 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.22.41 am.png>)
 
 ### Swapping USDCet(Wormhole) to native USDC on Solana
 
@@ -79,7 +79,7 @@ There are a few platforms that you can use to swap your ETH-USDC (Wormhole) to n
 3. Select USDCet(Wormhole) & enter amount you want to swap
 4. Select the token you want to swap USDCet to. In this example, we will swap it to USDC
 
-![](<.gitbook/assets/Screen Shot 2021-10-08 at 4.13.45 am (1).png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-08 at 4.13.45 am (1).png>)
 
 
 
@@ -89,6 +89,6 @@ There are a few platforms that you can use to swap your ETH-USDC (Wormhole) to n
 
 7\. Approve wallet pop up
 
-![](<.gitbook/assets/Screen Shot 2021-10-11 at 12.07.27 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-10-11 at 12.07.27 am.png>)
 
 Success🎉! You've now swapped your USDCet to native USDC on Solana.

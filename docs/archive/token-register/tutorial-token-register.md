@@ -16,7 +16,7 @@ Before registering a token, please check out our [token register documentation](
 * In "Asset", paste in the token contract code of the token you want to register
 * Click "Next"
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.09.04 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-19 at 5.09.04 pm.png>)
 
 ### 2. Target
 
@@ -24,14 +24,14 @@ Before registering a token, please check out our [token register documentation](
 * Connect the target chain wallet
 * Click "Next"&#x20;
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.13.52 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-19 at 5.13.52 pm.png>)
 
 ### 3. Send attestation&#x20;
 
 * Click "Attest"
 * Approve the wallet pop-up
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.15.07 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-19 at 5.15.07 pm.png>)
 
 ### 4. Create wrapped token
 
@@ -42,8 +42,8 @@ Before registering a token, please check out our [token register documentation](
 There will be four wallet approval pop-ups when creating a wrapped token on Solana
 {% endhint %}
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.17.30 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-19 at 5.17.30 pm.png>)
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 5.20.59 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-19 at 5.20.59 pm.png>)
 
 🎉 You've sucessfully registered your token on the target chain now!&#x20;

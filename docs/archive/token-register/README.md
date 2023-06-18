@@ -109,23 +109,23 @@ Target chain: The chain you want to send the tokens to&#x20;
 3. In Bridge Results, select the target chain
 4. Hover on top of the token name in bridge results, it will show the correct name on the target chain \<token name> (Wormhole)
 
-![](<../.gitbook/assets/Screen Shot 2022-05-18 at 8.46.04 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-18 at 8.46.04 pm.png>)
 
 **Using Solana explorer:**&#x20;
 
 On Solana, you’ll be able to see if your token has on-chain metadata by searching the token on the Solana explorer and details in the metadata tab**.**
 
-![](<../.gitbook/assets/Screen Shot 2021-12-30 at 2.10.38 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-12-30 at 2.10.38 pm.png>)
 
 **Example of a token with no on-chain meta data:**
 
-![](<../.gitbook/assets/Screen Shot 2022-05-18 at 8.54.18 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-18 at 8.54.18 pm.png>)
 
 
 
 ### **My token’s name doesn’t show up correctly on the explorer.**
 
-![](<../.gitbook/assets/Screen Shot 2021-12-30 at 3.46.56 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-12-30 at 3.46.56 pm.png>)
 
 * If the token is originally from Solana, ensure the token has on-chain meta data
 * Update the token using the  Portal bridge [token register](https://www.portalbridge.com/#/register)
