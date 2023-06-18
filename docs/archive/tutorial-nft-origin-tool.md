@@ -13,9 +13,9 @@ _Note: The tool only tell you the origin of a NFT which can help you to verify i
 * Paste the address & tokenId
 * Click view sol scan
 
-![](<.gitbook/assets/Screen Shot 2021-09-23 at 10.36.16 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-23 at 10.36.16 am.png>)
 
-![](<.gitbook/assets/Screen Shot 2021-09-23 at 11.06.40 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-23 at 11.06.40 am.png>)
 
 
 
@@ -29,11 +29,11 @@ On Solscan, we can compare the creator addresses with another NFT on a verified 
 
 **Origin details of the Ape that was sent over from Solana to Ethereum:**
 
-![](<.gitbook/assets/Screen Shot 2021-09-23 at 11.21.34 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-23 at 11.21.34 am.png>)
 
 **Origin details of the Verified Ape on** [**Solanart.io**](http://solanart.io/)
 
-![](<.gitbook/assets/Screen Shot 2021-09-23 at 11.12.20 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-23 at 11.12.20 am.png>)
 
 When you compare the two, the two creator addresses & update authority are identical so you can manually verify that the piece is authentic.
 
@@ -50,11 +50,11 @@ Link: [https://twitter.com/wormholecrypto/status/1441773766137106454](https://tw
 * Paste the address&#x20;
 * Click View on Opensea
 
-![](<.gitbook/assets/Screen Shot 2021-09-27 at 1.28.05 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-27 at 1.28.05 am.png>)
 
 * On Opensea, you can tell that this piece has been verified, hence is not a replica.&#x20;
 
-![](<.gitbook/assets/Screen Shot 2021-09-27 at 1.29.33 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-27 at 1.29.33 am.png>)
 
 
 

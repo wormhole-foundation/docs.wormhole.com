@@ -15,7 +15,7 @@ To start, go to [https://portalbridge.com/#/nft](https://portalbridge.com/#/nft)
 * Select the NFT you want to send cross chain&#x20;
 * Click "Next"
 
-![](<.gitbook/assets/Screen Shot 2022-05-20 at 4.32.56 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-20 at 4.32.56 pm.png>)
 
 ### 2. Target
 
@@ -23,7 +23,7 @@ To start, go to [https://portalbridge.com/#/nft](https://portalbridge.com/#/nft)
 * Connect your wallet
 * Click "Next"
 
-![](<.gitbook/assets/Screen Shot 2022-05-20 at 4.50.20 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-20 at 4.50.20 pm.png>)
 
 ### 3. Send NFT
 
@@ -31,7 +31,7 @@ To start, go to [https://portalbridge.com/#/nft](https://portalbridge.com/#/nft)
 * Accept wallet approval pop-up(s)
 * Wait for the confirmation(s)
 
-![](<.gitbook/assets/Screen Shot 2022-05-20 at 4.53.25 pm (1).png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-20 at 4.53.25 pm (1).png>)
 
 {% hint style="info" %}
 Once you approve the transfer, you must complete the transaction. If you navigate away from this page, you will need to complete the[ recovery workflow ](tutorial-recovery-workflow.md#redeem-workflow)
@@ -42,9 +42,9 @@ Once you approve the transfer, you must complete the transaction. If you navigat
 * Click "Redeem"
 * Accept wallet approval pop-up(s)
 
-![](.gitbook/assets/redeem-screenshot.png)
+![](.gitbook/assets/archive/redeem-screenshot.png)
 
-![](<.gitbook/assets/Screen Shot 2022-05-20 at 5.00.23 pm.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2022-05-20 at 5.00.23 pm.png>)
 
 
 
@@ -54,4 +54,4 @@ For NFTs sent to Ethereum, these will be available to view in a marketplace such
 
 To see some of the NFTs sent to Ethereum, check out: [https://opensea.io/collection/wormhole-bridged-solana-nft](https://opensea.io/collection/wormhole-bridged-solana-nft)
 
-![](<.gitbook/assets/Screen Shot 2021-09-23 at 2.02.35 am.png>)
+![](<../.gitbook/assets/archive/Screen Shot 2021-09-23 at 2.02.35 am.png>)

@@ -23,13 +23,13 @@ Video Tutorial: How to manually add a token to your Metamask wallet
 
 2\) Find the contract address by clicking the token name "**wormhole()"**
 
-![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.37.29.png>)
+![](<../.gitbook/assets/archive/Bildschirmfoto 2021-11-29 um 16.37.29.png>)
 
 3\) Copy the contract address of the token
 
 4\) Open Metamask, scroll down and select **"Import tokens"**
 
-![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.38.46.png>)
+![](<../.gitbook/assets/archive/Bildschirmfoto 2021-11-29 um 16.38.46.png>)
 
 5\) Paste the token contract address into the according field
 
@@ -53,15 +53,15 @@ Video Tutorial: How to manually add a token to your Terra Station wallet
 
 2\) Scroll down to "show logs"&#x20;
 
-![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.40.56 (1).png>)
+![](<../.gitbook/assets/archive/Bildschirmfoto 2021-11-29 um 16.40.56 (1).png>)
 
 3\) Within **\[1] from\_contract**, you can find the token contract address as **contract\_address** (just below "amount"). Copy that contract address
 
-![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.40.33.png>)
+![](<../.gitbook/assets/archive/Bildschirmfoto 2021-11-29 um 16.40.33.png>)
 
 4\) In your Terra Station wallet, navigate to **add token,** paste in the contract address and click **add** as the final step
 
-![](<.gitbook/assets/Bildschirmfoto 2021-11-29 um 16.53.22.png>)
+![](<../.gitbook/assets/archive/Bildschirmfoto 2021-11-29 um 16.53.22.png>)
 
 ### 📞 Contact us
 

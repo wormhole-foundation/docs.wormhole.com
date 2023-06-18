@@ -10,13 +10,13 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 
 
-![Guardians observing Message in block 3 on Chain A.](.gitbook/assets/image.png)
+![Guardians observing Message in block 3 on Chain A.](.gitbook/assets/archive/image.png)
 
 *   **2: Signatures are aggregated.**
 
     Guardians independently observe and sign the message. Once enough guardians have signed the message, the collection of signatures are combined with the message and metadata to produce a VAA.
 
-![A Conceptual VAA: Guardians aggregating signatures for the Payload in question.](<.gitbook/assets/image (13).png>)
+![A Conceptual VAA: Guardians aggregating signatures for the Payload in question.](<../.gitbook/assets/archive/image (13).png>)
 
 *   **3: VAA submitted to target chain.**
 
@@ -24,7 +24,7 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
     _<mark style="color:blue;">Note: Anyone can submit the VAA to the target chain. The guardians typically do not perform this step to avoid transaction fees. Instead, applications built on top of wormhole can acquire the VAA via the guardian RPC and do the submission in a separate flow.</mark>_
 
-![VAA produced by the guardians being submitted to Chain B.](<.gitbook/assets/image (4).png>)
+![VAA produced by the guardians being submitted to Chain B.](<../.gitbook/assets/archive/image (4).png>)
 
 ### Finality
 
@@ -34,6 +34,6 @@ To solve for this, the guardians wait for a message to become sufficiently final
 
 Thus in a real application a message is emitted along with a wait time:
 
-![Guardian flow for a message with a wait period. Guardians do not accept the message until 3 blocks later. The VAA is submitted to Chain B in a later block.](<.gitbook/assets/image (8).png>)
+![Guardian flow for a message with a wait period. Guardians do not accept the message until 3 blocks later. The VAA is submitted to Chain B in a later block.](<../.gitbook/assets/archive/image (8).png>)
 
 Wormhole adopts this model so that application developers can decide themselves what level of security they wish to use. A token bridge might require a much higher wait period to prevent token theft, whereas a cross-chain oracle may only need single block confirmations.
