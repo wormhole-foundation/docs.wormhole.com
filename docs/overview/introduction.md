@@ -6,7 +6,7 @@ Wormhole is a generic **message passing protocol** that enables communication be
 
 At a high level, this is accomplished in a few phases:
 
-1) On **Source Chain** a contract calls the [**Wormhole Core Contract**](../guide/components/core-contracts.md) which emits a message.
+1) On the **Source Chain** a contract calls the [**Wormhole Core Contract**](../guide/components/core-contracts.md) which emits a message.
 2) From **Off chain**
 
    a) The nodes in the **[Guardian](../guide/components/guardian.md) Network** validate the message and sign an attestation (or [**VAA**](../guide/components/vaa.md)).
@@ -26,25 +26,23 @@ This simple message passing protocol enables developers and users of [xDapps](..
 - Wormhole is *not* an actual wormhole, its just software. Plus you'd need a supply of [Negative Energy](https://en.wikipedia.org/wiki/Negative_energy#Wormholes) to keep it open.
 
 
-# The Case For blockchain Interoperability
+# The Case For Blockchain Interoperability
 
 Because blockchains are siloed by nature, dapps built on a single chain will be constrained by the resources, features, and scale available within that single ecosystem. 
 
-With Wormhole, dapps can take advantage of the features and resources of any chain supported by Wormhole. The dapps that integrate wormhole are referred to as xDapps.
+With Wormhole, dapps can take advantage of the features and resources of any chain supported by Wormhole. The dapps that integrate wormhole are referred to as [xDapps](../reference/glossary.md#xdapp).
 
 
 ## Advantages of xDapps
 
-Users interacting with xDapps to transfer xAssets (cross chain assets) or pass xData (cross chain data) are able to take advantage of the best attributes of each chain they're connected to.
-
 Consider the following list describing some of the advantages of xDapps:
 
 - **Expanded User Base** - Rather than being limited to the users of one blockchain, any user on any blockchain in the ecosystem can interact with an xDapp.
-- **Unified Liquidity** - Liquidity fragmentation is a major problem in the current ecosystem. Unlike traditional tokens, xAssets can be pooled and moved anywhere.
+- **Increased Extensibility and Composability** - xDapps can utilize anything across the ecosystem, including other xDapps, expanding upon the composability and openness of smart contracts. 
 - **Decentralization** - Cross-chain solutions today usually involve centralized exchanges or bridges. However, Wormhole has been designed to be decentralized from day one, and eventually totally trustless.
 - **Increased Performance** - xDapps are able to utilize the strengths of each blockchain. With xDapps, expensive computations can be offloaded onto high-performance platforms, final settlement can take place on a preferred chain, and data can be stored wherever is cheapest.
+- **Unified Liquidity** - Liquidity fragmentation is a major problem in the current ecosystem. Unlike traditional tokens, xAssets can be pooled and moved anywhere.
 - **Broader Market Reach** - Because xAssets move freely through the ecosystem, they can be listed on a variety of exchanges and custodied on any blockchain.
-- **Increased Extensibility and Composability** - xDapps can utilize anything across the ecosystem, including other xDapps, expanding upon the composability and openness of smart contracts. 
 - **Future proofing** - As new environments and protocols join the decentralized ecosystem, the connected nature of the Wormhole ecosystem allows existing protocols to expand and support them.
 
 <!-- TODO: can we say exponential? reword -->
@@ -57,8 +55,8 @@ With Wormhole and xDapps, the design space and scale possible for decentralized 
 Consider the following examples of potential applications that are now possible with Wormhole: 
 
 1. Cross chain exchange: Using [Wormhole Connect](../guide/tutorials/quick-start/wh-connect.md), a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access. 
-2. Cross chain governance: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole communicate votes from cast on their disparate chains to the voting chain.
-3. Cross chain game: A game could be built and played on a performant network like Solana, and it’s rewards issued as NFTs on a different network, for example Ethereum.
+2. Cross chain governance: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.
+3. Cross chain game: A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.
 
 
 ## Supported Blockchains 
