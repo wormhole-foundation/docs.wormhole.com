@@ -55,6 +55,7 @@
 
 ## Archive
 
+* [FAQ](archive/faqs.md)
 * [Overview: Liquid Markets](archive/overview-liquid-markets.md)
 * [Video Tutorial: How to use Portal](archive/video-tutorial-how-to-use-portal.md)
 * [Video Tutorial: How to manually add tokens to your wallet](archive/video-tutorial-how-to-manually-add-tokens-to-your-wallet.md)
