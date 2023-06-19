@@ -1,8 +1,8 @@
+{% tabs %}
 
 <!--APTOS_CHAIN_DETAILS-->
 
-
-# Aptos
+{% tab title="Aptos" %}
 
 ## Wormhole Details
 
@@ -60,5 +60,8 @@ The options for `consistency_level` (i.e finality) are:
 
 - [Developer Docs](https://aptos.dev/)
 
+{% endtab %}
+
 
 <!--APTOS_CHAIN_DETAILS-->
+{% endtabs %}

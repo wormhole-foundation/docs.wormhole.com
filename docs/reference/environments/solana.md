@@ -1,10 +1,11 @@
 
 Details for working with the Solana environment chains
 
+{% tabs %}
+
 <!--SOLANA_CHAIN_DETAILS-->
 
-
-# Solana
+{% tab title="Solana" %}
 
 ## Wormhole Details
 
@@ -62,13 +63,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://solana.com/developers](https://solana.com/developers)
 
+{% endtab %}
+
 
 <!--SOLANA_CHAIN_DETAILS-->
 
 <!--PYTHNET_CHAIN_DETAILS-->
 
-
-# pythnet
+{% tab title="pythnet" %}
 
 ## Wormhole Details
 
@@ -126,5 +128,9 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--PYTHNET_CHAIN_DETAILS-->
+
+{% tabs %}

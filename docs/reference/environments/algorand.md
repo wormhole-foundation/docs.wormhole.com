@@ -1,10 +1,10 @@
 
 Details for working with Algorand environment chains.
 
+{% tabs %}
 <!--ALGORAND_CHAIN_DETAILS-->
 
-
-# Algorand
+{% tab title="Algorand" %}
 
 ## Wormhole Details
 
@@ -62,5 +62,8 @@ The options for `consistency_level` (i.e finality) are:
 
 - [Developer Docs](https://developer.algorand.org)
 
+{% endtab %}
+
 
 <!--ALGORAND_CHAIN_DETAILS-->
+{% endtabs %}

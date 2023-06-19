@@ -1,11 +1,11 @@
 
 Details for working with CosmWasm environment chains. 
 
+{% tabs %}
 
 <!--TERRA_CHAIN_DETAILS-->
 
-
-# terra
+{% tab title="terra" %}
 
 ## Wormhole Details
 
@@ -55,13 +55,14 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--TERRA_CHAIN_DETAILS-->
 
 <!--TERRA2_CHAIN_DETAILS-->
 
-
-# terra2
+{% tab title="terra2" %}
 
 ## Wormhole Details
 
@@ -111,5 +112,8 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--TERRA2_CHAIN_DETAILS-->
+{% endtabs %}

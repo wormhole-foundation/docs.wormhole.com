@@ -102,8 +102,7 @@ ${otherwiseText}
   }
 
   return `
-
-# ${title}
+{% tab title="${title}" %}
 
 ## Wormhole Details
 
@@ -152,6 +151,8 @@ ${explorerLinks}
 ## Developer
 
 ${devdocs}
+
+{% endtab %}
 
 `;
 }

@@ -1,11 +1,11 @@
 
 Details for working with EVM environment chains.
 
+{% tabs %}
 
 <!--ETHEREUM_CHAIN_DETAILS-->
 
-
-# Ethereum
+{% tab title="Ethereum" %}
 
 ## Wormhole Details
 
@@ -63,13 +63,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [https://ethereum.org/en/developers/docs/](https://ethereum.org/en/developers/docs/)
 
+{% endtab %}
+
 
 <!--ETHEREUM_CHAIN_DETAILS-->
 
 <!--BSC_CHAIN_DETAILS-->
 
-
-# BNB Smart Chain (BSC)
+{% tab title="BNB Smart Chain (BSC)" %}
 
 ## Wormhole Details
 
@@ -126,13 +127,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 - [https://docs.bnbchain.org/docs/learn/intro](https://docs.bnbchain.org/docs/learn/intro)
 
+{% endtab %}
+
 
 <!--BSC_CHAIN_DETAILS-->
 
 <!--POLYGON_CHAIN_DETAILS-->
 
-
-# Polygon
+{% tab title="Polygon" %}
 
 ## Wormhole Details
 
@@ -189,13 +191,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
+{% endtab %}
+
 
 <!--POLYGON_CHAIN_DETAILS-->
 
 <!--AVALANCHE_CHAIN_DETAILS-->
 
-
-# Avalanche
+{% tab title="Avalanche" %}
 
 ## Wormhole Details
 
@@ -246,13 +249,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://docs.avax.network/](https://docs.avax.network/)
 
+{% endtab %}
+
 
 <!--AVALANCHE_CHAIN_DETAILS-->
 
 <!--OASIS_CHAIN_DETAILS-->
 
-
-# Oasis
+{% tab title="Oasis" %}
 
 ## Wormhole Details
 
@@ -302,13 +306,14 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--OASIS_CHAIN_DETAILS-->
 
 <!--AURORA_CHAIN_DETAILS-->
 
-
-# Aurora
+{% tab title="Aurora" %}
 
 ## Wormhole Details
 
@@ -358,13 +363,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [Developer docs](https://doc.aurora.dev/)
 
+{% endtab %}
+
 
 <!--AURORA_CHAIN_DETAILS-->
 
 <!--FANTOM_CHAIN_DETAILS-->
 
-
-# Fantom
+{% tab title="Fantom" %}
 
 ## Wormhole Details
 
@@ -414,13 +420,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://docs.fantom.foundation/](https://docs.fantom.foundation/)
 
+{% endtab %}
+
 
 <!--FANTOM_CHAIN_DETAILS-->
 
 <!--KARURA_CHAIN_DETAILS-->
 
-
-# Karura
+{% tab title="Karura" %}
 
 ## Wormhole Details
 
@@ -477,14 +484,15 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
+{% endtab %}
+
 
 <!--KARURA_CHAIN_DETAILS-->
 
 
 <!--ACALA_CHAIN_DETAILS-->
 
-
-# Acala
+{% tab title="Acala" %}
 
 ## Wormhole Details
 
@@ -535,13 +543,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://evmdocs.acala.network/](https://evmdocs.acala.network/)
 
+{% endtab %}
+
 
 <!--ACALA_CHAIN_DETAILS-->
 
 <!--KLAYTN_CHAIN_DETAILS-->
 
-
-# Klaytn
+{% tab title="Klaytn" %}
 
 ## Wormhole Details
 
@@ -591,13 +600,14 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--KLAYTN_CHAIN_DETAILS-->
 
 <!--CELO_CHAIN_DETAILS-->
 
-
-# Celo
+{% tab title="Celo" %}
 
 ## Wormhole Details
 
@@ -648,13 +658,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://docs.celo.org/](https://docs.celo.org/)
 
+{% endtab %}
+
 
 <!--CELO_CHAIN_DETAILS-->
 
 <!--MOONBEAM_CHAIN_DETAILS-->
 
-
-# Moonbeam
+{% tab title="Moonbeam" %}
 
 ## Wormhole Details
 
@@ -704,13 +715,14 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--MOONBEAM_CHAIN_DETAILS-->
 
 <!--NEON_CHAIN_DETAILS-->
 
-
-# Neon
+{% tab title="Neon" %}
 
 ## Wormhole Details
 
@@ -760,13 +772,14 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--NEON_CHAIN_DETAILS-->
 
 <!--ARBITRUM_CHAIN_DETAILS-->
 
-
-# Arbitrum
+{% tab title="Arbitrum" %}
 
 ## Wormhole Details
 
@@ -823,13 +836,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [Developer Docs](https://developer.arbitrum.io/getting-started-devs)
 
+{% endtab %}
+
 
 <!--ARBITRUM_CHAIN_DETAILS-->
 
 <!--OPTIMISM_CHAIN_DETAILS-->
 
-
-# Optimisim
+{% tab title="Optimisim" %}
 
 ## Wormhole Details
 
@@ -886,13 +900,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
+{% endtab %}
+
 
 <!--OPTIMISM_CHAIN_DETAILS-->
 
 <!--GNOSIS_CHAIN_DETAILS-->
 
-
-# Gnosis
+{% tab title="Gnosis" %}
 
 ## Wormhole Details
 
@@ -942,13 +957,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://www.gnosis.io/developers](https://www.gnosis.io/developers)
 
+{% endtab %}
+
 
 <!--GNOSIS_CHAIN_DETAILS-->
 
 <!--BASE_CHAIN_DETAILS-->
 
-
-# Base
+{% tab title="Base" %}
 
 ## Wormhole Details
 
@@ -999,13 +1015,14 @@ The options for `consistency_level` (i.e finality) are:
 
 - [https://docs.base.org/](https://docs.base.org/)
 
+{% endtab %}
+
 
 <!--BASE_CHAIN_DETAILS-->
 
 <!--SEPOLIA_CHAIN_DETAILS-->
 
-
-# sepolia
+{% tab title="sepolia" %}
 
 ## Wormhole Details
 
@@ -1055,5 +1072,8 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--SEPOLIA_CHAIN_DETAILS-->
+{% endtabs %}

@@ -1,10 +1,10 @@
 Details for working with the NEAR environment chains
 
+{% tabs %}
 
 <!--NEAR_CHAIN_DETAILS-->
 
-
-# NEAR
+{% tab title="NEAR" %}
 
 ## Wormhole Details
 
@@ -61,5 +61,9 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+{% endtab %}
+
 
 <!--NEAR_CHAIN_DETAILS-->
+
+{% endtabs %}
