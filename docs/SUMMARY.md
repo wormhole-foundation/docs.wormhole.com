@@ -41,7 +41,7 @@
 * [Glossary](./reference/glossary.md)
 * [Environments](./reference/environments/README.md)
   * [Algorand](./reference/environments/algorand.md)
-  * [Aptos](./reference/environments/aptos.md)
+  * [Move](./reference/environments/move.md)
   * [CosmWasm](./reference/environments/cosmwasm.md)
   * [EVM](./reference/environments/evm.md)
   * [Near](./reference/environments/near.md)
