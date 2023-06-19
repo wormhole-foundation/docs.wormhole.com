@@ -15,6 +15,7 @@ Wormhole supports a number of different blockchains and environments. Since many
 - [Algorand](./algorand.md)
 - [Near](./near.md)
 - [Aptos](./aptos.md)
+- [Sui](./sui.md)
 
 
 ## Blockchains Supported
