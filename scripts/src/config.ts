@@ -6,12 +6,12 @@ const testnetContracts: wh.ChainContracts = wh.CONTRACTS.TESTNET;
 const devnetContracts: wh.ChainContracts = wh.CONTRACTS.DEVNET;
 
 // Many chains have the same underlying runtime
-export type ChainType = "EVM" | "Solana" | "CosmWasm" | "Terra" | "";
+export type ChainType = "EVM" | "Solana" | "CosmWasm" | "Sui" | "Aptos" | "Algorand" | "";
 
 export function getChainType(cid: wh.ChainId): ChainType {
   if (wh.isEVMChain(cid)) return "EVM";
   if (wh.isTerraChain(cid)) return "CosmWasm";
-  if (wh.isTerraChain(cid)) return "Terra";
+  //if (wh.isTerraChain(cid)) return "Terra";
   //if(wh.isSolanaChain(cid) in wh.SolanaChainName)
   return "";
 }
@@ -80,6 +80,10 @@ export function getDocChains(): DocChain[] {
 
     const details = getChainDetails(name);
 
+    if(name ==="wormchain"){
+      continue
+    }
+
     const docChain = {
       name: cn,
       id: cid,
@@ -94,5 +98,6 @@ export function getDocChains(): DocChain[] {
     chains.push(docChain);
   }
 
-  return chains;
+  return chains.sort((a, b)=>{ return a.name.localeCompare(b.name) });
+
 }

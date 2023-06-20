@@ -117,7 +117,7 @@ The options for `consistency_level` (i.e finality) are:
 <!--TERRA_CHAIN_DETAILS-->
 
 
-# terra
+# Terra
 
 ## Wormhole Details
 
@@ -173,7 +173,7 @@ The options for `consistency_level` (i.e finality) are:
 <!--TERRA2_CHAIN_DETAILS-->
 
 
-# terra2
+# Terra2
 
 ## Wormhole Details
 
