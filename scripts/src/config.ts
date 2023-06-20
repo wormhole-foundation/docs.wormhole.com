@@ -69,8 +69,14 @@ function getChainDetails(name: string): ExtraDetails {
   return {} as ExtraDetails
 }
 
+
 export function getDocChains(): DocChain[] {
 
+  // Chains we don't want to appear on the docs 
+  const skipChains = {
+    "wormchain":true,
+    "sepolia":true,
+  }
 
   const chains: DocChain[] = [];
   for (const [cn, cid] of Object.entries(wh.CHAINS)) {
@@ -80,9 +86,7 @@ export function getDocChains(): DocChain[] {
 
     const details = getChainDetails(name);
 
-    if(name ==="wormchain"){
-      continue
-    }
+    if(name in skipChains) continue
 
     const docChain = {
       name: cn,

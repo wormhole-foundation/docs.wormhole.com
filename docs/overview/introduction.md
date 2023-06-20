@@ -55,11 +55,15 @@ Consider the following examples of potential applications that are now possible 
 2. Cross chain governance: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.
 3. Cross chain game: A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.
 
-## Supported Blockchains
+# Design Documents
+
+Wormhole's components are designed via specifications that can be found [here](https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers). These outline the reasoning behind design decisions and details specifics in more technical depth.
+
+# Supported Blockchains
 
 Wormhole already supports a number of Blockchain [Environments](../reference/environments/README.md)
 
-### Currently Supported Blockchains
+## Currently Supported Blockchains
 
 <table data-view="cards" data-full-width="false">
    <thead>
@@ -197,11 +201,6 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
     <td><a href="../.gitbook/assets/chain-icons/sei.svg">sei</a></td>
 </tr>
 <tr>
-    <td><strong>sepolia</strong></td>
-    <td><a href="../reference/environments/evm.md#sepolia">evm.md</a></td>
-    <td><a href="../.gitbook/assets/chain-icons/sepolia.png">sepolia</a></td>
-</tr>
-<tr>
     <td><strong>Solana</strong></td>
     <td><a href="../reference/environments/solana.md#solana">solana.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/solana.svg">solana</a></td>
@@ -228,8 +227,3 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
 </tr>
 <!--SUPPORTED_BLOCKCHAIN_CARDS-->
 </tbody></table>
-
-
-# Design Documents
-
-Wormhole's components are designed via specifications that can be found [here](https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers). These outline the reasoning behind design decisions and details specifics in more technical depth.
