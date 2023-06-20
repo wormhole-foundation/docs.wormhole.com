@@ -1,4 +1,5 @@
 import * as cfg from "./config";
+import { chainCard } from "./card"; 
 import * as fs from "fs";
 
 const SRC_BASE = "https://github.com/wormhole-foundation/wormhole/blob/main/";
@@ -217,16 +218,9 @@ async function overwriteGenerated(tag: string, content: string) {
   for (const chain of chains) {
     if (chain.extraDetails !== undefined) {
       // Supported chains for intro page
-      if (
-        chain.extraDetails.title !== undefined &&
-        chain.extraDetails.homepage !== undefined
-      ) {
-        supportedChains.push(
-          ` - [${chain.extraDetails.title}](${chain.extraDetails.homepage})`
-        );
-      }
-      // Chain specific pages
+      supportedChains.push(chainCard(chain));
 
+      // Chain specific pages
       chainPages[chain.name] = makeChainPage(chain);
 
       //
@@ -241,13 +235,8 @@ async function overwriteGenerated(tag: string, content: string) {
   // TODO: concurrent? will that wreck anything?
   // find tags _first_ in one pass and come back to fill them in?
   // currently this searches docs every time we call it
-  await overwriteGenerated(
-    "SUPPORTED_BLOCKCHAIN_LIST",
-    supportedChains.join("\n")
-  );
-
+  await overwriteGenerated( "SUPPORTED_BLOCKCHAIN_CARDS", supportedChains.join("\n"));
   await overwriteGenerated("FINALITY_TABLE", finalityTable.join("\n"));
-
   for (const [chainName, chainPage] of Object.entries(chainPages)) {
     await overwriteGenerated(
       `${chainName.toUpperCase()}_CHAIN_DETAILS`,
