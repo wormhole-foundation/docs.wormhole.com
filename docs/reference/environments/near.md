@@ -3,8 +3,19 @@ Details for working with the NEAR environment chains
 
 <!--NEAR_CHAIN_DETAILS-->
 
-
 # NEAR
+
+## Ecosystem
+
+[Web site](https://near.org/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -20,10 +31,6 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Finalized|0|
-
-
-
-
 
 ### Mainnet Contracts
 
@@ -48,18 +55,6 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`wormhole.test.near`|
 |Token Bridge|`token.test.near`|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://near.org/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--NEAR_CHAIN_DETAILS-->

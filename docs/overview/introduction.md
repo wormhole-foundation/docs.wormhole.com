@@ -116,11 +116,6 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
     <td><a href="../.gitbook/assets/chain-icons/bsc.svg">bsc</a></td>
 </tr>
 <tr>
-    <td><strong>btc</strong></td>
-    <td><a href="../reference/environments/btc.md#btc">btc.md</a></td>
-    <td><a href="../.gitbook/assets/chain-icons/btc.svg">btc</a></td>
-</tr>
-<tr>
     <td><strong>Celo</strong></td>
     <td><a href="../reference/environments/evm.md#celo">evm.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/celo.svg">celo</a></td>

@@ -4,8 +4,19 @@ Details for working with EVM environment chains.
 
 <!--ETHEREUM_CHAIN_DETAILS-->
 
-
 # Ethereum
+
+## Ecosystem
+
+[Web site](https://ethereum.org/)
+
+### Block Explorers
+
+- [https://etherscan.io/](https://etherscan.io/)
+
+## Developer
+
+- [https://ethereum.org/en/developers/docs/](https://ethereum.org/en/developers/docs/)
 
 ## Wormhole Details
 
@@ -22,10 +33,7 @@ The options for `consistency_level` (i.e finality) are:
 |-----|-----|
 |Instant|200|
 |Safe|201|
-
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-
 
 ### Mainnet Contracts
 
@@ -50,26 +58,25 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
-
-## Ecosystem
-
-[Web site](https://ethereum.org/)
-
-### Block Explorers
-
-- [https://etherscan.io/](https://etherscan.io/)
-
-## Developer
-
-- [https://ethereum.org/en/developers/docs/](https://ethereum.org/en/developers/docs/)
-
+  
 
 <!--ETHEREUM_CHAIN_DETAILS-->
 
 <!--BSC_CHAIN_DETAILS-->
 
-
 # BNB Smart Chain (BSC)
+
+## Ecosystem
+
+[Web site](https://www.bnbchain.org/en/smartChain)
+
+### Block Explorers
+
+- [Etherscan](https://bscscan.com/)
+
+## Developer
+
+- [https://docs.bnbchain.org/docs/learn/intro](https://docs.bnbchain.org/docs/learn/intro)
 
 ## Wormhole Details
 
@@ -85,10 +92,7 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Instant|200|
-
 If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
-
-
 
 ### Mainnet Contracts
 
@@ -113,26 +117,25 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
-
-## Ecosystem
-
-[Web site](https://www.bnbchain.org/en/smartChain)
-
-### Block Explorers
-
-- [Etherscan](https://bscscan.com/)
-
-## Developer
-
-- [https://docs.bnbchain.org/docs/learn/intro](https://docs.bnbchain.org/docs/learn/intro)
-
+  
 
 <!--BSC_CHAIN_DETAILS-->
 
 <!--POLYGON_CHAIN_DETAILS-->
 
-
 # Polygon
+
+## Ecosystem
+
+[Web site](https://polygon.technology/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -148,10 +151,7 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Instant|200|
-
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-
 
 ### Mainnet Contracts
 
@@ -176,26 +176,26 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://polygon.technology/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--POLYGON_CHAIN_DETAILS-->
 
 <!--AVALANCHE_CHAIN_DETAILS-->
 
-
 # Avalanche
+
+## Ecosystem
+
+[Web site](https://www.avax.network/)
+
+### Block Explorers
+
+- [C-Chain Block Explorer](https://snowtrace.io/)
+- [https://subnets.avax.network/](https://subnets.avax.network/)
+
+## Developer
+
+- [https://docs.avax.network/](https://docs.avax.network/)
 
 ## Wormhole Details
 
@@ -232,27 +232,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://www.avax.network/)
-
-### Block Explorers
-
-- [C-Chain Block Explorer](https://snowtrace.io/)
-- [https://subnets.avax.network/](https://subnets.avax.network/)
-
-## Developer
-
-- [https://docs.avax.network/](https://docs.avax.network/)
-
+  
 
 <!--AVALANCHE_CHAIN_DETAILS-->
 
 <!--OASIS_CHAIN_DETAILS-->
 
-
 # Oasis
+
+## Ecosystem
+
+[Web site](https://oasisprotocol.org/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -289,26 +287,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://oasisprotocol.org/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--OASIS_CHAIN_DETAILS-->
 
 <!--AURORA_CHAIN_DETAILS-->
 
-
 # Aurora
+
+## Ecosystem
+
+[Web site](https://aurora.dev/)
+
+### Block Explorers
+
+- [Block Explorer](https://explorer.aurora.dev/)
+
+## Developer
+
+- [Developer docs](https://doc.aurora.dev/)
 
 ## Wormhole Details
 
@@ -345,26 +342,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://aurora.dev/)
-
-### Block Explorers
-
-- [Block Explorer](https://explorer.aurora.dev/)
-
-## Developer
-
-- [Developer docs](https://doc.aurora.dev/)
-
+  
 
 <!--AURORA_CHAIN_DETAILS-->
 
 <!--FANTOM_CHAIN_DETAILS-->
 
-
 # Fantom
+
+## Ecosystem
+
+[Web site](https://fantom.foundation/)
+
+### Block Explorers
+
+- [https://ftmscan.com/](https://ftmscan.com/)
+
+## Developer
+
+- [https://docs.fantom.foundation/](https://docs.fantom.foundation/)
 
 ## Wormhole Details
 
@@ -401,26 +397,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://fantom.foundation/)
-
-### Block Explorers
-
-- [https://ftmscan.com/](https://ftmscan.com/)
-
-## Developer
-
-- [https://docs.fantom.foundation/](https://docs.fantom.foundation/)
-
+  
 
 <!--FANTOM_CHAIN_DETAILS-->
 
 <!--KARURA_CHAIN_DETAILS-->
 
-
 # Karura
+
+## Ecosystem
+
+[Web site](https://acala.network/karura)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -436,10 +431,7 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Instant|200|
-
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-
 
 ### Mainnet Contracts
 
@@ -464,27 +456,27 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://acala.network/karura)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--KARURA_CHAIN_DETAILS-->
 
 
 <!--ACALA_CHAIN_DETAILS-->
 
-
 # Acala
+
+## Ecosystem
+
+[Web site](https://acala.network/)
+
+### Block Explorers
+
+- [https://acala.subscan.io/](https://acala.subscan.io/)
+- [https://blockscout.acala.network/](https://blockscout.acala.network/)
+
+## Developer
+
+- [https://evmdocs.acala.network/](https://evmdocs.acala.network/)
 
 ## Wormhole Details
 
@@ -521,27 +513,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://acala.network/)
-
-### Block Explorers
-
-- [https://acala.subscan.io/](https://acala.subscan.io/)
-- [https://blockscout.acala.network/](https://blockscout.acala.network/)
-
-## Developer
-
-- [https://evmdocs.acala.network/](https://evmdocs.acala.network/)
-
+  
 
 <!--ACALA_CHAIN_DETAILS-->
 
 <!--KLAYTN_CHAIN_DETAILS-->
 
-
 # Klaytn
+
+## Ecosystem
+
+[Web site](https://klaytn.foundation/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -578,26 +568,26 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://klaytn.foundation/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--KLAYTN_CHAIN_DETAILS-->
 
 <!--CELO_CHAIN_DETAILS-->
 
-
 # Celo
+
+## Ecosystem
+
+[Web site](https://celo.org/)
+
+### Block Explorers
+
+- [https://explorer.celo.org/mainnet/](https://explorer.celo.org/mainnet/)
+- [https://celoscan.io/](https://celoscan.io/)
+
+## Developer
+
+- [https://docs.celo.org/](https://docs.celo.org/)
 
 ## Wormhole Details
 
@@ -634,27 +624,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://celo.org/)
-
-### Block Explorers
-
-- [https://explorer.celo.org/mainnet/](https://explorer.celo.org/mainnet/)
-- [https://celoscan.io/](https://celoscan.io/)
-
-## Developer
-
-- [https://docs.celo.org/](https://docs.celo.org/)
-
+  
 
 <!--CELO_CHAIN_DETAILS-->
 
 <!--MOONBEAM_CHAIN_DETAILS-->
 
-
 # Moonbeam
+
+## Ecosystem
+
+[Web site](https://moonbeam.network/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -691,10 +679,17 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
+  
+
+<!--MOONBEAM_CHAIN_DETAILS-->
+
+<!--NEON_CHAIN_DETAILS-->
+
+# Neon
 
 ## Ecosystem
 
-[Web site](https://moonbeam.network/)
+[Web site](https://neon-labs.org/)
 
 ### Block Explorers
 
@@ -703,14 +698,6 @@ The options for `consistency_level` (i.e finality) are:
 ## Developer
 
 
-
-
-<!--MOONBEAM_CHAIN_DETAILS-->
-
-<!--NEON_CHAIN_DETAILS-->
-
-
-# Neon
 
 ## Wormhole Details
 
@@ -747,26 +734,25 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://neon-labs.org/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--NEON_CHAIN_DETAILS-->
 
 <!--ARBITRUM_CHAIN_DETAILS-->
 
-
 # Arbitrum
+
+## Ecosystem
+
+[Web site](https://arbitrum.io/)
+
+### Block Explorers
+
+- [Arbitrum Explorer](https://arbiscan.io/)
+
+## Developer
+
+- [Developer Docs](https://developer.arbitrum.io/getting-started-devs)
 
 ## Wormhole Details
 
@@ -782,10 +768,7 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Instant|200|
-
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-
 
 ### Mainnet Contracts
 
@@ -810,26 +793,25 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://arbitrum.io/)
-
-### Block Explorers
-
-- [Arbitrum Explorer](https://arbiscan.io/)
-
-## Developer
-
-- [Developer Docs](https://developer.arbitrum.io/getting-started-devs)
-
+  
 
 <!--ARBITRUM_CHAIN_DETAILS-->
 
 <!--OPTIMISM_CHAIN_DETAILS-->
 
-
 # Optimisim
+
+## Ecosystem
+
+[Web site](https://www.optimism.io/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -845,10 +827,7 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Instant|200|
-
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-
 
 ### Mainnet Contracts
 
@@ -873,10 +852,17 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
+  
+
+<!--OPTIMISM_CHAIN_DETAILS-->
+
+<!--GNOSIS_CHAIN_DETAILS-->
+
+# Gnosis
 
 ## Ecosystem
 
-[Web site](https://www.optimism.io/)
+[Web site](https://www.gnosis.io/)
 
 ### Block Explorers
 
@@ -884,15 +870,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ## Developer
 
-
-
-
-<!--OPTIMISM_CHAIN_DETAILS-->
-
-<!--GNOSIS_CHAIN_DETAILS-->
-
-
-# Gnosis
+- [https://www.gnosis.io/developers](https://www.gnosis.io/developers)
 
 ## Wormhole Details
 
@@ -929,26 +907,26 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://www.gnosis.io/)
-
-### Block Explorers
-
-
-
-## Developer
-
-- [https://www.gnosis.io/developers](https://www.gnosis.io/developers)
-
+  
 
 <!--GNOSIS_CHAIN_DETAILS-->
 
 <!--BASE_CHAIN_DETAILS-->
 
-
 # Base
+
+## Ecosystem
+
+[Web site](https://base.org/)
+
+### Block Explorers
+
+- [Etherscan](https://goerli.basescan.org/)
+- [Blockscout](https://base-goerli.blockscout.com/)
+
+## Developer
+
+- [https://docs.base.org/](https://docs.base.org/)
 
 ## Wormhole Details
 
@@ -985,20 +963,7 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://base.org/)
-
-### Block Explorers
-
-- [Etherscan](https://goerli.basescan.org/)
-- [Blockscout](https://base-goerli.blockscout.com/)
-
-## Developer
-
-- [https://docs.base.org/](https://docs.base.org/)
-
+  
 
 <!--BASE_CHAIN_DETAILS-->
 

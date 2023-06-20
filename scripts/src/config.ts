@@ -76,6 +76,7 @@ export function getDocChains(): DocChain[] {
   const skipChains = {
     "wormchain":true,
     "sepolia":true,
+    "btc":true,
   }
 
   const chains: DocChain[] = [];

@@ -4,8 +4,19 @@ Details for working with CosmWasm environment chains.
 
 <!--INJECTIVE_CHAIN_DETAILS-->
 
-
 # Injective
+
+## Ecosystem
+
+[Web site](https://injective.com/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -42,10 +53,17 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
+  
+
+<!--INJECTIVE_CHAIN_DETAILS-->
+
+<!--OSMOSIS_CHAIN_DETAILS-->
+
+# Osmosis
 
 ## Ecosystem
 
-[Web site](https://injective.com/)
+[Web site](https://osmosis.zone/)
 
 ### Block Explorers
 
@@ -55,13 +73,60 @@ The options for `consistency_level` (i.e finality) are:
 
 
 
+## Wormhole Details
 
-<!--INJECTIVE_CHAIN_DETAILS-->
+- **Name**: `osmosis`
+- **Chain ID**: `20`
+- **Contract Source**: 
+
+### Consistency Levels
+
+The options for `consistency_level` (i.e finality) are:
+
+
+
+### Mainnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|`osmo1hggkxr0hpw83f8vuft7ruvmmamsxmwk2hzz6nytdkzyup9krt0dq27sgyx`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Devnet Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--OSMOSIS_CHAIN_DETAILS-->
 
 <!--SEI_CHAIN_DETAILS-->
 
-
 # Sei
+
+## Ecosystem
+
+[Web site](https://www.sei.io/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -98,10 +163,17 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
+  
+
+<!--SEI_CHAIN_DETAILS-->
+
+<!--TERRA_CHAIN_DETAILS-->
+
+# Terra
 
 ## Ecosystem
 
-[Web site](https://www.sei.io/)
+
 
 ### Block Explorers
 
@@ -110,14 +182,6 @@ The options for `consistency_level` (i.e finality) are:
 ## Developer
 
 
-
-
-<!--SEI_CHAIN_DETAILS-->
-
-<!--TERRA_CHAIN_DETAILS-->
-
-
-# Terra
 
 ## Wormhole Details
 
@@ -154,6 +218,13 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`terra18vd8fpwxzck93qlwghaj6arh4p7c5n896xzem5`|
 |Token Bridge|`terra10pyejy66429refv3g35g2t7am0was7ya7kz2a4`|
 |NFT Bridge|`terra1plju286nnfj3z54wgcggd4enwaa9fgf5kgrgzl`|
+  
+
+<!--TERRA_CHAIN_DETAILS-->
+
+<!--TERRA2_CHAIN_DETAILS-->
+
+# Terra2
 
 ## Ecosystem
 
@@ -166,14 +237,6 @@ The options for `consistency_level` (i.e finality) are:
 ## Developer
 
 
-
-
-<!--TERRA_CHAIN_DETAILS-->
-
-<!--TERRA2_CHAIN_DETAILS-->
-
-
-# Terra2
 
 ## Wormhole Details
 
@@ -210,6 +273,13 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`terra14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9ssrc8au`|
 |Token Bridge|`terra1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrquka9l6`|
 |NFT Bridge|**N/A**|
+  
+
+<!--TERRA2_CHAIN_DETAILS-->
+
+<!--XPLA_CHAIN_DETAILS-->
+
+# xpla
 
 ## Ecosystem
 
@@ -222,14 +292,6 @@ The options for `consistency_level` (i.e finality) are:
 ## Developer
 
 
-
-
-<!--TERRA2_CHAIN_DETAILS-->
-
-<!--XPLA_CHAIN_DETAILS-->
-
-
-# xpla
 
 ## Wormhole Details
 
@@ -266,18 +328,6 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--XPLA_CHAIN_DETAILS-->
