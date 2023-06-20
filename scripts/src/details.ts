@@ -16,10 +16,10 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
     const { name, id, extraDetails } = chain;
     const { mainnet, testnet, devnet } = chain;
   
-    let webpage = "";
-    let explorerLinks = "";
-    let devdocs = "";
-    let src = "";
+    let webpage = "No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
+    let explorerLinks = "No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
+    let devdocs = "No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
+    let src = "No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)"
     let finalityOptions = "";
   
     let title = extraDetails?.title || name;
@@ -39,16 +39,16 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
         const explorers = [];
         for (const exp of explorer) {
           explorers.push(
-            `- [${exp.description ? exp.description : exp.url}](${exp.url})`
+            `[${exp.description ? exp.description : exp.url}](${exp.url})`
           );
         }
-        explorerLinks = explorers.join("\n");
+        explorerLinks = explorers.join(" | ");
       }
   
       if (extraDetails.developer !== undefined) {
         const docs = [];
         for (const dd of extraDetails.developer.docs) {
-          docs.push(`- [${dd.description ? dd.description : dd.url}](${dd.url})`);
+          docs.push(`[${dd.description ? dd.description : dd.url}](${dd.url})`);
         }
         devdocs = docs.join("\n");
       }
@@ -69,9 +69,8 @@ If a value is passed that is _not_ in the set above it's assumed to mean ${other
           Finalized: fmtNum(finalized),
         };
   
-        finalityOptions = `
-|Level|Value|
-|-----|-----|`;
+        finalityOptions = `|Level|Value|\n|-----|-----|`;
+
         for (const [level, value] of Object.entries(settingTexts)) {
           if (value) finalityOptions += `\n|${level}|${value}|`;
         }
@@ -86,15 +85,9 @@ If a value is passed that is _not_ in the set above it's assumed to mean ${other
 
 ## Ecosystem
 
-${webpage}
-
-### Block Explorers
-
-${explorerLinks}
-
-## Developer
-
-${devdocs}
+- ${webpage}
+- ${explorerLinks}
+- ${devdocs}
 
 ## Wormhole Details
 

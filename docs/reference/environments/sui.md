@@ -5,26 +5,19 @@
 
 ## Ecosystem
 
-[Web site](https://sui.io/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- [Web site](https://sui.io/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `sui`
 - **Chain ID**: `21`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
 The options for `consistency_level` (i.e finality) are:
-
 
 |Level|Value|
 |-----|-----|

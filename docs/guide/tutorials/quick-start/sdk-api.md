@@ -11,7 +11,7 @@ The [Typescript SDK](../../../reference/sdk-docs/README.md) provides the base fu
 
 Here we'll walk though the use of the SDK to perform a token transfer between Ethereum and Solana.
 
-The source code for this tutorial is available [here](https://github.com/wormhole/wormhole-examples)
+The source code for this tutorial is available [here](https://github.com/wormhole-foundation/wormhole-examples)
 
 ## Installation
 

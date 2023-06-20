@@ -8,21 +8,15 @@ Details for working with CosmWasm environment chains.
 
 ## Ecosystem
 
-[Web site](https://injective.com/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- [Web site](https://injective.com/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `injective`
 - **Chain ID**: `19`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
@@ -63,21 +57,15 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-[Web site](https://osmosis.zone/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- [Web site](https://osmosis.zone/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `osmosis`
 - **Chain ID**: `20`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
@@ -118,21 +106,15 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-[Web site](https://www.sei.io/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- [Web site](https://www.sei.io/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `sei`
 - **Chain ID**: `32`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
@@ -173,21 +155,15 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `terra`
 - **Chain ID**: `3`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
@@ -228,21 +204,15 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `terra2`
 - **Chain ID**: `18`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
@@ -283,21 +253,15 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `xpla`
 - **Chain ID**: `28`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 

@@ -7,26 +7,19 @@ Details for working with the Solana environment chains
 
 ## Ecosystem
 
-[Web site](https://solana.com/)
-
-### Block Explorers
-
-
-
-## Developer
-
+- [Web site](https://solana.com/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 - [https://solana.com/developers](https://solana.com/developers)
 
 ## Wormhole Details
 
 - **Name**: `solana`
 - **Chain ID**: `1`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
 The options for `consistency_level` (i.e finality) are:
-
 
 |Level|Value|
 |-----|-----|
@@ -66,26 +59,19 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Ecosystem
 
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ## Wormhole Details
 
 - **Name**: `pythnet`
 - **Chain ID**: `26`
-- **Contract Source**: 
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
 ### Consistency Levels
 
 The options for `consistency_level` (i.e finality) are:
-
 
 |Level|Value|
 |-----|-----|

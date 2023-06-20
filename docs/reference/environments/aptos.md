@@ -5,15 +5,8 @@
 
 ## Ecosystem
 
-[Web site](https://aptosfoundation.org/)
-
-### Block Explorers
-
-- [Aptos Explorer](https://explorer.aptoslabs.com/)
-- [AptoScan](https://aptoscan.com/)
-
-## Developer
-
+- [Web site](https://aptosfoundation.org/)
+- [Aptos Explorer](https://explorer.aptoslabs.com/) | [AptoScan](https://aptoscan.com/)
 - [Developer Docs](https://aptos.dev/)
 
 ## Wormhole Details
@@ -25,7 +18,6 @@
 ### Consistency Levels
 
 The options for `consistency_level` (i.e finality) are:
-
 
 |Level|Value|
 |-----|-----|
