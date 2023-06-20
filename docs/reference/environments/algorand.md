@@ -3,8 +3,20 @@ Details for working with Algorand environment chains.
 
 <!--ALGORAND_CHAIN_DETAILS-->
 
-
 # Algorand
+
+## Ecosystem
+
+[Web site](https://algorand.com)
+
+### Block Explorers
+
+- [Algoexplorer](https://algoexplorer.io/)
+- [AlgoScan](https://algoscan.app)
+
+## Developer
+
+- [Developer Docs](https://developer.algorand.org)
 
 ## Wormhole Details
 
@@ -20,10 +32,6 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Finalized|0|
-
-
-
-
 
 ### Mainnet Contracts
 
@@ -48,19 +56,6 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`4`|
 |Token Bridge|`6`|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://algorand.com)
-
-### Block Explorers
-
-- [Algoexplorer](https://algoexplorer.io/)
-- [AlgoScan](https://algoscan.app)
-
-## Developer
-
-- [Developer Docs](https://developer.algorand.org)
-
+  
 
 <!--ALGORAND_CHAIN_DETAILS-->

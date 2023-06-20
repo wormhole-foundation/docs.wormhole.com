@@ -1,7 +1,19 @@
+
 <!--SUI_CHAIN_DETAILS-->
 
-
 # Sui
+
+## Ecosystem
+
+[Web site](https://sui.io/)
+
+### Block Explorers
+
+
+
+## Developer
+
+
 
 ## Wormhole Details
 
@@ -17,10 +29,6 @@ The options for `consistency_level` (i.e finality) are:
 |Level|Value|
 |-----|-----|
 |Finalized|0|
-
-
-
-
 
 ### Mainnet Contracts
 
@@ -45,18 +53,6 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`0x5a5160ca3c2037f4b4051344096ef7a48ebf4400b3f385e57ea90e1628a8bde0`|
 |Token Bridge|`0xa6a3da85bbe05da5bfd953708d56f1a3a023e7fb58e5a824a3d4de3791e8f690`|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-[Web site](https://sui.io/)
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--SUI_CHAIN_DETAILS-->

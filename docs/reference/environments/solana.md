@@ -3,8 +3,19 @@ Details for working with the Solana environment chains
 
 <!--SOLANA_CHAIN_DETAILS-->
 
-
 # Solana
+
+## Ecosystem
+
+[Web site](https://solana.com/)
+
+### Block Explorers
+
+
+
+## Developer
+
+- [https://solana.com/developers](https://solana.com/developers)
 
 ## Wormhole Details
 
@@ -21,10 +32,6 @@ The options for `consistency_level` (i.e finality) are:
 |-----|-----|
 |Confirmed|0|
 |Finalized|1|
-
-
-
-
 
 ### Mainnet Contracts
 
@@ -49,10 +56,17 @@ The options for `consistency_level` (i.e finality) are:
 |Core|`Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o`|
 |Token Bridge|`B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE`|
 |NFT Bridge|`NFTWqJR8YnRVqPDvTJrYuLrQDitTG5AScqbeghi4zSA`|
+  
+
+<!--SOLANA_CHAIN_DETAILS-->
+
+<!--PYTHNET_CHAIN_DETAILS-->
+
+# pythnet
 
 ## Ecosystem
 
-[Web site](https://solana.com/)
+
 
 ### Block Explorers
 
@@ -60,15 +74,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ## Developer
 
-- [https://solana.com/developers](https://solana.com/developers)
 
-
-<!--SOLANA_CHAIN_DETAILS-->
-
-<!--PYTHNET_CHAIN_DETAILS-->
-
-
-# pythnet
 
 ## Wormhole Details
 
@@ -85,10 +91,6 @@ The options for `consistency_level` (i.e finality) are:
 |-----|-----|
 |Confirmed|0|
 |Finalized|1|
-
-
-
-
 
 ### Mainnet Contracts
 
@@ -113,18 +115,6 @@ The options for `consistency_level` (i.e finality) are:
 |Core|**N/A**|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
-
-## Ecosystem
-
-
-
-### Block Explorers
-
-
-
-## Developer
-
-
-
+  
 
 <!--PYTHNET_CHAIN_DETAILS-->
