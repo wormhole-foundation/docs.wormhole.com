@@ -7,15 +7,8 @@ Details for working with Algorand environment chains.
 
 ## Ecosystem
 
-[Web site](https://algorand.com)
-
-### Block Explorers
-
-- [Algoexplorer](https://algoexplorer.io/)
-- [AlgoScan](https://algoscan.app)
-
-## Developer
-
+- [Web site](https://algorand.com)
+- [Algoexplorer](https://algoexplorer.io/) | [AlgoScan](https://algoscan.app)
 - [Developer Docs](https://developer.algorand.org)
 
 ## Wormhole Details
@@ -27,7 +20,6 @@ Details for working with Algorand environment chains.
 ### Consistency Levels
 
 The options for `consistency_level` (i.e finality) are:
-
 
 |Level|Value|
 |-----|-----|

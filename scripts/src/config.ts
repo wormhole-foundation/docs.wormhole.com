@@ -9,12 +9,20 @@ const devnetContracts: wh.ChainContracts = wh.CONTRACTS.DEVNET;
 export type ChainType = "EVM" | "Solana" | "CosmWasm" | "Sui" | "Aptos" | "Algorand" | "";
 
 export function getChainType(cid: wh.ChainId): ChainType {
-  if (wh.isEVMChain(cid)) return "EVM";
-  if (wh.isTerraChain(cid)) return "CosmWasm";
-  //if (wh.isTerraChain(cid)) return "Terra";
+  if(wh.isEVMChain(cid)) return "EVM";
+  if(wh.isCosmWasmChain(cid) || wh.isTerraChain(cid)) return "CosmWasm"
   //if(wh.isSolanaChain(cid) in wh.SolanaChainName)
+
+  const name = wh.coalesceChainName(cid);
+
+  if(name === "solana"  || name === "pythnet") return "Solana"
+  if(name === "algorand") return "Algorand"
+  if(name === "aptos") return "Aptos"
+  if(name === "sui") return "Sui"
+
   return "";
 }
+
 
 export type DocChain = {
   name: string;
@@ -57,6 +65,7 @@ export interface ExtraDetails {
   explorer?: SiteDescription[] // urls to explorer sites
   developer?: DeveloperDetails // set of sites to help devs
   contractSource?: string // url to core contract
+  examples?:SiteDescription[]
 };
 
 function getChainDetails(name: string): ExtraDetails {

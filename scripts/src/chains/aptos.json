@@ -19,6 +19,7 @@
       }
     ]
   },
+  "examples":[{"url": "https://github.com/wormhole-foundation/wormhole/tree/main/aptos/examples", "description": "Message passing on Aptos" }],
   "contractSource": "aptos/wormhole/sources/wormhole.move",
   "finality": {
     "finalized": 0

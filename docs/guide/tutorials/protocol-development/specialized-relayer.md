@@ -1,4 +1,3 @@
-# Automatic Relayer
 
 {% hint style="danger" %}
 This tutorial is incomplete

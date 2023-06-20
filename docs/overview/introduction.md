@@ -137,7 +137,7 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
 </tr>
 <tr>
     <td><strong>Injective</strong></td>
-    <td><a href="../reference/environments/injective.md#injective">injective.md</a></td>
+    <td><a href="../reference/environments/cosmwasm.md#injective">cosmwasm.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/injective.svg">injective</a></td>
 </tr>
 <tr>
@@ -187,12 +187,12 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
 </tr>
 <tr>
     <td><strong>pythnet</strong></td>
-    <td><a href="../reference/environments/pythnet.md#pythnet">pythnet.md</a></td>
+    <td><a href="../reference/environments/solana.md#pythnet">solana.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/pythnet.svg">pythnet</a></td>
 </tr>
 <tr>
     <td><strong>Sei</strong></td>
-    <td><a href="../reference/environments/sei.md#sei">sei.md</a></td>
+    <td><a href="../reference/environments/cosmwasm.md#sei">cosmwasm.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/sei.svg">sei</a></td>
 </tr>
 <tr>
@@ -217,7 +217,7 @@ Wormhole already supports a number of Blockchain [Environments](../reference/env
 </tr>
 <tr>
     <td><strong>xpla</strong></td>
-    <td><a href="../reference/environments/xpla.md#xpla">xpla.md</a></td>
+    <td><a href="../reference/environments/cosmwasm.md#xpla">cosmwasm.md</a></td>
     <td><a href="../.gitbook/assets/chain-icons/xpla.svg">xpla</a></td>
 </tr>
 <!--SUPPORTED_BLOCKCHAIN_CARDS-->
