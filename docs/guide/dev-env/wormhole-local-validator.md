@@ -43,23 +43,59 @@ To run Solana chains you will need [Solana](https://docs.solana.com/cli/install-
 
 ## Run EVM Chains
 
-`npm run evm` will start up two EVM chains with Wormhole Chain ID 2 (like ETH) and Wormhole Chain ID 4 (like BSC) and deploy the Wormhole Core Bridge (`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`), Token Bridge (`0x0290FB167208Af455bB137780163b7B7a9a10C16`), and NFT Bridge (`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`) contracts to them. They'll also deploy a Test Token (TKN at `0x2D8BE6BF0baA74e0A907016679CaE9190e80dD0A`), test NFT (`0x5b9b42d6e4B2e4Bf8d42Eba32D46918e10899B66`), and WETH Contract (`0xDDb64fE46a91D46ee29420539FC25FD07c5FEa3E`) as well.
+In the terminal, run
 
-They'll use the standard Wormhole test mnemonic (`myth like bonus scare over problem client lizard pioneer submit female collect`) and use the first key for deployment and payment (Public Key: `0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1`, Private Key: (`0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`))
+```sh
+npm run evm
+``` 
+
+This will start up two EVM chains, one with Wormhole Chain ID 2 (like ETH) and one with Wormhole Chain ID 4 (like BSC).
+
+It will then deploy the contracts for
+
+  - The Wormhole Core Bridge (`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`)
+  - The Token Bridge (`0x0290FB167208Af455bB137780163b7B7a9a10C16`)
+  - The NFT Bridge (`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`)  
+
+It will also take care of deploying
+
+  - A Test Token (TKN at `0x2D8BE6BF0baA74e0A907016679CaE9190e80dD0A`)
+  - A Test NFT (`0x5b9b42d6e4B2e4Bf8d42Eba32D46918e10899B66`)
+  - A  WETH Contract (`0xDDb64fE46a91D46ee29420539FC25FD07c5FEa3E`)
+
+They'll use the standard Wormhole test mnemonic and the first key for deployment and payment.
+
+- **Mnemonic**: `myth like bonus scare over problem client lizard pioneer submit female collect`
+- **Public Key**: `0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1` 
+- **Private Key**: `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
 
 ## Run Solana Chain
 
-`npm run solana` will start up a Solana chain and load in Core Bridge (`Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o`) and Token Bridge (`B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE`) accounts.
+In the terminal, run
+
+```sh
+npm run solana
+``` 
+This will start up a Solana chain and (chain id 1).
 
 <!-- 
 TODO: Add emitter registrations for token bridge.
 -->
 
+It will then deploy 
+- The Core Bridge (`Bridge1p5gheXUvJ6jGWGeCsgPKgnE3YgdGKRVCMY9o`)
+- The Token Bridge (`B6RHG3mfcckmrYN1UhmJzyS1XX3fZKbkeUcpJe9Sy3FE`)
+
+
 ## Run Wormhole
 
 After you have the dependencies installed and the chains running, you can run Wormhole.
 
-Simply run `npm run wormhole`, which will pull and run the Wormhole Guardian docker image.
+To pull down and start the Wormhole Guardian image, run
+
+```sh
+npm run wormhole
+```
 
 ### FAQ & Common Problems
 
