@@ -108,7 +108,7 @@ Find out more about the Wormhole ecosystem
             <td><strong>Architecture</strong></td>
             <td>Dig into the components of the protocol</td>
             <td><a href="./core-concepts.md">core-concepts.md</a></td>
-            <td><a href="../.gitbook/assets/core-concepts/detailed-flow-dark.png">detailed-flow-dark.png</a></td>
+            <td><a href="../.gitbook/assets/core-concepts/detailed-flow.png">detailed-flow.png</a></td>
         </tr>
         <tr>
             <td><strong>Protocol Specifications</strong></td>
