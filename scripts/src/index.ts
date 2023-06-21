@@ -10,10 +10,12 @@ const finalityHeader = `
 |---------|---------------|---------|-------|----|---------|---------|`;
 function makeTableRow(name: string, id: number, finality: cfg.Finality) {
   const { confirmed, finalized, instant, safe, otherwise } = finality;
-  return `|${name}|${id}|${fmtNum(confirmed, 1)}|${fmtNum(instant, 1)}|${fmtNum(
-    safe,
-    1
-  )}|${fmtNum(finalized, 1)}|${otherwise || "-"}|`;
+  return (
+    `|${name}|${id}` +
+    `|${fmtNum(confirmed)}|${fmtNum(instant)}` +
+    `|${fmtNum(safe)}|${fmtNum(finalized)}` +
+    `|${otherwise || " "}|`
+  );
 }
 
 // Matches for tag search
