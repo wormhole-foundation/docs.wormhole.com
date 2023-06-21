@@ -1,6 +1,8 @@
-export function fmtNum(n?: number): string {
-    return n === undefined ? "" : n.toString();
-  }
+
+export function fmtNum(n?: number, pad?: number): number|string {
+    const padStr = pad?"-".repeat(pad):""
+    return n === undefined ? padStr : n;
+}
   
 export function fmtStr(s?: string): string {
     return s === undefined ? "**N/A**" : `\`${s}\``;

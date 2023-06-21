@@ -1,9 +1,8 @@
 import * as cfg from "./config";
 import { fmtNum } from "./util";
 import { chainDetailsPage } from "./details";
-import { chainCard } from "./card"; 
+import { chainCard } from "./card";
 import * as fs from "fs";
-
 
 // Finality table
 const finalityHeader = `
@@ -11,11 +10,11 @@ const finalityHeader = `
 |---------|---------------|---------|-------|----|---------|---------|`;
 function makeTableRow(name: string, id: number, finality: cfg.Finality) {
   const { confirmed, finalized, instant, safe, otherwise } = finality;
-  return `|${name}|${id}|${fmtNum(confirmed)}|${fmtNum(instant)}|${fmtNum(
-    safe
-  )}|${fmtNum(finalized)}|${otherwise || ""}|`;
+  return `|${name}|${id}|${fmtNum(confirmed, 1)}|${fmtNum(instant, 1)}|${fmtNum(
+    safe,
+    1
+  )}|${fmtNum(finalized, 1)}|${otherwise || "-"}|`;
 }
-
 
 // Matches for tag search
 type Match = {
@@ -104,8 +103,14 @@ async function overwriteGenerated(tag: string, content: string) {
   // TODO: concurrent? will that wreck anything?
   // find tags _first_ in one pass and come back to fill them in?
   // currently this searches docs every time we call it
-  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_CARDS", supportedChains.join("\n"));
-  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS", supportedChainsEcosystem.join("\n"));
+  await overwriteGenerated(
+    "SUPPORTED_BLOCKCHAIN_CARDS",
+    supportedChains.join("\n")
+  );
+  await overwriteGenerated(
+    "SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS",
+    supportedChainsEcosystem.join("\n")
+  );
   await overwriteGenerated("FINALITY_TABLE", finalityTable.join("\n"));
   for (const [chainName, chainPage] of Object.entries(chainPages)) {
     await overwriteGenerated(
