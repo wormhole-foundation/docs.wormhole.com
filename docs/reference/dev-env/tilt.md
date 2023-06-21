@@ -197,7 +197,7 @@ Tilt can be treated as an external environment / testnet that you can easily spi
 
 If you've followed the standard setup, all your resources will be bound to various ports on localhost. To see all the endpoints which are being hosted in your Tilt environment, you should check the Tilt dashboard, located at [http://localhost:10350/overview](http://localhost:10350/overview).
 
-All the deployed contract addresses can be found under the 'Devnet' section of the chain being used in the [Environments](../../reference/environments/README.md) pages.
+All the deployed contract addresses can be found under the 'Devnet' section of the chain being used in the [Environments](../environments/README.md) pages.
 
 Useful information pertaining to funded wallets & private keys can also be found in the [devnet.md](https://github.com/wormhole-foundation/wormhole/blob/main/docs/devnet.md) file of the docs.
 

@@ -58,10 +58,9 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
   
         let otherwiseText = "";
         if (otherwise) {
-          otherwiseText = `
-If a value is passed that is _not_ in the set above it's assumed to mean ${otherwise}`;
-
+          otherwiseText = `\nIf a value is passed that is _not_ in the set above it's assumed to mean ${otherwise}`;
         }
+
         let settingTexts = {
           Confirmed: fmtNum(confirmed),
           Instant: fmtNum(instant),
@@ -76,7 +75,6 @@ If a value is passed that is _not_ in the set above it's assumed to mean ${other
         }
   
         finalityOptions += otherwiseText;
-  
       }
     }
   
@@ -97,7 +95,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean ${other
 
 ### Consistency Levels
 
-The options for \`consistency_level\` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 ${finalityOptions}
 
