@@ -57,6 +57,7 @@ Tutorials are available to get started quickly and explain the concepts involved
     </tbody>
 </table>
 
+More tutorials are available [here](../guide/tutorials/README.md).
 
 ## Demos
 
@@ -87,6 +88,8 @@ Demos provide more realistic implementations than Tutorials
     </tbody>
 </table>
 
+More Demos are available [here](../guide/demos/README.md).
+
 ## Research
 
 Find out more about the Wormhole ecosystem 
@@ -116,6 +119,7 @@ Find out more about the Wormhole ecosystem
     </tbody>
 </table>
 
+More resources for learning are available [here](../guide/README.md).
 
 
 # Supported Blockchains
