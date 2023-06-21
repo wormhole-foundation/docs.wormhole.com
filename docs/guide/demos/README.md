@@ -15,7 +15,7 @@ Starter repo and code demos
 
 ### [Wormhole Examples](https://github.com/wormhole-foundation/wormhole-examples)
 
-More example components. Has a mix of relayers, xDapps, NFT projects, and more.
+More example components. Has a mix of relayers, cross chain applications, NFT projects, and more.
 
 ### [Basic Examples](https://github.com/wormhole-foundation/xdapp-book/tree/main/projects)
 

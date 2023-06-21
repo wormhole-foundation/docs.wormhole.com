@@ -91,6 +91,6 @@ To properly parse and verify a batch VAA, always use `parseAndVerifyBatchVM` whi
 
 In most scenarios, you'll want to set `cache` equal to true.
 
-This will return a VM2 object, containing all the 'headless' VAAs contained inside the batch VAA. These headless VAAs can be verified by `parseAndVerifyVM`, which means that modules which verify messages in an xDapp can be agnostic as to whether a message came from a batch VAA or a single VAA.
+This will return a VM2 object, containing all the 'headless' VAAs contained inside the batch VAA. These headless VAAs can be verified by `parseAndVerifyVM`, which means that modules which verify messages in a cross chain application can be agnostic as to whether a message came from a batch VAA or a single VAA.
 
 The [Best Practices](./bestPractices.md) section goes into more depth of how to interact with the coreLayer.

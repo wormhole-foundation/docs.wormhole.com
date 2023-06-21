@@ -67,9 +67,9 @@ function transferNFT(
 
 ## Contract-Controlled Transfers
 
-Basic transfers are intended to transfer xAssets from one wallet to another, whereas Contract Controlled Transfers (CCTs) are meant to transfer xAssets from one smart contract to another. If you're writing an xDapp, CCTs will likely be a large component.
+Basic transfers are intended to transfer xAssets from one wallet to another, whereas Contract Controlled Transfers (CCTs) are meant to transfer xAssets from one smart contract to another. If you're writing a cross chain application, CCTs will likely be a large component.
 
-CCTs allow xDapp contracts to easily perform simple xAsset transfers, but have two additional features:
+CCTs allow cross chain application contracts to easily perform simple xAsset transfers, but have two additional features:
 
 - An arbitrary byte array can be appended to the transfer and can be used to easily pass additional information to the recipient contract.
 - The CCT VAA redeem can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations which the contract wants to perform as part of the redeem transaction must be executed.
