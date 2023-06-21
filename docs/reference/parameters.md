@@ -16,18 +16,18 @@ The `consistency_level` can be considered as a numeric `enum` data type where th
 
 |ChainName|WormholeChainID|Confirmed|Instant|Safe|Finalized|Otherwise|
 |---------|---------------|---------|-------|----|---------|---------|
-|algorand|8|-|-|-|0|-|
-|aptos|22|-|-|-|0|-|
-|arbitrum|23|-|200|-|-|finalized|
-|bsc|4|-|200|-|-|number of blocks|
-|ethereum|2|-|200|201|-|finalized|
-|karura|11|-|200|-|-|finalized|
-|near|15|-|-|-|0|-|
-|optimism|24|-|200|-|-|finalized|
-|polygon|5|-|200|-|-|finalized|
-|pythnet|26|0|-|-|1|-|
-|solana|1|0|-|-|1|-|
-|sui|21|-|-|-|0|-|
+|algorand|8| | | |0| |
+|aptos|22| | | |0| |
+|arbitrum|23| |200| | |finalized|
+|bsc|4| |200| | |number of blocks|
+|ethereum|2| |200|201| |finalized|
+|karura|11| |200| | |finalized|
+|near|15| | | |0| |
+|optimism|24| |200| | |finalized|
+|polygon|5| |200| | |finalized|
+|pythnet|26|0| | |1| |
+|solana|1|0| | |1| |
+|sui|21| | | |0| |
 <!--FINALITY_TABLE-->
 
 

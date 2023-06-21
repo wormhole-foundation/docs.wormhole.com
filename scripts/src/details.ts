@@ -72,7 +72,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean ${other
         finalityOptions = `|Level|Value|\n|-----|-----|`;
 
         for (const [level, value] of Object.entries(settingTexts)) {
-          if (value !== "") finalityOptions += `\n|${level}|${value}|`;
+          if (value !== " ") finalityOptions += `\n|${level}|${value}|`;
         }
   
         finalityOptions += otherwiseText;
