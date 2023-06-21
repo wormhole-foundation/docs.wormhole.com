@@ -78,6 +78,7 @@ async function overwriteGenerated(tag: string, content: string) {
   const chains = cfg.getDocChains();
 
   const supportedChains: string[] = [];
+  const supportedChainsEcosystem: string[] = [];
   const finalityTable: string[] = [finalityHeader];
 
   const chainPages: Record<string, string> = {};
@@ -85,7 +86,8 @@ async function overwriteGenerated(tag: string, content: string) {
   for (const chain of chains) {
     if (chain.extraDetails !== undefined) {
       // Supported chains for intro page
-      supportedChains.push(chainCard(chain));
+      supportedChains.push(chainCard(chain, ".."));
+      supportedChainsEcosystem.push(chainCard(chain, "../.."));
 
       // Chain specific pages
       chainPages[chain.name] = chainDetailsPage(chain);
@@ -102,7 +104,8 @@ async function overwriteGenerated(tag: string, content: string) {
   // TODO: concurrent? will that wreck anything?
   // find tags _first_ in one pass and come back to fill them in?
   // currently this searches docs every time we call it
-  await overwriteGenerated( "SUPPORTED_BLOCKCHAIN_CARDS", supportedChains.join("\n"));
+  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_CARDS", supportedChains.join("\n"));
+  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS", supportedChainsEcosystem.join("\n"));
   await overwriteGenerated("FINALITY_TABLE", finalityTable.join("\n"));
   for (const [chainName, chainPage] of Object.entries(chainPages)) {
     await overwriteGenerated(
