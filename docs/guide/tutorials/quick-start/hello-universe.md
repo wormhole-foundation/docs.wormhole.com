@@ -1,16 +1,10 @@
-### Hello Universe
-
-Cheeky nod to hello world, but since we're wormhole we aren't limited to a single planet.
-
-<!-- 
-[Next steps for this guide: Discuss how to get this cross-chain application deployed onto testnet, and how to run tests locally]
-
-[Another next step for this guide: Have a section at the end about ‘what if I don’t know how much gas my contract will take’ where we talk about refunds and link to an example that uses refunds]
--->
-
 Let’s take a simple HelloWorld solidity application, and take it cross-chain!
 
-### Single-chain HelloWorld solidity contract
+{% hint style="info" %}
+The full source code for this tutorial is available [here](https://github.com/JoeHowarth/hello-wormhole/blob/main/src/HelloWormhole.sol)
+{% endhint %}
+
+## Single-chain HelloWorld solidity contract
 
 This single-chain HelloWorld smart contract allows users to send greetings, a.k.a allows them to cause an event ‘GreetingReceived’ to be emitted with their greeting!
 
@@ -45,11 +39,14 @@ contract HelloWorld {
 }
 ```
 
-### Taking HelloWorld cross-chain using Wormhole Automatic Relayers
+## Taking HelloWorld cross-chain using Wormhole
 
 Suppose we want users to be able to request through their Ethereum wallet for a greeting to be sent to Avalanche, and vice versa. Let us begin writing a contract that we can deploy onto Ethereum, Avalanche, and any number of other chains, and enable greetings to be sent freely to and from each contract irrespective of chain. 
 
 We’d want to implement the following function: 
+
+<details>
+<summary>Docstring</summary>
 
 ```solidity
 /**
@@ -58,6 +55,11 @@ We’d want to implement the following function:
 * on the HelloWormhole contract at 
 * chain 'targetChain' and address 'targetAddress'
 */
+```
+
+</details>
+
+```solidity
 function sendCrossChainGreeting(
     uint16 targetChain,
     address targetAddress,
@@ -156,7 +158,7 @@ function sendCrossChainGreeting(
 }
 ```
 
-A key part of this system though is that ‘targetAddress’ must implement the IWormholeReceiver interface! Since we want to be able to send both to and from the HelloWormhole contract, we must implement this interface. 
+A key part of this system though, is that `targetAddress` must implement the IWormholeReceiver interface! Because we want to be able to send both to and from the HelloWormhole contract, we must implement this interface. 
 
 <details>
 <summary>Docstring</summary>
@@ -220,7 +222,9 @@ interface IWormholeReceiver {
 }
 ```
 
-What will happen is, when on the source chain ‘sendPayloadToEvm’ is called, the  Delivery Provider will watch the source chain and then call the ‘receiveWormholeMessages’ endpoint on the targetChain and targetAddress specified. So, in receiveWormholeMessages, we want to 
+What will happen is, when on the source chain `sendPayloadToEvm` is called, the **Delivery Provider** will watch the source chain and then call the `receiveWormholeMessages` endpoint on the `targetChain` and `targetAddress` specified. 
+
+So, in `receiveWormholeMessages`, we want to:
 
 - Update the list of ‘greetings’
 - Emit a 'GreetingReceived' event with the 'greeting'
@@ -264,14 +268,76 @@ function fromWormholeFormat(bytes32 whFormatAddress) pure returns (address) {
 ```
 </details>
     
-
-And voila, we have a full contract that can be deployed to many EVM chains, and in totality would form a full cross-chain application powered by Wormhole!
+Et voilà! We have a full contract that can be deployed to many EVM chains, and in totality would form a full cross-chain application powered by Wormhole!
 
 Users with any wallet can request greetings to be emitted on any chain that is part of the system. 
 
-### Full Cross-chain HelloWormhole solidity contract
 
-**Full Github Repository with Testing infrastructure here: [https://github.com/JoeHowarth/hello-wormhole/blob/main/src/HelloWormhole.sol](https://github.com/JoeHowarth/hello-wormhole/blob/main/src/HelloWormhole.sol)**
+## Running and Testing
+
+Now that the code is explained, lets try running it.
+
+{% hint style="warning" %}
+Make sure you have the recommended dev tools for EVM [installed](../../dev-env/README.md#evm)
+{% endhint %}
+
+To start, clone the repo locally then install dependencies and build the project: 
+
+```sh
+git clone git@github.com:JoeHowarth/hello-wormhole.git
+cd hello-wormhole
+npm run build # also runs npm install
+```
+
+Run the tests to be sure its working properly:
+
+```sh
+forge test
+```
+
+The result should be something like:
+
+```sh
+Running 1 test for test/HelloWormhole.t.sol:HelloWormholeTest
+[PASS] testGreeting() (gas: 777229)
+Test result: ok. 1 passed; 0 failed; finished in 3.98s
+```
+
+### What just happened?
+
+You just tested your first cross chain application logic without needing to deal with the off chain processes.
+
+This works by using the [fork testing](https://book.getfoundry.sh/forge/fork-testing) approach provided by Forge. It simulates sending a message on one chain (fork) and receiving the message on the other chain (fork).
+
+It's worth reading through the setup for [this test](https://github.com/JoeHowarth/hello-wormhole/blob/main/test/HelloWormhole.t.sol) to ease cross chain development in future projects.
+
+
+## Deploying to Testnet
+
+You will need a wallet with at least 0.05 Testnet AVAX and 0.01 Testnet CELO. 
+
+- [Obtain testnet AVAX here](https://core.app/tools/testnet-faucet/?token=C)
+- [Obtain testnet CELO here](https://faucet.celo.org/alfajores)
+
+```sh
+npm run build # make sure the project is built
+EVM_PRIVATE_KEY=your_wallet_private_key npm run deploy # deploy to testnet
+```
+
+### Testing on Testnet
+
+You will need a wallet with at least 0.02 Testnet AVAX. [Obtain testnet AVAX here](https://core.app/tools/testnet-faucet/?token=C)
+
+You must have also deployed contracts onto testnet (as described in the above section).
+
+To test sending and receiving a message on testnet, execute the test as such:
+
+```sh
+EVM_PRIVATE_KEY=your_wallet_private_key npm run test
+```
+
+
+#### Full Contract
 
 <details>
 <summary>Full Source</summary>
