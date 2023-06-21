@@ -1,28 +1,28 @@
 
 Developers building for smart contract integration will want to get a development environment setup to allow testing the full integration, possibly including VAA generation and relaying. 
 
+# Tooling Installation 
 
-## Environment Setup
+Each environment has its own set of recommended tools. To work with 
 
-The bare minimum Wormhole environment is a single blockchain node and a [Validator](../../reference/glossary.md#validator) node. 
+## EVM
 
-However, as you get deeper into cross-chain development, you'll likely find yourself with a growing number of components, dependencies, and teammates in the picture making your development environment more complex. Here are some of the considerations you should have in mind when choosing a development environment which will be well suited for your xDapp.
+The recommended development tool for EVM environments is [Foundry](https://book.getfoundry.sh/getting-started/installation).
 
-### What components do I need now? What components will I need in the future?
+## Solana
 
-- You may be able to get a lot done with just an EVM chain and a Guardian. However, as your application gets more sophisticated, components like relayers, front ends, automated tests, databases, explorers, and other blockchains are likely to get added into the environment.
+The recommended development tool for Solana is [Anchor](https://www.anchor-lang.com/docs/installation)
 
-### What are my dependencies?
+## Algorand
 
-- If your smart contracts have no dependencies, it may be possible for you to develop in a vacuum.
+The recommended development tool for Algorand is [Algokit](https://developer.algorand.org/docs/get-started/algokit/).
 
-- If your smart contracts does have dependencies, there are several options that range from deploying your dependencies in [Tilt](/guide/dev-env/tilt.md) to simulating an existing testnet/mainnet in [Foundry](https://github.com/foundry-rs/foundry) to working directly in testnet alongside other teams.
-
-### How am I going to collaborate?
-
-- You should consider how your teammates or collaborators are going to work in this environment from the start. There are some basic considerations like "how will they access it", but also some subtler points such as ensuring that contracts will deploy deterministically and that automated tests can be trusted to run reliably. The two paths to accomplish this are to use a public environment (testnet), or to ensure the local environment is well controlled (like tilt).
+<!-- TODO: more -->
 
 
+# Validator Setup
+
+If you intend to work with signed VAAs, the bare minimum Wormhole environment is a single blockchain node and a [Validator](../../reference/glossary.md#validator) node. 
 
 ## Wormhole Local Validator
 
@@ -35,7 +35,6 @@ This is the simplest custom environment. It's BYOB (Bring your own Blockchain) w
 A full-fledged Kubernetes deployment of every chain connected to Wormhole, along with a Guardian node. Usually takes 30 min to spin up fully, but comes with all chains running out of the box. 
 
 [Full setup guide for Tilt](./tilt.md)
-
 
 
 # Deploying to public networks

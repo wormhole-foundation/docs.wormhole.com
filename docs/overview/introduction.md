@@ -1,69 +1,126 @@
-# What Is Wormhole?
+
+# Wormhole unlocks the potential of cross chain communication. 
 
 Wormhole is a generic **message passing protocol** that enables communication between blockchains.
 
-![Overview](../.gitbook/assets/introduction/high-level-flow-dark.png)
+![Overview](../.gitbook/assets/introduction/oversimplified.png)
 
-At a high level, this is accomplished in a few phases:
+{% hint style="success" %}
+The above is an _oversimplified_ illustration of the protocol, details about the architecture and components are available [here](./core-concepts.md)
+{% endhint %}
 
-1. On the **Source Chain** a contract calls the [**Wormhole Core Contract**](../guide/components/core-contracts.md) which emits a message.
-2. From **Off chain**
-
-   a) The nodes in the **[Guardian](../guide/components/guardian.md) Network** validate the message and sign an attestation (or [**VAA**](../guide/components/vaa.md)).
-
-   b) A [**Relayer**](../guide/components/relayer.md) picks up the **VAA** and relays it to the **Target Chain**.
-
-3. On the **Target Chain**, the **VAA** is verified and some action is taken based on the payload.
-
-This simple message passing protocol enables developers and users of [xDapps](../reference/glossary.md#xdapps) built by developers to escape the confines of a single ecosystem.
+This simple **message passing protocol** enables developers and users of [xDapps](../reference/glossary.md#xdapps) built by developers to leverage the advantages of multiple ecosystems. 
 
 ## What Isn't Wormhole?
 
-- Wormhole is _not_ a blockchain itself, it provides a means of commination between blockchains or rollups.
-- Wormhole is _not_ a token bridge, though there are [protocols built on Wormhole](./ecosystem/token-bridge.md) that service this purpose.
-- Wormhole is _not_ an actual wormhole, its just software. Plus you'd need a supply of [Negative Energy](https://en.wikipedia.org/wiki/Negative_energy#Wormholes) to keep it open.
+Wormhole is _not_ a blockchain itself, it provides a means of commination between blockchains or rollups.
 
-# The Case For Blockchain Interoperability
+Wormhole is _not_ a token bridge, though there are [protocols built on Wormhole](https://www.portalbridge.com/#/transfer) that serve this purpose.
 
-Because blockchains are siloed by nature, dapps built on a single chain will be constrained by the resources, features, and scale available within that single ecosystem.
-
-With Wormhole, dapps can take advantage of the features and resources of any chain supported by Wormhole. The dapps that integrate wormhole are referred to as [xDapps](../reference/glossary.md#xdapp).
-
-## Advantages of xDapps
-
-Consider the following list describing some of the advantages of xDapps:
-
-- **Expanded User Base** - Rather than being limited to the users of one blockchain, any user on any blockchain in the ecosystem can interact with an xDapp.
-- **Increased Extensibility and Composability** - xDapps can utilize anything across the ecosystem, including other xDapps, expanding upon the composability and openness of smart contracts.
-- **Decentralization** - Cross-chain solutions today usually involve centralized exchanges or bridges. However, Wormhole has been designed to be decentralized from day one, and eventually totally trustless.
-- **Increased Performance** - xDapps are able to utilize the strengths of each blockchain. With xDapps, expensive computations can be offloaded onto high-performance platforms, final settlement can take place on a preferred chain, and data can be stored wherever is cheapest.
-- **Unified Liquidity** - Liquidity fragmentation is a major problem in the current ecosystem. Unlike traditional tokens, xAssets can be pooled and moved anywhere.
-- **Broader Market Reach** - Because xAssets move freely through the ecosystem, they can be listed on a variety of exchanges and custodied on any blockchain.
-- **Future proofing** - As new environments and protocols join the decentralized ecosystem, the connected nature of the Wormhole ecosystem allows existing protocols to expand and support them.
-
-<!-- TODO: can we say exponential? reword -->
-
-With Wormhole and xDapps, the design space and scale possible for decentralized applications grows as each new chain is connected.
-
-<!-- TODO: credit for wikipedia image -->
-
-![Network Effect](../.gitbook/assets/network-effect.png)
+## What can Wormhole be used for?
 
 Consider the following examples of potential applications that are now possible with Wormhole:
 
-1. Cross chain exchange: Using [Wormhole Connect](../guide/tutorials/quick-start/wh-connect.md), a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access.
-2. Cross chain governance: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.
-3. Cross chain game: A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.
+1. xChain exchange: Using [Wormhole Connect](../guide/tutorials/quick-start/wh-connect.md), a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access.
+2. xChain governance: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.
+3. xChain game: A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.
 
-# Design Documents
 
-Wormhole's components are designed via specifications that can be found [here](https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers). These outline the reasoning behind design decisions and details specifics in more technical depth.
+# Get Started 
+
+## Tutorials
+
+Tutorials are available to get started quickly and explain the concepts involved.
+
+<table data-view="cards" data-card-size="large" data-full-width="false">
+   <thead>
+      <tr>
+         <th></th>
+         <th></th>
+         <th data-hidden data-card-target data-type="content-ref"></th>
+         <th data-hidden data-card-cover data-type="files"></th>
+      </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td><strong>Quick Start</strong> - Off Chain</td>
+            <td>Integrate Wormhole Connect to a new or existing web UI</td>
+            <td><a href="../guide/tutorials/quick-start/wh-connect.md">wh-connect.md</a></td>
+            <td><a href="../.gitbook/assets/wh-connect-default.png">wh-connect-default.png</a></td>
+        </tr>
+        <tr>
+            <td><strong>Quick Start</strong> - On Chain</td>
+            <td>Send your first xChain message</td>
+            <td><a href="../guide/tutorials/quick-start/hello-universe.md">hello-universe.md</a></td>
+            <td><a href="../.gitbook/assets/hello-universe.jpg">hello-universe.jpg</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+## Demos
+
+Demos provide more realistic implementations than Tutorials
+
+<table data-view="cards" data-card-size="large" data-full-width="false">
+   <thead>
+      <tr>
+         <th></th>
+         <th></th>
+         <th data-hidden data-card-target data-type="content-ref"></th>
+         <th data-hidden data-card-cover data-type="files"></th>
+      </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td><strong>Wormhole Scaffolding</strong></td>
+            <td>Quickly spin up a project with the Scaffolding repo</td>
+            <td><a href="https://github.com/wormhole-foundation/wormhole-scaffolding">wormhole-scaffolding</a></td>
+            <td><a href="../.gitbook/assets/scaffolding.jpg">scaffolding.jpg</a></td>
+        </tr>
+        <tr>
+            <td><strong>xDapp book projects</strong></td>
+            <td>Run and learn from example programs</td>
+            <td><a href="https://github.com/wormhole-foundation/xdapp-book/tree/main/projects">xdapp-projects</a></td>
+            <td><a href="../.gitbook/assets/projects.png">project.png</a></td>
+        </tr>
+    </tbody>
+</table>
+
+## Research
+
+Find out more about the Wormhole ecosystem 
+
+<table data-view="cards" data-card-size="large" data-full-width="false">
+   <thead>
+      <tr>
+         <th></th>
+         <th></th>
+         <th data-hidden data-card-target data-type="content-ref"></th>
+         <th data-hidden data-card-cover data-type="files"></th>
+      </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td><strong>Architecture</strong></td>
+            <td>Dig into the components of the protocol</td>
+            <td><a href="./core-concepts.md">core-concepts.md</a></td>
+            <td><a href="../.gitbook/assets/core-concepts/detailed-flow-dark.png">detailed-flow-dark.png</a></td>
+        </tr>
+        <tr>
+            <td><strong>Protocol Specifications</strong></td>
+            <td>Find out more about the protocols built on top of Wormhole</td>
+            <td><a href="https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers">white papers</a></td>
+            <td><a href="../.gitbook/assets/wormhole-blue.svg">wormhole-blue.svg</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 # Supported Blockchains
 
-Wormhole already supports a number of Blockchain [Environments](../reference/environments/README.md)
-
-## Currently Supported Blockchains
+Wormhole supports a growing number of blockchains
 
 <table data-view="cards" data-full-width="false">
    <thead>
