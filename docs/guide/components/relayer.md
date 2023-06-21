@@ -70,7 +70,7 @@ Remember, despite their name, specialized relayers are still considered untruste
 
 - Development work and hosting of relayers are required.
 - The fee-modeling can become complex, as relayers are responsible for paying target chain fees.
-- Relayers are responsible for liveness, adding an additional dependency for the xDapp. 
+- Relayers are responsible for liveness, adding an additional dependency for the cross chain application. 
 
 
 

@@ -28,7 +28,7 @@ Regardless of the development environment that you use, there are a few wormhole
 
 ### [Wormhole SDK Docs](../../reference/sdk-docs/README.md)
 
-- Typescript SDK distributed on npm. It can greatly aid in writing frontend code for xDapps and utilizing the Wormhole Token Bridge directly.
+- Typescript SDK distributed on npm. It can greatly aid in writing frontend code for cross chain applications and utilizing the Wormhole Token Bridge directly.
 
 ### [Wormhole API Docs](../../reference/api-docs/README.md)
 

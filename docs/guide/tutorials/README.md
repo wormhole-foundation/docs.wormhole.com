@@ -6,7 +6,7 @@
 Before starting below tutorials, make sure you understand the [Core Components](../components/README.md) setup.
 {% endhint %}
 
-Start your journey into xChain development.
+Start your journey into cross chain development.
 
 <!-- Note: these examples should use testnet for everything, not requiring a local dev environment -->
 
@@ -41,6 +41,6 @@ Before starting below tutorials, make sure you understand the concepts introduce
 Use wormhole to facilitate your own protocol and make it available to other developers
 
 1) [Specialized Relayer](./protocol-development/specialized-relayer.md)
-    - Covers the case where an xDapp developer wants to optimize for cost and speed that can't be achieved with a Generic Relayer.
+    - Covers the case where a cross chain application developer wants to optimize for cost and speed that can't be achieved with a Generic Relayer.
 2) [Protocol Design](./protocol-development/protocol-design.md)
     - Covers the case where a protocol developer wants to allow others to use their protocol.
