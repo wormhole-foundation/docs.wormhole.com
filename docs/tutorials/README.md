@@ -21,26 +21,14 @@ Start your journey into cross chain development.
 ## Application Integration 
 
 {% hint style="info" %} 
-Before starting below tutorials, make sure you have your [Development Environment](../dev-env/README.md) setup.
+Before starting below tutorials, make sure you have your [Development Environment](../reference/dev-env/README.md) setup.
 {% endhint %}
 
 Get integrated with wormhole using smart contracts and the SDK to submit and relay messages.
 
-1) [xAsset Transfer](./app-integration/xassets.md)
-    - Introduces the use of a protocol built on top of Wormhole to transfer assets across chains. 
 3) [Message Passing](./app-integration/message-passing.md)
     - Covers some details on debugging issues related to using the Wormhole protocol. 
-
-
-## Protocol Development 
-
-{% hint style="info" %} 
-Before starting below tutorials, make sure you understand the concepts introduced in the [Application Integration](#app-integration) tutorials.
-{% endhint %}
-
-Use wormhole to facilitate your own protocol and make it available to other developers
-
-1) [Specialized Relayer](./protocol-development/specialized-relayer.md)
+1) [Asset Transfer](./app-integration/asset-transfer.md)
+    - Introduces the use of a protocol built on top of Wormhole to transfer assets across chains. 
+1) [Specialized Relayer](./app-integration/specialized-relayer.md)
     - Covers the case where a cross chain application developer wants to optimize for cost and speed that can't be achieved with a Generic Relayer.
-2) [Protocol Design](./protocol-development/protocol-design.md)
-    - Covers the case where a protocol developer wants to allow others to use their protocol.

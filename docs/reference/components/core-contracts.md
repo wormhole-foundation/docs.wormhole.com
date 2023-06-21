@@ -1,8 +1,8 @@
-The Core Contracts are the mechanism by which all Wormhole messages are emitted. All cross chain applications either interact directly with the Core Contract or interact with another contract that does. There is one Core Contract on each blockchain in the ecosystem, and this is the contract which the Guardians are required to observe. The Core Contract is the contract that ultimately emits the messages the [Guardians](./guardian.md) pick up as an [Observation](../../reference/glossary.md#observation).
+The Core Contracts are the mechanism by which all Wormhole messages are emitted. All cross chain applications either interact directly with the Core Contract or interact with another contract that does. There is one Core Contract on each blockchain in the ecosystem, and this is the contract which the Guardians are required to observe. The Core Contract is the contract that ultimately emits the messages the [Guardians](./guardian.md) pick up as an [Observation](../glossary.md#observation).
 
 In general, Core Contracts are simple and can be broken down to a **sending** and **receiving** side, which we'll define next.
 
-### Sending
+# Sending
 
 {% hint style="warning" %}
 Currently there are no fees to publish a message (with the exception of publishing on Solana) but this is not guaranteed to always be the case in the future.
@@ -12,35 +12,49 @@ The implementation strategy for publishMessage differs by chain, but the general
 
 The method signature for publishing messages 
 
+```solidity
+publishMessage(
+    int nonce,
+    byte[] payload,
+    int consistencyLevel
+) returns int sequenceNumber
 ```
-    publishMessage(
-        int nonce,
-        byte[] payload,
-        int consistencyLevel
-    ) returns int sequenceNumber
-```
 
 
+## Parameters 
 
-#### Parameters 
+### payload 
 
-- **payload** - The content of the emitted message, an arbitrary byte array. It may be capped to a certain maximum length due to the constraints of individual blockchains.
+The content of the emitted message, an arbitrary byte array. It may be capped to a certain maximum length due to the constraints of individual blockchains.
 
-- **consistencyLevel** - The level of finality to reach before emitting the Wormhole VAA. This is a defense against reorgs and rollbacks. See [this table](../../reference/parameters.md#finality) for specific settings.
+### consistencyLevel
 
-- **nonce** - An index number for the message that is used to produce Batch VAAs.
+{% hint style="info%} 
+Some advanced integrators may want to get messages _before_ finality, which is where the `consistency_level` field offers chain-specific flexibility.
+{% endhint %}
 
-#### Returns
+The `consistency_level` can be considered as a numeric `enum` data type where the value is treated differently for different chains.
 
-- **sequenceNumber** - A unique number that increments for every message for a given emitter (and implicitly chain). This combined with the emitter address and emitter chain ID allows the VAA for this message to be queried from the [APIs](./api.md)
+It describes the level of finality to reach before the guardians will observe and attest the emitted event. This is a defense against reorgs and rollbacks since a transaction, once considered `final`, is guaranteed not to have the state changes it caused be rolled back.
+
+Different chains use different consensus mechanisms, so there are different finality assumptions with each one, see the options for finality in the [Environments section](../environments/README.md).  
+
+### nonce
+
+A free integer field that can be used however the developer would like. Note that a different `nonce` will result in a different digest.
+
+## Returns
+
+### sequenceNumber
+
+A unique number that increments for every message for a given emitter (and implicitly chain). This combined with the emitter address and emitter chain ID allows the VAA for this message to be queried from the [APIs](./api.md)
 
 
-
-### Receiving
+# Receiving
 
 The method signature for receiving messages, encoded as a VAA
 
-```
+```solidity
 parseAndVerifyVAA(byte[] VAA)
 ```
 
@@ -51,7 +65,7 @@ A developer should take care to make sure this method is called during the execu
 {% endhint %}
 
 
-## Multicast
+# Multicast
 
 Please notice that there is no destination address or chain in these functions.
 

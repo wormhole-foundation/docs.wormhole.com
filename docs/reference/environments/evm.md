@@ -19,7 +19,7 @@ Details for working with EVM environment chains.
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -76,7 +76,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -124,7 +124,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -175,7 +175,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -223,7 +223,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -271,7 +271,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -319,7 +319,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -370,7 +370,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -418,7 +418,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -466,7 +466,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -514,7 +514,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -565,7 +565,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -613,7 +613,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -661,7 +661,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -709,7 +709,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 
 
@@ -757,7 +757,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -808,7 +808,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

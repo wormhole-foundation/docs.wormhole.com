@@ -18,7 +18,7 @@ The Finality of a transaction is dependant on the blockchain properties. After a
 
 ## Guardian
 
-A [Guardian](../guide/components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
+A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
 
 ## Guardian Network
 
@@ -47,7 +47,7 @@ A Spy is a daemon that eavesdrops on the messages passed between Guardians, typi
 
 ## VAA
 
-[Verifiable Action Approvals](../guide/components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
+[Verifiable Action Approvals](./components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
 
 ## Validator 
 

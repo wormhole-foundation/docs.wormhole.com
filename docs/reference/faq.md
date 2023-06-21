@@ -15,7 +15,7 @@ Beware of scams. Admins will never DM or message you first
 
 - **How do I get started?**
 
-    Head over to the [Tutorial](../guide/tutorials/README.md) to start building.
+    Head over to the [Tutorial](../tutorials/README.md) to start building.
 
 <!-- 
 - where can I track my transaction?

@@ -19,7 +19,7 @@ Details for working with the Solana environment chains
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -71,7 +71,7 @@ The options for `consistency_level` (i.e finality) are:
 
 ### Consistency Levels
 
-The options for `consistency_level` (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

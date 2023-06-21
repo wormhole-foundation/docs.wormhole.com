@@ -1,47 +1,32 @@
 # Table of contents
 
-* [Introduction](./overview/introduction.md)
-* [Core Concepts](./overview/core-concepts.md)
-* [Security](./overview/security.md)
-* [FAQ](./overview/faq.md)
-* [See Also](./overview/see-also.md)
-* [Ecosystem](https://wormhole.com/ecosystem)
+* [Introduction](./introduction.md)
 
-## Guide
+## Quick Start
 
-* [Introduction](./guide/README.md)
-* [Components](./guide/components/README.md)
-  * [Guardian](./guide/components/guardian.md)
-  * [VAAs](./guide/components/vaa.md)
-  * [Relayer](./guide/components/relayer.md)
-  * [Spy](./guide/components/spy.md)
-  * [API](./guide/components/api.md)
-  * [Core Contracts](./guide/components/core-contracts.md)
-* [EVM Developers](./guide/evm-dev/README.md)
-  * [Automatic Relayer](./guide/evm-dev/automatic-relayer.md)
-* [Development Environment](./guide/dev-env/README.md)
-  * [Wormhole Local Validator](./guide/dev-env/wormhole-local-validator.md)
-  * [Tilt](./guide/dev-env/tilt.md)
-  * [Tooling](./guide/dev-env/tooling.md)
-* [Tutorials](./guide/tutorials/README.md)
-  * [Quick Start](./guide/tutorials/quick-start/README.md)
-    * [WH Connect](./guide/tutorials/quick-start/wh-connect.md)
-    * [Hello Universe](./guide/tutorials/quick-start/hello-universe.md)
-    * [SDK and API](./guide/tutorials/quick-start/sdk-api.md)
-  * [App Integration](./guide/tutorials/app-integration/README.md)
-    * [xAssets](./guide/tutorials/app-integration/xassets.md)
-    * [Message Passing](./guide/tutorials/app-integration/message-passing.md)
-  * [Protocol Development](./guide/tutorials/protocol-development/README.md)
-    * [Specialized Relayer](./guide/tutorials/protocol-development/specialized-relayer.md)
-    * [Protocol Design](./guide/tutorials/protocol-development/protocol-design.md)
-* [Demos](./guide/demos/README.md)
-<!-- * [Troubleshooting/Debugging](./guide/troubleshooting.md) -->
+* [Integrate Bridged Assets in your UI](./tutorials/quick-start/wh-connect.md)
+* [Cross-chain Development](./cross-chain-dev.md)
+  * [Automatic Relayer](./evm-only/README.md)
+  * [Specialized Relayer](./all-wh/README.md)
 
+## Explore Wormhole
+
+* [Architecture](./reference/components/README.md)
+* [Security](./reference/security.md)
+* [Core Contracts](./reference/components/core-contracts.md)
+* [Guardians](./reference/components/guardian.md)
+* [VAAs](./reference/components/vaa.md)
+* [Relayers](./reference/components/relayer.md)
+* [Spy](./reference/components/spy.md)
 
 ## Reference
 
 * [Glossary](./reference/glossary.md)
-* [Environments](./reference/environments/README.md)
+* [Development Environment](./reference/dev-env/README.md)
+  * [Wormhole Local Validator](./reference/dev-env/wormhole-local-validator.md)
+  * [Tilt](./reference/dev-env/tilt.md)
+  * [Tooling](./reference/dev-env/tooling.md)
+* [Blockchain Environments](./reference/environments/README.md)
   * [Algorand](./reference/environments/algorand.md)
   * [Aptos](./reference/environments/aptos.md)
   * [CosmWasm](./reference/environments/cosmwasm.md)
@@ -49,11 +34,14 @@
   * [Near](./reference/environments/near.md)
   * [Solana](./reference/environments/solana.md)
   * [Sui](./reference/environments/sui.md)
-* [Parameters](./reference/parameters.md)
 * [CLI Docs](./reference/cli-docs/README.md)
 * [SDK Docs](./reference/sdk-docs/README.md)
-* [REST API](./reference/api-docs/README.md)
-  * [API Docs](./reference/api-docs/swagger.md)
+* [API Docs](./reference/api-docs/README.md)
+  * [WormholeScan API](./reference/api-docs/swagger.md)
+* [Demos](./reference/demos/README.md)
+* [FAQ](./reference/faq.md)
+* [See Also](./reference/see-also.md)
+* [Ecosystem](https://wormhole.com/ecosystem)
 
 
 ## Archive
@@ -70,4 +58,3 @@
 * [Video Tutorial: How to use the Token Origin Verifier](archive/video-tutorial-how-to-use-the-token-origin-verifier.md)
 * [Token Register](archive/token-register/README.md)
   * [Tutorial: Token registration](archive/token-register/tutorial-token-register.md)
-
