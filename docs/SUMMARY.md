@@ -17,6 +17,8 @@
   * [Spy](./guide/components/spy.md)
   * [API](./guide/components/api.md)
   * [Core Contracts](./guide/components/core-contracts.md)
+* [EVM Developers](./guide/evm-dev/README.md)
+  * [Automatic Relayer](./guide/evm-dev/automatic-relayer.md)
 * [Development Environment](./guide/dev-env/README.md)
   * [Wormhole Local Validator](./guide/dev-env/wormhole-local-validator.md)
   * [Tilt](./guide/dev-env/tilt.md)
