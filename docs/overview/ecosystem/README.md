@@ -8,7 +8,7 @@ At present, there are X ecosystems supported by Wormhole, though the number of s
 ### EVM
 
 <!-- TODO: popular by what metric?-->
-EVM is the most popular ecosystem, and most xDapps will have some support for this platform. These contracts are written in Solidity -- a 'jack of all trades' style of computation environment. A common strategy for xDapps is to develop one single contract in Solidity, and then deploy that contract to all the supported EVM blockchains.
+EVM is the most popular ecosystem, and most cross chain applications will have some support for this platform. These contracts are written in Solidity -- a 'jack of all trades' style of computation environment. A common strategy for cross chain applications is to develop one single contract in Solidity, and then deploy that contract to all the supported EVM blockchains.
 
 Blockchains:
 

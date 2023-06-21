@@ -46,7 +46,7 @@ With our perspective on Decentralization laid out, the remaining elements fall i
 
 The Guardian Network is robust and trustworthy by itself, so there's no need for components like the relayer to contribute to the security model. That makes Wormhole able to have simple components that are very good at the one thing they do. That way, Guardians only need to verify on-chain activity and produce VAAs while Relayers only need to interact with blockchains and deliver messages.
 
-The signing scheme of the VAAs can be changed without affecting downstream users, and multiple relay mechanisms can exist independently. xAssets can be implemented purely at the application layer and xDapps can utilize whatever components suits them.
+The signing scheme of the VAAs can be changed without affecting downstream users, and multiple relay mechanisms can exist independently. xAssets can be implemented purely at the application layer and cross chain applications can use whatever components suits them.
 
 ## Chain Agnosticism
 
@@ -64,4 +64,4 @@ However, once all the full nodes are running, the actual computation and network
 
 ## Upgradeability
 
-Over time, the Guardian Set can be expanded beyond 19 with the use of threshold signatures. A variety of relaying models will emerge, each with their own strengths and weaknesses. ZKPs can be used on chains where they are well supported. The xDapp ecosystem will grow, and xDapps will become increasingly intermingled with each other. There are very few APIs in Wormhole, and most items are implementation details from the perspective of an integrator. This creates a clear pathway towards a fully trustlessness interoperability layer which spans the entirety of decentralized computing.
+Over time, the Guardian Set can be expanded beyond 19 with the use of threshold signatures. A variety of relaying models will emerge, each with their own strengths and weaknesses. ZKPs can be used on chains where they are well supported. The cross chain application ecosystem will grow, and cross chain applications will become increasingly intermingled with each other. There are very few APIs in Wormhole, and most items are implementation details from the perspective of an integrator. This creates a clear pathway towards a fully trustlessness interoperability layer which spans the entirety of decentralized computing.
