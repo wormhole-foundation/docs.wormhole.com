@@ -1,6 +1,23 @@
 
 Details for working with the Solana environment chains
 
+## Addresses
+
+Because Wormhole works with many environments, the Wormhole address format is normalized.
+
+For Solana based chains, this means a wormhole formatted address is the base58 decoded address.
+
+e.g. `worm2ZoG2kUd4vFXhvjh93UUH596ayRfgQ2MgjNMTth` => `0x0e0a589a41a55fbd66c52a475f2d92a6d3dc9b4747114cb9af825a98b545d3ce`
+
+## Emitter 
+
+The emitter address on Solana chains is a Program Derived Address which is derived by the application, normalized to the wormhole address format. 
+
+{% hint style="info" %}
+The application dev chooses whether this is a consistent address over time or changes. We strongly recommend making it consistent.
+{% endhint %}
+
+
 <!--SOLANA_CHAIN_DETAILS-->
 
 # Solana
