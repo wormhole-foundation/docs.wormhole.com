@@ -11,7 +11,7 @@ https://github.com/algorand-devrel/demo-avm7/blob/master/main.py
 
 ### [Scaffolding](https://github.com/wormhole-foundation/wormhole-scaffolding)
 
-Starter repo and code demos
+Starter application repository with code demos.
 
 ### [Wormhole Examples](https://github.com/wormhole-foundation/wormhole-examples)
 
@@ -25,6 +25,6 @@ Several example projects are bundled here. They show minimum-code examples for h
 
 An example GUI which can be used to perform token transfers around the ecosystem.
 
-## [Borrow Lend](https://github.com/wormhole-foundation/example-wormhole-lending)
+### [Borrow Lend](https://github.com/wormhole-foundation/example-wormhole-lending)
 
-Examples of a cross chain borrow lend protocol
+Examples of a cross chain borrow lend protocol.

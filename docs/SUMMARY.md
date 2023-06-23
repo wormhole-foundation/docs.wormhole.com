@@ -8,8 +8,13 @@
 * [Cross-chain Development](./quick-start/cross-chain-dev.md)
   * [Automatic Relayer](./quick-start/automatic-relayer.md)
   * [Specialized Relayer](./quick-start/specialized-relayer.md)
-* [Advanced Tutorials](./tutorials/README.md)
-* [Demos](./reference/demos/README.md)
+* [Tutorials](./tutorials/README.md)
+  * [Wormhole Connect](./tutorials/quick-start/wh-connect.md)
+  * [Hello Wormhole](./tutorials/quick-start/hello-wormhole.md)
+  * [Message Passing](./tutorials/app-integration/message-passing.md)
+  * [Specialized Relayer](./tutorials/app-integration/specialized-relayer.md)
+  * [Asset Transfer](./tutorials/app-integration/asset-transfer.md)
+* [Demos](./demos.md)
 
 ## Explore Wormhole
 

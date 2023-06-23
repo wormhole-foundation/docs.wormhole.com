@@ -1,12 +1,23 @@
-Wormhole support a number of [EVM](../reference/environments/evm.md) flavored blockchains.
 
-If you're working with the EVM exclusively, a number of simplifying architectural decisions can be made.  
 
-With EVM only cross chain applications, a developer can:
+The Automatic Relayer provides a mechanism for a contract on one chain to send a message to a contract on a different chain without the developer dealing with any off chain deployments. 
 
-1) Take advantage of a service that will [automatically relay](./automatic-relayer.md) the [VAAs](../reference/components/vaa.md) to the target chain for you. 
-2) Take advantage of testing tools like Forge's [fork testing](https://book.getfoundry.sh/forge/fork-testing) to ease the development cycle.
-3) Use other features restricted to EVM only environments, like [forwarding](#forwarding) to compose more complex application logic.
+{% hint style="warning" %}
+Currently the Automatic Relayer feature is limited to EVM environments.
+
+Find the complete list of EVM environment blockchains [here](../reference/environments/evm.md).
+{% endhint %}
+
+
+<!-- 
+    If you're working with the EVM exclusively, a number of simplifying architectural decisions can be made.  
+
+    With EVM only cross chain applications, a developer can:
+
+    1) Take advantage of a service that will [automatically relay](../reference/components/relayer.md#automatic-relayers) the [VAAs](../reference/components/vaa.md) to the target chain for you. 
+    2) Take advantage of testing tools like Forge's [fork testing](https://book.getfoundry.sh/forge/fork-testing) for rapid iteration on the core business logic.
+    3) Use other features restricted to EVM only environments, like [forwarding](#forwarding) to compose more complex application logic.
+-->
 
 
 # Tutorials
@@ -20,7 +31,7 @@ On chain, a smart contract interacts with the [IWormholeRelayer](https://github.
 
 ## Sending a message
 
-To send a message to another EVM chain, we can call the `sendPayloadToEvm` method provided by the `IWormholeRelayer` interface.
+To send a message to a contract on another EVM chain, we can call the `sendPayloadToEvm` method, provided by the `IWormholeRelayer` interface.
 
 ```solidity
 function sendPayloadToEvm(
@@ -34,10 +45,16 @@ function sendPayloadToEvm(
     uint256 receiverValue,  
     // The gas limit to set on the delivery transaction
     uint256 gasLimit        
-) external payable returns (uint64 sequence);
+) external payable returns (
+    // Unique, incrementing ID, used to identify a message
+    uint64 sequence
+);
 ```
 
-The `sendPayloadToEvm` method is marked `payable` so we can pay for our transaction to be submitted. The value to attach to the invocation is determined by calling the `quoteEVMDeliveryPrice`, which estimates the cost of gas on the target chain.
+The `sendPayloadToEvm` method is marked `payable` so we can pay for our transaction to be submitted. 
+
+
+The value to attach to the invocation is determined by calling the `quoteEVMDeliveryPrice`, which provides an estimate of the cost of gas on the target chain.
 
 ```solidity
 function quoteEVMDeliveryPrice(
@@ -54,6 +71,8 @@ function quoteEVMDeliveryPrice(
     uint256 targetChainRefundPerGasUnused
 );
 ```
+
+This method should be called prior to sending a message and the value returned for `nativePriceQuote` should be attached to the call to send the payload in order to cover the cost of the transaction on the target chain.  
 
 
 In total, sending a message across EVM chains can be as simple as:
@@ -78,8 +97,7 @@ wormholeRelayer.sendPayloadToEvm{value: cost}(
 
 ## Receiving a message
 
-In order to receive a message using the `Automatic Relayer`, the target contract must implement the [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole-relayer-solidity-sdk/blob/main/src/interfaces/IWormholeReceiver.sol) interface.
-
+To receive a message using the `Automatic Relayer` feature, the target contract must implement the [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole-relayer-solidity-sdk/blob/main/src/interfaces/IWormholeReceiver.sol) interface.
 
 ```solidity
 function receiveWormholeMessages(
@@ -91,13 +109,14 @@ function receiveWormholeMessages(
 ) external payable;
 ```
 
-The logic inside the function body can be whatever business logic is required to take action on the specific payload.
+The logic inside the function body may be whatever business logic is required to take action on the specific payload.
 
 
 ## Other Considerations
 
 Some implementation details should be considered during development to ensure safety and improve UX.
 
+<!-- TODO: Joe -->
 - Receiving a message from relayer 
     - Check for expected emitter 
     - call parseAndVerify on any additionalVAAs
@@ -114,12 +133,11 @@ Some implementation details should be considered during development to ensure sa
 - Refunding overpayment of value sent
 
 
-
 # Off Chain
 
-If the [Automatic Relayer](./automatic-relayer.md) is used, no off chain logic need be implemented. 
+If taking advantage of Automatic Relaying, no off chain logic need be implemented. 
 
-While no off chain programs are required, a developer may want to track the progress of messages in flight. To track the progress of messages in flight .... TODO
+While no off chain programs are required, a developer may want to track the progress of messages in flight. To track the progress of messages in flight,  .... TODO
 
 # See Also
 

@@ -1,11 +1,6 @@
-{% hint style="danger" %} 
-This tutorial is incomplete
-{% endhint %}
+With Wormhole Connect, integration with wormhole is easier than ever.
 
 [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
-
-
-With Wormhole Connect, integration with wormhole is easier than ever.
 
 
 ## Ultra Quick Start
