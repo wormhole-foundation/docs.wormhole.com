@@ -1,6 +1,18 @@
 
 Details for working with EVM environment chains.
 
+## Addresses
+
+Because Wormhole works with many environments, the Wormhole address format is normalized. 
+
+For EVM chains, this means a wormhole formatted address is the 20 byte EVM standard address left padded with `0`s.
+
+e.g. `0xd8da6bf26964af9d7eed9e03e53415d37aa96045` => `0x000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa96045`
+
+## Emitter 
+
+The emitter address on EVM chains is the contract address, normalized to the wormhole address format.
+
 <!--ETHEREUM_CHAIN_DETAILS-->
 
 # Ethereum

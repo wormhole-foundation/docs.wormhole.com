@@ -1,3 +1,23 @@
+Details for working with Sui chains.
+
+## Addresses
+
+Because Wormhole works with many environments, the Wormhole address format is normalized.
+
+For Sui based chains, no normalization is needed for standard addresses since they're already 32 bytes.
+
+e.g. `0x84a5f374d29fc77e370014dce4fd6a55b58ad608de8074b0be5571701724da31` => `0x84a5f374d29fc77e370014dce4fd6a55b58ad608de8074b0be5571701724da31`
+
+However, emitter addresses are recorded as a uint64 (8 bytes), so they're left padded with `0`s to 32 bytes.
+
+e.g. `0x0000000000000001` => `0000000000000000000000000000000000000000000000000000000000000001`
+
+## Emitter 
+
+On Sui, an emitter capability is taken from the core bridge. The core bridge generates capabilities in a sequence and the capability object ID is its index in the sequence. 
+
+The capability object ID (uint64) is used as the emitter address after normalizing to wormhole address format.
+
 
 <!--SUI_CHAIN_DETAILS-->
 

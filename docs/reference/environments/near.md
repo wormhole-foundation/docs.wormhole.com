@@ -1,5 +1,17 @@
 Details for working with the NEAR environment chains
 
+## Addresses
+
+Because Wormhole works with many environments, the Wormhole address format is normalized.
+
+For NEAR based chains, because NEAR addresses are arbitrary-length strings, this means a wormhole formatted address is the sha256 hash of the address.
+
+e.g. `contract.portalbridge.near` => `0x148410499d3fcda4dcfd68a1ebfcdddda16ab28326448d4aae4d2f0465cdfcb7`
+
+## Emitter 
+
+The emitter address on NEAR chains is the sha256 digest of the program address string, normalized to wormhole address format.
+
 
 <!--NEAR_CHAIN_DETAILS-->
 
