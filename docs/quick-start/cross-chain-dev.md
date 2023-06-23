@@ -4,7 +4,7 @@
 There are two primary ways to enable communication across chains with Wormhole. 
 
 {% hint style="info" %}
-The elements in the diagrams in **blue** are the elements that must be implemented by the developer 
+The components outlined in **blue** are those that must be implemented by the developer 
 {% endhint %}
 
 {% tabs %}
@@ -50,6 +50,4 @@ With Specialized Relaying, the developer can communicate with [any blockchain Wo
     </tbody>
 </table>
 
-More tutorials are available [here](./tutorials/README.md).
-
-<!-- reference links for other things they'll need -->
+More tutorials are available [here](../tutorials/README.md).

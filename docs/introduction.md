@@ -4,10 +4,10 @@ Wormhole is a generic **message passing protocol** that enables communication be
 ![Overview](.gitbook/assets/introduction/oversimplified.png)
 
 {% hint style="success" %}
-The above is an _oversimplified_ illustration of the protocol, details about the architecture and components are available [here](./core-concepts.md)
+The above is an _oversimplified_ illustration of the protocol, details about the architecture and components are available [here](./reference/components/README.md)
 {% endhint %}
 
-This simple **message passing protocol** enables developers and users of [xDapps](./reference/glossary.md#xdapps) built by developers to leverage the advantages of multiple ecosystems. 
+This simple **message passing protocol** enables developers and users of [cross chain applications](./reference/glossary.md#xdapps) built by developers to leverage the advantages of multiple ecosystems. 
 
 ## What Isn't Wormhole?
 
@@ -86,7 +86,6 @@ Find out more about the Wormhole ecosystem, components, and protocols.
     </tbody>
 </table>
 
-More resources for learning are available [here](./reference/README.md).
 
 ## Demos
 
@@ -117,7 +116,7 @@ Demos provide more realistic implementations than Tutorials
     </tbody>
 </table>
 
-More Demos are available [here](./reference/demos/README.md).
+More Demos are available [here](./demos.md).
 
 # Supported Blockchains
 

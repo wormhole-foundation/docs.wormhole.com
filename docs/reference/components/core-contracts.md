@@ -47,7 +47,7 @@ A free integer field that can be used however the developer would like. Note tha
 
 ### sequenceNumber
 
-A unique number that increments for every message for a given emitter (and implicitly chain). This combined with the emitter address and emitter chain ID allows the VAA for this message to be queried from the [APIs](./api.md)
+A unique number that increments for every message for a given emitter (and implicitly chain). This combined with the emitter address and emitter chain ID allows the VAA for this message to be queried from the [APIs](../api-docs/README.md)
 
 
 # Receiving
