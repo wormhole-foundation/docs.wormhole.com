@@ -5,9 +5,11 @@
 ## Quick Start
 
 * [Integrate Bridged Assets in your UI](./tutorials/quick-start/wh-connect.md)
-* [Cross-chain Development](./cross-chain-dev.md)
-  * [Automatic Relayer](./evm-only/README.md)
-  * [Specialized Relayer](./all-wh/README.md)
+* [Cross-chain Development](./quick-start/cross-chain-dev.md)
+  * [Automatic Relayer](./quick-start/automatic-relayer.md)
+  * [Specialized Relayer](./quick-start/specialized-relayer.md)
+* [Advanced Tutorials](./tutorials/README.md)
+* [Demos](./reference/demos/README.md)
 
 ## Explore Wormhole
 
@@ -38,7 +40,6 @@
 * [SDK Docs](./reference/sdk-docs/README.md)
 * [API Docs](./reference/api-docs/README.md)
   * [WormholeScan API](./reference/api-docs/swagger.md)
-* [Demos](./reference/demos/README.md)
 * [FAQ](./reference/faq.md)
 * [See Also](./reference/see-also.md)
 * [Ecosystem](https://wormhole.com/ecosystem)

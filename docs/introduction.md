@@ -1,6 +1,4 @@
 
-# Wormhole unlocks the potential of cross chain communication. 
-
 Wormhole is a generic **message passing protocol** that enables communication between blockchains.
 
 ![Overview](.gitbook/assets/introduction/oversimplified.png)
@@ -51,7 +49,7 @@ Tutorials are available to get started quickly and explain the concepts involved
         <tr>
             <td><strong>Quick Start</strong> - On Chain</td>
             <td>Send your first cross chain message</td>
-            <td><a href="./tutorials/quick-start/hello-wormhole.md">hello-wormhole.md</a></td>
+            <td><a href="./quick-start/cross-chain-dev.md">cross-chain-dev.md</a></td>
             <td><a href=".gitbook/assets/wh-line-art.png">wh-line-art.png</a></td>
         </tr>
     </tbody>
