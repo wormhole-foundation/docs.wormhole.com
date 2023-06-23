@@ -46,3 +46,8 @@ curl -s 'https://api.wormscan.io/api/v1/vaas/5' \
 
 {% endtab %}
 {% endtabs %}
+
+
+## Guardian API 
+
+There is also a [Guardian Public RPC](https://github.com/wormhole-foundation/wormhole/blob/main/proto/publicrpc/v1/publicrpc.proto) endpoint which the [SDK](../sdk-docs/README.md) currently uses.
