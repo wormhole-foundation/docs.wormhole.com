@@ -1,5 +1,16 @@
 Details for working with Sui chains.
 
+## Developer Tools
+
+Install the Sui dev tools using cargo install
+
+```sh
+cargo install --locked \
+    --git https://github.com/MystenLabs/sui.git \
+    --rev 09b2081498366df936abae26eea4b2d5cafb2788 \
+    sui sui-faucet
+```
+
 ## Addresses
 
 Because Wormhole works with many environments, the Wormhole address format is normalized.

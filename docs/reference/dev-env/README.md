@@ -3,22 +3,9 @@ Developers building for smart contract integration will want to get a developmen
 
 # Tooling Installation 
 
-Each environment has its own set of recommended tools. To work with 
+The [Worm CLI Tool](../cli-docs/README.md) should be installed regardless of environments chosen.
 
-## EVM
-
-The recommended development tool for EVM environments is [Foundry](https://book.getfoundry.sh/getting-started/installation).
-
-## Solana
-
-The recommended development tool for Solana is [Anchor](https://www.anchor-lang.com/docs/installation)
-
-## Algorand
-
-The recommended development tool for Algorand is [Algokit](https://developer.algorand.org/docs/get-started/algokit/).
-
-<!-- TODO: more -->
-
+Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../environments/README.md)
 
 # Validator Setup
 

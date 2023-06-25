@@ -1,22 +1,7 @@
 import * as cfg from "./config";
-import { fmtNum } from "./util";
 import { chainDetailsPage } from "./details";
 import { chainCard } from "./card";
 import * as fs from "fs";
-
-// Finality table
-const finalityHeader = `
-|ChainName|WormholeChainID|Confirmed|Instant|Safe|Finalized|Otherwise|
-|---------|---------------|---------|-------|----|---------|---------|`;
-function makeTableRow(name: string, id: number, finality: cfg.Finality) {
-  const { confirmed, finalized, instant, safe, otherwise } = finality;
-  return (
-    `|${name}|${id}` +
-    `|${fmtNum(confirmed)}|${fmtNum(instant)}` +
-    `|${fmtNum(safe)}|${fmtNum(finalized)}` +
-    `|${otherwise || " "}|`
-  );
-}
 
 // Matches for tag search
 type Match = {

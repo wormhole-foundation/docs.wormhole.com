@@ -1,6 +1,19 @@
 
 Details for working with the Solana environment chains
 
+## Developer Tools
+
+To develop contracts for Solana, you'll need to have the following tools installed:
+
+1) [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) - Rust build tool and package manager
+2) [Solana CLI tools](https://docs.solana.com/cli/install-solana-cli-tools) - CLI tools for working with Solana
+3) [Anchor](https://www.anchor-lang.com/docs/installation) - Smart contract development framework
+
+<!-- TODO: still? -->
+{% hint style="warning" %}
+Known issues exist with Solana version 1.15 - downgrade to Solana 1.14.14
+{% endhint %}
+
 ## Addresses
 
 Because Wormhole works with many environments, the Wormhole address format is normalized.
