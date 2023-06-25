@@ -1,4 +1,7 @@
-Wormhole is compatible with many [ecosystems](../reference/ecosystem/README.md) and integration is straight forward.
+
+![Specialized Relayer](../.gitbook/assets/specialized-relayer.png)
+
+Wormhole is compatible with many [ecosystems](../reference/ecosystem/README.md) and integration is straight forward.  
 
 # Tutorials
 

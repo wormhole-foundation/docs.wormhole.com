@@ -1,6 +1,11 @@
 
 Details for working with EVM environment chains.
 
+## Developer tools
+
+The recommended development tool for EVM environments is [Foundry](https://book.getfoundry.sh/getting-started/installation).
+
+
 ## Addresses
 
 Because Wormhole works with many environments, the Wormhole address format is normalized. 
