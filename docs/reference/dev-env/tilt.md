@@ -41,8 +41,8 @@ In order to run the Tilt environment, make sure you have [Tilt](https://docs.til
 
 ### Prerequisites 
 
-<details>
-<summary>macOS</summary>
+{% tabs %}
+{% tab title="macOS" %}
 
 You'll need to have `homebrew` on your system if you don't already. You can grab it with:
 
@@ -70,10 +70,9 @@ After installation, go into Docker settings and switch ON `kubernetes`. Also con
 brew install tilt
 ```
 
-</details>
+{% endtab %}
 
-<details>
-<summary>Linux</summary>
+{% tab title="Linux" %}
 
 #### Install Go
 
@@ -84,23 +83,23 @@ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz
 
 #### Install Docker
 
-If you're using Linux with a window manager, consider getting Docker Desktop instead of the following command. It comes with Kubernetes built in and you won't need to download `minikube`. It's recommended to have at least 4 CPUs and 16GB RAM dedicated to Docker.
+If you're using Linux with a window manager, its highly recommended to install Docker Desktop since it comes with Kubernetes built in and you won't need to download `minikube`. 
+
+It's recommended to have at least 4 CPUs and 16GB RAM dedicated to Docker.
 
 Also, make absolutely sure that you set up Docker as a non-root user.
 
 [https://docs.docker.com/engine/install/ubuntu/#installation-methods](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
 
-
-{% tabs %}
-{% tab title="Docker Desktop UI" %}
+##### Docker Desktop (Recommended)
 
 Enable Kubernetes by going into Settings > Kubernetes
 
-{% endtab %}
+![Enable Kubernetes](../../.gitbook/assets/enable-kubernetes.png)
 
-{% tab title="CLI" %}
+##### CLI
 
-Install [`minikube`](https://minikube.sigs.k8s.io/docs/start/).
+The alternative to Docker Desktop with Kubernetes is to install [`minikube`](https://minikube.sigs.k8s.io/docs/start/).
 
 Configure minikube:
 
@@ -110,10 +109,6 @@ minikube start --driver=docker --kubernetes-version=v1.23.3 --cpus=4 --memory=14
 
 If you reboot your VM you'll need to run the `minikube start` command again before you bring up tilt.
 
-{% endtab %}
-{% endtabs %}
-
-
 #### Install Tilt
 
 Install Tilt by copy pasting this into the Terminal:
@@ -122,19 +117,11 @@ Install Tilt by copy pasting this into the Terminal:
 curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
 ```
 
-### Clone the Wormhole Repo and start Tilt
-
-```sh
-git clone --branch main https://github.com/wormhole-foundation/wormhole.git
-cd wormhole
-```
+{% endtab %}
 
 
-
-</details>
-
-<details>
-<summary>Linux Experimental Setup</summary>
+{% tab title="Linux (Experimental)" %}
+Linux Experimental Setup
 
 #### Experimental Setup Script
 
@@ -149,9 +136,10 @@ curl $URL | sh install_linux.sh
 cd wormhole/
 ./tilt.sh
 ```
+{% endtab %}
 
+{% endtabs %}
 
-</details>
 
 
 If you've all got prerequisites installed, just clone the Wormhole Core Repository and start Tilt.
@@ -224,7 +212,7 @@ Due to Solana's architecture, it often takes 25-40min to build the Solana pod. C
 
 ### Solana program deploy doesn't work
 
-Kubernetes doesn't currently allow port forwarding for UDP ports, which is what Solana uses for `solana program deploy`. Instead, we recommend using [Solana Deployer](https://github.com/acheroncrypto/solana-deployer). Not only does this deploy programs over regular RPC (thus bypassing UDP port requirements), it's also much faster than `solana program deploy`.
+Kubernetes doesn't currently allow port forwarding for UDP ports ([Github Issue](https://github.com/kubernetes/kubernetes/issues/47862)), which is what Solana uses for `solana program deploy`. Instead, we recommend using [Solana Deployer](https://github.com/acheroncrypto/solana-deployer). Not only does this deploy programs over regular RPC (thus bypassing UDP port requirements), it's also much faster than `solana program deploy`.
 
 ### Reset state for a pod
 

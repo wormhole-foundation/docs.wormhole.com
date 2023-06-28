@@ -24,6 +24,9 @@ See the [README](./scripts/README.md) for details on running these scripts
 
 The SUMMARY.md file is VERY picky, if you try to do something like have two top level (h1) headers, the CI job will never finish. If you're restructuring things, make small changes, CI for gitbook should be very fast.
 
-Examples for writing GitBook flavored markdown: https://github.com/GitbookIO/git-sync-normalization/blob/master/api-blocks.md
+Examples for writing GitBook flavored markdown: 
+
+https://github.com/GitbookIO/git-sync-normalization/blob/master/api-blocks.md
+https://support.audacityteam.org/community/contributing/tutorials/gitbook-markdown-syntax
 
 Use a web utility to scan for dead links like https://www.deadlinkchecker.com/
