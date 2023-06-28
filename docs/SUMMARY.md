@@ -49,6 +49,20 @@
 * [See Also](./reference/see-also.md)
 * [Ecosystem](https://wormhole.com/ecosystem)
 
+## Wormhole Improvment Proposals
+
+* [Generic Message Passing](./whips/0001_generic_message_passing.md)
+* [Governance Messaging](./whips/0002_governance_messaging.md)
+* [Token Bridge](./whips/0003_token_bridge.md)
+* [Message Publishing](./whips/0004_message_publishing.md)
+* [Data Availability](./whips/0005_data_availability.md)
+* [NFT Bridge](./whips/0006_nft_bridge.md)
+* [Governor](./whips/0007_governor.md)
+* [Guardian Key](./whips/0009_guardian_key.md)
+* [Integrity Checkers](./whips/0010_integrity_checkers.md)
+* [Accountant](./whips/0011_accountant.md)
+* [IBC Generic Messaging](./whips/0012_ibc_generic_messaging.md)
+
 
 ## Archive
 
