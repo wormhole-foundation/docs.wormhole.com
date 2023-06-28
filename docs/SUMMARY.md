@@ -12,6 +12,7 @@
   * [Wormhole Connect](./tutorials/quick-start/wh-connect.md)
   * [Hello Wormhole](./tutorials/quick-start/hello-wormhole/README.md)
     * [Hello Wormhole Explained](./tutorials/quick-start/hello-wormhole/hello-wormhole-explained.md)
+    * [Beyond Hello Wormhole](./tutorials/quick-start/hello-wormhole/beyond-hello-wormhole.md)
   * [Message Passing](./tutorials/app-integration/message-passing.md)
   * [Specialized Relayer](./tutorials/app-integration/specialized-relayer.md)
   * [Asset Transfer](./tutorials/app-integration/asset-transfer.md)
