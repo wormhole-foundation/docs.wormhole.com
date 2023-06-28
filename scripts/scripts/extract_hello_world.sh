@@ -3,10 +3,18 @@
 set -euo pipefail
 
 echo "Grab hello-world tutorial content"
+TUTORIAL_PATH="../../docs/tutorials/quick-start/hello-wormhole/"
+
+
+if [ -d "./wormhole" ]
+then
+    rm -rf hello-wormhole
+fi
 
 git clone git@github.com:wormhole-foundation/hello-wormhole.git
 
-cp hello-wormhole/README.md ../../docs/tutorials/quick-start/hello-wormhole/
-cp hello-wormhole/HOW_DOES_IT_WORK.md ../../docs/tutorials/quick-start/hello-wormhole/hello-wormhole-explained.md
+rm  $TUTORIAL_PATH/*
+
+cp hello-wormhole/*.md ../../docs/tutorials/quick-start/hello-wormhole/
 
 rm -rf hello-wormhole 
