@@ -47,7 +47,7 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
   
       if (extraDetails.developer !== undefined) {
         const docs = [];
-        for (const dd of extraDetails.developer.docs) {
+        for (const dd of extraDetails.developer) {
           docs.push(`[${dd.description ? dd.description : dd.url}](${dd.url})`);
         }
         devdocs = docs.join("\n");

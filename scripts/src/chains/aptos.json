@@ -11,15 +11,19 @@
       "description": "AptoScan"
     }
   ],
-  "developer": {
-    "docs": [
-      {
-        "url": "https://aptos.dev/",
-        "description": "Developer Docs"
-      }
-    ]
-  },
-  "examples":[{"url": "https://github.com/wormhole-foundation/wormhole/tree/main/aptos/examples", "description": "Message passing on Aptos" }],
+  "developer": [
+    {
+      "url": "https://aptos.dev/",
+      "description": "Developer Docs"
+    },
+    {"url":"https://www.aptosfaucet.com/", "description":"Faucet"}
+  ],
+  "examples": [
+    {
+      "url": "https://github.com/wormhole-foundation/wormhole/tree/main/aptos/examples",
+      "description": "Message passing on Aptos"
+    }
+  ],
   "contractSource": "aptos/wormhole/sources/wormhole.move",
   "finality": {
     "finalized": 0

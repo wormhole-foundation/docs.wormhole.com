@@ -11,14 +11,16 @@
       "description": "AlgoScan"
     }
   ],
-  "developer": {
-    "docs": [
-      {
-        "url": "https://developer.algorand.org",
-        "description": "Developer Docs"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://developer.algorand.org",
+      "description": "Developer Docs"
+    },
+    {
+      "url":"https://bank.testnet.algorand.network/",
+      "description":"Faucet"
+    }
+  ],
   "contractSource": "algorand/wormhole_core.py",
   "finality": {
     "finalized": 0

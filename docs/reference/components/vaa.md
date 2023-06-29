@@ -86,7 +86,7 @@ u8         decimals         // Number of decimals this token should have (max 8)
 [32]byte   name             // Full name of asset
 ```
 
-An important detail of the token bridge is that an attestation is in fact required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.\*\*\*\*
+An important detail of the token bridge is that an attestation is in fact required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.
 
 
 ### Token + Message 

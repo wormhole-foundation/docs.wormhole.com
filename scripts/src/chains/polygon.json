@@ -2,6 +2,10 @@
   "title": "Polygon",
   "homepage": "https://polygon.technology/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "developer":[
+    {"url":"https://wiki.polygon.technology/", "description":"Developer docs"},
+    {"url":"https://faucet.polygon.technology/", "description":"Faucet"}
+  ],
   "finality": {
     "instant": 200,
     "otherwise": "finalized"

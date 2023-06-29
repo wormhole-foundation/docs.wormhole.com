@@ -9,12 +9,15 @@
       "url": "https://blockscout.acala.network/"
     }
   ],
-  "developer": {
-    "docs": [
-      {
-        "url": "https://evmdocs.acala.network/"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://evmdocs.acala.network/",
+      "description": "Developer docs"
+    },
+    {
+      "url": "https://evmdocs.acala.network/tooling/faucet",
+      "description": "Faucet"
+    }
+  ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }

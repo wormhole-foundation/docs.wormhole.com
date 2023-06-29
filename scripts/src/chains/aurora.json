@@ -7,13 +7,15 @@
       "description": "Block Explorer"
     }
   ],
-  "developer": {
-    "docs": [
+  "developer": [
       {
         "url": "https://doc.aurora.dev/",
         "description": "Developer docs"
+      },
+      {
+        "url":"https://aurora.dev/faucet",
+        "description":"Faucet"
       }
-    ]
-  },
+  ],  
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }
