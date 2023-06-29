@@ -7,15 +7,53 @@ The [Worm CLI Tool](../cli-docs/README.md) should be installed regardless of env
 
 Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../environments/README.md)
 
+
+# Development Stages 
+
+Different approaches to development and testing are recommended at different stages of application development.
+
+## Initial Development
+
+During initial development of an on-chain application, the best option is to use the *native tools* available in the environment. 
+
+{% hint style="info" %}
+For the specific native tools recommended, see the page for the [Environment](../environments/README.md) you're interested in.
+{% endhint %}
+
+<!-- TODO: better link for this-->
+For any methods the program that require some message be sent or received, it's recommended to set up some Mock Guardian or Emitter to provide signed VAAs.
+
+{% hint style="info" %}
+A Mock utility is available [here](https://github.com/wormhole-foundation/wormhole/blob/main/sdk/js/src/mock/wormhole.ts) and an example of its use can be found in the [Wormhole Scaffolding repo](https://github.com/wormhole-foundation/wormhole-scaffolding/blob/main/evm/ts-test/01_hello_world.ts#L3)
+{% endhint %}
+
+This approach allows for more rapid prototyping and iteration without waiting for, or debugging issues related to, Wormhole.
+
+## Integration
+
+For integration to Wormhole and with multiple chains, the simplest option is to use the chains' testnets.
+
+{% hint style="success" %}
+In choosing which chains to use for integration testing, consider which chains in a given environment provide easy access to testnet tokens and where block times are fast. 
+{% endhint %}
+
+
+A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](#tilt) and [Wormhole Local Validator](#wormhole-local-validator) available.
+
+{% hint style="warning" %}
+The variation in host environments causing unique issues and the computational intensity of multiple simultaneous local validators can make it difficult or time consuming to setup. Prefer testnets for the simplest integration testing.
+{% endhint %}
+
+
+## Prepare for Deployment 
+
+Once you've finished initial development of the application and performed integration testing, you may want to set up some CI test environment.
+
+For that, the best option is likely to be [Tilt](#tilt) since it allows you to spin up any of the chains supported by Wormhole in a consistent environment.
+
 # Validator Setup
 
-If you intend to work with signed VAAs, the bare minimum Wormhole environment is a single blockchain node and a [Validator](../../reference/glossary.md#validator) node. 
-
-## Wormhole Local Validator
-
-This is the simplest custom environment. It's BYOB (Bring your own Blockchain) with the ability to run your own local validator nodes and connect them to a single Guardian running on docker. Initial setup can take upwards of 500 seconds, but after the image is built, bringing it up and down should take less than a minute. This environment requires installing the software for the validator nodes locally.
-
-[Full setup guide for Wormhole Local Validator](./wormhole-local-validator.md)
+If you'd like to set up a local validator environment, the following tools are provided. 
 
 ## Tilt
 
@@ -24,14 +62,27 @@ A full-fledged Kubernetes deployment of every chain connected to Wormhole, along
 [Full setup guide for Tilt](./tilt.md)
 
 
+## Wormhole Local Validator
+
+This is the simplest custom environment. It's BYOB (Bring your own Blockchain) with the ability to run your own local validator nodes and connect them to a single Guardian running on docker. Initial setup can take upwards 10 minutes, but once the image is built, restarts should take less than a minute. 
+
+This environment requires installing the software for the validator nodes locally.
+
+[Full setup guide for Wormhole Local Validator](./wormhole-local-validator.md)
+
+
 # Deploying to public networks
 
 ## Testnet
 
-If you want to test on the various test and devnets of existing connected chains, there's a single Guardian node watching for transactions on various test networks. You can find the contracts and RPC configuration in the [Reference](../../reference/environments/README.md) section.
+When doing integration testing on testnets, keep in mind that there is a single Guardian node watching for transactions on various test networks.  Because testnet only has a single Guardian, there's a small chance that your VAAs will not be processed. This rate is not indicative of performance on mainnet, where there are 19 Guardians watching for transactions.
 
-Because testnet only has a single Guardian, there's a small chance that your VAAs will not be processed. This rate is not indicative of performance on mainnet, where there are 19 Guardians watching for transactions.
+The testnet contract addresses are available on the page for the each [environment](../environments/README.md).
+
+The testnet Guardian RPC configuration is available on the [SDK page](../sdk-docs/README.md#testnet-guardian-rpc).  
 
 ## Mainnet
 
-When you're ready to deploy to mainnet, you can find the mainnet contracts in the [Reference](../../reference/environments/README.md) section.
+The mainnet contract addresses are available on the page for each [environment](../environments/README.md).
+
+The mainnet Guardian RPC configuration is available on the [SDK page](../sdk-docs/README.md#mainnet-guardian-rpc).  
