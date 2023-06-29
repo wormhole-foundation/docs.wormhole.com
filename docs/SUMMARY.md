@@ -8,8 +8,8 @@
 * [Cross-chain Development](./quick-start/cross-chain-dev.md)
   * [Automatic Relayer](./quick-start/automatic-relayer.md)
   * [Specialized Relayer](./quick-start/specialized-relayer.md)
+
 * [Tutorials](./tutorials/README.md)
-  * [Wormhole Connect](./tutorials/quick-start/wh-connect.md)
   * [Hello Wormhole](./tutorials/quick-start/hello-wormhole/README.md)
     * [Hello Wormhole Explained](./tutorials/quick-start/hello-wormhole/hello-wormhole-explained.md)
     * [Beyond Hello Wormhole](./tutorials/quick-start/hello-wormhole/beyond-hello-wormhole.md)
