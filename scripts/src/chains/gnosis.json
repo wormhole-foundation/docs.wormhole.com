@@ -2,11 +2,14 @@
   "title": "Gnosis",
   "homepage": "https://www.gnosis.io/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
-  "developer": {
-    "docs": [
+  "developer":  [
       {
-        "url": "https://www.gnosis.io/developers"
+        "url": "https://www.gnosis.io/developers",
+        "description":"Developer docs"
+      },
+      {
+        "url":"https://gnosisfaucet.com/",
+        "description":"Faucet"
       }
     ]
-  }
 }

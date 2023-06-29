@@ -28,6 +28,7 @@ The emitter is the application address, normalized to the wormhole address forma
 - [Web site](https://algorand.com)
 - [Algoexplorer](https://algoexplorer.io/) | [AlgoScan](https://algoscan.app)
 - [Developer Docs](https://developer.algorand.org)
+[Faucet](https://bank.testnet.algorand.network/)
 
 ## Wormhole Details
 

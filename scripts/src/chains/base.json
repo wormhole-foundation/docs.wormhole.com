@@ -1,13 +1,12 @@
 {
   "title": "Base",
   "homepage": "https://base.org/",
-  "developer": {
-    "docs": [
+  "developer": [
       {
-        "url": "https://docs.base.org/"
+        "url": "https://docs.base.org/",
+        "description":"Developer docs"
       }
-    ]
-  },
+    ],
   "explorer": [
     {
       "url": "https://goerli.basescan.org/",

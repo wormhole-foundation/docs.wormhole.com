@@ -1,13 +1,16 @@
 {
   "homepage": "https://fantom.foundation/",
   "title": "Fantom",
-  "developer": {
-    "docs": [
-      {
-        "url": "https://docs.fantom.foundation/"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://docs.fantom.foundation/",
+      "description": "Developer docs"
+    },
+    {
+      "url": "https://faucet.fantom.network/",
+      "description": "Faucet"
+    }
+  ],
   "explorer": [
     {
       "url": "https://ftmscan.com/"

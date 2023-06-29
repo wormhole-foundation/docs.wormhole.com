@@ -7,13 +7,16 @@
       "description": "Etherscan"
     }
   ],
-  "developer": {
-    "docs": [
+  "developer": [
       {
-        "url": "https://docs.bnbchain.org/docs/learn/intro"
+        "url": "https://docs.bnbchain.org/docs/learn/intro",
+        "description":"Developer docs"
+      },
+      {
+        "url":"https://testnet.binance.org/faucet-smart/",
+        "description":"Faucet"
       }
-    ]
-  },
+    ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
     "instant": 200,

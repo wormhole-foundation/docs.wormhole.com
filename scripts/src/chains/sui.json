@@ -1,6 +1,10 @@
 {
   "title": "Sui",
   "homepage": "https://sui.io/",
+  "developer":[
+    {"url":"https://docs.sui.io/", "description":"Developer docs"},
+    {"url":"https://docs.sui.io/build/faucet", "description":"Faucet"}
+  ],
   "finality": {
     "finalized": 0
   }

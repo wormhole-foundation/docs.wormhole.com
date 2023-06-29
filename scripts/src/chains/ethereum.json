@@ -1,13 +1,11 @@
 {
   "homepage": "https://ethereum.org/",
   "title": "Ethereum",
-  "developer": {
-    "docs": [
-      {
-        "url": "https://ethereum.org/en/developers/docs/"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://ethereum.org/en/developers/docs/"
+    }
+  ],
   "explorer": [
     {
       "url": "https://etherscan.io/"
