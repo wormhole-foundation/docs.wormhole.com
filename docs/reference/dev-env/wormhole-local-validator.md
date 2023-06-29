@@ -1,5 +1,7 @@
 
-The [Wormhole Local Validator](https://github.com/wormhole-foundation/xdapp-book/tree/main/projects/wormhole-local-validator) is meant to be the simplest custom environment. It consists only of a dockerized Guardian image, and some utility tooling to aid with contract management. This allows you to set it up with any blockchain you'd like.
+The [Wormhole Local Validator](https://github.com/wormhole-foundation/xdapp-book/tree/main/projects/wormhole-local-validator) is meant to be a simple custom environment. It consists only of a Dockerized Guardian image, and some utility tooling to aid with contract management. 
+
+Follow the pattern in existing chain setup scripts to set it up with any blockchain you'd like.
 
 ### Is WLV Right for You?
 
@@ -19,20 +21,9 @@ Here's a succinct list of the pros and cons of the environment, so you can decid
 
 You will need Docker running in order to set up WLV. If you're on desktop, [Docker Desktop](https://docs.docker.com/get-docker/) is generally the best choice, though [Docker Engine](https://docs.docker.com/engine/) works fine too.
 
-From there, you just need nodes for the blockchains you're interested in developing on. There is code to spin up EVM and Solana local validators included in the WLV project repo, as well as scripts to deploy the necessary Wormhole contracts to your local instances.
+From there, you just need nodes for the blockchains you're interested in developing on. Included in the tool are EVM and Solana local validators, as well as scripts to deploy the necessary Wormhole contracts to your local instances.
 
 Further information can be found in the project's [README](https://github.com/wormhole-foundation/xdapp-book/blob/main/projects/wormhole-local-validator/README.md).
-
-## Troubleshooting
-
-Q: Anvil isn't working
-
-- While Foundry's 'forge' tool is the generally recommended tool for EVM contract compilation, Anvil isn't currently compatible with guardiand. Anvil reports block headers in a way which is non-compliant with go-ethereum, which means the guardian node can't correctly read anvil headers.
-
-
-# Wormhole Local Validator
-
-The Wormhole Local Validator is available [here](https://github.com/wormhole-foundation/xdapp-book/tree/main/projects/wormhole-local-validator). Along with the Wormhole Local Validator, this also contains code to spin up EVM and Solana local validators, as well as deployment code to add Wormhole contracts to those new chains.
 
 ## Dependencies
 
@@ -97,10 +88,8 @@ To pull down and start the Wormhole Guardian image, run
 npm run wormhole
 ```
 
-### FAQ & Common Problems
+## Troubleshooting
 
 - Anvil isn't working  
+
   While we recommend Foundry's Forge tool for compiling and deploying code elsewhere in these docs, we do not at this time recommend using anvil for guardiand; this is because guardiand is spec'd against go-ethereum, and anvil is out of spec for how it reports block headers (non left padding to normalize length), which means go-ethereum reacts abnormally and can't read anvil headers.
-
-
-

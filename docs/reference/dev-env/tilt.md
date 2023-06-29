@@ -18,7 +18,7 @@ The 'Tilt' environment is meant to provide an entire cross-chain development sta
 
 ### Is Tilt Right for You?
 
-Tilt is generally a good starting point for most developers. Here's a succinct list of the pros and cons of the environment, so you can decide if it's the right fit for you.
+Tilt is a good option for developers that need some local devnet and have access to a machine that can handle running them. It is a great option for developers that want to establish some CI testing suite. 
 
 **Pros**
 
@@ -170,13 +170,11 @@ Be sure to check out the [**Tiltfile**](https://github.com/wormhole-foundation/w
 For example, you can enable blockchains by setting them to true at startup
 
 {% hint style="info" %}
-
-Note the use of the **'--'** separator between tilt command flags and the flags you wish to pass to configure the setup
-
+Note the use of the **--** separator between tilt command flags and the flags you wish to pass to configure the setup
 {% endhint %}
 
 ```sh
-tilt up -- --algorand=true --aptos=true
+tilt up -- --algorand --solana
 ```
 
 ## Using Tilt

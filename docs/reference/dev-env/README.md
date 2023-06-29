@@ -20,9 +20,9 @@ During initial development of an on-chain application, the best option is to use
 For the specific native tools recommended, see the page for the [Environment](../environments/README.md) you're interested in.
 {% endhint %}
 
-<!-- TODO: better link for this-->
 For any methods the program that require some message be sent or received, it's recommended to set up some Mock Guardian or Emitter to provide signed VAAs.
 
+<!-- TODO: better link for this-->
 {% hint style="info" %}
 A Mock utility is available [here](https://github.com/wormhole-foundation/wormhole/blob/main/sdk/js/src/mock/wormhole.ts) and an example of its use can be found in the [Wormhole Scaffolding repo](https://github.com/wormhole-foundation/wormhole-scaffolding/blob/main/evm/ts-test/01_hello_world.ts#L3)
 {% endhint %}
@@ -33,7 +33,7 @@ This approach allows for more rapid prototyping and iteration without waiting fo
 
 For integration to Wormhole and with multiple chains, the simplest option is to use the chains' testnets.
 
-{% hint style="success" %}
+{% hint style="info" %}
 In choosing which chains to use for integration testing, consider which chains in a given environment provide easy access to testnet tokens and where block times are fast. 
 {% endhint %}
 
