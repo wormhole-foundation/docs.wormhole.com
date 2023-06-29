@@ -91,7 +91,8 @@ An important detail of the token bridge is that an attestation is in fact requir
 
 ### Token + Message 
 
-The Transfer event above is missing an important detail. While the program on Chain B can trust the message to inform it of token lockup events, it has no way to know what the token being locked up actually is. The address alone is a meaningless value to most users. To solve this, the Token Bridge supports token attestation. Chain A emits a message containing metadata about an address, which Chain B can store in order to learn the name, symbol, and decimal precision of a token address. The message format for this action is as so:
+The Token + Message data structure is identical to the Token only data structure with the addition of a `payload` field that contains arbitrary bytes. This arbitrary byte field is where an app may include additional data in the transfer to inform some application specific behavior.
+
 
 ```rust
 u8      payload_id = 3 // Token Transfer with Message 
