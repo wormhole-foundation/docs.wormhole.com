@@ -52,7 +52,7 @@ function App() {
 
 If your app is running, you should see something like this
 
-![Wormhole Connect Screenshot](../../../.gitbook/assets/wh-connect-default.png)
+![Wormhole Connect Screenshot](../../.gitbook/assets/wh-connect-default.png)
 
 
 ## Configuration
