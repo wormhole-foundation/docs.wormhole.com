@@ -50,7 +50,7 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
         for (const dd of extraDetails.developer) {
           docs.push(`[${dd.description ? dd.description : dd.url}](${dd.url})`);
         }
-        devdocs = docs.join("\n");
+        devdocs = docs.join(" | ");
       }
   
       if (finality !== undefined) {

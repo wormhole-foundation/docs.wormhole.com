@@ -38,8 +38,7 @@ The capability object ID (uint64) is used as the emitter address after normalizi
 
 - [Web site](https://sui.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://docs.sui.io/)
-[Faucet](https://docs.sui.io/build/faucet)
+- [Developer docs](https://docs.sui.io/) | [Faucet](https://docs.sui.io/build/faucet)
 
 ## Wormhole Details
 

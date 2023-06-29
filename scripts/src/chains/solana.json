@@ -1,10 +1,15 @@
 {
   "title": "Solana",
   "homepage": "https://solana.com/",
+  "explorer": [
+    {
+      "url": "https://explorer.solana.com/"
+    }
+  ],
   "developer": [
     {
       "url": "https://solana.com/developers",
-      "description":"Developer docs"
+      "description": "Developer docs"
     }
   ],
   "finality": {

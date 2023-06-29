@@ -83,8 +83,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [Web site](https://acala.network/)
 - [https://acala.subscan.io/](https://acala.subscan.io/) | [https://blockscout.acala.network/](https://blockscout.acala.network/)
-- [Developer docs](https://evmdocs.acala.network/)
-[Faucet](https://evmdocs.acala.network/tooling/faucet)
+- [Developer docs](https://evmdocs.acala.network/) | [Faucet](https://evmdocs.acala.network/tooling/faucet)
 
 ## Wormhole Details
 
@@ -183,8 +182,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [Web site](https://aurora.dev/)
 - [Block Explorer](https://explorer.aurora.dev/)
-- [Developer docs](https://doc.aurora.dev/)
-[Faucet](https://aurora.dev/faucet)
+- [Developer docs](https://doc.aurora.dev/) | [Faucet](https://aurora.dev/faucet)
 
 ## Wormhole Details
 
@@ -232,8 +230,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 - [Web site](https://www.avax.network/)
 - [C-Chain Block Explorer](https://snowtrace.io/) | [https://subnets.avax.network/](https://subnets.avax.network/)
-- [Developer docs](https://docs.avax.network/)
-[Faucet](https://faucet.quicknode.com/avalanche/fuji)
+- [Developer docs](https://docs.avax.network/) | [Faucet](https://faucet.quicknode.com/avalanche/fuji)
 
 ## Wormhole Details
 
@@ -329,8 +326,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 - [Web site](https://www.bnbchain.org/en/smartChain)
 - [Etherscan](https://bscscan.com/)
-- [Developer docs](https://docs.bnbchain.org/docs/learn/intro)
-[Faucet](https://testnet.binance.org/faucet-smart/)
+- [Developer docs](https://docs.bnbchain.org/docs/learn/intro) | [Faucet](https://testnet.binance.org/faucet-smart/)
 
 ## Wormhole Details
 
@@ -381,8 +377,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 - [Web site](https://celo.org/)
 - [https://explorer.celo.org/mainnet/](https://explorer.celo.org/mainnet/) | [https://celoscan.io/](https://celoscan.io/)
-- [Developer docs](https://docs.celo.org/)
-[Faucet](https://faucet.celo.org/alfajores)
+- [Developer docs](https://docs.celo.org/) | [Faucet](https://faucet.celo.org/alfajores)
 
 ## Wormhole Details
 
@@ -430,8 +425,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 - [Web site](https://fantom.foundation/)
 - [https://ftmscan.com/](https://ftmscan.com/)
-- [Developer docs](https://docs.fantom.foundation/)
-[Faucet](https://faucet.fantom.network/)
+- [Developer docs](https://docs.fantom.foundation/) | [Faucet](https://faucet.fantom.network/)
 
 ## Wormhole Details
 
@@ -479,8 +473,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 - [Web site](https://www.gnosis.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://www.gnosis.io/developers)
-[Faucet](https://gnosisfaucet.com/)
+- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://gnosisfaucet.com/)
 
 ## Wormhole Details
 
@@ -627,8 +620,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 - [Web site](https://moonbeam.network/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://docs.moonbeam.network/)
-[Faucet](https://faucet.moonbeam.network/)
+- [Developer docs](https://docs.moonbeam.network/) | [Faucet](https://faucet.moonbeam.network/)
 
 ## Wormhole Details
 
@@ -823,8 +815,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [Web site](https://polygon.technology/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://wiki.polygon.technology/)
-[Faucet](https://faucet.polygon.technology/)
+- [Developer docs](https://wiki.polygon.technology/) | [Faucet](https://faucet.polygon.technology/)
 
 ## Wormhole Details
 

@@ -38,7 +38,7 @@ The application dev chooses whether this is a consistent address over time or ch
 ## Ecosystem
 
 - [Web site](https://solana.com/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- [https://explorer.solana.com/](https://explorer.solana.com/)
 - [Developer docs](https://solana.com/developers)
 
 ## Wormhole Details
