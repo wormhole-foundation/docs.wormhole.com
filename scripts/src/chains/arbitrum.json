@@ -7,14 +7,12 @@
       "description": "Arbitrum Explorer"
     }
   ],
-  "developer": {
-    "docs": [
-      {
-        "url": "https://developer.arbitrum.io/getting-started-devs",
-        "description": "Developer Docs"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://developer.arbitrum.io/getting-started-devs",
+      "description": "Developer Docs"
+    }
+  ],
   "finality": {
     "instant": 200,
     "otherwise": "finalized"

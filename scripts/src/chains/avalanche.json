@@ -10,12 +10,15 @@
       "url": "https://subnets.avax.network/"
     }
   ],
-  "developer": {
-    "docs": [
-      {
-        "url": "https://docs.avax.network/"
-      }
-    ]
-  },
+  "developer": [
+    {
+      "url": "https://docs.avax.network/",
+      "description": "Developer docs"
+    },
+    {
+      "url": "https://faucet.quicknode.com/avalanche/fuji",
+      "description": "Faucet"
+    }
+  ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }

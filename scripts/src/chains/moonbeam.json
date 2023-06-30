@@ -1,5 +1,15 @@
 {
   "title": "Moonbeam",
   "homepage": "https://moonbeam.network/",
-  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "developer":[
+    {
+      "url":"https://docs.moonbeam.network/",
+      "description":"Developer docs"
+    },
+    {
+      "url":"https://faucet.moonbeam.network/",
+      "description":"Faucet"
+    }
+  ]
 }

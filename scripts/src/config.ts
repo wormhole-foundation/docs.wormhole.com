@@ -54,16 +54,12 @@ export interface SiteDescription {
   description?: string
 };
 
-export interface DeveloperDetails {
-  docs: SiteDescription[] // urls to dev docs
-};
-
 export interface ExtraDetails {
   finality?: Finality;
   title?: string // title case name of the chain
   homepage?: string // Url to the homepage of the chain
   explorer?: SiteDescription[] // urls to explorer sites
-  developer?: DeveloperDetails // set of sites to help devs
+  developer?: SiteDescription[] // set of sites to help devs
   contractSource?: string // url to core contract
   examples?:SiteDescription[]
 };

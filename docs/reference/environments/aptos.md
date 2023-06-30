@@ -27,7 +27,7 @@ The capability object ID (uint64) is used as the emitter address after normalizi
 
 - [Web site](https://aptosfoundation.org/)
 - [Aptos Explorer](https://explorer.aptoslabs.com/) | [AptoScan](https://aptoscan.com/)
-- [Developer Docs](https://aptos.dev/)
+- [Developer Docs](https://aptos.dev/) | [Faucet](https://www.aptosfaucet.com/)
 
 ## Wormhole Details
 
