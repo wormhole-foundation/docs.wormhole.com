@@ -137,7 +137,13 @@ Some implementation details should be considered during development to ensure sa
 
 If taking advantage of Automatic Relaying, no off chain logic need be implemented. 
 
-While no off chain programs are required, a developer may want to track the progress of messages in flight. To track the progress of messages in flight,  .... TODO
+While no off chain programs are required, a developer may want to track the progress of messages in flight. To track the progress of messages in flight, use the worm CLI tool's `status` subcommand.
+
+```sh
+$ worm status mainnet ethereum 0xdeadbeef
+```
+
+See the [CLI tool docs](../reference/cli-docs/README.md) for installation and usage.
 
 # See Also
 
