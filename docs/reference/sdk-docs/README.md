@@ -51,7 +51,7 @@ const TESTNET_GUARDIAN_PUBKEY: string = "0x13947Bd48b18E53fdAeEe77F3473391aC727C
 
 ## Usage
 
-See the [tutorial](../../guide/tutorials/quick-start/sdk-api.md) for basic usage
+See the [tutorial](https://www.notion.so/wormholefoundation/Guide-30-min-Enable-cross-chain-token-deposits-from-any-chain-with-Typescript-57f8a9e90b184de9bf98c78292fbdba1) for basic usage
 
 ## Documentation
 
