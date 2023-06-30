@@ -42,7 +42,7 @@ Once you approve the transfer, you must complete the transaction. If you navigat
 * Click "Redeem"
 * Accept wallet approval pop-up(s)
 
-![](.gitbook/assets/archive/redeem-screenshot.png)
+![](../.gitbook/assets/archive/redeem-screenshot.png)
 
 ![](<../.gitbook/assets/archive/Screen Shot 2022-05-20 at 5.00.23 pm.png>)
 
