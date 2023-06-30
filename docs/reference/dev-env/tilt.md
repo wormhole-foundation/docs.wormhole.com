@@ -191,10 +191,10 @@ Additional helpful resources can be found in the [Tooling](./tooling.md) page.
 
 ## Shutting down Tilt
 
-In order to shut down Tilt, simply run
+In order to shut down Tilt, run `tilt down` with the same network flags provided in the `tilt up` command.
 
 ```
-tilt down
+tilt down -- --solana --algorand
 ```
 
 
