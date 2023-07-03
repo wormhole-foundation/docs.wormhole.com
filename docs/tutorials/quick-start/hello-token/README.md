@@ -1,10 +1,10 @@
 # Building Your First Cross-Chain Token Sending and Receiving Application
 
-This repository contains a [solidity contract](./src/HelloToken.sol) that can be deployed onto many EVM chains to form a fully functioning cross-chain application with the ability for users to request, from one contract, that tokens are sent to a user on a different chain.
+This tutorial contains a [solidity contract](https://github.com/wormhole-foundation/hello-token/blob/main/src/HelloToken.sol) that can be deployed onto many EVM chains to form a fully functioning cross-chain application with the ability for users to request, from one contract, that tokens are sent to an address on a different chain.
 
 Here is an example of a [cross-chain borrow lending application](https://github.com/wormhole-foundation/cross-chain-borrow-lend) that uses the topics covered in this tutorial!
 
-## Getting Started
+## Summary 
 
 Included in this [repository](https://github.com/wormhole-foundation/hello-token/) is:
 
@@ -20,7 +20,11 @@ Included in this [repository](https://github.com/wormhole-foundation/hello-token
 
 ### Testing Locally
 
+Clone down the repo, cd into it, then build and run unit tests:
+
 ```bash
+git clone https://github.com/wormhole-foundation/hello-token.git
+cd hello-token
 npm run build
 forge test
 ```
@@ -56,54 +60,63 @@ To test sending and receiving a message on testnet, execute the test as such:
 EVM_PRIVATE_KEY=your_wallet_private_key npm run test
 ```
 
-Specifically, we will write and deploy a contract onto many chains that allows users to request, from one contract, that tokens are sent to a user on a *different chain*.
+## Getting Started
 
-## Let’s write [HelloToken](https://github.com/wormhole-foundation/hello-token), a cross-chain application using TokenBridge
+Let's write a [HelloToken contract](https://github.com/wormhole-foundation/hello-token/blob/main/src/HelloToken.sol) that lets users send an arbitrary amount of an IERC20 token to an address of their choosing on another chain.
 
-Let’s write a [HelloToken contract](https://github.com/wormhole-foundation/hello-token/blob/main/src/HelloToken.sol) that lets users send an arbitrary amount of an IERC20 token to an address of their choosing on another chain.
+
+### Wormhole Solidity SDK
+
+To ease development, we'll make use of the [Wormhole Solidity SDK](https://github.com/wormhole-foundation/wormhole-solidity-sdk). 
+
+Include this SDK in your own cross-chain application by running:
+
+```bash 
+forge install wormhole-foundation/wormhole-solidity-sdk
+``` 
+
+and import it in your contract:
 
 ```solidity
 import "wormhole-solidity-sdk/WormholeRelayerSDK.sol";
 ```
 
-First thing to note is we will make use of the [Wormhole Solidity SDK](https://github.com/wormhole-foundation/wormhole-solidity-sdk). You can include this in your own cross-chain application by simply running `forge install wormhole-foundation/wormhole-solidity-sdk`. 
+This SDK provides helpers that make cross-chain development with Wormhole easier, and specifically provides us with the TokenSender and TokenReceiver abstract classes with useful functionality for sending and receiving tokens using TokenBridge
 
-This solidity SDK provides helpers that make cross-chain development with Wormhole easier, and specifically provides us with the TokenSender and TokenReceiver abstract classes with useful functionality for sending and receiving tokens using TokenBridge
+
+### Implement Sending Function
 
 Lets start by writing a function to send some amount of a token to a specific recipient on a target chain. 
 
 ```solidity
 function sendCrossChainDeposit(
-        uint16 targetChain,
-        address targetHelloToken,//address of HelloToken contract on targetChain
-        address recipient,
+        uint16 targetChain, // A wormhole chain id 
+        address targetHelloToken, // address of HelloToken contract on targetChain
+        address recipient, 
         uint256 amount,
         address token
 ) public payable;
 ```
 
-We do this by sending the token as well as a payload to the HelloToken contract on the target chain. The payload will contain the intended recipient of the token, so that the target chain HelloToken contract can send the token to the intended recipient. 
+The body of this function will send the token as well as a payload to the HelloToken contract on the target chain. For our application, the payload will contain the intended recipient of the token, so that the target chain HelloToken contract can send the token to the intended recipient. 
 
-> TokenBridge only supports sending IERC20 tokens, and specifically only up to 8 decimals of a token. So, if your IERC20 token has 18 decimals, and you send ‘amount’ of a token, you will receive ‘amount’ rounded down to the nearest multiple of 10^10.
+> Note: TokenBridge only supports sending IERC20 tokens, and specifically only up to 8 decimals of a token. So, if your IERC20 token has 18 decimals, and you send `amount` of a token, you will receive `amount` rounded down to the nearest multiple of 10^10.
 
+To send the token and payload to the HelloToken contract, we make use of the `sendTokenWithPayloadToEvm` helper from the Wormhole Solidity SDK. 
 
-To send the token and payload to the HelloToken contract, we make use of the ‘sendTokenWithPayloadToEvm’ helper from the Wormhole Solidity SDK. 
+For a successful transfer, several things need to happen:
 
-To do this, a few things need to happen:
-
-- The user (or contract) who calls ‘sendCrossChainDeposit’ should **************approve************** the HelloWorld contract to use ‘amount’ of the user’s tokens. [See how that is done in the forge test here](https://github.com/wormhole-foundation/hello-token/blob/main/test/HelloToken.t.sol#L37)
-- We must transfer ‘amount’ of the token from the user to the HelloToken source contract
-    
+- The user (or contract) who calls `sendCrossChainDeposit` should **approve** the `HelloToken` contract to use `amount` of the user's tokens. 
+    See how that is done in the forge test [here](https://github.com/wormhole-foundation/hello-token/blob/main/test/HelloToken.t.sol#L37)
+- We must transfer `amount` of the token from the user to the `HelloToken` source contract
     `IERC20(token).transferFrom(msg.sender, address(this), amount);`
-    
 - We must encode the recipient address into a payload
-    
     `bytes memory payload = abi.encode(recipient);`
-    
-- We must make sure that the correct amount of msg.value was passed in to send the token and payload.
-    - The cost to send a token is `wormhole.messageFee()` (which is currently free!)
-    - The cost to request a relay depends on the gas amount and receiver value you will need. For our case, this is `(deliveryCost,) = 
-        wormholeRelayer.quoteEVMDeliveryPrice(targetChain, 0, GAS_LIMIT);`
+- We must ensure the correct amount of `msg.value` was passed in to send the token and payload.
+    - The cost to send a token is provided by the value returned by `wormhole.messageFee()` 
+        Currently this is 0 but _may_ change in the future, so don't assume it will always be 0.
+    - The cost to request a relay depends on the gas amount and receiver value you will need. 
+        `(deliveryCost,) = wormholeRelayer.quoteEVMDeliveryPrice(targetChain, 0, GAS_LIMIT);`
 
 ```solidity
 function sendCrossChainDeposit(
@@ -144,16 +157,18 @@ public view returns (uint256 cost) {
 }
 ```
 
-Now, we just have to implement the TokenReceiver abstract class - which is also included in the Wormhole Solidity SDK
+
+### Implement Receiving Function
+
+Now, we'll implement the `TokenReceiver` abstract class - which is also included in the Wormhole Solidity SDK
 
 ```solidity
 struct TokenReceived {
     bytes32 tokenHomeAddress;
     uint16 tokenHomeChain;
-    address tokenAddress; // wrapped address if tokenHomeChain !== this chain, 
-													// else tokenHomeAddress (in evm address format)
+    address tokenAddress; 
     uint256 amount;
-    uint256 amountNormalized; // if decimals > 8, normalized to 8 decimal places
+    uint256 amountNormalized; 
 }
 
 function receivePayloadAndTokens(
@@ -165,24 +180,30 @@ function receivePayloadAndTokens(
 ) internal virtual {}
 ```
 
-When `sendTokenWithPayloadToEvm` is called, this results in `receivePayloadAndTokens` being called on the target chain and target address specified, with the appropriate inputs.
+After we call `sendTokenWithPayloadToEvm` on the source chain, the message goes through the standard Wormhole message lifecycle. Once a VAA is available, the delivery provider will call `receivePayloadAndTokens` on the target chain and target address specified, with the appropriate inputs.
 
-payload, sourceAddress, sourceChain, and deliveryHash are all the same as on the normal `receiveWormholeMessages` endpoint. Let’s delve into the fields that are provided to us in the TokenReceived struct
+The arguments `payload`, `sourceAddress`, `sourceChain`, and `deliveryHash` are all the same as on the normal `receiveWormholeMessages` endpoint.
 
-- ********************************tokenHomeAddress********************************: This will be the same as the ‘token’ field in the call to sendTokenWithPayloadToEvm, as that is the original address of the token.
+Let's delve into the fields that are provided to us in the `TokenReceived` struct:
+
+- **tokenHomeAddress**
+    The same as the `token` field in the call to `sendTokenWithPayloadToEvm`, as that is the original address of the token unless the original token sent is a wormhole-wrapped token. In the case a wrapped token is sent, this will be the address of the original version of the token (on it’s native chain) in [wormhole address format](https://docs.wormhole.com/wormhole/reference/environments/evm#addresses) - i.e. left-padded with 12 zeros
     
-    *******However*******, if the original token sent is a wormhole-wrapped token, this will be the address of the original/native/unwrapped version of the token (on it’s native chain)
-    
-    This will be given to you in bytes32 format - i.e. left-padded with 12 zeros
-    
-- **tokenHomeChain**: The chain (in wormhole chain ID format) corresponding to the home address above - this will be the source chain, unless if the original token sent is a wormhole-wrapped asset, in which case it will be the chain of the unwrapped version of the token.
-- ************************tokenAddress************************: This is the address of the IERC20 token on this chain (the target chain) that has been transferred to this contract. If tokenHomeChain == this chain, this will be the same as tokenHomeAddress; otherwise, it will be the wormhole-wrapped version of the token sent.
-- ************amount************: This is the amount of the token that has been sent to you - the units being the same as the original token. Note that since TokenBridge only sends with 8 decimals of precision, if your token had 18 decimals, this will be the ‘amount’ you sent, rounded down to the nearest multiple of 10^10.
-- ******************amountNormalized******************: This is the amount of token divided by (1 if decimals ≤ 8, else 10^(decimals - 8))
+- **tokenHomeChain**
+    The chain (in wormhole chain ID format) corresponding to the home address above - this will be the source chain, unless if the original token sent is a wormhole-wrapped asset, in which case it will be the chain of the unwrapped version of the token.
 
-Since all we intend to do is send the received token to the recipient, our fields of interest are **************payload************** (which tells us the recipient), ************************************************************receivedTokens[0].tokenAddress************************************************************ (which tells us the address of the token we received), and ************************************************receivedTokens[0].amount************************************************ (which tells us the amount of token we received and that we must send)
+- **tokenAddress**
+    This is the address of the IERC20 token on this chain (the target chain) that has been transferred to this contract. If tokenHomeChain == this chain, this will be the same as tokenHomeAddress; otherwise, it will be the wormhole-wrapped version of the token sent.
 
-So, we can complete the implementation as follows:
+- **amount**
+     This is the amount of the token that has been sent to you - the units being the same as the original token. Note that since TokenBridge only sends with 8 decimals of precision, if your token had 18 decimals, this will be the ‘amount’ you sent, rounded down to the nearest multiple of 10^10.
+
+- **amountNormalized**
+    This is the amount of token divided by (1 if decimals ≤ 8, else 10^(decimals - 8))
+
+Since all we intend to do is send the received token to the recipient, our fields of interest are **payload** (containing recipient), **receivedTokens[0].tokenAddress** (token we received), and **receivedTokens[0].amount** (amount of token we received and that we must send)
+
+We can complete the implementation as follows:
 
 ```solidity
 function receivePayloadAndTokens(
@@ -200,11 +221,12 @@ function receivePayloadAndTokens(
 }
 ```
 
-******Note:****** We don’t need to prevent duplicate deliveries using the delivery hash, because TokenBridge already has a form of duplicate prevention when redeeming sent tokens
+> Note: In this case, we don't need to prevent duplicate deliveries using the delivery hash, because TokenBridge already provides a form of duplicate prevention when redeeming sent tokens
 
 And voila! We have a [complete working example](https://github.com/wormhole-foundation/hello-token/blob/main/src/HelloToken.sol) of a cross-chain application that uses TokenBridge to send and receive tokens!
 
 Try [cloning and running HelloToken](https://github.com/wormhole-foundation/hello-token/tree/main#readme) to see this example work for yourself! 
+
 
 ## How do these Solidity Helpers Work?
 
@@ -212,9 +234,9 @@ Let’s walk through the details of `sendTokenWithPayloadToEvm` and `receivePayl
 
 ### Sending a Token
 
-To send a token, we make use of the EVM TokenBridge contract, specifically the ‘transferTokensWithPayload’ method ([implemented here](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol#L191))
+To send a token, we make use of the EVM TokenBridge contract, specifically the `transferTokensWithPayload` method ([implementation](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol#L191))
 
-**************************************************************Note: We leave the ‘payload’ field here blank because we are using the ‘payload’ field on the IWormholeRelayer interface instead**************************************************************
+> Note: We leave the `payload` field here blank because we are using the `payload` field on the IWormholeRelayer interface instead
 
 ```solidity
     /*
@@ -239,13 +261,13 @@ To send a token, we make use of the EVM TokenBridge contract, specifically the �
     ) public payable nonReentrant returns (uint64 sequence)
 ```
 
-TokenBridge implements this function by publishing a wormhole message to the blockchain logs that indicates that ‘amount’ of the ‘token’ was sent (with the intended address being ‘recipient’ on ‘recipientChain’). TokenBridge then returns us the sequence number of this published wormhole message.
+TokenBridge implements this function by publishing a wormhole message to the blockchain logs that indicates that `amount` of the `token` was sent (with the intended address being `recipient` on `recipientChain`). TokenBridge then returns the sequence number of this published wormhole message.
 
 The `transferTokens` function in the Wormhole Solidity SDK makes use of this TokenBridge endpoint by 
 
-- approving the TokenBridge to spend ‘amount’ of our ERC20 ‘token’
-- calling transferTokensWithPayload with the appropriate inputs
-- returning us a ‘VaaKey’ struct containing information about the published wormhole message for the token transfer
+- approving the TokenBridge to spend `amount` of our ERC20 `token`
+- calling `transferTokensWithPayload` with the appropriate inputs
+- returning a `VaaKey` struct containing information about the published wormhole message for the token transfer
 
 ```solidity
 function transferTokens(
@@ -282,7 +304,7 @@ function sendVaasToEvm(
 ) external payable returns (uint64 sequence);
 ```
 
-This allows us to specify existing wormhole message(s) and get the signed VAA(s) corresponding to those messages delivered to the targetAddress (in the ‘additionalVaas’ field of receiveWormholeMessages). 
+This allows us to specify existing wormhole message(s) and get the signed VAA(s) corresponding to those messages delivered to the targetAddress (in the `additionalVaas` field of `receiveWormholeMessages`). 
 
 ```solidity
 function sendTokenWithPayloadToEvm(
@@ -306,26 +328,28 @@ function sendTokenWithPayloadToEvm(
 }
 ```
 
-Note: If you wish to send multiple different tokens along with the payload, the `sendTokenWithPayloadToEvm` helper as currently implemented will not help (as it sends only one token). However, you can still simply call `transferToken` twice and request delivery of both of those TokenBridge wormhole messages by providing two VaaKey structs in the 'vaaKeys' array. [See an example of HelloToken with more than one token here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloMultipleTokens.sol). 
+> Note: If you wish to send multiple different tokens along with the payload, the `sendTokenWithPayloadToEvm` helper as currently implemented will not help (as it sends only one token). 
+> However, you can still call `transferToken` twice and request delivery of both of those TokenBridge wormhole messages by providing two `VaaKey` structs in the `vaaKeys` array. 
+> See an example of HelloToken with more than one token [here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloMultipleTokens.sol). 
 
 ### Receiving a Token
 
-We know that our ‘sendVaasToEvm’ call will cause `receiveWormholeMessages` on ‘targetAddress’ to be called with
+We know that our `sendVaasToEvm` call will cause `receiveWormholeMessages` on `targetAddress` to be called with
 
-- payload being the encoded ‘recipient’ address (which is what we passed in as ‘payload’ to sendTokenWithPayloadToEvm)
-- the additionalVaas field being an array of length 1, with the first element being the signed VAA corresponding to our token bridge transfer
+- The payload as the encoded `recipient` address
+- The `additionalVaas` field being an array of length 1, with the first element being the signed VAA corresponding to our token bridge transfer
 
-However, crucially we don’t have the transferred tokens yet! There are a few things that we need to do before gaining access to these tokens.
+Crucially, we don't have the transferred tokens yet! There are a few things that we need to do before gaining access to these tokens.
 
 1. We parse the signed VAA, and check that
     - The emitterAddress of the VAA is a valid token bridge - i.e. the message was published by one of the TokenBridge contracts
     - The transfer was sent to this address
     
-    ********note: this step isn’t strictly necessary because the call to ‘completeTransferWithPayload’ would fail if these were not true********
+    > note: this step isn’t strictly necessary because the call to `completeTransferWithPayload` would fail if these were not true**
     
-2. We call tokenBridge.completeTransferWithPayload on the VAA - this completes the transfer of the tokens and causes us to receive the (potentially wormhole-wrapped) transferred token
-3. We return a TokenReceived struct containing useful information about the transfer
-4. We call receivePayloadAndTokens with the appropriate inputs!
+2. We call `tokenBridge.completeTransferWithPayload`, passing the VAA - this completes the transfer of the tokens and causes us to receive the (potentially wormhole-wrapped) transferred token
+3. We return a `TokenReceived` struct containing useful information about the transfer
+4. We call `receivePayloadAndTokens` with the appropriate inputs
 
 ```solidity
 function receiveWormholeMessages(
@@ -370,6 +394,6 @@ function receiveWormholeMessages(
 }
 ```
 
-See the [full implementation of the Wormhole Relayer SDK helpers here](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/main/src/WormholeRelayerSDK.sol)
+See the full implementation of the Wormhole Relayer SDK helpers [here](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/main/src/WormholeRelayerSDK.sol)
 
-Also, see a [version of HelloToken implemented without any Wormhole Relayer SDK helpers here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloTokenWithoutSDK.sol)
+Also, see a version of HelloToken implemented without any Wormhole Relayer SDK helpers [here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloTokenWithoutSDK.sol)
