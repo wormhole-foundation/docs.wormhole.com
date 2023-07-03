@@ -25,9 +25,7 @@ e.g. `0x0000000000000001` => `00000000000000000000000000000000000000000000000000
 
 ## Emitter 
 
-On Sui, an emitter capability is taken from the core bridge. The core bridge generates capabilities in a sequence and the capability object ID is its index in the sequence. 
-
-The capability object ID (uint64) is used as the emitter address after normalizing to wormhole address format.
+On sui the emitter is the object id of the emitter capability.
 
 
 <!--SUI_CHAIN_DETAILS-->
