@@ -51,6 +51,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B`|
 |Token Bridge|`0x3ee18B2214AFF97000D974cf647E7C347E8fa585`|
 |NFT Bridge|`0x6FFd7EdE62328b3Af38FCD61461Bbfc52F5651fE`|
+|Relayer|`0x6FFd7EdE62328b3Af38FCD61461Bbfc52F5651fE`|
 
 ### Testnet Contracts
 
@@ -67,6 +68,9 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|Relayer|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|MockProvider|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|MockIntegration|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
   
 
 <!--ETHEREUM_CHAIN_DETAILS-->
@@ -104,6 +108,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0xa321448d90d4e5b0A732867c18eA198e75CAC48E`|
 |Token Bridge|`0xae9d7fe007b3327AA64A32824Aaac52C42a6E624`|
 |NFT Bridge|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
+|Relayer|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
 
 ### Testnet Contracts
 
@@ -155,6 +160,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0xa5f208e072434bC67592E4C49C1B991BA79BCA46`|
 |Token Bridge|`0x0b2402144Bb366A632D14B83F244D2e0e21bD39c`|
 |NFT Bridge|`0x3dD14D553cFD986EAC8e3bddF629d82073e188c8`|
+|Relayer|`0x3dD14D553cFD986EAC8e3bddF629d82073e188c8`|
 
 ### Testnet Contracts
 
@@ -251,6 +257,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0x54a8e5f9c4CbA08F9943965859F6c34eAF03E26c`|
 |Token Bridge|`0x0e082F06FF657D94310cB8cE8B0D9a04541d8052`|
 |NFT Bridge|`0xf7B6737Ca9c4e08aE573F75A97B73D7a813f5De5`|
+|Relayer|`0xf7B6737Ca9c4e08aE573F75A97B73D7a813f5De5`|
 
 ### Testnet Contracts
 
@@ -259,6 +266,9 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0x7bbcE28e64B3F8b84d876Ab298393c38ad7aac4C`|
 |Token Bridge|`0x61E44E506Ca5659E6c0bba9b678586fA2d729756`|
 |NFT Bridge|`0xD601BAf2EEE3C028344471684F6b27E789D9075D`|
+|Relayer|`0xD601BAf2EEE3C028344471684F6b27E789D9075D`|
+|MockProvider|`0xD601BAf2EEE3C028344471684F6b27E789D9075D`|
+|MockIntegration|`0xD601BAf2EEE3C028344471684F6b27E789D9075D`|
 
 ### Devnet Contract
 
@@ -350,6 +360,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 |Core|`0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B`|
 |Token Bridge|`0xB6F6D86a8f9879A9c87f643768d9efc38c1Da6E7`|
 |NFT Bridge|`0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE`|
+|Relayer|`0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE`|
 
 ### Testnet Contracts
 
@@ -358,6 +369,9 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 |Core|`0x68605AD7b15c732a30b1BbC62BE8F2A509D74b4D`|
 |Token Bridge|`0x9dcF9D205C9De35334D646BeE44b2D2859712A09`|
 |NFT Bridge|`0xcD16E5613EF35599dc82B24Cb45B5A93D779f1EE`|
+|Relayer|`0xcD16E5613EF35599dc82B24Cb45B5A93D779f1EE`|
+|MockProvider|`0xcD16E5613EF35599dc82B24Cb45B5A93D779f1EE`|
+|MockIntegration|`0xcD16E5613EF35599dc82B24Cb45B5A93D779f1EE`|
 
 ### Devnet Contract
 
@@ -366,6 +380,9 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|Relayer|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|MockProvider|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
+|MockIntegration|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
   
 
 <!--BSC_CHAIN_DETAILS-->
@@ -398,6 +415,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0xa321448d90d4e5b0A732867c18eA198e75CAC48E`|
 |Token Bridge|`0x796Dff6D74F3E27060B71255Fe517BFb23C93eed`|
 |NFT Bridge|`0xA6A377d75ca5c9052c9a77ED1e865Cc25Bd97bf3`|
+|Relayer|`0xA6A377d75ca5c9052c9a77ED1e865Cc25Bd97bf3`|
 
 ### Testnet Contracts
 
@@ -406,6 +424,9 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0x88505117CA88e7dd2eC6EA1E13f0948db2D50D56`|
 |Token Bridge|`0x05ca6037eC51F8b712eD2E6Fa72219FEaE74E153`|
 |NFT Bridge|`0xaCD8190F647a31E56A656748bC30F69259f245Db`|
+|Relayer|`0xaCD8190F647a31E56A656748bC30F69259f245Db`|
+|MockProvider|`0xaCD8190F647a31E56A656748bC30F69259f245Db`|
+|MockIntegration|`0xaCD8190F647a31E56A656748bC30F69259f245Db`|
 
 ### Devnet Contract
 
@@ -446,6 +467,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0x126783A6Cb203a3E35344528B26ca3a0489a1485`|
 |Token Bridge|`0x7C9Fc5741288cDFdD83CeB07f3ea7e22618D79D2`|
 |NFT Bridge|`0xA9c7119aBDa80d4a4E0C06C8F4d8cF5893234535`|
+|Relayer|`0xA9c7119aBDa80d4a4E0C06C8F4d8cF5893234535`|
 
 ### Testnet Contracts
 
@@ -545,6 +567,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0xa321448d90d4e5b0A732867c18eA198e75CAC48E`|
 |Token Bridge|`0xae9d7fe007b3327AA64A32824Aaac52C42a6E624`|
 |NFT Bridge|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
+|Relayer|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
 
 ### Testnet Contracts
 
@@ -593,6 +616,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0x0C21603c4f3a6387e241c0091A7EA39E43E90bb7`|
 |Token Bridge|`0x5b08ac39EAED75c0439FC750d9FE7E1F9dD0193F`|
 |NFT Bridge|`0x3c3c561757BAa0b78c5C025CdEAa4ee24C1dFfEf`|
+|Relayer|`0x3c3c561757BAa0b78c5C025CdEAa4ee24C1dFfEf`|
 
 ### Testnet Contracts
 
@@ -641,6 +665,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0xC8e2b0cD52Cf01b0Ce87d389Daa3d414d4cE29f3`|
 |Token Bridge|`0xb1731c586ca89a23809861c6103f0b96b3f57d92`|
 |NFT Bridge|`0x453cfbe096c0f8d763e8c5f24b441097d577bde2`|
+|Relayer|`0x453cfbe096c0f8d763e8c5f24b441097d577bde2`|
 
 ### Testnet Contracts
 
@@ -649,6 +674,9 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Core|`0xa5B7D85a8f27dd7907dc8FdC21FA5657D5E2F901`|
 |Token Bridge|`0xbc976D4b9D57E57c3cA52e1Fd136C45FF7955A96`|
 |NFT Bridge|`0x98A0F4B96972b32Fcb3BD03cAeB66A44a6aB9Edb`|
+|Relayer|`0x98A0F4B96972b32Fcb3BD03cAeB66A44a6aB9Edb`|
+|MockProvider|`0x98A0F4B96972b32Fcb3BD03cAeB66A44a6aB9Edb`|
+|MockIntegration|`0x98A0F4B96972b32Fcb3BD03cAeB66A44a6aB9Edb`|
 
 ### Devnet Contract
 
@@ -788,6 +816,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0xEe91C335eab126dF5fDB3797EA9d6aD93aeC9722`|
 |Token Bridge|`0x1D68124e65faFC907325e3EDbF8c4d84499DAa8b`|
 |NFT Bridge|`0xfE8cD454b4A1CA468B57D79c0cc77Ef5B6f64585`|
+|Relayer|`0xfE8cD454b4A1CA468B57D79c0cc77Ef5B6f64585`|
 
 ### Testnet Contracts
 
@@ -839,6 +868,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0x7A4B5a56256163F07b2C80A7cA55aBE66c4ec4d7`|
 |Token Bridge|`0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE`|
 |NFT Bridge|`0x90BBd86a6Fe93D3bc3ed6335935447E75fAb7fCf`|
+|Relayer|`0x90BBd86a6Fe93D3bc3ed6335935447E75fAb7fCf`|
 
 ### Testnet Contracts
 
@@ -847,6 +877,9 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Core|`0x0CBE91CF822c73C2315FB05100C2F714765d5c20`|
 |Token Bridge|`0x377D55a7928c046E18eEbb61977e714d2a76472a`|
 |NFT Bridge|`0x51a02d0dcb5e52F5b92bdAA38FA013C91c7309A9`|
+|Relayer|`0x51a02d0dcb5e52F5b92bdAA38FA013C91c7309A9`|
+|MockProvider|`0x51a02d0dcb5e52F5b92bdAA38FA013C91c7309A9`|
+|MockIntegration|`0x51a02d0dcb5e52F5b92bdAA38FA013C91c7309A9`|
 
 ### Devnet Contract
 

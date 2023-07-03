@@ -15,7 +15,7 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "@certusone/wormhole-sdk": "^0.9.18",
+    "@certusone/wormhole-sdk": "^0.9.20",
     "swagger-markdown": "^2.3.0"
   }
 }

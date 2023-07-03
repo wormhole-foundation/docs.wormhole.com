@@ -6,12 +6,26 @@ import { fmtNum,fmtStr } from './util';
 const SRC_BASE = "https://github.com/wormhole-foundation/wormhole/blob/main/";
 
 export function contractTable(contracts: cfg.Contracts): string {
-return `|Type|Contract|
+
+  const core = `|Type|Contract|
 |----|--------|
 |Core|${fmtStr(contracts.core)}|
 |Token Bridge|${fmtStr(contracts.token_bridge)}|
 |NFT Bridge|${fmtStr(contracts.nft_bridge)}|`
+
+  let relayerRows = ''
+  if(contracts.wormholeRelayerAddress !== undefined){
+    relayerRows = `\n|Relayer|${fmtStr(contracts.nft_bridge)}|`
+    if(contracts.mockDeliveryProviderAddress)
+    relayerRows += `\n|MockProvider|${fmtStr(contracts.nft_bridge)}|`
+    if(contracts.mockIntegrationAddress) 
+    relayerRows += `\n|MockIntegration|${fmtStr(contracts.nft_bridge)}|`
+  }
+
+  return core  + relayerRows
 }
+
+
 export function chainDetailsPage(chain: cfg.DocChain): string {
     const { name, id, extraDetails } = chain;
     const { mainnet, testnet, devnet } = chain;

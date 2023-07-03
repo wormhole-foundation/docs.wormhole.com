@@ -234,7 +234,7 @@ Wormhole supports a growing number of blockchains
 </tr>
 <tr>
     <td><strong>Osmosis</strong></td>
-    <td><a href="./reference/environments/evm.md#osmosis">evm.md</a></td>
+    <td><a href="./reference/environments/cosmwasm.md#osmosis">cosmwasm.md</a></td>
     <td><a href="./.gitbook/assets/chain-icons/osmosis.svg">osmosis</a></td>
 </tr>
 <tr>

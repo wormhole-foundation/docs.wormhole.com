@@ -1,9 +1,10 @@
 import * as wh from "@certusone/wormhole-sdk";
 import fs from 'fs';
 
-const mainnetContracts: wh.ChainContracts = wh.CONTRACTS.MAINNET;
-const testnetContracts: wh.ChainContracts = wh.CONTRACTS.TESTNET;
-const devnetContracts: wh.ChainContracts = wh.CONTRACTS.DEVNET;
+
+
+
+
 
 // Many chains have the same underlying runtime
 export type ChainType = "EVM" | "Solana" | "CosmWasm" | "Sui" | "Aptos" | "Algorand" | "";
@@ -15,6 +16,7 @@ export function getChainType(cid: wh.ChainId): ChainType {
 
   const name = wh.coalesceChainName(cid);
 
+  if(name === "osmosis") return "CosmWasm"
   if(name === "solana"  || name === "pythnet") return "Solana"
   if(name === "algorand") return "Algorand"
   if(name === "aptos") return "Aptos"
@@ -22,7 +24,6 @@ export function getChainType(cid: wh.ChainId): ChainType {
 
   return "";
 }
-
 
 export type DocChain = {
   name: string;
@@ -35,9 +36,14 @@ export type DocChain = {
 };
 
 export type Contracts = {
+  // core
   core?: string;
   token_bridge?: string;
   nft_bridge?: string;
+  // relayer
+  wormholeRelayerAddress?: string;
+  mockDeliveryProviderAddress?: string;
+  mockIntegrationAddress?: string;
 };
 
 
@@ -77,6 +83,14 @@ function getChainDetails(name: string): ExtraDetails {
 
 export function getDocChains(): DocChain[] {
 
+  const mainnetContracts: wh.ChainContracts = wh.CONTRACTS.MAINNET;
+  const testnetContracts: wh.ChainContracts = wh.CONTRACTS.TESTNET;
+  const devnetContracts: wh.ChainContracts = wh.CONTRACTS.DEVNET;
+
+  const mainnetRelayers = wh.relayer.RELAYER_CONTRACTS.MAINNET;
+  const testnetRelayers = wh.relayer.RELAYER_CONTRACTS.TESTNET;
+  const devnetRelayers = wh.relayer.RELAYER_CONTRACTS.DEVNET;
+
   // Chains we don't want to appear on the docs 
   const skipChains = {
     "wormchain":true,
@@ -84,24 +98,29 @@ export function getDocChains(): DocChain[] {
     "btc":true,
   }
 
+
+
   const chains: DocChain[] = [];
   for (const [cn, cid] of Object.entries(wh.CHAINS)) {
     if (cid === 0) continue;
 
     const name = wh.toChainName(cid);
 
-    const details = getChainDetails(name);
+    if(name in skipChains) continue;
 
-    if(name in skipChains) continue
+
+    const mContracts = {...mainnetContracts[name], ...mainnetRelayers[name]}
+    const tContracts = {...testnetContracts[name], ...testnetRelayers[name]}
+    const dContracts = {...devnetContracts[name], ...devnetRelayers[name]}
 
     const docChain = {
       name: cn,
       id: cid,
       chainType: getChainType(cid),
-      mainnet: mainnetContracts[name] || {},
-      testnet: testnetContracts[name] || {},
-      devnet: devnetContracts[name] || {},
-      extraDetails: details,
+      mainnet: mContracts,
+      testnet: tContracts,
+      devnet: dContracts,
+      extraDetails: getChainDetails(name),
     }
 
 
