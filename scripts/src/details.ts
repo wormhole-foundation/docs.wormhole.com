@@ -15,11 +15,11 @@ export function contractTable(contracts: cfg.Contracts): string {
 
   let relayerRows = ''
   if(contracts.wormholeRelayerAddress !== undefined){
-    relayerRows = `\n|Relayer|${fmtStr(contracts.nft_bridge)}|`
+    relayerRows = `\n|Relayer|${fmtStr(contracts.wormholeRelayerAddress)}|`
     if(contracts.mockDeliveryProviderAddress)
-    relayerRows += `\n|MockProvider|${fmtStr(contracts.nft_bridge)}|`
+    relayerRows += `\n|MockProvider|${fmtStr(contracts.mockDeliveryProviderAddress)}|`
     if(contracts.mockIntegrationAddress) 
-    relayerRows += `\n|MockIntegration|${fmtStr(contracts.nft_bridge)}|`
+    relayerRows += `\n|MockIntegration|${fmtStr(contracts.mockIntegrationAddress)}|`
   }
 
   return core  + relayerRows
