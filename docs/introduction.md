@@ -11,7 +11,7 @@ This simple **message passing protocol** enables developers and users of [cross 
 
 ## What Isn't Wormhole?
 
-Wormhole is _not_ a blockchain itself, it provides a means of commination between blockchains or rollups.
+Wormhole is _not_ a blockchain itself, it provides a means of communication between blockchains or rollups.
 
 Wormhole is _not_ a token bridge, though there are [protocols built on Wormhole](https://www.portalbridge.com/#/transfer) that serve this purpose.
 
