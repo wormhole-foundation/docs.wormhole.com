@@ -56,6 +56,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Confirmed|0|
 |Finalized|1|
 
+
+For more information see [https://docs.solana.com/cluster/commitments](https://docs.solana.com/cluster/commitments)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -107,6 +111,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Confirmed|0|
 |Finalized|1|
+
+
 
 ### Mainnet Contracts
 

@@ -26,6 +26,7 @@
   ],
   "contractSource": "aptos/wormhole/sources/wormhole.move",
   "finality": {
+    "details":"https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft",
     "finalized": 0
   }
 }

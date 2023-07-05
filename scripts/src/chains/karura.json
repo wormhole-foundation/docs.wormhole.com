@@ -3,6 +3,7 @@
   "homepage": "https://acala.network/karura",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
+    "details":"https://wiki.polkadot.network/docs/learn-consensus",
     "instant": 200,
     "otherwise": "finalized"
   }

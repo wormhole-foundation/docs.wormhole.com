@@ -49,6 +49,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Finalized|0|
 
+
+For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|

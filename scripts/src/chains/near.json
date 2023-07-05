@@ -2,6 +2,7 @@
   "title": "NEAR",
   "homepage": "https://near.org/",
   "finality": {
+    "details":"https://nomicon.io/ChainSpec/Consensus",
     "finalized": 0
   }
 }

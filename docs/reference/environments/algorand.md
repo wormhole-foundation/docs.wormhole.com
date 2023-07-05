@@ -43,6 +43,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Finalized|0|
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|

@@ -13,6 +13,7 @@
     }
   ],
   "finality": {
+    "details":"https://docs.solana.com/cluster/commitments",
     "confirmed": 0,
     "finalized": 1
   }

@@ -48,6 +48,8 @@ export type Contracts = {
 
 
 export interface Finality {
+  // Url to get more details about finality/commitment
+  details?:string;
   confirmed?: number
   finalized?: number
   instant?: number

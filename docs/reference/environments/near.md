@@ -37,6 +37,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Finalized|0|
 
+
+For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|

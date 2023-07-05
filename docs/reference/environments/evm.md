@@ -44,6 +44,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
+
+For more information see [https://www.alchemy.com/overviews/ethereum-commitment-levels](https://www.alchemy.com/overviews/ethereum-commitment-levels)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -101,6 +105,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -153,6 +159,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Instant|200|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
+
+For more information see [https://developer.arbitrum.io/tx-lifecycle](https://developer.arbitrum.io/tx-lifecycle)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -202,6 +212,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -247,6 +259,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -302,6 +316,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -352,6 +368,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Instant|200|
 If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
+
+
 
 ### Mainnet Contracts
 
@@ -408,6 +426,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -460,6 +480,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -506,6 +528,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -560,6 +584,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Instant|200|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
+
+For more information see [https://wiki.polkadot.network/docs/learn-consensus](https://wiki.polkadot.network/docs/learn-consensus)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -609,6 +637,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -655,6 +685,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -710,6 +742,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -755,6 +789,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -809,6 +845,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |Instant|200|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
+
+For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -860,6 +900,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Instant|200|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
+
+
+For more information see [https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/](https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/)
+
 
 ### Mainnet Contracts
 
