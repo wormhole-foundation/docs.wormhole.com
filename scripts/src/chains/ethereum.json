@@ -13,6 +13,7 @@
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
+    "details":"https://www.alchemy.com/overviews/ethereum-commitment-levels",
     "instant": 200,
     "otherwise": "finalized",
     "safe": 201

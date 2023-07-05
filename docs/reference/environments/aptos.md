@@ -43,6 +43,10 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 |-----|-----|
 |Finalized|0|
 
+
+For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
+
+
 ### Mainnet Contracts
 
 |Type|Contract|

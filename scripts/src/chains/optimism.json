@@ -3,6 +3,7 @@
   "homepage": "https://www.optimism.io/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
+    "details":"https://community.optimism.io/docs/developers/bridge/comm-strategies/",
     "instant": 200,
     "otherwise": "finalized"
   }

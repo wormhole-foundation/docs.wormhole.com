@@ -34,8 +34,10 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
     let explorerLinks = "No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
     let devdocs = "No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
     let src = "No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)"
+
     let finalityOptions = "";
-  
+    let finalityDetails = "";
+
     let title = extraDetails?.title || name;
   
     if (extraDetails !== undefined) {
@@ -68,7 +70,10 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
       }
   
       if (finality !== undefined) {
-        const { confirmed, finalized, instant, safe, otherwise } = finality;
+        const { confirmed, finalized, instant, safe, otherwise, details } = finality;
+        if(details !== undefined){
+          finalityDetails = `\nFor more information see [${details}](${details})\n`;
+        }
   
         let otherwiseText = "";
         if (otherwise) {
@@ -112,6 +117,8 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 ${finalityOptions}
+
+${finalityDetails}
 
 ### Mainnet Contracts
 

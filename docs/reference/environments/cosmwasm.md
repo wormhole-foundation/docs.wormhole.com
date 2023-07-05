@@ -38,6 +38,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -84,6 +86,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -136,6 +140,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -182,6 +188,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 
@@ -234,6 +242,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 
 
+
+
 ### Mainnet Contracts
 
 |Type|Contract|
@@ -280,6 +290,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 ### Consistency Levels
 
 The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+
 
 
 

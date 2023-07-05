@@ -6,6 +6,7 @@
     {"url":"https://docs.sui.io/build/faucet", "description":"Faucet"}
   ],
   "finality": {
+    "details":"https://docs.sui.io/learn/architecture/consensus",
     "finalized": 0
   }
 }
