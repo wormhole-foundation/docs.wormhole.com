@@ -80,9 +80,8 @@ Automatic relayers are a component of a decentralized network in the Wormhole pr
 
 ### Key Features
 
-1. **Simplicity:** No need to develop, host, or maintain individual relayers.
-2. **Guaranteed Delivery:** VAAs are assured to be delivered within a specific time frame depending on the blockchain and smart contract runtime.
-3. **Incentive Model:** An inbuilt incentive structure for relayers, relieving developers from the task of designing one.
+1. **Lower Operational Costs:** No need to develop, host, or maintain individual relayers.
+2. **Simplified Integration:**  Because there is no need to run a relayer, integration is as simple as calling a function and implementing an interface.
 
 ### Implementation
 
