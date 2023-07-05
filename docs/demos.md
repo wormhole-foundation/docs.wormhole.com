@@ -21,6 +21,10 @@ More example components. Has a mix of relayers, cross chain applications, NFT pr
 
 Several example projects are bundled here. They show minimum-code examples for how to send messages, tokens, and other common functions.
 
+### [Native USDC Bridging](https://github.com/wormhole-foundation/wormhole-circle-integration)
+
+An example demonstrating integration of Circle's Cross-Chain Transfer Protocol using Wormhole. 
+
 ### [Reference Bridge UI](https://github.com/wormhole-foundation/example-token-bridge-ui)
 
 An example GUI which can be used to perform token transfers around the ecosystem.
