@@ -99,9 +99,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 - **Chain ID**: `12`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -206,9 +204,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 - **Chain ID**: `9`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -256,9 +252,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `6`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -310,9 +304,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `30`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -420,9 +412,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 - **Chain ID**: `14`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -474,9 +464,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `10`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -525,9 +513,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `25`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -631,9 +617,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 - **Chain ID**: `13`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -682,9 +666,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `16`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -736,9 +718,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `17`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -786,9 +766,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `7`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -936,5 +914,50 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 <!--POLYGON_CHAIN_DETAILS-->
 <!--SEPOLIA_CHAIN_DETAILS-->
+
+# sepolia
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+
+## Wormhole Details
+
+- **Name**: `sepolia`
+- **Chain ID**: `10002`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+
+
+
+
+
+
+### Mainnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|`0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78`|
+|Token Bridge|`0xDB5492265f6038831E89f495670FF909aDe94bd9`|
+|NFT Bridge|`0x6a0B52ac198e4870e5F3797d5B403838a5bbFD99`|
+
+### Devnet Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
 
 <!--SEPOLIA_CHAIN_DETAILS-->

@@ -96,7 +96,6 @@ export function getDocChains(): DocChain[] {
   // Chains we don't want to appear on the docs 
   const skipChains = {
     "wormchain":true,
-    "sepolia":true,
     "btc":true,
   }
 
