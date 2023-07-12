@@ -915,7 +915,9 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 <!--POLYGON_CHAIN_DETAILS-->
 <!--SEPOLIA_CHAIN_DETAILS-->
 
-# sepolia
+# Sepolia
+
+{% hint style='info' %} Sepolia is a testnet only chain and can be used as an alternative to Goerli {% endhint %}
 
 ## Ecosystem
 
