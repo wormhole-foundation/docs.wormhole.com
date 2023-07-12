@@ -63,7 +63,8 @@ export interface SiteDescription {
 };
 
 export interface ExtraDetails {
-  finality?: Finality;
+  notes?: string[]
+  finality?: Finality
   title?: string // title case name of the chain
   homepage?: string // Url to the homepage of the chain
   explorer?: SiteDescription[] // urls to explorer sites
