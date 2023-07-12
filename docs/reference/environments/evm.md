@@ -36,7 +36,7 @@ The emitter address on EVM chains is the contract address, normalized to the wor
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -101,7 +101,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -152,7 +152,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -208,7 +208,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -258,7 +258,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -312,7 +312,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -362,7 +362,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -422,7 +422,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -476,7 +476,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -527,7 +527,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -577,7 +577,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -633,7 +633,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -684,7 +684,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -738,7 +738,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -788,7 +788,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -838,7 +838,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -894,7 +894,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

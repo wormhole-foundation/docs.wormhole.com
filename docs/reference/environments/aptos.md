@@ -37,7 +37,7 @@ The capability object ID (uint64) is used as the emitter address after normalizi
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
