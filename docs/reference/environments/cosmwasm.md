@@ -32,9 +32,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 - **Chain ID**: `19`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -83,9 +81,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `20`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -134,9 +130,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `32`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -185,9 +179,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `3`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -236,9 +228,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `18`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -287,9 +277,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 - **Chain ID**: `28`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
 
-### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 

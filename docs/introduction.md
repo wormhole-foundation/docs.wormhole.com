@@ -253,6 +253,11 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/sei.svg">sei</a></td>
 </tr>
 <tr>
+    <td><strong>sepolia</strong></td>
+    <td><a href="./reference/environments/evm.md#sepolia">evm.md</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/sepolia.svg">sepolia</a></td>
+</tr>
+<tr>
     <td><strong>Solana</strong></td>
     <td><a href="./reference/environments/solana.md#solana">solana.md</a></td>
     <td><a href="./.gitbook/assets/chain-icons/solana.svg">solana</a></td>

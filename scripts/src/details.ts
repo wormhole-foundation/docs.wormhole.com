@@ -112,9 +112,10 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
 - **Chain ID**: \`${id}\`
 - **Contract Source**: ${src}
 
-### Consistency Levels
+${
+  finalityOptions  === ''?'':`### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:` }
 
 ${finalityOptions}
 

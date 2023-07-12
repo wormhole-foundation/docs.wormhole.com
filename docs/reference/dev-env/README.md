@@ -35,6 +35,8 @@ For integration to Wormhole and with multiple chains, the simplest option is to 
 
 {% hint style="info" %}
 In choosing which chains to use for integration testing, consider which chains in a given environment provide easy access to testnet tokens and where block times are fast. 
+
+Find links for testnet faucets in the [blockchain details section](../environments/README.md)
 {% endhint %}
 
 
