@@ -49,7 +49,7 @@ The application dev chooses whether this is a consistent address over time or ch
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -105,7 +105,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

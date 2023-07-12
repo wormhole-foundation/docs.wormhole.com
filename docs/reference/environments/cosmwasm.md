@@ -34,7 +34,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -85,7 +85,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -136,7 +136,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -187,7 +187,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -238,7 +238,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
@@ -289,7 +289,7 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyLe
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencyLevel) (i.e finality) are:
+The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 
 
