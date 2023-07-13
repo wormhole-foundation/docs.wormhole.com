@@ -51,14 +51,11 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
       extraDetails;
 
     if (notes !== undefined) {
-      noteHints =
-        "\n" +
-        notes
-          .map((n) => {
-            return `{% hint style='info' %} ${n} {% endhint %}`;
-          })
-          .join("\n") +
-        "\n";
+      noteHints = `\n${notes
+        .map((n) => {
+          return `{% hint style='info' %}\n${n}\n{% endhint %}`;
+        })
+        .join("\n")}\n`;
     }
 
     if (contractSource !== undefined) {
