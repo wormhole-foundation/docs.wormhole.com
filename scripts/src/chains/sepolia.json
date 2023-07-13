@@ -1,7 +1,8 @@
 {
   "title":"Sepolia",
   "notes":[
-    "Sepolia is a testnet only chain and can be used as an alternative to Goerli"
+    "Sepolia is a testnet only chain and can be used as an alternative to Goerli",
+    "Note that a different chain id is used for Sepolia"
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }

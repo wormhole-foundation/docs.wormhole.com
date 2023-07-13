@@ -22,6 +22,10 @@ The emitter address on EVM chains is the contract address, normalized to the wor
 
 # Ethereum
 
+{% hint style='info' %}
+Deployed contracts are also available on the [Sepolia](#sepolia) testnet.
+{% endhint %}
+
 ## Ecosystem
 
 - [Web site](https://ethereum.org/)
@@ -917,7 +921,12 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 # Sepolia
 
-{% hint style='info' %} Sepolia is a testnet only chain and can be used as an alternative to Goerli {% endhint %}
+{% hint style='info' %}
+Sepolia is a testnet only chain and can be used as an alternative to Goerli
+{% endhint %}
+{% hint style='info' %}
+Note that a different chain id is used for Sepolia
+{% endhint %}
 
 ## Ecosystem
 

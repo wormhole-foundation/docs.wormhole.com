@@ -1,6 +1,9 @@
 {
   "homepage": "https://ethereum.org/",
   "title": "Ethereum",
+  "notes":[
+    "Deployed contracts are also available on the [Sepolia](#sepolia) testnet."
+  ],
   "developer": [
     {
       "url": "https://ethereum.org/en/developers/docs/"

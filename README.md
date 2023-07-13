@@ -29,4 +29,9 @@ Examples for writing GitBook flavored markdown:
 https://github.com/GitbookIO/git-sync-normalization/blob/master/api-blocks.md
 https://support.audacityteam.org/community/contributing/tutorials/gitbook-markdown-syntax
 
+You cannot include a dropdown in a tab or vice versa
+
+Add a new line after the `{% hint %}` directive if you expect formatting like a link to work properly
+
 Use a web utility to scan for dead links like https://www.deadlinkchecker.com/
+
