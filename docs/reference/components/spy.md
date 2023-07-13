@@ -1,9 +1,24 @@
 Spy
 ----
 
-A Spy in the wormhole ecosystem is a daemon that eavesdrops on the gossiped messages in the [Guardian Network](./guardian.md) to pick up [VAAs](./vaa.md)
+A Spy, in the wormhole context, is a daemon that subscribes to the gossiped messages in the [Guardian Network](./guardian.md). 
 
-It is essentially just a socket that listens to and understands the messages passed across the guardian network. It has no built in persistence layer.
+The messages available on over gossip are things like 
+
+- [VAAs](./vaa.md) 
+- [Observations](../glossary.md#observation) 
+- Guardian Heartbeats
+
+The source for the Spy is available on [Github](https://github.com/wormhole-foundation/wormhole/blob/main/node/cmd/spy/spy.go)
+
+{% hint style="info" %}
+The Spy has no persistence layer built in, so typically its paired with something like Redis or a SQL database to record relevant messages
+{% endhint %}
+
+
+## Use
+
+To start a Spy locally, run the following docker command.  
 
 {% tabs %} 
 {% tab title="Testnet" %} 
@@ -20,7 +35,6 @@ docker run --platform=linux/amd64 \
 ```
 
 {% endtab %}
-
 {% tab title="Mainnet" %} 
 
 ```sh
@@ -35,5 +49,19 @@ docker run --platform=linux/amd64 \
 ```
 
 {% endtab %}
-
 {% endtabs %}
+
+Once running, a [gRPC](https://grpc.io/) client (i.e. your program) can subscribe to a filtered stream of messages. 
+
+To generate a client for the gRPC service use [this proto spec file](https://github.com/wormhole-foundation/wormhole/blob/main/proto/spy/v1/spy.proto).
+
+{% hint style="info" %}
+If using JavaScript/TypeScript, the [Spydk](https://www.npmjs.com/package/@certusone/wormhole-spydk) makes setting up a client easier.
+{% endhint %}
+
+
+## See Also
+
+
+The [relayer engine](https://github.com/wormhole-foundation/relayer-engine) implements a client and persistence layer for messages received from a Spy subscription. 
+
