@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "npx tsx src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "npx tsx src/index.ts"
   },
   "keywords": [],
   "author": "",

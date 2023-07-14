@@ -65,8 +65,8 @@ The options for [consistencyLevel](../components/core-contracts.md#consistencyle
 
 |Type|Contract|
 |----|--------|
-|Core|`4`|
-|Token Bridge|`6`|
+|Core|`1004`|
+|Token Bridge|`1006`|
 |NFT Bridge|**N/A**|
   
 
