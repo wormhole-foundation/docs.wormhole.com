@@ -24,8 +24,16 @@ The header holds metadata about the current VAA, the guardian set that is curren
 byte        version                  // VAA Version
 u32         guardian_set_index       // Indicates which guardian set is signing
 u8          len_signatures           // Number of signatures stored
-[][66]byte  signatures               // Collection of ecdsa signatures
+[]signature signatures               // Collection of guardian signatures
 ```
+
+where each `signature` is:
+
+```rust
+u8          index       // The index of this guardian in the guardian set
+[65]byte    signature   // The ECDSA signature 
+```
+
 
 ### Body
 
