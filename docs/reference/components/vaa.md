@@ -6,9 +6,11 @@ VAAs are the core messaging primitive in Wormhole. You can think of them as pack
 
 The basic VAA has two components -- a Header and a Body.
 
-Messages emitted by contracts need to be validated by the guardians before they can be sent to the target chain. Once a majority of guardians observe the message and finality has been achieved, the Guardians sign a keccak256 hash of the message body. The message is wrapped up in a structure called a VAA which combines the message with the guardian signatures to form a proof.
+Messages emitted by contracts need to be validated by the guardians before they can be sent to the target chain. Once a majority of guardians observe the message and finality has been achieved, the Guardians [sign a keccak256 hash of the message body](#signatures).
 
-VAAs are uniquely indexed by their `emitter_chain`, `emitter_address` and `sequence`. They can be obtained by querying a node in the Guardian Network or the [API](../../reference/api-docs/README.md) with this information.
+The message is wrapped up in a structure called a VAA which combines the message with the guardian signatures to form a proof.
+
+VAAs are uniquely indexed by the (`emitter_chain`, `emitter_address`, `sequence`) tuple. A VAA can be obtained by querying the Guardian [RPC](../../reference/sdk-docs/README.md#mainnet-guardian-rpc)  or the [API](../../reference/api-docs/README.md) with this information.
 
 These VAA's are ultimately what a smart contract on a receiving chain must process in order to receive a wormhole message.
 
@@ -34,7 +36,6 @@ u8          index       // The index of this guardian in the guardian set
 [65]byte    signature   // The ECDSA signature 
 ```
 
-
 ### Body
 
 The body is deterministically derived from an on chain message. Any two guardians must derive the exact same body. This requirement exists so that there is always a one to one relationship between VAA's and messages to avoid double processing of messages.
@@ -55,6 +56,25 @@ The Body is the relevant information for consumers and is handed back from a cal
 {% hint style="warning" %}
 Because VAAs have no destination, they are effectively multicast. They will be verified as authentic by any Core Contract on any chain in the network. If a VAA has a specific destination, it is entirely the responsibility of relayers to complete that delivery appropriately.
 {% endhint %}
+
+
+## Signatures
+
+The [body](#body) of the VAA is hashed **twice** with `keccak256` to produce the digest message that is signed.
+
+```rust
+// hash the bytes of the body twice
+digest = keccak256(keccak256(body))
+// sign the result 
+signature = ecdsa_sign(digest, key)
+```
+
+{% hint style="warning" %}
+Different implementations of the ECDSA signature validation may apply a `keccak256` hash to the message passed, so care must be taken to pass the correct arguments.
+
+For example the [Solana secp256k1 program](https://docs.solana.com/developing/runtime-facilities/programs#secp256k1-program) will hash the message passed. In this case, the argument for the message should be a **single hash** of the body, not the **twice hashed** body.
+{% endhint %}
+
 
 ## Payload Types
 
