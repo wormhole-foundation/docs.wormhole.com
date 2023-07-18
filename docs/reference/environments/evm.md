@@ -318,9 +318,9 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 |Type|Contract|
 |----|--------|
-|Core|**N/A**|
-|Token Bridge|**N/A**|
-|NFT Bridge|**N/A**|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|`0x8d2de8d2f73F1F4cAB472AC9A881C9b123C79627`|
+|NFT Bridge|`0xDA3adC6621B2677BEf9aD26598e6939CF0D92f88`|
 
 ### Testnet Contracts
 
