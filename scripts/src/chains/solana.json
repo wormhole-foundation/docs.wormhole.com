@@ -1,6 +1,9 @@
 {
   "title": "Solana",
   "homepage": "https://solana.com/",
+  "notes":[
+    "The contract addresess for `testnet` are on the Solana `devnet`"
+  ],
   "explorer": [
     {
       "url": "https://explorer.solana.com/"
