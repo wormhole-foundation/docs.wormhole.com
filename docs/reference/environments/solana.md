@@ -35,6 +35,10 @@ The application dev chooses whether this is a consistent address over time or ch
 
 # Solana
 
+{% hint style='info' %}
+The contract addresess for `testnet` are on the Solana `devnet`
+{% endhint %}
+
 ## Ecosystem
 
 - [Web site](https://solana.com/)
