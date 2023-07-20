@@ -97,7 +97,7 @@ u16     to_chain                // Numeric ID for the destination chain.
 u256    fee                     // Portion of amount paid to a relayer.
 ```
 
-This structure contains contains everything needed for the receiving chain to learn about a lockup event. Once Chain B receives this payload it can mint the corresponding asset.
+This structure contains everything needed for the receiving chain to learn about a lockup event. Once Chain B receives this payload it can mint the corresponding asset.
 
 Note that Chain B is agnostic as to how the tokens on the sending side were locked. They could have been burned by a mint or locked in a custody account. The protocol simply relays the event once a sufficient amount of guardians have attested its existence.
 
