@@ -27,6 +27,7 @@
 * [VAAs](./reference/components/vaa.md)
 * [Relayers](./reference/components/relayer.md)
 * [Spy](./reference/components/spy.md)
+* [Gateway](./reference/components/gateway.md)
 
 ## Reference
 
