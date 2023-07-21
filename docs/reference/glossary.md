@@ -16,6 +16,10 @@ The contract that calls the Wormhole Core contract. It's address is included in 
 
 The Finality of a transaction is dependant on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back. 
 
+## Gateway
+
+The [Gateway](./components/gateway.md) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
+
 ## Guardian
 
 A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
@@ -44,7 +48,6 @@ A nonce, strictly increasing, tracked by the wormhole core contract and unique t
 
 A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. 
 
-
 ## VAA
 
 [Verifiable Action Approvals](./components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
@@ -52,6 +55,10 @@ A Spy is a daemon that eavesdrops on the messages passed between Guardians, typi
 ## Validator 
 
 A daemon that is configured to monitor a blockchain node and observe messages emitted by the wormhole contracts.
+
+## Wormchain
+
+The original name of the [Gateway](#gateway).
 
 ## xChain
 
