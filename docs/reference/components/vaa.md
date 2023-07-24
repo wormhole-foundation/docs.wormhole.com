@@ -103,7 +103,11 @@ Note that Chain B is agnostic as to how the tokens on the sending side were lock
 
 ### Attestation
 
-The Transfer event above is missing an important detail. While the program on Chain B can trust the message to inform it of token lockup events, it has no way to know what the token being locked up actually is. The address alone is a meaningless value to most users. To solve this, the Token Bridge supports token attestation. Chain A emits a message containing metadata about an address, which Chain B can store in order to learn the name, symbol, and decimal precision of a token address. The message format for this action is as so:
+The Transfer event above is missing an important detail. While the program on Chain B can trust the message to inform it of token lockup events, it has no way to know what the token being locked up actually is. The address alone is a meaningless value to most users. To solve this, the Token Bridge supports *token attestation*. 
+
+For a Token Attestation, Chain A emits a message containing metadata about a token which Chain B may use to persist the name, symbol, and decimal precision of a token address. 
+
+The message format for this action is as follows:
 
 ```rust
 u8         payload_id = 2   // Attestation
@@ -114,8 +118,21 @@ u8         decimals         // Number of decimals this token should have (max 8)
 [32]byte   name             // Full name of asset
 ```
 
-An important detail of the token bridge is that an attestation is in fact required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.
+Attestations use a fixed-length byte-array to encode UTF8 token name and symbol data.  
 
+{% hint style="warning" %}
+Because the byte array is fixed length, the data contained may truncate multibyte unicode characters.
+{% endhint %}
+
+When *sending* an attestation VAA, we recommend sending the longest UTF8 prefix that does NOT truncate a character, and then right-padding it with 0 bytes. 
+
+When *parsing* an attestation VAA, we recommend trimming all trailing 0 bytes, and converting the remainder to UTF8 via any lossy algorithm. 
+
+{% hint style="info" %}
+Be mindful that different on-chain systems may have different VAA parsers, that may result in different names/symbols on different chains if the string is long, or contains invalid UTF8.
+{% endhint %}
+
+An important detail of the token bridge is that an attestation is required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.
 
 ### Token + Message 
 
