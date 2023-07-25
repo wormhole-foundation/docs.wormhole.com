@@ -11,16 +11,16 @@ _Wormhole Gateway_ is a Cosmos-SDK chain that provides a way to bridge non-nativ
 Because IBC is used to bridge assets from Gateway to Cosmos chains, liquidity fragmentation is avoided and liquidity for foreign assets bridged via Wormhole into Cosmos is unified across Cosmos chains.
 {% endhint %}
 
-In addition to facilitating asset transfers, the _Wormhole Gateway_ (FKA `wormchain`, AKA `Shai Hulud`) allows Wormhole to ensure proper accounting with the [accountant](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0011_accountant.md) as well as limit transfer volume with the [governor](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0007_governor.md).
+In addition to facilitating asset transfers,  _Wormhole Gateway_ (FKA `wormchain`, AKA `Shai-Hulud`) allows Wormhole to ensure proper accounting with the [accountant](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0011_accountant.md) as well as limit transfer volume with the [governor](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0007_governor.md).
 
 
 ## Details
 
-The Wormhole Gateway is implemented as a set of contracts and modules.
+Wormhole Gateway is implemented as a set of contracts and modules.
 
 ### Wormhole Core Contracts
 
-The [core contracts](./core-contracts.md) to emit messages and verify [Guardian](./guardian.md) signatures are still required on each Cosmos chain.
+The [core contracts](./core-contracts.md) to emit messages and verify [Guardian](./guardian.md) signatures are still required on each Cosmos chain that requires generic message passing. Notably, for Gateway token bridging, no core contracts need be deployed.
 
 ### IBC Shim Contract
 
@@ -28,23 +28,26 @@ A CosmWasm contract that handles bridging into and out of the Cosmos ecosystem b
 
 The contract supports transfers _into_ the Cosmos ecosystem by receiving [Contract Controlled Transfer VAAs](./vaa.md#token--message).
 
-- Redeems the VAA against the [Token Bridge](./core-contracts.md#token-bridge)
-- Mints [Token Factory](#token-factory-module) tokens
-- Decodes the additional payload as a [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload)
-- Sends tokens via IBC to destination cosmos chains
+The logical flow of this type of transfer is as follows:
 
-The contract also supports transfers _out of_ the Cosmos ecosystem by implementing an `execute` handler which accepts a `GatewayIbcTokenBridgePayload` and an amount of tokenfactory tokens in `info.funds` (which are the tokens to be bridged out). 
+- Redeem the VAA against the [Token Bridge](./core-contracts.md#token-bridge)
+- Mint [Token Factory](#token-factory-module) tokens
+- Decode the additional payload as a [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload)
+- Send tokens via IBC to destination cosmos chains
+
+The contract also supports transfers _out of_ the Cosmos ecosystem by implementing an `execute` handler which accepts a [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload) and an amount of tokenfactory tokens in `info.funds` (which are the tokens to be bridged out). 
+
+
+The logical flow for this type of transfer is as follows:
 
 - Burn the [Token Factory](#token-factory-module) tokens 
-- Send the corresponding CW20 tokens to the [Token Bridge](./core-contracts.md#token-bridge) via IBC  
-<!-- TODO: what calls this? TokenBridge or source contract? -->
-- Calls `InitiateTransfer` or `InitiateTransferWithPayload` based on whether the [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload) is of type `Simple` or `ContractControlled`
-
+- Unlock the CW20 tokens
+- Grant approval to the [Token Bridge](./core-contracts.md#token-bridge) to spend the CW20 Tokens
+- Call `InitiateTransfer` or `InitiateTransferWithPayload` based on whether the [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload) is of type `Simple` or `ContractControlled`
 
 ### Token Factory Module
 
-A deployment of the canonical [Token Factory](https://github.com/osmosis-labs/osmosis/tree/main/x/tokenfactory) module on Wormchain.
-
+A deployment of the canonical [Token Factory](https://github.com/CosmosContracts/juno/tree/v14.1.1/x/tokenfactory) module on Wormhole Gateway to create new tokens.
 
 ### IBC Composability Middleware
 
@@ -57,7 +60,7 @@ It accepts a payload of [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgep
 
 ### IBC Hooks Middleware
 
-A deployment of the [IBC Hooks Middleware](https://github.com/osmosis-labs/osmosis/commits/main/x/ibc-hooks) on Wormchain.
+A deployment of the [IBC Hooks Middleware](https://github.com/osmosis-labs/osmosis/tree/v15.2.0/x/ibc-hooks) on Wormhole Gateway allows ICS-20 token transfers to also initiate contract calls.
 
 ## Integration
 
@@ -158,26 +161,37 @@ Core datastructures that are used by the Gateway protocol.
 The core datastructure of Gateway token transfers is the `GatewayIbcTokenBridgePayload`, containing details about the transfer that the Gateway uses to perform the transfer. 
 
 ```rust
-#[cw_serde]
 pub enum GatewayIbcTokenBridgePayload {
-    Simple {
-				chain: u16,
-				recipient: Binary,
-				fee: Uint128,
-				nonce: u32
-		},
-		ContractControlled {
-				chain: u16,
-				contract: Binary,
-				payload: Binary,
-				nonce: u32
-		}
+  Simple {
+    chain: u16,
+    recipient: Binary,
+    fee: Uint128,
+    nonce: u32
+  },
+  ContractControlled {
+    chain: u16,
+    contract: Binary,
+    payload: Binary,
+    nonce: u32
+  }
 }
 ```
 
+When sending a `GatewayIbcTokenBridge` payload, it must be serialized as json.
+
+For a proper json, encoding The `Binary` values are base64 encoded.
+
+The `recipient` for cosmos chain chains are base64 encoded bech32 addresses. For example, if the `recipient` is `wormhole1f3jshdsmzl03v03w2hswqcfmwqf2j5csw223ls`, the encoding will be the direct base64 encoding of `d29ybWhvbGUxZjNqc2hkc216bDAzdjAzdzJoc3dxY2Ztd3FmMmo1Y3N3MjIzbHM=`.
+
+The `chain` values map to [Wormhole chain IDs](../glossary.md#chain-id). 
+
+The `fee` and `nonce` are Wormhole-specific parameters, both of which are unused today.
+
+For incoming IBC messages from Cosmos/IBC chains, the `receiver` field will be base64 encoded in the `Simple.recipient`  field, and the `channel-id` will be included as the equivalent wormhole`chain` id.
+
 ## See Also 
 
-The _Wormhole Gateway_ is, of course, open source and the source is available [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain)
+_Wormhole Gateway_ is, of course, open source and the source is available [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain)
 
 <!-- TODO: change branch to `main` once merged -->
 
