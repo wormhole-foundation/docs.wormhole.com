@@ -11,7 +11,7 @@ _Wormhole Gateway_ is a Cosmos-SDK chain that provides a way to bridge non-nativ
 Because IBC is used to bridge assets from Gateway to Cosmos chains, liquidity fragmentation is avoided and liquidity for foreign assets bridged via Wormhole into Cosmos is unified across Cosmos chains.
 {% endhint %}
 
-In addition to facilitating asset transfers,  _Wormhole Gateway_ (FKA `wormchain`, AKA `Shai-Hulud`) allows Wormhole to ensure proper accounting with the [accountant](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0011_accountant.md) as well as limit transfer volume with the [governor](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0007_governor.md).
+In addition to facilitating asset transfers,  _Wormhole Gateway_ (FKA `wormchain`, AKA `Shai-Hulud`) allows Wormhole to ensure proper accounting with the [accountant](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0011_accountant.md). 
 
 
 ## Details
