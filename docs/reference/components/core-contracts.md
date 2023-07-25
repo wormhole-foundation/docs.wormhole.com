@@ -1,8 +1,10 @@
+# Core Contract
+
 The Core Contracts are the mechanism by which all Wormhole messages are emitted. All cross chain applications either interact directly with the Core Contract or interact with another contract that does. There is one Core Contract on each blockchain in the ecosystem, and this is the contract which the Guardians are required to observe. The Core Contract is the contract that ultimately emits the messages the [Guardians](./guardian.md) pick up as an [Observation](../glossary.md#observation).
 
 In general, Core Contracts are simple and can be broken down to a **sending** and **receiving** side, which we'll define next.
 
-# Sending
+## Sending
 
 {% hint style="warning" %}
 Currently there are no fees to publish a message (with the exception of publishing on Solana) but this is not guaranteed to always be the case in the future.
@@ -21,13 +23,13 @@ publishMessage(
 ```
 
 
-## Parameters 
+### Parameters 
 
-### payload 
+#### payload 
 
 The content of the emitted message, an arbitrary byte array. It may be capped to a certain maximum length due to the constraints of individual blockchains.
 
-### consistencyLevel
+#### consistencyLevel
 
 {% hint style="info%} 
 Some advanced integrators may want to get messages _before_ finality, which is where the `consistency_level` field offers chain-specific flexibility.
@@ -39,18 +41,18 @@ It describes the level of finality to reach before the guardians will observe an
 
 Different chains use different consensus mechanisms, so there are different finality assumptions with each one, see the options for finality in the [Environments section](../environments/README.md).  
 
-### nonce
+#### nonce
 
 A free integer field that can be used however the developer would like. Note that a different `nonce` will result in a different digest.
 
-## Returns
+### Returns
 
-### sequenceNumber
+#### sequenceNumber
 
 A unique number that increments for every message for a given emitter (and implicitly chain). This combined with the emitter address and emitter chain ID allows the VAA for this message to be queried from the [APIs](../api-docs/README.md)
 
 
-# Receiving
+## Receiving
 
 The method signature for receiving messages, encoded as a VAA
 
@@ -65,7 +67,7 @@ A developer should take care to make sure this method is called during the execu
 {% endhint %}
 
 
-# Multicast
+## Multicast
 
 Please notice that there is no destination address or chain in these functions.
 
@@ -75,4 +77,25 @@ This multicast-by-default model is integral to the design. Having this multicast
 
 This does not mean an application _cannot_ specify a destination address or chain. For example the Token Bridge and Automatic Relayer contracts require that some destination details are passed and verified on the destination chain. 
 
-Lastly, because the VAA creation is separate from relaying, there is _no additional cost_ to the multicast model when a single chain is being targeted. If the data isn't needed on a certain blockchain, don't relay it there, and it won't cost anything.
+Because the VAA creation is separate from relaying, there is _no additional cost_ to the multicast model when a single chain is being targeted. If the data isn't needed on a certain blockchain, don't relay it there, and it won't cost anything.
+
+# Other provided contracts 
+
+## Token Bridge
+
+{% hint style="info" %}
+Before a token transfer can be made, the token being transfered must exist as a wrapped asset on the target chain. This is done by [Attesting](./vaa.md) the token details on the target chain. 
+{% endhint %}
+
+The Token Bridge contract allows token transfers between blockchains through a lock and mint mechanism, using the [Core Contract](#core-contract) with a [specific payload](./vaa.md#transfer) to pass information about the transfer.
+
+The Token Bridge also supports sending tokens with some additional data in the form of arbitrary byte payload attached to the token transfer. This type of transfer is referred to as a [Contract Controlled Transfer](./vaa.md#token--message).
+
+While the [Core Contract](#core-contract) has no specific receiver by default, transfers sent through the token bridge _do_ have a specific receiver chain and address to ensure the tokens are minted to the expected recipient. 
+
+
+## NFT Bridge
+
+The NFT Bridge functions similarly to the [Token Bridge](#token-bridge) but with special rules for what may be transferred and how the wrapped version is created on the destination chain.
+
+<!-- TODO: more -->

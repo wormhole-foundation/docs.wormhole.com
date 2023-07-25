@@ -81,14 +81,14 @@ For example the [Solana secp256k1 program](https://docs.solana.com/developing/ru
 Different applications that are built on wormhole may specify a format for the payloads attached to a VAA. This payload provides information the target chain and contract so it can take some action (e.g. minting tokens to a receiver address).
 
 
-### Transfer
+### Token Transfer
 
 Tokens are transferred from one chain to another using a lockup/mint and burn/unlock mechanism. While many bridges work on this basic premise, this implementation achieves this by relying on the generic message passing protocol provided by Wormhole to support routing the lock and burn events from one chain to another. This makes Wormhole's token bridge completely chain agnostic. As long as a wormhole contract exists on the chain we wish to transfer to, an implementation can be quickly incorporated into the network. Due to the generic message passing nature of Wormhole, programs emitting messages do not need to know anything about the implementation details of any other chain.
 
 In order to transfer tokens from A to B, we must lock the tokens on A and mint them on B. It is important that the tokens on A have been proven to be locked before the minting can occur on B. To facilitate this process, chain A first locks the tokens and emits a message indicating that the locking has been completed. This message has the following structure, and is referred to as a transfer message:
 
 ```rust
-u8      payload_id = 1          // Transfer
+u8      payload_id = 1          // Token Transfer
 u256    amount                  // Amount of tokens being transferred.
 u8[32]  token_address           // Address on the source chain.
 u16     token_chain             // Numeric ID for the source chain.
@@ -136,6 +136,10 @@ An important detail of the token bridge is that an attestation is required befor
 
 ### Token + Message 
 
+{% hint style="info" %}
+This VAA type is also referred to as a *payload3* message or a *Contract Controlled Transfer*.
+{% endhint %}
+
 The Token + Message data structure is identical to the Token only data structure with the addition of a `payload` field that contains arbitrary bytes. This arbitrary byte field is where an app may include additional data in the transfer to inform some application specific behavior.
 
 
@@ -149,6 +153,7 @@ u16     to_chain       // Numeric ID for the destination chain.
 u256    fee            // Portion of amount paid to a relayer.
 []byte  payload        // Message, arbitrary bytes, app specific
 ```
+
 
 
 
