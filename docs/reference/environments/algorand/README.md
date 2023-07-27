@@ -37,7 +37,7 @@ The emitter is the application address, normalized to the wormhole address forma
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

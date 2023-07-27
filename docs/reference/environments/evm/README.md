@@ -40,7 +40,7 @@ Deployed contracts are also available on the [Sepolia](#sepolia) testnet.
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -83,9 +83,10 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 
 <!--ETHEREUM_CHAIN_DETAILS-->
 
----
-
 # Other EVM Chains
+
+Besides Ethereum, a number of EVM chains are supported.
+
 
 <!--ACALA_CHAIN_DETAILS-->
 
@@ -154,7 +155,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -358,7 +359,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -509,7 +510,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 - [Web site](https://www.gnosis.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://gnosisfaucet.com/)
+- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://www.gnosisfaucet.com/)
 
 ## Wormhole Details
 
@@ -567,7 +568,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -820,7 +821,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -876,7 +877,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
