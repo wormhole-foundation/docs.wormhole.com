@@ -509,7 +509,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 
 - [Web site](https://www.gnosis.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://gnosisfaucet.com/)
+- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://www.gnosisfaucet.com/)
 
 ## Wormhole Details
 

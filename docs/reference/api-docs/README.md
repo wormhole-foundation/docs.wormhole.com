@@ -10,8 +10,6 @@ See [this page](./swagger.md) for details on the paths and parameters available.
 
 ## Interactive documentation
 
-
-
 A playground to try out some endpoints is available [here](https://doc.wormscan.io/) and is great for quick experimentation.
 
 

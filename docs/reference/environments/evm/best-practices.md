@@ -1,5 +1,3 @@
-# Best Practices
-
 The Wormhole contracts were designed in a manner such that composability is the default, but maximizing composability requires that cross chain application developers follow certain conventions around the sending and receiving of messages.
 
 # Sending Messages

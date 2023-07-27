@@ -33,5 +33,8 @@ You cannot include a dropdown in a tab or vice versa
 
 Add a new line after the `{% hint %}` directive if you expect formatting like a link to work properly
 
+
 Use a web utility to scan for dead links like https://www.deadlinkchecker.com/
+
+> Note: Some urls will report 403 error because of geofencing 
 
