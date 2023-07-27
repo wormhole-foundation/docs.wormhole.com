@@ -43,7 +43,7 @@ On sui the emitter is the object id of the emitter capability.
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|

@@ -18,7 +18,7 @@
     * [Advanced Relayer Example](./tutorials/quick-start/relayer/advanced-example.md)
 * [Demos](./demos.md)
 
-## Explore Wormhole
+## Explore Wormhole 
 
 * [Architecture](./reference/components/README.md)
 * [Security](./reference/security.md)
@@ -29,6 +29,17 @@
 * [Spy](./reference/components/spy.md)
 * [Gateway](./reference/components/gateway.md)
 
+## Supported Environments 
+
+* [Algorand](./reference/environments/algorand/README.md)
+* [Aptos](./reference/environments/aptos/README.md)
+* [CosmWasm](./reference/environments/cosmwasm/README.md)
+* [EVM](./reference/environments/evm/README.md)
+  * [Relayer](./reference/environments/evm/relayer.md)
+* [Near](./reference/environments/near/README.md)
+* [Solana](./reference/environments/solana/README.md)
+* [Sui](./reference/environments/sui/README.md)
+
 ## Reference
 
 * [Glossary](./reference/glossary.md)
@@ -36,14 +47,6 @@
   * [Wormhole Local Validator](./reference/dev-env/wormhole-local-validator.md)
   * [Tilt](./reference/dev-env/tilt.md)
   * [Tooling](./reference/dev-env/tooling.md)
-* [Blockchain Environments](./reference/environments/README.md)
-  * [Algorand](./reference/environments/algorand.md)
-  * [Aptos](./reference/environments/aptos.md)
-  * [CosmWasm](./reference/environments/cosmwasm.md)
-  * [EVM](./reference/environments/evm.md)
-  * [Near](./reference/environments/near.md)
-  * [Solana](./reference/environments/solana.md)
-  * [Sui](./reference/environments/sui.md)
 * [CLI Docs](./reference/cli-docs/README.md)
 * [SDK Docs](./reference/sdk-docs/README.md)
 * [API Docs](./reference/api-docs/README.md)

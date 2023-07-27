@@ -286,7 +286,7 @@ Check out the [Wormhole Token list](https://github.com/certusone/wormhole-token-
 {% tab title="ETH ->ALGORAND" %}
 | Token Origin | Token (Target) | Markets                                                                                    |
 | ------------ | -------------- | ------------------------------------------------------------------------------------------ |
-| ETH          | WETH(Wormhole) | [Algofi](https://info.algofi.org/pool-info/892525155/) , [Pact](https://app.pact.fi/pools) |
+| ETH          | WETH(Wormhole) | [Algofi](https://info.algofi.org/asset-info/887406851/) , [Pact](https://app.pact.fi/pools) |
 | WBTC         | WBTC(Wormhole) | [Pact](https://app.pact.fi/pools)                                                          |
 {% endtab %}
 {% endtabs %}
