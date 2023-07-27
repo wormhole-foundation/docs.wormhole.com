@@ -2,9 +2,6 @@
 
 The WormholeRelayer module allows developers to deliver their VAAs via an untrusted **DeliveryProvider**, rather than needing to develop and host their own relay infrastructure.
 
-<br/>
-<br/>
-
 ## Interacting with the Module
 
 There are three relevant interfaces to discuss when utilizing the WormholeRelayer module:
@@ -13,9 +10,9 @@ There are three relevant interfaces to discuss when utilizing the WormholeRelaye
 - [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeReceiver.sol) - this is the interface you are responsible for implementing. It allows the selected Delivery Provider to deliver messages/VAAs to your contract.
 - [IDeliveryProvider](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IDeliveryProvider.sol) - this interface represents the delivery pricing information for a given relayer network. Each delivery provider implements this on every blockchain they support delivering from.
 
-Check the [deployed contracts page](../../reference/contracts.md) for contract addresses on each supported blockchain.
+Check the [EVM page](../evm/README.md) for contract addresses on each supported blockchain.
 
-Check the [Hello Wormhole page] for a quick example on using these interfaces!
+Check the [Hello Wormhole page](../../../tutorials/quick-start/hello-wormhole/README.md) for a quick example on using these interfaces!
 
 # Delivery Guarantees & Delivery Failures
 
@@ -27,7 +24,6 @@ This creates a marketplace whereby providers can set different price levels and 
 
 Delivery providers should set their prices such that they turn a profit on average, but not necessarily on every single transfer. Thus, some providers may choose to set higher rates for tighter guarantees, or lower rates for less stringent guarantees.
 
-<br/>
 
 ### Delivery Statuses
 

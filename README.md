@@ -38,3 +38,9 @@ Use a web utility to scan for dead links like https://www.deadlinkchecker.com/
 
 > Note: Some urls will report 403 error because of geofencing 
 
+
+Note there is some kind of caching maybe so weird stuff happens.
+Ex: 
+I moved files to new directories, updated nav, but links inside the cards were failing to resolve (href completely stripped from final html) but _only_ for those pages that had changes.
+After removing all cards (so bad links wouldnt be published) and merging changes with the moved files, the same exact links worked in the preview.
+/shrug
