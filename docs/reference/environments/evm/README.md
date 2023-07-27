@@ -23,7 +23,9 @@ The emitter address on EVM chains is the contract address, normalized to the wor
 # Ethereum
 
 {% hint style='info' %}
+
 Deployed contracts are also available on the [Sepolia](#sepolia) testnet.
+
 {% endhint %}
 
 ## Ecosystem
