@@ -1,10 +1,10 @@
 # Best Practices
 
-The Wormhole contracts were designed in a manner such that composability is the default, but maximizing composability requires thatcross chain application developers follow certain conventions around the sending and receiving of messages.
+The Wormhole contracts were designed in a manner such that composability is the default, but maximizing composability requires that cross chain application developers follow certain conventions around the sending and receiving of messages.
 
 # Sending Messages
 
-When sending messages, you should follow the same paradigm as is used by the Wormhole modules, namely
+When sending messages, you should follow the same pattern as is used by the Wormhole modules, namely
 
 - Don't couple the message emission to the message delivery
 - Pass through all the optional arguments (like nonce)
@@ -15,7 +15,7 @@ When sending messages, you should follow the same paradigm as is used by the Wor
 ```solidity
 // This function defines a super simple Wormhole 'module'.
 // A module is just a piece of code which knows how to emit a composable message
-// which can be utilized by other contracts.
+// which can be used by other contracts.
 function emitMyMessage(address intendedRecipient, uint32 nonce)
         public payable returns (uint64 sequence) {
 
@@ -116,7 +116,7 @@ function processMyMessage(bytes32 memory VAA) public {
     // Check that the contract which is processing this VAA is the intendedRecipient
     // If the two aren't equal, this VAA may have bypassed its intended entrypoint.
     // This exploit is referred to as 'scooping'.
-    require(parseIntendedRecipient(vm.payload) == msg.sender);
+    require(parseIntendedRecipient(vm.payload) == address(this));
 
     // Add the VAA to processed messages so it can't be replayed
     // you can alternatively rely on the replay protection
