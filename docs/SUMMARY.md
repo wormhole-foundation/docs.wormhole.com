@@ -36,7 +36,6 @@
 * [Aptos](./reference/environments/aptos/README.md)
 * [CosmWasm](./reference/environments/cosmwasm/README.md)
 * [EVM](./reference/environments/evm/README.md)
-  * [Best Practices](./reference/environments/evm/best-practices.md)
 * [Near](./reference/environments/near/README.md)
 * [Solana](./reference/environments/solana/README.md)
 * [Sui](./reference/environments/sui/README.md)
