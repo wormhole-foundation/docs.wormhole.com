@@ -55,14 +55,14 @@ Guardians Monitor:
 
 - Block Production & Consensus of each blockchain. If a blockchain's consensus is violated it disconnects from the network until the Guardians resolve the issue.
 - Smart Contract level data. Via processes like the Governor, Guardians constantly monitor the circulating supply and token movements across all supported blockchains.
-- Guardian Level activity. The Guardian Network functions as an autonomous decentralized computing network, complete with its own blockchain (Wormchain).
+- Guardian Level activity. The Guardian Network functions as an autonomous decentralized computing network, complete with its own blockchain ([Gateway](./components/gateway.md)).
 
 
-## Wormchain & Asset Layer Protections
+## Gateway & Asset Layer Protections
 
 One of the most powerful aspects of the Wormhole ecosystem is that Guardians effectively have **the entire state DeFi available to them**.
 
-Wormchain is a Cosmos based blockchain which runs internally to the Guardian network, whereby the Guardians can effectively execute smart contracts against the current state of all blockchains, rather than just one blockchain.
+Gateway is a Cosmos based blockchain which runs internally to the Guardian network, whereby the Guardians can effectively execute smart contracts against the current state of all blockchains, rather than just one blockchain.
 
 This enables two additional protections for the Wormhole Asset Layer in addition to the core assumptions:
 
