@@ -29,7 +29,7 @@
 * [Spy](./reference/components/spy.md)
 * [Gateway](./reference/components/gateway.md)
 
-## Supported Blockchain Environments 
+## Blockchain Environments 
 
 * [Algorand](./reference/environments/algorand/README.md)
 * [Aptos](./reference/environments/aptos/README.md)
