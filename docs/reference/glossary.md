@@ -11,7 +11,6 @@ The Chain IDs in the Wormhole context are `u16` integers that map to chains. Not
 
 Each Chain ID is documented on it's page in the [Blockchain Environments](./environments/README.md).
 
-
 ## Delivery Provider
 
 A Delivery Provider performs the service of watching for Wormhole Relayer delivery requests and performing the delivery to the intended target chain as instructed
