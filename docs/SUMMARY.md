@@ -29,7 +29,7 @@
 * [Spy](./reference/components/spy.md)
 * [Gateway](./reference/components/gateway.md)
 
-## Supported Environments 
+## Supported Blockchain Environments 
 
 * [Algorand](./reference/environments/algorand/README.md)
 * [Aptos](./reference/environments/aptos/README.md)
@@ -43,6 +43,7 @@
 ## Reference
 
 * [Glossary](./reference/glossary.md)
+* [Blockchain Environments](./reference/environments/README.md)
 * [Development Environment](./reference/dev-env/README.md)
   * [Wormhole Local Validator](./reference/dev-env/wormhole-local-validator.md)
   * [Tilt](./reference/dev-env/tilt.md)
