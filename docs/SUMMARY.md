@@ -31,6 +31,7 @@
 
 ## Blockchain Environments 
 
+* [Overview](./reference/environments/README.md)
 * [Algorand](./reference/environments/algorand/README.md)
 * [Aptos](./reference/environments/aptos/README.md)
 * [CosmWasm](./reference/environments/cosmwasm/README.md)
@@ -43,7 +44,6 @@
 ## Reference
 
 * [Glossary](./reference/glossary.md)
-* [Blockchain Environments](./reference/environments/README.md)
 * [Development Environment](./reference/dev-env/README.md)
   * [Wormhole Local Validator](./reference/dev-env/wormhole-local-validator.md)
   * [Tilt](./reference/dev-env/tilt.md)
