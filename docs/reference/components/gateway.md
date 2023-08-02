@@ -189,18 +189,32 @@ The `fee` and `nonce` are Wormhole-specific parameters, both of which are unused
 
 For incoming IBC messages from Cosmos/IBC chains, the `receiver` field will be base64 encoded in the `Simple.recipient`  field, and the `channel-id` will be included as the equivalent wormhole`chain` id.
 
+## Fee Structure
+
+The fees for using Gateway are minimal. At the moment, the source chain gas is the only cost.
+
+### Fees Required
+
+- **Source Chain Gas**: Gas fees on the source chain (e.g. Ethereum) must be covered.
+- **Relayer Fee [Source Chain => Gateway]**:  The cost for a wormhole message to be processed. This is currently `0` but may change in the future. 
+- **Destination Chain Gas [Non Cosmos]**: Gas fees on a destination chain (e.g. Ethereum) must be covered by either the relayer or, in the case of manual redemption, the user.
+
+### Fees Not Required 
+
+- **Gateway**: Gateway doesn't have token-priced metering or require gas fees to be paid by the user.
+- **Relayer Fee [Gateway => Cosmos]**: Relayers aren't incentivized by user fees.
+- **Destination Chain [Cosmos]**: IBC relayers cover the processing cost on the destination chain.
+
+
 ## See Also 
 
 _Wormhole Gateway_ is, of course, open source and the source is available [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain)
 
 <!-- TODO: change branch to `main` once merged -->
-
 The contracts that make this possible are available [here](https://github.com/wormhole-foundation/wormhole/tree/gateway-integration/cosmwasm/contracts)
 
 <!-- TODO: outdated?
 A protocol description for generic message passing using the Gateway is available [here](https://github.com/wormhole-foundation/wormhole/blob/mainnet/whitepapers/0012_ibc_generic_messaging.md).
-
 For more details about the design, see the [design document](https://github.com/wormhole-foundation/wormhole/blob/gateway-integration/wormchain/design/design.md).
-
 Also, the [roadmap](https://github.com/wormhole-foundation/wormhole/blob/gateway-integration/wormchain/design/roadmap.md) document provides information on future feature implementations.
 -->
