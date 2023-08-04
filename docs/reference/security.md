@@ -102,7 +102,7 @@ Wormhole has one of the largest bug bounty programs in all of software developme
 
 Wormhole hosts two bug bounty programs:
 
-- An [Immunefi](https://immunefi.com/) program,
+- An [Immunefi](https://immunefi.com/bounty/wormhole/) program,
 - As well as a [self-hosted program](https://wormhole.com/bounty/)
 
 Both platforms have a top payout of **2.5 million dollars**.  <!-- TODO: validate this number -->
