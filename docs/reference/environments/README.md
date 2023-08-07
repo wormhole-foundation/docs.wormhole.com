@@ -3,13 +3,13 @@ Wormhole supports a number of different blockchains and environments. Since many
 
 ## Environments Supported
 
-- [EVM](./evm.md)
-- [Solana](./solana.md)
-- [CosmWasm](./cosmwasm.md)
-- [Algorand](./algorand.md)
-- [Near](./near.md)
-- [Aptos](./aptos.md)
-- [Sui](./sui.md)
+- [EVM](./evm/README.md)
+- [Solana](./solana/README.md)
+- [CosmWasm](./cosmwasm/README.md)
+- [Algorand](./algorand/README.md)
+- [Near](./near/README.md)
+- [Aptos](./aptos/README.md)
+- [Sui](./sui/README.md)
 
 
 ## Blockchains Supported
