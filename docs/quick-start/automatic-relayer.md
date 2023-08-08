@@ -149,4 +149,4 @@ See the [CLI tool docs](../reference/cli-docs/README.md) for installation and us
 
 # See Also
 
-Reference documentation for EVM chains is available [here](../reference/environments/evm.md)
+Reference documentation for EVM chains is available [here](../reference/environments/evm/README.md)
