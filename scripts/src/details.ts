@@ -4,26 +4,27 @@ import { fmtNum, fmtStr } from "./util";
 const SRC_BASE = "https://github.com/wormhole-foundation/wormhole/blob/main/";
 
 export function contractTable(contracts: cfg.Contracts): string {
-  const core = `|Type|Contract|
+  let core = `|Type|Contract|
 |----|--------|
 |Core|${fmtStr(contracts.core)}|
 |Token Bridge|${fmtStr(contracts.token_bridge)}|
 |NFT Bridge|${fmtStr(contracts.nft_bridge)}|`;
 
-  let relayerRows = "";
   if (contracts.wormholeRelayerAddress !== undefined) {
-    relayerRows = `\n|Relayer|${fmtStr(contracts.wormholeRelayerAddress)}|`;
+    core += `\n|Relayer|${fmtStr(contracts.wormholeRelayerAddress)}|`;
     if (contracts.mockDeliveryProviderAddress)
-      relayerRows += `\n|MockProvider|${fmtStr(
+      core += `\n|MockProvider|${fmtStr(
         contracts.mockDeliveryProviderAddress
       )}|`;
     if (contracts.mockIntegrationAddress)
-      relayerRows += `\n|MockIntegration|${fmtStr(
-        contracts.mockIntegrationAddress
-      )}|`;
+      core += `\n|MockIntegration|${fmtStr(contracts.mockIntegrationAddress)}|`;
   }
 
-  return core + relayerRows;
+  if (contracts.cctpAddress !== undefined) {
+    core += `\n|CCTP|${fmtStr(contracts.cctpAddress)}|`;
+  }
+
+  return core;
 }
 
 export function chainDetailsPage(chain: cfg.DocChain): string {

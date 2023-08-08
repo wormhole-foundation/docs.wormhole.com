@@ -60,6 +60,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |Token Bridge|`0x3ee18B2214AFF97000D974cf647E7C347E8fa585`|
 |NFT Bridge|`0x6FFd7EdE62328b3Af38FCD61461Bbfc52F5651fE`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
+|CCTP|`0xAaDA05BD399372f0b0463744C09113c137636f6a`|
 
 ### Testnet Contracts
 
@@ -68,6 +69,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |Core|`0x706abc4E45D419950511e474C7B9Ed348A4a716c`|
 |Token Bridge|`0xF890982f9310df57d00f659cf4fd87e65adEd8d7`|
 |NFT Bridge|`0xD8E4C2DbDd2e2bd8F1336EA691dBFF6952B1a6eB`|
+|CCTP|`0x0a69146716b3a21622287efa1607424c663069a4`|
 
 ### Devnet Contract
 
@@ -174,6 +176,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Token Bridge|`0x0b2402144Bb366A632D14B83F244D2e0e21bD39c`|
 |NFT Bridge|`0x3dD14D553cFD986EAC8e3bddF629d82073e188c8`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
+|CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
 ### Testnet Contracts
 
@@ -182,6 +185,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Core|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |Token Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 |NFT Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
+|CCTP|`0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2`|
 
 ### Devnet Contract
 
@@ -271,6 +275,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Token Bridge|`0x0e082F06FF657D94310cB8cE8B0D9a04541d8052`|
 |NFT Bridge|`0xf7B6737Ca9c4e08aE573F75A97B73D7a813f5De5`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
+|CCTP|`0x09Fb06A271faFf70A651047395AaEb6265265F13`|
 
 ### Testnet Contracts
 
@@ -282,6 +287,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Relayer|`0xA3cF45939bD6260bcFe3D66bc73d60f19e49a8BB`|
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x5E52f3eB0774E5e5f37760BD3Fca64951D8F74Ae`|
+|CCTP|`0x58f4c17449c90665891c42e14d34aae7a26a472e`|
 
 ### Devnet Contract
 
