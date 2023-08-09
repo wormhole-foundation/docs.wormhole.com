@@ -1,5 +1,5 @@
 import * as cfg from "./config";
-import { chainDetailsPage } from "./details";
+import { chainDetailsPage, generateAllContractsTable } from "./details";
 import { chainCard } from "./card";
 import * as fs from "fs";
 
@@ -81,12 +81,40 @@ async function overwriteGenerated(tag: string, content: string) {
   // TODO: concurrent? will that wreck anything?
   // find tags _first_ in one pass and come back to fill them in?
   // currently this searches docs every time we call it
-  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_CARDS", supportedChains.join("\n"));
-  await overwriteGenerated("SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS", supportedChainsEcosystem.join("\n"));
-  for (const [chainName, chainPage] of Object.entries(chainPages)) {
+  await overwriteGenerated(
+    "SUPPORTED_BLOCKCHAIN_CARDS",
+    supportedChains.join("\n")
+  );
+  await overwriteGenerated(
+    "SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS",
+    supportedChainsEcosystem.join("\n")
+  );
+  Object.entries(chainPages).map(async ([chainName, chainPage]) => {
     await overwriteGenerated(
       `${chainName.toUpperCase()}_CHAIN_DETAILS`,
       chainPage
     );
-  }
+  });
+
+  // Contract addresses
+  await overwriteGenerated(
+    "CORE_ADDRESS",
+    generateAllContractsTable(chains, "core")
+  );
+  await overwriteGenerated(
+    "NFT_BRIDGE_ADDRESS",
+    generateAllContractsTable(chains, "nft_bridge")
+  );
+  await overwriteGenerated(
+    "TOKEN_BRIDGE_ADDRESS",
+    generateAllContractsTable(chains, "token_bridge")
+  );
+  await overwriteGenerated(
+    "CCTP_ADDRESS",
+    generateAllContractsTable(chains, "cctp")
+  );
+  await overwriteGenerated(
+    "RELAYER_BRIDGE_ADDRESS",
+    generateAllContractsTable(chains, "relayer")
+  );
 })();

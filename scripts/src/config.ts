@@ -47,7 +47,7 @@ export type Contracts = {
   mockDeliveryProviderAddress?: string;
   mockIntegrationAddress?: string;
   // CCTP
-  cctpAddress?: string;
+  cctp?: string;
 };
 
 export interface Finality {
@@ -96,15 +96,15 @@ export function getDocChains(): DocChain[] {
   const devnetRelayers = wh.relayer.RELAYER_CONTRACTS.DEVNET;
 
   const mainnetCCTP = {
-    arbitrum: { cctpAddress: "0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c" },
-    avalanche: { cctpAddress: "0x09Fb06A271faFf70A651047395AaEb6265265F13" },
-    ethereum: { cctpAddress: "0xAaDA05BD399372f0b0463744C09113c137636f6a" },
+    arbitrum: { cctp: "0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c" },
+    avalanche: { cctp: "0x09Fb06A271faFf70A651047395AaEb6265265F13" },
+    ethereum: { cctp: "0xAaDA05BD399372f0b0463744C09113c137636f6a" },
   };
 
   const testnetCCTP = {
-    arbitrum: { cctpAddress: "0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2" },
-    avalanche: { cctpAddress: "0x58f4c17449c90665891c42e14d34aae7a26a472e" },
-    ethereum: { cctpAddress: "0x0a69146716b3a21622287efa1607424c663069a4" },
+    arbitrum: { cctp: "0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2" },
+    avalanche: { cctp: "0x58f4c17449c90665891c42e14d34aae7a26a472e" },
+    ethereum: { cctp: "0x0a69146716b3a21622287efa1607424c663069a4" },
   };
 
   // Chains we don't want to appear on the docs
