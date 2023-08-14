@@ -39,6 +39,12 @@ Validators that exist in their own P2P network that serve as Wormhole's oracle b
 
 The Guardian Set is a set of guardians that are responsible for validating a message emitted from the core contracts. Occasionally the members in the set will change through a governance action. 
 
+## Heartbeat
+
+Each Guardian will issue a `Heartbeat` on a 15s interval to signal that it is still running and to convey details about it's identity, uptime, version, and status of the connected nodes. 
+
+The heartbeats are shown on the [dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/).
+
 ## Observation
 
 An Observation is the data structure that describes a message that was emitted by the Core Contract and noticed by the Guardian node.
