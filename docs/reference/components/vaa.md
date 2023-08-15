@@ -2,7 +2,7 @@
 
 # VAAs (Verified Action Approvals)
 
-VAAs are the core messaging primitive in Wormhole. You can think of them as packets of cross chain data that are emitted any time a cross chain application contract interacts with the Core Contract.
+VAAs are the core messaging primitive in Wormhole. You can think of them as packets of cross chain data emitted whenever a xdapp application contract interacts with the Core Wormhole Contract.
 
 The basic VAA has two components -- a Header and a Body.
 
@@ -203,6 +203,9 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 <!-- TODO: diagram of message to VAA flow -->
 
+![image](https://github.com/hydrogenbond007/docs.wormhole.com/assets/88841339/68499d8a-ec6e-43c7-b081-1daca36d5194)
+
+If you wanna check out the in-depth view of the VAA pipeline [head here](https://docs.wormhole.com/wormhole/explore-wormhole/components).
 
 *   **1: A message is emitted by a contract running on chain A.**
 
@@ -210,9 +213,12 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 *   **2: Signatures are aggregated.**
 
-    Guardians independently observe and sign the message. Once enough guardians have signed the message, the collection of signatures are combined with the message and metadata to produce a VAA.
+    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians have signed the message, the collection of [signatures](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) are combined with the message and metadata to produce a VAA.
 
 *   **3: VAA submitted to target chain.**
 
-    The VAA acts as proof that the guardians have collectively attested the existence of the message payload, in order to complete the final step, the VAA itself is submitted (or [relayed](./relayer.md)) to the target chain to be processed by a receiving contract.
+    The VAA acts as proof that the guardians have collectively attested the existence and verified the message payload, in order to complete the final step, the VAA itself is submitted (or [relayed](./relayer.md)) to the target chain to be processed by a receiving contract.
+Relayers are the main point of contact for chains to interact with the wormhole's network of gaurdians. 
+
+A user can veirfy VAAs themselves from the [Wormhole explorer](https://wormhole.com/explorer/) or listening to the network gossip.
 
