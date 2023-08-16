@@ -16,7 +16,7 @@
       "description": "Developer docs"
     },
     {
-      "url": "https://faucet.quicknode.com/avalanche/fuji",
+      "url": "https://core.app/tools/testnet-faucet/?subnet=c&token=c",
       "description": "Faucet"
     }
   ],
