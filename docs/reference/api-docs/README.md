@@ -10,7 +10,7 @@ See [this page](./swagger.md) for details on the paths and parameters available.
 
 ## Interactive documentation
 
-A playground to try out some endpoints is available [here](https://doc.wormscan.io/) and is great for quick experimentation.
+A playground to try out some endpoints is available [here](https://docs.wormholescan.io/) and is great for quick experimentation.
 
 
 ## Try it
@@ -19,8 +19,8 @@ A playground to try out some endpoints is available [here](https://doc.wormscan.
 
 |Network|URL|
 |-------|---|
-|Testnet|https://api.testnet.wormscan.io/api/v1/|
-|Mainnet|https://api.wormscan.io/api/v1/|
+|Testnet|https://api.testnet.wormholescan.io/api/v1/|
+|Mainnet|https://api.wormholescan.io/api/v1/|
 
 ### Examples
 
@@ -29,7 +29,7 @@ A playground to try out some endpoints is available [here](https://doc.wormscan.
 
 Get the first page of VAAs for Testnet Polygon (chain id: 5)
 ```sh
-curl -s 'https://api.testnet.wormscan.io/api/v1/vaas/5' \
+curl -s 'https://api.testnet.wormholescan.io/api/v1/vaas/5' \
 -H 'accept: application/json' 
 ```
 
@@ -38,7 +38,7 @@ curl -s 'https://api.testnet.wormscan.io/api/v1/vaas/5' \
 
 Get the first page of VAAs for Polygon (chain id: 5)
 ```sh
-curl -s 'https://api.wormscan.io/api/v1/vaas/5' \
+curl -s 'https://api.wormholescan.io/api/v1/vaas/5' \
 -H 'accept: application/json' 
 ```
 
