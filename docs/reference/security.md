@@ -23,9 +23,6 @@ Core assumptions aside, there are many other factors which impact the real-world
 
 Wormhole is an evolving platform. While the Guardian set currently comprises 19 validators, this is mostly a limitation of current blockchain technology. 
 
-<!-- TODO: is this correct? -->
-The aim of Wormhole is that the the Guardian Network will expand overtime, and that **eventually Guardian signatures will be replaced entirely by state proofs**.
-
 ### Governance
 
 
