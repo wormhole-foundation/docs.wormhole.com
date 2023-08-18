@@ -1,4 +1,4 @@
 Gateway Upgrade Status
 
 
-Not started
+Started
