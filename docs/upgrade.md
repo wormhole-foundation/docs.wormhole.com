@@ -17,4 +17,4 @@ Please refer to this page for updates on the status of the upgrade.
 ## Upgrade Status
 
 
-**Current Status** : The upgrade will begin on August 21 at approximately 6:00 AM
+**Current Status** : The upgrade will begin on August 21 at approximately 6:00 AM UTC
