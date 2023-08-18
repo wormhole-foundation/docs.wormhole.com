@@ -77,7 +77,11 @@ To bridge assets into a Cosmos chain, an asset transfer is initiated on the fore
 Once received on the Gateway, the asset's CW20 representation is sent to the destination chain through IBC using the well established [ICS20 protocol](https://github.com/cosmos/ibc/tree/main/spec/app/ics-020-fungible-token-transfer).
 
 
-<!-- TODO: need ibc translator addr -->
+<!-- 
+Wormhole core bridge: wormhole1ufs3tlq4umljk0qfe8k5ya0x6hpavn897u2cnf9k0en9jr7qarqqaqfk2j
+Wormhole token bridge: wormhole1466nf3zuxpya8q9emxukd7vftaf6h4psr0a07srl5zw74zh84yjq4lyjmh
+-->
+
 An example using the [SDK](../sdk-docs/README.md):
 ```ts
 import * as wh from '@certusone/wormhole-sdk';
@@ -87,26 +91,27 @@ import * as wh from '@certusone/wormhole-sdk';
 const transferDetails = {
   simple: {                                         // This is a simple transfer, no additional payload 
     chain: 4000,                                    // Chain Id of the Cosmos chain we're sending to
-    recipient: "<cosmos-chain-recipient-address>",  // Address of recipient, TODO: fill in once deployed
+    recipient: "<cosmos-chain-recipient-address>",  // Address of recipient
     fee: 0,                                         // Fee for transfer (0 for now)
     nonce: 0,                                        
   }
 }
 
+const ibcTranslatorAddress = "wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx"
 // Convert the transfer details to a Uint8Array for sending
 const payload = new Uint8Array(Buffer.from(JSON.stringify(transferDetails)))
 
 // Send transfer transaction on Ethereum
 await txReceipt = wh.transferFromEth(
-  wh.consts.TESTNET.eth.token_bridge    // source chain token bridge address
-  wallet,                               // signer for eth tx
-  "0xdeadbeef...",                      // address of token being transferred
-  10000000n,                            // amount of token in it's base units
-  wh.consts.CHAINS.wormchain,           // chain id we're sending to
-  "<ibc-translator-contract-addr>",     // The address of the ibc-translator contract on the Gateway, TODO: fill in once deployed
-  0,                                    // relayer fee, 0 for now
-  {},                                   // tx overrides (gas fees, etc...)
-  payload                               // The payload Gateway uses to route transfers
+  wh.consts.TESTNET.eth.token_bridge // source chain token bridge address
+  wallet,                            // signer for eth tx
+  "0xdeadbeef...",                   // address of token being transferred
+  10000000n,                         // amount of token in it's base units
+  wh.consts.CHAINS.wormchain,        // chain id we're sending to
+  ibcTranslatorAddress,              // The address of the ibc-translator contract on the Gateway
+  0,                                 // relayer fee, 0 for now
+  {},                                // tx overrides (gas fees, etc...)
+  payload                            // The payload Gateway uses to route transfers
 );
 
 // ...
@@ -134,17 +139,17 @@ const memo = JSON.stringify({
         }
     }
 })
-
+const ibcTranslatorAddress = "wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx"
 const result = await client.sendIbcTokens(
-  faucet.address0,                      // sender address
-  "<ibc-translator-contract-addr>",     // receiver address, TODO: fill in once deployed
-  coin(1234, "ucosm"),                  // amount and coin
-  "<port>",                             // source port, TODO: fill in once deployed
-  "<channel>",                          // source channel, TODO: fill in once deployed
-  timeoutHeight,                        // 
-  timeoutTimestamp,                     // 
-  0,                                    // fee to cover transaction 
-  memo                                  // formatted payload with details about transfer
+  faucet.address0,     // sender address
+  ibcTranslatorAddress,// receiver address
+  coin(1234, "ucosm"), // amount and coin
+  "transfer",          // source port
+  "channel-2186",      // source channel, TODO: fill in once deployed
+  timeoutHeight,       // 
+  timeoutTimestamp,    // 
+  0,                   // fee to cover transaction 
+  memo                 // formatted payload with details about transfer
 );
 ```
 
