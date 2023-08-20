@@ -4,7 +4,7 @@
 The Automatic Relayer provides a mechanism for a contract on one chain to send a message to a contract on a different chain without the developer dealing with any off chain deployments. 
 
 {% hint style="warning" %}
-Currently the Automatic Relayer feature is limited to EVM environments.
+Currently, the Automatic Relayer feature is limited to EVM environments.
 
 Find the complete list of EVM environment blockchains [here](../reference/environments/evm/README.md).
 {% endhint %}
