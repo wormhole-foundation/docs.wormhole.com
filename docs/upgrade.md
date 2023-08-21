@@ -17,4 +17,4 @@ Please refer to this page for updates on the status of the upgrade.
 ## Upgrade Status
 
 
-**Current Status** : The upgrade will begin on August 21 at approximately 5:00 AM UTC
+**Current Status** : (Aug 21, 4:55 AM UTC) Wormhole Upgrade In Progress - Temporary Downtime In Effect: A required upgrade is being executed by the network of Wormhole Guardian (validator) nodes to add Gateway to the Wormhole stack. Token bridging is currently paused. Monitor the live status of the upgrade on this page.
