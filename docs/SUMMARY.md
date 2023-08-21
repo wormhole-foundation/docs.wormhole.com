@@ -55,6 +55,7 @@
   * [WormholeScan API](./reference/api-docs/swagger.md)
 * [FAQ](./reference/faq.md)
 * [See Also](./reference/see-also.md)
+* [Dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/)
 * [Ecosystem](https://wormhole.com/ecosystem)
 
 
