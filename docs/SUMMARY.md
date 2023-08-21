@@ -56,7 +56,6 @@
 * [FAQ](./reference/faq.md)
 * [See Also](./reference/see-also.md)
 * [Ecosystem](https://wormhole.com/ecosystem)
-* [Token Bridge Upgrade Status](./upgrade.md)
 
 
 ## Archive
