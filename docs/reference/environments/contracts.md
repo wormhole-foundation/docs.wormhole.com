@@ -254,6 +254,7 @@ Reference page for all contract addresses
 |moonbeam|16|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |arbitrum|23|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |optimism|24|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
+|base|30|`0x706f82e9bb5b0813501714ab5974216704980e31`|
 
 ### Testnet
 
@@ -264,6 +265,7 @@ Reference page for all contract addresses
 |avalanche|6|`0xA3cF45939bD6260bcFe3D66bc73d60f19e49a8BB`|
 |celo|14|`0x306B68267Deb7c5DfCDa3619E22E9Ca39C374f84`|
 |moonbeam|16|`0x0591C25ebd0580E0d4F27A82Fc2e24E7489CB5e0`|
+|base|30|`0xea8029CD7FCAEFFcD1F53686430Db0Fc8ed384E1`|
 
 ### Devnet
 
