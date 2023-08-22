@@ -328,6 +328,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 |Token Bridge|`0x8d2de8d2f73F1F4cAB472AC9A881C9b123C79627`|
 |NFT Bridge|`0xDA3adC6621B2677BEf9aD26598e6939CF0D92f88`|
+|Relayer|`0x706f82e9bb5b0813501714ab5974216704980e31`|
 
 ### Testnet Contracts
 
@@ -336,6 +337,8 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Core|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 |Token Bridge|`0xA31aa3FDb7aF7Db93d18DDA4e19F811342EDF780`|
 |NFT Bridge|`0xF681d1cc5F25a3694E348e7975d7564Aa581db59`|
+|Relayer|`0xea8029CD7FCAEFFcD1F53686430Db0Fc8ed384E1`|
+|MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 
 ### Devnet Contract
 
