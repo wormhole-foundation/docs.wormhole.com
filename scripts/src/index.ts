@@ -51,10 +51,11 @@ async function overwriteGenerated(tag: string, content: string) {
     return;
   }
 
+  // Track the size delta to adjust for changes as we go
   for (const match of matches) {
     const oldFile = fs.readFileSync(match.fname);
     const head = oldFile.subarray(0, match.start);
-    const tail = oldFile.subarray(match.stop, oldFile.length);
+    const tail = oldFile.subarray(match.stop);
     const newFile = Buffer.concat([head, Buffer.from(`\n${content}\n`), tail]);
     fs.writeFileSync(match.fname, newFile);
   }
@@ -89,12 +90,13 @@ async function overwriteGenerated(tag: string, content: string) {
     "SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS",
     supportedChainsEcosystem.join("\n")
   );
-  Object.entries(chainPages).map(async ([chainName, chainPage]) => {
+
+  for (const [chainName, chainPage] of Object.entries(chainPages)) {
     await overwriteGenerated(
       `${chainName.toUpperCase()}_CHAIN_DETAILS`,
       chainPage
     );
-  });
+  }
 
   // Contract addresses
   await overwriteGenerated(
