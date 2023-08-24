@@ -11,7 +11,6 @@ EVM stands for Ethereum virtual machine - the execution environment to run arbit
 There are several types of EVMs based on bytecode composability and backward compatibility.  
 
 [EVM Blockchains](https://docs.wormhole.com/wormhole/blockchain-environments/evm) that support read-writes :
-
 - [Ethereum](https://docs.wormhole.com/wormhole/blockchain-environments/evm#ethereum)   
 - [Polygon](https://docs.wormhole.com/wormhole/blockchain-environments/evm#polygon)
 - [BNB Chain](https://docs.wormhole.com/wormhole/blockchain-environments/evm#bnb-smart-chain-bsc)
