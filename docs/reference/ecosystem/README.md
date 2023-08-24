@@ -7,30 +7,40 @@ At present, there are X ecosystems supported by Wormhole, though the number of s
 
 ### EVM
 
-EVM stands for Ethereum virtual machine - the execution environment to run arbitrary code and instructions on the Ethereum network. EVM as an ecosystem has the highest Value locked in decentralised finance making it the most valuable base layer in terms of blockspace and liveliness which incentivises developers to build EVM dapps and deploy them over several rollups and evm compatible to tap into the liquidity.
+EVM stands for Ethereum virtual machine - the execution environment to run arbitrary code and instructions on the Ethereum network. EVM as an ecosystem has the highest Value locked in decentralised finance making it the most valuable base layer in terms of blockspace and liveliness which incentivises developers to build EVM dapps and deploy them over several rollups and evm compatible to tap into the liquidity. 8/10 blockchains with the [highest DeFi TVl](https://defillama.com/chains) are EVM-based chains. 
 There are several types of EVMs based on bytecode composability and backward compatibility.  
 
 [EVM Blockchains](https://docs.wormhole.com/wormhole/blockchain-environments/evm) that support read-writes :
 
-<!-- TODO: Dont list these here, instead link off to chains -->
-    - [Ethereum](https://docs.wormhole.com/wormhole/blockchain-environments/evm#ethereum)
-    - [Polygon](https://docs.wormhole.com/wormhole/blockchain-environments/evm#polygon)
-    - BNB Chain](https://docs.wormhole.com/wormhole/blockchain-environments/evm#bnb-smart-chain-bsc)
-    - [Avalanche (C Chain)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#avalanche)
-    - [Aurora (Near Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#aurora)
-    - [Karura (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#karura)
-    - [Acala (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#acala)
-    - [Celo](https://docs.wormhole.com/wormhole/blockchain-environments/evm#celo)
-    - [Fantom](https://docs.wormhole.com/wormhole/blockchain-environments/evm#fantom)
-    - [Oasis (Emerald)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#oasis)
+- [Ethereum](https://docs.wormhole.com/wormhole/blockchain-environments/evm#ethereum)   
+- [Polygon](https://docs.wormhole.com/wormhole/blockchain-environments/evm#polygon)
+- [BNB Chain](https://docs.wormhole.com/wormhole/blockchain-environments/evm#bnb-smart-chain-bsc)
+- [Avalanche (C Chain)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#avalanche)
+- [Aurora (Near Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#aurora)
+- [Karura (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#karura)
+- [Acala (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#acala)
+- [Celo](https://docs.wormhole.com/wormhole/blockchain-environments/evm#celo)
+- [Fantom](https://docs.wormhole.com/wormhole/blockchain-environments/evm#fantom)
+ - [Oasis (Emerald)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#oasis)
 
 ### Solana
 
-Solana is known for its low gas fee and high transaction throughput because of its different architecture that uses the Berekely packet filter as the execution environment allowing it to use Rust's memory management and efficiency.
+Solana is known for its low gas fee and high transaction throughput because of its different architecture that uses the [Berekely packet filter](https://www.ibm.com/docs/en/qsip/7.4?topic=queries-berkeley-packet-filters) as the execution environment allowing it to use Rust's memory management and efficiency. 
+Solana uses [QUIC](https://github.com/solana-foundation/solana-improvement-documents/pull/53) as the protocol for gossip which is an improvement from the older UDP that caused the network to stress because of spam or malicious transactions. 
+Solana was one of the first blockchains to introduce parallel execution, smart contracts are written in native Rust. 
+
+Runtime/Execution environment -> eBPF
+Block time -> 400 milliseconds
+Consensus Mechanism -> Proof of History with [Tower BFT](https://docs.solana.com/implemented-proposals/tower-bft)
+
 
 ### Cosmos
 
-Cosmos is a network of blockchains that share a common ecosystem. Cosmos is a general purpose environment, but excels in certain areas like application-specific blockchains and the use of Cosmos-wide standards via its sdk 'modules.' It uses CosmWasm for its smart contract runtime, which is based in Rust.
+Cosmos is a network of blockchains that share a common ecosystem. Cosmos is a general-purpose environment, but excels in certain areas like application-specific blockchains and the use of Cosmos-wide standards via its sdk 'modules.' It uses CosmWasm for its smart contract runtime, which is based in Rust.
+
+Runtime/ Execution Environment -> CosmoWasm 
+Block Time -> Depends on the specific chain but BFT block times are usually >1s. 
+Consensus Mechanism -> BFT (Byzantine Fault Tolerance)
 
 ### Algorand
 
@@ -42,7 +52,11 @@ Aptos is characterized by its optimistic approach to computation parallelization
 
 ### NEAR
 
-NEAR is characterized by its sharding technology that may allow for greater transaction capacity and security. These contracts are written in Rust.
+NEAR is one of the first execution level sharded blockchains which allows it to handle higher transaction throughput and traffic than EVM by splitting the database into several different regional chains reducing the latency and maintaining the minimum validator hardware requirements. 
+
+Runtime/ Execution environment -> RISC-V
+Block Time -> 1.2 seconds
+Consensus Mechanism -> [Nightshade](https://near.org/papers/nightshade)
 
 ### Read-Only Chains
 
