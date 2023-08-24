@@ -1,6 +1,6 @@
 # xAsset Layer
 
-There is a set of ecosystem contracts that provision Wormhole's xAsset layer which allow tokens to be bridged around the Wormhole Ecosystem in a **path-independent** fashion, and are easily composable with other functions in the Wormhole ecosystem.
+A collection of ecosystem contracts has been established to facilitate Wormhole's xAsset layer. These contracts enable tokens to be seamlessly bridged throughout the Wormhole Ecosystem, without relying on specific paths making them **path-independent**. Furthermore, these contracts can be effortlessly combined with other functionalities within the Wormhole ecosystem.
 
 This section provides a high-level overview of how to interact with two smart contract modules that implement xAssets: (1) Token Bridge module and (2) NFT Bridge Module.
 
@@ -8,7 +8,7 @@ If you're looking to interact with the Token Bridge directly from a typescript c
 
 ## Creating xAssets
 
-xAssets always have an **origin chain**. This is where the token is initially minted via the standard of that chain (ERC-20, SPL, etc for tokens; ERC-721, Metaplex, etc for NFTs).
+xAssets always have an **origin chain**. This is where the token is initially minted in the token standards supported by the specific chain (ERC-20, SPL, etc for tokens; ERC-721, Metaplex, etc for NFTs).
 
 xAssets are all **fungible** with each other. This means the Wormhole-wrapped asset can be exchanged for the original asset or a wrapped asset from other chains.
 
