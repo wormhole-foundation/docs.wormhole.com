@@ -7,26 +7,26 @@ At present, there are X ecosystems supported by Wormhole, though the number of s
 
 ### EVM
 
-<!-- TODO: popular by what metric?-->
-EVM is the most popular ecosystem, and most cross chain applications will have some support for this platform. These contracts are written in Solidity -- a 'jack of all trades' style of computation environment. A common strategy for cross chain applications is to develop one single contract in Solidity, and then deploy that contract to all the supported EVM blockchains.
+EVM stands for Ethereum virtual machine - the execution environment to run arbitrary code and instructions on the Ethereum network. EVM as an ecosystem has the highest Value locked in decentralised finance making it the most valuable base layer in terms of blockspace and liveliness which incentivises developers to build EVM dapps and deploy them over several rollups and evm compatible to tap into the liquidity.
+There are several types of EVMs based on bytecode composability and backward compatibility.  
 
-Blockchains:
+[EVM Blockchains](https://docs.wormhole.com/wormhole/blockchain-environments/evm) that support read-writes :
 
 <!-- TODO: Dont list these here, instead link off to chains -->
-    - Ethereum
-    - Polygon
-    - BNB Chain
-    - Avalanche (C Chain)
-    - Aurora (Near Network)
-    - Karura (Polkadot Network)
-    - Acala (Polkadot Network)
-    - Celo
-    - Fantom
-    - Oasis (Emerald)
+    - [Ethereum](https://docs.wormhole.com/wormhole/blockchain-environments/evm#ethereum)
+    - [Polygon](https://docs.wormhole.com/wormhole/blockchain-environments/evm#polygon)
+    - BNB Chain](https://docs.wormhole.com/wormhole/blockchain-environments/evm#bnb-smart-chain-bsc)
+    - [Avalanche (C Chain)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#avalanche)
+    - [Aurora (Near Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#aurora)
+    - [Karura (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#karura)
+    - [Acala (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#acala)
+    - [Celo](https://docs.wormhole.com/wormhole/blockchain-environments/evm#celo)
+    - [Fantom](https://docs.wormhole.com/wormhole/blockchain-environments/evm#fantom)
+    - [Oasis (Emerald)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#oasis)
 
 ### Solana
 
-Solana is characterized by its high transaction throughput, increased computation power and cheap data storage when compared to EVM environments. These contracts are written in Rust.
+Solana is known for its low gas fee and high transaction throughput because of its different architecture that uses the Berekely packet filter as the execution environment allowing it to use Rust's memory management and efficiency.
 
 ### Cosmos
 
@@ -34,11 +34,11 @@ Cosmos is a network of blockchains that share a common ecosystem. Cosmos is a ge
 
 ### Algorand
 
-Algorand is a leading blockchain on the state proof front and repesents the bleeding edge of trustlessness. These contracts are written in Python.
+Algorand is a leading blockchain on the state proof front and represents the bleeding edge of trustlessness. These contracts are written in Python.
 
 ### Aptos
 
-Aptos is characterized by its optimisitic approach to computation parallelization to bring increased performance. These contracts are written in Move.
+Aptos is characterized by its optimistic approach to computation parallelization to bring increased performance. These contracts are written in Move.] in an object-oriented model.
 
 ### NEAR
 
