@@ -84,7 +84,7 @@ A chain-and-path agnostic token that exists on a layer outside the blockchain ec
 
 ## xDapp
 
-A decentralized application that enables users to create and/or use xData.
+A decentralized application that uses the wormhole network for cross chain communication with assets/messages and uses xData.
 
 ## xData
 
