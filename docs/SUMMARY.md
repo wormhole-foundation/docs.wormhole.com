@@ -55,21 +55,9 @@
   * [WormholeScan API](./reference/api-docs/swagger.md)
 * [FAQ](./reference/faq.md)
 * [See Also](./reference/see-also.md)
-* [Dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/)
+
+## External Links
+
 * [Ecosystem](https://wormhole.com/ecosystem)
-
-
-## Archive
-
-* [FAQ](archive/faqs.md)
-* [Overview: Liquid Markets](archive/overview-liquid-markets.md)
-* [Video Tutorial: How to use Portal](archive/video-tutorial-how-to-use-portal.md)
-* [Video Tutorial: How to manually add tokens to your wallet](archive/video-tutorial-how-to-manually-add-tokens-to-your-wallet.md)
-* [Tutorial: Token/NFT Redeem Workflow](archive/tutorial-recovery-workflow.md)
-* [Tutorial: NFT Portal](archive/tutorial-nft-bridge.md)
-* [Tutorial: NFT Origin tool](archive/tutorial-nft-origin-tool.md)
-* [Tutorial: How to send USDC from Solana to Ethereum](archive/tutorial-how-to-send-usdc-from-solana-to-ethereum.md)
-* [Tutorial: How to send USDC from Ethereum to Solana](archive/tutorial-how-to-send-usdc-from-ethereum-to-solana.md)
-* [Video Tutorial: How to use the Token Origin Verifier](archive/video-tutorial-how-to-use-the-token-origin-verifier.md)
-* [Token Register](archive/token-register/README.md)
-  * [Tutorial: Token registration](archive/token-register/tutorial-token-register.md)
+* [Guardian Dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/)
+* [Portal Bridge Docs](https://www.portalbridge.com/docs/)
