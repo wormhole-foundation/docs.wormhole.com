@@ -29,11 +29,12 @@ The [Gateway](./components/gateway.md) is Cosmos-SDK chain used by Wormhole to f
 
 ## Guardian
 
-A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
+A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig and signs the validity of payloads.
+Every Guardian is required to operate nodes for all the blockchains it provides support for, enabling them to monitor the gossip network for Wormhole invocations.
 
 ## Guardian Network
 
-Validators that exist in their own P2P network that serve as Wormhole's oracle by observing activity on-chain and generating signed messages attesting to that activity.
+Validators that exist in their own P2P network serve as Wormhole's oracle by observing activity on-chain and generating signed messages attesting to that activity. 
 
 ## Guardian Set
 
@@ -51,7 +52,7 @@ An Observation is the data structure that describes a message that was emitted b
 
 ## Relayer
 
-A Relayer is any process which delivers VAAs to a destination.
+Relayers are carriers of messages and VAAs access chains and the guardian network making them the point of contact between wormhole and blockchains.
 
 ## Sequence
 
@@ -59,11 +60,11 @@ A nonce, strictly increasing, tracked by the wormhole core contract and unique t
 
 ## Spy
 
-A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. 
+A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. They don't participate on voting but listen the gossip network like light nodes.
 
 ## VAA
 
-[Verifiable Action Approvals](./components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
+[Verifiable Action Approvals](./components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps after it has been voted and approved by the Guardian Network. A message needs 2/3n + 1 of the votes to become a VAA.
 
 ## Validator 
 
@@ -79,11 +80,11 @@ Term that refers to the full range of cross-blockchain interoperability.
 
 ## xAssets
 
-Chain-and-path agnostic token that exists on a layer outside the blockchain ecosystem, which can be used to conduct transactions on any blockchain.
+A chain-and-path agnostic token that exists on a layer outside the blockchain ecosystem, which can be used to conduct transactions on any blockchain.
 
 ## xDapp
 
-Decentralized application that enables users to create and/or use xData.
+A decentralized application that enables users to create and/or use xData.
 
 ## xData
 
