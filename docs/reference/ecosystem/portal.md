@@ -4,17 +4,18 @@ A collection of ecosystem contracts has been established to facilitate Wormhole'
 
 This section provides a high-level overview of how to interact with two smart contract modules that implement xAssets: (1) Token Bridge module and (2) NFT Bridge Module.
 
-If you're looking to interact with the Token Bridge directly from a typescript client or backend, you should start with the [Wormhole Typescript SDK](https://www.npmjs.com/package/@certusone/wormhole-sdk).
+If you're looking for client-side libraries or to interact with the Token Bridge directly from a typescript client or backend, you should start with the [Wormhole Typescript SDK](https://www.npmjs.com/package/@certusone/wormhole-sdk).
 
 ## Creating xAssets
 
 xAssets always have an **origin chain**. This is where the token is initially minted in the token standards supported by the specific chain (ERC-20, SPL, etc for tokens; ERC-721, Metaplex, etc for NFTs).
 
-xAssets are all **fungible** with each other. This means the Wormhole-wrapped asset can be exchanged for the original asset or a wrapped asset from other chains.
+xAssets are all **fungible** with token its value or properties. This means the Wormhole-wrapped asset can be exchanged for the original asset or a wrapped asset from other chains. ie If you have an xEth or wormhole-wrapped eth, you can transfer it from Ethereum to Solana to Polygon, and it will remain the same wrapped ETH token throughout the process as there will be a native token backing that on the origin chain locked in wormhole contract. 
+Wormhole makes sure to prevent the creation of wrapped unbacked assets as all the assets are fungible, one could exchange a native token for a rogue unbacked token causing glitches in supply or arbitrary minting. 
 
 **Tokens**
 
-To convert tokens into an xAsset, an **attestation** must first be created. To create an attestation, simply call the **attest** function on the token bridge contract of the origin chain.
+To convert tokens into a xAsset, an **attestation** must first be created. To create an attestation, simply call the **attest** function on the token bridge contract of the origin chain.
 
     function attestToken(
         address tokenAddress,
@@ -64,13 +65,15 @@ function transferNFT(
     uint32 nonce) returns (uint64 sequence)
 )
 ```
+---
 
 ## Contract-Controlled Transfers
 
-Basic transfers are intended to transfer xAssets from one wallet to another, whereas Contract Controlled Transfers (CCTs) are meant to transfer xAssets from one smart contract to another. If you're writing a cross chain application, CCTs will likely be a large component.
+Basic transfers are intended to transfer xAssets from one wallet to another, whereas Contract Controlled Transfers (CCTs) are meant to transfer xAssets from one smart contract to another. This is especially important now account Abstraction is live on Ethereum mainnet with [EIP-4337](https://ethereum.org/en/roadmap/account-abstraction/) which allows externally owned accounts and several chains using smart contract wallets to isolate native accounts from token accounts.
+[Head here on how to integrate CCTs](https://book.wormhole.com/technical/evm/tokenLayer.html?highlight=contract-controlled#contract-controlled-transfer)
 
 CCTs allow cross chain application contracts to easily perform simple xAsset transfers, but have two additional features:
 
-- An arbitrary byte array can be appended to the transfer and can be used to easily pass additional information to the recipient contract.
-- The CCT VAA redeem can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations which the contract wants to perform as part of the redeem transaction must be executed.
+- An arbitrary byte array can be appended to the transfer and can be used to easily pass additional information to the recipient contract. 
+- The CCT VAA redemption can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations that the contract wants to perform as part of the redemption transaction must be executed. 
 
