@@ -75,5 +75,11 @@ Basic transfers are intended to transfer xAssets from one wallet to another, whe
 CCTs allow cross chain application contracts to easily perform simple xAsset transfers, but have two additional features:
 
 - An arbitrary byte array can be appended to the transfer and can be used to easily pass additional information to the recipient contract. 
-- The CCT VAA redemption can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations that the contract wants to perform as part of the redemption transaction must be executed. 
+- The CCT VAA redemption can only be performed by the recipient contract, as opposed to basic transfers, which can be performed by any caller. This ensures that any additional operations that the contract wants to perform as part of the redemption transaction must be executed.
+
+Integrating CCTs -> 
+1. Approve the Token Bridge to spend that token on our behalf.
+2. Transfer the token to create the transfer VAA.
+3. Retrieve the emitted VAA.
+4. Complete the transfer using the VAA.
 
