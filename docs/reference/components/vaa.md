@@ -2,7 +2,7 @@
 
 # VAAs (Verified Action Approvals)
 
-VAAs are the core messaging primitive in Wormhole. You can think of them as packets of cross chain data emitted whenever a xdapp application contract interacts with the Core Wormhole Contract.
+VAAs are the core messaging primitive in Wormhole. You can think of them as packets of cross chain data emitted whenever a cross chain application contract interacts with the Core Wormhole Contract.
 
 The basic VAA has two components -- a Header and a Body.
 
