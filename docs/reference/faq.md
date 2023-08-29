@@ -7,7 +7,7 @@ Beware of scams. Admins will never DM or message you first
 
 - **How much does it cost to use Wormhole?**
 
-    Wormhole doesn't charge any fees in itself as of now but relayers still require you to pay for gas that it spends interacting on chain. 
+    Wormhole doesn't currently charge any fees to use the core protocol though a relayer may require payment for it's fees or gas that it spends to submit the VAA to the target chain. 
 
 - **Who runs the guardians that secure the network?**
 
