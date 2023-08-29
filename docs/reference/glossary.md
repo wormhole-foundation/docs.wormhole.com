@@ -34,7 +34,7 @@ Every Guardian is required to operate nodes for all the blockchains Wormhole sup
 
 ## Guardian Network
 
-Validators that exist in their own P2P network serve as Wormhole's oracle by observing activity on-chain and generating signed messages attesting to that activity. 
+Validators that exist in their own P2P network, serving as Wormholes oracles by observing activity on-chain and generating signed messages attesting to that activity. 
 
 ## Guardian Set
 
@@ -52,15 +52,15 @@ An Observation is the data structure that describes a message that was emitted b
 
 ## Relayer
 
-Relayers are carriers of messages and VAAs access chains and the guardian network making them the point of contact between wormhole and blockchains.
+Relayers are carriers of messages and VAAs across chains and the guardian network.
 
 ## Sequence
 
-A nonce, strictly increasing, tracked by the wormhole core contract and unique to emitter chain and address 
+A nonce, strictly increasing, tracked by the wormhole core contract and unique to the emitter chain and address 
 
 ## Spy
 
-A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. They don't participate on voting but listen the gossip network like light nodes.
+A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. They don't participate in signing but listen to the gossip network like light nodes.
 
 ## VAA
 
@@ -78,14 +78,14 @@ The original name of the [Gateway](#gateway).
 
 Term that refers to the full range of cross-blockchain interoperability.
 
-## xAssets
+## Cross Chain Assets
 
 A chain-and-path agnostic token that exists on a layer outside the blockchain ecosystem, which can be used to conduct transactions on any blockchain.
 
-## xDapp
+## Cross chain Dapp
 
 A decentralized application that uses the wormhole network for cross chain communication with assets/messages and uses xData.
 
-## xData
+## Cross chain Data
 
 Data that exists in a layer outside of Layer 1 blockchains, which is accessible by all chains.
