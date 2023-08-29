@@ -1,4 +1,4 @@
-Assets
+Cross Chain Assets
 -------
 
 {% hint style="danger" %}
