@@ -203,7 +203,7 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 <!-- TODO: diagram of message to VAA flow -->
 
-![image](https://github.com/hydrogenbond007/docs.wormhole.com/assets/88841339/68499d8a-ec6e-43c7-b081-1daca36d5194)
+![image](https://github.com/wormhole-foundation/docs.wormhole.com/commit/429c7c59112886bb0d39430d1d9f0c0a624a4d07)
 
 If you wanna check out the in-depth view of the VAA pipeline [head here](https://docs.wormhole.com/wormhole/explore-wormhole/components).
 
