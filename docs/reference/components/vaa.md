@@ -213,7 +213,7 @@ If you wanna check out the in-depth view of the VAA pipeline [head here](https:/
 
 *   **2: Signatures are aggregated.**
 
-    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians have signed the message, the collection of [signatures](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) are combined with the message and metadata to produce a VAA.
+    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians have signed the message, the collection of [signatures](https:///docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) are combined with the message and metadata to produce a VAA.
 
 *   **3: VAA submitted to target chain.**
 
