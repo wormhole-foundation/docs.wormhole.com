@@ -20,9 +20,16 @@ Wormhole is _not_ a token bridge, though there are [protocols built on Wormhole]
 Consider the following examples of potential applications that are now possible with Wormhole:
 
 1. **Cross Chain Exchange**:Swapping tokens across different chains was one of the foundations of bridges, Portal token bridge by wormhole unlocks liquidity across 10+ chains and seamless cross-chain exchange of assets. 
-Using [Wormhole Connect](./tutorials/quick-start/wh-connect.md), a developer can integrate a cross-chain exchange that allows deposits from any Wormhole connected chain which is customizable to the needs of developers, massively increasing the liquidity their users can access and improving the ux for defi apps.
+Using [Wormhole Connect](./tutorials/quick-start/wh-connect.md), Developers can add a customizable cross-chain exchange. It accepts deposits from any linked Wormhole chain, boosting user liquidity and enhancing DeFi app usability.
+
+
 2. **Cross Chain Governance**: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain with the help of cross-domain function invocation, to dive into cross-chain check out how [uniswap uses wormhole](https://uniswap.notion.site/Bridge-Assessment-Report-0c8477afadce425abac9c0bd175ca382). 
-3. **Cross Chain Game**:Every chain has its own strengths and tradeoffs, developers who want to take advantage of best of both worlds could build cross-chain games having different components working on different chains. eg having token and incentive distribution on a cheap and fast chain like Solana while using Ethereum for core contracts because of the robustness of the network. 
+
+
+3. **Cross Chain Game**:Each chain has unique strengths and compromises. Developers seeking to blend these strengths can create cross-chain games, utilizing diverse chains for specific functions. For instance, employing Solana for swift token distribution and Ethereum for robust core contracts.
+
+---
+
 
 
 # Get Started 
