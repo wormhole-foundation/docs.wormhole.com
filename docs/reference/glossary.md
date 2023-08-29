@@ -30,7 +30,7 @@ The [Gateway](./components/gateway.md) is Cosmos-SDK chain used by Wormhole to f
 ## Guardian
 
 A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
-Every Guardian is required to operate nodes for all the blockchains it provides support for, enabling them to monitor the gossip network for Wormhole invocations.
+Every Guardian is required to operate nodes for all the blockchains Wormhole supports. 
 
 ## Guardian Network
 
