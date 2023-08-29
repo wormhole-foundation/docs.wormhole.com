@@ -83,7 +83,7 @@ Different applications that are built on wormhole may specify a format for the p
 
 ### Token Transfer
 
-Tokens are transferred from one chain to another using a lockup/mint and burn/unlock mechanism. While many bridges work on this basic premise, this implementation achieves this by relying on the generic message passing protocol provided by Wormhole to support routing the lock and burn events from one chain to another. This makes Wormhole's token bridge completely chain agnostic. As long as a wormhole contract exists on the chain we wish to transfer to, an implementation can be quickly incorporated into the network. Due to the generic message passing nature of Wormhole, programs emitting messages do not need to know anything about the implementation details of any other chain.
+Tokens are transferred from one chain to another using a lockup/mint and burn/unlock mechanism. While many bridges work on this basic premise, this implementation achieves this by relying on the generic message passing protocol provided by Wormhole to support routing the lock and burn events from one chain to another. This makes Wormhole's token bridge completely chain-agnostic. As long as a wormhole contract exists on the chain we wish to transfer to, an implementation can be quickly incorporated into the network. Due to the generic message-passing nature of Wormhole, programs emitting messages do not need to know anything about the implementation details of any other chain.
 
 In order to transfer tokens from A to B, we must lock the tokens on A and mint them on B. It is important that the tokens on A have been proven to be locked before the minting can occur on B. To facilitate this process, chain A first locks the tokens and emits a message indicating that the locking has been completed. This message has the following structure, and is referred to as a transfer message:
 
@@ -124,15 +124,15 @@ Attestations use a fixed-length byte-array to encode UTF8 token name and symbol 
 Because the byte array is fixed length, the data contained may truncate multibyte unicode characters.
 {% endhint %}
 
-When *sending* an attestation VAA, we recommend sending the longest UTF8 prefix that does NOT truncate a character, and then right-padding it with 0 bytes. 
+When *sending* an attestation VAA, we recommend sending the longest UTF8 prefix that does NOT truncate a character and then right-padding it with 0 bytes. 
 
 When *parsing* an attestation VAA, we recommend trimming all trailing 0 bytes, and converting the remainder to UTF8 via any lossy algorithm. 
 
 {% hint style="info" %}
-Be mindful that different on-chain systems may have different VAA parsers, that may result in different names/symbols on different chains if the string is long, or contains invalid UTF8.
+Be mindful that different on-chain systems may have different VAA parsers, which may result in different names/symbols on different chains if the string is long, or contains invalid UTF8.
 {% endhint %}
 
-An important detail of the token bridge is that an attestation is required before a token can be transferred. This is because without knowing a tokens decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.
+An important detail of the token bridge is that an attestation is required before a token can be transferred. This is because without knowing a token's decimal precision, it is not possible for Chain B to correctly mint the correct amount of tokens when processing a transfer.
 
 ### Token + Message 
 
@@ -140,7 +140,7 @@ An important detail of the token bridge is that an attestation is required befor
 This VAA type is also referred to as a *payload3* message or a *Contract Controlled Transfer*.
 {% endhint %}
 
-The Token + Message data structure is identical to the Token only data structure with the addition of a `payload` field that contains arbitrary bytes. This arbitrary byte field is where an app may include additional data in the transfer to inform some application specific behavior.
+The Token + Message data structure is identical to the Token only data structure with the addition of a `payload` field that contains arbitrary bytes. This arbitrary byte field is where an app may include additional data in the transfer to inform some application-specific behavior.
 
 
 ```rust
@@ -150,7 +150,7 @@ u8[32]  token_address  // Address on the source chain.
 u16     token_chain    // Numeric ID for the source chain.
 u8[32]  to             // Address on the destination chain.
 u16     to_chain       // Numeric ID for the destination chain.
-u256    fee            // Portion of amount paid to a relayer.
+u256    fee            // Portion of the amount paid to a relayer.
 []byte  payload        // Message, arbitrary bytes, app specific
 ```
 
@@ -203,9 +203,9 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 <!-- TODO: diagram of message to VAA flow -->
 
-![image](https://github.com/wormhole-foundation/docs.wormhole.com/commit/429c7c59112886bb0d39430d1d9f0c0a624a4d07)
+![image](.gitbook/assets/vaas/relayers.png)
 
-If you wanna check out the in-depth view of the VAA pipeline [head here](https://docs.wormhole.com/wormhole/explore-wormhole/components).
+If you wanna check out the in-depth view of the VAA pipeline [head here](#components).
 
 *   **1: A message is emitted by a contract running on chain A.**
 
@@ -213,7 +213,7 @@ If you wanna check out the in-depth view of the VAA pipeline [head here](https:/
 
 *   **2: Signatures are aggregated.**
 
-    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians has signed the message, the collection of [signatures](https:///docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) is combined with the message and metadata to produce a VAA.
+    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians has signed the message, the collection of [signatures](#signatures) is combined with the message and metadata to produce a VAA.
 
 *   **3: VAA submitted to target chain.**
 
