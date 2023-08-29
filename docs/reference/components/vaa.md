@@ -213,12 +213,12 @@ If you wanna check out the in-depth view of the VAA pipeline [head here](https:/
 
 *   **2: Signatures are aggregated.**
 
-    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians have signed the message, the collection of [signatures](https:///docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) are combined with the message and metadata to produce a VAA.
+    Guardians run nodes for each network to listen and check the state transitions, they independently observe and sign  messages. Once a threshold of guardians has signed the message, the collection of [signatures](https:///docs.wormhole.com/blob/main/docs/reference/components/vaa.md#signatures) is combined with the message and metadata to produce a VAA.
 
 *   **3: VAA submitted to target chain.**
 
-    The VAA acts as proof that the guardians have collectively attested the existence and verified the message payload, in order to complete the final step, the VAA itself is submitted (or [relayed](./relayer.md)) to the target chain to be processed by a receiving contract.
-Relayers are the main point of contact for chains to interact with the wormhole's network of gaurdians. 
+    The VAA serves as evidence that guardians confirmed the message and its contents. To finalize, the VAA(or [relayed](./relayer.md)) is sent to the target chain for processing via a receiving contract.
+Relayers are the main point of contact for chains to interact with the wormhole's network of guardians. 
 
-A user can veirfy VAAs themselves from the [Wormhole explorer](https://wormhole.com/explorer/) or listening to the network gossip.
+A user can verify VAAs themselves from the [Wormhole explorer](https://wormholescan.io/) or by listening to the network gossip.
 
