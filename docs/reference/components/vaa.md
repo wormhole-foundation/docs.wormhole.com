@@ -203,7 +203,7 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 <!-- TODO: diagram of message to VAA flow -->
 
-![image](.gitbook/assets/vaas/relayers.png)
+![image](docs/.gitbook/assets/vaas/relayers.png)
 
 If you wanna check out the in-depth view of the VAA pipeline [head here](#components).
 
