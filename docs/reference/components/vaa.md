@@ -218,7 +218,6 @@ If you wanna check out the in-depth view of the VAA pipeline [head here](#compon
 *   **3: VAA submitted to target chain.**
 
     The VAA serves as evidence that guardians confirmed the message and its contents. To finalize, the VAA(or [relayed](./relayer.md)) is sent to the target chain for processing via a receiving contract.
-Relayers are the main point of contact for chains to interact with the wormhole's network of guardians. 
 
 A user can verify VAAs themselves from the [Wormhole explorer](https://wormholescan.io/) or by listening to the network gossip.
 
