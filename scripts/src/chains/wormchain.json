@@ -1,1 +1,32 @@
-{}
+{
+    "title": "Wormchain",
+    "homepage": "https://book.wormhole.com/wormhole/8_wormchain.html",
+    "explorer": [
+      {
+        "url": "",
+        "description": ""
+      },
+      {
+        "url": "",
+        "description": ""
+      }
+    ],
+    "developer": [
+      {
+        "url": "",
+        "description": ""
+      },
+      {"url":"", "description":"Faucet"}
+    ],
+    "examples": [
+      {
+        "url": "https://github.com/wormhole-foundation/wormhole/tree/main/wormchain",
+        "description": "Connecting Cosmos with Wormchain"
+      }
+    ],
+    "contractSource": "https://github.com/wormhole-foundation/wormhole/blob/main/wormchain/app/app.go",
+    "finality": {
+      "details":"https://github.com/ignite",
+      "finalized": 50 
+    }
+  }
