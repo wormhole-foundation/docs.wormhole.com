@@ -1,4 +1,17 @@
 {
   "title": "Sei",
-  "homepage": "https://www.sei.io/"
-}
+  "homepage": "https://www.sei.io/",
+  "explorer": [
+    {
+      "url": "https://www.seiscan.app/",
+      "description": "SEI scam"
+    }
+  ],
+  "developer": [
+    {
+      "url": "https://docs.sei.io/",
+      "description": "Developer Docs"
+    },
+    {"url":"https://docs.sei.io/develop/resources#sei-faucet", "description":"Faucet"}
+  ]
+  }
