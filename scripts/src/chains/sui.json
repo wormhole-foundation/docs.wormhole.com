@@ -1,12 +1,30 @@
 {
   "title": "Sui",
   "homepage": "https://sui.io/",
-  "developer":[
-    {"url":"https://docs.sui.io/", "description":"Developer docs"},
-    {"url":"https://docs.sui.io/build/faucet", "description":"Faucet"}
+  "explorer": [{
+    "url": "https://suiexplorer.com/",
+    "description": "Sui Explorer"
+  }
   ],
+  "developer":[
+    {"url":"https://docs.sui.io/",
+     "description":"Developer docs"},
+    {"url":"https://docs.sui.io/build/faucet",
+     "description":"Faucet"}
+  ],
+  "examples": [
+    {
+      "url": "https://github.com/wormhole-foundation/wormhole/tree/main/sui/examples",
+      "description": "Core messaging on SUI"
+    },
+    {
+      "url":"https://github.com/wormhole-foundation/wormhole/tree/main/sui/examples/templates",
+      "description": "Template"
+    }
+  ],
+  "contractSource": "https://github.com/wormhole-foundation/wormhole/blob/main/sui/wormhole/sources/vaa.move",
   "finality": {
     "details":"https://docs.sui.io/learn/architecture/consensus",
-    "finalized": 0
+    "finalized": 0 
   }
 }
