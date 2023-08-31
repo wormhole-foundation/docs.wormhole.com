@@ -1,1 +1,24 @@
-{}
+{
+    "title": "Xpla",
+    "homepage": "https://xpla.io/",
+    "explorer": [
+      {
+        "url": "https://explorer.xpla.io/",
+        "description": "XPLA Explorer"
+      }
+    ],
+    "developer": [
+      {
+        "url": "https://docs.xpla.io/docs/",
+        "description": "Developer Docs"
+      },
+      {"url":"https://faucet.xpla.io/",
+       "description":"Faucet"
+    }
+    ],
+    "contractSource": "aptos/wormhole/sources/wormhole.move",
+    "finality": {
+      "details":"https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft",
+      "finalized": 0
+    }
+  }
