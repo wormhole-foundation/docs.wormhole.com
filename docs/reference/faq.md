@@ -11,7 +11,7 @@ Beware of scams. Admins will never DM or message you first
 
 - **Who runs the guardians that secure the network?**
 
-    The list of current Guardians is available [here](https://docs.wormhole.com/wormhole/explore-wormhole/guardian).
+    The list of current Guardians is available [here](https://wormhole.com/blockchains/).
 
 - **How do I get started?**
 
@@ -20,7 +20,7 @@ Beware of scams. Admins will never DM or message you first
 
 - **Where can I track my transactions?**
 
-  You can check your transactions at [Wormholescan](https://wormholescan.io/) or [verify VAA's](https://docs.wormhole.com/wormhole/reference/cli-docs#verify-vaa) through wormhole cli. 
+  You can check your transactions at [Wormholescan](https://wormholescan.io/) or [verify VAA's](.docs/reference/cli-docs#verify-vaa) through wormhole cli. 
 
 - 
 ...
