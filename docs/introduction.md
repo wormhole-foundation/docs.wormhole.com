@@ -256,6 +256,11 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/pythnet.svg">pythnet</a></td>
 </tr>
 <tr>
+    <td><strong>rootstock</strong></td>
+    <td><a href="./reference/environments/evm/README.md#rootstock">evm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/rootstock.svg">rootstock</a></td>
+</tr>
+<tr>
     <td><strong>Sei</strong></td>
     <td><a href="./reference/environments/cosmwasm/README.md#sei">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/sei.svg">sei</a></td>
@@ -286,7 +291,7 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/terra2.svg">terra2</a></td>
 </tr>
 <tr>
-    <td><strong>xpla</strong></td>
+    <td><strong>Xpla</strong></td>
     <td><a href="./reference/environments/cosmwasm/README.md#xpla">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/xpla.svg">xpla</a></td>
 </tr>

@@ -121,8 +121,8 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 ## Ecosystem
 
 - [Web site](https://www.sei.io/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- [SEI scan](https://www.seiscan.app/)
+- [Developer Docs](https://docs.sei.io/) | [Faucet](https://docs.sei.io/develop/resources#sei-faucet)
 
 ## Wormhole Details
 
@@ -263,24 +263,30 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 <!--XPLA_CHAIN_DETAILS-->
 
-# xpla
+# Xpla
 
 ## Ecosystem
 
-- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- [Web site](https://xpla.io/)
+- [XPLA Explorer](https://explorer.xpla.io/)
+- [Developer Docs](https://docs.xpla.io/docs/) | [Faucet](https://faucet.xpla.io/)
 
 ## Wormhole Details
 
 - **Name**: `xpla`
 - **Chain ID**: `28`
-- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- **Contract Source**: [aptos/wormhole/sources/wormhole.move](https://github.com/wormhole-foundation/wormhole/blob/main/aptos/wormhole/sources/wormhole.move)
+
+### Consistency Levels
+
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Finalized|0|
 
 
-
-
-
+For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
 
 
 ### Mainnet Contracts

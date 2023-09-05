@@ -35,6 +35,7 @@ Reference page for all contract addresses
 |xpla|28|`xpla1jn8qmdda5m6f6fqu9qv46rt7ajhklg40ukpqchkejcvy8x7w26cqxamv3w`|
 |base|30|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 |sei|32|`sei1gjrrme22cyha4ht2xapn3f08zzw6z3d4uxx6fyy9zd5dyr3yxgzqqncdqn`|
+|rootstock|33|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 
 ### Testnet
 
@@ -69,6 +70,7 @@ Reference page for all contract addresses
 |xpla|28|`xpla1upkjn4mthr0047kahvn0llqx4qpqfn75lnph4jpxfn8walmm8mqsanyy35`|
 |base|30|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 |sei|32|`sei1nna9mzp274djrgzhzkac2gvm3j27l402s4xzr08chq57pjsupqnqaj0d5s`|
+|rootstock|33|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 |sepolia|10002|`0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78`|
 
 ### Devnet
