@@ -1,8 +1,19 @@
 {
   "title": "NEAR",
   "homepage": "https://near.org/",
+  "explorer": [
+    {
+      "url": "https://explorer.near.org/"
+    }
+  ],
+  "developer": [
+    {
+      "url": "https://docs.near.org/develop/welcome",
+      "description": "Developer docs"
+    }
+  ],
   "finality": {
-    "details":"https://nomicon.io/ChainSpec/Consensus",
-    "finalized": 0
+    "details": "https://docs.near.org/integrator/exchange-integration#:~:text=Blocks%20and%20Finality%E2%80%8B,%22%7D%20in%20the%20block%20query.",
+    "finalized": 1
   }
 }
