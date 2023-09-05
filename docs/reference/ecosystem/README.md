@@ -10,17 +10,17 @@ At present, there are X ecosystems supported by Wormhole, though the number of s
 EVM stands for Ethereum virtual machine - the execution environment to run arbitrary code and instructions on the Ethereum network. EVM as an ecosystem has the highest Value locked in decentralised finance making it the most valuable base layer in terms of blockspace and liveliness which incentivises developers to build EVM dapps and deploy them over several rollups and evm compatible to tap into the liquidity. 8/10 blockchains with the [highest DeFi TVl](https://defillama.com/chains) are EVM-based chains. 
 There are several types of EVMs based on bytecode composability and backward compatibility.  
 
-[EVM Blockchains](https://docs.wormhole.com/wormhole/blockchain-environments/evm) that support read-writes :
-- [Ethereum](https://docs.wormhole.com/wormhole/blockchain-environments/evm#ethereum)   
-- [Polygon](https://docs.wormhole.com/wormhole/blockchain-environments/evm#polygon)
-- [BNB Chain](https://docs.wormhole.com/wormhole/blockchain-environments/evm#bnb-smart-chain-bsc)
-- [Avalanche (C Chain)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#avalanche)
-- [Aurora (Near Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#aurora)
-- [Karura (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#karura)
-- [Acala (Polkadot Network)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#acala)
-- [Celo](https://docs.wormhole.com/wormhole/blockchain-environments/evm#celo)
-- [Fantom](https://docs.wormhole.com/wormhole/blockchain-environments/evm#fantom)
- - [Oasis (Emerald)](https://docs.wormhole.com/wormhole/blockchain-environments/evm#oasis)
+[EVM Blockchains](.docs/reference/environments/evm/README.md) that support read-writes :
+- [Ethereum](docs/reference/environments/evm/README.md#ethereum)   
+- [Polygon](docs/reference/environments/evm/README.md#polygon)
+- [BNB Chain](docs/reference/environments/evm/README.md#bnb-smart-chain-bsc)
+- [Avalanche (C Chain)](docs/reference/environments/evm/README.md#avalanche)
+- [Aurora (Near Network)](docs/reference/environments/evm/README.md#aurora)
+- [Karura (Polkadot Network)](docs/reference/environments/evm/README.md#karura)
+- [Acala (Polkadot Network)](docs/reference/environments/evm/README.md#acala)
+- [Celo](docs/reference/environments/evm/README.md#celo)
+- [Fantom](docs/reference/environments/evm/README.md#fantom)
+ - [Oasis (Emerald)](docs/reference/environments/evm/README.md#oasis)
 
 ### Solana
 
