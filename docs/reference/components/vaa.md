@@ -203,9 +203,9 @@ With the concepts now defined, we can illustrate what a full flow for a message 
 
 <!-- TODO: diagram of message to VAA flow -->
 
-![image](docs/.gitbook/assets/vaas/relayers.png)
+![image](.gitbook/assets/vaas/relayers.png)
 
-If you wanna check out the in-depth view of the VAA pipeline [head here](#components).
+If you want to check out the in-depth view of the VAA pipeline [head here](#components).
 
 *   **1: A message is emitted by a contract running on chain A.**
 
