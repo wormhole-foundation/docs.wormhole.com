@@ -16,5 +16,9 @@
       "url": "https://ftmscan.com/"
     }
   ],
-  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "details": "https://github.com/Fantom-foundation/fantom-research/blob/master/architecture.md",
+    "finalized": 1
+  }
 }

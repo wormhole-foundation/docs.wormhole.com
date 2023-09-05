@@ -1,5 +1,15 @@
 {
   "title": "Neon",
   "homepage": "https://neon-labs.org/",
+  "explorer": {
+    "url": "https://neonscan.org",
+    "description": "neon Explorer"
+  },
+  "developer": [
+    {
+      "url": "https://docs.neonfoundation.io/docs/quick_start",
+      "description": "Developer docs"
+    }
+  ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }

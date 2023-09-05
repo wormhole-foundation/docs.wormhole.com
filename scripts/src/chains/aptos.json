@@ -16,7 +16,7 @@
       "url": "https://aptos.dev/",
       "description": "Developer Docs"
     },
-    {"url":"https://www.aptosfaucet.com/", "description":"Faucet"}
+    { "url": "https://www.aptosfaucet.com/", "description": "Faucet" }
   ],
   "examples": [
     {
@@ -26,7 +26,7 @@
   ],
   "contractSource": "aptos/wormhole/sources/wormhole.move",
   "finality": {
-    "details":"https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft",
-    "finalized": 0
+    "details": "https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft",
+    "finalized": 50
   }
 }

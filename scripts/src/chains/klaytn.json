@@ -1,5 +1,20 @@
 {
   "title": "Klaytn",
   "homepage": "https://klaytn.foundation/",
+  "explorer": [
+    {
+      "url": "https://scope.klaytn.com/"
+    }
+  ],
+  "developer": [
+    {
+      "url": "https://docs.klaytn.foundation/",
+      "description": "Developer docs"
+    },
+    {
+      "url": "https://baobab.wallet.klaytn.foundation/faucet",
+      "description": "Faucet"
+    }
+  ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }

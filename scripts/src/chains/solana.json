@@ -1,9 +1,7 @@
 {
   "title": "Solana",
   "homepage": "https://solana.com/",
-  "notes":[
-    "The contract addresess for `testnet` are on the Solana `devnet`"
-  ],
+  "notes": ["The contract addresess for `testnet` are on the Solana `devnet`"],
   "explorer": [
     {
       "url": "https://explorer.solana.com/"
@@ -16,7 +14,7 @@
     }
   ],
   "finality": {
-    "details":"https://docs.solana.com/cluster/commitments",
+    "details": "https://docs.solana.com/cluster/commitments",
     "confirmed": 0,
     "finalized": 1
   }

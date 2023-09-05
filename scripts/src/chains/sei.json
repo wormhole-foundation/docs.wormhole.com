@@ -4,7 +4,7 @@
   "explorer": [
     {
       "url": "https://www.seiscan.app/",
-      "description": "SEI scam"
+      "description": "SEI scan"
     }
   ],
   "developer": [
@@ -12,6 +12,9 @@
       "url": "https://docs.sei.io/",
       "description": "Developer Docs"
     },
-    {"url":"https://docs.sei.io/develop/resources#sei-faucet", "description":"Faucet"}
+    {
+      "url": "https://docs.sei.io/develop/resources#sei-faucet",
+      "description": "Faucet"
+    }
   ]
-  }
+}
