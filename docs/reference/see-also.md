@@ -19,9 +19,3 @@ See Also
 * [Wormhole SDK](https://www.npmjs.com/package/@certusone/wormhole-sdk)
 * [White Papers](https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers)
 * [Design Documents](https://github.com/wormhole-foundation/wormhole/tree/main/docs)
-
-### Getting Started and Tutorials
-
-* [Wormhole-Scaffolding](https://github.com/wormhole-foundation/wormhole-scaffolding)
-* [Hello Wormhole](https://github.com/wormhole-foundation/hello-wormhole)
-* [Helper Contracts](https://github.com/wormhole-foundation/helper-contracts)
