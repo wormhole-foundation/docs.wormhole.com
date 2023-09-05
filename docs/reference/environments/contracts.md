@@ -304,3 +304,26 @@ Reference page for all contract addresses
 
 
 <!--CCTP_ADDRESS-->
+
+<!--GATEWAY_ADDRESS-->
+
+## Gateway
+
+### Mainnet
+
+| Contract | Address |
+| -------- | ------- |
+|Wormhole core bridge| `wormhole1ufs3tlq4umljk0qfe8k5ya0x6hpavn897u2cnf9k0en9jr7qarqqaqfk2j`|
+|Wormhole token bridge| `wormhole1466nf3zuxpya8q9emxukd7vftaf6h4psr0a07srl5zw74zh84yjq4lyjmh`|
+|IBC Translator| `wormhole14ejqjyq8um4p3xfqj74yld5waqljf88fz25yxnma0cngspxe3les00fpjx`|
+
+### Testnet
+
+| Contract | Address |
+| -------- | ------- |
+|Wormhole core bridge|`wormhole16jzpxp0e8550c9aht6q9svcux30vtyyyyxv5w2l2djjra46580wsazcjwp`|
+|Wormhole token bridge|`wormhole1aaf9r6s7nxhysuegqrxv0wpm27ypyv4886medd3mrkrw6t4yfcnst3qpex`|
+|IBC Translator|`wormhole1ctnjk7an90lz5wjfvr3cf6x984a8cjnv8dpmztmlpcq4xteaa2xs9pwmzk`|
+
+
+<!--GATEWAY_ADDRESS-->
