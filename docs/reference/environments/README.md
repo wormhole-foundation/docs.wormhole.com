@@ -120,7 +120,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/oasis.svg">oasis</a></td>
 </tr>
 <tr>
-    <td><strong>Optimisim</strong></td>
+    <td><strong>Optimism</strong></td>
     <td><a href="../../reference/environments/evm/README.md#optimism">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/optimism.svg">optimism</a></td>
 </tr>

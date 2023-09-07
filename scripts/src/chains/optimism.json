@@ -1,5 +1,5 @@
 {
-  "title": "Optimisim",
+  "title": "Optimism",
   "homepage": "https://www.optimism.io/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
