@@ -815,7 +815,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 <!--OASIS_CHAIN_DETAILS-->
 <!--OPTIMISM_CHAIN_DETAILS-->
 
-# Optimisim
+# Optimism
 
 ## Ecosystem
 
