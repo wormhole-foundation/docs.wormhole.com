@@ -102,7 +102,7 @@ More details in [Example Source](https://github.com/wormhole-foundation/wormhole
 Once the message is emitted from the core contract, the [Guardian Network](../reference/components/guardian.md) will observe the message and sign the digest of an Attestation ([VAA](../reference/components/vaa.md)). We'll discuss this in more depth in the [Off Chain](#off-chain) section below.
 
 {% hint style="info" %}
-By default, VAAs are [multicast](../reference/components/core-contracts.md#multicast). This means there is no default **target chain** for a given message. It's up to the application developer to decide on the format of the message and it's treatment on receipt.
+By default, VAAs are [multicast](../reference/components/core-contracts.md#multicast). This means there is no default **target chain** for a given message. It's up to the application developer to decide on the format of the message and its treatment on receipt.
 {% endhint %}
 
 

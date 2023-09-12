@@ -9,7 +9,7 @@ An index of commonly used technical terms
 
 The Chain IDs in the Wormhole context are `u16` integers that map to chains. Note these Chain IDs are _not_ the same as other Chain IDs used for things like wallets.
 
-Each Chain ID is documented on it's page in the [Blockchain Environments](./environments/README.md).
+Each Chain ID is documented on its page in the [Blockchain Environments](./environments/README.md).
 
 ## Delivery Provider
 
@@ -41,7 +41,7 @@ The Guardian Set is a set of guardians that are responsible for validating a mes
 
 ## Heartbeat
 
-Each Guardian will issue a `Heartbeat` on a 15s interval to signal that it is still running and to convey details about it's identity, uptime, version, and status of the connected nodes. 
+Each Guardian will issue a `Heartbeat` on a 15s interval to signal that it is still running and to convey details about its identity, uptime, version, and status of the connected nodes. 
 
 The heartbeats are shown on the [dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/).
 
