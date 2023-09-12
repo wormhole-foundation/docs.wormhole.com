@@ -10,7 +10,7 @@ The recommended development tool for Algorand is [Algokit](https://developer.alg
 
 Because Wormhole works with many environments, the Wormhole address format is normalized. 
 
-For Algorand chains, this means a wormhole formatted address is the 58 character address decoded from base32 with it's checksum removed.
+For Algorand chains, this means a wormhole formatted address is the 58 character address decoded from base32 with its checksum removed.
 
 e.g. `M7UT7JWIVROIDGMQVJZUBQGBNNIIVOYRPC7JWMGQES4KYJIZHVCRZEGFRQ` => `0x67e93fa6c8ac5c819990aa7340c0c16b508abb1178be9b30d024b8ac25193d45`
 

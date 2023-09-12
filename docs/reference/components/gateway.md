@@ -116,7 +116,7 @@ await txReceipt = wh.transferFromEth(
   wh.consts.TESTNET.eth.token_bridge // source chain token bridge address
   wallet,                            // signer for eth tx
   "0xdeadbeef...",                   // address of token being transferred
-  10000000n,                         // amount of token in it's base units
+  10000000n,                         // amount of token in its base units
   wh.consts.CHAINS.wormchain,        // chain id we're sending to
   ibcTranslatorAddress,              // The address of the ibc-translator contract on the Gateway
   0,                                 // relayer fee, 0 for now
