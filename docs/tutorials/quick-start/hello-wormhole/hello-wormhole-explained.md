@@ -66,9 +66,9 @@ Calling this function will result in the **receiveWormholeMessages** endpoint on
 
 The method `sendPayloadToEvm` works by publishing a wormhole message (simply an event containing bytes) with instructions for how to perform the delivery: the target chain, target address, receiver value, gas limit, payload, and any other necessary information
 
-`sendPayloadToEvm` also then **pays a delivery provider** its `msg.value`.
+`sendPayloadToEvm` also then **pays a delivery provider** it's `msg.value`.
 
-Delivery Providers are permissionless entities that help power the Wormhole Relayer network. If left unspecified, your delivery request will be assigned to the default delivery provider. Each delivery provider is allowed to set its own pricing for relaying to a specific chain with a specific receiverValue and gasLimit. 
+Delivery Providers are permissionless entities that help power the Wormhole Relayer network. If left unspecified, your delivery request will be assigned to the default delivery provider. Each delivery provider is allowed to set it's own pricing for relaying to a specific chain with a specific receiverValue and gasLimit. 
 
 The [full Wormhole Relayer interface](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol) provides endpoints where you can specify the delivery provider you wish to use
 
