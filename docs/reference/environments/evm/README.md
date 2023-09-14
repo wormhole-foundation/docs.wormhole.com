@@ -928,6 +928,56 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
   
 
 <!--POLYGON_CHAIN_DETAILS-->
+
+<!--ROOTSTOCK_CHAIN_DETAILS-->
+
+# rootstock
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+
+## Wormhole Details
+
+- **Name**: `rootstock`
+- **Chain ID**: `33`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+
+
+
+
+
+
+
+### Mainnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts
+
+|Type|Contract|
+|----|--------|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Devnet Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--ROOTSTOCK_CHAIN_DETAILS-->
+
 <!--SEPOLIA_CHAIN_DETAILS-->
 
 # Sepolia

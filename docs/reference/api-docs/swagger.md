@@ -1,8 +1,8 @@
-# Wormhole Guardian API
+# Wormholescan API
 Wormhole Guardian API
 This is the API for the Wormhole Guardian and Explorer.
-The API has two namespaces: wormscan and guardian.
-wormscan is the namespace for the explorer and the new endpoints. The prefix is /api/v1.
+The API has two namespaces: wormholescan and guardian.
+wormholescan is the namespace for the explorer and the new endpoints. The prefix is /api/v1.
 guardian is the legacy namespace backguard compatible with guardian node API. The prefix is /v1.
 This API is public and does not require authentication although some endpoints are rate limited.
 Check each endpoint documentation for more information.
@@ -14,7 +14,7 @@ Check each endpoint documentation for more information.
 
 **Contact information:**  
 API Support  
-<http://wormhole.com/support>  
+<https://discord.com/invite/wormholecrypto>  
 info@wormhole.com  
 
 **License:** [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
@@ -39,7 +39,7 @@ Lookup an address
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-address_AddressOverview](#responseresponse-address_addressoverview) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_address_AddressOverview](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-github_com_wormhole-foundation_wormhole-explorer_api_handlers_address_addressoverview) |
 | 400 | Bad Request |  |
 | 404 | Not Found |  |
 | 500 | Internal Server Error |  |
@@ -67,7 +67,7 @@ If the response only contains an origin tx the VAA was not redeemed.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.Tx](#transactionstx) |
+| 200 | OK | [routes_wormscan_transactions.Tx](#routes_wormscan_transactionstx) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -89,7 +89,7 @@ Returns governor configuration for all guardians.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-governor_GovConfig](#responseresponse-governor_govconfig) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovConfig](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_govconfig) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -104,7 +104,7 @@ Returns governor configuration for a given guardian.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-governor_GovConfig](#responseresponse-governor_govconfig) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovConfig](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_govconfig) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -127,7 +127,7 @@ Returns enqueued VAAs for each blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_EnqueuedVaas](#responseresponse-array_governor_enqueuedvaas) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_EnqueuedVaas](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_enqueuedvaas) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -150,7 +150,7 @@ Returns all enqueued VAAs for a given blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_EnqueuedVaaDetail](#responseresponse-array_governor_enqueuedvaadetail) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_EnqueuedVaaDetail](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_enqueuedvaadetail) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -172,7 +172,7 @@ Returns the governor limit for all blockchains.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_GovernorLimit](#responseresponse-array_governor_governorlimit) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovernorLimit](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_governorlimit) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -195,7 +195,7 @@ Returns the amount of notional value available for each blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_NotionalAvailable](#responseresponse-array_governor_notionalavailable) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalAvailable](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_notionalavailable) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -217,7 +217,7 @@ Returns the amount of notional value available for a given blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_NotionalAvailableDetail](#responseresponse-array_governor_notionalavailabledetail) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalAvailableDetail](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_notionalavailabledetail) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -239,7 +239,7 @@ Returns the detailed notional limit for all blockchains.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_NotionalLimitDetail](#responseresponse-array_governor_notionallimitdetail) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalLimitDetail](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_notionallimitdetail) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -261,7 +261,7 @@ Returns the detailed notional limit available for a given blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_NotionalLimitDetail](#responseresponse-array_governor_notionallimitdetail) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalLimitDetail](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_notionallimitdetail) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -276,7 +276,7 @@ Returns the maximum amount of notional value available for a given blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-governor_MaxNotionalAvailableRecord](#responseresponse-governor_maxnotionalavailablerecord) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_MaxNotionalAvailableRecord](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_maxnotionalavailablerecord) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -298,7 +298,7 @@ Returns the governor status for all guardians.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_governor_GovStatus](#responseresponse-array_governor_govstatus) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovStatus](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_govstatus) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -320,7 +320,7 @@ Returns the governor status for a given guardian.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-governor_GovStatus](#responseresponse-governor_govstatus) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovStatus](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_govstatus) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -335,7 +335,7 @@ Health check
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"status"**: string } |
+| 200 | OK | { **"status"**: string } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -357,7 +357,7 @@ Returns the number of transactions by a defined time span and sample rate.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [transactions.TransactionCountResult](#transactionstransactioncountresult) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.TransactionCountResult](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactionstransactioncountresult) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -380,7 +380,7 @@ Returns all observations, sorted in descending timestamp order.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [observations.ObservationDoc](#observationsobservationdoc) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_observationsobservationdoc) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -403,7 +403,7 @@ Returns all observations for a given blockchain, sorted in descending timestamp 
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [observations.ObservationDoc](#observationsobservationdoc) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_observationsobservationdoc) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -426,7 +426,7 @@ Returns all observations for a specific emitter address, sorted in descending ti
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [observations.ObservationDoc](#observationsobservationdoc) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_observationsobservationdoc) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -449,7 +449,7 @@ Find observations identified by emitter chain, emitter address and sequence.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [observations.ObservationDoc](#observationsobservationdoc) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_observationsobservationdoc) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -472,7 +472,7 @@ Find a specific observation.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [observations.ObservationDoc](#observationsobservationdoc) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_observationsobservationdoc) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -487,7 +487,7 @@ Ready check
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"ready"**: string } |
+| 200 | OK | { **"ready"**: string } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -508,7 +508,7 @@ Total messages is the number of VAAs emitted since the creation of the network (
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.ScorecardsResponse](#transactionsscorecardsresponse) |
+| 200 | OK | [routes_wormscan_transactions.ScorecardsResponse](#routes_wormscan_transactionsscorecardsresponse) |
 | 500 | Internal Server Error |  |
 
 ### /api/v1/token/{chain_id}/{token_address}
@@ -529,7 +529,7 @@ Returns a token symbol, coingecko id and address by chain and token address.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.Token](#transactionstoken) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.Token](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactionstoken) |
 | 400 | Bad Request |  |
 | 404 | Not Found |  |
 
@@ -551,7 +551,7 @@ The volume is calculated using the notional price of the symbol at the day the V
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.TopAssetsResponse](#transactionstopassetsresponse) |
+| 200 | OK | [routes_wormscan_transactions.TopAssetsResponse](#routes_wormscan_transactionstopassetsresponse) |
 | 500 | Internal Server Error |  |
 
 ### /api/v1/top-chain-pairs-by-num-transfers
@@ -571,7 +571,7 @@ Returns a list of the emitter_chain and destination_chain pair ordered by transf
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.TopChainPairsResponse](#transactionstopchainpairsresponse) |
+| 200 | OK | [routes_wormscan_transactions.TopChainPairsResponse](#routes_wormscan_transactionstopchainpairsresponse) |
 | 500 | Internal Server Error |  |
 
 ### /api/v1/transactions/
@@ -592,7 +592,30 @@ Returns transactions. Output is paginated.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.ListTransactionsResponse](#transactionslisttransactionsresponse) |
+| 200 | OK | [routes_wormscan_transactions.ListTransactionsResponse](#routes_wormscan_transactionslisttransactionsresponse) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
+### /api/v1/transactions/{chain_id}/{emitter}/{seq}
+
+#### GET
+##### Description
+
+Find VAA metadata by ID.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| chain_id | path | id of the blockchain | Yes | integer |
+| emitter | path | address of the emitter | Yes | string |
+| seq | path | sequence of the VAA | Yes | integer |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [routes_wormscan_transactions.TransactionDetail](#routes_wormscan_transactionstransactiondetail) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -618,7 +641,7 @@ Returns all VAAs. Output is paginated and can also be be sorted.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_vaa_VaaDoc](#responseresponse-array_vaa_vaadoc) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_vaadoc) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -642,7 +665,7 @@ Returns all the VAAs generated in specific blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_vaa_VaaDoc](#responseresponse-array_vaa_vaadoc) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_vaadoc) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -659,6 +682,7 @@ Returns all all the VAAs generated by a specific emitter address.
 | ---- | ---------- | ----------- | -------- | ------ |
 | chain_id | path | id of the blockchain | Yes | integer |
 | emitter | path | address of the emitter | Yes | string |
+| toChain | query | destination chain | No | integer |
 | page | query | Page number. | No | integer |
 | pageSize | query | Number of elements per page. | No | integer |
 | sortOrder | query | Sort results in ascending or descending order. | No | string |
@@ -667,7 +691,7 @@ Returns all all the VAAs generated by a specific emitter address.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_vaa_VaaDoc](#responseresponse-array_vaa_vaadoc) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_vaadoc) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -691,8 +715,24 @@ Find a VAA by ID.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_vaa_VaaDoc](#responseresponse-array_vaa_vaadoc) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_vaadoc) |
 | 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
+### /api/v1/vaas/parse
+
+#### POST
+##### Description
+
+Parse a VAA.
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [parser.ParseVaaWithStandarizedPropertiesdResponse](#parserparsevaawithstandarizedpropertiesdresponse) |
+| 400 | Bad Request |  |
+| 404 | Not Found |  |
 | 500 | Internal Server Error |  |
 
 ### /api/v1/vaas/vaa-counts
@@ -706,7 +746,7 @@ Returns the total number of VAAs emitted for each blockchain.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [response.Response-array_vaa_VaaStats](#responseresponse-array_vaa_vaastats) |
+| 200 | OK | [github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaStats](#github_com_wormhole-foundation_wormhole-explorer_api_responseresponse-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_vaastats) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -721,7 +761,7 @@ Get version/release information.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [infrastructure.VersionResponse](#infrastructureversionresponse) |
+| 200 | OK | [routes_wormscan_infrastructure.VersionResponse](#routes_wormscan_infrastructureversionresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -731,23 +771,22 @@ Get version/release information.
 ##### Description
 
 Returns a list of chain pairs by origin chain and destination chain.
-The list could be rendered by volume or transaction count.
+The list could be rendered by notional or transaction count.
 The volume is calculated using the notional price of the symbol at the day the VAA was emitted.
 
 ##### Parameters
 
 | Name | Located in | Description | Required | Schema |
 | ---- | ---------- | ----------- | -------- | ------ |
-| start_time | query | Star time (format: ISO-8601). | No | string |
-| end_time | query | End time (format: ISO-8601). | No | string |
-| by | query | Renders the results using volume or tx count (default is volume). | No | string |
+| timeSpan | query | Time span, supported values: 7d, 30d, 90d, 1y and all-time (default is 7d). | No | string |
+| by | query | Renders the results using notional or tx count (default is notional). | No | string |
 | apps | query | List of apps separated by comma (default is all apps). | No | string |
 
 ##### Responses
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [transactions.ChainActivity](#transactionschainactivity) |
+| 200 | OK | [routes_wormscan_transactions.ChainActivity](#routes_wormscan_transactionschainactivity) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -782,7 +821,7 @@ for a chainID. The smallest remainingAvailableNotional value for a chainID is us
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [governor.AvailableNotionalResponse](#governoravailablenotionalresponse) |
+| 200 | OK | [routes_guardian_governor.AvailableNotionalResponse](#routes_guardian_governoravailablenotionalresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -797,7 +836,7 @@ Get enqueued VAAs
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [governor.EnqueuedVaaResponse](#governorenqueuedvaaresponse) |
+| 200 | OK | [routes_guardian_governor.EnqueuedVaaResponse](#routes_guardian_governorenqueuedvaaresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -820,7 +859,7 @@ Check if vaa is enqueued
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [governor.EnqueuedVaaResponse](#governorenqueuedvaaresponse) |
+| 200 | OK | [routes_guardian_governor.EnqueuedVaaResponse](#routes_guardian_governorenqueuedvaaresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -839,7 +878,7 @@ the price that has most occurrences in all the nodes for an originChainId and or
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [ [governor.TokenList](#governortokenlist) ] |
+| 200 | OK | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.TokenList](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governortokenlist) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -854,7 +893,7 @@ Get current guardian set.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [guardian.GuardianSetResponse](#guardianguardiansetresponse) |
+| 200 | OK | [routes_guardian_guardian.GuardianSetResponse](#routes_guardian_guardianguardiansetresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -869,7 +908,7 @@ Get heartbeats for guardians
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | [heartbeats.HeartbeatsResponse](#heartbeatsheartbeatsresponse) |
+| 200 | OK | [routes_guardian_heartbeats.HeartbeatsResponse](#routes_guardian_heartbeatsheartbeatsresponse) |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -892,7 +931,7 @@ get a batch of VAA []byte from a chainID, emitter address and sequence.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"vaaBytes"**: [ integer ] } |
+| 200 | OK | { **"vaaBytes"**: [ integer ] } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -915,57 +954,20 @@ get a VAA []byte from a chainID, emitter address and sequence.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"vaaBytes"**: [ integer ] } |
+| 200 | OK | { **"vaaBytes"**: [ integer ] } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
 ---
 ### Models
 
-#### address.AddressOverview
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_address.AddressOverview
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| vaas | [ [vaa.VaaDoc](#vaavaadoc) ] |  | No |
+| vaas | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa.VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaavaadoc) ] |  | No |
 
-#### github_com_wormhole-foundation_wormhole-explorer_api_routes_guardian_guardian.GuardianSet
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| addresses | [ string ] |  | No |
-| index | integer |  | No |
-
-#### github_com_wormhole-foundation_wormhole-explorer_api_routes_wormscan_transactions.TransactionOverview
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| destinationAddress | string |  | No |
-| destinationChain | [vaa.ChainID](#vaachainid) |  | No |
-| id | string |  | No |
-| originChain | [vaa.ChainID](#vaachainid) |  | No |
-| status | [transactions.TxStatus](#transactionstxstatus) |  | No |
-| symbol | string |  | No |
-| timestamp | string |  | No |
-| tokenAmount | string |  | No |
-| txHash | string |  | No |
-| usdAmount | string |  | No |
-
-#### governor.AvailableNotionalItemResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| bigTransactionSize | string |  | No |
-| chainId | [vaa.ChainID](#vaachainid) |  | No |
-| notionalLimit | string |  | No |
-| remainingAvailableNotional | string |  | No |
-
-#### governor.AvailableNotionalResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| entries | [ [governor.AvailableNotionalItemResponse](#governoravailablenotionalitemresponse) ] |  | No |
-
-#### governor.Emitter
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.Emitter
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -973,7 +975,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | enqueuedVaas | integer |  | No |
 | totalEnqueuedVaas | integer |  | No |
 
-#### governor.EnqueuedVaa
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaa
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -983,7 +985,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | sequence | string |  | No |
 | txHash | string |  | No |
 
-#### governor.EnqueuedVaaDetail
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaaDetail
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -994,43 +996,26 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | sequence | string |  | No |
 | txHash | string |  | No |
 
-#### governor.EnqueuedVaaItemResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| emitterAddress | string |  | No |
-| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
-| notionalValue | string |  | No |
-| releaseTime | integer |  | No |
-| sequence | integer |  | No |
-| txHash | string |  | No |
-
-#### governor.EnqueuedVaaResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| entries | [ [governor.EnqueuedVaaItemResponse](#governorenqueuedvaaitemresponse) ] |  | No |
-
-#### governor.EnqueuedVaas
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaas
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | chainId | [vaa.ChainID](#vaachainid) |  | No |
-| enqueuedVaas | [ [governor.EnqueuedVaa](#governorenqueuedvaa) ] |  | No |
+| enqueuedVaas | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaa](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorenqueuedvaa) ] |  | No |
 
-#### governor.GovConfig
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfig
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| chains | [ [governor.GovConfigChains](#governorgovconfigchains) ] |  | No |
+| chains | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfigChains](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovconfigchains) ] |  | No |
 | counter | integer |  | No |
 | createdAt | string |  | No |
 | id | string |  | No |
 | nodeName | string |  | No |
-| tokens | [ [governor.GovConfigfTokens](#governorgovconfigftokens) ] |  | No |
+| tokens | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfigfTokens](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovconfigftokens) ] |  | No |
 | updatedAt | string |  | No |
 
-#### governor.GovConfigChains
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfigChains
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1038,7 +1023,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | chainId | [vaa.ChainID](#vaachainid) |  | No |
 | notionalLimit | integer |  | No |
 
-#### governor.GovConfigfTokens
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfigfTokens
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1046,17 +1031,17 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | originChainId | integer |  | No |
 | price | number |  | No |
 
-#### governor.GovStatus
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatus
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| chains | [ [governor.GovStatusChains](#governorgovstatuschains) ] |  | No |
+| chains | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatusChains](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovstatuschains) ] |  | No |
 | createdAt | string |  | No |
 | id | string |  | No |
 | nodeName | string |  | No |
 | updatedAt | string |  | No |
 
-#### governor.GovStatusChainEmitter
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatusChainEmitter
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1064,15 +1049,15 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | enqueuedVaas |  |  | No |
 | totalEnqueuedVaas | integer |  | No |
 
-#### governor.GovStatusChains
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatusChains
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | chainId | [vaa.ChainID](#vaachainid) |  | No |
-| emitters | [ [governor.GovStatusChainEmitter](#governorgovstatuschainemitter) ] |  | No |
+| emitters | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatusChainEmitter](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovstatuschainemitter) ] |  | No |
 | remainingAvailableNotional | integer |  | No |
 
-#### governor.GovernorLimit
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovernorLimit
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1081,26 +1066,26 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | maxTransactionSize | integer |  | No |
 | notionalLimit | integer |  | No |
 
-#### governor.MaxNotionalAvailableRecord
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.MaxNotionalAvailableRecord
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | availableNotional | integer |  | No |
 | chainId | [vaa.ChainID](#vaachainid) |  | No |
 | createdAt | string |  | No |
-| emitters | [ [governor.Emitter](#governoremitter) ] |  | No |
+| emitters | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.Emitter](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governoremitter) ] |  | No |
 | id | string |  | No |
 | nodeName | string |  | No |
 | updatedAt | string |  | No |
 
-#### governor.NotionalAvailable
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalAvailable
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | availableNotional | integer |  | No |
 | chainId | [vaa.ChainID](#vaachainid) |  | No |
 
-#### governor.NotionalAvailableDetail
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalAvailableDetail
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1111,7 +1096,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | nodeName | string |  | No |
 | updatedAt | string |  | No |
 
-#### governor.NotionalLimitDetail
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalLimitDetail
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1123,7 +1108,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | notionalLimit | integer |  | No |
 | updatedAt | string |  | No |
 
-#### governor.TokenList
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.TokenList
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1131,59 +1116,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | originChainId | [vaa.ChainID](#vaachainid) |  | No |
 | price | number |  | No |
 
-#### guardian.GuardianSetResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| guardianSet | [github_com_wormhole-foundation_wormhole-explorer_api_routes_guardian_guardian.GuardianSet](#github_com_wormhole-foundation_wormhole-explorer_api_routes_guardian_guardianguardianset) |  | No |
-
-#### heartbeats.HeartbeatNetworkResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| contractAddress | string |  | No |
-| errorCount | string |  | No |
-| height | string |  | No |
-| id | integer |  | No |
-
-#### heartbeats.HeartbeatResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| p2pNodeAddr | string |  | No |
-| rawHeartbeat | [heartbeats.RawHeartbeat](#heartbeatsrawheartbeat) |  | No |
-| verifiedGuardianAddr | string |  | No |
-
-#### heartbeats.HeartbeatsResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| entries | [ [heartbeats.HeartbeatResponse](#heartbeatsheartbeatresponse) ] |  | No |
-
-#### heartbeats.RawHeartbeat
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| bootTimestamp | string |  | No |
-| counter | string |  | No |
-| features | [ string ] |  | No |
-| guardianAddr | string |  | No |
-| networks | [ [heartbeats.HeartbeatNetworkResponse](#heartbeatsheartbeatnetworkresponse) ] |  | No |
-| nodeName | string |  | No |
-| timestamp | string |  | No |
-| version | string |  | No |
-
-#### infrastructure.VersionResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| branch | string |  | No |
-| build | string |  | No |
-| build_date | string |  | No |
-| machine | string |  | No |
-| user | string |  | No |
-
-#### observations.ObservationDoc
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_observations.ObservationDoc
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1198,96 +1131,189 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | txHash | [ integer ] |  | No |
 | updatedAt | string |  | No |
 
-#### response.Response-address_AddressOverview
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.DestinationTx
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [address.AddressOverview](#addressaddressoverview) |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| blockNumber | string |  | No |
+| chainId | [vaa.ChainID](#vaachainid) |  | No |
+| from | string |  | No |
+| method | string |  | No |
+| status | string |  | No |
+| timestamp | string |  | No |
+| to | string |  | No |
+| txHash | string |  | No |
+| updatedAt | string |  | No |
 
-#### response.Response-array_governor_EnqueuedVaaDetail
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [ [governor.EnqueuedVaaDetail](#governorenqueuedvaadetail) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-array_governor_EnqueuedVaas
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [ [governor.EnqueuedVaas](#governorenqueuedvaas) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-array_governor_GovStatus
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.GlobalTransactionDoc
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [ [governor.GovStatus](#governorgovstatus) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| destinationTx | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.DestinationTx](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactionsdestinationtx) |  | No |
+| id | string |  | No |
+| originTx | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.OriginTx](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactionsorigintx) |  | No |
 
-#### response.Response-array_governor_GovernorLimit
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [ [governor.GovernorLimit](#governorgovernorlimit) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-array_governor_NotionalAvailable
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.OriginTx
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [ [governor.NotionalAvailable](#governornotionalavailable) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| from | string |  | No |
+| status | string |  | No |
+| txHash | string |  | No |
 
-#### response.Response-array_governor_NotionalAvailableDetail
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [ [governor.NotionalAvailableDetail](#governornotionalavailabledetail) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-array_governor_NotionalLimitDetail
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.Token
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [ [governor.NotionalLimitDetail](#governornotionallimitdetail) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| coingeckoId | string |  | No |
+| decimals | integer |  | No |
+| symbol | string |  | No |
 
-#### response.Response-array_vaa_VaaDoc
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [ [vaa.VaaDoc](#vaavaadoc) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-array_vaa_VaaStats
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.TransactionCountResult
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [ [vaa.VaaStats](#vaavaastats) ] |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| count | integer |  | No |
+| time | string |  | No |
 
-#### response.Response-governor_GovConfig
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| data | [governor.GovConfig](#governorgovconfig) |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
-
-#### response.Response-governor_GovStatus
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa.VaaDoc
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [governor.GovStatus](#governorgovstatus) |  | No |
-| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+| appId | string | AppId is an extension field - it is not present in the guardian API. | No |
+| emitterAddr | string |  | No |
+| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
+| emitterNativeAddr | string |  | No |
+| guardianSetIndex | integer |  | No |
+| id | string |  | No |
+| indexedAt | string |  | No |
+| payload | object | Payload is an extension field - it is not present in the guardian API. | No |
+| timestamp | string |  | No |
+| txHash | string | TxHash is an extension field - it is not present in the guardian API. | No |
+| updatedAt | string |  | No |
+| vaa | [ integer ] |  | No |
+| version | integer |  | No |
 
-#### response.Response-governor_MaxNotionalAvailableRecord
+#### github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa.VaaStats
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| data | [governor.MaxNotionalAvailableRecord](#governormaxnotionalavailablerecord) |  | No |
+| chainId | [vaa.ChainID](#vaachainid) |  | No |
+| count | integer |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_EnqueuedVaaDetail
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaaDetail](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorenqueuedvaadetail) ] |  | No |
 | pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_EnqueuedVaas
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.EnqueuedVaas](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorenqueuedvaas) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovStatus
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatus](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovstatus) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovernorLimit
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovernorLimit](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovernorlimit) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalAvailable
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalAvailable](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governornotionalavailable) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalAvailableDetail
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalAvailableDetail](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governornotionalavailabledetail) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_NotionalLimitDetail
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.NotionalLimitDetail](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governornotionallimitdetail) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaDoc
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa.VaaDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaavaadoc) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-array_github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa_VaaStats
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [ [github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaa.VaaStats](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_vaavaastats) ] |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_address_AddressOverview
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_address.AddressOverview](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_addressaddressoverview) |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovConfig
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovConfig](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovconfig) |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_GovStatus
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.GovStatus](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governorgovstatus) |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### github_com_wormhole-foundation_wormhole-explorer_api_response.Response-github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor_MaxNotionalAvailableRecord
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| data | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_governor.MaxNotionalAvailableRecord](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_governormaxnotionalavailablerecord) |  | No |
+| pagination | [response.ResponsePagination](#responseresponsepagination) |  | No |
+
+#### parser.ParseVaaWithStandarizedPropertiesdResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| parsedPayload |  |  | No |
+| standardizedProperties | [parser.StandardizedProperties](#parserstandardizedproperties) |  | No |
+
+#### parser.StandardizedProperties
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| amount | string |  | No |
+| appIds | [ string ] |  | No |
+| fee | string |  | No |
+| feeAddress | string |  | No |
+| feeChain | [vaa.ChainID](#vaachainid) |  | No |
+| fromAddress | string |  | No |
+| fromChain | [vaa.ChainID](#vaachainid) |  | No |
+| toAddress | string |  | No |
+| toChain | [vaa.ChainID](#vaachainid) |  | No |
+| tokenAddress | string |  | No |
+| tokenChain | [vaa.ChainID](#vaachainid) |  | No |
 
 #### response.ResponsePagination
 
@@ -1295,7 +1321,98 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | ---- | ---- | ----------- | -------- |
 | next | string |  | No |
 
-#### transactions.AssetWithVolume
+#### routes_guardian_governor.AvailableNotionalItemResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| bigTransactionSize | string |  | No |
+| chainId | [vaa.ChainID](#vaachainid) |  | No |
+| notionalLimit | string |  | No |
+| remainingAvailableNotional | string |  | No |
+
+#### routes_guardian_governor.AvailableNotionalResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| entries | [ [routes_guardian_governor.AvailableNotionalItemResponse](#routes_guardian_governoravailablenotionalitemresponse) ] |  | No |
+
+#### routes_guardian_governor.EnqueuedVaaItemResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| emitterAddress | string |  | No |
+| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
+| notionalValue | string |  | No |
+| releaseTime | integer |  | No |
+| sequence | integer |  | No |
+| txHash | string |  | No |
+
+#### routes_guardian_governor.EnqueuedVaaResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| entries | [ [routes_guardian_governor.EnqueuedVaaItemResponse](#routes_guardian_governorenqueuedvaaitemresponse) ] |  | No |
+
+#### routes_guardian_guardian.GuardianSet
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| addresses | [ string ] |  | No |
+| index | integer |  | No |
+
+#### routes_guardian_guardian.GuardianSetResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| guardianSet | [routes_guardian_guardian.GuardianSet](#routes_guardian_guardianguardianset) |  | No |
+
+#### routes_guardian_heartbeats.HeartbeatNetworkResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| contractAddress | string |  | No |
+| errorCount | string |  | No |
+| height | string |  | No |
+| id | integer |  | No |
+
+#### routes_guardian_heartbeats.HeartbeatResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| p2pNodeAddr | string |  | No |
+| rawHeartbeat | [routes_guardian_heartbeats.RawHeartbeat](#routes_guardian_heartbeatsrawheartbeat) |  | No |
+| verifiedGuardianAddr | string |  | No |
+
+#### routes_guardian_heartbeats.HeartbeatsResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| entries | [ [routes_guardian_heartbeats.HeartbeatResponse](#routes_guardian_heartbeatsheartbeatresponse) ] |  | No |
+
+#### routes_guardian_heartbeats.RawHeartbeat
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| bootTimestamp | string |  | No |
+| counter | string |  | No |
+| features | [ string ] |  | No |
+| guardianAddr | string |  | No |
+| networks | [ [routes_guardian_heartbeats.HeartbeatNetworkResponse](#routes_guardian_heartbeatsheartbeatnetworkresponse) ] |  | No |
+| nodeName | string |  | No |
+| timestamp | string |  | No |
+| version | string |  | No |
+
+#### routes_wormscan_infrastructure.VersionResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| branch | string |  | No |
+| build | string |  | No |
+| build_date | string |  | No |
+| machine | string |  | No |
+| user | string |  | No |
+
+#### routes_wormscan_transactions.AssetWithVolume
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1305,13 +1422,13 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | tokenChain | [vaa.ChainID](#vaachainid) |  | No |
 | volume | string |  | No |
 
-#### transactions.ChainActivity
+#### routes_wormscan_transactions.ChainActivity
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| txs | [ [transactions.Tx](#transactionstx) ] |  | No |
+| txs | [ [routes_wormscan_transactions.Tx](#routes_wormscan_transactionstx) ] |  | No |
 
-#### transactions.ChainPair
+#### routes_wormscan_transactions.ChainPair
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1319,7 +1436,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | emitterChain | [vaa.ChainID](#vaachainid) |  | No |
 | numberOfTransfers | string |  | No |
 
-#### transactions.Destination
+#### routes_wormscan_transactions.Destination
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1327,13 +1444,13 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | percentage | number |  | No |
 | volume | number |  | No |
 
-#### transactions.ListTransactionsResponse
+#### routes_wormscan_transactions.ListTransactionsResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| transactions | [ [github_com_wormhole-foundation_wormhole-explorer_api_routes_wormscan_transactions.TransactionOverview](#github_com_wormhole-foundation_wormhole-explorer_api_routes_wormscan_transactionstransactionoverview) ] |  | No |
+| transactions | [ [routes_wormscan_transactions.TransactionDetail](#routes_wormscan_transactionstransactiondetail) ] |  | No |
 
-#### transactions.ScorecardsResponse
+#### routes_wormscan_transactions.ScorecardsResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
@@ -1344,75 +1461,46 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | total_volume | string |  | No |
 | tvl | string | Total value locked in USD. | No |
 
-#### transactions.Token
+#### routes_wormscan_transactions.TopAssetsResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| coingeckoId | string |  | No |
-| decimals | integer |  | No |
+| assets | [ [routes_wormscan_transactions.AssetWithVolume](#routes_wormscan_transactionsassetwithvolume) ] |  | No |
+
+#### routes_wormscan_transactions.TopChainPairsResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| chainPairs | [ [routes_wormscan_transactions.ChainPair](#routes_wormscan_transactionschainpair) ] |  | No |
+
+#### routes_wormscan_transactions.TransactionDetail
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| emitterAddress | string | EmitterAddress contains the VAA's emitter address, encoded in hex. | No |
+| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
+| emitterNativeAddress | string | EmitterNativeAddress contains the VAA's emitter address, encoded in the emitter chain's native format. | No |
+| globalTx | [github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactions.GlobalTransactionDoc](#github_com_wormhole-foundation_wormhole-explorer_api_handlers_transactionsglobaltransactiondoc) |  | No |
+| id | string |  | No |
+| payload | object |  | No |
+| standardizedProperties | object |  | No |
 | symbol | string |  | No |
+| timestamp | string |  | No |
+| tokenAmount | string |  | No |
+| txHash | string |  | No |
+| usdAmount | string |  | No |
 
-#### transactions.TopAssetsResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| assets | [ [transactions.AssetWithVolume](#transactionsassetwithvolume) ] |  | No |
-
-#### transactions.TopChainPairsResponse
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| chainPairs | [ [transactions.ChainPair](#transactionschainpair) ] |  | No |
-
-#### transactions.TransactionCountResult
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| count | integer |  | No |
-| time | string |  | No |
-
-#### transactions.Tx
+#### routes_wormscan_transactions.Tx
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | chain | integer |  | No |
-| destinations | [ [transactions.Destination](#transactionsdestination) ] |  | No |
+| destinations | [ [routes_wormscan_transactions.Destination](#routes_wormscan_transactionsdestination) ] |  | No |
 | percentage | number |  | No |
 | volume | number |  | No |
-
-#### transactions.TxStatus
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| transactions.TxStatus | string |  |  |
 
 #### vaa.ChainID
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | vaa.ChainID | integer |  |  |
-
-#### vaa.VaaDoc
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| appId | string | AppId is an extension field - it is not present in the guardian API. | No |
-| emitterAddr | string |  | No |
-| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
-| guardianSetIndex | integer |  | No |
-| id | string |  | No |
-| indexedAt | string |  | No |
-| nativeTxHash | string | NativeTxHash is an extension field - it is not present in the guardian API. | No |
-| payload | object | Payload is an extension field - it is not present in the guardian API. | No |
-| timestamp | string |  | No |
-| txHash | string | TxHash is an extension field - it is not present in the guardian API. | No |
-| updatedAt | string |  | No |
-| vaa | [ integer ] |  | No |
-| version | integer |  | No |
-
-#### vaa.VaaStats
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| chainId | [vaa.ChainID](#vaachainid) |  | No |
-| count | integer |  | No |
