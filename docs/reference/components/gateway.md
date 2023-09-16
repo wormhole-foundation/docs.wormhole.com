@@ -223,6 +223,9 @@ The fees for using Gateway are minimal. At the moment, the source chain gas is t
 
 ## See Also 
 
+[Gateway Block Explorer](https://bigdipper.live/wormhole)
+
+
 _Wormhole Gateway_ is, of course, open source and the source is available [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain)
 
 <!-- TODO: change branch to `main` once merged -->
@@ -233,3 +236,4 @@ A protocol description for generic message passing using the Gateway is availabl
 For more details about the design, see the [design document](https://github.com/wormhole-foundation/wormhole/blob/gateway-integration/wormchain/design/design.md).
 Also, the [roadmap](https://github.com/wormhole-foundation/wormhole/blob/gateway-integration/wormchain/design/roadmap.md) document provides information on future feature implementations.
 -->
+
