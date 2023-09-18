@@ -1,5 +1,9 @@
 import * as cfg from "./config";
-import { chainDetailsPage, generateAllContractsTable } from "./details";
+import {
+  chainDetailsPage,
+  generateAllConsistencyLevelsTable,
+  generateAllContractsTable,
+} from "./details";
 import { chainCard } from "./card";
 import * as fs from "fs";
 
@@ -118,5 +122,10 @@ async function overwriteGenerated(tag: string, content: string) {
   await overwriteGenerated(
     "RELAYER_BRIDGE_ADDRESS",
     generateAllContractsTable(chains, "relayer")
+  );
+
+  await overwriteGenerated(
+    "CONSISTENCY_LEVELS",
+    generateAllConsistencyLevelsTable(chains)
   );
 })();

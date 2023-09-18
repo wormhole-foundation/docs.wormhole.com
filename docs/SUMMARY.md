@@ -33,6 +33,7 @@
 
 * [Overview](./reference/environments/README.md)
 * [Contract Address Reference](./reference/environments/contracts.md)
+* [Consistency Level Reference](./reference/environments/consistency.md)
 * [Algorand](./reference/environments/algorand/README.md)
 * [Aptos](./reference/environments/aptos/README.md)
 * [CosmWasm](./reference/environments/cosmwasm/README.md)
