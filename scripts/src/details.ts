@@ -156,6 +156,38 @@ ${contractTable(devnet)}
 `;
 }
 
+export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
+  let table: string[] = [
+    `|Chain Name|Confirmed|Instant|Safe|Finalized|Otherwise|Details|`,
+    `|---|:---|:---|:---|:---|:---|:---|`,
+  ];
+
+  const orderedDc = dc.sort((a, b) => {
+    return a.id - b.id;
+  });
+
+  for (const c of orderedDc) {
+    if (c.extraDetails?.finality === undefined) continue;
+    const f = c.extraDetails.finality;
+
+    const other = f.otherwise ? f.otherwise : " ";
+    const deets = f.details ? `[${f.details}](${f.details})` : " ";
+    const name = c.extraDetails.title ? c.extraDetails.title : c.name;
+
+    table.push(
+      `|${name}|` +
+        `${fmtNum(f.confirmed)}|` +
+        `${fmtNum(f.confirmed)}|` +
+        `${fmtNum(f.safe)}|` +
+        `${fmtNum(f.finalized)}|` +
+        `${other}|` +
+        `${deets}|`
+    );
+  }
+
+  return table.join("\n");
+}
+
 export function generateAllContractsTable(
   dc: cfg.DocChain[],
   module: string
