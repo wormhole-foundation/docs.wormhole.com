@@ -20,6 +20,7 @@
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
     "instant": 200,
-    "otherwise": "number of blocks"
+    "otherwise": "number of blocks",
+    "details":"https://docs.bnbchain.org/docs/learn/consensus"
   }
 }

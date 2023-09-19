@@ -32,14 +32,14 @@ On sui the emitter is the object id of the emitter capability.
 ## Ecosystem
 
 - [Web site](https://sui.io/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sui.json)
 - [Developer docs](https://docs.sui.io/) | [Faucet](https://docs.sui.io/build/faucet)
 
 ## Wormhole Details
 
 - **Name**: `sui`
 - **Chain ID**: `21`
-- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sui.json)
 
 ### Consistency Levels
 
@@ -48,6 +48,8 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Level|Value|
 |-----|-----|
 |Finalized|0|
+
+This field is may be ignored since the chain provides instant finality.
 
 
 For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)

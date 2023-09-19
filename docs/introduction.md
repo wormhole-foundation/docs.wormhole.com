@@ -178,9 +178,19 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/celo.svg">celo</a></td>
 </tr>
 <tr>
+    <td><strong>cosmoshub</strong></td>
+    <td><a href="./reference/environments/cosmwasm/README.md#cosmoshub">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/cosmoshub.svg">cosmoshub</a></td>
+</tr>
+<tr>
     <td><strong>Ethereum</strong></td>
     <td><a href="./reference/environments/evm/README.md#ethereum">evm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/ethereum.svg">ethereum</a></td>
+</tr>
+<tr>
+    <td><strong>evmos</strong></td>
+    <td><a href="./reference/environments/cosmwasm/README.md#evmos">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/evmos.svg">evmos</a></td>
 </tr>
 <tr>
     <td><strong>Fantom</strong></td>
@@ -206,6 +216,11 @@ Wormhole supports a growing number of blockchains
     <td><strong>Klaytn</strong></td>
     <td><a href="./reference/environments/evm/README.md#klaytn">evm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/klaytn.svg">klaytn</a></td>
+</tr>
+<tr>
+    <td><strong>kujira</strong></td>
+    <td><a href="./reference/environments/cosmwasm/README.md#kujira">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/kujira.svg">kujira</a></td>
 </tr>
 <tr>
     <td><strong>Moonbeam</strong></td>

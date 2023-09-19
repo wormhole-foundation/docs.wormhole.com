@@ -43,6 +43,10 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |-----|-----|
 |Finalized|0|
 
+This field is may be ignored since the chain provides instant finality.
+
+
+For more information see [https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality](https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality)
 
 
 ### Mainnet Contracts
