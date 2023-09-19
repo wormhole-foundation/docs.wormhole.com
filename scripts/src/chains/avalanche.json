@@ -20,5 +20,9 @@
       "description": "Faucet"
     }
   ],
-  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "finalized": 0,
+    "details":"https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality"
+  }
 }

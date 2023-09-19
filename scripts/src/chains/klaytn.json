@@ -1,5 +1,9 @@
 {
   "title": "Klaytn",
   "homepage": "https://klaytn.foundation/",
-  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
 }

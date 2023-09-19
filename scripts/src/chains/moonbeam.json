@@ -11,5 +11,10 @@
       "url":"https://faucet.moonbeam.network/",
       "description":"Faucet"
     }
-  ]
+  ],
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized",
+    "details":"https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints"
+  }
 }

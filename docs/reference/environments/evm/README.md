@@ -106,9 +106,14 @@ Besides Ethereum, a number of EVM chains are supported.
 - **Chain ID**: `12`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -153,7 +158,7 @@ Besides Ethereum, a number of EVM chains are supported.
 
 - **Name**: `arbitrum`
 - **Chain ID**: `23`
-- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/arbitrum.json)
 
 ### Consistency Levels
 
@@ -261,10 +266,18 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 - **Chain ID**: `6`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
+
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Finalized|0|
+
+This field is may be ignored since the chain provides instant finality.
 
 
-
-
+For more information see [https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality](https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality)
 
 
 ### Mainnet Contracts
@@ -377,6 +390,8 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
 
 
+For more information see [https://docs.bnbchain.org/docs/learn/consensus](https://docs.bnbchain.org/docs/learn/consensus)
+
 
 ### Mainnet Contracts
 
@@ -427,9 +442,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 - **Chain ID**: `14`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -479,9 +499,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 - **Chain ID**: `10`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -519,7 +544,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 ## Ecosystem
 
 - [Web site](https://www.gnosis.io/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/gnosis.json)
 - [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://www.gnosisfaucet.com/)
 
 ## Wormhole Details
@@ -567,8 +592,8 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 ## Ecosystem
 
 - [Web site](https://acala.network/karura)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/karura.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/karura.json)
 
 ## Wormhole Details
 
@@ -623,8 +648,8 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://klaytn.foundation/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/klaytn.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/klaytn.json)
 
 ## Wormhole Details
 
@@ -632,9 +657,14 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 - **Chain ID**: `13`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -672,7 +702,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://moonbeam.network/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/moonbeam.json)
 - [Developer docs](https://docs.moonbeam.network/) | [Faucet](https://faucet.moonbeam.network/)
 
 ## Wormhole Details
@@ -681,10 +711,17 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 - **Chain ID**: `16`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
+
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
-
-
+For more information see [https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints](https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints)
 
 
 ### Mainnet Contracts
@@ -724,8 +761,8 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://neon-labs.org/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neon.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neon.json)
 
 ## Wormhole Details
 
@@ -772,8 +809,8 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://oasisprotocol.org/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/oasis.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/oasis.json)
 
 ## Wormhole Details
 
@@ -820,8 +857,8 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://www.optimism.io/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism.json)
 
 ## Wormhole Details
 
@@ -876,7 +913,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 ## Ecosystem
 
 - [Web site](https://polygon.technology/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/polygon.json)
 - [Developer docs](https://wiki.polygon.technology/) | [Faucet](https://faucet.polygon.technology/)
 
 ## Wormhole Details
@@ -935,15 +972,15 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 ## Ecosystem
 
-- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
 
 ## Wormhole Details
 
 - **Name**: `rootstock`
 - **Chain ID**: `33`
-- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
 
 
 
@@ -991,9 +1028,9 @@ Note that a different chain id is used for Sepolia
 
 ## Ecosystem
 
-- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
 
 ## Wormhole Details
 

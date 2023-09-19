@@ -23,6 +23,7 @@
   ],
   "contractSource": "algorand/wormhole_core.py",
   "finality": {
-    "finalized": 0
+    "finalized": 0,
+    "details":"https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality"
   }
 }

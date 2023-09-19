@@ -20,14 +20,14 @@ The emitter address on NEAR chains is the sha256 digest of the program address s
 ## Ecosystem
 
 - [Web site](https://near.org/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
 
 ## Wormhole Details
 
 - **Name**: `near`
 - **Chain ID**: `15`
-- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
 
 ### Consistency Levels
 
@@ -36,6 +36,8 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Level|Value|
 |-----|-----|
 |Finalized|0|
+
+This field is may be ignored since the chain provides instant finality.
 
 
 For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)

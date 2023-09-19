@@ -27,23 +27,62 @@ export function contractTable(contracts: cfg.Contracts): string {
   return core;
 }
 
+export function finalityOptionTable(
+  finality: cfg.Finality | undefined
+): [string, string] {
+  let finalityOptions = "";
+  let finalityDetails = "";
+
+  if (finality === undefined) return [finalityOptions, finalityDetails];
+
+  const { confirmed, finalized, instant, safe, otherwise, details } = finality;
+
+  if (details !== undefined) {
+    finalityDetails = `\nFor more information see [${details}](${details})\n`;
+  }
+
+  let otherwiseText = "";
+  if (otherwise) {
+    otherwiseText = `\nIf a value is passed that is _not_ in the set above it's assumed to mean ${otherwise}`;
+  }
+
+  let settingTexts = {
+    Confirmed: fmtNum(confirmed),
+    Instant: fmtNum(instant),
+    Safe: fmtNum(safe),
+    Finalized: fmtNum(finalized),
+  };
+
+  if (finalized === 0) {
+    otherwiseText += `\n\nThis field is may be ignored since the chain provides instant finality.`;
+  }
+
+  finalityOptions = `|Level|Value|\n|-----|-----|`;
+  for (const [level, value] of Object.entries(settingTexts)) {
+    if (value !== " ") finalityOptions += `\n|${level}|${value}|`;
+  }
+
+  finalityOptions += otherwiseText;
+
+  return [finalityOptions, finalityDetails];
+}
+
 export function chainDetailsPage(chain: cfg.DocChain): string {
   const { name, id, extraDetails } = chain;
   const { mainnet, testnet, devnet } = chain;
 
-  let webpage =
-    "No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
-  let explorerLinks =
-    "No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
-  let devdocs =
-    "No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
-  let src =
-    "No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main/scripts/src/chains)";
+  const updateLink = `https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/${name}.json`;
+
+  let webpage = `No webpage, update [here](${updateLink})`;
+  let explorerLinks = `No explorer, update [here](${updateLink})`;
+  let devdocs = `No dev docs, update [here](${updateLink})`;
+  let src = `No source file, update [here](${updateLink})`;
 
   let noteHints = "";
 
-  let finalityOptions = "";
-  let finalityDetails = "";
+  const [finalityOptions, finalityDetails] = finalityOptionTable(
+    extraDetails?.finality
+  );
 
   let title = extraDetails?.title || name;
 
@@ -83,34 +122,6 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
         docs.push(`[${dd.description ? dd.description : dd.url}](${dd.url})`);
       }
       devdocs = docs.join(" | ");
-    }
-
-    if (finality !== undefined) {
-      const { confirmed, finalized, instant, safe, otherwise, details } =
-        finality;
-      if (details !== undefined) {
-        finalityDetails = `\nFor more information see [${details}](${details})\n`;
-      }
-
-      let otherwiseText = "";
-      if (otherwise) {
-        otherwiseText = `\nIf a value is passed that is _not_ in the set above it's assumed to mean ${otherwise}`;
-      }
-
-      let settingTexts = {
-        Confirmed: fmtNum(confirmed),
-        Instant: fmtNum(instant),
-        Safe: fmtNum(safe),
-        Finalized: fmtNum(finalized),
-      };
-
-      finalityOptions = `|Level|Value|\n|-----|-----|`;
-
-      for (const [level, value] of Object.entries(settingTexts)) {
-        if (value !== " ") finalityOptions += `\n|${level}|${value}|`;
-      }
-
-      finalityOptions += otherwiseText;
     }
   }
 
@@ -157,35 +168,25 @@ ${contractTable(devnet)}
 }
 
 export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
-  let table: string[] = [
-    `|Chain Name|Confirmed|Instant|Safe|Finalized|Otherwise|Details|`,
-    `|---|:---|:---|:---|:---|:---|:---|`,
-  ];
-
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
   });
 
+  let content: string[] = [];
+
   for (const c of orderedDc) {
     if (c.extraDetails?.finality === undefined) continue;
+
     const f = c.extraDetails.finality;
 
-    const other = f.otherwise ? f.otherwise : " ";
-    const deets = f.details ? `[${f.details}](${f.details})` : " ";
-    const name = c.extraDetails.title ? c.extraDetails.title : c.name;
+    const header = c.extraDetails.title ? c.extraDetails.title : c.name;
 
-    table.push(
-      `|${name}|` +
-        `${fmtNum(f.confirmed)}|` +
-        `${fmtNum(f.confirmed)}|` +
-        `${fmtNum(f.safe)}|` +
-        `${fmtNum(f.finalized)}|` +
-        `${other}|` +
-        `${deets}|`
-    );
+    const [opts, deets] = finalityOptionTable(f);
+
+    content.push(`## ${header}`, opts, deets);
   }
 
-  return table.join("\n");
+  return content.join("\n");
 }
 
 export function generateAllContractsTable(
