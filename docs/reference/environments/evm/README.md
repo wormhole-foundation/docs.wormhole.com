@@ -887,6 +887,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Token Bridge|`0x1D68124e65faFC907325e3EDbF8c4d84499DAa8b`|
 |NFT Bridge|`0xfE8cD454b4A1CA468B57D79c0cc77Ef5B6f64585`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
+|CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
 ### Testnet Contracts
 
@@ -895,6 +896,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
 |Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
+|CCTP|`0x2703483b1a5a7c577e8680de9df8be03c6f30e3c`|
 
 ### Devnet Contract
 
