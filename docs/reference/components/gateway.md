@@ -177,18 +177,18 @@ The core datastructure of Gateway token transfers is the `GatewayIbcTokenBridgeP
 
 ```rust
 pub enum GatewayIbcTokenBridgePayload {
-  Simple {
-    chain: u16,
-    recipient: Binary,
-    fee: Uint128,
-    nonce: u32
-  },
-  ContractControlled {
-    chain: u16,
-    contract: Binary,
-    payload: Binary,
-    nonce: u32
-  }
+    GatewayTransfer {
+        chain: u16,
+        recipient: Binary,
+        fee: u128,
+        nonce: u32,
+    },
+    GatewayTransferWithPayload {
+        chain: u16,
+        contract: Binary,
+        payload: Binary,
+        nonce: u32,
+    },
 }
 ```
 
