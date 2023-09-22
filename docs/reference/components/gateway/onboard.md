@@ -34,15 +34,18 @@ See here for more details on Gateway: [The Gateway to Cosmos](https://wormhole.c
 
 # Step 4. [Optional] UI Integration with Wormhole Connect
 
-Please refer to these reference PRs to add your chain into Wormhole Connect. Your PRs will need to be reviewed and merged by Wormhole Core Contributors.
+[Wormhole Connect](https://wormhole.com/connect/) is a seamless way to embed bridging directly to your app with 3 lines of code. [Integrating Connect](https://wormhole-connect-builder.netlify.app/) is fast, customizable, and brings all the functionality and utility of Wormhole right into your own application. 
 
-1. Add your Cosmos chain ID to the Wormhole SDK ([example](https://github.com/wormhole-foundation/wormhole/pull/3381/files)).
-2. Add your Cosmos chain to Wormhole Connect ([example](https://github.com/wormhole-foundation/wormhole-connect/pull/1009/files)).
+
+Please refer to these reference PRs to add your Cosmos chain into Wormhole Connect. Your PRs will need to be reviewed and merged by Wormhole Core Contributors.
+
+1. Add your Cosmos chain ID to the Wormhole SDK: [[sdk/js] Add Kujira chain id by M-Picco · Pull Request #3381 · wormhole-foundation/wormhole (github.com)](https://github.com/wormhole-foundation/wormhole/pull/3381/files)
+2. Add your Cosmos chain to Wormhole Connect: [Add kujira chain by M-Picco · Pull Request #1009 · wormhole-foundation/wormhole-connect (github.com)](https://github.com/wormhole-foundation/wormhole-connect/pull/1009/files)
 
 # Step 5. Add bridged assets to the Cosmos Chain Registry and other relevant wallet and frontend registries
 
 1. Permissionlessly attest the assets you would like to bridge into your chain (if not already attested) to Wormhole Gateway.
-2. Raise relevant PRs to ensure that explorers, wallets, and other UIs recognize the wormhole assets when they are bridged to your chain.
+2. Raise relevant PRs to ensure that explorers, wallets, and other UIs recognize the Wormhole assets when they are bridged to your chain.
     1. Example PR adding Wormhole assets to Osmosis Mintscan ([example](https://github.com/cosmostation/chainlist/pull/865)).
 
 {% hint style="success" %}
