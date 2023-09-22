@@ -8,20 +8,20 @@ See here for more details on Gateway: [The Gateway to Cosmos](https://wormhole.c
 
 # Step 1. Propose Adding Your Chain to the Wormhole Guardians
 
-1. Open a new GitHub governance discussion under Wormhole Gateway by filling out the Cosmos Chain Governance Proposal Template - [here](https://github.com/wormhole-foundation/wormhole/discussions/new?category=gateway)
+1. Open a new GitHub governance discussion under Wormhole Gateway by filling out the Cosmos Chain Governance Proposal Template - [here](https://github.com/wormhole-foundation/wormhole/discussions/new?category=gateway).
 2. Allow 96 hours for discussion and governance vote.
 
 # Step 2. Join the Wormhole Discord
 
-1. Join the wormhole discord - https://discord.gg/wormholecrypto
-2. Ping the moderator, Susu (`susu.wormhole`), to get added to the `#guardian-cosmos` channel
+1. Join the wormhole discord ([link](https://discord.gg/wormholecrypto)).
+2. Ping the moderator, Susu (`susu.wormhole`), to get added to the `#guardian-cosmos` channel.
 
 # Step 3. Establish an IBC Connection
 
 1. Allowlist your IBC relayer(s) on Wormhole Gateway
 
-    1. The IBC relayer should generate an address via the `wormchaind` CLI - [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain)
-    2. Fill out the IBC relayer allowlist request template - [IBC Relayer Allowlist Request Template](#ibc-relayer-template)
+    1. The IBC relayer should generate an address via the `wormchaind` CLI - [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain).
+    2. Fill out the IBC relayer allowlist request template (See bottom of page).
     3. Post the request in the `#guardian-cosmos` channel.
 
 2. Establish the IBC connection.
@@ -36,23 +36,23 @@ See here for more details on Gateway: [The Gateway to Cosmos](https://wormhole.c
 
 Please refer to these reference PRs to add your chain into Wormhole Connect. Your PRs will need to be reviewed and merged by Wormhole Core Contributors.
 
-1. Add your Cosmos chain ID to the Wormhole SDK: [example](https://github.com/wormhole-foundation/wormhole/pull/3381/files)
-2. Add your Cosmos chain to Wormhole Connect: [example](https://github.com/wormhole-foundation/wormhole-connect/pull/1009/files)
+1. Add your Cosmos chain ID to the Wormhole SDK ([example](https://github.com/wormhole-foundation/wormhole/pull/3381/files)).
+2. Add your Cosmos chain to Wormhole Connect ([example](https://github.com/wormhole-foundation/wormhole-connect/pull/1009/files)).
 
-# 5. Add bridged assets to the Cosmos Chain Registry and other relevant wallet and frontend registries
+# Step 5. Add bridged assets to the Cosmos Chain Registry and other relevant wallet and frontend registries
 
 1. Permissionlessly attest the assets you would like to bridge into your chain (if not already attested) to Wormhole Gateway.
 2. Raise relevant PRs to ensure that explorers, wallets, and other UIs recognize the wormhole assets when they are bridged to your chain.
-    1. Example PR adding Wormhole assets to Osmosis Mintscan - [Add Wormhole Gateway assets to Osmosis by nik-suri · Pull Request #865 · cosmostation/chainlist (github.com)](https://github.com/cosmostation/chainlist/pull/865)
+    1. Example PR adding Wormhole assets to Osmosis Mintscan ([example](https://github.com/cosmostation/chainlist/pull/865)).
 
 {% hint style="success" %}
 🎉 Congratulations! You’ve successfully connected your Cosmos chain to Gateway. If you have any questions or concerns, please reach out to Susu on the Wormhole Discord.
 {% endhint %}
 
-## IBC Relayer Template
+
 
 <details>
-<summary> IBC Relayer Allowlist Request Template </summary>
+<summary>IBC Relayer Allowlist Request Template</summary>
 
 ```
 Hey @Guardians! Thank you for passing governance to support **[Cosmos Chain]** via Wormhole Gateway. We are very excited to integrate with Wormhole!

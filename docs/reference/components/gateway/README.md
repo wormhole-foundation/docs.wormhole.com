@@ -1,8 +1,4 @@
 
-{% hint style="info" %}
-Note: This page is a work in progress, check back for updates
-{% endhint %}
-
 ## Overview
 
 _Wormhole Gateway_ is a Cosmos-SDK chain that provides a way to bridge non-native assets into the Cosmos ecosystem and serves as a source for unified liquidity across Cosmos chains.
@@ -30,17 +26,17 @@ The contract addreses for these components are:
 
 ### Wormhole Core Contracts
 
-The [core contracts](./core-contracts.md) to emit messages and verify [Guardian](./guardian.md) signatures are still required on each Cosmos chain that requires generic message passing. Notably, for Gateway token bridging, no core contracts need be deployed.
+The [core contracts](../core-contracts.md) to emit messages and verify [Guardian](../guardian.md) signatures are still required on each Cosmos chain that requires generic message passing. Notably, for Gateway token bridging, no core contracts need be deployed.
 
 ### IBC Shim Contract
 
 A CosmWasm contract that handles bridging into and out of the Cosmos ecosystem by translating between Wormhole and IBC message formats. It maintains a mapping of `chainId -> channelId` for whitelisted IBC channels to send packets over and accept packets from.
 
-The contract supports transfers _into_ the Cosmos ecosystem by receiving [Contract Controlled Transfer VAAs](./vaa.md#token--message).
+The contract supports transfers _into_ the Cosmos ecosystem by receiving [Contract Controlled Transfer VAAs](../vaa.md#token--message).
 
 The logical flow of this type of transfer is as follows:
 
-- Redeem the VAA against the [Token Bridge](./core-contracts.md#token-bridge)
+- Redeem the VAA against the [Token Bridge](../core-contracts.md#token-bridge)
 - Mint [Token Factory](#token-factory-module) tokens
 - Decode the additional payload as a [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload)
 - Send tokens via IBC to destination cosmos chains
