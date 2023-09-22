@@ -268,7 +268,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 - [Web site](https://www.sei.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sei.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sei.json)
+- [Faucet](https://atlantic-2.app.sei.io/faucet)
 
 ## Wormhole Details
 
