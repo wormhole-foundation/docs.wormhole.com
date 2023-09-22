@@ -21,7 +21,7 @@ See here for more details on Gateway: [The Gateway to Cosmos](https://wormhole.c
 1. Allowlist your IBC relayer(s) on Wormhole Gateway
 
     1. The IBC relayer should generate an address via the `wormchaind` CLI - [here](https://github.com/wormhole-foundation/wormhole/tree/main/wormchain).
-    2. Fill out the IBC relayer allowlist request template (See bottom of page).
+    2. Fill out the [IBC relayer allowlist request template](#ibc-relayer-allowlist-request-template).
     3. Post the request in the `#guardian-cosmos` channel.
 
 2. Establish the IBC connection.
@@ -53,9 +53,7 @@ Please refer to these reference PRs to add your Cosmos chain into Wormhole Conne
 {% endhint %}
 
 
-
-<details>
-<summary>IBC Relayer Allowlist Request Template</summary>
+# IBC Relayer Allowlist Request Template
 
 ```
 Hey @Guardians! Thank you for passing governance to support **[Cosmos Chain]** via Wormhole Gateway. We are very excited to integrate with Wormhole!
@@ -68,5 +66,3 @@ We understand that if this address misbehaves, the sponsoring Guardian can remov
 
 Thank you!
 ```
-
-</details>
