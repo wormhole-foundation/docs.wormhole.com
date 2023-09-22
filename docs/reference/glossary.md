@@ -29,7 +29,7 @@ The Finality of a transaction is dependant on the blockchain properties. After a
 
 ## Gateway
 
-The [Gateway](./components/gateway.md) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
+The [Gateway](./components/gateway/README.md) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
 
 ## Guardian
 

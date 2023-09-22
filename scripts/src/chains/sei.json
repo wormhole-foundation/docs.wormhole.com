@@ -1,4 +1,10 @@
 {
   "title": "Sei",
-  "homepage": "https://www.sei.io/"
+  "homepage": "https://www.sei.io/",
+  "developer":[
+	{
+		"url":"https://atlantic-2.app.sei.io/faucet", 
+		"description":"Faucet"
+	}
+  ]
 }
