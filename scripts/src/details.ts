@@ -210,9 +210,10 @@ export function generateAllContractsTable(
   dc: cfg.DocChain[],
   module: string
 ): string {
-  let mainnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
-  let testnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
-  let devnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
+  let table: string[] = [
+    `|Chain Name|Mainnet|Testnet|Devnet|`,
+    `|---|---|---|---|`,
+  ];
 
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
@@ -221,66 +222,47 @@ export function generateAllContractsTable(
   for (const c of orderedDc) {
     switch (module) {
       case "core":
-        if (c.mainnet.core !== undefined)
-          mainnetTable.push(`|${c.name}|\`${c.mainnet.core}\`|`);
-        if (c.testnet.core !== undefined)
-          testnetTable.push(`|${c.name}|\`${c.testnet.core}\`|`);
-        if (c.devnet.core !== undefined)
-          devnetTable.push(`|${c.name}|\`${c.devnet.core}\`|`);
+        table.push(
+          `|${c.name}|` +
+            `${fmtStr(c.mainnet.core)}|` +
+            `${fmtStr(c.testnet.core)}|` +
+            `${fmtStr(c.devnet.core)}|`
+        );
         continue;
       case "token_bridge":
-        if (c.mainnet.token_bridge !== undefined)
-          mainnetTable.push(`|${c.name}|\`${c.mainnet.token_bridge}\`|`);
-        if (c.testnet.token_bridge !== undefined)
-          testnetTable.push(`|${c.name}|\`${c.testnet.token_bridge}\`|`);
-        if (c.devnet.token_bridge !== undefined)
-          devnetTable.push(`|${c.name}|\`${c.devnet.token_bridge}\`|`);
+        table.push(
+          `|${c.name}|` +
+            `${fmtStr(c.mainnet.token_bridge)}|` +
+            `${fmtStr(c.testnet.token_bridge)}|` +
+            `${fmtStr(c.devnet.token_bridge)}|`
+        );
         continue;
       case "nft_bridge":
-        if (c.mainnet.nft_bridge !== undefined)
-          mainnetTable.push(`|${c.name}|\`${c.mainnet.nft_bridge}\`|`);
-        if (c.testnet.nft_bridge !== undefined)
-          testnetTable.push(`|${c.name}|\`${c.testnet.nft_bridge}\`|`);
-        if (c.devnet.nft_bridge !== undefined)
-          devnetTable.push(`|${c.name}|\`${c.devnet.nft_bridge}\`|`);
+        table.push(
+          `|${c.name}|` +
+            `${fmtStr(c.mainnet.nft_bridge)}|` +
+            `${fmtStr(c.testnet.nft_bridge)}|` +
+            `${fmtStr(c.devnet.nft_bridge)}|`
+        );
         continue;
       case "cctp":
-        if (c.mainnet.cctp !== undefined)
-          mainnetTable.push(`|${c.name}|\`${c.mainnet.cctp}\`|`);
-        if (c.testnet.cctp !== undefined)
-          testnetTable.push(`|${c.name}|\`${c.testnet.cctp}\`|`);
-        if (c.devnet.cctp !== undefined)
-          devnetTable.push(`|${c.name}|\`${c.devnet.cctp}\`|`);
+        table.push(
+          `|${c.name}|` +
+            `${fmtStr(c.mainnet.cctp)}|` +
+            `${fmtStr(c.testnet.cctp)}|` +
+            `${fmtStr(c.devnet.cctp)}|`
+        );
         continue;
       case "relayer":
-        if (c.mainnet.wormholeRelayerAddress !== undefined)
-          mainnetTable.push(
-            `|${c.name}|\`${c.mainnet.wormholeRelayerAddress}\`|`
-          );
-        if (c.testnet.wormholeRelayerAddress !== undefined)
-          testnetTable.push(
-            `|${c.name}|\`${c.testnet.wormholeRelayerAddress}\`|`
-          );
-        if (c.devnet.wormholeRelayerAddress !== undefined)
-          devnetTable.push(
-            `|${c.name}|\`${c.devnet.wormholeRelayerAddress}\`|`
-          );
+        table.push(
+          `|${c.name}|` +
+            `${fmtStr(c.mainnet.wormholeRelayerAddress)}|` +
+            `${fmtStr(c.testnet.wormholeRelayerAddress)}|` +
+            `${fmtStr(c.devnet.wormholeRelayerAddress)}|`
+        );
         continue;
     }
   }
 
-  return `
-### Mainnet 
-
-${mainnetTable.join("\n")}
-
-### Testnet
-
-${testnetTable.length > 2 ? testnetTable.join("\n") : ""}
-
-### Devnet
-
-${devnetTable.length > 2 ? devnetTable.join("\n") : ""}
-
-`;
+  return table.join("\n") + "\n";
 }
