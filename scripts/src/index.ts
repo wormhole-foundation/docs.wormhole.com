@@ -1,6 +1,7 @@
 import * as cfg from "./config";
 import {
   chainDetailsPage,
+  generateAllChainIdsTable,
   generateAllConsistencyLevelsTable,
   generateAllContractsTable,
 } from "./details";
@@ -128,4 +129,6 @@ async function overwriteGenerated(tag: string, content: string) {
     "CONSISTENCY_LEVELS",
     generateAllConsistencyLevelsTable(chains)
   );
+
+  await overwriteGenerated("CHAIN_IDS", generateAllChainIdsTable(chains));
 })();

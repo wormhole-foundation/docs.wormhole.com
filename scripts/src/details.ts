@@ -167,6 +167,23 @@ ${contractTable(devnet)}
 `;
 }
 
+export function generateAllChainIdsTable(dc: cfg.DocChain[]): string {
+  let table: string[] = [
+    `|Chain Name|Wormhole Chain Id|`,
+    `|---|------------|`,
+  ];
+
+  const orderedDc = dc.sort((a, b) => {
+    return a.id - b.id;
+  });
+
+  for (const c of orderedDc) {
+    table.push(`|${c.name}|${c.id}|`);
+  }
+
+  return table.join("\n") + "\n";
+}
+
 export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
@@ -193,18 +210,9 @@ export function generateAllContractsTable(
   dc: cfg.DocChain[],
   module: string
 ): string {
-  let mainnetTable: string[] = [
-    `|Chain Name|Wormhole Chain Id|Address|`,
-    `|---|---|------------|`,
-  ];
-  let testnetTable: string[] = [
-    `|Chain Name|Wormhole Chain Id|Address|`,
-    `|---|---|------------|`,
-  ];
-  let devnetTable: string[] = [
-    `|Chain Name|Wormhole Chain Id|Address|`,
-    `|---|---|------------|`,
-  ];
+  let mainnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
+  let testnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
+  let devnetTable: string[] = [`|Chain Name|Address|`, `|---|------------|`];
 
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
@@ -214,52 +222,48 @@ export function generateAllContractsTable(
     switch (module) {
       case "core":
         if (c.mainnet.core !== undefined)
-          mainnetTable.push(`|${c.name}|${c.id}|\`${c.mainnet.core}\`|`);
+          mainnetTable.push(`|${c.name}|\`${c.mainnet.core}\`|`);
         if (c.testnet.core !== undefined)
-          testnetTable.push(`|${c.name}|${c.id}|\`${c.testnet.core}\`|`);
+          testnetTable.push(`|${c.name}|\`${c.testnet.core}\`|`);
         if (c.devnet.core !== undefined)
-          devnetTable.push(`|${c.name}|${c.id}|\`${c.devnet.core}\`|`);
+          devnetTable.push(`|${c.name}|\`${c.devnet.core}\`|`);
         continue;
       case "token_bridge":
         if (c.mainnet.token_bridge !== undefined)
-          mainnetTable.push(
-            `|${c.name}|${c.id}|\`${c.mainnet.token_bridge}\`|`
-          );
+          mainnetTable.push(`|${c.name}|\`${c.mainnet.token_bridge}\`|`);
         if (c.testnet.token_bridge !== undefined)
-          testnetTable.push(
-            `|${c.name}|${c.id}|\`${c.testnet.token_bridge}\`|`
-          );
+          testnetTable.push(`|${c.name}|\`${c.testnet.token_bridge}\`|`);
         if (c.devnet.token_bridge !== undefined)
-          devnetTable.push(`|${c.name}|${c.id}|\`${c.devnet.token_bridge}\`|`);
+          devnetTable.push(`|${c.name}|\`${c.devnet.token_bridge}\`|`);
         continue;
       case "nft_bridge":
         if (c.mainnet.nft_bridge !== undefined)
-          mainnetTable.push(`|${c.name}|${c.id}|\`${c.mainnet.nft_bridge}\`|`);
+          mainnetTable.push(`|${c.name}|\`${c.mainnet.nft_bridge}\`|`);
         if (c.testnet.nft_bridge !== undefined)
-          testnetTable.push(`|${c.name}|${c.id}|\`${c.testnet.nft_bridge}\`|`);
+          testnetTable.push(`|${c.name}|\`${c.testnet.nft_bridge}\`|`);
         if (c.devnet.nft_bridge !== undefined)
-          devnetTable.push(`|${c.name}|${c.id}|\`${c.devnet.nft_bridge}\`|`);
+          devnetTable.push(`|${c.name}|\`${c.devnet.nft_bridge}\`|`);
         continue;
       case "cctp":
         if (c.mainnet.cctp !== undefined)
-          mainnetTable.push(`|${c.name}|${c.id}|\`${c.mainnet.cctp}\`|`);
+          mainnetTable.push(`|${c.name}|\`${c.mainnet.cctp}\`|`);
         if (c.testnet.cctp !== undefined)
-          testnetTable.push(`|${c.name}|${c.id}|\`${c.testnet.cctp}\`|`);
+          testnetTable.push(`|${c.name}|\`${c.testnet.cctp}\`|`);
         if (c.devnet.cctp !== undefined)
-          devnetTable.push(`|${c.name}|${c.id}|\`${c.devnet.cctp}\`|`);
+          devnetTable.push(`|${c.name}|\`${c.devnet.cctp}\`|`);
         continue;
       case "relayer":
         if (c.mainnet.wormholeRelayerAddress !== undefined)
           mainnetTable.push(
-            `|${c.name}|${c.id}|\`${c.mainnet.wormholeRelayerAddress}\`|`
+            `|${c.name}|\`${c.mainnet.wormholeRelayerAddress}\`|`
           );
         if (c.testnet.wormholeRelayerAddress !== undefined)
           testnetTable.push(
-            `|${c.name}|${c.id}|\`${c.testnet.wormholeRelayerAddress}\`|`
+            `|${c.name}|\`${c.testnet.wormholeRelayerAddress}\`|`
           );
         if (c.devnet.wormholeRelayerAddress !== undefined)
           devnetTable.push(
-            `|${c.name}|${c.id}|\`${c.devnet.wormholeRelayerAddress}\`|`
+            `|${c.name}|\`${c.devnet.wormholeRelayerAddress}\`|`
           );
         continue;
     }
