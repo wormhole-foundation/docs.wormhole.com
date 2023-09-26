@@ -1,14 +1,15 @@
+# Cross-chain Development
+
 There are two primary ways to enable communication across chains with Wormhole.
 
-1) [Automatic Relaying](#automatic-relaying) - No off chain code required
-2) [Specialized Relaying](#specialized-relayer) - Some off chain code may be required
-
+1. [Automatic Relaying](cross-chain-dev.md#automatic-relaying) - No off chain code required
+2. [Specialized Relaying](cross-chain-dev.md#specialized-relayer) - Some off chain code may be required
 
 {% hint style="info" %}
-The components outlined in **blue** are those that must be implemented by the developer 
+The components outlined in **blue** are those that must be implemented by the developer
 {% endhint %}
 
-## Automatic Relaying
+### Automatic Relaying
 
 {% hint style="warning" %}
 Automatic Relaying is currently only supported for EVM environments.
@@ -16,19 +17,18 @@ Automatic Relaying is currently only supported for EVM environments.
 
 ![Automatic Relayer](../.gitbook/assets/auto-relayer.png)
 
-With Automatic Relaying, only the contracts need to be developed. Leave the message delivery to a service provider. 
+With Automatic Relaying, only the contracts need to be developed. Leave the message delivery to a service provider.
 
-[Quick Start](./automatic-relayer.md)
+[Quick Start](automatic-relayer.md)
 
-
-## Specialized Relayer
+### Specialized Relayer
 
 ![Specialized Relayer](../.gitbook/assets/specialized-relayer.png)
 
-With Specialized Relaying, the developer can communicate with [any blockchain Wormhole supports](../reference/environments/README.md#blockchains-supported) and has the freedom to choose a delivery strategy. 
+With Specialized Relaying, the developer can communicate with [any blockchain Wormhole supports](broken-reference) and has the freedom to choose a delivery strategy.
 
-[Quick Start](./specialized-relayer.md)
+[Quick Start](specialized-relayer.md)
 
-## More
+### More
 
-More tutorials are available [here](../tutorials/README.md).
+More tutorials are available [here](../tutorials/).

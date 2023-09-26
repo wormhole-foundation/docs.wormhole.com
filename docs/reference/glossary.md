@@ -1,19 +1,16 @@
 # Glossary
 
-<!-- Please make sure these are sorted  -->
-
 An index of commonly used technical terms
-
 
 ## Chain ID
 
 The Chain IDs in the Wormhole context are `u16` integers that map to chains. Note these Chain IDs are _not_ the same as other Chain IDs used for things like wallets.
 
-Each Chain ID is documented on its page in the [Blockchain Environments](./environments/README.md).
+Each Chain ID is documented on its page in the [Blockchain Environments](environments/).
 
-## Consistency Level 
+## Consistency Level
 
-The level of finality (consistency) a transaction should meet before being signed by a Guardian. See [Consistency](./environments/consistency.md) page for details.
+The level of finality (consistency) a transaction should meet before being signed by a Guardian. See [Consistency](broken-reference) page for details.
 
 ## Delivery Provider
 
@@ -25,15 +22,15 @@ The contract that calls the Wormhole Core contract. It's address is included in 
 
 ## Finality
 
-The Finality of a transaction is dependant on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back. 
+The Finality of a transaction is dependant on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back.
 
 ## Gateway
 
-The [Gateway](./components/gateway/README.md) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
+The [Gateway](components/gateway/) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
 
 ## Guardian
 
-A [Guardian](./components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
+A [Guardian](components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
 
 ## Guardian Network
 
@@ -41,11 +38,11 @@ Validators that exist in their own P2P network that serve as Wormhole's oracle b
 
 ## Guardian Set
 
-The Guardian Set is a set of guardians that are responsible for validating a message emitted from the core contracts. Occasionally the members in the set will change through a governance action. 
+The Guardian Set is a set of guardians that are responsible for validating a message emitted from the core contracts. Occasionally the members in the set will change through a governance action.
 
 ## Heartbeat
 
-Each Guardian will issue a `Heartbeat` on a 15s interval to signal that it is still running and to convey details about its identity, uptime, version, and status of the connected nodes. 
+Each Guardian will issue a `Heartbeat` on a 15s interval to signal that it is still running and to convey details about its identity, uptime, version, and status of the connected nodes.
 
 The heartbeats are shown on the [dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/).
 
@@ -59,23 +56,23 @@ A Relayer is any process which delivers VAAs to a destination.
 
 ## Sequence
 
-A nonce, strictly increasing, tracked by the wormhole core contract and unique to emitter chain and address 
+A nonce, strictly increasing, tracked by the wormhole core contract and unique to emitter chain and address
 
 ## Spy
 
-A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed. 
+A Spy is a daemon that eavesdrops on the messages passed between Guardians, typically to track VAAs as they get signed.
 
 ## VAA
 
-[Verifiable Action Approvals](./components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
+[Verifiable Action Approvals](components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
 
-## Validator 
+## Validator
 
 A daemon that is configured to monitor a blockchain node and observe messages emitted by the wormhole contracts.
 
 ## Wormchain
 
-The original name of the [Gateway](#gateway).
+The original name of the [Gateway](glossary.md#gateway).
 
 ## xChain
 
