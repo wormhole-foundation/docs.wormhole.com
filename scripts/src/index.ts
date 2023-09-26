@@ -109,21 +109,25 @@ async function overwriteGenerated(tag: string, content: string) {
     generateAllContractsTable(chains, "core")
   );
   await overwriteGenerated(
+    "TOKEN_BRIDGE_ADDRESS",
+    generateAllContractsTable(chains, "token_bridge")
+  );
+  await overwriteGenerated(
     "NFT_BRIDGE_ADDRESS",
     generateAllContractsTable(chains, "nft_bridge")
   );
   await overwriteGenerated(
-    "TOKEN_BRIDGE_ADDRESS",
-    generateAllContractsTable(chains, "token_bridge")
+    "RELAYER_BRIDGE_ADDRESS",
+    generateAllContractsTable(chains, "wormholeRelayerAddress")
   );
   await overwriteGenerated(
     "CCTP_ADDRESS",
     generateAllContractsTable(chains, "cctp")
   );
-  await overwriteGenerated(
-    "RELAYER_BRIDGE_ADDRESS",
-    generateAllContractsTable(chains, "relayer")
-  );
+  // await overwriteGenerated(
+  //   "GATEWAY_ADDRESS",
+  //   generateAllContractsTable(chains, "cctp")
+  // );
 
   await overwriteGenerated(
     "CONSISTENCY_LEVELS",

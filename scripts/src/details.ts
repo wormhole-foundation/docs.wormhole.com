@@ -1,5 +1,5 @@
 import * as cfg from "./config";
-import { fmtNum, fmtStr } from "./util";
+import { fmtNum, fmtStr, fmtCodeStr } from "./util";
 
 const SRC_BASE = "https://github.com/wormhole-foundation/wormhole/blob/main/";
 
@@ -168,20 +168,23 @@ ${contractTable(devnet)}
 }
 
 export function generateAllChainIdsTable(dc: cfg.DocChain[]): string {
-  let table: string[] = [
-    `|Chain Name|Wormhole Chain Id|`,
-    `|---|------------|`,
-  ];
-
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
   });
 
+  const header = `<thead><td>Chain Name</td><td>Wormhole Chain Id</td></thead>`;
+  let rows: string[] = [];
+
   for (const c of orderedDc) {
-    table.push(`|${c.name}|${c.id}|`);
+    rows.push(`<tr><td>${c.name}</td><td>${c.id}</td></tr>`);
   }
 
-  return table.join("\n") + "\n";
+  return `<table data-full-width="true">
+${header}
+<tbody>
+${rows.join("\n")}
+</tbody>
+</table>`;
 }
 
 export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
@@ -193,14 +196,10 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
 
   for (const c of orderedDc) {
     if (c.extraDetails?.finality === undefined) continue;
-
     const f = c.extraDetails.finality;
-
     const header = c.extraDetails.title ? c.extraDetails.title : c.name;
-
     const [opts, deets] = finalityOptionTable(f);
-
-    content.push(`## ${header}`, opts, deets);
+    content.push(`### ${header}`, opts, deets);
   }
 
   return content.join("\n");
@@ -210,59 +209,31 @@ export function generateAllContractsTable(
   dc: cfg.DocChain[],
   module: string
 ): string {
-  let table: string[] = [
-    `|Chain Name|Mainnet|Testnet|Devnet|`,
-    `|---|---|---|---|`,
-  ];
+  let tableHeader = `<thead>
+  <td>Chain Name</td>
+  <td>Mainnet</td>
+  <td>Testnet</td>
+  <td>Devnet (local)</td>
+</thead>`;
 
   const orderedDc = dc.sort((a, b) => {
     return a.id - b.id;
   });
 
+  let rows: string[] = [];
   for (const c of orderedDc) {
-    switch (module) {
-      case "core":
-        table.push(
-          `|${c.name}|` +
-            `${fmtStr(c.mainnet.core)}|` +
-            `${fmtStr(c.testnet.core)}|` +
-            `${fmtStr(c.devnet.core)}|`
-        );
-        continue;
-      case "token_bridge":
-        table.push(
-          `|${c.name}|` +
-            `${fmtStr(c.mainnet.token_bridge)}|` +
-            `${fmtStr(c.testnet.token_bridge)}|` +
-            `${fmtStr(c.devnet.token_bridge)}|`
-        );
-        continue;
-      case "nft_bridge":
-        table.push(
-          `|${c.name}|` +
-            `${fmtStr(c.mainnet.nft_bridge)}|` +
-            `${fmtStr(c.testnet.nft_bridge)}|` +
-            `${fmtStr(c.devnet.nft_bridge)}|`
-        );
-        continue;
-      case "cctp":
-        table.push(
-          `|${c.name}|` +
-            `${fmtStr(c.mainnet.cctp)}|` +
-            `${fmtStr(c.testnet.cctp)}|` +
-            `${fmtStr(c.devnet.cctp)}|`
-        );
-        continue;
-      case "relayer":
-        table.push(
-          `|${c.name}|` +
-            `${fmtStr(c.mainnet.wormholeRelayerAddress)}|` +
-            `${fmtStr(c.testnet.wormholeRelayerAddress)}|` +
-            `${fmtStr(c.devnet.wormholeRelayerAddress)}|`
-        );
-        continue;
-    }
+    rows.push(`<tr>
+      <td>${c.name}</td>
+      <td>${fmtCodeStr(c.mainnet[module])}</td>
+      <td>${fmtCodeStr(c.testnet[module])}</td>
+      <td>${fmtCodeStr(c.devnet[module])}</td> 
+    </tr>`);
   }
 
-  return table.join("\n") + "\n";
+  return `<table data-full-width="true">
+${tableHeader} 
+<tbody>
+  ${rows.join("\n")}
+</tbody>
+</table>`;
 }
