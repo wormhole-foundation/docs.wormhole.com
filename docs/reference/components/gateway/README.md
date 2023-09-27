@@ -95,9 +95,9 @@ import * as wh from '@certusone/wormhole-sdk';
 // ...
 
 const transferDetails = {
-  simple: {                                         // This is a simple transfer, no additional payload 
+  gateway_transfer: {                               // This is a simple transfer, no additional payload 
     chain: 4000,                                    // Chain Id of the Cosmos chain we're sending to
-    recipient: "<cosmos-chain-recipient-address>",  // Address of recipient
+    recipient: "<cosmos-chain-recipient-address>",  // Address of recipient (base64 encoded bech32)
     fee: 0,                                         // Fee for transfer (0 for now)
     nonce: 0,                                        
   }
@@ -137,7 +137,7 @@ const client = await SigningStargateClient.connectWithSigner(
 
 const memo = JSON.stringify({
     gateway_ibc_token_bridge_payload:{
-        simple:{
+        gateway_transfer:{
             chain:     0,   // chain id of receiver
             recipient: "",  // address of receiver
             fee:       0,   // fee to cover transfer
