@@ -29,10 +29,23 @@
 * [Gateway](reference/components/gateway/README.md)
   * [Onboarding](reference/components/gateway/onboard.md)
 
+## Reference
+
+* [Constants Reference](reference/environments/constants.md)
+* [Development Environment](reference/dev-env/README.md)
+  * [Tilt](reference/dev-env/tilt.md)
+  * [Tooling](reference/dev-env/tooling.md)
+* [API Docs](reference/api-docs/README.md)
+  * [WormholeScan API](reference/api-docs/swagger.md)
+* [SDK Docs](reference/sdk-docs/README.md)
+* [CLI Docs](reference/cli-docs/README.md)
+* [Glossary](reference/glossary.md)
+* [FAQ](reference/faq.md)
+* [See Also](reference/see-also.md)
+
 ## Blockchain Environments
 
 * [Overview](reference/environments/README.md)
-* [Constants Reference](reference/environments/constants.md)
 * [Algorand](reference/environments/algorand/README.md)
 * [Aptos](reference/environments/aptos/README.md)
 * [CosmWasm](reference/environments/cosmwasm/README.md)
@@ -41,20 +54,6 @@
 * [Near](reference/environments/near/README.md)
 * [Solana](reference/environments/solana/README.md)
 * [Sui](reference/environments/sui/README.md)
-
-## Reference
-
-* [Glossary](reference/glossary.md)
-* [Development Environment](reference/dev-env/README.md)
-  * [Wormhole Local Validator](reference/dev-env/wormhole-local-validator.md)
-  * [Tilt](reference/dev-env/tilt.md)
-  * [Tooling](reference/dev-env/tooling.md)
-* [CLI Docs](reference/cli-docs/README.md)
-* [SDK Docs](reference/sdk-docs/README.md)
-* [API Docs](reference/api-docs/README.md)
-  * [WormholeScan API](reference/api-docs/swagger.md)
-* [FAQ](reference/faq.md)
-* [See Also](reference/see-also.md)
 
 ## External Links
 
