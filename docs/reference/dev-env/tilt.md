@@ -35,7 +35,7 @@ Tilt is a good option for developers that need some local devnet and have access
 
 ### Setting up Tilt
 
-Tilt functions best in a UNIX-style environment. For Windows users, a WSL environment is recommended.
+Tilt functions best in a UNIX-style environment. 
 
 In order to run the Tilt environment, make sure you have [Tilt](https://docs.tilt.dev/install.html) and [Go](https://go.dev/doc/install) installed.
 
