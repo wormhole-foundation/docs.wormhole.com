@@ -62,7 +62,7 @@ The following tables document the deployed contract addresses for contracts on e
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead> 
 <tbody>
   <tr>
@@ -281,7 +281,7 @@ The following tables document the deployed contract addresses for contracts on e
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead> 
 <tbody>
   <tr>
@@ -500,7 +500,7 @@ The following tables document the deployed contract addresses for contracts on e
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead> 
 <tbody>
   <tr>
@@ -719,7 +719,7 @@ The following tables document the deployed contract addresses for contracts on e
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead> 
 <tbody>
   <tr>
@@ -938,7 +938,7 @@ The following tables document the deployed contract addresses for contracts on e
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead> 
 <tbody>
   <tr>

@@ -65,7 +65,7 @@ For more information see [https://developer.algorand.org/docs/get-started/basics
 |Token Bridge|`86525641`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

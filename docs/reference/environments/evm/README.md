@@ -71,7 +71,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |NFT Bridge|`0xD8E4C2DbDd2e2bd8F1336EA691dBFF6952B1a6eB`|
 |CCTP|`0x0a69146716b3a21622287efa1607424c663069a4`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -134,7 +134,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0xebA00cbe08992EdD08ed7793E07ad6063c807004`|
 |NFT Bridge|`0x96f1335e0AcAB3cfd9899B30b2374e25a2148a6E`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -192,7 +192,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |NFT Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
 |CCTP|`0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -240,7 +240,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Token Bridge|`0xD05eD3ad637b890D68a854d607eEAF11aF456fba`|
 |NFT Bridge|`0x8F399607E9BA2405D87F5f3e1B78D950b44b2e24`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -302,7 +302,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |MockIntegration|`0x5E52f3eB0774E5e5f37760BD3Fca64951D8F74Ae`|
 |CCTP|`0x58f4c17449c90665891c42e14d34aae7a26a472e`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -354,7 +354,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x9Ee656203B0DC40cc1bA3f4738527779220e3998`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -413,7 +413,7 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0xb6A04D6672F005787147472Be20d39741929Aa03`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -473,7 +473,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x7f1d8E809aBB3F6Dc9B90F0131C3E8308046E190`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -527,7 +527,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0x599CEa2204B4FaECd584Ab1F2b6aCA137a0afbE8`|
 |NFT Bridge|`0x63eD9318628D26BdCB15df58B53BB27231D1B227`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -575,7 +575,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -631,7 +631,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 |Token Bridge|`0xd11De1f930eA1F7Dd0290Fe3a2e35b9C91AEFb37`|
 |NFT Bridge|`0x0A693c2D594292B6Eb89Cb50EFe4B0b63Dd2760D`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -685,7 +685,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0xC7A13BE098720840dEa132D860fDfa030884b09A`|
 |NFT Bridge|`0x94c994fC51c13101062958b567e743f1a04432dE`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -744,7 +744,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x3bF0c43d88541BBCF92bE508ec41e540FbF28C56`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -792,7 +792,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
 |NFT Bridge|`0x66E5BcFD45D2F3f166c567ADa663f9d2ffb292B4`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -840,7 +840,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0x88d8004A9BdbfD9D28090A02010C19897a29605c`|
 |NFT Bridge|`0xC5c25B41AB0b797571620F5204Afa116A44c0ebA`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -898,7 +898,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 |CCTP|`0x2703483b1a5a7c577e8680de9df8be03c6f30e3c`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -957,7 +957,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x3bF0c43d88541BBCF92bE508ec41e540FbF28C56`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -1006,7 +1006,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -1062,7 +1062,7 @@ Note that a different chain id is used for Sepolia
 |Token Bridge|`0xDB5492265f6038831E89f495670FF909aDe94bd9`|
 |NFT Bridge|`0x6a0B52ac198e4870e5F3797d5B403838a5bbFD99`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

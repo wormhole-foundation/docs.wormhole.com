@@ -65,7 +65,7 @@ For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-
 |Token Bridge|`0x576410486a2da45eee6c949c995670112ddf2fbeedab20350d506328eefc9d4f`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

@@ -53,7 +53,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -102,7 +102,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -151,7 +151,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -200,7 +200,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`inj1q0e70vhrv063eah90mu97sazhywmeegp7myvnh`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -249,7 +249,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -298,7 +298,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`sei1jv5xw094mclanxt5emammy875qelf3v62u4tl4lp5nhte3w3s9ts9w9az2`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -347,7 +347,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`terra1pseddrv0yfsn76u4zxrjmtf45kdlmalswdv39a`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -396,7 +396,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`terra1c02vds4uhgtrmcw7ldlg75zumdqxr8hwf7npseuf2h58jzhpgjxsgmwkvk`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -445,7 +445,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`xpla1kek6zgdaxcsu35nqfsyvs2t9vs87dqkkq6hjdgczacysjn67vt8sern93x`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

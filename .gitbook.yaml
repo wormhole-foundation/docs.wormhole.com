@@ -3,14 +3,4 @@ ignore:
   - ./scripts/
   
 redirects:
-  overview-liquid-markets: archive/overview-liquid-markets.md
-  video-tutorial-how-to-use-portal: archive/video-tutorial-how-to-use-portal.md
-  video-tutorial-how-to-manually-add-tokens-to-your-wallet: archive/video-tutorial-how-to-manually-add-tokens-to-your-wallet.md
-  tutorial-recovery-workflow: archive/tutorial-recovery-workflow.md
-  tutorial-nft-bridge: archive/tutorial-nft-bridge
-  tutorial-nft-origin-tool: archive/tutorial-nft-origin-tool.md
-  tutorial-how-to-send-usdc-from-solana-to-ethereum: archive/tutorial-how-to-send-usdc-from-solana-to-ethereum.md
-  tutorial-how-to-send-usdc-from-ethereum-to-solana: archive/tutorial-how-to-send-usdc-from-ethereum-to-solana.md
-  video-tutorial-how-to-use-the-token-origin-verifier: archive/video-tutorial-how-to-use-the-token-origin-verifier.md
-  token-register: archive/token-register/README.md
-  token-register/tutorial-token-register: archive/token-register/tutorial-token-register.md
+  blockchain-environments/constants: reference/constants
