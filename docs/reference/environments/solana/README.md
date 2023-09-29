@@ -80,7 +80,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|`DZnkkTmCiFWfYTfT41X3Rd1kDgozqzxWaHqsw6W4x2oe`|
 |NFT Bridge|`2rHhojZ7hpu1zA91nvZmT8TqWWvMcKmmNBCr2mKTtMq4`|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
@@ -134,7 +134,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

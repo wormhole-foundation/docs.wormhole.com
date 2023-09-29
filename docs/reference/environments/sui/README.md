@@ -71,7 +71,7 @@ For more information see [https://docs.sui.io/learn/architecture/consensus](http
 |Token Bridge|`0x6fb10cdb7aa299e9a4308752dadecb049ff55a892de92992a1edbd7912b3d6da`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|

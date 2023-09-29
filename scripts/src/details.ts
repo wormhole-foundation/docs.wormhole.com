@@ -160,7 +160,7 @@ ${contractTable(mainnet)}
 
 ${contractTable(testnet)}
 
-### Devnet Contract
+### Local Network Contract
 
 ${contractTable(devnet)}
   
@@ -213,7 +213,7 @@ export function generateAllContractsTable(
   <td>Chain Name</td>
   <td>Mainnet</td>
   <td>Testnet</td>
-  <td>Devnet (local)</td>
+  <td>Local development</td>
 </thead>`;
 
   const orderedDc = dc.sort((a, b) => {

@@ -59,7 +59,7 @@ For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomico
 |Token Bridge|`token.wormhole.testnet`|
 |NFT Bridge|**N/A**|
 
-### Devnet Contract
+### Local Network Contract
 
 |Type|Contract|
 |----|--------|
