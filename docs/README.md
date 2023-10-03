@@ -116,7 +116,7 @@ Demos provide more realistic implementations than Tutorials
     </tbody>
 </table>
 
-More Demos are available [here](./demos.md).
+More Demos are available [here](./tutorials/demos.md).
 
 # Supported Blockchains
 

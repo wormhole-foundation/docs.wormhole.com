@@ -15,7 +15,7 @@
   * [Hello Token](tutorials/quick-start/hello-token/README.md)
   * [Simple Relayer](tutorials/quick-start/relayer/README.md)
     * [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)
-* [Demos](demos.md)
+* [Demos](tutorials/demos.md)
 
 ## Explore Wormhole
 
