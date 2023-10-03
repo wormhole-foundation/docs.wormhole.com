@@ -3,4 +3,4 @@ ignore:
   - ./scripts/
   
 redirects:
-  blockchain-environments/constants: reference/constants
+  blockchain-environments/constants: reference/constants.md
