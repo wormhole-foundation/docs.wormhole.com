@@ -1,6 +1,10 @@
 {
   "homepage": "https://acala.network/",
   "title": "Acala",
+  "testnet":{
+    "name":"Testnet",
+    "id":"597"
+  },
   "explorer": [
     {
       "url": "https://acala.subscan.io/"

@@ -1,6 +1,10 @@
 {
   "title": "Solana",
   "homepage": "https://solana.com/",
+  "testnet":{
+    "name":"Devnet",
+    "id":"EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG"
+  },
   "notes":[
     "The contract addresess for `testnet` are on the Solana `devnet`"
   ],

@@ -1,6 +1,10 @@
 {
   "title": "Arbitrum",
   "homepage": "https://arbitrum.io/",
+  "testnet":{
+    "name":"Goerli",
+    "id":"421613"
+  },
   "explorer": [
     {
       "url": "https://arbiscan.io/",

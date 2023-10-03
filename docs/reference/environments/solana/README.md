@@ -72,7 +72,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|`wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb`|
 |NFT Bridge|`WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD`|
 
-### Testnet Contracts
+### Testnet Contracts (Devnet - `EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG`)
 
 |Type|Contract|
 |----|--------|
@@ -126,7 +126,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts
+### Testnet Contracts 
 
 |Type|Contract|
 |----|--------|

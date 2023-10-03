@@ -1,6 +1,10 @@
 {
   "title": "Polygon",
   "homepage": "https://polygon.technology/",
+  "testnet":{
+    "name":"Mumbai",
+    "id":"80001"
+  },
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "developer":[
     {"url":"https://wiki.polygon.technology/", "description":"Developer docs"},

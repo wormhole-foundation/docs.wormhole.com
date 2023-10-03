@@ -8,6 +8,10 @@
     }
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "testnet":{
+    "name":"Moonbase-Alphanet",
+    "id":"1287"
+  },
   "developer":[
     {
       "url":"https://docs.moonbeam.network/",

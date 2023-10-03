@@ -1,6 +1,10 @@
 {
   "homepage": "https://celo.org/",
   "title": "Celo",
+  "testnet":{
+    "name":"Alfajores",
+    "id":"44787"
+  },
   "explorer": [
     {
       "url": "https://explorer.celo.org/mainnet/"

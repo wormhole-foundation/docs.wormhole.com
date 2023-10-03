@@ -78,6 +78,8 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
   let devdocs = `No dev docs, update [here](${updateLink})`;
   let src = `No source file, update [here](${updateLink})`;
 
+  let testnetAlias = "";
+
   let noteHints = "";
 
   const [finalityOptions, finalityDetails] = finalityOptionTable(
@@ -123,6 +125,14 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
       }
       devdocs = docs.join(" | ");
     }
+
+    if (extraDetails.testnet !== undefined) {
+      const alias =
+        extraDetails.testnet.name === "Testnet"
+          ? ""
+          : `${extraDetails.testnet.name} - `;
+      testnetAlias = `(${alias}\`${extraDetails.testnet.id}\`)`;
+    }
   }
 
   return `
@@ -156,7 +166,7 @@ ${finalityDetails}
 
 ${contractTable(mainnet)}
 
-### Testnet Contracts
+### Testnet Contracts ${testnetAlias}
 
 ${contractTable(testnet)}
 
@@ -220,13 +230,15 @@ export function generateAllContractsTable(
     return a.id - b.id;
   });
 
+  const m = module as keyof cfg.Contracts;
+
   let rows: string[] = [];
   for (const c of orderedDc) {
     rows.push(`<tr>
       <td>${c.name}</td>
-      <td>${fmtCodeStr(c.mainnet[module])}</td>
-      <td>${fmtCodeStr(c.testnet[module])}</td>
-      <td>${fmtCodeStr(c.devnet[module])}</td> 
+      <td>${fmtCodeStr(c.mainnet[m])}</td>
+      <td>${fmtCodeStr(c.testnet[m])}</td>
+      <td>${fmtCodeStr(c.devnet[m])}</td> 
     </tr>`);
   }
 

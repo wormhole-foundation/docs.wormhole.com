@@ -1,5 +1,9 @@
 {
   "title": "Neon",
+  "testnet":{
+    "name":"Testnet",
+    "id":"245022940"
+  },
   "homepage": "https://neon-labs.org/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }
