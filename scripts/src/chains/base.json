@@ -1,6 +1,10 @@
 {
   "title": "Base",
   "homepage": "https://base.org/",
+  "testnet":{
+    "name":"Base Goerli",
+    "id":"84531"
+  },
   "developer": [
       {
         "url": "https://docs.base.org/",

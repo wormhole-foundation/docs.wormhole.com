@@ -1,5 +1,9 @@
 {
   "title": "Optimism",
+  "testnet":{
+    "name":"Optimism Goerli",
+    "id":"420"
+  },
   "homepage": "https://www.optimism.io/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {

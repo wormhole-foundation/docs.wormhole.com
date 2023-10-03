@@ -1,6 +1,10 @@
 {
   "title": "Aurora",
   "homepage": "https://aurora.dev/",
+  "testnet":{
+    "name":"Testnet",
+    "id":"1313161555"
+  },
   "explorer": [
     {
       "url": "https://explorer.aurora.dev/",

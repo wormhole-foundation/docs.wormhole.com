@@ -65,10 +65,16 @@ export interface SiteDescription {
   description?: string;
 }
 
+export interface TestnetDescription {
+  name: string;
+  id: string;
+}
+
 export interface ExtraDetails {
   notes?: string[];
   finality?: Finality;
   title?: string; // title case name of the chain
+  testnet?: TestnetDescription;
   homepage?: string; // Url to the homepage of the chain
   explorer?: SiteDescription[]; // urls to explorer sites
   developer?: SiteDescription[]; // set of sites to help devs

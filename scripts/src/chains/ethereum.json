@@ -1,6 +1,10 @@
 {
   "homepage": "https://ethereum.org/",
   "title": "Ethereum",
+  "testnet":{
+    "name":"Goerli",
+    "id":"5"
+  },
   "notes":[
     "Deployed contracts are also available on the [Sepolia](#sepolia) testnet."
   ],

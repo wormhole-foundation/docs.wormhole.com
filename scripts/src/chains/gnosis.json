@@ -1,6 +1,10 @@
 {
   "title": "Gnosis",
   "homepage": "https://www.gnosis.io/",
+  "testnet":{
+    "name":"Chaido",
+    "id":"10200"
+  },
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "developer":  [
       {

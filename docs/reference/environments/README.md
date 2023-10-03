@@ -155,7 +155,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/pythnet.svg">pythnet</a></td>
 </tr>
 <tr>
-    <td><strong>rootstock</strong></td>
+    <td><strong>Rootstock</strong></td>
     <td><a href="../../reference/environments/evm/README.md#rootstock">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/rootstock.svg">rootstock</a></td>
 </tr>

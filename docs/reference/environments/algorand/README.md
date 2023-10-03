@@ -57,7 +57,7 @@ For more information see [https://developer.algorand.org/docs/get-started/basics
 |Token Bridge|`842126029`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts
+### Testnet Contracts 
 
 |Type|Contract|
 |----|--------|

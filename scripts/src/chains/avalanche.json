@@ -1,6 +1,10 @@
 {
   "homepage": "https://www.avax.network/",
   "title": "Avalanche",
+  "testnet":{
+    "name":"Fuji",
+    "id":"43113"
+  },
   "explorer": [
     {
       "url": "https://snowtrace.io/",
