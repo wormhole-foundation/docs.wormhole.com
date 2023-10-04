@@ -702,7 +702,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 ## Ecosystem
 
 - [Web site](https://moonbeam.network/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/moonbeam.json)
+- [Moonbeam EVM Block Explorer](https://moonscan.io/)
 - [Developer docs](https://docs.moonbeam.network/) | [Faucet](https://faucet.moonbeam.network/)
 
 ## Wormhole Details
