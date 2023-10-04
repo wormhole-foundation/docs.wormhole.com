@@ -1,6 +1,12 @@
 {
   "title": "Moonbeam",
   "homepage": "https://moonbeam.network/",
+  "explorer": [
+    {
+      "url": "https://moonscan.io/",
+      "description": "Moonbeam EVM Block Explorer"
+    }
+  ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "developer":[
     {
