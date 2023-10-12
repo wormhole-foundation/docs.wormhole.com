@@ -1,6 +1,14 @@
 {
   "homepage": "https://algorand.com",
   "title": "Algorand",
+  "mainnet":{
+    "id":"mainnet-v1.0",
+    "name":"Mainnet"
+  },
+  "testnet":{
+    "id":"testnet-v1.0",
+    "name":"Testnet"
+  },
   "explorer": [
     {
       "url": "https://algoexplorer.io/",

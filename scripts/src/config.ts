@@ -65,21 +65,33 @@ export interface SiteDescription {
   description?: string;
 }
 
-export interface TestnetDescription {
+export interface NetworkDescription {
   name: string;
   id: string;
+}
+
+export function networkString(net?: NetworkDescription): string {
+  if (!net) return "";
+
+  const { name, id } = net;
+  const alias =
+    name === "" || name === "Mainnet" || name === "Testnet"
+      ? ""
+      : `<code>${name}</code> - `;
+  return `${alias}<code>${id}</code>`;
 }
 
 export interface ExtraDetails {
   notes?: string[];
   finality?: Finality;
   title?: string; // title case name of the chain
-  testnet?: TestnetDescription;
   homepage?: string; // Url to the homepage of the chain
   explorer?: SiteDescription[]; // urls to explorer sites
   developer?: SiteDescription[]; // set of sites to help devs
   contractSource?: string; // url to core contract
   examples?: SiteDescription[];
+  testnet?: NetworkDescription;
+  mainnet?: NetworkDescription;
 }
 
 function getChainDetails(name: string): ExtraDetails {

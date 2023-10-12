@@ -49,7 +49,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -57,7 +57,7 @@ For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-
 |Token Bridge|`0x576410486a2da45eee6c949c995670112ddf2fbeedab20350d506328eefc9d4f`|
 |NFT Bridge|`0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130`|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>2</code>)
 
 |Type|Contract|
 |----|--------|

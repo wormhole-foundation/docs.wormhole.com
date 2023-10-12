@@ -1,6 +1,10 @@
 {
   "title": "Base",
   "homepage": "https://base.org/",
+  "mainnet":{
+    "name":"Base",
+    "id":"8453"
+  },
   "testnet":{
     "name":"Base Goerli",
     "id":"84531"

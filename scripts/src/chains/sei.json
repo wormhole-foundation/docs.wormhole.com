@@ -1,10 +1,18 @@
 {
   "title": "Sei",
   "homepage": "https://www.sei.io/",
-  "developer":[
-	{
-		"url":"https://atlantic-2.app.sei.io/faucet", 
-		"description":"Faucet"
-	}
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"pacific-1"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"atlantic-2"
+  },
+  "developer": [
+    {
+      "url": "https://atlantic-2.app.sei.io/faucet",
+      "description": "Faucet"
+    }
   ]
 }

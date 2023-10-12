@@ -1,6 +1,10 @@
 {
   "homepage": "https://fantom.foundation/",
   "title": "Fantom",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"250"
+  },
   "testnet":{
     "name":"Testnet",
     "id":"4002"

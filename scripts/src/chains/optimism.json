@@ -1,5 +1,9 @@
 {
   "title": "Optimism",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"10"
+  },
   "testnet":{
     "name":"Optimism Goerli",
     "id":"420"

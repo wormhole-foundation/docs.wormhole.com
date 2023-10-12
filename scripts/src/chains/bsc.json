@@ -1,6 +1,10 @@
 {
   "title": "BNB Smart Chain (BSC)",
   "homepage": "https://www.bnbchain.org/en/smartChain",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"56"
+  },
   "testnet":{
     "name":"Testnet",
     "id":"97"

@@ -78,6 +78,7 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
   let devdocs = `No dev docs, update [here](${updateLink})`;
   let src = `No source file, update [here](${updateLink})`;
 
+  let mainnetAlias = "";
   let testnetAlias = "";
 
   let noteHints = "";
@@ -126,12 +127,12 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
       devdocs = docs.join(" | ");
     }
 
+    if (extraDetails.mainnet !== undefined) {
+      mainnetAlias = `(${cfg.networkString(extraDetails.mainnet)})`;
+    }
+
     if (extraDetails.testnet !== undefined) {
-      const alias =
-        extraDetails.testnet.name === "Testnet"
-          ? ""
-          : `${extraDetails.testnet.name} - `;
-      testnetAlias = `(${alias}\`${extraDetails.testnet.id}\`)`;
+      testnetAlias = `(${cfg.networkString(extraDetails.testnet)})`;
     }
   }
 
@@ -162,7 +163,7 @@ ${finalityOptions}
 
 ${finalityDetails}
 
-### Mainnet Contracts
+### Mainnet Contracts ${mainnetAlias}
 
 ${contractTable(mainnet)}
 
@@ -182,11 +183,15 @@ export function generateAllChainIdsTable(dc: cfg.DocChain[]): string {
     return a.id - b.id;
   });
 
-  const header = `<thead><td>Chain Name</td><td>Wormhole Chain Id</td></thead>`;
+  const header = `<thead><td>Chain Name</td><td>Wormhole Chain Id</td><td>Mainnet Id</td><td>Testnet Id</td></thead>`;
   let rows: string[] = [];
 
   for (const c of orderedDc) {
-    rows.push(`<tr><td>${c.name}</td><td>${c.id}</td></tr>`);
+    const mainnetAlias = cfg.networkString(c.extraDetails?.mainnet);
+    const testnetAlias = cfg.networkString(c.extraDetails?.testnet);
+    rows.push(
+      `<tr><td>${c.name}</td><td>${c.id}</td><td>${mainnetAlias}</td><td>${testnetAlias}</td></tr>`
+    );
   }
 
   return `<table data-full-width="true">

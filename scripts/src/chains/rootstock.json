@@ -1,5 +1,9 @@
 {
     "title":"Rootstock",
+    "mainnet":{
+        "name":"Mainnet",
+        "id":"30"
+    },
     "testnet":{
         "name":"Testnet",
         "id":"31"

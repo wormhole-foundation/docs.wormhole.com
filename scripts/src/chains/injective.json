@@ -1,4 +1,12 @@
 {
   "title": "Injective",
-  "homepage": "https://injective.com/"
+  "homepage": "https://injective.com/",
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "injective-1"
+  },
+  "testnet": {
+    "name": "Testnet",
+    "id": "injective-888"
+  }
 }

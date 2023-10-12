@@ -1,5 +1,13 @@
 {
   "title":"Sepolia",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"N/A"
+  },
+  "testnet":{
+    "name":"Sepolia",
+    "id":"11155111"
+  },
   "notes":[
     "Sepolia is a testnet only chain and can be used as an alternative to Goerli",
     "Note that a different chain id is used for Sepolia"

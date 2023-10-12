@@ -55,7 +55,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>35834a8a</code>)
 
 |Type|Contract|
 |----|--------|
@@ -63,7 +63,7 @@ For more information see [https://docs.sui.io/learn/architecture/consensus](http
 |Token Bridge|`0xc57508ee0d4595e5a8728974a4a93a787d38f339757230d441e895422c07aba9`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>4c78adac</code>)
 
 |Type|Contract|
 |----|--------|

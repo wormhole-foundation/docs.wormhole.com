@@ -1,6 +1,10 @@
 {
   "title": "Arbitrum",
   "homepage": "https://arbitrum.io/",
+  "mainnet":{
+    "name":"Arbitrum One",
+    "id":"42161"
+  },
   "testnet":{
     "name":"Goerli",
     "id":"421613"
