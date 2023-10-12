@@ -1,6 +1,10 @@
 {
   "homepage": "https://www.avax.network/",
   "title": "Avalanche",
+  "mainnet":{
+    "name":"C-Chain",
+    "id":"43114"
+  },
   "testnet":{
     "name":"Fuji",
     "id":"43113"

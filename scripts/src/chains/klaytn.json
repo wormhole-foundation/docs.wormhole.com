@@ -2,6 +2,10 @@
   "title": "Klaytn",
   "homepage": "https://klaytn.foundation/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"8217"
+  },
   "testnet":{
     "name":"Baobab",
     "id":"1001"

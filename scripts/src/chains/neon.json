@@ -1,5 +1,9 @@
 {
   "title": "Neon",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"245022934"
+  },
   "testnet":{
     "name":"Testnet",
     "id":"245022940"

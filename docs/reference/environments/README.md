@@ -70,7 +70,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/celo.svg">celo</a></td>
 </tr>
 <tr>
-    <td><strong>cosmoshub</strong></td>
+    <td><strong>Cosmoshub</strong></td>
     <td><a href="../../reference/environments/cosmwasm/README.md#cosmoshub">cosmwasm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/cosmoshub.svg">cosmoshub</a></td>
 </tr>
@@ -80,7 +80,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/ethereum.svg">ethereum</a></td>
 </tr>
 <tr>
-    <td><strong>evmos</strong></td>
+    <td><strong>Evmos</strong></td>
     <td><a href="../../reference/environments/cosmwasm/README.md#evmos">cosmwasm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/evmos.svg">evmos</a></td>
 </tr>
@@ -110,7 +110,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/klaytn.svg">klaytn</a></td>
 </tr>
 <tr>
-    <td><strong>kujira</strong></td>
+    <td><strong>Kujira</strong></td>
     <td><a href="../../reference/environments/cosmwasm/README.md#kujira">cosmwasm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/kujira.svg">kujira</a></td>
 </tr>
@@ -190,7 +190,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/terra2.svg">terra2</a></td>
 </tr>
 <tr>
-    <td><strong>xpla</strong></td>
+    <td><strong></strong></td>
     <td><a href="../../reference/environments/cosmwasm/README.md#xpla">cosmwasm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/xpla.svg">xpla</a></td>
 </tr>

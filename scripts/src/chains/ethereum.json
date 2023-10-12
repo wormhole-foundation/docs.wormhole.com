@@ -1,6 +1,10 @@
 {
   "homepage": "https://ethereum.org/",
   "title": "Ethereum",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"1"
+  },
   "testnet":{
     "name":"Goerli",
     "id":"5"

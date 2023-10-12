@@ -17,7 +17,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 <!--COSMOSHUB_CHAIN_DETAILS-->
 
-# cosmoshub
+# Cosmoshub
 
 ## Ecosystem
 
@@ -37,7 +37,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>cosmoshub-4</code>)
 
 |Type|Contract|
 |----|--------|
@@ -45,7 +45,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>theta-testnet-0001</code>)
 
 |Type|Contract|
 |----|--------|
@@ -66,12 +66,12 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 <!--EVMOS_CHAIN_DETAILS-->
 
-# evmos
+# Evmos
 
 ## Ecosystem
 
-- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/evmos.json)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/evmos.json)
+- [Web site](https://evmos.org/)
+- [https://www.mintscan.io/evmos](https://www.mintscan.io/evmos)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/evmos.json)
 
 ## Wormhole Details
@@ -86,7 +86,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>evmos_9001-2</code>)
 
 |Type|Contract|
 |----|--------|
@@ -94,7 +94,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>evmos_9000-4</code>)
 
 |Type|Contract|
 |----|--------|
@@ -115,7 +115,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 <!--KUJIRA_CHAIN_DETAILS-->
 
-# kujira
+# Kujira
 
 ## Ecosystem
 
@@ -135,7 +135,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>kaiyo-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -143,7 +143,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>harpoon-4</code>)
 
 |Type|Contract|
 |----|--------|
@@ -184,7 +184,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>injective-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -192,7 +192,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`inj1ghd753shjuwexxywmgs4xz7x2q732vcnxxynfn`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>injective-888</code>)
 
 |Type|Contract|
 |----|--------|
@@ -233,7 +233,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>osmosis-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -241,7 +241,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>osmo-test-5</code>)
 
 |Type|Contract|
 |----|--------|
@@ -282,7 +282,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>pacific-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -290,7 +290,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`sei1smzlm9t79kur392nu9egl8p8je9j92q4gzguewj56a05kyxxra0qy0nuf3`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>atlantic-2</code>)
 
 |Type|Contract|
 |----|--------|
@@ -331,7 +331,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>columbus-5</code>)
 
 |Type|Contract|
 |----|--------|
@@ -339,7 +339,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>bombay-12</code>)
 
 |Type|Contract|
 |----|--------|
@@ -380,7 +380,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>phoenix-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -388,7 +388,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`terra153366q50k7t8nn7gec00hg66crnhkdggpgdtaxltaq6xrutkkz3s992fw9`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>pisco-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -429,7 +429,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>dimension_37-1</code>)
 
 |Type|Contract|
 |----|--------|
@@ -437,7 +437,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|`xpla137w0wfch2dfmz7jl2ap8pcmswasj8kg06ay4dtjzw7tzkn77ufxqfw7acv`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>cube_47-5</code>)
 
 |Type|Contract|
 |----|--------|

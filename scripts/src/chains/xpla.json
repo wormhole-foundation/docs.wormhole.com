@@ -1,1 +1,11 @@
-{}
+{
+    "title":"",
+    "mainnet":{
+        "name":"",
+        "id":"dimension_37-1"
+    },
+    "testnet":{
+        "name":"",
+        "id":"cube_47-5"
+    }
+}

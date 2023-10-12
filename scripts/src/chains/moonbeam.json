@@ -1,6 +1,14 @@
 {
   "title": "Moonbeam",
   "homepage": "https://moonbeam.network/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"1284"
+  },
+  "testnet":{
+    "name":"Moonbase-Alphanet",
+    "id":"1287"
+  },
   "explorer": [
     {
       "url": "https://moonscan.io/",
@@ -8,10 +16,6 @@
     }
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
-  "testnet":{
-    "name":"Moonbase-Alphanet",
-    "id":"1287"
-  },
   "developer":[
     {
       "url":"https://docs.moonbeam.network/",

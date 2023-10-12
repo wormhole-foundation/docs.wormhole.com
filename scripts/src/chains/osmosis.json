@@ -1,4 +1,12 @@
 {
   "title":"Osmosis",
-  "homepage": "https://osmosis.zone/"
+  "homepage": "https://osmosis.zone/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"osmosis-1"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"osmo-test-5"
+  }
 }

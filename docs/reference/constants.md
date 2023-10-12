@@ -5,47 +5,47 @@
 The following table documents the [chain ids](../glossary.md#chain-id) used by wormhole. 
 
 {% hint style="warning" %}
-Note these chain ids are different than the more commonly referenced chain ids (e.g. https://eips.ethereum.org/EIPS/eip-155)  
+Note the Wormhole chain ids are different than the more commonly referenced chain ids (e.g. https://eips.ethereum.org/EIPS/eip-155)
 {% endhint %}
 
 <!--CHAIN_IDS-->
 <table data-full-width="true">
-<thead><td>Chain Name</td><td>Wormhole Chain Id</td></thead>
+<thead><td>Chain Name</td><td>Wormhole Chain Id</td><td>Mainnet Id</td><td>Testnet Id</td></thead>
 <tbody>
-<tr><td>solana</td><td>1</td></tr>
-<tr><td>ethereum</td><td>2</td></tr>
-<tr><td>terra</td><td>3</td></tr>
-<tr><td>bsc</td><td>4</td></tr>
-<tr><td>polygon</td><td>5</td></tr>
-<tr><td>avalanche</td><td>6</td></tr>
-<tr><td>oasis</td><td>7</td></tr>
-<tr><td>algorand</td><td>8</td></tr>
-<tr><td>aurora</td><td>9</td></tr>
-<tr><td>fantom</td><td>10</td></tr>
-<tr><td>karura</td><td>11</td></tr>
-<tr><td>acala</td><td>12</td></tr>
-<tr><td>klaytn</td><td>13</td></tr>
-<tr><td>celo</td><td>14</td></tr>
-<tr><td>near</td><td>15</td></tr>
-<tr><td>moonbeam</td><td>16</td></tr>
-<tr><td>neon</td><td>17</td></tr>
-<tr><td>terra2</td><td>18</td></tr>
-<tr><td>injective</td><td>19</td></tr>
-<tr><td>osmosis</td><td>20</td></tr>
-<tr><td>sui</td><td>21</td></tr>
-<tr><td>aptos</td><td>22</td></tr>
-<tr><td>arbitrum</td><td>23</td></tr>
-<tr><td>optimism</td><td>24</td></tr>
-<tr><td>gnosis</td><td>25</td></tr>
-<tr><td>pythnet</td><td>26</td></tr>
-<tr><td>xpla</td><td>28</td></tr>
-<tr><td>base</td><td>30</td></tr>
-<tr><td>sei</td><td>32</td></tr>
-<tr><td>rootstock</td><td>33</td></tr>
-<tr><td>cosmoshub</td><td>4000</td></tr>
-<tr><td>evmos</td><td>4001</td></tr>
-<tr><td>kujira</td><td>4002</td></tr>
-<tr><td>sepolia</td><td>10002</td></tr>
+<tr><td>solana</td><td>1</td><td><code>Mainnet Beta</code> - <code>5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d</code></td><td><code>Devnet</code> - <code>EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG</code></td></tr>
+<tr><td>ethereum</td><td>2</td><td><code>1</code></td><td><code>Goerli</code> - <code>5</code></td></tr>
+<tr><td>terra</td><td>3</td><td><code>columbus-5</code></td><td><code>bombay-12</code></td></tr>
+<tr><td>bsc</td><td>4</td><td><code>56</code></td><td><code>97</code></td></tr>
+<tr><td>polygon</td><td>5</td><td><code>137</code></td><td><code>Mumbai</code> - <code>80001</code></td></tr>
+<tr><td>avalanche</td><td>6</td><td><code>C-Chain</code> - <code>43114</code></td><td><code>Fuji</code> - <code>43113</code></td></tr>
+<tr><td>oasis</td><td>7</td><td><code>23294</code></td><td><code>23295</code></td></tr>
+<tr><td>algorand</td><td>8</td><td><code>mainnet-v1.0</code></td><td><code>testnet-v1.0</code></td></tr>
+<tr><td>aurora</td><td>9</td><td><code>1313161554</code></td><td><code>1313161555</code></td></tr>
+<tr><td>fantom</td><td>10</td><td><code>250</code></td><td><code>4002</code></td></tr>
+<tr><td>karura</td><td>11</td><td><code>686</code></td><td><code>596</code></td></tr>
+<tr><td>acala</td><td>12</td><td><code>787</code></td><td><code>597</code></td></tr>
+<tr><td>klaytn</td><td>13</td><td><code>8217</code></td><td><code>Baobab</code> - <code>1001</code></td></tr>
+<tr><td>celo</td><td>14</td><td><code>42220</code></td><td><code>Alfajores</code> - <code>44787</code></td></tr>
+<tr><td>near</td><td>15</td><td><code>mainnet</code></td><td><code>testnet</code></td></tr>
+<tr><td>moonbeam</td><td>16</td><td><code>1284</code></td><td><code>Moonbase-Alphanet</code> - <code>1287</code></td></tr>
+<tr><td>neon</td><td>17</td><td><code>245022934</code></td><td><code>245022940</code></td></tr>
+<tr><td>terra2</td><td>18</td><td><code>phoenix-1</code></td><td><code>pisco-1</code></td></tr>
+<tr><td>injective</td><td>19</td><td><code>injective-1</code></td><td><code>injective-888</code></td></tr>
+<tr><td>osmosis</td><td>20</td><td><code>osmosis-1</code></td><td><code>osmo-test-5</code></td></tr>
+<tr><td>sui</td><td>21</td><td><code>35834a8a</code></td><td><code>4c78adac</code></td></tr>
+<tr><td>aptos</td><td>22</td><td><code>1</code></td><td><code>2</code></td></tr>
+<tr><td>arbitrum</td><td>23</td><td><code>Arbitrum One</code> - <code>42161</code></td><td><code>Goerli</code> - <code>421613</code></td></tr>
+<tr><td>optimism</td><td>24</td><td><code>10</code></td><td><code>Optimism Goerli</code> - <code>420</code></td></tr>
+<tr><td>gnosis</td><td>25</td><td><code>100</code></td><td><code>Chaido</code> - <code>10200</code></td></tr>
+<tr><td>pythnet</td><td>26</td><td><code>N/A</code></td><td><code>N/A</code></td></tr>
+<tr><td>xpla</td><td>28</td><td><code>dimension_37-1</code></td><td><code>cube_47-5</code></td></tr>
+<tr><td>base</td><td>30</td><td><code>Base</code> - <code>8453</code></td><td><code>Base Goerli</code> - <code>84531</code></td></tr>
+<tr><td>sei</td><td>32</td><td><code>pacific-1</code></td><td><code>atlantic-2</code></td></tr>
+<tr><td>rootstock</td><td>33</td><td><code>30</code></td><td><code>31</code></td></tr>
+<tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-0001</code></td></tr>
+<tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
+<tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
+<tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 </tbody>
 </table>
 <!--CHAIN_IDS-->

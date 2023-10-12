@@ -1,4 +1,12 @@
 {
+  "mainnet":{
+    "name":"",
+    "id":"N/A"
+  },
+  "testnet":{
+    "name":"",
+    "id":"N/A"
+  },
   "finality": {
     "confirmed": 0,
     "finalized": 1

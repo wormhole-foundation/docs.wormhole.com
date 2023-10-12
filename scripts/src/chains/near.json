@@ -1,6 +1,14 @@
 {
   "title": "NEAR",
   "homepage": "https://near.org/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"mainnet"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"testnet"
+  },
   "finality": {
     "details":"https://nomicon.io/ChainSpec/Consensus",
     "finalized": 0

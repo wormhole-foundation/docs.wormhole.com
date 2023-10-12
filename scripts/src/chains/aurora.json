@@ -1,6 +1,10 @@
 {
   "title": "Aurora",
   "homepage": "https://aurora.dev/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"1313161554"
+  },
   "testnet":{
     "name":"Testnet",
     "id":"1313161555"

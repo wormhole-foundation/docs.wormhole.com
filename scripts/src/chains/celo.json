@@ -1,6 +1,10 @@
 {
   "homepage": "https://celo.org/",
   "title": "Celo",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"42220"
+  },
   "testnet":{
     "name":"Alfajores",
     "id":"44787"

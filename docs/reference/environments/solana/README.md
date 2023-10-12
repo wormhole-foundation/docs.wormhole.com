@@ -64,7 +64,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 For more information see [https://docs.solana.com/cluster/commitments](https://docs.solana.com/cluster/commitments)
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>Mainnet Beta</code> - <code>5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d</code>)
 
 |Type|Contract|
 |----|--------|
@@ -72,7 +72,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|`wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb`|
 |NFT Bridge|`WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD`|
 
-### Testnet Contracts (Devnet - `EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG`)
+### Testnet Contracts (<code>Devnet</code> - <code>EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG</code>)
 
 |Type|Contract|
 |----|--------|
@@ -118,7 +118,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>N/A</code>)
 
 |Type|Contract|
 |----|--------|
@@ -126,7 +126,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>N/A</code>)
 
 |Type|Contract|
 |----|--------|

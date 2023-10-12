@@ -1,6 +1,10 @@
 {
   "title": "Polygon",
   "homepage": "https://polygon.technology/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"137"
+  },
   "testnet":{
     "name":"Mumbai",
     "id":"80001"

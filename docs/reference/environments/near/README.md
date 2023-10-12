@@ -43,7 +43,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)
 
 
-### Mainnet Contracts
+### Mainnet Contracts (<code>mainnet</code>)
 
 |Type|Contract|
 |----|--------|
@@ -51,7 +51,7 @@ For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomico
 |Token Bridge|`contract.portalbridge.near`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>testnet</code>)
 
 |Type|Contract|
 |----|--------|

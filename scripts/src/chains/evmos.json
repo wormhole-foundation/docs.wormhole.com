@@ -1,1 +1,17 @@
-{}
+{
+  "homepage": "https://evmos.org/",
+  "title": "Evmos",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"evmos_9001-2"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"evmos_9000-4"
+  },
+  "explorer": [
+    {
+      "url": "https://www.mintscan.io/evmos"
+    }
+  ]
+}

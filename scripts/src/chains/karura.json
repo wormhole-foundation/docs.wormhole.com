@@ -2,6 +2,10 @@
   "title": "Karura",
   "homepage": "https://acala.network/karura",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"686"
+  },
   "testnet":{
     "name":"Testnet",
     "id":"596"
