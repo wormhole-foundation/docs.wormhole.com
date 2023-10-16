@@ -69,6 +69,9 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |Core|`0x706abc4E45D419950511e474C7B9Ed348A4a716c`|
 |Token Bridge|`0xF890982f9310df57d00f659cf4fd87e65adEd8d7`|
 |NFT Bridge|`0xD8E4C2DbDd2e2bd8F1336EA691dBFF6952B1a6eB`|
+|Relayer|`0x28D8F1Be96f97C1387e94A53e00eCcFb4E75175a`|
+|MockProvider|`0xD1463B4fe86166768d2ff51B1A928beBB5c9f375`|
+|MockIntegration|`0xb81bc199b73AB34c393a4192C163252116a03370`|
 |CCTP|`0x0a69146716b3a21622287efa1607424c663069a4`|
 
 ### Local Network Contract
@@ -190,6 +193,9 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Core|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |Token Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 |NFT Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
+|Relayer|`0xAd753479354283eEE1b86c9470c84D42f229FF43`|
+|MockProvider|`0x90995DBd1aae85872451b50A569dE947D34ac4ee`|
+|MockIntegration|`0x0de48f34E14d08934DA1eA2286Be1b2BED5c062a`|
 |CCTP|`0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2`|
 
 ### Local Network Contract
@@ -896,6 +902,9 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
 |Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
+|Relayer|`0x01A957A525a5b7A72808bA9D10c389674E459891`|
+|MockProvider|`0xfCe1Df3EF22fe5Cb7e2f5988b7d58fF633a313a7`|
+|MockIntegration|`0x421e0bb71dDeeC727Af79766423d33D8FD7dB963`|
 |CCTP|`0x2703483b1a5a7c577e8680de9df8be03c6f30e3c`|
 
 ### Local Network Contract
