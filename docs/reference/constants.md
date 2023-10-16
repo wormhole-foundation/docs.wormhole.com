@@ -632,7 +632,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>aptos</td>
       <td><code>0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130</code></td>
-      <td><code>-</code></td>
+      <td><code>0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130</code></td>
       <td><code>0x46da3d4c569388af61f951bdd1153f4c875f90c2991f6b2d0a38e2161a40852c</code></td> 
     </tr>
 <tr>
@@ -731,7 +731,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>ethereum</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
-      <td><code>-</code></td>
+      <td><code>0x28D8F1Be96f97C1387e94A53e00eCcFb4E75175a</code></td>
       <td><code>0xE66C1Bc1b369EF4F376b84373E3Aa004E8F4C083</code></td> 
     </tr>
 <tr>
@@ -857,13 +857,13 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>arbitrum</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
-      <td><code>-</code></td>
+      <td><code>0xAd753479354283eEE1b86c9470c84D42f229FF43</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
       <td>optimism</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
-      <td><code>-</code></td>
+      <td><code>0x01A957A525a5b7A72808bA9D10c389674E459891</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
