@@ -14,6 +14,10 @@ For Algorand chains, this means a wormhole formatted address is the 58 character
 
 e.g. `M7UT7JWIVROIDGMQVJZUBQGBNNIIVOYRPC7JWMGQES4KYJIZHVCRZEGFRQ` => `0x67e93fa6c8ac5c819990aa7340c0c16b508abb1178be9b30d024b8ac25193d45`
 
+Algorand also uses a uint64 for Asset and Application IDs. These are converted to a 32 bytes by first converting to a 8 byte big endian byte array, then padding with 24 bytes of 0s.
+
+e.g. `123` => `0x000000000000000000000000000000000000000000000000000000000000007b`
+
 ## Emitter 
 
 The emitter is the application address, normalized to the wormhole address format. 
