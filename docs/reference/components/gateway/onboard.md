@@ -26,9 +26,8 @@ See here for more details on Gateway: [The Gateway to Cosmos](https://wormhole.c
 
 2. Establish the IBC connection.
 
-    1. {% hint style="warning" %}
-        Please ensure that the `trusting_period` and `trust_threshold` parameters are set to the safest values. E.g. `trust_threshold` should be 2/3 and `trusting_period` should be 2/3 the unbonding period of your chain.
-        {% endhint %}
+    1. Please ensure that the `trusting_period` and `trust_threshold` parameters are set to the safest values. 
+        E.g. `trust_threshold` should be 2/3 and `trusting_period` should be 2/3 the unbonding period of your chain.
     2. See an example IBC relayer config for Wormhole Gateway [below](#wormhole-gateway-ibc-relayer-config).
     3. Please see docs [here](https://github.com/wormhole-foundation/wormhole/blob/main/wormchain/syncing.md) on how to set up your own Wormhole Gateway node to connect your IBC relayer to. Or, you can see available public nodes on the [cosmos chain registry](https://github.com/cosmos/chain-registry/blob/master/gateway/chain.json).
 
@@ -73,7 +72,7 @@ Thank you!
 
 # Wormhole Gateway IBC Relayer Config
 
-```
+```toml
 [global]
 log_level = "info"
 
