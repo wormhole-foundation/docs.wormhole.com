@@ -2,7 +2,7 @@
 
 ## Chain Ids
 
-The following table documents the [chain ids](../glossary.md#chain-id) used by wormhole. 
+The following table documents the [chain ids](./glossary.md#chain-id) used by wormhole. 
 
 {% hint style="warning" %}
 Note the Wormhole chain ids are different than the more commonly referenced chain ids (e.g. https://eips.ethereum.org/EIPS/eip-155)
@@ -1177,7 +1177,7 @@ The following tables document the deployed contract addresses for contracts on e
 
 ## Consistency Levels
 
-The following tables document the [consistencyLevel](../glossary.md#consistency-level) values for each chain.
+The following tables document the [consistencyLevel](./glossary.md#consistency-level) values for each chain.
 
 <!--CONSISTENCY_LEVELS-->
 ### Solana

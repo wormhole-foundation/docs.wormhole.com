@@ -10,7 +10,7 @@ Each Chain ID is documented on its page in the [Blockchain Environments](environ
 
 ## Consistency Level
 
-The level of finality (consistency) a transaction should meet before being signed by a Guardian. See [Consistency](broken-reference) page for details.
+The level of finality (consistency) a transaction should meet before being signed by a Guardian. See [Consistency](constants.md#consistency-levels) section of constants page for details.
 
 ## Delivery Provider
 
