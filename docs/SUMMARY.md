@@ -38,6 +38,7 @@
 * [API Docs](reference/api-docs/README.md)
   * [WormholeScan API](reference/api-docs/swagger.md)
 * [SDK Docs](reference/sdk-docs/README.md)
+  * [Connect SDK](reference/sdk-docs/connect-sdk.md)
 * [CLI Docs](reference/cli-docs/README.md)
 * [Glossary](reference/glossary.md)
 * [FAQ](reference/faq.md)
