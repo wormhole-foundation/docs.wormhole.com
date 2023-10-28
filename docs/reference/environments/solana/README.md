@@ -9,6 +9,8 @@ To develop contracts for Solana, you'll need to have the following tools install
 2) [Solana CLI tools](https://docs.solana.com/cli/install-solana-cli-tools) - CLI tools for working with Solana
 3) [Anchor](https://www.anchor-lang.com/docs/installation) - Smart contract development framework
 
+Install [Wormhole rust crates](https://lib.rs/crates/wormhole-token-bridge-solana) to interact with solana onchain programs and token bridge.
+
 <!-- TODO: still? -->
 {% hint style="warning" %}
 Known issues exist with Solana version 1.15 - downgrade to Solana 1.14.14
@@ -97,9 +99,9 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 ## Ecosystem
 
-- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- [Pythnet](https://pyth.network/), update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- Pyth Explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- [dev docs](https://docs.pyth.network/documentation), update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 
 ## Wormhole Details
 
