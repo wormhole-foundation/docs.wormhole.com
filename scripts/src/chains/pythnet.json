@@ -1,12 +1,17 @@
 {
+  "title": "Pythnet",
+  "homepage": "https://pyth.network/",
   "mainnet":{
     "name":"",
-    "id":"N/A"
+    "id":"26"
   },
   "testnet":{
     "name":"",
-    "id":"N/A"
+    "id":"[EVM testnet IDs](https://pyth.network/developers/price-feed-ids#pyth-evm-testnet)"
   },
+  "developer":[
+    {"url":"https://docs.pyth.network/documentation/pythnet-price-feeds/evm", "description":"Developer docs"},
+  ],
   "finality": {
     "confirmed": 0,
     "finalized": 1
