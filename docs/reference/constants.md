@@ -37,7 +37,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>arbitrum</td><td>23</td><td><code>Arbitrum One</code> - <code>42161</code></td><td><code>Goerli</code> - <code>421613</code></td></tr>
 <tr><td>optimism</td><td>24</td><td><code>10</code></td><td><code>Optimism Goerli</code> - <code>420</code></td></tr>
 <tr><td>gnosis</td><td>25</td><td><code>100</code></td><td><code>Chaido</code> - <code>10200</code></td></tr>
-<tr><td>pythnet</td><td>26</td><td><code>N/A</code></td><td><code>N/A</code></td></tr>
+<tr><td>pythnet</td><td>26</td><td></td><td></td></tr>
 <tr><td>xpla</td><td>28</td><td><code>dimension_37-1</code></td><td><code>cube_47-5</code></td></tr>
 <tr><td>base</td><td>30</td><td><code>Base</code> - <code>8453</code></td><td><code>Base Goerli</code> - <code>84531</code></td></tr>
 <tr><td>sei</td><td>32</td><td><code>pacific-1</code></td><td><code>atlantic-2</code></td></tr>
@@ -1313,11 +1313,5 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
-
-### pythnet
-|Level|Value|
-|-----|-----|
-|Confirmed|0|
-|Finalized|1|
 
 <!--CONSISTENCY_LEVELS-->
