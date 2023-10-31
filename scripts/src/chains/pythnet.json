@@ -3,11 +3,11 @@
   "homepage": "https://pyth.network/",
   "mainnet":{
     "name":"",
-    "id":"26"
+    "id":"N/A"
   },
   "testnet":{
     "name":"",
-    "id":"[EVM testnet IDs](https://pyth.network/developers/price-feed-ids#pyth-evm-testnet)"
+    "id":"N/A"
   },
   "developer":[
     {"url":"https://docs.pyth.network/documentation/pythnet-price-feeds/evm", "description":"Developer docs"},
