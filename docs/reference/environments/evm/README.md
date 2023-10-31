@@ -654,8 +654,8 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 ## Ecosystem
 
 - [Web site](https://klaytn.foundation/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/klaytn.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/klaytn.json)
+- [Klaytnfinder](https://www.klaytnfinder.io/) | [Klaytnscope](https://scope.klaytn.com/)
+- [Developer docs](https://docs.klaytn.foundation/) | [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
 
 ## Wormhole Details
 
