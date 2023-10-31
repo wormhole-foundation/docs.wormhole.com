@@ -99,9 +99,9 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 ## Ecosystem
 
-- [Pythnet](https://pyth.network/), update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
-- Pyth Explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
-- [dev docs](https://docs.pyth.network/documentation), update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 
 ## Wormhole Details
 
@@ -109,18 +109,13 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 - **Chain ID**: `26`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 
-### Consistency Levels
-
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
-
-|Level|Value|
-|-----|-----|
-|Confirmed|0|
-|Finalized|1|
 
 
 
-### Mainnet Contracts (<code>N/A</code>)
+
+
+
+### Mainnet Contracts 
 
 |Type|Contract|
 |----|--------|
@@ -128,7 +123,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>N/A</code>)
+### Testnet Contracts 
 
 |Type|Contract|
 |----|--------|
