@@ -17,7 +17,7 @@ Beware of scams. Admins will never DM or message you first
     Head over to the [Tutorial](../tutorials/) to start building.
 
 {% hint style="info" %}
-The old FAQ is still available [here](broken-reference)
+The old FAQ is still available [here](https://www.portalbridge.com/docs/)
 {% endhint %}
 
 ### 📞 Contact

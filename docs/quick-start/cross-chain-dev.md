@@ -25,7 +25,7 @@ With Automatic Relaying, only the contracts need to be developed. Leave the mess
 
 ![Specialized Relayer](../.gitbook/assets/specialized-relayer.png)
 
-With Specialized Relaying, the developer can communicate with [any blockchain Wormhole supports](broken-reference) and has the freedom to choose a delivery strategy.
+With Specialized Relaying, the developer can communicate with [any blockchain Wormhole supports](../reference/environments/README.md) and has the freedom to choose a delivery strategy.
 
 [Quick Start](specialized-relayer.md)
 
