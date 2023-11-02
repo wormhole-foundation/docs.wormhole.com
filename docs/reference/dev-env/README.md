@@ -38,7 +38,7 @@ In choosing which chains to use for integration testing, consider which chains i
 Find links for testnet faucets in the [blockchain details section](../environments/README.md)
 {% endhint %}
 
-A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](./#tilt) and [Wormhole Local Validator](./#wormhole-local-validator) available.
+A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](./#tilt) is available to run local instances of all the chains Wormhole supports.
 
 {% hint style="warning" %}
 The variation in host environments causing unique issues and the computational intensity of multiple simultaneous local validators can make it difficult or time consuming to setup. Prefer testnets for the simplest integration testing.
@@ -52,7 +52,7 @@ For that, the best option is likely to be [Tilt](./#tilt) since it allows you to
 
 ## Validator Setup
 
-If you'd like to set up a local validator environment, the following tools are provided.
+If you'd like to set up a local validator environment, follow the setup guide for Tilt.
 
 ### Tilt
 
@@ -60,13 +60,6 @@ A full-fledged Kubernetes deployment of every chain connected to Wormhole, along
 
 [Full setup guide for Tilt](tilt.md)
 
-### Wormhole Local Validator
-
-This is the simplest custom environment. It's BYOB (Bring your own Blockchain) with the ability to run your own local validator nodes and connect them to a single Guardian running on docker. Initial setup can take upwards 10 minutes, but once the image is built, restarts should take less than a minute.
-
-This environment requires installing the software for the validator nodes locally.
-
-[Full setup guide for Wormhole Local Validator](wormhole-local-validator.md)
 
 ## Deploying to public networks
 
