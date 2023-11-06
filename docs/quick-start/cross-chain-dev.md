@@ -6,7 +6,7 @@ If you haven't read the Wormhole [introduction](https://docs.wormhole.com/wormho
 
 [Relayers](https://docs.wormhole.com/wormhole/explore-wormhole/relayer) in the Wormhole context are processes that deliver Verifiable Action Approvals (VAAs) to their destination, playing a crucial role in Wormhole's security model. They can't compromise security, only liveness, and act as delivery mechanisms for VAAs without the capacity to tamper with the outcome.
 
-When building a cross chain application There are two primary ways to relay messages (VAAs) with Wormhole.
+When building a cross chain application, there are two primary ways to relay messages (VAAs) with Wormhole.
 
 1. [Automatic Relaying](cross-chain-dev.md#automatic-relaying) - No off chain code required
 2. [Specialized Relaying](cross-chain-dev.md#specialized-relayer) - Some off chain code may be required
