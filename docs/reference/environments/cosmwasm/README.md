@@ -45,7 +45,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>theta-testnet-0001</code>)
+### Testnet Contracts (<code>theta-testnet-001</code>)
 
 |Type|Contract|
 |----|--------|

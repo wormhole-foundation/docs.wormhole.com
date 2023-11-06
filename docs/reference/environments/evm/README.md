@@ -830,7 +830,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 
 
-### Mainnet Contracts (<code>23294</code>)
+### Mainnet Contracts (<code>42262</code>)
 
 |Type|Contract|
 |----|--------|
@@ -838,7 +838,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0x5848C791e09901b40A9Ef749f2a6735b418d7564`|
 |NFT Bridge|`0x04952D522Ff217f40B5Ef3cbF659EcA7b952a6c1`|
 
-### Testnet Contracts (<code>23295</code>)
+### Testnet Contracts (<code>42261</code>)
 
 |Type|Contract|
 |----|--------|

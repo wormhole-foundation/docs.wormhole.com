@@ -18,7 +18,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>bsc</td><td>4</td><td><code>56</code></td><td><code>97</code></td></tr>
 <tr><td>polygon</td><td>5</td><td><code>137</code></td><td><code>Mumbai</code> - <code>80001</code></td></tr>
 <tr><td>avalanche</td><td>6</td><td><code>C-Chain</code> - <code>43114</code></td><td><code>Fuji</code> - <code>43113</code></td></tr>
-<tr><td>oasis</td><td>7</td><td><code>23294</code></td><td><code>23295</code></td></tr>
+<tr><td>oasis</td><td>7</td><td><code>42262</code></td><td><code>42261</code></td></tr>
 <tr><td>algorand</td><td>8</td><td><code>mainnet-v1.0</code></td><td><code>testnet-v1.0</code></td></tr>
 <tr><td>aurora</td><td>9</td><td><code>1313161554</code></td><td><code>1313161555</code></td></tr>
 <tr><td>fantom</td><td>10</td><td><code>250</code></td><td><code>4002</code></td></tr>
@@ -42,7 +42,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>base</td><td>30</td><td><code>Base</code> - <code>8453</code></td><td><code>Base Goerli</code> - <code>84531</code></td></tr>
 <tr><td>sei</td><td>32</td><td><code>pacific-1</code></td><td><code>atlantic-2</code></td></tr>
 <tr><td>rootstock</td><td>33</td><td><code>30</code></td><td><code>31</code></td></tr>
-<tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-0001</code></td></tr>
+<tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
