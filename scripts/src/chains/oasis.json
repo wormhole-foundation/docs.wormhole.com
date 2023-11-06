@@ -3,11 +3,11 @@
   "homepage": "https://oasisprotocol.org/",
   "mainnet":{
     "name":"Mainnet",
-    "id":"23294"
+    "id":"42262"
   },
   "testnet":{
     "name":"Testnet",
-    "id":"23295"
+    "id":"42261"
   },
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
 }
