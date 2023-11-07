@@ -1,4 +1,3 @@
-
 Wormhole is a generic **message passing protocol** that enables communication between blockchains.
 
 ![Overview](.gitbook/assets/introduction/oversimplified.png)

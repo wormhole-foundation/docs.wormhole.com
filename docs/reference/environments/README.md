@@ -15,14 +15,14 @@ Wormhole supports a number of different blockchains and environments. Since many
 ## Blockchains Supported
 
 <table data-view="cards" data-full-width="false">
-   <thead>
-      <tr>
-         <th></th>
-         <th data-hidden data-card-target data-type="content-ref"></th>
-         <th data-hidden data-card-cover data-type="files"></th>
-      </tr>
-   </thead>
-   <tbody>
+<thead>
+    <tr>
+        <th></th>
+        <th data-hidden data-card-target data-type="content-ref"></th>
+        <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+</thead>
+<tbody>
 <!--SUPPORTED_BLOCKCHAIN_ECOSYSTEM_CARDS-->
 <tr>
     <td><strong>Acala</strong></td>
