@@ -130,7 +130,6 @@ Wormhole supports a growing number of blockchains
       </tr>
    </thead>
    <tbody>
-
 <!--SUPPORTED_BLOCKCHAIN_CARDS-->
 <tr>
     <td><strong>Acala</strong></td>
