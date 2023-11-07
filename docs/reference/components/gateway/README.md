@@ -48,7 +48,7 @@ The logical flow for this type of transfer is as follows:
 
 - Burn the [Token Factory](#token-factory-module) tokens 
 - Unlock the CW20 tokens
-- Grant approval to the [Token Bridge](./core-contracts.md#token-bridge) to spend the CW20 Tokens
+- Grant approval to the [Token Bridge](../core-contracts.md#token-bridge) to spend the CW20 Tokens
 - Call `InitiateTransfer` or `InitiateTransferWithPayload` based on whether the [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload) is of type `Simple` or `ContractControlled`
 
 ### Token Factory Module
