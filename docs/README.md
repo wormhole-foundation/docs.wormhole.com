@@ -1,4 +1,3 @@
-
 Wormhole is a generic **message passing protocol** that enables communication between blockchains.
 
 ![Overview](.gitbook/assets/introduction/oversimplified.png)
@@ -131,6 +130,7 @@ Wormhole supports a growing number of blockchains
       </tr>
    </thead>
    <tbody>
+
 <!--SUPPORTED_BLOCKCHAIN_CARDS-->
 <tr>
     <td><strong>Acala</strong></td>
