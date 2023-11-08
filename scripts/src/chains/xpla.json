@@ -1,11 +1,11 @@
 {
-    "title":"",
+    "title":"Xpla",
     "mainnet":{
-        "name":"",
+        "name":"Mainnet",
         "id":"dimension_37-1"
     },
     "testnet":{
-        "name":"",
+        "name":"Testnet",
         "id":"cube_47-5"
     }
 }
