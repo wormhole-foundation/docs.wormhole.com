@@ -75,7 +75,7 @@ VAAs simply attest that "this contract on this chain said this thing." Therefore
 
 This multicast-by-default model is integral to the design. Having this multicast capacity makes it easy to synchronize state across the entire ecosystem, because a single blockchain can make its data available to every chain in a single action with low latency. This reduces the complexity of the n^2 problems encountered by routing data to a large number of blockchains.
 
-This does not mean an application _cannot_ specify a destination address or chain. For example the Token Bridge and Automatic Relayer contracts require that some destination details are passed and verified on the destination chain. 
+This does not mean an application _cannot_ specify a destination address or chain. For example the Token Bridge and Standard Relayer contracts require that some destination details are passed and verified on the destination chain. 
 
 Because the VAA creation is separate from relaying, there is _no additional cost_ to the multicast model when a single chain is being targeted. If the data isn't needed on a certain blockchain, don't relay it there, and it won't cost anything.
 
