@@ -8,7 +8,7 @@ There are three primary types of relayers discussed:
 
 - [Specialized Relayers](#specialized-relayers): They are backend components that handle parts of the cross-chain process, offering a smoother user experience and allowing off-chain calculations to reduce gas costs. These relayers could operate through direct listening to the Guardian Network (Spy Relaying) or by providing a REST endpoint to accept VAAs to be relayed (REST Relaying).
 
-- [Automatic Relayers](#automatic-relayers): A decentralized relayer network that can deliver arbitrary VAAs, reducing the developer's need to develop, host, or maintain relayers. However, they require all calculations to be done on-chain and might be less gas-efficient.
+- [Standard Relayers](#standard-relayers): A decentralized relayer network that can deliver arbitrary VAAs, reducing the developer's need to develop, host, or maintain relayers. However, they require all calculations to be done on-chain and might be less gas-efficient.
 
 
 ## Client-side Relaying
@@ -74,9 +74,9 @@ Remember, despite their name, specialized relayers are still considered untruste
 
 
 
-## Automatic Relayers
+## Standard Relayers
 
-Automatic relayers are a component of a decentralized network in the Wormhole protocol, facilitating the delivery of Verifiable Action Approvals (VAAs) to recipient contracts compatible with the automatic relayer API.
+Standard relayers are a component of a decentralized network in the Wormhole protocol, facilitating the delivery of Verifiable Action Approvals (VAAs) to recipient contracts compatible with the standard relayer API.
 
 ### Key Features
 
@@ -85,7 +85,7 @@ Automatic relayers are a component of a decentralized network in the Wormhole pr
 
 ### Implementation
 
-The automatic relayer integration involves two key steps:
+The standard relayer integration involves two key steps:
 
 1. **Delivery Request:** Request delivery from the Wormhole Relay Ecosystem Contract.
 2. **Relay Reception:** Implement a "receiveRelay" function within their contracts. This function is invoked upon successful relay of the VAA.
@@ -93,7 +93,7 @@ The automatic relayer integration involves two key steps:
 ### Considerations
 
 {% hint style="info" %}
-Developers should note that the choice of relayers depends on the specific requirements and constraints of their project. Automatic relayers offer simplicity and convenience but might limit customization and optimization opportunities compared to specialized relayers.
+Developers should note that the choice of relayers depends on the specific requirements and constraints of their project. Standard relayers offer simplicity and convenience but might limit customization and optimization opportunities compared to specialized relayers.
 {% endhint %}
 
 - All computations are performed on-chain.

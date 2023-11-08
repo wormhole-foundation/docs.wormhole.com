@@ -21,7 +21,7 @@ The components outlined in **blue** are those that must be implemented by the de
 Automatic Relaying is currently only supported for EVM environments.
 {% endhint %}
 
-![Automatic Relayer](../.gitbook/assets/auto-relayer.png)
+![Standard Relayer](../.gitbook/assets/auto-relayer.png)
 
 With Automatic Relaying, only the contracts need to be developed. Leave the message delivery to a service provider.
 

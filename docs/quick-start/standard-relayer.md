@@ -1,10 +1,10 @@
 
-![Automatic Relayer](../.gitbook/assets/auto-relayer.png)
+![Standard Relayer](../.gitbook/assets/auto-relayer.png)
 
-The Automatic Relayer provides a mechanism for a contract on one chain to send a message to a contract on a different chain without the developer dealing with any off chain deployments. 
+The Standard Relayer provides a mechanism for a contract on one chain to send a message to a contract on a different chain without the developer dealing with any off chain deployments. 
 
 {% hint style="warning" %}
-Currently the Automatic Relayer feature is limited to EVM environments.
+Currently the Standard Relayer feature is limited to EVM environments.
 
 Find the complete list of EVM environment blockchains [here](../reference/environments/evm/README.md).
 {% endhint %}
@@ -99,7 +99,7 @@ wormholeRelayer.sendPayloadToEvm{value: cost}(
 
 ## Receiving a message
 
-To receive a message using the `Automatic Relayer` feature, the target contract must implement the [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole-relayer-solidity-sdk/blob/main/src/interfaces/IWormholeReceiver.sol) interface.
+To receive a message using the `Standard Relayer` feature, the target contract must implement the [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole-relayer-solidity-sdk/blob/main/src/interfaces/IWormholeReceiver.sol) interface.
 
 ```solidity
 function receiveWormholeMessages(

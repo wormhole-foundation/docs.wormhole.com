@@ -101,7 +101,7 @@ contract HelloWorld {
 }
 ```
 
-### Taking HelloWorld cross-chain using Wormhole Automatic Relayers
+### Taking HelloWorld cross-chain using Wormhole Standard Relayers
 
 Suppose we want users to be able to request, through their Ethereum wallet, that a greeting be sent to Avalanche, and vice versa.
 

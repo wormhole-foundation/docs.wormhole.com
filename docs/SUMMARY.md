@@ -5,8 +5,8 @@
 ## Quick Start
 
 * [Integrate Bridged Assets in your UI](tutorials/quick-start/wh-connect.md)
-* [Cross-chain Development](quick-start/cross-chain-dev.md)
-  * [Automatic Relayer](quick-start/automatic-relayer.md)
+* [Developing Cross Chain Dapps](quick-start/cross-chain-dev.md)
+  * [Standard Relayer](quick-start/standard-relayer.md)
   * [Specialized Relayer](quick-start/specialized-relayer.md)
 * [Tutorials](tutorials/README.md)
   * [Hello Wormhole](tutorials/quick-start/hello-wormhole/README.md)

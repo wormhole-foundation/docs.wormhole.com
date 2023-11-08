@@ -712,7 +712,7 @@ The following tables document the deployed contract addresses for contracts on e
 <!--NFT_BRIDGE_ADDRESS-->
 
 
-### Automatic Relayer
+### Standard Relayer
 <!--RELAYER_BRIDGE_ADDRESS-->
 <table data-full-width="true">
 <thead>
