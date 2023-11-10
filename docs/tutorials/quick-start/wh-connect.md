@@ -1,6 +1,41 @@
+
+## Summary
+
+Wormhole Connect is a frontend-embeddable SDK that lets developers support easy access to Wormhole powered bridges directly from within a platform or Dapp. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
+
 With Wormhole Connect, integration with wormhole is easier than ever.
 
 [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
+
+{% hint style="success" %}
+The Wormhole SDK (a separate product from Connect) allows you to custom embed the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../reference/sdk-docs/connect-sdk.md)
+{% endhint %}
+
+## Functionality in Connect
+
+1. **Gasless Txns:** Users can bridge without paying gas on the destination chain. 
+    1. ETH on Ethereum → whETH on Solana, only pays gas in ETH on Ethereum (covers both send and redeem)
+
+2. **Gas Dropoff:** User can bridge while only paying gas on the source chain and swap some of the transferred asset into the destination gas token. 
+    1. ETH on Ethereum → whETH on Avalanche + AVAX on Avalanche, only pays gas in ETH on Ethereum (covers both send and redeem)
+
+
+## Bridges in Connect
+
+Connect and the corresponding SDK will have 4 primary routes:
+
+- USDC Bridge - USDC gaslessly and quickly bridged between any CCTP supported chains
+- Portal - WH wrapped asset bridging
+    - Users can bridge any token between WH supported chains via the TokenBridge contracts that power Portal bridge today
+- **NEW** CCTP Based Liquidity Bridge - New price-efficient, fast transfer solution built atop CCTP x WH Messaging
+- **NEW** Uni V3 Based Liquidity Bridge - New solution built atop seeded liquidity for WH wrapped assets against native assets in Uni V3 pools
+
+
+Connect can be integrated directly as a customizable, drop-in widget or a developer can choose to utilize all or some of the functionality via a fully customized integration through the Wormhole SDK.
+
+- **Connect UI**: A customizable frontend that takes in the necessary input from the user, integrated via an NPM package
+- **Wormhole SDK**: Typescript SDK to directly call the functions powering the Connect widget, all connect functionality will live in a specific interface within the general WH SDK
+    - The routing logic and contract calls will be built into the Connect Interface in the Wormhole SDK (formerly, this was a distinct, Connect SDK, the interface has been merged in to maintain a single WH SDK).
 
 
 ## Ultra Quick Start
@@ -190,3 +225,27 @@ export interface WormholeConnectConfig {
 ```
 
 </details>
+
+
+## Feature Support Matrix
+
+| Native Asset Bridge | Portal Wrapped Asset Bridge | 0 Slippage CCTP USDC Bridge | Gas Dropoff | Gasless Transactions|
+| --- | --- | --- | --- | --- |
+| Ethereum | 11/30 | ✅​ | ✅​ | ✅​ | ✅​ |
+| Arbitrum | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge) |
+| Optimism | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge)|
+| Avalanche | 1/30 | ✅​ | ✅​ | ✅​ | ✅​|
+| Base | 11/30 | ✅​ | ✅​ | ✅​ | ✅​|
+| Solana | 1/30 | ✅​ | N | ✅​ | ✅​|
+| BSC | 1/30 | ✅​ | N | ✅​ | ✅​|
+| Polygon | 1/30 | ✅​ | N | ✅​ | ✅​|
+| Fantom | ✅​ | N | ✅​ | ✅​ | 
+| Celo | ✅​ | N | ✅​ | ✅​ |
+| Moonbeam | ✅​ | N | ✅​ | ✅​ |
+| Sui | ✅​ | N | ✅​ | ✅​|
+| Aptos | ✅​ | N | N | N|
+| Sei | ✅​ | N | N | N|
+| Osmosis | ✅​ | N | N | Y (only towards)|
+| Evmos (soon) | ✅​ | N | N | Y (only towards)|
+| Kujira (soon) | ✅​ | N | N | Y (only towards)|
+| CosmosHub (soon) | ✅​ | N | N | Y (only towards)|
