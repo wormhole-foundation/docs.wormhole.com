@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-* [Connect: Asset Bridging Made Simple](tutorials/quick-start/wh-connect.md)
+* [Connect: Asset Bridging Made Simple](tutorials/quick-start/wormhole-connect/wh-connect.md)
 * [Developing Cross Chain Dapps](quick-start/cross-chain-dev.md)
   * [Standard Relayer](quick-start/standard-relayer.md)
   * [Specialized Relayer](quick-start/specialized-relayer.md)
@@ -13,6 +13,9 @@
     * [Hello Wormhole Explained](tutorials/quick-start/hello-wormhole/hello-wormhole-explained.md)
     * [Beyond Hello Wormhole](tutorials/quick-start/hello-wormhole/beyond-hello-wormhole.md)
   * [Hello Token](tutorials/quick-start/hello-token/README.md)
+  * [CCTP](tutorials/quick-start/cctp/README.md)
+    * [Wormhole Connect](tutorials/quick-start/cctp/wh-connect.md)
+    * [Connect SDK](tutorials/quick-start/cctp/sdk.md)
   * [Simple Relayer](tutorials/quick-start/relayer/README.md)
     * [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)
 * [Demos](tutorials/demos.md)
