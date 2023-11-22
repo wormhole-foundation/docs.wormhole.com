@@ -409,7 +409,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 <!--XPLA_CHAIN_DETAILS-->
 
-# xpla
+# Xpla
 
 ## Ecosystem
 
