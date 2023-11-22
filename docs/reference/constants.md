@@ -1105,8 +1105,8 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>base</td>
-      <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x03faBB06Fa052557143dC28eFCFc63FC12843f1D</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
