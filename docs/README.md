@@ -297,7 +297,7 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/terra2.svg">terra2</a></td>
 </tr>
 <tr>
-    <td><strong></strong></td>
+    <td><strong>Xpla</strong></td>
     <td><a href="./reference/environments/cosmwasm/README.md#xpla">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/xpla.svg">xpla</a></td>
 </tr>
