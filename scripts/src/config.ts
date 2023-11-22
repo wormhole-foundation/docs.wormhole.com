@@ -118,6 +118,7 @@ export function getDocChains(): DocChain[] {
     avalanche: { cctp: "0x09Fb06A271faFf70A651047395AaEb6265265F13" },
     ethereum: { cctp: "0xAaDA05BD399372f0b0463744C09113c137636f6a" },
     optimism: { cctp: "0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c" },
+    base: { cctp: "0x03faBB06Fa052557143dC28eFCFc63FC12843f1D" },
   };
 
   const testnetCCTP = {
@@ -125,6 +126,7 @@ export function getDocChains(): DocChain[] {
     avalanche: { cctp: "0x58f4c17449c90665891c42e14d34aae7a26a472e" },
     ethereum: { cctp: "0x0a69146716b3a21622287efa1607424c663069a4" },
     optimism: { cctp: "0x2703483b1a5a7c577e8680de9df8be03c6f30e3c" },
+    base: { cctp: "0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c" },
   };
 
   // Chains we don't want to appear on the docs

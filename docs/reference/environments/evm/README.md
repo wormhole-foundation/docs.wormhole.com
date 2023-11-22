@@ -348,6 +348,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |Token Bridge|`0x8d2de8d2f73F1F4cAB472AC9A881C9b123C79627`|
 |NFT Bridge|`0xDA3adC6621B2677BEf9aD26598e6939CF0D92f88`|
 |Relayer|`0x706f82e9bb5b0813501714ab5974216704980e31`|
+|CCTP|`0x03faBB06Fa052557143dC28eFCFc63FC12843f1D`|
 
 ### Testnet Contracts (<code>Base Goerli</code> - <code>84531</code>)
 
@@ -359,6 +360,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |Relayer|`0xea8029CD7FCAEFFcD1F53686430Db0Fc8ed384E1`|
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x9Ee656203B0DC40cc1bA3f4738527779220e3998`|
+|CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
 ### Local Network Contract
 
