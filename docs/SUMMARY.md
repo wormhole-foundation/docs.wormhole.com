@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-* [Integrate Bridged Assets in your UI](tutorials/quick-start/wh-connect.md)
+* [Connect: Asset Bridging Made Simple](tutorials/quick-start/wh-connect.md)
 * [Developing Cross Chain Dapps](quick-start/cross-chain-dev.md)
   * [Standard Relayer](quick-start/standard-relayer.md)
   * [Specialized Relayer](quick-start/specialized-relayer.md)
