@@ -1,4 +1,4 @@
-Using [CCTP](./README.md) to transfer native USDC across chains with the [Connect SDK](../../../reference/sdk-docs/connect-sdk.md) works very much like a standard Token Transfer with the SDK.
+The Connect SDK enables fast, cheap, native USDC bridging powered by Circle's Cross Chain Transfer Protocol. Using [CCTP](./README.md) to transfer native USDC across chains with the [Connect SDK](../../../reference/sdk-docs/connect-sdk.md) works very much like a standard Token Transfer with the SDK.
 
 ## Installation 
 
