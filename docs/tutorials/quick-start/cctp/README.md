@@ -38,7 +38,7 @@ Native gas dropoff is limited to TODO
 
 Supporting CCTP with manual transfers or automatic transfers is easy using the Wormhole Connect widget.
 
-A full tutorial is available [here](./wh-connect.md)
+A full tutorial is available [here](https://docs.wormhole.com/wormhole/quick-start/wh-connect))
 
 ## Connect SDK
 
