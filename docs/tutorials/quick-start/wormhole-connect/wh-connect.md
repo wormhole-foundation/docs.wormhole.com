@@ -3,12 +3,12 @@
 
 Wormhole Connect is a frontend-embeddable SDK that lets developers support easy access to Wormhole powered bridges directly from within a platform or Dapp. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
 
-With Wormhole Connect, integration with wormhole is easier than ever.
+With Wormhole Connect, integration with wormhole is easier than ever. [Try out the no-code customizer now!](https://connect-in-style.wormhole.com/)
 
 [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
 
 {% hint style="success" %}
-The Wormhole SDK (a separate product from Connect) allows you to custom embed the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../reference/sdk-docs/connect-sdk.md)
+The Wormhole SDK (a separate product from the embeddable Connect Widget) allows you to custom integrate the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../reference/sdk-docs/connect-sdk.md)
 {% endhint %}
 
 ## Functionality in Connect
@@ -229,23 +229,23 @@ export interface WormholeConnectConfig {
 
 ## Feature Support Matrix
 
-| Native Asset Bridge | Portal Wrapped Asset Bridge | 0 Slippage CCTP USDC Bridge | Gas Dropoff | Gasless Transactions|
+| Network | Native Asset Bridge | Portal Wrapped Asset Bridge | 0 Slippage CCTP USDC Bridge | Gas Dropoff | Gasless Transactions|
 | --- | --- | --- | --- | --- |
 | Ethereum | 11/30 | ✅​ | ✅​ | ✅​ | ✅​ |
 | Arbitrum | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge) |
 | Optimism | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge)|
 | Avalanche | 1/30 | ✅​ | ✅​ | ✅​ | ✅​|
 | Base | 11/30 | ✅​ | ✅​ | ✅​ | ✅​|
-| Solana | 1/30 | ✅​ | N | ✅​ | ✅​|
+| Solana | 1/30 | ✅​ | 12/30​ | ✅​ | ✅​|
 | BSC | 1/30 | ✅​ | N | ✅​ | ✅​|
 | Polygon | 1/30 | ✅​ | N | ✅​ | ✅​|
-| Fantom | ✅​ | N | ✅​ | ✅​ | 
-| Celo | ✅​ | N | ✅​ | ✅​ |
-| Moonbeam | ✅​ | N | ✅​ | ✅​ |
-| Sui | ✅​ | N | ✅​ | ✅​|
-| Aptos | ✅​ | N | N | N|
-| Sei | ✅​ | N | N | N|
-| Osmosis | ✅​ | N | N | Y (only towards)|
-| Evmos (soon) | ✅​ | N | N | Y (only towards)|
-| Kujira (soon) | ✅​ | N | N | Y (only towards)|
-| CosmosHub (soon) | ✅​ | N | N | Y (only towards)|
+| Fantom | TBD | ✅​ | N | ✅​ | ✅​ | 
+| Celo | TBD | ✅​ | N | ✅​ | ✅​ |
+| Moonbeam | TBD | ✅​ | N | ✅​ | ✅​ |
+| Sui | TBD | ✅​ | N | ✅​ | ✅​|
+| Aptos | TBD | ✅​ | N | N | N|
+| Sei | TBD | ✅​ | N | N | N|
+| Osmosis | TBD | ✅​ | N | N | Y (only destination)|
+| Evmos | TBD | ✅​ | N | N | Y (only destination)|
+| Kujira | TBD | ✅​ | N | N | Y (only destination)|
+| CosmosHub | TBD | ✅​ | N | N | Y (only destination)|
