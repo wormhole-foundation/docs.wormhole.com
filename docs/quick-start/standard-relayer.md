@@ -137,7 +137,7 @@ Some implementation details should be considered during development to ensure sa
 
 # Off Chain
 
-If taking advantage of Automatic Relaying, no off chain logic need be implemented. 
+If taking advantage of Automatic Relaying, no off chain logic needs be implemented. 
 
 While no off chain programs are required, a developer may want to track the progress of messages in flight. To track the progress of messages in flight, use the worm CLI tool's `status` subcommand.
 
