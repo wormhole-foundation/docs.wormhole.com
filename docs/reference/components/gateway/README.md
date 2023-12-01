@@ -14,7 +14,7 @@ In addition to facilitating asset transfers,  _Wormhole Gateway_ (FKA `wormchain
 
 Wormhole Gateway is implemented as a set of contracts and modules.
 
-The contract addreses for these components are:
+The contract addresses for these components are:
 
 | Contract | Mainnet Address | Testnet Address |
 | -------- | ------- |---------|
@@ -26,7 +26,7 @@ The contract addreses for these components are:
 
 ### Wormhole Core Contracts
 
-The [core contracts](../core-contracts.md) to emit messages and verify [Guardian](../guardian.md) signatures are still required on each Cosmos chain that requires generic message passing. Notably, for Gateway token bridging, no core contracts need be deployed.
+The [core contracts](../core-contracts.md) to emit messages and verify [Guardian](../guardian.md) signatures are still required on each Cosmos chain that requires generic message passing. Notably, for Gateway token bridging, no core contracts need to be deployed.
 
 ### IBC Shim Contract
 
