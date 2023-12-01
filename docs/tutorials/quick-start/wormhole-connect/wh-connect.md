@@ -230,7 +230,7 @@ export interface WormholeConnectConfig {
 ## Feature Support Matrix
 
 | **Network** | **Native Asset Bridge** | **Portal Wrapped Asset Bridge** | **0 Slippage CCTP USDC Bridge** | **Gas Dropoff** | **Gasless Transactions**|
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | Ethereum | 11/30 | ✅​ | ✅​ | ✅​ | ✅​ |
 | Arbitrum | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge) |
 | Optimism | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge)|
