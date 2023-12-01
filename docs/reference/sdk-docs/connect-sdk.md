@@ -191,7 +191,7 @@ Each platform can be installed separately so that dependencies can stay as minim
 
 ### Chain Context
 
-The `Wormhole` class provides a `getChain` method that returns a `ChainContext` object for a given chain.  This object provides access to the chain specific methods and utilities.  Much of the functionality in the `ChainContext` is provided by the `Platform` methods but the specific chain may have overriden methods. 
+The `Wormhole` class provides a `getChain` method that returns a `ChainContext` object for a given chain.  This object provides access to the chain specific methods and utilities.  Much of the functionality in the `ChainContext` is provided by the `Platform` methods but the specific chain may have overridden methods. 
 
 The ChainContext object is also responsible for holding a cached rpc client and protocol clients. 
 
@@ -236,7 +236,7 @@ Supported protocols are defined in the [definitions module](https://github.com/w
 
 ### Signers
 
-In order to sign transactions, an object that fulfils the `Signer` interface is required.  This is a simple interface that can be implemented by wrapping a web wallet or other signing mechanism.  
+In order to sign transactions, an object that fulfills the `Signer` interface is required.  This is a simple interface that can be implemented by wrapping a web wallet or other signing mechanism.  
 
 ```ts
 // A Signer is an interface that must be provided to certain methods
@@ -289,7 +289,7 @@ const receiver: Signer = // ...
 
 Within the Wormhole context, addresses are [normalized](https://docs.wormhole.com/wormhole/blockchain-environments/evm#addresses) to 32 bytes and referred to in this SDK as a `UniversalAddresses`.
 
-Each platform comes with an address type that understands the native address formats, unsuprisingly referred to a NativeAddress. This abstraction allows the SDK to work with addresses in a consistent way regardless of the underlying chain. 
+Each platform comes with an address type that understands the native address formats, unsurprisingly referred to a NativeAddress. This abstraction allows the SDK to work with addresses in a consistent way regardless of the underlying chain. 
 
 ```ts
 // Convert a string address to its Native address
