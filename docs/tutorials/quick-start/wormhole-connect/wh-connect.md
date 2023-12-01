@@ -229,23 +229,23 @@ export interface WormholeConnectConfig {
 
 ## Feature Support Matrix
 
-| Native Asset Bridge | Portal Wrapped Asset Bridge | 0 Slippage CCTP USDC Bridge | Gas Dropoff | Gasless Transactions|
+| **Network** | **Native Asset Bridge** | **Portal Wrapped Asset Bridge** | **0 Slippage CCTP USDC Bridge** | **Gas Dropoff** | **Gasless Transactions**|
 | --- | --- | --- | --- | --- |
 | Ethereum | 11/30 | ✅​ | ✅​ | ✅​ | ✅​ |
 | Arbitrum | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge) |
 | Optimism | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge)|
 | Avalanche | 1/30 | ✅​ | ✅​ | ✅​ | ✅​|
 | Base | 11/30 | ✅​ | ✅​ | ✅​ | ✅​|
-| Solana | 1/30 | ✅​ | N | ✅​ | ✅​|
+| Solana | 1/30 | ✅​ | 12/30​ | ✅​ | ✅​|
 | BSC | 1/30 | ✅​ | N | ✅​ | ✅​|
 | Polygon | 1/30 | ✅​ | N | ✅​ | ✅​|
-| Fantom | ✅​ | N | ✅​ | ✅​ | 
-| Celo | ✅​ | N | ✅​ | ✅​ |
-| Moonbeam | ✅​ | N | ✅​ | ✅​ |
-| Sui | ✅​ | N | ✅​ | ✅​|
-| Aptos | ✅​ | N | N | N|
-| Sei | ✅​ | N | N | N|
-| Osmosis | ✅​ | N | N | Y (only towards)|
-| Evmos (soon) | ✅​ | N | N | Y (only towards)|
-| Kujira (soon) | ✅​ | N | N | Y (only towards)|
-| CosmosHub (soon) | ✅​ | N | N | Y (only towards)|
+| Fantom | TBD | ✅​ | N | ✅​ | ✅​ | 
+| Celo | TBD | ✅​ | N | ✅​ | ✅​ |
+| Moonbeam | TBD | ✅​ | N | ✅​ | ✅​ |
+| Sui | TBD | ✅​ | N | ✅​ | ✅​|
+| Aptos | TBD | ✅​ | N | N | N|
+| Sei | TBD | ✅​ | N | N | N|
+| Osmosis | TBD | ✅​ | N | N | Y (only destination)|
+| Evmos | TBD | ✅​ | N | N | Y (only destination)|
+| Kujira | TBD | ✅​ | N | N | Y (only destination)|
+| CosmosHub | TBD | ✅​ | N | N | Y (only destination)|
