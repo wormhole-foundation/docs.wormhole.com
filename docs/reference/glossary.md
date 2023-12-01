@@ -22,7 +22,7 @@ The contract that calls the Wormhole Core contract. It's address is included in 
 
 ## Finality
 
-The Finality of a transaction is dependant on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back.
+The Finality of a transaction is dependent on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back.
 
 ## Gateway
 
