@@ -4,11 +4,11 @@ Regardless of the development environment that you use, there are a few wormhole
 
 ### [Wormhole Explorer](https://wormholescan.io)
 
-Resource for looking at individual transfers statuses on mainnet and testnet.
+Resource for looking at individual transfer statuses on mainnet and testnet.
 
 ### [Wormhole Core Repository](https://github.com/wormhole-foundation/wormhole/tree/main/)
 
-Most developers find it useful to clone the Wormhole Core repository. This repository provides the Devnet Tilt environment, plenty of useful code examples and tests, along with some utilities which do not have an official release package.
+Most developers find it useful to clone the Wormhole Core repository. This repository provides the Devnet Tilt environment, plenty of useful code examples and tests, along with some utilities that do not have an official release package.
 
 ### [Worm CLI tool](https://github.com/wormhole-foundation/wormhole/tree/main/clients/js)
 
