@@ -12,7 +12,7 @@ There are three relevant interfaces to discuss when utilizing the WormholeRelaye
 
 Check the [EVM page](../evm/README.md) for contract addresses on each supported blockchain.
 
-Check the [Hello Wormhole page](../../../tutorials/quick-start/hello-wormhole/README.md) for a quick example on using these interfaces!
+Check the [Hello Wormhole page](../../../tutorials/quick-start/hello-wormhole/README.md) for a quick example of using these interfaces!
 
 # Delivery Guarantees & Delivery Failures
 
@@ -27,7 +27,7 @@ Delivery providers should set their prices such that they turn a profit on avera
 
 ### Delivery Statuses
 
-All deliveries should result in one of following four outcomes prior to the delivery timeframe of the delivery provider. These outcomes are emitted as EVM events from the WormholeRelayer contract when they occur.
+All deliveries should result in one of the following four outcomes prior to the delivery timeframe of the delivery provider. These outcomes are emitted as EVM events from the WormholeRelayer contract when they occur.
 
 - (0) Delivery Success
 - (1) Receiver Failure
@@ -37,11 +37,11 @@ All deliveries should result in one of following four outcomes prior to the deli
 A receiver failure is a well-defined term which means that the selected provider **performed the delivery, but the delivery was not able to be completed.** There are only three causes for a delivery failure:
 
 - the target contract does not implement the `IWormholeReceiver` interface
-- the target contract threw an exception or reverted during execution of `receiveWormholeMessages`
+- the target contract threw an exception or reverted during the execution of `receiveWormholeMessages`
 - the target contract exceeded the specified `gasLimit` while executing `receiveWormholeMessages`
 
-All three of these scenarios should generally be avoidable by the integrator, and thus it is up to integrator to resolve them.
+All three of these scenarios should generally be avoided by the integrator, and thus it is up to the integrator to resolve them.
 
-Any other senario which causes a delivery to not be performed should be considered an **outage** by some component of the system, including potentially the blockchains themselves.
+Any other scenario that causes a delivery to not be performed should be considered an **outage** by some component of the system, including potentially the blockchains themselves.
 
 Forward Request Success and Forward Failure represent when the delivery succeeded, and a 'forward' was requested by the user during the delivery. If the user had enough funds left over as a refund to complete the forward, the forward will be executed and the status will be 'Forward Request Success' - otherwise, it will be 'Forward Request Failure'.
