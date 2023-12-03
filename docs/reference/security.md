@@ -16,7 +16,7 @@ At the core, Wormhole is secured by a network of [Guardians](./components/guardi
 > - By default, you only trust Wormhole's signing process and the Core Contracts of the chains you're on.
 > - You can expand your contract and chain dependencies as you see fit.
 
-Core assumptions aside, there are many other factors which impact the real-world security of decentralized platforms. Here is more information on additional measures which have been put in place to ensure the security of Wormhole.
+Core assumptions aside, there are many other factors that impact the real-world security of decentralized platforms. Here is more information on additional measures that have been put in place to ensure the security of Wormhole.
 
 
 ## Guardian Network
@@ -26,7 +26,7 @@ Wormhole is an evolving platform. While the Guardian set currently comprises 19 
 ### Governance
 
 
-Governance is the process through which contract upgrades happen.  Guardians manually vote on governance proposals which originate inside the Guardian Network and are then submitted to ecosystem contracts. 
+Governance is the process through which contract upgrades happen.  Guardians manually vote on governance proposals that originate inside the Guardian Network and are then submitted to ecosystem contracts. 
 
 This means that **governance actions are held to the same security standard** as the rest of the system. A 2/3 super-majority of the Guardians are required to pass any Governance action.
 
@@ -59,13 +59,13 @@ Guardians Monitor:
 
 One of the most powerful aspects of the Wormhole ecosystem is that Guardians effectively have **the entire state DeFi available to them**.
 
-Gateway is a Cosmos based blockchain which runs internally to the Guardian network, whereby the Guardians can effectively execute smart contracts against the current state of all blockchains, rather than just one blockchain.
+Gateway is a Cosmos based blockchain that runs internally to the Guardian network, whereby the Guardians can effectively execute smart contracts against the current state of all blockchains, rather than just one blockchain.
 
 This enables additional protection for the Wormhole Asset Layer in addition to the core assumptions:
 
-- **Global Accountant:** The accountant tracks the total circulating supply of all Wormhole assets across all chains and prevents any blockchain from bridging assets which would violate the supply invariant.
+- **Global Accountant:** The accountant tracks the total circulating supply of all Wormhole assets across all chains and prevents any blockchain from bridging assets that would violate the supply invariant.
 
-In addition to the Global Accountant, Guardians may only sign transfers that do not violate the requirements of the [Governor](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0007_governor.md). The Governor tracks inflows and outflows of all blockchains and delays suspicious transfers which may be indicative of a exploit.
+In addition to the Global Accountant, Guardians may only sign transfers that do not violate the requirements of the [Governor](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0007_governor.md). The Governor tracks inflows and outflows of all blockchains and delays suspicious transfers which may be indicative of an exploit.
 
 ## Open Source
 
