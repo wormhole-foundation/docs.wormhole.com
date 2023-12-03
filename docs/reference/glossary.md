@@ -22,7 +22,7 @@ The contract that calls the Wormhole Core contract. It's address is included in 
 
 ## Finality
 
-The Finality of a transaction is dependant on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back.
+The Finality of a transaction is dependent on the blockchain properties. After a transaction is considered final, it can be assumed the state changes it caused won't be rolled back.
 
 ## Gateway
 
@@ -52,7 +52,7 @@ An Observation is the data structure that describes a message that was emitted b
 
 ## Relayer
 
-A Relayer is any process which delivers VAAs to a destination.
+A Relayer is any process that delivers VAAs to a destination.
 
 ## Sequence
 
