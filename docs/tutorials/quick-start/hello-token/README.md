@@ -212,7 +212,7 @@ The arguments `payload`, `sourceAddress`, `sourceChain`, and `deliveryHash` are 
 Let's delve into the fields that are provided to us in the `TokenReceived` struct:
 
 - **tokenHomeAddress**
-  The same as the `token` field in the call to `sendTokenWithPayloadToEvm`, as that is the original address of the token unless the original token sent is a wormhole-wrapped token. In the case a wrapped token is sent, this will be the address of the original version of the token (on it’s native chain) in [wormhole address format](https://docs.wormhole.com/wormhole/reference/environments/evm#addresses) - i.e. left-padded with 12 zeros
+  The same as the `token` field in the call to `sendTokenWithPayloadToEvm`, as that is the original address of the token unless the original token sent is a wormhole-wrapped token. In the case a wrapped token is sent, this will be the address of the original version of the token (on it’s native chain) in [wormhole address format](https://docs.wormhole.com/wormhole/blockchain-environments/evm#addresses) - i.e. left-padded with 12 zeros
 - **tokenHomeChain**
   The chain (in wormhole chain ID format) corresponding to the home address above - this will be the source chain, unless if the original token sent is a wormhole-wrapped asset, in which case it will be the chain of the unwrapped version of the token.
 
