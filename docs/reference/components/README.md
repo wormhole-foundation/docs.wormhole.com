@@ -2,7 +2,7 @@
 
 Wormhole is comprised of several noteworthy components. Before we go into each component in depth, let's talk about the names of the major pieces and how they fit together.
 
-![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.png)
+![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.jpg)
 
 ## On-Chain Components
 
