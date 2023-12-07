@@ -49,7 +49,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 |-----|-----|
 |Finalized|0|
 
-This field is may be ignored since the chain provides instant finality.
+This field may be ignored since the chain provides instant finality.
 
 
 For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)

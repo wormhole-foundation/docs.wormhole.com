@@ -143,7 +143,7 @@ The Wormhole Relayer contract lets us do exactly this! Let’s take a look at th
      * @param payload arbitrary bytes to pass in as parameter in call to `targetAddress`
      * @param receiverValue msg.value that delivery provider should pass in for call to `targetAddress` (in targetChain currency units)
      * @param gasLimit gas limit with which to call `targetAddress`.
-     * @return sequence sequence number of published VAA containing delivery instructions
+     * @return sequence number of published VAA containing delivery instructions
      */
     function sendPayloadToEvm(
         uint16 targetChain,
