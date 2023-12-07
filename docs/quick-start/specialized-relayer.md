@@ -187,7 +187,7 @@ Once the VAA is available, a [Relayer](../reference/components/relayer.md) may d
 
 A relayer is needed to deliver the VAA containing the message to the target chain. When the relayer is written specifically for a custom application, it's referred to as a [Specialized Relayer](./specialized-relayer.md)
 
-A specialized relayer might be as simple as an in browser process that polls the [API](../reference/api-docs/README.md) for the availability of a VAA after submitting a transaction and delivers it to the target chain. It might also be implemented with a [Spy](../reference/components/spy.md) coupled with some daemon listening for VAAs from a relevant `chainID` and `emitter` then taking action when one is observed.
+A specialized relayer might be as simple as an in browser process that polls the [API](../reference/api-docs/README.md) for the availability of a VAA after submitting a transaction and delivering it to the target chain. It might also be implemented with a [Spy](../reference/components/spy.md) coupled with some daemon listening for VAAs from a relevant `chainID` and `emitter` then taking action when one is observed.
 
 
 ### Simple Relayer 

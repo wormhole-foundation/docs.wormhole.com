@@ -4,7 +4,7 @@
 Tilt is often referred to as 'Devnet' in the Wormhole ecosystem so any information that is labeled as 'devnet' also applies to Tilt.
 {% endhint %}
 
-[Tilt](https://tilt.dev/) is part of the official Docker ecosystem. It's a tool which allows developers to easily configure a Kubernetes environment for development.
+[Tilt](https://tilt.dev/) is part of the official Docker ecosystem. It's a tool that allows developers to easily configure a Kubernetes environment for development.
 
 However, in the context of Wormhole, 'Tilt' refers to the development environment used by the [Wormhole Core Repository](https://github.com/wormhole-foundation/wormhole). This environment stands up docker images for all the tools necessary to build across multiple blockchains, including:
 
@@ -18,7 +18,7 @@ The 'Tilt' environment is meant to provide an entire cross-chain development sta
 
 #### Is Tilt Right for You?
 
-Tilt is a good option for developers that need some local devnet and have access to a machine that can handle running them. It is a great option for developers that want to establish some CI testing suite.
+Tilt is a good option for developers that need some local devnet and have access to a machine that can handle running them. It is a great option for developers who want to establish some CI testing suite.
 
 **Pros**
 
@@ -174,7 +174,7 @@ tilt up -- --algorand --solana
 
 Tilt can be treated as an external environment / testnet that you can easily spin up and tear down.
 
-If you've followed the standard setup, all your resources will be bound to various ports on localhost. To see all the endpoints which are being hosted in your Tilt environment, you should check the Tilt dashboard, located at [http://localhost:10350/overview](http://localhost:10350/overview).
+If you've followed the standard setup, all your resources will be bound to various ports on localhost. To see all the endpoints that are being hosted in your Tilt environment, you should check the Tilt dashboard, located at [http://localhost:10350/overview](http://localhost:10350/overview).
 
 All the deployed contract addresses can be found under the 'Devnet' section of the chain being used in the [Environments](../environments/README.md) pages.
 
