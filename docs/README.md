@@ -42,7 +42,7 @@ Tutorials are available to get started quickly and explain the concepts involved
         <tr>
             <td><strong>Quick Start</strong> - Off Chain</td>
             <td>Integrate Wormhole Connect to a new or existing web UI</td>
-            <td><a href="./tutorials/quick-start/wormhome-connect/wh-connect.md">wh-connect.md</a></td>
+            <td><a href="./tutorials/quick-start/wormhole-connect/wh-connect.md">wh-connect.md</a></td>
             <td><a href=".gitbook/assets/wh-connect-default.png">wh-connect-default.png</a></td>
         </tr>
         <tr>
@@ -74,7 +74,7 @@ Find out more about the Wormhole ecosystem, components, and protocols.
             <td><strong>Architecture</strong></td>
             <td>Dig into the components of the protocol</td>
             <td><a href="./reference/components/README.md">components</a></td>
-            <td><a href=".gitbook/assets/core-concepts/detailed-flow.png">detailed-flow.png</a></td>
+            <td><a href=".gitbook/assets/core-concepts/detailed-flow.jpg">detailed-flow.jpg</a></td>
         </tr>
         <tr>
             <td><strong>Protocol Specifications</strong></td>
