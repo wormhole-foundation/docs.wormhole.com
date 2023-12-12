@@ -1,11 +1,11 @@
 
 ## Summary
 
-Wormhole Connect is a frontend-embeddable SDK that lets developers support easy access to Wormhole powered bridges directly from within a platform or Dapp. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
+Wormhole Connect is a frontend-embeddable widget that lets developers support easy, customized access to Wormhole powered bridges directly from within a platform or Dapp. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
 
-With Wormhole Connect, integration with wormhole is easier than ever. [Try out the no-code customizer now!](https://connect-in-style.wormhole.com/)
+Wormhole Connect makes integration with Wormhole-powered services easier than ever. [Try out the no-code customizer now!](https://connect-in-style.wormhole.com/)
 
-[Github repository](https://github.com/wormhole-foundation/wormhole-connect)
+Or, check out the [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
 
 {% hint style="success" %}
 The Wormhole SDK (a separate product from the embeddable Connect Widget) allows you to custom integrate the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](https://docs.wormhole.com/wormhole/reference/sdk-docs/connect-sdk)
