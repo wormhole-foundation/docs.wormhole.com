@@ -6,7 +6,7 @@ An index of commonly used technical terms
 
 The Chain IDs in the Wormhole context are `u16` integers that map to chains. Note these Chain IDs are _not_ the same as other Chain IDs used for things like wallets.
 
-Each Chain ID is documented on its page in the [Blockchain Environments](environments/).
+Each Chain ID is documented on its page in the [Blockchain Environments](../blockchain-environments/environments.md).
 
 ## Consistency Level
 
@@ -26,11 +26,11 @@ The Finality of a transaction is dependant on the blockchain properties. After a
 
 ## Gateway
 
-The [Gateway](components/gateway/) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
+The [Gateway](../explore-wormhole/gateway/) is Cosmos-SDK chain used by Wormhole to facilitate communication with the Cosmos ecosystem.
 
 ## Guardian
 
-A [Guardian](components/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
+A [Guardian](../explore-wormhole/guardian.md) is one of the 19 parties running validators in the Guardian Network that contributes to the VAA multisig.
 
 ## Guardian Network
 
@@ -64,7 +64,7 @@ A Spy is a daemon that eavesdrops on the messages passed between Guardians, typi
 
 ## VAA
 
-[Verifiable Action Approvals](components/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
+[Verifiable Action Approvals](../explore-wormhole/vaa.md) (VAAs) are the base data structure in the Wormhole ecosystem, containing the messages emitted by xDapps along with information such as what contract emitted the message.
 
 ## Validator
 
