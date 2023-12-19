@@ -14,10 +14,15 @@ Before we dig into anything Queries specific, let’s look at how to make an [et
   * `web3.eth.abi.encodeFunctionSignature("totalSupply()")` → `0x18160ddd`
 * **block id**: the block number, hash, or tag, like `latest`, `safe`, or `finalized`
 
-```jsx
-// Request
+Request
+
+```sh
 curl <https://ethereum.publicnode.com> -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{"to":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":"0x18160ddd"},"latest"],"id":1}'
-// Result
+```
+
+Result
+
+```json
 {
   "jsonrpc":"2.0",
   "id":1,
@@ -31,7 +36,7 @@ Converting that result from hex gets us `3172615244782286193073777`. You can com
 
 For this part, we will use the [Wormhole Query SDK](https://www.npmjs.com/package/@wormhole-foundation/wormhole-query-sdk) along with [axios](https://www.npmjs.com/package/axios) for our RPC requests.
 
-```jsx
+```sh
 npm i @wormhole-foundation/wormhole-query-sdk axios
 ```
 
@@ -39,7 +44,7 @@ In order to make an `EthCallQueryRequest`, we need a specific block number or ha
 
 To get the latest block, we can request it from a public node using `eth_getBlockByNumber`.
 
-```jsx
+```ts
 const rpc = "<https://ethereum.publicnode.com>";
 const latestBlock: string = (
   await axios.post(rpc, {
@@ -53,7 +58,7 @@ const latestBlock: string = (
 
 Then construct the call data
 
-```jsx
+```ts
 const callData: EthCallData = {
   to: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
   data: "0x18160ddd", // web3.eth.abi.encodeFunctionSignature("totalSupply()")
@@ -62,7 +67,7 @@ const callData: EthCallData = {
 
 Finally, put it all together in a `QueryRequest`
 
-```jsx
+```ts
 const request = new QueryRequest(
   0, // nonce
   [
@@ -76,7 +81,7 @@ const request = new QueryRequest(
 
 This request consists of one `PerChainQueryRequest`, which is an `EthCallQueryRequest` to Ethereum. You can log this out as JSON to see the structure.
 
-```jsx
+```ts
 console.log(JSON.stringify(request, undefined, 2));
 // {
 //   "nonce": 0,
@@ -114,7 +119,7 @@ console.log(mockData);
 
 This response is suited for on-chain use, but the SDK also includes a parser so we can read the results in the client.
 
-```jsx
+```ts
 const mockQueryResponse = QueryResponse.from(mockData.bytes);
 const mockQueryResult = (
   mockQueryResponse.responses[0].response as EthCallQueryResponse
@@ -127,7 +132,7 @@ console.log(
 
 Testing this all together might look like the following
 
-```jsx
+```ts
 import {
   EthCallData,
   EthCallQueryRequest,
@@ -199,7 +204,7 @@ const callData: EthCallData = {
 
 It is common to test against a local fork of mainnet with something like
 
-```jsx
+```sh
 anvil --fork-url <https://ethereum.publicnode.com>
 ```
 
@@ -207,7 +212,7 @@ In order for mock requests to verify against the mainnet Core bridge contract, w
 
 Here's an example for Ethereum mainnet, where the `-a` parameter is the [Core bridge address](https://docs.wormhole.com/wormhole/reference/constants#core-contracts) on that chain.
 
-```jsx
+```sh
 npx @wormhole-foundation/wormhole-cli evm hijack -a 0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B -g 0xbeFA429d57cD18b7F8A4d91A2da9AB4AF05d0FBe
 ```
 
@@ -215,7 +220,7 @@ If you are using `EthCallWithFinality`, you will need to mine additional blocks 
 
 ## Make a QueryRequest
 
-```jsx
+```ts
 const serialized = request.serialize();
 const proxyResponse = await axios.post<QueryProxyQueryResponse>(
   QUERY_URL,
@@ -252,7 +257,7 @@ The `QueryProxyQueryResponse` result requires a slight tweak when submitting to 
 
 For example, submitting the transaction to the demo contract:
 
-```jsx
+```ts
 const tx = await contract.updateCounters(
   `0x${response.data.bytes}`,
   response.data.signatures.map((s) => ({
