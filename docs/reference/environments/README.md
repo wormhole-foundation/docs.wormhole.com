@@ -45,6 +45,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/arbitrum.svg">arbitrum</a></td>
 </tr>
 <tr>
+    <td><strong>Arbitrum (Sepolia)</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#arbitrum_sepolia">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/arbitrum_sepolia.svg">arbitrum_sepolia</a></td>
+</tr>
+<tr>
     <td><strong>Aurora</strong></td>
     <td><a href="../../reference/environments/evm/README.md#aurora">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/aurora.svg">aurora</a></td>
@@ -60,9 +65,19 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/base.svg">base</a></td>
 </tr>
 <tr>
+    <td><strong>Base (Sepolia)</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#base_sepolia">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/base_sepolia.svg">base_sepolia</a></td>
+</tr>
+<tr>
     <td><strong>BNB Smart Chain (BSC)</strong></td>
     <td><a href="../../reference/environments/evm/README.md#bsc">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/bsc.svg">bsc</a></td>
+</tr>
+<tr>
+    <td><strong>celestia</strong></td>
+    <td><a href="../../reference/environments/cosmwasm/README.md#celestia">cosmwasm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/celestia.svg">celestia</a></td>
 </tr>
 <tr>
     <td><strong>Celo</strong></td>
@@ -115,6 +130,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/kujira.svg">kujira</a></td>
 </tr>
 <tr>
+    <td><strong>mantle</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#mantle">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/mantle.svg">mantle</a></td>
+</tr>
+<tr>
     <td><strong>Moonbeam</strong></td>
     <td><a href="../../reference/environments/evm/README.md#moonbeam">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/moonbeam.svg">moonbeam</a></td>
@@ -130,6 +150,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/neon.svg">neon</a></td>
 </tr>
 <tr>
+    <td><strong>neutron</strong></td>
+    <td><a href="../../reference/environments/cosmwasm/README.md#neutron">cosmwasm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/neutron.svg">neutron</a></td>
+</tr>
+<tr>
     <td><strong>Oasis</strong></td>
     <td><a href="../../reference/environments/evm/README.md#oasis">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/oasis.svg">oasis</a></td>
@@ -138,6 +163,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><strong>Optimism</strong></td>
     <td><a href="../../reference/environments/evm/README.md#optimism">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/optimism.svg">optimism</a></td>
+</tr>
+<tr>
+    <td><strong>Optimism (Sepolia)</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#optimism_sepolia">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/optimism_sepolia.svg">optimism_sepolia</a></td>
 </tr>
 <tr>
     <td><strong>Osmosis</strong></td>
@@ -158,6 +188,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><strong>Rootstock</strong></td>
     <td><a href="../../reference/environments/evm/README.md#rootstock">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/rootstock.svg">rootstock</a></td>
+</tr>
+<tr>
+    <td><strong>scroll</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#scroll">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/scroll.svg">scroll</a></td>
 </tr>
 <tr>
     <td><strong>Sei</strong></td>

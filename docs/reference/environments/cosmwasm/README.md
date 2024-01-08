@@ -351,9 +351,9 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 |Type|Contract|
 |----|--------|
-|Core|`terra18vd8fpwxzck93qlwghaj6arh4p7c5n896xzem5`|
-|Token Bridge|`terra10pyejy66429refv3g35g2t7am0was7ya7kz2a4`|
-|NFT Bridge|`terra1plju286nnfj3z54wgcggd4enwaa9fgf5kgrgzl`|
+|Core|`terra14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9ssrc8au`|
+|Token Bridge|`terra1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrquka9l6`|
+|NFT Bridge|**N/A**|
   
 
 <!--TERRA_CHAIN_DETAILS-->

@@ -42,10 +42,17 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>base</td><td>30</td><td><code>Base</code> - <code>8453</code></td><td><code>Base Goerli</code> - <code>84531</code></td></tr>
 <tr><td>sei</td><td>32</td><td><code>pacific-1</code></td><td><code>atlantic-2</code></td></tr>
 <tr><td>rootstock</td><td>33</td><td><code>30</code></td><td><code>31</code></td></tr>
+<tr><td>scroll</td><td>34</td><td></td><td></td></tr>
+<tr><td>mantle</td><td>35</td><td></td><td></td></tr>
 <tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
+<tr><td>neutron</td><td>4003</td><td></td><td></td></tr>
+<tr><td>celestia</td><td>4004</td><td></td><td></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
+<tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
+<tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
+<tr><td>optimism_sepolia</td><td>10005</td><td></td><td><code>Optimism Sepolia</code> - <code>11155420</code></td></tr>
 </tbody>
 </table>
 <!--CHAIN_IDS-->
@@ -81,7 +88,7 @@ The following tables document the deployed contract addresses for contracts on e
       <td>terra</td>
       <td><code>terra1dq03ugtd40zu9hcgdzrsq6z2z4hwhc9tqk2uy5</code></td>
       <td><code>terra1pd65m0q9tl3v8znnz5f5ltsfegyzah7g42cx5v</code></td>
-      <td><code>terra18vd8fpwxzck93qlwghaj6arh4p7c5n896xzem5</code></td> 
+      <td><code>terra14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9ssrc8au</code></td> 
     </tr>
 <tr>
       <td>bsc</td>
@@ -246,6 +253,18 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>scroll</td>
+      <td><code>-</code></td>
+      <td><code>0x055F47F1250012C6B20c436570a76e52c17Af2D5</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>mantle</td>
+      <td><code>-</code></td>
+      <td><code>0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
@@ -264,9 +283,39 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>neutron</td>
+      <td><code>neutron16rerygcpahqcxx5t8vjla46ym8ccn7xz7rtc6ju5ujcd36cmc7zs9zrunh</code></td>
+      <td><code>neutron1rhqgnak5z0pla5sgqq7ykqh8glckk4h67fe0hgjfcyulx2nqa0yqaswtnp</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>arbitrum_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>base_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x79A1027a6A159502049F10906D333EC57E95F083</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>optimism_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x31377888146f3253211EFEf5c676D41ECe7D58Fe</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -300,7 +349,7 @@ The following tables document the deployed contract addresses for contracts on e
       <td>terra</td>
       <td><code>terra10nmmwe8r3g99a9newtqa7a75xfgs2e8z87r2sf</code></td>
       <td><code>terra1pseddrv0yfsn76u4zxrjmtf45kdlmalswdv39a</code></td>
-      <td><code>terra10pyejy66429refv3g35g2t7am0was7ya7kz2a4</code></td> 
+      <td><code>terra1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrquka9l6</code></td> 
     </tr>
 <tr>
       <td>bsc</td>
@@ -465,6 +514,18 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>scroll</td>
+      <td><code>-</code></td>
+      <td><code>0x22427d90B7dA3fA4642F7025A854c7254E4e45BF</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>mantle</td>
+      <td><code>-</code></td>
+      <td><code>0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
@@ -483,9 +544,39 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>neutron</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0xDB5492265f6038831E89f495670FF909aDe94bd9</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>arbitrum_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>base_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x86F55A04690fd7815A3D802bD587e83eA888B239</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>optimism_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x99737Ec4B815d816c49A385943baf0380e75c0Ac</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -519,7 +610,7 @@ The following tables document the deployed contract addresses for contracts on e
       <td>terra</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
-      <td><code>terra1plju286nnfj3z54wgcggd4enwaa9fgf5kgrgzl</code></td> 
+      <td><code>-</code></td> 
     </tr>
 <tr>
       <td>bsc</td>
@@ -684,6 +775,18 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>scroll</td>
+      <td><code>-</code></td>
+      <td><code>0x47B9a1406BEe29a3001BFEB7e45aE45fFFB40c18</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>mantle</td>
+      <td><code>-</code></td>
+      <td><code>0x23908A62110e21C04F3A4e011d24F901F911744A</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
@@ -702,9 +805,39 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>neutron</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0x6a0B52ac198e4870e5F3797d5B403838a5bbFD99</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>arbitrum_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x23908A62110e21C04F3A4e011d24F901F911744A</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>base_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x268557122Ffd64c85750d630b716471118F323c8</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>optimism_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x27812285fbe85BA1DF242929B906B31EE3dd1b9f</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -903,6 +1036,18 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>scroll</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>mantle</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
@@ -921,7 +1066,37 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>neutron</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>arbitrum_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>base_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>optimism_sepolia</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -1122,6 +1297,18 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>scroll</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>mantle</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
@@ -1140,7 +1327,37 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>neutron</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>arbitrum_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>base_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>optimism_sepolia</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -1307,6 +1524,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://developer.arbitrum.io/tx-lifecycle](https://developer.arbitrum.io/tx-lifecycle)
 
 ### Optimism
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
+
+For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+
+### Optimism (Sepolia)
 |Level|Value|
 |-----|-----|
 |Instant|200|
