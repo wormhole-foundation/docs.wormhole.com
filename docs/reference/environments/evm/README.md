@@ -1083,3 +1083,157 @@ Note that a different chain id is used for Sepolia
   
 
 <!--SEPOLIA_CHAIN_DETAILS-->
+
+<!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
+
+# Arbitrum (Sepolia)
+
+## Ecosystem
+
+- [Web site](https://arbitrum.io/)
+- [Arbitrum Explorer](https://sepolia.arbiscan.io/)
+- 
+
+## Wormhole Details
+
+- **Name**: `arbitrum_sepolia`
+- **Chain ID**: `10003`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/arbitrum_sepolia.json)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Sepolia</code> - <code>421614</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
+|Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
+|NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
+
+<!--OPTIMISM_SEPOLIA_CHAIN_DETAILS-->
+
+# Optimism (Sepolia)
+
+## Ecosystem
+
+- [Web site](https://www.optimism.io/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
+
+## Wormhole Details
+
+- **Name**: `optimism_sepolia`
+- **Chain ID**: `10005`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+### Consistency Levels
+
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
+
+
+For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Optimism Sepolia</code> - <code>11155420</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x31377888146f3253211EFEf5c676D41ECe7D58Fe`|
+|Token Bridge|`0x99737Ec4B815d816c49A385943baf0380e75c0Ac`|
+|NFT Bridge|`0x27812285fbe85BA1DF242929B906B31EE3dd1b9f`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--OPTIMISM_SEPOLIA_CHAIN_DETAILS-->
+
+<!--BASE_SEPOLIA_CHAIN_DETAILS-->
+
+# Base (Sepolia)
+
+## Ecosystem
+
+- [Web site](https://base.org/)
+- [Etherscan](https://sepolia.basescan.org/)
+- [Developer docs](https://docs.base.org/)
+
+## Wormhole Details
+
+- **Name**: `base_sepolia`
+- **Chain ID**: `10004`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Base Sepolia</code> - <code>84532</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x79A1027a6A159502049F10906D333EC57E95F083`|
+|Token Bridge|`0x86F55A04690fd7815A3D802bD587e83eA888B239`|
+|NFT Bridge|`0x268557122Ffd64c85750d630b716471118F323c8`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--BASE_SEPOLIA_CHAIN_DETAILS-->
