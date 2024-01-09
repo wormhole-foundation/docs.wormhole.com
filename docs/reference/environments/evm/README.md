@@ -1030,7 +1030,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 <!--SEPOLIA_CHAIN_DETAILS-->
 
-# Sepolia
+# Ethereum (Sepolia)
 
 {% hint style='info' %}
 Sepolia is a testnet only chain and can be used as an alternative to Goerli
@@ -1083,6 +1083,62 @@ Note that a different chain id is used for Sepolia
   
 
 <!--SEPOLIA_CHAIN_DETAILS-->
+
+<!--HOLESKY_CHAIN_DETAILS-->
+
+# Ethereum (Holesky)
+
+{% hint style='info' %}
+Holesky is a testnet only chain and can be used as an alternative to Goerli
+{% endhint %}
+{% hint style='info' %}
+Note that a different chain id is used for Holesky
+{% endhint %}
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+
+## Wormhole Details
+
+- **Name**: `holesky`
+- **Chain ID**: `10006`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>N/A</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Holesky</code> - <code>17000</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a`|
+|Token Bridge|`0x76d093BbaE4529a342080546cAFEec4AcbA59EC6`|
+|NFT Bridge|`0xc8941d483c45eF8FB72E4d1F9dDE089C95fF8171`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--HOLESKY_CHAIN_DETAILS-->
 
 <!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
 

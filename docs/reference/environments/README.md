@@ -110,6 +110,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/gnosis.svg">gnosis</a></td>
 </tr>
 <tr>
+    <td><strong>Ethereum (Holesky)</strong></td>
+    <td><a href="../../reference/environments/evm/README.md#holesky">evm</a></td>
+    <td><a href="../../.gitbook/assets/chain-icons/holesky.svg">holesky</a></td>
+</tr>
+<tr>
     <td><strong>Injective</strong></td>
     <td><a href="../../reference/environments/cosmwasm/README.md#injective">cosmwasm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/injective.svg">injective</a></td>
@@ -200,7 +205,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../../.gitbook/assets/chain-icons/sei.svg">sei</a></td>
 </tr>
 <tr>
-    <td><strong>Sepolia</strong></td>
+    <td><strong>Ethereum (Sepolia)</strong></td>
     <td><a href="../../reference/environments/evm/README.md#sepolia">evm</a></td>
     <td><a href="../../.gitbook/assets/chain-icons/sepolia.svg">sepolia</a></td>
 </tr>
