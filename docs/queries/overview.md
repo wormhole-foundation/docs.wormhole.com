@@ -1,12 +1,12 @@
 # Overview
 
-> 💡 Queries are currently in closed-beta, though you can start developing today! Check out [Getting Started](https://www.notion.so/2df605f474604cf8b62523f908f237ee?pvs=21) and reach out to [Join the Beta](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+> 💡 Queries are currently in closed-beta, though you can start developing today! Check out [Getting Started](./getting-started.md) and reach out to [Join the Beta](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
 
 Wormhole Queries offer on-demand access to guardian-attested on-chain data.
 
 The current implementation offers integrators a simple REST endpoint to initiate an off-chain request via a proxy which handles forwarding the request to the guardians and gathering a quorum of responses. The result consists of the encoded response (which includes the request details) along with the guardian signatures. These can then be verified on-chain.
 
-Read more about Queries in the [whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013\_ccq.md).
+Read more about Queries in the [whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md).
 
 ## The Flow of a Query
 
@@ -28,19 +28,19 @@ Up to 255 queries can be batched together, with certain types allowing for batch
 
 ## Supported Query Types
 
-There are currently 3 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013\_ccq.md) for more details on each.
+There are currently 3 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md) for more details on each.
 
-### eth\_call
+### eth_call
 
-Effectively an equivalent of [eth\_call](https://ethereum.org/en/developers/docs/apis/json-rpc/#eth\_call) against a block specified by number or hash.
+Effectively an equivalent of [eth_call](https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_call) against a block specified by number or hash.
 
 Calls are batched to allow specifying multiple calls (even to multiple contracts) against the same block. These will be done in the same batch RPC call and are easier for the requestor to verify on chain. Up to 255 calls may be batched in an single `eth_call` query.
 
 The result contains the specified block number, hash, and timestamp along with the call result(s).
 
-### eth\_call By Timestamp
+### eth_call By Timestamp
 
-This query type is similar to `eth_call` but targets a timestamp instead of a specific block\_id. This can be useful when forming requests based on uncorrelated data, such as requiring data from another chain based on the block timestamp of a given chain.
+This query type is similar to `eth_call` but targets a timestamp instead of a specific block_id. This can be useful when forming requests based on uncorrelated data, such as requiring data from another chain based on the block timestamp of a given chain.
 
 The result additionally contains the target and following block details with the following condition enforced.
 
@@ -50,7 +50,7 @@ and
 following_block_num - 1 == target_block_num
 ```
 
-### eth\_call With Finality
+### eth_call With Finality
 
 This query type is similar to `eth_call` but ensures that the specified block has reached the specified finality before returning the query results. The finality may be `finalized` or `safe`. Note that in the case that a chain does not natively support the `safe` tag, this will be equivalent to `finalized`.
 
@@ -62,22 +62,22 @@ For example, many chains have implementations forked from [geth](https://github.
 
 ### Mainnet
 
-| Chain         | Wormhole Chain ID | eth\_call | By Timestamp        | With Finality | Expected History |
-| ------------- | ----------------- | --------- | ------------------- | ------------- | ---------------- |
-| Ethereum      | 2                 | ✅         | ✅                   | ✅             | 128 blocks       |
-| BSC           | 4                 | ✅         | ✅                   | ✅             | 128 blocks       |
-| Polygon       | 5                 | ✅         | ✅                   | ✅             | 128 blocks       |
-| Avalanche     | 6                 | ✅         | ✅                   | ✅             | 32 blocks        |
-| Oasis Emerald | 7                 | ✅         | ✅                   | ✅             | archive          |
-| Fantom        | 10                | ✅         | ✅                   | ✅             | 16 blocks        |
-| Karura        | 11                | ✅         | ✅                   | ✅             | archive          |
-| Acala         | 12                | ✅         | ✅                   | ✅             | archive          |
-| Klaytn        | 13                | ✅         | ✅                   | ✅             | 128 blocks       |
-| Celo          | 14                | ✅         | ℹ️ hints required\* | ✅             | 128 blocks       |
-| Moonbeam      | 16                | ✅         | ℹ️ hints required\* | ✅             | 256 blocks       |
-| Arbitrum One  | 23                | ✅         | ✅                   | ✅             | \~6742 blocks    |
-| Optimism      | 24                | ✅         | ✅                   | ❌             | 128 blocks       |
-| Base          | 30                | ✅         | ✅                   | ✅             | archive          |
+| Chain         | Wormhole Chain ID | eth_call | By Timestamp        | With Finality | Expected History |
+| ------------- | ----------------- | -------- | ------------------- | ------------- | ---------------- |
+| Ethereum      | 2                 | ✅       | ✅                  | ✅            | 128 blocks       |
+| BSC           | 4                 | ✅       | ✅                  | ✅            | 128 blocks       |
+| Polygon       | 5                 | ✅       | ✅                  | ✅            | 128 blocks       |
+| Avalanche     | 6                 | ✅       | ✅                  | ✅            | 32 blocks        |
+| Oasis Emerald | 7                 | ✅       | ✅                  | ✅            | archive          |
+| Fantom        | 10                | ✅       | ✅                  | ✅            | 16 blocks        |
+| Karura        | 11                | ✅       | ✅                  | ✅            | archive          |
+| Acala         | 12                | ✅       | ✅                  | ✅            | archive          |
+| Klaytn        | 13                | ✅       | ✅                  | ✅            | 128 blocks       |
+| Celo          | 14                | ✅       | ℹ️ hints required\* | ✅            | 128 blocks       |
+| Moonbeam      | 16                | ✅       | ℹ️ hints required\* | ✅            | 256 blocks       |
+| Arbitrum One  | 23                | ✅       | ✅                  | ✅            | \~6742 blocks    |
+| Optimism      | 24                | ✅       | ✅                  | ❌            | 128 blocks       |
+| Base          | 30                | ✅       | ✅                  | ✅            | archive          |
 
 \*EthCallByTimestamp arguments for `targetBlock` and `followingBlock` are currently required for requests to be successful on these chains.
 
