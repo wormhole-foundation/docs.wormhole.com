@@ -53,6 +53,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
 <tr><td>optimism_sepolia</td><td>10005</td><td></td><td><code>Optimism Sepolia</code> - <code>11155420</code></td></tr>
+<tr><td>holesky</td><td>10006</td><td><code>N/A</code></td><td><code>Holesky</code> - <code>17000</code></td></tr>
 </tbody>
 </table>
 <!--CHAIN_IDS-->
@@ -318,6 +319,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>0x31377888146f3253211EFEf5c676D41ECe7D58Fe</code></td>
       <td><code>-</code></td> 
     </tr>
+<tr>
+      <td>holesky</td>
+      <td><code>-</code></td>
+      <td><code>0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a</code></td>
+      <td><code>-</code></td> 
+    </tr>
 </tbody>
 </table>
 <!--CORE_ADDRESS-->
@@ -577,6 +584,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td>optimism_sepolia</td>
       <td><code>-</code></td>
       <td><code>0x99737Ec4B815d816c49A385943baf0380e75c0Ac</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>holesky</td>
+      <td><code>-</code></td>
+      <td><code>0x76d093BbaE4529a342080546cAFEec4AcbA59EC6</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -840,6 +853,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>0x27812285fbe85BA1DF242929B906B31EE3dd1b9f</code></td>
       <td><code>-</code></td> 
     </tr>
+<tr>
+      <td>holesky</td>
+      <td><code>-</code></td>
+      <td><code>0xc8941d483c45eF8FB72E4d1F9dDE089C95fF8171</code></td>
+      <td><code>-</code></td> 
+    </tr>
 </tbody>
 </table>
 <!--NFT_BRIDGE_ADDRESS-->
@@ -1101,6 +1120,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
+<tr>
+      <td>holesky</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
 </tbody>
 </table>
 <!--RELAYER_BRIDGE_ADDRESS-->
@@ -1358,6 +1383,12 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>optimism_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>holesky</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
