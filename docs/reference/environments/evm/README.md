@@ -374,7 +374,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 <!--BASE_CHAIN_DETAILS-->
 <!--BSC_CHAIN_DETAILS-->
 
-# BNB Smart Chain (BSC)
+# BNB Smart Chain
 
 ## Ecosystem
 
@@ -1030,7 +1030,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 <!--SEPOLIA_CHAIN_DETAILS-->
 
-# Ethereum (Sepolia)
+# Ethereum Sepolia
 
 {% hint style='info' %}
 Sepolia is a testnet only chain and can be used as an alternative to Goerli
@@ -1086,7 +1086,7 @@ Note that a different chain id is used for Sepolia
 
 <!--HOLESKY_CHAIN_DETAILS-->
 
-# Ethereum (Holesky)
+# Ethereum Holesky
 
 {% hint style='info' %}
 Holesky is a testnet only chain and can be used as an alternative to Goerli
@@ -1142,7 +1142,7 @@ Note that a different chain id is used for Holesky
 
 <!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
 
-# Arbitrum (Sepolia)
+# Arbitrum Sepolia
 
 ## Ecosystem
 
@@ -1191,7 +1191,7 @@ Note that a different chain id is used for Holesky
 
 <!--OPTIMISM_SEPOLIA_CHAIN_DETAILS-->
 
-# Optimism (Sepolia)
+# Optimism Sepolia
 
 ## Ecosystem
 
@@ -1247,7 +1247,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 <!--BASE_SEPOLIA_CHAIN_DETAILS-->
 
-# Base (Sepolia)
+# Base Sepolia
 
 ## Ecosystem
 

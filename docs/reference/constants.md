@@ -1445,7 +1445,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 For more information see [https://www.alchemy.com/overviews/ethereum-commitment-levels](https://www.alchemy.com/overviews/ethereum-commitment-levels)
 
-### BNB Smart Chain (BSC)
+### BNB Smart Chain
 |Level|Value|
 |-----|-----|
 |Instant|200|
@@ -1562,7 +1562,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
 
-### Optimism (Sepolia)
+### Optimism Sepolia
 |Level|Value|
 |-----|-----|
 |Instant|200|
