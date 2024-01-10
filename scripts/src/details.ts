@@ -139,13 +139,14 @@ export function chainDetailsPage(chain: cfg.DocChain): string {
   return `
 # ${title}
 ${noteHints}
-## Ecosystem
+
+**Ecosystem**
 
 - ${webpage}
 - ${explorerLinks}
 - ${devdocs}
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: \`${name}\`
 - **Chain ID**: \`${id}\`
@@ -154,7 +155,7 @@ ${noteHints}
 ${
   finalityOptions === ""
     ? ""
-    : `### Consistency Levels
+    : `***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:`
 }
@@ -163,15 +164,15 @@ ${finalityOptions}
 
 ${finalityDetails}
 
-### Mainnet Contracts ${mainnetAlias}
+***Mainnet Contracts ${mainnetAlias}***
 
 ${contractTable(mainnet)}
 
-### Testnet Contracts ${testnetAlias}
+***Testnet Contracts ${testnetAlias}***
 
 ${contractTable(testnet)}
 
-### Local Network Contract
+***Local Network Contract***
 
 ${contractTable(devnet)}
   

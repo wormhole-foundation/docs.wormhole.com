@@ -26,19 +26,20 @@ The emitter address on EVM chains is the contract address, normalized to the wor
 Deployed contracts are also available on the [Sepolia](#sepolia) testnet.
 {% endhint %}
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://ethereum.org/)
 - [https://etherscan.io/](https://etherscan.io/)
 - [https://ethereum.org/en/developers/docs/](https://ethereum.org/en/developers/docs/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `ethereum`
 - **Chain ID**: `2`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -52,7 +53,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://www.alchemy.com/overviews/ethereum-commitment-levels](https://www.alchemy.com/overviews/ethereum-commitment-levels)
 
 
-### Mainnet Contracts (<code>1</code>)
+***Mainnet Contracts (<code>1</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -62,7 +63,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |CCTP|`0xAaDA05BD399372f0b0463744C09113c137636f6a`|
 
-### Testnet Contracts (<code>Goerli</code> - <code>5</code>)
+***Testnet Contracts (<code>Goerli</code> - <code>5</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -74,7 +75,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |MockIntegration|`0xb81bc199b73AB34c393a4192C163252116a03370`|
 |CCTP|`0x0a69146716b3a21622287efa1607424c663069a4`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -97,19 +98,20 @@ Besides Ethereum, a number of EVM chains are supported.
 
 # Acala
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://acala.network/)
 - [https://acala.subscan.io/](https://acala.subscan.io/) | [https://blockscout.acala.network/](https://blockscout.acala.network/)
 - [Developer docs](https://evmdocs.acala.network/) | [Faucet](https://evmdocs.acala.network/tooling/faucet)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `acala`
 - **Chain ID**: `12`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -120,7 +122,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
-### Mainnet Contracts (<code>787</code>)
+***Mainnet Contracts (<code>787</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -129,7 +131,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |NFT Bridge|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>597</code>)
+***Testnet Contracts (<code>597</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -137,7 +139,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0xebA00cbe08992EdD08ed7793E07ad6063c807004`|
 |NFT Bridge|`0x96f1335e0AcAB3cfd9899B30b2374e25a2148a6E`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -151,19 +153,20 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 # Arbitrum
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://arbitrum.io/)
 - [Arbitrum Explorer](https://arbiscan.io/)
 - [Developer Docs](https://developer.arbitrum.io/getting-started-devs)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `arbitrum`
 - **Chain ID**: `23`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/arbitrum.json)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -176,7 +179,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://developer.arbitrum.io/tx-lifecycle](https://developer.arbitrum.io/tx-lifecycle)
 
 
-### Mainnet Contracts (<code>Arbitrum One</code> - <code>42161</code>)
+***Mainnet Contracts (<code>Arbitrum One</code> - <code>42161</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -186,7 +189,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
-### Testnet Contracts (<code>Goerli</code> - <code>421613</code>)
+***Testnet Contracts (<code>Goerli</code> - <code>421613</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -198,7 +201,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |MockIntegration|`0x0de48f34E14d08934DA1eA2286Be1b2BED5c062a`|
 |CCTP|`0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -212,13 +215,14 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 # Aurora
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://aurora.dev/)
 - [Block Explorer](https://explorer.aurora.dev/)
 - [Developer docs](https://doc.aurora.dev/) | [Faucet](https://aurora.dev/faucet)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `aurora`
 - **Chain ID**: `9`
@@ -230,7 +234,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 
 
-### Mainnet Contracts (<code>1313161554</code>)
+***Mainnet Contracts (<code>1313161554</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -238,7 +242,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Token Bridge|`0x51b5123a7b0F9b2bA265f9c4C8de7D78D52f510F`|
 |NFT Bridge|`0x6dcC0484472523ed9Cdc017F711Bcbf909789284`|
 
-### Testnet Contracts (<code>1313161555</code>)
+***Testnet Contracts (<code>1313161555</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -246,7 +250,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 |Token Bridge|`0xD05eD3ad637b890D68a854d607eEAF11aF456fba`|
 |NFT Bridge|`0x8F399607E9BA2405D87F5f3e1B78D950b44b2e24`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -260,19 +264,20 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 # Avalanche
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://www.avax.network/)
 - [C-Chain Block Explorer](https://snowtrace.io/) | [https://subnets.avax.network/](https://subnets.avax.network/)
 - [Developer docs](https://docs.avax.network/) | [Faucet](https://core.app/tools/testnet-faucet/?subnet=c&token=c)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `avalanche`
 - **Chain ID**: `6`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -286,7 +291,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality](https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality)
 
 
-### Mainnet Contracts (<code>C-Chain</code> - <code>43114</code>)
+***Mainnet Contracts (<code>C-Chain</code> - <code>43114</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -296,7 +301,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |CCTP|`0x09Fb06A271faFf70A651047395AaEb6265265F13`|
 
-### Testnet Contracts (<code>Fuji</code> - <code>43113</code>)
+***Testnet Contracts (<code>Fuji</code> - <code>43113</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -308,7 +313,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |MockIntegration|`0x5E52f3eB0774E5e5f37760BD3Fca64951D8F74Ae`|
 |CCTP|`0x58f4c17449c90665891c42e14d34aae7a26a472e`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -322,13 +327,14 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 
 # Base
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://base.org/)
 - [Etherscan](https://goerli.basescan.org/) | [Blockscout](https://base-goerli.blockscout.com/)
 - [Developer docs](https://docs.base.org/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `base`
 - **Chain ID**: `30`
@@ -340,7 +346,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 
 
 
-### Mainnet Contracts (<code>Base</code> - <code>8453</code>)
+***Mainnet Contracts (<code>Base</code> - <code>8453</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -350,7 +356,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |Relayer|`0x706f82e9bb5b0813501714ab5974216704980e31`|
 |CCTP|`0x03faBB06Fa052557143dC28eFCFc63FC12843f1D`|
 
-### Testnet Contracts (<code>Base Goerli</code> - <code>84531</code>)
+***Testnet Contracts (<code>Base Goerli</code> - <code>84531</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -362,7 +368,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 |MockIntegration|`0x9Ee656203B0DC40cc1bA3f4738527779220e3998`|
 |CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -376,19 +382,20 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 
 # BNB Smart Chain
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://www.bnbchain.org/en/smartChain)
 - [Etherscan](https://bscscan.com/)
 - [Developer docs](https://docs.bnbchain.org/docs/learn/intro) | [Faucet](https://testnet.binance.org/faucet-smart/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `bsc`
 - **Chain ID**: `4`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -401,7 +408,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean number 
 For more information see [https://docs.bnbchain.org/docs/learn/consensus](https://docs.bnbchain.org/docs/learn/consensus)
 
 
-### Mainnet Contracts (<code>56</code>)
+***Mainnet Contracts (<code>56</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -410,7 +417,7 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 |NFT Bridge|`0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>97</code>)
+***Testnet Contracts (<code>97</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -421,7 +428,7 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0xb6A04D6672F005787147472Be20d39741929Aa03`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -438,19 +445,20 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 
 # Celo
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://celo.org/)
 - [https://explorer.celo.org/mainnet/](https://explorer.celo.org/mainnet/) | [https://celoscan.io/](https://celoscan.io/)
 - [Developer docs](https://docs.celo.org/) | [Faucet](https://faucet.celo.org/alfajores)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `celo`
 - **Chain ID**: `14`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -461,7 +469,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
-### Mainnet Contracts (<code>42220</code>)
+***Mainnet Contracts (<code>42220</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -470,7 +478,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |NFT Bridge|`0xA6A377d75ca5c9052c9a77ED1e865Cc25Bd97bf3`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>Alfajores</code> - <code>44787</code>)
+***Testnet Contracts (<code>Alfajores</code> - <code>44787</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -481,7 +489,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x7f1d8E809aBB3F6Dc9B90F0131C3E8308046E190`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -495,19 +503,20 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 # Fantom
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://fantom.foundation/)
 - [https://ftmscan.com/](https://ftmscan.com/)
 - [Developer docs](https://docs.fantom.foundation/) | [Faucet](https://faucet.fantom.network/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `fantom`
 - **Chain ID**: `10`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -518,7 +527,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
-### Mainnet Contracts (<code>250</code>)
+***Mainnet Contracts (<code>250</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -527,7 +536,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |NFT Bridge|`0xA9c7119aBDa80d4a4E0C06C8F4d8cF5893234535`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>4002</code>)
+***Testnet Contracts (<code>4002</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -535,7 +544,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0x599CEa2204B4FaECd584Ab1F2b6aCA137a0afbE8`|
 |NFT Bridge|`0x63eD9318628D26BdCB15df58B53BB27231D1B227`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -549,13 +558,14 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 # Gnosis
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://www.gnosis.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/gnosis.json)
 - [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://www.gnosisfaucet.com/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `gnosis`
 - **Chain ID**: `25`
@@ -567,7 +577,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
-### Mainnet Contracts (<code>100</code>)
+***Mainnet Contracts (<code>100</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -575,7 +585,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Chaido</code> - <code>10200</code>)
+***Testnet Contracts (<code>Chaido</code> - <code>10200</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -583,7 +593,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -597,19 +607,20 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 # Karura
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://acala.network/karura)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/karura.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/karura.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `karura`
 - **Chain ID**: `11`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -622,7 +633,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://wiki.polkadot.network/docs/learn-consensus](https://wiki.polkadot.network/docs/learn-consensus)
 
 
-### Mainnet Contracts (<code>686</code>)
+***Mainnet Contracts (<code>686</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -631,7 +642,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 |NFT Bridge|`0xb91e3638F82A1fACb28690b37e3aAE45d2c33808`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>596</code>)
+***Testnet Contracts (<code>596</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -639,7 +650,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 |Token Bridge|`0xd11De1f930eA1F7Dd0290Fe3a2e35b9C91AEFb37`|
 |NFT Bridge|`0x0A693c2D594292B6Eb89Cb50EFe4B0b63Dd2760D`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -653,19 +664,20 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 
 # Klaytn
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://klaytn.foundation/)
 - [Klaytnfinder](https://www.klaytnfinder.io/) | [Klaytnscope](https://scope.klaytn.com/)
 - [Developer docs](https://docs.klaytn.foundation/) | [Faucet](https://baobab.wallet.klaytn.foundation/faucet)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `klaytn`
 - **Chain ID**: `13`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -676,7 +688,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 
 
-### Mainnet Contracts (<code>8217</code>)
+***Mainnet Contracts (<code>8217</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -685,7 +697,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |NFT Bridge|`0x3c3c561757BAa0b78c5C025CdEAa4ee24C1dFfEf`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>Baobab</code> - <code>1001</code>)
+***Testnet Contracts (<code>Baobab</code> - <code>1001</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -693,7 +705,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 |Token Bridge|`0xC7A13BE098720840dEa132D860fDfa030884b09A`|
 |NFT Bridge|`0x94c994fC51c13101062958b567e743f1a04432dE`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -707,19 +719,20 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 # Moonbeam
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://moonbeam.network/)
 - [Moonbeam EVM Block Explorer](https://moonscan.io/)
 - [Developer docs](https://docs.moonbeam.network/) | [Faucet](https://faucet.moonbeam.network/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `moonbeam`
 - **Chain ID**: `16`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -732,7 +745,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints](https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints)
 
 
-### Mainnet Contracts (<code>1284</code>)
+***Mainnet Contracts (<code>1284</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -741,7 +754,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |NFT Bridge|`0x453cfbe096c0f8d763e8c5f24b441097d577bde2`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>Moonbase-Alphanet</code> - <code>1287</code>)
+***Testnet Contracts (<code>Moonbase-Alphanet</code> - <code>1287</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -752,7 +765,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x3bF0c43d88541BBCF92bE508ec41e540FbF28C56`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -766,13 +779,14 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 # Neon
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://neon-labs.org/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neon.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neon.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `neon`
 - **Chain ID**: `17`
@@ -784,7 +798,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 
 
-### Mainnet Contracts (<code>245022934</code>)
+***Mainnet Contracts (<code>245022934</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -792,7 +806,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>245022940</code>)
+***Testnet Contracts (<code>245022940</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -800,7 +814,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
 |NFT Bridge|`0x66E5BcFD45D2F3f166c567ADa663f9d2ffb292B4`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -814,13 +828,14 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 # Oasis
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://oasisprotocol.org/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/oasis.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/oasis.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `oasis`
 - **Chain ID**: `7`
@@ -832,7 +847,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 
 
-### Mainnet Contracts (<code>42262</code>)
+***Mainnet Contracts (<code>42262</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -840,7 +855,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0x5848C791e09901b40A9Ef749f2a6735b418d7564`|
 |NFT Bridge|`0x04952D522Ff217f40B5Ef3cbF659EcA7b952a6c1`|
 
-### Testnet Contracts (<code>42261</code>)
+***Testnet Contracts (<code>42261</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -848,7 +863,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 |Token Bridge|`0x88d8004A9BdbfD9D28090A02010C19897a29605c`|
 |NFT Bridge|`0xC5c25B41AB0b797571620F5204Afa116A44c0ebA`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -862,19 +877,20 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 # Optimism
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://www.optimism.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `optimism`
 - **Chain ID**: `24`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -887,7 +903,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
 
 
-### Mainnet Contracts (<code>10</code>)
+***Mainnet Contracts (<code>10</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -897,7 +913,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 |CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
 
-### Testnet Contracts (<code>Optimism Goerli</code> - <code>420</code>)
+***Testnet Contracts (<code>Optimism Goerli</code> - <code>420</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -909,7 +925,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |MockIntegration|`0x421e0bb71dDeeC727Af79766423d33D8FD7dB963`|
 |CCTP|`0x2703483b1a5a7c577e8680de9df8be03c6f30e3c`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -923,19 +939,20 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 # Polygon
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://polygon.technology/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/polygon.json)
 - [Developer docs](https://wiki.polygon.technology/) | [Faucet](https://faucet.polygon.technology/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `polygon`
 - **Chain ID**: `5`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -948,7 +965,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/](https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/)
 
 
-### Mainnet Contracts (<code>137</code>)
+***Mainnet Contracts (<code>137</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -957,7 +974,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |NFT Bridge|`0x90BBd86a6Fe93D3bc3ed6335935447E75fAb7fCf`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
-### Testnet Contracts (<code>Mumbai</code> - <code>80001</code>)
+***Testnet Contracts (<code>Mumbai</code> - <code>80001</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -968,7 +985,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |MockProvider|`0x60a86b97a7596eBFd25fb769053894ed0D9A8366`|
 |MockIntegration|`0x3bF0c43d88541BBCF92bE508ec41e540FbF28C56`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -983,13 +1000,14 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 # Rootstock
 
-## Ecosystem
+
+**Ecosystem**
 
 - No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/rootstock.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `rootstock`
 - **Chain ID**: `33`
@@ -1001,7 +1019,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 
 
-### Mainnet Contracts (<code>30</code>)
+***Mainnet Contracts (<code>30</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1009,7 +1027,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>31</code>)
+***Testnet Contracts (<code>31</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1017,7 +1035,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -1039,13 +1057,14 @@ Sepolia is a testnet only chain and can be used as an alternative to Goerli
 Note that a different chain id is used for Sepolia
 {% endhint %}
 
-## Ecosystem
+
+**Ecosystem**
 
 - No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sepolia.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `sepolia`
 - **Chain ID**: `10002`
@@ -1057,7 +1076,7 @@ Note that a different chain id is used for Sepolia
 
 
 
-### Mainnet Contracts (<code>N/A</code>)
+***Mainnet Contracts (<code>N/A</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1065,7 +1084,7 @@ Note that a different chain id is used for Sepolia
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Sepolia</code> - <code>11155111</code>)
+***Testnet Contracts (<code>Sepolia</code> - <code>11155111</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1073,7 +1092,7 @@ Note that a different chain id is used for Sepolia
 |Token Bridge|`0xDB5492265f6038831E89f495670FF909aDe94bd9`|
 |NFT Bridge|`0x6a0B52ac198e4870e5F3797d5B403838a5bbFD99`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -1095,13 +1114,14 @@ Holesky is a testnet only chain and can be used as an alternative to Goerli
 Note that a different chain id is used for Holesky
 {% endhint %}
 
-## Ecosystem
+
+**Ecosystem**
 
 - No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `holesky`
 - **Chain ID**: `10006`
@@ -1113,7 +1133,7 @@ Note that a different chain id is used for Holesky
 
 
 
-### Mainnet Contracts (<code>N/A</code>)
+***Mainnet Contracts (<code>N/A</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1121,7 +1141,7 @@ Note that a different chain id is used for Holesky
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Holesky</code> - <code>17000</code>)
+***Testnet Contracts (<code>Holesky</code> - <code>17000</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1129,7 +1149,7 @@ Note that a different chain id is used for Holesky
 |Token Bridge|`0x76d093BbaE4529a342080546cAFEec4AcbA59EC6`|
 |NFT Bridge|`0xc8941d483c45eF8FB72E4d1F9dDE089C95fF8171`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -1144,13 +1164,14 @@ Note that a different chain id is used for Holesky
 
 # Arbitrum Sepolia
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://arbitrum.io/)
 - [Arbitrum Explorer](https://sepolia.arbiscan.io/)
 - 
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `arbitrum_sepolia`
 - **Chain ID**: `10003`
@@ -1162,7 +1183,7 @@ Note that a different chain id is used for Holesky
 
 
 
-### Mainnet Contracts 
+***Mainnet Contracts ***
 
 |Type|Contract|
 |----|--------|
@@ -1170,7 +1191,7 @@ Note that a different chain id is used for Holesky
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Sepolia</code> - <code>421614</code>)
+***Testnet Contracts (<code>Sepolia</code> - <code>421614</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1178,7 +1199,7 @@ Note that a different chain id is used for Holesky
 |Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -1193,19 +1214,20 @@ Note that a different chain id is used for Holesky
 
 # Optimism Sepolia
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://www.optimism.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `optimism_sepolia`
 - **Chain ID**: `10005`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -1218,7 +1240,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
 
 
-### Mainnet Contracts 
+***Mainnet Contracts ***
 
 |Type|Contract|
 |----|--------|
@@ -1226,7 +1248,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Optimism Sepolia</code> - <code>11155420</code>)
+***Testnet Contracts (<code>Optimism Sepolia</code> - <code>11155420</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1234,7 +1256,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Token Bridge|`0x99737Ec4B815d816c49A385943baf0380e75c0Ac`|
 |NFT Bridge|`0x27812285fbe85BA1DF242929B906B31EE3dd1b9f`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -1249,13 +1271,14 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 # Base Sepolia
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://base.org/)
 - [Etherscan](https://sepolia.basescan.org/)
 - [Developer docs](https://docs.base.org/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `base_sepolia`
 - **Chain ID**: `10004`
@@ -1267,7 +1290,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 
 
-### Mainnet Contracts 
+***Mainnet Contracts ***
 
 |Type|Contract|
 |----|--------|
@@ -1275,7 +1298,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Base Sepolia</code> - <code>84532</code>)
+***Testnet Contracts (<code>Base Sepolia</code> - <code>84532</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -1283,7 +1306,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Token Bridge|`0x86F55A04690fd7815A3D802bD587e83eA888B239`|
 |NFT Bridge|`0x268557122Ffd64c85750d630b716471118F323c8`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|

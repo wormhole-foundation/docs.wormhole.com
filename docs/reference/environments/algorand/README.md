@@ -27,19 +27,20 @@ The emitter is the application address, normalized to the wormhole address forma
 
 # Algorand
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://algorand.com)
 - [Algoexplorer](https://algoexplorer.io/) | [AlgoScan](https://algoscan.app)
 - [Developer Docs](https://developer.algorand.org) | [Faucet](https://bank.testnet.algorand.network/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `algorand`
 - **Chain ID**: `8`
 - **Contract Source**: [algorand/wormhole_core.py](https://github.com/wormhole-foundation/wormhole/blob/main/algorand/wormhole_core.py)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -53,7 +54,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality](https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality)
 
 
-### Mainnet Contracts (<code>mainnet-v1.0</code>)
+***Mainnet Contracts (<code>mainnet-v1.0</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -61,7 +62,7 @@ For more information see [https://developer.algorand.org/docs/get-started/basics
 |Token Bridge|`842126029`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>testnet-v1.0</code>)
+***Testnet Contracts (<code>testnet-v1.0</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -69,7 +70,7 @@ For more information see [https://developer.algorand.org/docs/get-started/basics
 |Token Bridge|`86525641`|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|

@@ -17,19 +17,20 @@ The emitter address on NEAR chains is the sha256 digest of the program address s
 
 # NEAR
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://near.org/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `near`
 - **Chain ID**: `15`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -43,7 +44,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)
 
 
-### Mainnet Contracts (<code>mainnet</code>)
+***Mainnet Contracts (<code>mainnet</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -51,7 +52,7 @@ For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomico
 |Token Bridge|`contract.portalbridge.near`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>testnet</code>)
+***Testnet Contracts (<code>testnet</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -59,7 +60,7 @@ For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomico
 |Token Bridge|`token.wormhole.testnet`|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|

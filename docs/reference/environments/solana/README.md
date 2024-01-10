@@ -41,19 +41,20 @@ The application dev chooses whether this is a consistent address over time or ch
 The contract addresess for `testnet` are on the Solana `devnet`
 {% endhint %}
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://solana.com/)
 - [https://explorer.solana.com/](https://explorer.solana.com/)
 - [Developer docs](https://solana.com/developers)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `solana`
 - **Chain ID**: `1`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/solana.json)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -66,7 +67,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 For more information see [https://docs.solana.com/cluster/commitments](https://docs.solana.com/cluster/commitments)
 
 
-### Mainnet Contracts (<code>Mainnet Beta</code> - <code>5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d</code>)
+***Mainnet Contracts (<code>Mainnet Beta</code> - <code>5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -74,7 +75,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|`wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb`|
 |NFT Bridge|`WnFt12ZrnzZrFZkt2xsNsaNWoQribnuQ5B5FrDbwDhD`|
 
-### Testnet Contracts (<code>Devnet</code> - <code>EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG</code>)
+***Testnet Contracts (<code>Devnet</code> - <code>EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -82,7 +83,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|`DZnkkTmCiFWfYTfT41X3Rd1kDgozqzxWaHqsw6W4x2oe`|
 |NFT Bridge|`2rHhojZ7hpu1zA91nvZmT8TqWWvMcKmmNBCr2mKTtMq4`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
@@ -97,13 +98,14 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 # pythnet
 
-## Ecosystem
+
+**Ecosystem**
 
 - No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 - No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/pythnet.json)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `pythnet`
 - **Chain ID**: `26`
@@ -115,7 +117,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 
 
-### Mainnet Contracts 
+***Mainnet Contracts ***
 
 |Type|Contract|
 |----|--------|
@@ -123,7 +125,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+***Testnet Contracts ***
 
 |Type|Contract|
 |----|--------|
@@ -131,7 +133,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|

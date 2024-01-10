@@ -23,19 +23,20 @@ The capability object ID (uint64) is used as the emitter address after normalizi
 
 # Aptos
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://aptosfoundation.org/)
 - [Aptos Explorer](https://explorer.aptoslabs.com/) | [AptoScan](https://aptoscan.com/)
 - [Developer Docs](https://aptos.dev/) | [Faucet](https://www.aptosfaucet.com/)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `aptos`
 - **Chain ID**: `22`
 - **Contract Source**: [aptos/wormhole/sources/wormhole.move](https://github.com/wormhole-foundation/wormhole/blob/main/aptos/wormhole/sources/wormhole.move)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -49,7 +50,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
 
 
-### Mainnet Contracts (<code>1</code>)
+***Mainnet Contracts (<code>1</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -57,7 +58,7 @@ For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-
 |Token Bridge|`0x576410486a2da45eee6c949c995670112ddf2fbeedab20350d506328eefc9d4f`|
 |NFT Bridge|`0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130`|
 
-### Testnet Contracts (<code>2</code>)
+***Testnet Contracts (<code>2</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -65,7 +66,7 @@ For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-
 |Token Bridge|`0x576410486a2da45eee6c949c995670112ddf2fbeedab20350d506328eefc9d4f`|
 |NFT Bridge|`0x1bdffae984043833ed7fe223f7af7a3f8902d04129b14f801823e64827da7130`|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|

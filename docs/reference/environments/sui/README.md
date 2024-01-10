@@ -29,19 +29,20 @@ On sui the emitter is the object id of the emitter capability.
 
 # Sui
 
-## Ecosystem
+
+**Ecosystem**
 
 - [Web site](https://sui.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sui.json)
 - [Developer docs](https://docs.sui.io/) | [Faucet](https://docs.sui.io/build/faucet)
 
-## Wormhole Details
+**Wormhole Details**
 
 - **Name**: `sui`
 - **Chain ID**: `21`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sui.json)
 
-### Consistency Levels
+***Consistency Levels***
 
 The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
 
@@ -55,7 +56,7 @@ This field is may be ignored since the chain provides instant finality.
 For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)
 
 
-### Mainnet Contracts (<code>35834a8a</code>)
+***Mainnet Contracts (<code>35834a8a</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -63,7 +64,7 @@ For more information see [https://docs.sui.io/learn/architecture/consensus](http
 |Token Bridge|`0xc57508ee0d4595e5a8728974a4a93a787d38f339757230d441e895422c07aba9`|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>4c78adac</code>)
+***Testnet Contracts (<code>4c78adac</code>)***
 
 |Type|Contract|
 |----|--------|
@@ -71,7 +72,7 @@ For more information see [https://docs.sui.io/learn/architecture/consensus](http
 |Token Bridge|`0x6fb10cdb7aa299e9a4308752dadecb049ff55a892de92992a1edbd7912b3d6da`|
 |NFT Bridge|**N/A**|
 
-### Local Network Contract
+***Local Network Contract***
 
 |Type|Contract|
 |----|--------|
