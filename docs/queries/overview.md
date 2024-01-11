@@ -83,4 +83,4 @@ For example, many chains have implementations forked from [geth](https://github.
 
 ### Testnet
 
-See the [Constants Reference](https://docs.wormhole.com/wormhole/reference/constants) for the list of testnet chains.
+See the [Constants Reference](../reference/constants) for the list of testnet chains.

@@ -287,7 +287,7 @@ const receiver: Signer = // ...
 
 ### Addresses
 
-Within the Wormhole context, addresses are [normalized](https://docs.wormhole.com/wormhole/blockchain-environments/evm#addresses) to 32 bytes and referred to in this SDK as a `UniversalAddresses`.
+Within the Wormhole context, addresses are [normalized](../../blockchain-environments/evm#addresses) to 32 bytes and referred to in this SDK as a `UniversalAddresses`.
 
 Each platform comes with an address type that understands the native address formats, unsuprisingly referred to a NativeAddress. This abstraction allows the SDK to work with addresses in a consistent way regardless of the underlying chain. 
 

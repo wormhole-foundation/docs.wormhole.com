@@ -42,13 +42,13 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>base</td><td>30</td><td><code>Base</code> - <code>8453</code></td><td><code>Base Goerli</code> - <code>84531</code></td></tr>
 <tr><td>sei</td><td>32</td><td><code>pacific-1</code></td><td><code>atlantic-2</code></td></tr>
 <tr><td>rootstock</td><td>33</td><td><code>30</code></td><td><code>31</code></td></tr>
-<tr><td>scroll</td><td>34</td><td></td><td></td></tr>
-<tr><td>mantle</td><td>35</td><td></td><td></td></tr>
+<tr><td>scroll</td><td>34</td><td><code>534352</code></td><td><code>Sepolia</code> - <code>534351</code></td></tr>
+<tr><td>mantle</td><td>35</td><td><code>5000</code></td><td><code>Sepolia</code> - <code>5003</code></td></tr>
 <tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
-<tr><td>neutron</td><td>4003</td><td></td><td></td></tr>
-<tr><td>celestia</td><td>4004</td><td></td><td></td></tr>
+<tr><td>neutron</td><td>4003</td><td><code>neutron-1</code></td><td><code>pion-1</code></td></tr>
+<tr><td>celestia</td><td>4004</td><td><code>celestia</code></td><td><code>mocha-4</code></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
