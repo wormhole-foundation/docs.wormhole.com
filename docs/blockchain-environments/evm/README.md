@@ -374,7 +374,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 <!--BASE_CHAIN_DETAILS-->
 <!--BSC_CHAIN_DETAILS-->
 
-# BNB Smart Chain (BSC)
+# BNB Smart Chain
 
 ## Ecosystem
 
@@ -1030,7 +1030,7 @@ For more information see [https://wiki.polygon.technology/docs/pos/design/heimda
 
 <!--SEPOLIA_CHAIN_DETAILS-->
 
-# Sepolia
+# Ethereum Sepolia
 
 {% hint style='info' %}
 Sepolia is a testnet only chain and can be used as an alternative to Goerli
@@ -1083,3 +1083,311 @@ Note that a different chain id is used for Sepolia
   
 
 <!--SEPOLIA_CHAIN_DETAILS-->
+
+<!--HOLESKY_CHAIN_DETAILS-->
+
+# Ethereum Holesky
+
+{% hint style='info' %}
+Holesky is a testnet only chain and can be used as an alternative to Goerli
+{% endhint %}
+{% hint style='info' %}
+Note that a different chain id is used for Holesky
+{% endhint %}
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/holesky.json)
+
+## Wormhole Details
+
+- **Name**: `holesky`
+- **Chain ID**: `10006`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>N/A</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Holesky</code> - <code>17000</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a`|
+|Token Bridge|`0x76d093BbaE4529a342080546cAFEec4AcbA59EC6`|
+|NFT Bridge|`0xc8941d483c45eF8FB72E4d1F9dDE089C95fF8171`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--HOLESKY_CHAIN_DETAILS-->
+
+<!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
+
+# Arbitrum Sepolia
+
+## Ecosystem
+
+- [Web site](https://arbitrum.io/)
+- [Arbitrum Explorer](https://sepolia.arbiscan.io/)
+- 
+
+## Wormhole Details
+
+- **Name**: `arbitrum_sepolia`
+- **Chain ID**: `10003`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/arbitrum_sepolia.json)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Sepolia</code> - <code>421614</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
+|Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
+|NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--ARBITRUM_SEPOLIA_CHAIN_DETAILS-->
+
+<!--OPTIMISM_SEPOLIA_CHAIN_DETAILS-->
+
+# Optimism Sepolia
+
+## Ecosystem
+
+- [Web site](https://www.optimism.io/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/optimism_sepolia.json)
+
+## Wormhole Details
+
+- **Name**: `optimism_sepolia`
+- **Chain ID**: `10005`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+### Consistency Levels
+
+The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
+
+
+For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Optimism Sepolia</code> - <code>11155420</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x31377888146f3253211EFEf5c676D41ECe7D58Fe`|
+|Token Bridge|`0x99737Ec4B815d816c49A385943baf0380e75c0Ac`|
+|NFT Bridge|`0x27812285fbe85BA1DF242929B906B31EE3dd1b9f`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--OPTIMISM_SEPOLIA_CHAIN_DETAILS-->
+
+<!--BASE_SEPOLIA_CHAIN_DETAILS-->
+
+# Base Sepolia
+
+## Ecosystem
+
+- [Web site](https://base.org/)
+- [Etherscan](https://sepolia.basescan.org/)
+- [Developer docs](https://docs.base.org/)
+
+## Wormhole Details
+
+- **Name**: `base_sepolia`
+- **Chain ID**: `10004`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Base Sepolia</code> - <code>84532</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x79A1027a6A159502049F10906D333EC57E95F083`|
+|Token Bridge|`0x86F55A04690fd7815A3D802bD587e83eA888B239`|
+|NFT Bridge|`0x268557122Ffd64c85750d630b716471118F323c8`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--BASE_SEPOLIA_CHAIN_DETAILS-->
+
+<!--SCROLL_CHAIN_DETAILS-->
+
+# Scroll
+
+## Ecosystem
+
+- [Web site](https://scroll.io/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/scroll.json)
+- [Developer docs](https://docs.scroll.io/en/home/)
+
+## Wormhole Details
+
+- **Name**: `scroll`
+- **Chain ID**: `34`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/scroll.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>534352</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Sepolia</code> - <code>534351</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x055F47F1250012C6B20c436570a76e52c17Af2D5`|
+|Token Bridge|`0x22427d90B7dA3fA4642F7025A854c7254E4e45BF`|
+|NFT Bridge|`0x47B9a1406BEe29a3001BFEB7e45aE45fFFB40c18`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--SCROLL_CHAIN_DETAILS-->
+
+<!--MANTLE_CHAIN_DETAILS-->
+
+# Mantle
+
+## Ecosystem
+
+- [Web site](https://www.mantle.xyz/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/mantle.json)
+- [Developer docs](https://docs.mantle.xyz/network/introduction/overview)
+
+## Wormhole Details
+
+- **Name**: `mantle`
+- **Chain ID**: `35`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/mantle.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>5000</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Sepolia</code> - <code>5003</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
+|Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
+|NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--MANTLE_CHAIN_DETAILS-->

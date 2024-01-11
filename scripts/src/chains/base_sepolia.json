@@ -1,0 +1,21 @@
+{
+  "title": "Base Sepolia",
+  "homepage": "https://base.org/",
+  "testnet":{
+    "name":"Base Sepolia",
+    "id":"84532"
+  },
+  "developer": [
+      {
+        "url": "https://docs.base.org/",
+        "description":"Developer docs"
+      }
+    ],
+  "explorer": [
+    {
+      "url": "https://sepolia.basescan.org/",
+      "description": "Etherscan"
+    }
+  ],
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+}

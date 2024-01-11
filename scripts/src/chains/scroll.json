@@ -1,0 +1,15 @@
+{
+  "title": "Scroll",
+  "homepage": "https://scroll.io/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"534352"
+  },
+  "testnet":{
+    "name":"Sepolia",
+    "id":"534351"
+  },
+  "developer":[
+    {"url":"https://docs.scroll.io/en/home/", "description":"Developer docs"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Neutron",
+  "homepage": "https://www.neutron.org/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"neutron-1"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"pion-1"
+  },
+  "developer":[
+    {"url":"https://docs.neutron.org/", "description":"Developer docs"}
+  ]
+}

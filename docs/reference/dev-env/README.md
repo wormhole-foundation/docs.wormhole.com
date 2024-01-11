@@ -4,9 +4,9 @@ Developers building for smart contract integration will want to get a developmen
 
 ## Tooling Installation
 
-The [Worm CLI Tool](../cli-docs/) should be installed regardless of environments chosen.
+The [Worm CLI Tool](../cli-docs.md) should be installed regardless of environments chosen.
 
-Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../environments/README.md)
+Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../../blockchain-environments/environments.md)
 
 ## Development Stages
 
@@ -17,7 +17,7 @@ Different approaches to development and testing are recommended at different sta
 During initial development of an on-chain application, the best option is to use the _native tools_ available in the environment.
 
 {% hint style="info" %}
-For the specific native tools recommended, see the page for the [Environment](../environments/README.md) you're interested in.
+For the specific native tools recommended, see the page for the [Environment](../../blockchain-environments/environments.md) you're interested in.
 {% endhint %}
 
 For any methods the program that require some message be sent or received, it's recommended to set up some Mock Guardian or Emitter to provide signed VAAs.
@@ -35,7 +35,7 @@ For integration to Wormhole and with multiple chains, the simplest option is to 
 {% hint style="info" %}
 In choosing which chains to use for integration testing, consider which chains in a given environment provide easy access to testnet tokens and where block times are fast.
 
-Find links for testnet faucets in the [blockchain details section](../environments/README.md)
+Find links for testnet faucets in the [blockchain details section](../../blockchain-environments/environments.md)
 {% endhint %}
 
 A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](./#tilt) is available to run local instances of all the chains Wormhole supports.
@@ -60,19 +60,18 @@ A full-fledged Kubernetes deployment of every chain connected to Wormhole, along
 
 [Full setup guide for Tilt](tilt.md)
 
-
 ## Deploying to public networks
 
 ### Testnet
 
 When doing integration testing on testnets, keep in mind that there is a single Guardian node watching for transactions on various test networks. Because testnet only has a single Guardian, there's a small chance that your VAAs will not be processed. This rate is not indicative of performance on mainnet, where there are 19 Guardians watching for transactions.
 
-The testnet contract addresses are available on the page for the each [environment](../environments/README.md).
+The testnet contract addresses are available on the page for the each [environment](../../blockchain-environments/environments.md).
 
 The testnet Guardian RPC configuration is available on the [SDK page](../sdk-docs/#testnet-guardian-rpc).
 
 ### Mainnet
 
-The mainnet contract addresses are available on the page for each [environment](../environments/README.md).
+The mainnet contract addresses are available on the page for each [environment](../../blockchain-environments/environments.md).
 
 The mainnet Guardian RPC configuration is available on the [SDK page](../sdk-docs/#mainnet-guardian-rpc).

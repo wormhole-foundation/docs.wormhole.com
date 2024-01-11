@@ -351,9 +351,9 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 |Type|Contract|
 |----|--------|
-|Core|`terra18vd8fpwxzck93qlwghaj6arh4p7c5n896xzem5`|
-|Token Bridge|`terra10pyejy66429refv3g35g2t7am0was7ya7kz2a4`|
-|NFT Bridge|`terra1plju286nnfj3z54wgcggd4enwaa9fgf5kgrgzl`|
+|Core|`terra14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9ssrc8au`|
+|Token Bridge|`terra1nc5tatafv6eyq7llkr2gv50ff9e22mnf70qgjlv737ktmt4eswrquka9l6`|
+|NFT Bridge|**N/A**|
   
 
 <!--TERRA_CHAIN_DETAILS-->
@@ -455,3 +455,101 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
   
 
 <!--XPLA_CHAIN_DETAILS-->
+
+<!--NEUTRON_CHAIN_DETAILS-->
+
+# Neutron
+
+## Ecosystem
+
+- [Web site](https://www.neutron.org/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neutron.json)
+- [Developer docs](https://docs.neutron.org/)
+
+## Wormhole Details
+
+- **Name**: `neutron`
+- **Chain ID**: `4003`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/neutron.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>neutron-1</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`neutron16rerygcpahqcxx5t8vjla46ym8ccn7xz7rtc6ju5ujcd36cmc7zs9zrunh`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>pion-1</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`neutron1rhqgnak5z0pla5sgqq7ykqh8glckk4h67fe0hgjfcyulx2nqa0yqaswtnp`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--NEUTRON_CHAIN_DETAILS-->
+
+<!--CELESTIA_CHAIN_DETAILS-->
+
+# Celestia
+
+## Ecosystem
+
+- [Web site](https://celestia.org)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/celestia.json)
+- [Developer docs](https://celestia.org/build/)
+
+## Wormhole Details
+
+- **Name**: `celestia`
+- **Chain ID**: `4004`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/celestia.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>celestia</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>mocha-4</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--CELESTIA_CHAIN_DETAILS-->
