@@ -8,7 +8,7 @@ While this protocol is wholly separate from Wormhole itself, Wormhole builds on 
 Wormhole supports all CCTP supported chains but at the moment only a [handful of chains](https://developers.circle.com/stablecoins/docs/supported-domains) are supported by Circle.  
 {% endhint %}
 
-You can use Wormhole's CCTP Powered USDC bridging by embedding the [Connect](https://docs.wormhole.com/wormhole/quick-start/wh-connect) Widget or by integrating the Connect [SDK](./sdk.md) directly. 
+You can use Wormhole's CCTP Powered USDC bridging by embedding the [Connect](../../quick-start/wh-connect) Widget or by integrating the Connect [SDK](./sdk.md) directly. 
 
 
 ## Automatic Relaying
@@ -40,7 +40,7 @@ Native gas dropoff is limited to TODO
 
 Supporting CCTP USDC transfers is incredibly simple using the Wormhole Connect widget. Enable USDC brdiging directly in your dapp in as few as 5 lines of code and get all the user friendly features built by Wormhole along with it. 
 
-A full tutorial is available [here](https://docs.wormhole.com/wormhole/quick-start/wh-connect)
+A full tutorial is available [here](../wormhole-connect/wh-connect.md)
 
 ## CCTP via Connect SDK
 

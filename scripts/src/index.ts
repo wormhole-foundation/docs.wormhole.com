@@ -77,7 +77,7 @@ async function overwriteGenerated(tag: string, content: string) {
     if (chain.extraDetails !== undefined) {
       // Supported chains for intro page
       supportedChains.push(chainCard(chain, "."));
-      supportedChainsEcosystem.push(chainCard(chain, "../.."));
+      supportedChainsEcosystem.push(chainCard(chain, ".."));
 
       // Chain specific pages
       chainPages[chain.name] = chainDetailsPage(chain);
