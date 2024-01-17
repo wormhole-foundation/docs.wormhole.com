@@ -4,4 +4,4 @@ ignore:
   
 redirects:
   blockchain-environments/constants: reference/constants.md
-  quick-start/connect: tutorials/wormhold-connect/wh-connect.md
+  quick-start/connect: tutorials/wormhole-connect/wh-connect.md
