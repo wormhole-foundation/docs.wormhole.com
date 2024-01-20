@@ -8,7 +8,7 @@ First install the required packages to use CCTP on EVM compatible platforms (or 
 npm install \
     @wormhole-foundation/connect-sdk \
     @wormhole-foundation/connect-sdk-evm \
-    @wormhole-foundation-connect-sdk-evm-cctp
+    @wormhole-foundation/connect-sdk-evm-cctp
 ```
 
 
