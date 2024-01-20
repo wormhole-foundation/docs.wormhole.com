@@ -37,7 +37,7 @@ const wh = new Wormhole(network, [EvmContext, SolanaContext]);
 // look up configuration parameters or  even parse addresses 
 const srcChain = wh.getChain('Ethereum');
 
-Wormhole.parseAddress('Ethereum', "0xdeadbeef...") // => NativeAddress<'Evm'>
+srcChain.parseAddress("0xdeadbeef...") // => NativeAddress<'Evm'>
 await srcChain.getTokenBridge() // => TokenBridge<'Evm'>
 srcChain.getRpcClient() // => RpcClient<'Evm'>
 ```
