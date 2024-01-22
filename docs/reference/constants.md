@@ -1150,7 +1150,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>ethereum</td>
       <td><code>0xAaDA05BD399372f0b0463744C09113c137636f6a</code></td>
-      <td><code>0x0a69146716b3a21622287efa1607424c663069a4</code></td>
+      <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -1167,8 +1167,8 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>polygon</td>
-      <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x0FF28217dCc90372345954563486528aa865cDd6</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -1276,13 +1276,13 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>arbitrum</td>
       <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
-      <td><code>0x2e8f5e00a9c5d450a72700546b89e2b70dfb00f2</code></td>
+      <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
       <td>optimism</td>
       <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
-      <td><code>0x2703483b1a5a7c577e8680de9df8be03c6f30e3c</code></td>
+      <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -1306,7 +1306,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>base</td>
       <td><code>0x03faBB06Fa052557143dC28eFCFc63FC12843f1D</code></td>
-      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
+      <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -1366,25 +1366,25 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>sepolia</td>
       <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
       <td>arbitrum_sepolia</td>
       <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
       <td>base_sepolia</td>
       <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
       <td>optimism_sepolia</td>
       <td><code>-</code></td>
-      <td><code>-</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
