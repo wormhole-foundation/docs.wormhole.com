@@ -38,8 +38,8 @@ With this done, we can create the Wormhole instance that can be used to create a
   // 1.0 USDC in base units 
   const amt = normalizeAmount("1.0", 6)
 
-  const srcAddress = nativeChainAddress("Ethereum", "0xdeadbeef...") 
-  const dstAddress = nativeChainAddress("Avalanche", "0xbeefdead...") 
+  const srcAddress = Wormhole.chainAddress("Ethereum", "0xdeadbeef...") 
+  const dstAddress = Wormhole.chainAddress("Avalanche", "0xbeefdead...") 
 
   const xfer = await wh.circleTransfer(
     amt, // 
