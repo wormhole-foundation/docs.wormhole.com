@@ -941,7 +941,7 @@ The options for [consistencyLevel](../../components/core-contracts.md#consistenc
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
-For more information see [https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/](https://wiki.polygon.technology/docs/pos/design/heimdall/checkpoint/)
+For more information see [https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/](https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/)
 
 
 ### Mainnet Contracts (<code>137</code>)
