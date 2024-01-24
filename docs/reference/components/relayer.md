@@ -88,7 +88,7 @@ Standard relayers are a component of a decentralized network in the Wormhole pro
 The standard relayer integration involves two key steps:
 
 1. **Delivery Request:** Request delivery from the Wormhole Relay Ecosystem Contract.
-2. **Relay Reception:** Implement a "receiveRelay" function within their contracts. This function is invoked upon successful relay of the VAA.
+2. **Relay Reception:** Implement a [receiveWormholeMessages](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/bacbe82e6ae3f7f5ec7cdcd7d480f1e528471bbb/src/interfaces/IWormholeReceiver.sol#L44-L50) function within their contracts. This function is invoked upon successful relay of the VAA.
 
 ### Considerations
 
