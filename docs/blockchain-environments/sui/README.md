@@ -32,7 +32,7 @@ On sui the emitter is the object id of the emitter capability.
 ## Ecosystem
 
 - [Web site](https://sui.io/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/sui.json)
+- [suiexplorer](https://suiexplorer.com/) | [suiscan](https://suiscan.xyz/)
 - [Developer docs](https://docs.sui.io/) | [Faucet](https://docs.sui.io/build/faucet)
 
 ## Wormhole Details
