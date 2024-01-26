@@ -20,8 +20,8 @@ The emitter address on NEAR chains is the sha256 digest of the program address s
 ## Ecosystem
 
 - [Web site](https://near.org/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/near.json)
+- [https://nearblocks.io/](https://nearblocks.io/)
+- [https://docs.near.org/](https://docs.near.org/)
 
 ## Wormhole Details
 
