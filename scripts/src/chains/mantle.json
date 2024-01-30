@@ -1,0 +1,15 @@
+{
+  "title": "Mantle",
+  "homepage": "https://www.mantle.xyz/",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"5000"
+  },
+  "testnet":{
+    "name":"Sepolia",
+    "id":"5003"
+  },
+  "developer":[
+    {"url":"https://docs.mantle.xyz/network/introduction/overview", "description":"Developer docs"}
+  ]
+}

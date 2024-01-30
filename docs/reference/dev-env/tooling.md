@@ -14,10 +14,6 @@ Most developers find it useful to clone the Wormhole Core repository. This repos
 
 Swiss-Army Knife Utility CLI tool. Excellent for creating one-off VAAs, parsing VAAs, reading Wormhole contract configurations, and more.
 
-### [Orchestrator](https://github.com/wormhole-foundation/xdapp-book/blob/main/projects/evm-messenger/orchestrator.js)
-
-Small WIP tool which comes as part of the [Wormhole Local Validator](./wormhole-local-validator.md) environment. Used to quickly deploy and redeploy multiple smart contracts. Will eventually become part of a larger deployment management tool.
-
 ### [Wormhole SDK Source](https://github.com/wormhole-foundation/wormhole/tree/main/sdk)
 
 Libraries in various languages to help with interacting with Wormhole contracts.

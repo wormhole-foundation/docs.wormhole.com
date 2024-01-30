@@ -1,0 +1,15 @@
+{
+  "title": "Celestia",
+  "homepage": "https://celestia.org",
+  "mainnet":{
+    "name":"Mainnet",
+    "id":"celestia"
+  },
+  "testnet":{
+    "name":"Testnet",
+    "id":"mocha-4"
+  },
+  "developer":[
+    {"url":"https://celestia.org/build/", "description":"Developer docs"}
+  ]
+}

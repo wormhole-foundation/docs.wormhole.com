@@ -5,7 +5,7 @@ set -euo pipefail
 echo "Grab connect-sdk README content"
 FILE_PATH="../../../docs/reference/sdk-docs/connect-sdk.md"
 REPO_DIR="connect-sdk"
-BRANCH="develop"
+BRANCH="main"
 
 if [ -d $REPO_DIR ]
 then

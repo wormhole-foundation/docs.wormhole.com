@@ -2,7 +2,7 @@
 
 Wormhole is comprised of several noteworthy components. Before we go into each component in depth, let's talk about the names of the major pieces and how they fit together.
 
-![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.png)
+![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.jpg)
 
 ## On-Chain Components
 
@@ -33,5 +33,5 @@ Wormhole is comprised of several noteworthy components. Before we go into each c
 
 - [**Relayer**](./relayer.md) - Any off chain process that relays a VAA to the target chain. 
 
-  - [**Automatic Relayers**](./relayer.md#automatic-relayers) - A decentralized relayer network which delivers messages that are requested on-chain via the Wormhole Relay Contract. Also referred to as `Generic Relayers`
+  - [**Standard Relayers**](./relayer.md#standard-relayers) - A decentralized relayer network which delivers messages that are requested on-chain via the Wormhole Relay Contract. Also referred to as `Generic Relayers`
   - [**Specialized Relayers**](./relayer.md#specialized-relayers) - Relayers that only handle VAAs for a specific protocol or cross chain application. They can execute custom logic off-chain, which can reduce gas costs and increase cross-chain compatibility. Currently, cross chain application developers are responsible for developing and hosting specialized relayers.

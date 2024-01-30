@@ -4,15 +4,18 @@
 
 ## Quick Start
 
-* [Integrate Bridged Assets in your UI](tutorials/quick-start/wh-connect.md)
-* [Cross-chain Development](quick-start/cross-chain-dev.md)
-  * [Automatic Relayer](quick-start/automatic-relayer.md)
-  * [Specialized Relayer](quick-start/specialized-relayer.md)
+* [Connect: Asset Bridging Made Simple](tutorials/quick-start/wormhole-connect/wh-connect.md)
+* [Developing Cross Chain Dapps](tutorials/quick-start/cross-chain-dev/README.md)
+  * [Standard Relayer](tutorials/quick-start/cross-chain-dev/standard-relayer.md)
+  * [Specialized Relayer](tutorials/quick-start/cross-chain-dev/specialized-relayer.md)
 * [Tutorials](tutorials/README.md)
   * [Hello Wormhole](tutorials/quick-start/hello-wormhole/README.md)
     * [Hello Wormhole Explained](tutorials/quick-start/hello-wormhole/hello-wormhole-explained.md)
     * [Beyond Hello Wormhole](tutorials/quick-start/hello-wormhole/beyond-hello-wormhole.md)
   * [Hello Token](tutorials/quick-start/hello-token/README.md)
+  * [CCTP](tutorials/quick-start/cctp/README.md)
+    * [USDC Transfers With Wormhole Connect](tutorials/quick-start/cctp/wh-connect.md)
+    * [USDC Transfers With Connect SDK](tutorials/quick-start/cctp/sdk.md)
   * [Simple Relayer](tutorials/quick-start/relayer/README.md)
     * [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)
 * [Demos](tutorials/demos.md)
@@ -41,23 +44,30 @@
   * [Connect SDK](reference/sdk-docs/connect-sdk.md)
 * [CLI Docs](reference/cli-docs/README.md)
 * [Glossary](reference/glossary.md)
-* [FAQ](reference/faq.md)
-* [See Also](reference/see-also.md)
 
 ## Blockchain Environments
 
-* [Overview](reference/environments/README.md)
-* [Algorand](reference/environments/algorand/README.md)
-* [Aptos](reference/environments/aptos/README.md)
-* [CosmWasm](reference/environments/cosmwasm/README.md)
-* [EVM](reference/environments/evm/README.md)
-  * [Relayer](reference/environments/evm/relayer.md)
-* [Near](reference/environments/near/README.md)
-* [Solana](reference/environments/solana/README.md)
-* [Sui](reference/environments/sui/README.md)
+* [Overview](blockchain-environments/README.md)
+* [Algorand](blockchain-environments/algorand/README.md)
+* [Aptos](blockchain-environments/aptos/README.md)
+* [CosmWasm](blockchain-environments/cosmwasm/README.md)
+* [EVM](blockchain-environments/evm/README.md)
+  * [Relayer](blockchain-environments/evm/relayer.md)
+* [Near](blockchain-environments/near/README.md)
+* [Solana](blockchain-environments/solana/README.md)
+* [Sui](blockchain-environments/sui/README.md)
 
-## External Links
+## Queries
 
+* [Overview](queries/overview.md)
+* [Getting Started](queries/getting-started.md)
+
+## External Links 
+
+* [Explorer](https://wormholescan.io/)
 * [Ecosystem](https://wormhole.com/ecosystem)
 * [Guardian Dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/)
 * [Portal Bridge Docs](https://www.portalbridge.com/docs/)
+* [Discord](https://discord.gg/hJfuptmg6b)
+* [Twitter](https://twitter.com/wormholecrypto)
+* [Github](https://github.com/wormhole-foundation)

@@ -1,6 +1,10 @@
 See Also
 --------
 
+## Explorer
+
+ * [Wormhole Explorer](https://wormholescan.io)
+
 ## Protocols 
 
 * [Portal Bridge ](https://www.portalbridge.com/#/transfer)
@@ -15,7 +19,6 @@ See Also
 ### Development 
 
 * [Github](https://github.com/wormhole-foundation/wormhole)
-* [Wormhole Explorer](https://wormholenetwork.com/explorer)
 * [Wormhole SDK](https://www.npmjs.com/package/@certusone/wormhole-sdk)
 * [White Papers](https://github.com/wormhole-foundation/wormhole/tree/main/whitepapers)
 * [Design Documents](https://github.com/wormhole-foundation/wormhole/tree/main/docs)

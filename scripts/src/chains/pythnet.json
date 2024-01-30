@@ -1,4 +1,6 @@
 {
+  "title": "Pythnet",
+  "homepage": "https://pyth.network/",
   "mainnet":{
     "name":"",
     "id":"N/A"
@@ -7,6 +9,9 @@
     "name":"",
     "id":"N/A"
   },
+  "developer":[
+    {"url":"https://docs.pyth.network/documentation/pythnet-price-feeds/evm", "description":"Developer docs"},
+  ],
   "finality": {
     "confirmed": 0,
     "finalized": 1

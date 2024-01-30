@@ -1,0 +1,15 @@
+{
+  "title": "Arbitrum Sepolia",
+  "homepage": "https://arbitrum.io/",
+  "testnet":{
+    "name":"Sepolia",
+    "id":"421614"
+  },
+  "explorer": [
+    {
+      "url": "https://sepolia.arbiscan.io/",
+      "description": "Arbitrum Explorer"
+    }
+  ],
+  "developer": [ ]
+}

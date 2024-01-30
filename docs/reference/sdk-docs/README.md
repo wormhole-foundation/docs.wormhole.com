@@ -26,19 +26,17 @@ These RPC nodes are maintained by the Guardians to help fetch VAAs and query the
 
 ```ts
 const MAINNET_GUARDIAN_RPC: string[] =  [
-    "https://wormhole-v2-mainnet-api.certus.one",
-    "https://wormhole.inotel.ro"
+    "https://api.wormholescan.io", // Explorer offers a guardian equivalent endpoint for fetching VAAs
     "https://wormhole-v2-mainnet-api.mcf.rocks",
     "https://wormhole-v2-mainnet-api.chainlayer.network",
     "https://wormhole-v2-mainnet-api.staking.fund",
-    "https://wormhole-v2-mainnet.01node.com",
 ]
 ```
 
 ### Testnet Guardian RPC
 ```ts
 const TESTNET_GUARDIAN_RPC: string[] =  [
-    "https://wormhole-v2-testnet-api.certus.one",
+    "https://api.testnet.wormholescan.io", // Explorer offers a guardian equivalent endpoint for fetching VAAs
 ]
 ```
 

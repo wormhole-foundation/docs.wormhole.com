@@ -1,5 +1,3 @@
-# VAAs
-
 # VAAs (Verified Action Approvals)
 
 VAAs are the core messaging primitive in Wormhole. You can think of them as packets of cross chain data that are emitted any time a cross chain application contract interacts with the Core Contract.
@@ -113,7 +111,7 @@ The message format for this action is as follows:
 u8         payload_id = 2   // Attestation
 [32]byte   token_address    // Address of the originating token contract
 u16        token_chain      // Chain ID of the originating token 
-u8         decimals         // Number of decimals this token should have (max 8)
+u8         decimals         // Number of decimals this token should have
 [32]byte   symbol           // Short name of asset
 [32]byte   name             // Full name of asset
 ```

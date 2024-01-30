@@ -9,6 +9,16 @@
     "name":"Testnet",
     "id":"testnet"
   },
+  "developer":[
+    {
+      "url": "https://docs.near.org/"
+    }
+  ],
+  "explorer":[
+    {
+      "url": "https://nearblocks.io/"
+    }
+  ],
   "finality": {
     "details":"https://nomicon.io/ChainSpec/Consensus",
     "finalized": 0

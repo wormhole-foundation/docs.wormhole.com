@@ -1,6 +1,17 @@
 {
   "title": "Sui",
   "homepage": "https://sui.io/",
+   "explorer": [
+      {
+      "url": "https://suiexplorer.com/",
+      "description": "suiexplorer"
+    },
+    {
+      "url": "https://suiscan.xyz/",
+      "description": "suiscan"
+    }
+  
+  ],
   "mainnet":{
     "name":"Mainnet",
     "id":"35834a8a"
