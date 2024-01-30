@@ -40,7 +40,7 @@ Deployed contracts are also available on the [Sepolia](#sepolia) testnet.
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -110,7 +110,7 @@ Besides Ethereum, a number of EVM chains are supported.
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -164,7 +164,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -272,7 +272,7 @@ For more information see [https://developer.arbitrum.io/tx-lifecycle](https://de
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -387,7 +387,7 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -449,7 +449,7 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -506,7 +506,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -608,7 +608,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -664,7 +664,7 @@ For more information see [https://wiki.polkadot.network/docs/learn-consensus](ht
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -718,7 +718,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -873,7 +873,7 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -933,7 +933,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
@@ -1213,7 +1213,7 @@ Note that a different chain id is used for Holesky
 
 ### Consistency Levels
 
-The options for [consistencyLevel](../../components/core-contracts.md#consistencylevel) (i.e finality) are:
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
 |Level|Value|
 |-----|-----|
