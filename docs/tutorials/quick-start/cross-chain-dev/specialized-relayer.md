@@ -2,7 +2,7 @@
 
 ![Specialized Relayer](../../.gitbook/assets/specialized-relayer.png)
 
-Wormhole is compatible with many [ecosystems](../../reference/ecosystem/) and integration is straight forward.
+Wormhole is compatible with many [ecosystems](../../../blockchain-environments/README.md) and integration is straight forward.
 
 ## On Chain
 

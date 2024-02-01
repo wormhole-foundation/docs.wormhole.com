@@ -100,7 +100,7 @@ console.log(JSON.stringify(request, undefined, 2));
 
 ## Mock a Query
 
-For easier testing, the Query SDK provides a `QueryProxyMock` which will perform the request and sign the result with the [devnet](../reference/dev-env/tilt) guardian key. The `mock` call returns the same format as the Query Proxy.
+For easier testing, the Query SDK provides a `QueryProxyMock` which will perform the request and sign the result with the [devnet](../reference/dev-env/tilt.md) guardian key. The `mock` call returns the same format as the Query Proxy.
 
 ```jsx
 const mock = new QueryProxyMock({ 2: rpc });
@@ -205,7 +205,7 @@ anvil --fork-url https://ethereum.publicnode.com
 
 In order for mock requests to verify against the mainnet Core bridge contract, we need to replace the current guardian set with the single devnet key used by the mock.
 
-Here's an example for Ethereum mainnet, where the `-a` parameter is the [Core bridge address](../reference/constants#core-contracts) on that chain.
+Here's an example for Ethereum mainnet, where the `-a` parameter is the [Core bridge address](../reference/constants.md#core-contracts) on that chain.
 
 ```jsx
 npx @wormhole-foundation/wormhole-cli evm hijack -a 0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B -g 0xbeFA429d57cD18b7F8A4d91A2da9AB4AF05d0FBe
