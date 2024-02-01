@@ -48,7 +48,7 @@ The logical flow for this type of transfer is as follows:
 
 - Burn the [Token Factory](#token-factory-module) tokens 
 - Unlock the CW20 tokens
-- Grant approval to the [Token Bridge](./core-contracts.md#token-bridge) to spend the CW20 Tokens
+- Grant approval to the [Token Bridge](../core-contracts.md#token-bridge) to spend the CW20 Tokens
 - Call `InitiateTransfer` or `InitiateTransferWithPayload` based on whether the [`GatewayIbcTokenBridgePayload`](#gatewayibctokenbridgepayload) is of type `Simple` or `ContractControlled`
 
 ### Token Factory Module
@@ -88,7 +88,7 @@ Wormhole core bridge: wormhole1ufs3tlq4umljk0qfe8k5ya0x6hpavn897u2cnf9k0en9jr7qa
 Wormhole token bridge: wormhole1466nf3zuxpya8q9emxukd7vftaf6h4psr0a07srl5zw74zh84yjq4lyjmh
 -->
 
-An example using the [SDK](../sdk-docs/README.md):
+An example using the [SDK](../../sdk-docs/README.md):
 ```ts
 import * as wh from '@certusone/wormhole-sdk';
 
@@ -194,7 +194,7 @@ For a proper json, encoding The `Binary` values are base64 encoded.
 
 The `recipient` for cosmos chain chains are base64 encoded bech32 addresses. For example, if the `recipient` is `wormhole1f3jshdsmzl03v03w2hswqcfmwqf2j5csw223ls`, the encoding will be the direct base64 encoding of `d29ybWhvbGUxZjNqc2hkc216bDAzdjAzdzJoc3dxY2Ztd3FmMmo1Y3N3MjIzbHM=`.
 
-The `chain` values map to [Wormhole chain IDs](../glossary.md#chain-id). 
+The `chain` values map to [Wormhole chain IDs](../../glossary.md#chain-id). 
 
 The `fee` and `nonce` are Wormhole-specific parameters, both of which are unused today.
 

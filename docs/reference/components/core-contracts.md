@@ -39,7 +39,7 @@ The `consistency_level` can be considered as a numeric `enum` data type where th
 
 It describes the level of finality to reach before the guardians will observe and attest the emitted event. This is a defense against reorgs and rollbacks since a transaction, once considered `final`, is guaranteed not to have the state changes it caused be rolled back.
 
-Different chains use different consensus mechanisms, so there are different finality assumptions with each one, see the options for finality in the [Environments](../environments/README.md) pages.  
+Different chains use different consensus mechanisms, so there are different finality assumptions with each one, see the options for finality in the [Environments](../../blockchain-environments/README.md) pages.  
 
 #### nonce
 

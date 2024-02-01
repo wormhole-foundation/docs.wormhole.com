@@ -7,7 +7,7 @@ The Standard Relayer provides a mechanism for a contract on one chain to send a 
 {% hint style="warning" %}
 Currently the Standard Relayer feature is limited to EVM environments.
 
-Find the complete list of EVM environment blockchains [here](../../blockchain-environments/evm/).
+Find the complete list of EVM environment blockchains [here](../../../blockchain-environments/evm/).
 {% endhint %}
 
 ## Tutorials
