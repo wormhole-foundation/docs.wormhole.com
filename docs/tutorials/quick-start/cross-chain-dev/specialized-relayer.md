@@ -1,6 +1,6 @@
 # Specialized Relayer
 
-![Specialized Relayer](../../.gitbook/assets/specialized-relayer.png)
+![Specialized Relayer](../../../.gitbook/assets/specialized-relayer.png)
 
 Wormhole is compatible with many [ecosystems](../../../blockchain-environments/README.md) and integration is straight forward.
 
@@ -10,7 +10,7 @@ In order to send and receive messages between chains, some [on chain components]
 
 ### Sending a message
 
-To send a message, regardless of the environment or chain, the core contract is invoked with a message argument from an [emitter](../../reference/glossary.md#emitter).
+To send a message, regardless of the environment or chain, the core contract is invoked with a message argument from an [emitter](../../../reference/glossary.md#emitter).
 
 This `emitter` may be your contract or an existing application such as the [Token Bridge](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0003\_token\_bridge.md), or [NFT Bridge](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0006\_nft\_bridge.md).
 
@@ -84,7 +84,7 @@ More details in [Example Source](https://github.com/wormhole-foundation/wormhole
 {% endtab %}
 {% endtabs %}
 
-Once the message is emitted from the core contract, the [Guardian Network](../../../reference/components/guardian.md) will observe the message and sign the digest of an Attestation ([VAA](../../../reference/components/vaa.md)). We'll discuss this in more depth in the [Off Chain](specialized-relayer.md#off-chain) section below.
+Once the message is emitted from the core contract, the [Guardian Network](../../../reference/components/guardian.md) will observe the message and sign the digest of an Attestation ([VAA](../../../reference/components/vaa.md)). We'll discuss this in more depth in the [Off Chain](#off-chain) section below.
 
 {% hint style="info" %}
 By default, VAAs are [multicast](../../../reference/components/core-contracts.md#multicast). This means there is no default **target chain** for a given message. It's up to the application developer to decide on the format of the message and its treatment on receipt.
@@ -291,7 +291,7 @@ await connection.confirmTransaction(txid);
 {% endtab %}
 {% endtabs %}
 
-See the [Specialized Relayer Tutorial](../../tutorials/app-integration/specialized-relayer.md) for a detailed walkthrough.
+See the [Specialized Relayer Tutorial](../../app-integration/specialized-relayer.md) for a detailed walkthrough.
 
 ## Reference
 

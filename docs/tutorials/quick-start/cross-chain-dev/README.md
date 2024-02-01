@@ -41,4 +41,4 @@ With Specialized Relaying, the developer can communicate with [any blockchain Wo
 
 ### More
 
-More tutorials are available [here](../tutorials/).
+More tutorials are available [here](../../../tutorials/README.md).
