@@ -4,7 +4,7 @@ Reference documentation for developers building on Wormhole.
 
 Here you'll find
 
-[Environment specific details](./environments/README.md)
+[Environment specific details](./../blockchain-environments/README.md)
 
 [SDK Docs](./sdk-docs/README.md)
 

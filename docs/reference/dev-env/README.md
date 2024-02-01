@@ -4,9 +4,9 @@ Developers building for smart contract integration will want to get a developmen
 
 ## Tooling Installation
 
-The [Worm CLI Tool](../cli-docs.md) should be installed regardless of environments chosen.
+The [Worm CLI Tool](../cli-docs/README.md) should be installed regardless of environments chosen.
 
-Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../../blockchain-environments/environments.md)
+Each environment has its own set of recommended tools. To begin working with a specific environment, see the recommended tools on its [environment page](../../blockchain-environments/README.md)
 
 ## Development Stages
 

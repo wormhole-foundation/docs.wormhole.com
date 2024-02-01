@@ -1,6 +1,6 @@
 # Standard Relayer
 
-![Standard Relayer](../../.gitbook/assets/auto-relayer.png)
+![Standard Relayer](../../../.gitbook/assets/auto-relayer.png)
 
 The Standard Relayer provides a mechanism for a contract on one chain to send a message to a contract on a different chain without the developer dealing with any off chain deployments.
 
@@ -12,8 +12,8 @@ Find the complete list of EVM environment blockchains [here](../../../blockchain
 
 ## Tutorials
 
-* [Hello Wormhole](../tutorials/hello-wormhole/) A tutorial that covers message passing across EVM environments
-* [Hello Token](../tutorials/hello-token.md) A tutorial that covers token transfer across EVM environments
+* [Hello Wormhole](../../quick-start/) A tutorial that covers message passing across EVM environments
+* [Hello Token](../../quick-start/hello-token/README.md) A tutorial that covers token transfer across EVM environments
 
 ## On Chain
 
@@ -123,8 +123,8 @@ While no off chain programs are required, a developer may want to track the prog
 $ worm status mainnet ethereum 0xdeadbeef
 ```
 
-See the [CLI tool docs](../../reference/cli-docs.md) for installation and usage.
+See the [CLI tool docs](../../../reference/cli-docs/README.md) for installation and usage.
 
 ## See Also
 
-Reference documentation for EVM chains is available [here](../../blockchain-environments/evm/)
+Reference documentation for EVM chains is available [here](../../../blockchain-environments/evm/)
