@@ -6,17 +6,17 @@ To get started, we will look at a simple `eth_call` request to get the total sup
 
 ## RPC Basics
 
-Before we dig into anything Queries specific, let’s look at how to make an [eth\_call](https://ethereum.org/en/developers/docs/apis/json-rpc/#eth\_call) against a public Ethereum RPC. Before we can make a request, we need some information about the contract we want to call.
+Before we dig into anything Queries specific, let’s look at how to make an [eth_call](https://ethereum.org/en/developers/docs/apis/json-rpc/#eth_call) against a public Ethereum RPC. Before we can make a request, we need some information about the contract we want to call.
 
-* **to**: the contract to call
-  * WETH is [0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)
-* **data**: the method identifier and ABI-encoded parameters
-  * `web3.eth.abi.encodeFunctionSignature("totalSupply()")` → `0x18160ddd`
-* **block id**: the block number, hash, or tag, like `latest`, `safe`, or `finalized`
+- **to**: the contract to call
+  - WETH is [0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2](https://etherscan.io/token/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2)
+- **data**: the method identifier and ABI-encoded parameters
+  - `web3.eth.abi.encodeFunctionSignature("totalSupply()")` → `0x18160ddd`
+- **block id**: the block number, hash, or tag, like `latest`, `safe`, or `finalized`
 
 ```jsx
 // Request
-curl <https://ethereum.publicnode.com> -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{"to":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":"0x18160ddd"},"latest"],"id":1}'
+curl https://ethereum.publicnode.com -X POST --data '{"jsonrpc":"2.0","method":"eth_call","params":[{"to":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":"0x18160ddd"},"latest"],"id":1}'
 // Result
 {
   "jsonrpc":"2.0",
@@ -40,7 +40,7 @@ In order to make an `EthCallQueryRequest`, we need a specific block number or ha
 To get the latest block, we can request it from a public node using `eth_getBlockByNumber`.
 
 ```jsx
-const rpc = "<https://ethereum.publicnode.com>";
+const rpc = "https://ethereum.publicnode.com";
 const latestBlock: string = (
   await axios.post(rpc, {
     method: "eth_getBlockByNumber",
@@ -100,7 +100,7 @@ console.log(JSON.stringify(request, undefined, 2));
 
 ## Mock a Query
 
-For easier testing, the Query SDK provides a `QueryProxyMock` which will perform the request and sign the result with the [devnet](../reference/dev-env/tilt) guardian key. The `mock` call returns the same format as the Query Proxy.
+For easier testing, the Query SDK provides a `QueryProxyMock` which will perform the request and sign the result with the [devnet](../reference/dev-env/tilt.md) guardian key. The `mock` call returns the same format as the Query Proxy.
 
 ```jsx
 const mock = new QueryProxyMock({ 2: rpc });
@@ -139,7 +139,7 @@ import {
 } from "@wormhole-foundation/wormhole-query-sdk";
 import axios from "axios";
 
-const rpc = "<https://ethereum.publicnode.com>";
+const rpc = "https://ethereum.publicnode.com";
 const callData: EthCallData = {
   to: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
   data: "0x18160ddd", // web3.eth.abi.encodeFunctionSignature("totalSupply()")
@@ -200,12 +200,12 @@ const callData: EthCallData = {
 It is common to test against a local fork of mainnet with something like
 
 ```jsx
-anvil --fork-url <https://ethereum.publicnode.com>
+anvil --fork-url https://ethereum.publicnode.com
 ```
 
 In order for mock requests to verify against the mainnet Core bridge contract, we need to replace the current guardian set with the single devnet key used by the mock.
 
-Here's an example for Ethereum mainnet, where the `-a` parameter is the [Core bridge address](../reference/constants#core-contracts) on that chain.
+Here's an example for Ethereum mainnet, where the `-a` parameter is the [Core bridge address](../reference/constants.md#core-contracts) on that chain.
 
 ```jsx
 npx @wormhole-foundation/wormhole-cli evm hijack -a 0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B -g 0xbeFA429d57cD18b7F8A4d91A2da9AB4AF05d0FBe
@@ -217,13 +217,14 @@ If you are using `EthCallWithFinality`, you will need to mine additional blocks 
 
 ```jsx
 const serialized = request.serialize();
-const proxyResponse = await axios.post<QueryProxyQueryResponse>(
-  QUERY_URL,
+const proxyResponse =
+  (await axios.post) <
+  QueryProxyQueryResponse >
+  (QUERY_URL,
   {
     bytes: Buffer.from(serialized).toString("hex"),
   },
-  { headers: { "X-API-Key": YOUR_API_KEY } }
-);
+  { headers: { "X-API-Key": YOUR_API_KEY } });
 ```
 
 A testnet Query Proxy is available at `https://testnet.ccq.vaa.dev/v1/query`
@@ -248,18 +249,13 @@ See the [QueryDemo](https://github.com/wormhole-foundation/wormhole/blob/main/et
 
 ## Submit a QueryResponse On-Chain
 
-The `QueryProxyQueryResponse` result requires a slight tweak when submitting to the contract to match the format of `function parseAndVerifyQueryResponse(bytes memory response, IWormhole.Signature[] memory signatures)`.
+The `QueryProxyQueryResponse` result requires a slight tweak when submitting to the contract to match the format of `function parseAndVerifyQueryResponse(bytes memory response, IWormhole.Signature[] memory signatures)`. A helper function, `signaturesToEvmStruct`, is provided in the SDK for this.
 
 For example, submitting the transaction to the demo contract:
 
 ```jsx
 const tx = await contract.updateCounters(
   `0x${response.data.bytes}`,
-  response.data.signatures.map((s) => ({
-    r: `0x${s.substring(0, 64)}`,
-    s: `0x${s.substring(64, 128)}`,
-    v: `0x${(parseInt(s.substring(128, 130), 16) + 27).toString(16)}`,
-    guardianIndex: `0x${s.substring(130, 132)}`,
-  }))
+  signaturesToEvmStruct(response.data.signatures)
 );
 ```

@@ -8,16 +8,16 @@ While this protocol is wholly separate from Wormhole itself, Wormhole builds on 
 Wormhole supports all CCTP supported chains but at the moment only a [handful of chains](https://developers.circle.com/stablecoins/docs/supported-domains) are supported by Circle.  
 {% endhint %}
 
-You can use Wormhole's CCTP Powered USDC bridging by embedding the [Connect](../../quick-start/wh-connect) Widget or by integrating the Connect [SDK](./sdk.md) directly. 
+You can use Wormhole's CCTP Powered USDC bridging by embedding the [Connect](../../quick-start/wormhole-connect/wh-connect.md) Widget or by integrating the Connect [SDK](./sdk.md) directly. 
 
 
 ## Automatic Relaying
 
 In order to complete a CCTP transfer, the [Circle Attestation](https://developers.circle.com/stablecoins/reference/getattestation) must be delivered to the destination chain. 
 
-This attestation delivery may be difficult or impossible in some contexts. For example, in a browser context when the user does not wish to wait for finality to deliver the attestation.  To address this difficulty, the Wormhole CCTP Relayer may be used either with the [Wormhole Connect Widget](#wormhole-connect) or more directly with the [Connect SDK](#connect-sdk).
+This attestation delivery may be difficult or impossible in some contexts. For example, in a browser context when the user does not wish to wait for finality to deliver the attestation.  To address this difficulty, the Wormhole CCTP Relayer may be used either with the [Wormhole Connect Widget](./wh-connect.md) or more directly with the [Connect SDK](../../../reference/sdk-docs/connect-sdk.md).
 
-The [Wormhole CCTP Relayer](TODO) charges a fee to deliver the attestation and complete the transfer.
+The Wormhole CCTP Relayer charges a fee to deliver the attestation and complete the transfer.
 
 |Chain|Fee|
 |---|---|

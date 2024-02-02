@@ -1,22 +1,22 @@
 # Specialized Relayer
 
-![Specialized Relayer](../../.gitbook/assets/specialized-relayer.png)
+![Specialized Relayer](../../../.gitbook/assets/specialized-relayer.png)
 
-Wormhole is compatible with many [ecosystems](../../reference/ecosystem/) and integration is straight forward.
+Wormhole is compatible with many [ecosystems](../../../blockchain-environments/README.md) and integration is straight forward.
 
 ## On Chain
 
-In order to send and receive messages between chains, some [on chain components](../../explore-wormhole/components.md#on-chain-components) are important to understand.
+In order to send and receive messages between chains, some [on chain components](../../../reference/components/README.md#on-chain-components) are important to understand.
 
 ### Sending a message
 
-To send a message, regardless of the environment or chain, the core contract is invoked with a message argument from an [emitter](../../reference/glossary.md#emitter).
+To send a message, regardless of the environment or chain, the core contract is invoked with a message argument from an [emitter](../../../reference/glossary.md#emitter).
 
 This `emitter` may be your contract or an existing application such as the [Token Bridge](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0003\_token\_bridge.md), or [NFT Bridge](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0006\_nft\_bridge.md).
 
 {% tabs %}
 {% tab title="EVM" %}
-Using the `IWormhole` interface ([source](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/IWormhole.sol)), we can publish a message directly to the [core contract](../../explore-wormhole/core-contracts.md).
+Using the `IWormhole` interface ([source](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/IWormhole.sol)), we can publish a message directly to the [core contract](../../../reference/components/core-contracts.md).
 
 ```solidity
 // ...
@@ -84,10 +84,10 @@ More details in [Example Source](https://github.com/wormhole-foundation/wormhole
 {% endtab %}
 {% endtabs %}
 
-Once the message is emitted from the core contract, the [Guardian Network](../../explore-wormhole/guardian.md) will observe the message and sign the digest of an Attestation ([VAA](../../explore-wormhole/vaa.md)). We'll discuss this in more depth in the [Off Chain](specialized-relayer.md#off-chain) section below.
+Once the message is emitted from the core contract, the [Guardian Network](../../../reference/components/guardian.md) will observe the message and sign the digest of an Attestation ([VAA](../../../reference/components/vaa.md)). We'll discuss this in more depth in the [Off Chain](#off-chain) section below.
 
 {% hint style="info" %}
-By default, VAAs are [multicast](../../explore-wormhole/core-contracts.md#multicast). This means there is no default **target chain** for a given message. It's up to the application developer to decide on the format of the message and its treatment on receipt.
+By default, VAAs are [multicast](../../../reference/components/core-contracts.md#multicast). This means there is no default **target chain** for a given message. It's up to the application developer to decide on the format of the message and its treatment on receipt.
 {% endhint %}
 
 ### Receiving a message
@@ -146,11 +146,11 @@ More details in [Example Source](https://github.com/wormhole-foundation/wormhole
 {% endtab %}
 {% endtabs %}
 
-In addition to environment specific checks that should be performed, a contract should take care to check other [fields in the body](../../explore-wormhole/vaa.md#body) such as:
+In addition to environment specific checks that should be performed, a contract should take care to check other [fields in the body](../../../reference/components/vaa.md#body) such as:
 
 * **Emitter**: Is this coming from an emitter address and chain id I expect? Typically contracts will provide a method to register a new emitter and check the incoming message against the set of emitters it trusts.
 * **Sequence**: Is this the sequence number I expect? How should I handle out of order deliveries?
-* **Consistency Level**: For the chain this message came from, is the [consistency level](../../explore-wormhole/core-contracts.md#consistencylevel) enough to guarantee the transaction wont be reverted after I take some action?
+* **Consistency Level**: For the chain this message came from, is the [consistency level](../../../reference/components/core-contracts.md#consistencylevel) enough to guarantee the transaction wont be reverted after I take some action?
 
 Outside of body of the VAA, but also relevant, is the digest of the VAA which can be used for replay protection by checking if the digest has already been seen.
 
@@ -158,17 +158,17 @@ Since the payload itself is application specific, there may be other elements to
 
 ## Off Chain
 
-In order to shuttle messages between chains, some [off chain processes](../../explore-wormhole/components.md#off-chain-components) are involved. The [Guardians](../../explore-wormhole/guardian.md) observe the events from the core contract and sign a [VAA](../../explore-wormhole/vaa.md).
+In order to shuttle messages between chains, some [off chain processes](../../../reference/components/README.md#off-chain-components) are involved. The [Guardians](../../../reference/components/guardian.md) observe the events from the core contract and sign a [VAA](../../../reference/components/vaa.md).
 
 After enough Guardians have signed the message (at least `2/3 + 1` or 13 of 19 guardians), the VAA is available to be delivered to a target chain.
 
-Once the VAA is available, a [Relayer](../../explore-wormhole/relayer.md) may deliver it in a properly formatted transaction to the target chain.
+Once the VAA is available, a [Relayer](../../../reference/components/relayer.md) may deliver it in a properly formatted transaction to the target chain.
 
 ### Specialized Relayer
 
 A relayer is needed to deliver the VAA containing the message to the target chain. When the relayer is written specifically for a custom application, it's referred to as a [Specialized Relayer](specialized-relayer.md)
 
-A specialized relayer might be as simple as an in browser process that polls the [API](../../reference/api-docs/) for the availability of a VAA after submitting a transaction and delivers it to the target chain. It might also be implemented with a [Spy](../../explore-wormhole/spy.md) coupled with some daemon listening for VAAs from a relevant `chainID` and `emitter` then taking action when one is observed.
+A specialized relayer might be as simple as an in browser process that polls the [API](../../../reference/api-docs/README.md) for the availability of a VAA after submitting a transaction and delivers it to the target chain. It might also be implemented with a [Spy](../../../reference/components/spy.md) coupled with some daemon listening for VAAs from a relevant `chainID` and `emitter` then taking action when one is observed.
 
 #### Simple Relayer
 
@@ -178,11 +178,11 @@ Regardless of the environment, in order to get the VAA we intend to relay, we ne
 2. The `sequence` id of the message we're interested in
 3. The `chainId` for the chain that emitted the message
 
-With these three components, we're able to uniquely identify a VAA and fetch it from the [API](../../reference/api-docs/).
+With these three components, we're able to uniquely identify a VAA and fetch it from the [API](../../../reference/api-docs/README.md).
 
 **Fetching the VAA**
 
-Using the `getSignedVAAWithRetry` function provided in the [SDK](../../reference/sdk-docs/), we're able to poll the Guardian RPC until the signed VAA is ready.
+Using the `getSignedVAAWithRetry` function provided in the [SDK](../../../reference/sdk-docs/README.md), we're able to poll the Guardian RPC until the signed VAA is ready.
 
 ```ts
 import { 
@@ -291,8 +291,8 @@ await connection.confirmTransaction(txid);
 {% endtab %}
 {% endtabs %}
 
-See the [Specialized Relayer Tutorial](../../tutorials/app-integration/specialized-relayer.md) for a detailed walkthrough.
+See the [Specialized Relayer Tutorial](../../app-integration/specialized-relayer.md) for a detailed walkthrough.
 
 ## Reference
 
-Read more about the architecture and core components [here](../../explore-wormhole/components.md)
+Read more about the architecture and core components [here](../../../reference/components/README.md)

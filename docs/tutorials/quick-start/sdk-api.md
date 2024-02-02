@@ -7,7 +7,7 @@ This tutorial is incomplete
 
 # SDK
 
-The [Typescript SDK](../../../reference/sdk-docs/README.md) provides the base functionality any developer might need to start building.
+The [Typescript SDK](../../reference/sdk-docs/README.md) provides the base functionality any developer might need to start building.
 
 Here we'll walk though the use of the SDK to perform a token transfer between Ethereum and Solana.
 

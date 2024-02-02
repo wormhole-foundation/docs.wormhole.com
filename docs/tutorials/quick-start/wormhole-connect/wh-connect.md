@@ -8,7 +8,7 @@ Wormhole Connect makes integration with Wormhole-powered services easier than ev
 Or, check out the [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
 
 {% hint style="success" %}
-The Wormhole SDK (a separate product from the embeddable Connect Widget) allows you to custom integrate the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../../reference/sdk-docs/connect-sdk)
+The Wormhole SDK (a separate product from the embeddable Connect Widget) allows you to custom integrate the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../../reference/sdk-docs/connect-sdk.md)
 {% endhint %}
 
 ## Functionality in Connect
@@ -87,7 +87,7 @@ function App() {
 
 If your app is running, you should see something like this
 
-![Wormhole Connect Screenshot](../../.gitbook/assets/wh-connect-default.png)
+![Wormhole Connect Screenshot](../../../.gitbook/assets/wh-connect-default.png)
 
 
 ## Configuration

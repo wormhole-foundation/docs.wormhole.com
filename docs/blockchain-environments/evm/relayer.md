@@ -12,7 +12,7 @@ There are three relevant interfaces to discuss when utilizing the WormholeRelaye
 
 Check the [EVM page](../evm/README.md) for contract addresses on each supported blockchain.
 
-Check the [Hello Wormhole page](../../../tutorials/quick-start/hello-wormhole/README.md) for a quick example on using these interfaces!
+Check the [Hello Wormhole page](../../tutorials/quick-start/hello-wormhole/README.md) for a quick example on using these interfaces!
 
 # Delivery Guarantees & Delivery Failures
 

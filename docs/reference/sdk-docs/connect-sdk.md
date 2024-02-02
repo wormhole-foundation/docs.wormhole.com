@@ -284,7 +284,7 @@ export interface SignAndSendSigner {
 }
 ```
 
-See the testing signers ([Evm](https://github.com/wormhole-foundation/connect-sdk/blob/main/platforms/evm/src/testing/signer.ts), [Solana](https://github.com/wormhole-foundation/connect-sdk/blob/main/platforms/solana/src/testing/signer.ts), ...) for an example of how to implement a signer for a specific chain or platform.
+See the testing signers ([Evm](https://github.com/wormhole-foundation/connect-sdk/blob/main/platforms/evm/src/signer.ts), [Solana](https://github.com/wormhole-foundation/connect-sdk/blob/main/platforms/solana/src/signer.ts), ...) for an example of how to implement a signer for a specific chain or platform.
 
 ```ts
 // Create a signer for the source and destination chains

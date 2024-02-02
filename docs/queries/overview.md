@@ -28,7 +28,7 @@ Up to 255 queries can be batched together, with certain types allowing for batch
 
 ## Supported Query Types
 
-There are currently 3 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md) for more details on each.
+There are currently 4 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md) for more details on each.
 
 ### eth_call
 
@@ -53,6 +53,10 @@ following_block_num - 1 == target_block_num
 ### eth_call With Finality
 
 This query type is similar to `eth_call` but ensures that the specified block has reached the specified finality before returning the query results. The finality may be `finalized` or `safe`. Note that in the case that a chain does not natively support the `safe` tag, this will be equivalent to `finalized`.
+
+### sol_account
+
+This query is used to read data for one or more accounts on Solana, akin to [getMultipleAccounts](https://solana.com/docs/rpc/http/getmultipleaccounts).
 
 ## Supported Chains
 
@@ -83,4 +87,17 @@ For example, many chains have implementations forked from [geth](https://github.
 
 ### Testnet
 
-See the [Constants Reference](../reference/constants) for the list of testnet chains.
+See the [Constants Reference](../reference/constants.md) for the list of testnet chains.
+
+## Next Steps
+
+Still have questions? See if they are answered in the [FAQs](./faqs.md).
+
+Ready to dive in? Check out [Getting Started](./getting-started.md).
+
+Need some examples?
+
+- Basic Demo
+  - [Contract](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryDemo.sol)
+  - [UI](https://vaa.dev/#/ccq)
+- [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool)
