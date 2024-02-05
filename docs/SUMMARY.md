@@ -86,7 +86,11 @@
 
 ## Governance
 
-- [Gateway Onboarding](governance/gateway-onboard.md)
+- [Gateway Onboarding](governance/gateway/README.md)
+  - [New Chain Proposal](governance/gateway/proposal.md)
+  - [IBC Connection](governance/gateway/ibc-connection.md)
+  - [Connect Integration](governance/gateway/connect.md)
+  - [Register assets](governance/gateway/registry.md)
 - [Goveror Limits](governance/governor-limit.md)
 
 ## External Links
