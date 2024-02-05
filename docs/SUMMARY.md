@@ -30,7 +30,6 @@
 - [Relayers](reference/components/relayer.md)
 - [Spy](reference/components/spy.md)
 - [Gateway](reference/components/gateway/README.md)
-  - [Onboarding](reference/components/gateway/onboard.md)
 
 ## Reference
 
@@ -62,6 +61,15 @@
 - [Overview](queries/overview.md)
 - [Getting Started](queries/getting-started.md)
 - [FAQs](queries/faqs.md)
+
+## Governance
+
+- [Gateway Onboarding](governance/gateway/README.md)
+  - [New Chain Proposal](governance/gateway/proposal.md)
+  - [IBC Connection](governance/gateway/ibc-connection.md)
+  - [Connect Integration](governance/gateway/connect.md)
+  - [Register assets](governance/gateway/registry.md)
+- [Goveror Limits](governance/governor-limit.md)
 
 ## External Links
 
