@@ -227,7 +227,7 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     );
     const finalized = fmtNum(f.finalized);
     const otherwise = f.otherwise ? f.otherwise : "-";
-    const details = f.details ? f.details : "-";
+    const details = f.details ? `<a href="${f.details}">Details</a>` : "-";
 
     const finalizationBlocks = finality.finalityThreshold.get(toChain(c.id));
     const blockTime = finality.blockTime.get(toChain(c.id));
