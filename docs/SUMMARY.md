@@ -45,6 +45,12 @@
 - [CLI Docs](reference/cli-docs/README.md)
 - [Glossary](reference/glossary.md)
 
+## Queries
+
+- [Overview](queries/overview.md)
+- [Getting Started](queries/getting-started.md)
+- [FAQs](queries/faqs.md)
+
 ## Blockchain Environments
 
 - [Overview](blockchain-environments/README.md)
@@ -56,12 +62,6 @@
 - [Near](blockchain-environments/near/README.md)
 - [Solana](blockchain-environments/solana/README.md)
 - [Sui](blockchain-environments/sui/README.md)
-
-## Queries
-
-- [Overview](queries/overview.md)
-- [Getting Started](queries/getting-started.md)
-- [FAQs](queries/faqs.md)
 
 ## External Links
 
