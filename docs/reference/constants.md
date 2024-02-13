@@ -1521,146 +1521,24 @@ The following tables document the deployed contract addresses for contracts on e
 The following tables document the [consistencyLevel](./glossary.md#consistency-level) values for each chain.
 
 <!--CONSISTENCY_LEVELS-->
-### Solana
-|Level|Value|
-|-----|-----|
-|Confirmed|0|
-|Finalized|1|
-
-For more information see [https://docs.solana.com/cluster/commitments](https://docs.solana.com/cluster/commitments)
-
-### Ethereum
-|Level|Value|
-|-----|-----|
-|Instant|200|
-|Safe|201|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://www.alchemy.com/overviews/ethereum-commitment-levels](https://www.alchemy.com/overviews/ethereum-commitment-levels)
-
-### BNB Smart Chain
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
-
-For more information see [https://docs.bnbchain.org/docs/learn/consensus](https://docs.bnbchain.org/docs/learn/consensus)
-
-### Polygon
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/](https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/)
-
-### Avalanche
-|Level|Value|
-|-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
-
-For more information see [https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality](https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality)
-
-### Algorand
-|Level|Value|
-|-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
-
-For more information see [https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality](https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality)
-
-### Fantom
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-### Karura
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://wiki.polkadot.network/docs/learn-consensus](https://wiki.polkadot.network/docs/learn-consensus)
-
-### Acala
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-### Klaytn
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-### Celo
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-### NEAR
-|Level|Value|
-|-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
-
-For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)
-
-### Moonbeam
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints](https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints)
-
-### Sui
-|Level|Value|
-|-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
-
-For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)
-
-### Aptos
-|Level|Value|
-|-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
-
-For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
-
-### Arbitrum
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://developer.arbitrum.io/tx-lifecycle](https://developer.arbitrum.io/tx-lifecycle)
-
-### Optimism
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
-
-### Optimism Sepolia
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
-
-For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
-
+| Chain | Instant | Safe | Finalized | Otherwise | Time to Finalize | Details |
+|---|---|---|---|---|---|---|
+|Solana| |0|1|-|~ 13.2s|https://docs.solana.com/cluster/commitments|
+|Ethereum|200|201| |finalized|~ 975s|https://www.alchemy.com/overviews/ethereum-commitment-levels|
+|BNB Smart Chain|200| | |number of blocks|~ 48s|https://docs.bnbchain.org/docs/learn/consensus|
+|Polygon|200| | |finalized|~ 66s|https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/|
+|Avalanche| | |0|-|~ 2s|https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality|
+|Algorand| | |0|-|~ 3.3s|https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality|
+|Fantom|200| | |finalized|~ 5s|-|
+|Karura|200| | |finalized|~ 24s|https://wiki.polkadot.network/docs/learn-consensus|
+|Acala|200| | |finalized|~ 24s|-|
+|Klaytn|200| | |finalized| |-|
+|Celo|200| | |finalized|~ 10s|-|
+|NEAR| | |0|-|~ 1.5s|https://nomicon.io/ChainSpec/Consensus|
+|Moonbeam|200| | |finalized|~ 24s|https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints|
+|Sui| | |0|-|~ 3s|https://docs.sui.io/learn/architecture/consensus|
+|Aptos| | |0|-|~ 4s|https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft|
+|Arbitrum|200| | |finalized| |https://developer.arbitrum.io/tx-lifecycle|
+|Optimism|200| | |finalized| |https://community.optimism.io/docs/developers/bridge/comm-strategies/|
+|Optimism Sepolia|200| | |finalized| |https://community.optimism.io/docs/developers/bridge/comm-strategies/|
 <!--CONSISTENCY_LEVELS-->
