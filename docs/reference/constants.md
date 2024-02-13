@@ -1523,22 +1523,22 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 <!--CONSISTENCY_LEVELS-->
 | Chain | Instant | Safe | Finalized | Otherwise | Time to Finalize | Details |
 |---|---|---|---|---|---|---|
-|Solana| |0|1|-|~ 13.2s|https://docs.solana.com/cluster/commitments|
-|Ethereum|200|201| |finalized|~ 975s|https://www.alchemy.com/overviews/ethereum-commitment-levels|
-|BNB Smart Chain|200| | |number of blocks|~ 48s|https://docs.bnbchain.org/docs/learn/consensus|
-|Polygon|200| | |finalized|~ 66s|https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/|
-|Avalanche| | |0|-|~ 2s|https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality|
-|Algorand| | |0|-|~ 3.3s|https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality|
+|Solana| |0|1|-|~ 13.2s|<a href="https://docs.solana.com/cluster/commitments">Details</a>|
+|Ethereum|200|201| |finalized|~ 975s|<a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a>|
+|BNB Smart Chain|200| | |number of blocks|~ 48s|<a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a>|
+|Polygon|200| | |finalized|~ 66s|<a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a>|
+|Avalanche| | |0|-|~ 2s|<a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a>|
+|Algorand| | |0|-|~ 3.3s|<a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a>|
 |Fantom|200| | |finalized|~ 5s|-|
-|Karura|200| | |finalized|~ 24s|https://wiki.polkadot.network/docs/learn-consensus|
+|Karura|200| | |finalized|~ 24s|<a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a>|
 |Acala|200| | |finalized|~ 24s|-|
 |Klaytn|200| | |finalized| |-|
 |Celo|200| | |finalized|~ 10s|-|
-|NEAR| | |0|-|~ 1.5s|https://nomicon.io/ChainSpec/Consensus|
-|Moonbeam|200| | |finalized|~ 24s|https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints|
-|Sui| | |0|-|~ 3s|https://docs.sui.io/learn/architecture/consensus|
-|Aptos| | |0|-|~ 4s|https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft|
-|Arbitrum|200| | |finalized| |https://developer.arbitrum.io/tx-lifecycle|
-|Optimism|200| | |finalized| |https://community.optimism.io/docs/developers/bridge/comm-strategies/|
-|Optimism Sepolia|200| | |finalized| |https://community.optimism.io/docs/developers/bridge/comm-strategies/|
+|NEAR| | |0|-|~ 1.5s|<a href="https://nomicon.io/ChainSpec/Consensus">Details</a>|
+|Moonbeam|200| | |finalized|~ 24s|<a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a>|
+|Sui| | |0|-|~ 3s|<a href="https://docs.sui.io/learn/architecture/consensus">Details</a>|
+|Aptos| | |0|-|~ 4s|<a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a>|
+|Arbitrum|200| | |finalized| |<a href="https://developer.arbitrum.io/tx-lifecycle">Details</a>|
+|Optimism|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
+|Optimism Sepolia|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
 <!--CONSISTENCY_LEVELS-->
