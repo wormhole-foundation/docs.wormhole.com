@@ -1,3 +1,4 @@
+import { finality, toChain } from "@wormhole-foundation/connect-sdk";
 import * as cfg from "./config";
 import { fmtNum, fmtStr, fmtCodeStr } from "./util";
 
@@ -207,14 +208,38 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     return a.id - b.id;
   });
 
-  let content: string[] = [];
-
+  let content: string[] = [
+    `| Chain | Instant | Safe | Finalized | Otherwise | Time to Finalize | Details |`,
+    `|---|---|---|---|---|---|---|`,
+  ];
   for (const c of orderedDc) {
     if (c.extraDetails?.finality === undefined) continue;
     const f = c.extraDetails.finality;
     const header = c.extraDetails.title ? c.extraDetails.title : c.name;
-    const [opts, deets] = finalityOptionTable(f);
-    content.push(`### ${header}`, opts, deets);
+
+    const instant = fmtNum(f.instant);
+    const safe = fmtNum(
+      f.safe !== undefined
+        ? f.safe
+        : f.confirmed !== undefined
+        ? f.confirmed
+        : undefined
+    );
+    const finalized = fmtNum(f.finalized);
+    const otherwise = f.otherwise ? f.otherwise : "-";
+    const details = f.details ? f.details : "-";
+
+    const finalizationBlocks = finality.finalityThreshold.get(toChain(c.id));
+    const blockTime = finality.blockTime.get(toChain(c.id));
+
+    let finalizationTime = " ";
+    if (finalizationBlocks !== undefined && blockTime !== undefined) {
+      finalizationTime = `~ ${((finalizationBlocks + 1) * blockTime) / 1000}s`;
+    }
+
+    content.push(
+      `|${header}|${instant}|${safe}|${finalized}|${otherwise}|${finalizationTime}|${details}|`
+    );
   }
 
   return content.join("\n");
