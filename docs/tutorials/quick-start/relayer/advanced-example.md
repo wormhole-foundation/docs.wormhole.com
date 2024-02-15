@@ -190,3 +190,14 @@ The included default functionality may be insufficient for your use case.
 If you'd like to apply some specific intermediate processing steps, consider implementing some custom `Middleware`. Be sure to include the appropriate `Context` in the `RelayerApp` type parameterization for any fields you wish to have added to the `Context` object passed to downstream `Middleware`.
 
 If you'd prefer a storage layer besides redis, simply implement the [storage](https://github.com/wormhole-foundation/relayer-engine/blob/main/relayer/storage/storage.ts) interface.
+
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+

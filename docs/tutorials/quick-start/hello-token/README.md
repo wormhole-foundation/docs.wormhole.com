@@ -72,7 +72,7 @@ So, in order to send a token using the method in this example, the token must be
 
 In the test above, when you run `npm run deploy`, a mock token contract was both deployed and attested onto the target chain's Token Bridge contract.
 
-If you wish to attest a token yourself for the TokenBridge, you may use the [attestWorkflow](https://github.com/wormhole-foundation/hello-token/blob/main/ts-scripts/deploy-mock-token.ts#L52) function.
+If you wish to attest a token yourself for the TokenBridge, you may use the [attestWorkflow](https://github.com/wormhole-foundation/hello-token/blob/main/ts-scripts/deploy-mock-tokens.ts#L52) function.
 
 To check if a token already is attested onto a TokenBridge, call the `wrappedAsset(uint16 tokenChainId, bytes32 tokenAddress)` function on the TokenBridge - this will return, if attested, the address of the wrapped token on this blockchain corresponding to the given token (from the source blockchain), and the 0 address if the input token hasn't been attested yet.
 
@@ -212,7 +212,7 @@ The arguments `payload`, `sourceAddress`, `sourceChain`, and `deliveryHash` are 
 Let's delve into the fields that are provided to us in the `TokenReceived` struct:
 
 - **tokenHomeAddress**
-  The same as the `token` field in the call to `sendTokenWithPayloadToEvm`, as that is the original address of the token unless the original token sent is a wormhole-wrapped token. In the case a wrapped token is sent, this will be the address of the original version of the token (on it’s native chain) in [wormhole address format](https://docs.wormhole.com/wormhole/blockchain-environments/evm#addresses) - i.e. left-padded with 12 zeros
+  The same as the `token` field in the call to `sendTokenWithPayloadToEvm`, as that is the original address of the token unless the original token sent is a wormhole-wrapped token. In the case a wrapped token is sent, this will be the address of the original version of the token (on it’s native chain) in [wormhole address format](https://docs.wormhole.com/wormhole/reference/environments/evm#addresses) - i.e. left-padded with 12 zeros
 - **tokenHomeChain**
   The chain (in wormhole chain ID format) corresponding to the home address above - this will be the source chain, unless if the original token sent is a wormhole-wrapped asset, in which case it will be the chain of the unwrapped version of the token.
 
@@ -423,3 +423,14 @@ See the full implementation of the Wormhole Relayer SDK helpers [here](https://g
 Also, see a version of HelloToken implemented without any Wormhole Relayer SDK helpers [here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloTokenWithoutSDK.sol)
 
 as well as a version of HelloToken where native currency is deposited [here](https://github.com/wormhole-foundation/hello-token/blob/main/src/example-extensions/HelloTokenNative.sol)
+
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+
