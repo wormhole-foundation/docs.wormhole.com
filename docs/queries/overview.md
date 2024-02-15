@@ -12,7 +12,7 @@ Read more about Queries in the [whitepaper](https://github.com/wormhole-foundati
 
 <figure><img src="../.gitbook/assets/ccq-architecture.svg" alt=""><figcaption></figcaption></figure>
 
-1. An off-chain process initiates a Query Request via HTTPS to the Query Proxy (a.k.a. CCQ Server) - e.g. a user clicks a button to interact with a contract which requires cross-chain data.
+1. An off-chain process initiates a Query Request via HTTPS to the Query Proxy (a.k.a. CCQ Server) - e.g. a user clicks a button to interact with a contract which requires multichain data.
 2. The Query Proxy validates the request and forwards it to the guardians via a gossip network.
 3. The Guardians independently validate the request, make the requisite RPC calls, verify the results, sign, and gossip a response back to the Query Proxy.
 4. The Query Proxy aggregates the results and returns a response when it reaches quorum - 2/3+ of the current guardian set - the same quorum requirements as the core bridge.

@@ -14,7 +14,7 @@ However, in the context of Wormhole, 'Tilt' refers to the development environmen
 * Databases, Redis
 * Utility front ends
 
-The 'Tilt' environment is meant to provide an entire cross-chain development stack right out of the box.
+The 'Tilt' environment is meant to provide an entire multichain development stack right out of the box.
 
 #### Is Tilt Right for You?
 

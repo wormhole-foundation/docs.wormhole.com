@@ -235,7 +235,7 @@ Supported protocols are defined in the [definitions module](https://github.com/w
 
 While using the [ChainContext](#chain-context) and [Protocol](#protocols) clients directly is possible, to do things like transfer tokens, the SDK provides some helpful abstractions.
 
-The `WormholeTransfer` interface provides a convenient abstraction to encapsulate the steps involved in a cross-chain transfer.
+The `WormholeTransfer` interface provides a convenient abstraction to encapsulate the steps involved in a multichain transfer.
 
 ### Token Transfers
 

@@ -1,4 +1,4 @@
-This documentation provides a comprehensive guide to Relayers within the Wormhole network, describing their role, types, and benefits in facilitating cross-chain processes.
+This documentation provides a comprehensive guide to Relayers within the Wormhole network, describing their role, types, and benefits in facilitating multichain processes.
 
 Relayers in the Wormhole context are processes that deliver Verifiable Action Approvals ([VAAs](./vaa.md)) to their destination, playing a crucial role in Wormhole's security model. They can't compromise security, only liveness, and act as delivery mechanisms for VAAs without the capacity to tamper with the outcome.
 
@@ -6,14 +6,14 @@ There are three primary types of relayers discussed:
 
 - [Client-side Relaying](#client-side-relaying): A cost-efficient, no-backend-infrastructure approach relying on user-facing front ends. It provides a simple solution, although it can complicate the user experience due to the manual steps involved.
 
-- [Specialized Relayers](#specialized-relayers): They are backend components that handle parts of the cross-chain process, offering a smoother user experience and allowing off-chain calculations to reduce gas costs. These relayers could operate through direct listening to the Guardian Network (Spy Relaying) or by providing a REST endpoint to accept VAAs to be relayed (REST Relaying).
+- [Specialized Relayers](#specialized-relayers): They are backend components that handle parts of the multichain process, offering a smoother user experience and allowing off-chain calculations to reduce gas costs. These relayers could operate through direct listening to the Guardian Network (Spy Relaying) or by providing a REST endpoint to accept VAAs to be relayed (REST Relaying).
 
 - [Standard Relayers](#standard-relayers): A decentralized relayer network that can deliver arbitrary VAAs, reducing the developer's need to develop, host, or maintain relayers. However, they require all calculations to be done on-chain and might be less gas-efficient.
 
 
 ## Client-side Relaying
 
-Client-side relaying relies on user-facing front ends, such as a webpage or a wallet, to carry out the complete cross-chain process.
+Client-side relaying relies on user-facing front ends, such as a webpage or a wallet, to carry out the complete multichain process.
 
 ### Key Features
 
@@ -22,7 +22,7 @@ Client-side relaying relies on user-facing front ends, such as a webpage or a wa
 
 ### Implementation
 
-Users themselves carry out the three steps of the cross-chain process:
+Users themselves carry out the three steps of the multichain process:
 
 1. Perform an action on chain A.
 2. Retrieve the resulting VAA from the Guardian Network.
@@ -48,7 +48,7 @@ Specialized relayers are purpose-built components within the Wormhole protocol, 
 1. **Optimization:** Capable of performing untrusted off-chain computations which can optimize gas costs.
 2. **Customizability:** Allows for specific strategies like batching, conditional delivery, multi-chain deliveries, and more.
 3. **Incentive Structure:** Developers have the freedom to design an incentive structure suitable for their application.
-4. **Enhanced UX:** The ability to perform steps 2 and 3 of the cross-chain process on behalf of the user can simplify the user experience.
+4. **Enhanced UX:** The ability to perform steps 2 and 3 of the multichain process on behalf of the user can simplify the user experience.
 
 ### Implementation
 
