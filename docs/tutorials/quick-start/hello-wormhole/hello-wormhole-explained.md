@@ -134,3 +134,14 @@ A status event is then emitted to indicate whether this call succeeded or failed
 >- and then parses the VAA to figure out the correct target address (which is our HelloWormhole contract on this chain), payload, and gas limit
 >- and submits the payload to the ‘receiveWormholeMessages’ endpoint of our HelloWormhole contract
 >- ..and then our HelloWormhole contract on the target chain does the rest!
+
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+
