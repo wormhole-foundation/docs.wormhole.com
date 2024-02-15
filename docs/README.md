@@ -48,6 +48,17 @@ Demos provide more realistic implementations than Tutorials
 
 More Demos are available [here](./tutorials/demos.md).
 
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+
+
 ## Supported Blockchains
 
 Wormhole supports a growing number of blockchains
