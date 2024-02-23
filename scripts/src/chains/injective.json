@@ -5,6 +5,30 @@
     "name": "Mainnet",
     "id": "injective-1"
   },
+  "explorer": [
+    {
+      "url": "https://explorer.injective.network/",
+      "description": "Injective Explorer"
+    },
+    {
+      "url": "https://testnet.explorer.injective.network/",
+      "description": "Injective Testnet Explorer"
+    }
+  ],
+  "developer": [
+    {
+      "url": "https://docs.injective.network/",
+      "description": "Developer docs"
+    },
+    {
+      "url": "https://docs.ts.injective.network/",
+      "description": "Injective Typescript SDK docs"
+    },
+     {
+      "url": "https://docs.trading.injective.network/",
+      "description": "Injective trading docs"
+    }
+  ],
   "testnet": {
     "name": "Testnet",
     "id": "injective-888"
