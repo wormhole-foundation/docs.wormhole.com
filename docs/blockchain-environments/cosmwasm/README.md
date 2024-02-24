@@ -169,8 +169,8 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 ## Ecosystem
 
 - [Web site](https://injective.com/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/injective.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/injective.json)
+- [Injective Explorer](https://explorer.injective.network/) | [Injective Testnet Explorer](https://testnet.explorer.injective.network/)
+- [Developer docs](https://docs.injective.network/) | [Injective Typescript SDK docs](https://docs.ts.injective.network/) | [Injective trading docs](https://docs.trading.injective.network/)
 
 ## Wormhole Details
 
