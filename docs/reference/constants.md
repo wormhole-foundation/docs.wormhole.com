@@ -1525,10 +1525,13 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 |---|---|---|---|---|---|---|
 |Solana| |0|1|-|~ 13.2s|<a href="https://docs.solana.com/cluster/commitments">Details</a>|
 |Ethereum|200|201| |finalized|~ 975s|<a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a>|
+|Terra|201|200| |finalized|~ 6s|-|
 |BNB Smart Chain|200| | |number of blocks|~ 48s|<a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a>|
 |Polygon|200| | |finalized|~ 66s|<a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a>|
 |Avalanche| | |0|-|~ 2s|<a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a>|
+|Oasis|201|200| |finalized| |-|
 |Algorand| | |0|-|~ 3.3s|<a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a>|
+|Aurora|201|200| |finalized| |-|
 |Fantom|200| | |finalized|~ 5s|-|
 |Karura|200| | |finalized|~ 24s|<a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a>|
 |Acala|200| | |finalized|~ 24s|-|
@@ -1536,9 +1539,30 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 |Celo|200| | |finalized|~ 10s|-|
 |NEAR| | |0|-|~ 1.5s|<a href="https://nomicon.io/ChainSpec/Consensus">Details</a>|
 |Moonbeam|200| | |finalized|~ 24s|<a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a>|
+|Neon|201|200| |finalized| |-|
+|Terra2|201|200| |finalized|~ 6s|-|
+|Injective|201|200| |finalized|~ 2.5s|-|
+|Osmosis|201|200| |finalized| |-|
 |Sui| | |0|-|~ 3s|<a href="https://docs.sui.io/learn/architecture/consensus">Details</a>|
 |Aptos| | |0|-|~ 4s|<a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a>|
 |Arbitrum|200| | |finalized| |<a href="https://developer.arbitrum.io/tx-lifecycle">Details</a>|
 |Optimism|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
+|Gnosis|201|200| |finalized| |-|
+|pythnet|201|200| |finalized| |-|
+|Xpla|201|200| |finalized|~ 5s|-|
+|Base|201|200| |finalized| |-|
+|Sei|201|200| |finalized|~ 0.4s|-|
+|Rootstock|201|200| |finalized| |-|
+|Cosmoshub|201|200| |finalized| |-|
+|Evmos|201|200| |finalized| |-|
+|Kujira|201|200| |finalized| |-|
+|Neutron|201|200| |finalized| |-|
+|Celestia|201|200| |finalized| |-|
+|Stargaze|201|200| |finalized| |-|
+|Dymension|201|200| |finalized| |-|
+|Ethereum Sepolia|201|200| |finalized| |-|
+|Arbitrum Sepolia|201|200| |finalized| |-|
+|Base Sepolia|201|200| |finalized| |-|
 |Optimism Sepolia|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
+|Ethereum Holesky|201|200| |finalized| |-|
 <!--CONSISTENCY_LEVELS-->
