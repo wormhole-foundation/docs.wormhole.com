@@ -1521,48 +1521,396 @@ The following tables document the deployed contract addresses for contracts on e
 The following tables document the [consistencyLevel](./glossary.md#consistency-level) values for each chain.
 
 <!--CONSISTENCY_LEVELS-->
-| Chain | Instant | Safe | Finalized | Otherwise | Time to Finalize | Details |
-|---|---|---|---|---|---|---|
-|Solana| |0|1|-|~ 13.2s|<a href="https://docs.solana.com/cluster/commitments">Details</a>|
-|Ethereum|200|201| |finalized|~ 975s|<a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a>|
-|Terra|201|200| |finalized|~ 6s|-|
-|BNB Smart Chain|200| | |number of blocks|~ 48s|<a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a>|
-|Polygon|200| | |finalized|~ 66s|<a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a>|
-|Avalanche| | |0|-|~ 2s|<a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a>|
-|Oasis|201|200| |finalized| |-|
-|Algorand| | |0|-|~ 3.3s|<a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a>|
-|Aurora|201|200| |finalized| |-|
-|Fantom|200| | |finalized|~ 5s|-|
-|Karura|200| | |finalized|~ 24s|<a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a>|
-|Acala|200| | |finalized|~ 24s|-|
-|Klaytn|200| | |finalized| |-|
-|Celo|200| | |finalized|~ 10s|-|
-|NEAR| | |0|-|~ 1.5s|<a href="https://nomicon.io/ChainSpec/Consensus">Details</a>|
-|Moonbeam|200| | |finalized|~ 24s|<a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a>|
-|Neon|201|200| |finalized| |-|
-|Terra2|201|200| |finalized|~ 6s|-|
-|Injective|201|200| |finalized|~ 2.5s|-|
-|Osmosis|201|200| |finalized| |-|
-|Sui| | |0|-|~ 3s|<a href="https://docs.sui.io/learn/architecture/consensus">Details</a>|
-|Aptos| | |0|-|~ 4s|<a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a>|
-|Arbitrum|200| | |finalized| |<a href="https://developer.arbitrum.io/tx-lifecycle">Details</a>|
-|Optimism|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
-|Gnosis|201|200| |finalized| |-|
-|pythnet|201|200| |finalized| |-|
-|Xpla|201|200| |finalized|~ 5s|-|
-|Base|201|200| |finalized| |-|
-|Sei|201|200| |finalized|~ 0.4s|-|
-|Rootstock|201|200| |finalized| |-|
-|Cosmoshub|201|200| |finalized| |-|
-|Evmos|201|200| |finalized| |-|
-|Kujira|201|200| |finalized| |-|
-|Neutron|201|200| |finalized| |-|
-|Celestia|201|200| |finalized| |-|
-|Stargaze|201|200| |finalized| |-|
-|Dymension|201|200| |finalized| |-|
-|Ethereum Sepolia|201|200| |finalized| |-|
-|Arbitrum Sepolia|201|200| |finalized| |-|
-|Base Sepolia|201|200| |finalized| |-|
-|Optimism Sepolia|200| | |finalized| |<a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a>|
-|Ethereum Holesky|201|200| |finalized| |-|
+<table data-full-width="true">
+
+<thead>
+  <td>Chain</td>
+  <td>Instant</td>
+  <td>Safe</td>
+  <td>Finalized</td>
+  <td>Otherwise</td>
+  <td>Time to Finalize</td>
+  <td>Details</td>
+</thead>
+<tbody>
+<tr>
+        <td>Solana</td>
+        <td> </td>
+        <td>0</td>
+        <td>1</td>
+        <td>-</td>
+        <td>~ 13.2s</td>
+        <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
+      </tr>
+<tr>
+        <td>Ethereum</td>
+        <td>200</td>
+        <td>201</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 975s</td>
+        <td><a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a></td>
+      </tr>
+<tr>
+        <td>Terra</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 6s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>BNB Smart Chain</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>number of blocks</td>
+        <td>~ 48s</td>
+        <td><a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a></td>
+      </tr>
+<tr>
+        <td>Polygon</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 66s</td>
+        <td><a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a></td>
+      </tr>
+<tr>
+        <td>Avalanche</td>
+        <td> </td>
+        <td> </td>
+        <td>0</td>
+        <td>-</td>
+        <td>~ 2s</td>
+        <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
+      </tr>
+<tr>
+        <td>Oasis</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Algorand</td>
+        <td> </td>
+        <td> </td>
+        <td>0</td>
+        <td>-</td>
+        <td>~ 3.3s</td>
+        <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
+      </tr>
+<tr>
+        <td>Aurora</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Fantom</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 5s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Karura</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 24s</td>
+        <td><a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a></td>
+      </tr>
+<tr>
+        <td>Acala</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 24s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Klaytn</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Celo</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 10s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>NEAR</td>
+        <td> </td>
+        <td> </td>
+        <td>0</td>
+        <td>-</td>
+        <td>~ 1.5s</td>
+        <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
+      </tr>
+<tr>
+        <td>Moonbeam</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 24s</td>
+        <td><a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a></td>
+      </tr>
+<tr>
+        <td>Neon</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Terra2</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 6s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Injective</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 2.5s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Osmosis</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Sui</td>
+        <td> </td>
+        <td> </td>
+        <td>0</td>
+        <td>-</td>
+        <td>~ 3s</td>
+        <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
+      </tr>
+<tr>
+        <td>Aptos</td>
+        <td> </td>
+        <td> </td>
+        <td>0</td>
+        <td>-</td>
+        <td>~ 4s</td>
+        <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
+      </tr>
+<tr>
+        <td>Arbitrum</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
+      </tr>
+<tr>
+        <td>Optimism</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
+      </tr>
+<tr>
+        <td>Gnosis</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>pythnet</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Xpla</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 5s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Base</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Sei</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td>~ 0.4s</td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Rootstock</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Cosmoshub</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Evmos</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Kujira</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Neutron</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Celestia</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Stargaze</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Dymension</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Ethereum Sepolia</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Arbitrum Sepolia</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Base Sepolia</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+<tr>
+        <td>Optimism Sepolia</td>
+        <td>200</td>
+        <td> </td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
+      </tr>
+<tr>
+        <td>Ethereum Holesky</td>
+        <td>201</td>
+        <td>200</td>
+        <td> </td>
+        <td>finalized</td>
+        <td> </td>
+        <td>-</td>
+      </tr>
+</tbody>
+</table>
 <!--CONSISTENCY_LEVELS-->
