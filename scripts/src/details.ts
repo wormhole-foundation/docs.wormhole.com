@@ -208,10 +208,18 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     return a.id - b.id;
   });
 
-  let content: string[] = [
-    `| Chain | Instant | Safe | Finalized | Otherwise | Time to Finalize | Details |`,
-    `|---|---|---|---|---|---|---|`,
-  ];
+  const header = `
+<thead>
+  <td>Chain</td>
+  <td>Instant</td>
+  <td>Safe</td>
+  <td>Finalized</td>
+  <td>Otherwise</td>
+  <td>Time to Finalize</td>
+  <td>Details</td>
+</thead>`;
+
+  const rows: string[] = [];
   for (const c of orderedDc) {
     if (!c.extraDetails) {
       console.log("No extra details for: ", c.name);
@@ -257,12 +265,26 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
       finalizationTime = `~ ${((finalizationBlocks + 1) * blockTime) / 1000}s`;
     }
 
-    content.push(
-      `|${header}|${instant}|${safe}|${finalized}|${otherwise}|${finalizationTime}|${details}|`
+    // `<tr><td>${c.name}</td><td>${c.id}</td><td>${mainnetAlias}</td><td>${testnetAlias}</td></tr>`;
+    rows.push(
+      `<tr>
+        <td>${header}</td>
+        <td>${instant}</td>
+        <td>${safe}</td>
+        <td>${finalized}</td>
+        <td>${otherwise}</td>
+        <td>${finalizationTime}</td>
+        <td>${details}</td>
+      </tr>`
     );
   }
 
-  return content.join("\n");
+  return `<table data-full-width="true">
+${header}
+<tbody>
+${rows.join("\n")}
+</tbody>
+</table>`;
 }
 
 export function generateAllContractsTable(
