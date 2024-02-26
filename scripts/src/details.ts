@@ -265,18 +265,17 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
       finalizationTime = `~ ${((finalizationBlocks + 1) * blockTime) / 1000}s`;
     }
 
-    // `<tr><td>${c.name}</td><td>${c.id}</td><td>${mainnetAlias}</td><td>${testnetAlias}</td></tr>`;
-    rows.push(
-      `<tr>
-        <td>${header}</td>
-        <td>${instant}</td>
-        <td>${safe}</td>
-        <td>${finalized}</td>
-        <td>${otherwise}</td>
-        <td>${finalizationTime}</td>
-        <td>${details}</td>
-      </tr>`
-    );
+    rows.push(`
+<tr>
+  <td>${header}</td>
+  <td>${instant}</td>
+  <td>${safe}</td>
+  <td>${finalized}</td>
+  <td>${otherwise}</td>
+  <td>${finalizationTime}</td>
+  <td>${details}</td>
+</tr>
+`);
   }
 
   return `<table data-full-width="true">

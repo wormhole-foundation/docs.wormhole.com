@@ -1533,384 +1533,468 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>Details</td>
 </thead>
 <tbody>
+
 <tr>
-        <td>Solana</td>
-        <td> </td>
-        <td>0</td>
-        <td>1</td>
-        <td>-</td>
-        <td>~ 13.2s</td>
-        <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
-      </tr>
+  <td>Solana</td>
+  <td> </td>
+  <td>0</td>
+  <td>1</td>
+  <td>-</td>
+  <td>~ 13.2s</td>
+  <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Ethereum</td>
-        <td>200</td>
-        <td>201</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 975s</td>
-        <td><a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a></td>
-      </tr>
+  <td>Ethereum</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 975s</td>
+  <td><a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Terra</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 6s</td>
-        <td>-</td>
-      </tr>
+  <td>Terra</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>BNB Smart Chain</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>number of blocks</td>
-        <td>~ 48s</td>
-        <td><a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a></td>
-      </tr>
+  <td>BNB Smart Chain</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>number of blocks</td>
+  <td>~ 48s</td>
+  <td><a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Polygon</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 66s</td>
-        <td><a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a></td>
-      </tr>
+  <td>Polygon</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 66s</td>
+  <td><a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Avalanche</td>
-        <td> </td>
-        <td> </td>
-        <td>0</td>
-        <td>-</td>
-        <td>~ 2s</td>
-        <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
-      </tr>
+  <td>Avalanche</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>-</td>
+  <td>~ 2s</td>
+  <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Oasis</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Oasis</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 18s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Algorand</td>
-        <td> </td>
-        <td> </td>
-        <td>0</td>
-        <td>-</td>
-        <td>~ 3.3s</td>
-        <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
-      </tr>
+  <td>Algorand</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>-</td>
+  <td>~ 3.3s</td>
+  <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Aurora</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Aurora</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Fantom</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 5s</td>
-        <td>-</td>
-      </tr>
+  <td>Fantom</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Karura</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 24s</td>
-        <td><a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a></td>
-      </tr>
+  <td>Karura</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td><a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Acala</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 24s</td>
-        <td>-</td>
-      </tr>
+  <td>Acala</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Klaytn</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Klaytn</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Celo</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 10s</td>
-        <td>-</td>
-      </tr>
+  <td>Celo</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 10s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>NEAR</td>
-        <td> </td>
-        <td> </td>
-        <td>0</td>
-        <td>-</td>
-        <td>~ 1.5s</td>
-        <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
-      </tr>
+  <td>NEAR</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>-</td>
+  <td>~ 1.5s</td>
+  <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Moonbeam</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 24s</td>
-        <td><a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a></td>
-      </tr>
+  <td>Moonbeam</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td><a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Neon</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Neon</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Terra2</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 6s</td>
-        <td>-</td>
-      </tr>
+  <td>Terra2</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Injective</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 2.5s</td>
-        <td>-</td>
-      </tr>
+  <td>Injective</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 2.5s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Osmosis</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Osmosis</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Sui</td>
-        <td> </td>
-        <td> </td>
-        <td>0</td>
-        <td>-</td>
-        <td>~ 3s</td>
-        <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
-      </tr>
+  <td>Sui</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>-</td>
+  <td>~ 3s</td>
+  <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Aptos</td>
-        <td> </td>
-        <td> </td>
-        <td>0</td>
-        <td>-</td>
-        <td>~ 4s</td>
-        <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
-      </tr>
+  <td>Aptos</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>-</td>
+  <td>~ 4s</td>
+  <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Arbitrum</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
-      </tr>
+  <td>Arbitrum</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 153.9s</td>
+  <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Optimism</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
-      </tr>
+  <td>Optimism</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1026s</td>
+  <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Gnosis</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Gnosis</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>pythnet</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>pythnet</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Xpla</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 5s</td>
-        <td>-</td>
-      </tr>
+  <td>Xpla</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Base</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Base</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1026s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Sei</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td>~ 0.4s</td>
-        <td>-</td>
-      </tr>
+  <td>Sei</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 0.4s</td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Rootstock</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Rootstock</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Cosmoshub</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Cosmoshub</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Evmos</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Evmos</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Kujira</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Kujira</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Neutron</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Neutron</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Celestia</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Celestia</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Stargaze</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Stargaze</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Dymension</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Dymension</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Ethereum Sepolia</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Ethereum Sepolia</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Arbitrum Sepolia</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Arbitrum Sepolia</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Base Sepolia</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Base Sepolia</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
+
 <tr>
-        <td>Optimism Sepolia</td>
-        <td>200</td>
-        <td> </td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
-      </tr>
+  <td>Optimism Sepolia</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
+</tr>
+
+
 <tr>
-        <td>Ethereum Holesky</td>
-        <td>201</td>
-        <td>200</td>
-        <td> </td>
-        <td>finalized</td>
-        <td> </td>
-        <td>-</td>
-      </tr>
+  <td>Ethereum Holesky</td>
+  <td>201</td>
+  <td>200</td>
+  <td> </td>
+  <td>finalized</td>
+  <td> </td>
+  <td>-</td>
+</tr>
+
 </tbody>
 </table>
 <!--CONSISTENCY_LEVELS-->
