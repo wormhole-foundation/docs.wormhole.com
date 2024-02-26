@@ -132,6 +132,11 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/cosmoshub.svg">cosmoshub</a></td>
 </tr>
 <tr>
+    <td><strong>Dymension</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#dymension">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/dymension.svg">dymension</a></td>
+</tr>
+<tr>
     <td><strong>Ethereum</strong></td>
     <td><a href="./blockchain-environments/evm/README.md#ethereum">evm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/ethereum.svg">ethereum</a></td>
@@ -242,6 +247,11 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/scroll.svg">scroll</a></td>
 </tr>
 <tr>
+    <td><strong>seda</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#seda">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/seda.svg">seda</a></td>
+</tr>
+<tr>
     <td><strong>Sei</strong></td>
     <td><a href="./blockchain-environments/cosmwasm/README.md#sei">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/sei.svg">sei</a></td>
@@ -255,6 +265,11 @@ Wormhole supports a growing number of blockchains
     <td><strong>Solana</strong></td>
     <td><a href="./blockchain-environments/solana/README.md#solana">solana</a></td>
     <td><a href="./.gitbook/assets/chain-icons/solana.svg">solana</a></td>
+</tr>
+<tr>
+    <td><strong>Stargaze</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#stargaze">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/stargaze.svg">stargaze</a></td>
 </tr>
 <tr>
     <td><strong>Sui</strong></td>
