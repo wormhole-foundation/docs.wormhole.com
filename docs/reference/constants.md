@@ -49,6 +49,9 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
 <tr><td>neutron</td><td>4003</td><td><code>neutron-1</code></td><td><code>pion-1</code></td></tr>
 <tr><td>celestia</td><td>4004</td><td><code>celestia</code></td><td><code>mocha-4</code></td></tr>
+<tr><td>stargaze</td><td>4005</td><td><code>stargaze-1</code></td><td></td></tr>
+<tr><td>seda</td><td>4006</td><td></td><td></td></tr>
+<tr><td>dymension</td><td>4007</td><td><code>dymension_1100-1</code></td><td></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
@@ -291,6 +294,24 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -563,6 +584,24 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0xDB5492265f6038831E89f495670FF909aDe94bd9</code></td>
@@ -825,6 +864,24 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -1097,6 +1154,24 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0x7B1bD7a6b4E61c2a123AC6BC2cbfC614437D0470</code></td>
@@ -1359,6 +1434,24 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
