@@ -1540,7 +1540,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>0</td>
   <td>1</td>
   <td>finalized</td>
-  <td>~ 13.2s</td>
+  <td>~ 14s</td>
   <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
 </tr>
 
@@ -1617,7 +1617,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>0</td>
   <td>finalized</td>
-  <td>~ 3.3s</td>
+  <td>~ 4s</td>
   <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
 </tr>
 
@@ -1683,7 +1683,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>0</td>
   <td>finalized</td>
-  <td>~ 1.5s</td>
+  <td>~ 2s</td>
   <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
 </tr>
 
@@ -1716,7 +1716,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td>~ 2.5s</td>
+  <td>~ 3s</td>
   <td> </td>
 </tr>
 
@@ -1760,7 +1760,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>finalized</td>
-  <td>~ 1065.22s</td>
+  <td>~ 1066s</td>
   <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
 </tr>
 
@@ -1804,7 +1804,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td>~ 0.4s</td>
+  <td>~ 1s</td>
   <td> </td>
 </tr>
 
