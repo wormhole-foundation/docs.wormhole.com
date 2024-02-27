@@ -1539,7 +1539,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>0</td>
   <td>1</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 13.2s</td>
   <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
 </tr>
@@ -1563,7 +1563,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1594,7 +1594,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 2s</td>
   <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
 </tr>
@@ -1607,7 +1607,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 18s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1616,7 +1616,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 3.3s</td>
   <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
 </tr>
@@ -1629,7 +1629,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1640,7 +1640,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 5s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1662,7 +1662,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 24s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1673,7 +1673,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 1s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1684,7 +1684,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 10s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1693,7 +1693,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 1.5s</td>
   <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
 </tr>
@@ -1717,7 +1717,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1728,7 +1728,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1739,7 +1739,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 2.5s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1750,7 +1750,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1759,7 +1759,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 3s</td>
   <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
 </tr>
@@ -1770,7 +1770,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>-</td>
+  <td>finalized</td>
   <td>~ 4s</td>
   <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
 </tr>
@@ -1805,7 +1805,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1816,7 +1816,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1827,7 +1827,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 5s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1838,7 +1838,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 1026s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1849,7 +1849,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td>~ 0.4s</td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1860,7 +1860,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1871,7 +1871,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1882,7 +1882,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1893,7 +1893,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1904,7 +1904,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1915,7 +1915,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1926,7 +1926,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1937,7 +1937,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1948,7 +1948,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1959,7 +1959,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1970,7 +1970,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 
@@ -1992,7 +1992,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td>finalized</td>
   <td> </td>
-  <td>-</td>
+  <td> </td>
 </tr>
 
 </tbody>
