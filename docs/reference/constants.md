@@ -1518,7 +1518,11 @@ The following tables document the deployed contract addresses for contracts on e
 
 ## Consistency Levels
 
-The following tables document the [consistencyLevel](./glossary.md#consistency-level) values for each chain.
+The following tables document the [consistencyLevel](./glossary.md#consistency-level) values (i.e. finality reached before signing) or for each chain. 
+
+The consistency level defines how long the Guardians should wait before signing a VAA. The amount of time for finalization depends on the specific chain's consensus mechanism. 
+
+Consistency level is a `u8` so any single byte may be used, however a small subset have specific meanings. If the `consistencyLevel` is not one of those specific values, the `Otherwise` column describes how its interpreted.
 
 <!--CONSISTENCY_LEVELS-->
 <table data-full-width="true">
