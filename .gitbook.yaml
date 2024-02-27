@@ -5,3 +5,11 @@ ignore:
 redirects:
   blockchain-environments/constants: reference/constants.md
   quick-start/connect: tutorials/quick-start/wormhole-connect/wh-connect.md
+  blockchain-environments/blockchain-environments: blockchain-environments/README.md
+  blockchain-environments/evm: blockchain-environments/evm/README.md
+  blockchain-environments/evm/relayer: blockchain-environments/evm/relayer.md
+  blockchain-environments/solana: blockchain-environments/solana/README.md
+  blockchain-environments/cosmwasm: blockchain-environments/cosmwasm/README.md
+  blockchain-environments/aptos: blockchain-environments/aptos/README.md
+  blockchain-environments/sui: blockchain-environments/sui/README.md
+  blockchain-environments/algorand: blockchain-environments/algorand/README.md
