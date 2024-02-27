@@ -1558,8 +1558,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Terra</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
@@ -1602,8 +1602,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Oasis</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 18s</td>
@@ -1624,8 +1624,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Aurora</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1712,8 +1712,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Neon</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1723,8 +1723,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Terra2</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
@@ -1734,8 +1734,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Injective</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 2.5s</td>
@@ -1745,8 +1745,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Osmosis</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 6s</td>
@@ -1800,8 +1800,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Gnosis</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1811,8 +1811,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>pythnet</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1822,8 +1822,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Xpla</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 5s</td>
@@ -1833,8 +1833,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Base</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 1026s</td>
@@ -1844,8 +1844,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Sei</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 0.4s</td>
@@ -1855,8 +1855,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Rootstock</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1866,8 +1866,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Cosmoshub</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1877,8 +1877,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Evmos</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1888,8 +1888,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Kujira</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1899,8 +1899,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Neutron</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1910,8 +1910,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Celestia</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1921,8 +1921,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Stargaze</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1932,8 +1932,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Dymension</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1943,8 +1943,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Ethereum Sepolia</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1954,8 +1954,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Arbitrum Sepolia</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1965,8 +1965,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Base Sepolia</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
@@ -1987,8 +1987,8 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 <tr>
   <td>Ethereum Holesky</td>
-  <td>201</td>
   <td>200</td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td> </td>
