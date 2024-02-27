@@ -260,12 +260,11 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     const finalizationBlocks = finality.finalityThreshold.get(sdkChain);
     const blockTime = finality.blockTime.get(toChain(c.id));
 
-    let finalizationTime = " ";
     if (finalizationBlocks !== undefined && blockTime !== undefined) {
-      finalizationTime = `~ ${((finalizationBlocks + 1) * blockTime) / 1000}s`;
-    }
-
-    rows.push(`
+      const finalizationTime = `~ ${
+        ((finalizationBlocks + 1) * blockTime) / 1000
+      }s`;
+      rows.push(`
 <tr>
   <td>${header}</td>
   <td>${instant}</td>
@@ -276,6 +275,7 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
   <td>${details}</td>
 </tr>
 `);
+    }
   }
 
   return `<table data-full-width="true">
