@@ -1606,7 +1606,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td>~ 18s</td>
+  <td>~ 12s</td>
   <td> </td>
 </tr>
 
@@ -1619,17 +1619,6 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>finalized</td>
   <td>~ 3.3s</td>
   <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
-</tr>
-
-
-<tr>
-  <td>Aurora</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
 </tr>
 
 
@@ -1711,17 +1700,6 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 
 <tr>
-  <td>Neon</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
   <td>Terra2</td>
   <td>200</td>
   <td>201</td>
@@ -1782,7 +1760,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td> </td>
   <td> </td>
   <td>finalized</td>
-  <td>~ 153.9s</td>
+  <td>~ 1065.22s</td>
   <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
 </tr>
 
@@ -1795,28 +1773,6 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>finalized</td>
   <td>~ 1026s</td>
   <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
-</tr>
-
-
-<tr>
-  <td>Gnosis</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
-  <td>pythnet</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
 </tr>
 
 
@@ -1854,23 +1810,12 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
 
 
 <tr>
-  <td>Rootstock</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
   <td>Cosmoshub</td>
   <td>200</td>
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 5s</td>
   <td> </td>
 </tr>
 
@@ -1881,7 +1826,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 2s</td>
   <td> </td>
 </tr>
 
@@ -1892,7 +1837,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 3s</td>
   <td> </td>
 </tr>
 
@@ -1903,7 +1848,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 5s</td>
   <td> </td>
 </tr>
 
@@ -1914,7 +1859,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 5s</td>
   <td> </td>
 </tr>
 
@@ -1925,7 +1870,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
+  <td>~ 5s</td>
   <td> </td>
 </tr>
 
@@ -1936,62 +1881,7 @@ The following tables document the [consistencyLevel](./glossary.md#consistency-l
   <td>201</td>
   <td> </td>
   <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
-  <td>Ethereum Sepolia</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
-  <td>Arbitrum Sepolia</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
-  <td>Base Sepolia</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td> </td>
-</tr>
-
-
-<tr>
-  <td>Optimism Sepolia</td>
-  <td>200</td>
-  <td> </td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
-  <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
-</tr>
-
-
-<tr>
-  <td>Ethereum Holesky</td>
-  <td>200</td>
-  <td>201</td>
-  <td> </td>
-  <td>finalized</td>
-  <td> </td>
+  <td>~ 5s</td>
   <td> </td>
 </tr>
 
