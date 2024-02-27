@@ -229,8 +229,8 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     const f =
       c.extraDetails?.finality === undefined
         ? {
-            instant: 201,
-            safe: 200,
+            instant: 200,
+            safe: 201,
             otherwise: "finalized",
           }
         : c.extraDetails.finality;
