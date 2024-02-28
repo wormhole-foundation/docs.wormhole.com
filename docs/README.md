@@ -48,6 +48,17 @@ Demos provide more realistic implementations than Tutorials
 
 More Demos are available [here](./tutorials/demos.md).
 
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+
+
 ## Supported Blockchains
 
 Wormhole supports a growing number of blockchains
@@ -119,6 +130,11 @@ Wormhole supports a growing number of blockchains
     <td><strong>Cosmoshub</strong></td>
     <td><a href="./blockchain-environments/cosmwasm/README.md#cosmoshub">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/cosmoshub.svg">cosmoshub</a></td>
+</tr>
+<tr>
+    <td><strong>Dymension</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#dymension">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/dymension.svg">dymension</a></td>
 </tr>
 <tr>
     <td><strong>Ethereum</strong></td>
@@ -231,6 +247,11 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/scroll.svg">scroll</a></td>
 </tr>
 <tr>
+    <td><strong>seda</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#seda">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/seda.svg">seda</a></td>
+</tr>
+<tr>
     <td><strong>Sei</strong></td>
     <td><a href="./blockchain-environments/cosmwasm/README.md#sei">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/sei.svg">sei</a></td>
@@ -244,6 +265,11 @@ Wormhole supports a growing number of blockchains
     <td><strong>Solana</strong></td>
     <td><a href="./blockchain-environments/solana/README.md#solana">solana</a></td>
     <td><a href="./.gitbook/assets/chain-icons/solana.svg">solana</a></td>
+</tr>
+<tr>
+    <td><strong>Stargaze</strong></td>
+    <td><a href="./blockchain-environments/cosmwasm/README.md#stargaze">cosmwasm</a></td>
+    <td><a href="./.gitbook/assets/chain-icons/stargaze.svg">stargaze</a></td>
 </tr>
 <tr>
     <td><strong>Sui</strong></td>

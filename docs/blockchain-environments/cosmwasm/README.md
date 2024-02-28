@@ -169,8 +169,8 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 ## Ecosystem
 
 - [Web site](https://injective.com/)
-- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/injective.json)
-- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/injective.json)
+- [Injective Explorer](https://explorer.injective.network/) | [Injective Testnet Explorer](https://testnet.explorer.injective.network/)
+- [Developer docs](https://docs.injective.network/) | [Injective Typescript SDK docs](https://docs.ts.injective.network/) | [Injective trading docs](https://docs.trading.injective.network/)
 
 ## Wormhole Details
 
@@ -553,3 +553,101 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
   
 
 <!--CELESTIA_CHAIN_DETAILS-->
+
+<!--DYMENSION_CHAIN_DETAILS-->
+
+# Dymension
+
+## Ecosystem
+
+- [Web site](https://dymension.xyz/)
+- [https://www.mintscan.io/dymension](https://www.mintscan.io/dymension)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/dymension.json)
+
+## Wormhole Details
+
+- **Name**: `dymension`
+- **Chain ID**: `4007`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/dymension.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>dymension_1100-1</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--DYMENSION_CHAIN_DETAILS-->
+
+<!--STARGAZE_CHAIN_DETAILS-->
+
+# Stargaze
+
+## Ecosystem
+
+- [Web site](https://www.stargaze.zone/)
+- [https://www.mintscan.io/stargaze](https://www.mintscan.io/stargaze)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/stargaze.json)
+
+## Wormhole Details
+
+- **Name**: `stargaze`
+- **Chain ID**: `4005`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/stargaze.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>stargaze-1</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--STARGAZE_CHAIN_DETAILS-->

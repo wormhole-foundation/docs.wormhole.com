@@ -49,6 +49,9 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
 <tr><td>neutron</td><td>4003</td><td><code>neutron-1</code></td><td><code>pion-1</code></td></tr>
 <tr><td>celestia</td><td>4004</td><td><code>celestia</code></td><td><code>mocha-4</code></td></tr>
+<tr><td>stargaze</td><td>4005</td><td><code>stargaze-1</code></td><td></td></tr>
+<tr><td>seda</td><td>4006</td><td></td><td></td></tr>
+<tr><td>dymension</td><td>4007</td><td><code>dymension_1100-1</code></td><td></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
@@ -291,6 +294,24 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -563,6 +584,24 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0xDB5492265f6038831E89f495670FF909aDe94bd9</code></td>
@@ -825,6 +864,24 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>celestia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -1097,6 +1154,24 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0x7B1bD7a6b4E61c2a123AC6BC2cbfC614437D0470</code></td>
@@ -1167,7 +1242,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>polygon</td>
-      <td><code>0x0FF28217dCc90372345954563486528aa865cDd6</code></td>
+      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -1364,6 +1439,24 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
+      <td>stargaze</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>seda</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>dymension</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
       <td>sepolia</td>
       <td><code>-</code></td>
       <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
@@ -1425,149 +1518,377 @@ The following tables document the deployed contract addresses for contracts on e
 
 ## Consistency Levels
 
-The following tables document the [consistencyLevel](./glossary.md#consistency-level) values for each chain.
+The following tables document the [consistencyLevel](./glossary.md#consistency-level) values (i.e. finality reached before signing) or for each chain. 
+
+The consistency level defines how long the Guardians should wait before signing a VAA. The amount of time for finalization depends on the specific chain's consensus mechanism. 
+
+Consistency level is a `u8` so any single byte may be used, however a small subset have specific meanings. If the `consistencyLevel` is not one of those specific values, the `Otherwise` column describes how its interpreted.
 
 <!--CONSISTENCY_LEVELS-->
-### Solana
-|Level|Value|
-|-----|-----|
-|Confirmed|0|
-|Finalized|1|
+<table data-full-width="true">
 
-For more information see [https://docs.solana.com/cluster/commitments](https://docs.solana.com/cluster/commitments)
+<thead>
+  <td>Chain</td>
+  <td>Instant</td>
+  <td>Safe</td>
+  <td>Finalized</td>
+  <td>Otherwise</td>
+  <td>Time to Finalize</td>
+  <td>Details</td>
+</thead>
+<tbody>
 
-### Ethereum
-|Level|Value|
-|-----|-----|
-|Instant|200|
-|Safe|201|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
+<tr>
+  <td>Solana</td>
+  <td> </td>
+  <td>0</td>
+  <td>1</td>
+  <td>finalized</td>
+  <td>~ 14s</td>
+  <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
+</tr>
 
-For more information see [https://www.alchemy.com/overviews/ethereum-commitment-levels](https://www.alchemy.com/overviews/ethereum-commitment-levels)
 
-### BNB Smart Chain
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
+<tr>
+  <td>Ethereum</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 975s</td>
+  <td><a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a></td>
+</tr>
 
-For more information see [https://docs.bnbchain.org/docs/learn/consensus](https://docs.bnbchain.org/docs/learn/consensus)
 
-### Polygon
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
+<tr>
+  <td>Terra</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td> </td>
+</tr>
 
-For more information see [https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/](https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/)
 
-### Avalanche
-|Level|Value|
-|-----|-----|
-|Finalized|0|
+<tr>
+  <td>BNB Smart Chain</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>number of blocks</td>
+  <td>~ 48s</td>
+  <td><a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a></td>
+</tr>
 
-This field is may be ignored since the chain provides instant finality.
 
-For more information see [https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality](https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality)
+<tr>
+  <td>Polygon</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 66s</td>
+  <td><a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a></td>
+</tr>
 
-### Algorand
-|Level|Value|
-|-----|-----|
-|Finalized|0|
 
-This field is may be ignored since the chain provides instant finality.
+<tr>
+  <td>Avalanche</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>finalized</td>
+  <td>~ 2s</td>
+  <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
+</tr>
 
-For more information see [https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality](https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality)
 
-### Fantom
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
+<tr>
+  <td>Oasis</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 12s</td>
+  <td> </td>
+</tr>
 
-### Karura
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-For more information see [https://wiki.polkadot.network/docs/learn-consensus](https://wiki.polkadot.network/docs/learn-consensus)
+<tr>
+  <td>Algorand</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>finalized</td>
+  <td>~ 4s</td>
+  <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
+</tr>
 
-### Acala
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-### Klaytn
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
+<tr>
+  <td>Fantom</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
 
-### Celo
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-### NEAR
-|Level|Value|
-|-----|-----|
-|Finalized|0|
+<tr>
+  <td>Karura</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td><a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a></td>
+</tr>
 
-This field is may be ignored since the chain provides instant finality.
 
-For more information see [https://nomicon.io/ChainSpec/Consensus](https://nomicon.io/ChainSpec/Consensus)
+<tr>
+  <td>Acala</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td> </td>
+</tr>
 
-### Moonbeam
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-For more information see [https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints](https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints)
+<tr>
+  <td>Klaytn</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1s</td>
+  <td> </td>
+</tr>
 
-### Sui
-|Level|Value|
-|-----|-----|
-|Finalized|0|
 
-This field is may be ignored since the chain provides instant finality.
+<tr>
+  <td>Celo</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 10s</td>
+  <td> </td>
+</tr>
 
-For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/learn/architecture/consensus)
 
-### Aptos
-|Level|Value|
-|-----|-----|
-|Finalized|0|
+<tr>
+  <td>NEAR</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>finalized</td>
+  <td>~ 2s</td>
+  <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
+</tr>
 
-This field is may be ignored since the chain provides instant finality.
 
-For more information see [https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft](https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft)
+<tr>
+  <td>Moonbeam</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 24s</td>
+  <td><a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a></td>
+</tr>
 
-### Arbitrum
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-For more information see [https://developer.arbitrum.io/tx-lifecycle](https://developer.arbitrum.io/tx-lifecycle)
+<tr>
+  <td>Terra2</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td> </td>
+</tr>
 
-### Optimism
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+<tr>
+  <td>Injective</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 3s</td>
+  <td> </td>
+</tr>
 
-### Optimism Sepolia
-|Level|Value|
-|-----|-----|
-|Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
-For more information see [https://community.optimism.io/docs/developers/bridge/comm-strategies/](https://community.optimism.io/docs/developers/bridge/comm-strategies/)
+<tr>
+  <td>Osmosis</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 6s</td>
+  <td> </td>
+</tr>
 
+
+<tr>
+  <td>Sui</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>finalized</td>
+  <td>~ 3s</td>
+  <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
+</tr>
+
+
+<tr>
+  <td>Aptos</td>
+  <td> </td>
+  <td> </td>
+  <td>0</td>
+  <td>finalized</td>
+  <td>~ 4s</td>
+  <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
+</tr>
+
+
+<tr>
+  <td>Arbitrum</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1066s</td>
+  <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
+</tr>
+
+
+<tr>
+  <td>Optimism</td>
+  <td>200</td>
+  <td> </td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1026s</td>
+  <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
+</tr>
+
+
+<tr>
+  <td>Xpla</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Base</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1026s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Sei</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 1s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Cosmoshub</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Evmos</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 2s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Kujira</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 3s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Neutron</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Celestia</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Stargaze</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+
+<tr>
+  <td>Dymension</td>
+  <td>200</td>
+  <td>201</td>
+  <td> </td>
+  <td>finalized</td>
+  <td>~ 5s</td>
+  <td> </td>
+</tr>
+
+</tbody>
+</table>
 <!--CONSISTENCY_LEVELS-->

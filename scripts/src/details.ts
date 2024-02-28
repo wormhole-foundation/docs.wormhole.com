@@ -1,3 +1,4 @@
+import { Chain, finality, toChain } from "@wormhole-foundation/connect-sdk";
 import * as cfg from "./config";
 import { fmtNum, fmtStr, fmtCodeStr } from "./util";
 
@@ -207,17 +208,82 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     return a.id - b.id;
   });
 
-  let content: string[] = [];
+  const header = `
+<thead>
+  <td>Chain</td>
+  <td>Instant</td>
+  <td>Safe</td>
+  <td>Finalized</td>
+  <td>Otherwise</td>
+  <td>Time to Finalize</td>
+  <td>Details</td>
+</thead>`;
 
+  const rows: string[] = [];
   for (const c of orderedDc) {
-    if (c.extraDetails?.finality === undefined) continue;
-    const f = c.extraDetails.finality;
+    if (!c.extraDetails) {
+      console.log("No extra details for: ", c.name);
+      continue;
+    }
+
+    const f =
+      c.extraDetails?.finality === undefined
+        ? {
+            instant: 200,
+            safe: 201,
+            otherwise: "finalized",
+          }
+        : c.extraDetails.finality;
+
     const header = c.extraDetails.title ? c.extraDetails.title : c.name;
-    const [opts, deets] = finalityOptionTable(f);
-    content.push(`### ${header}`, opts, deets);
+
+    const instant = fmtNum(f.instant);
+    const safe = fmtNum(
+      f.safe !== undefined
+        ? f.safe
+        : f.confirmed !== undefined
+        ? f.confirmed
+        : undefined
+    );
+    const finalized = fmtNum(f.finalized);
+    const otherwise = f.otherwise ? f.otherwise : "finalized";
+    const details = f.details ? `<a href="${f.details}">Details</a>` : " ";
+
+    let sdkChain: Chain;
+    try {
+      sdkChain = toChain(c.id);
+    } catch {
+      console.log("No sdk chain for ", c.name, " with id ", c.id);
+      continue;
+    }
+
+    const finalizationBlocks = finality.finalityThreshold.get(sdkChain);
+    const blockTime = finality.blockTime.get(toChain(c.id));
+
+    if (finalizationBlocks !== undefined && blockTime !== undefined) {
+      const finalizationTime = `~ ${Math.ceil(
+        ((finalizationBlocks + 1) * blockTime) / 1000
+      )}s`;
+      rows.push(`
+<tr>
+  <td>${header}</td>
+  <td>${instant}</td>
+  <td>${safe}</td>
+  <td>${finalized}</td>
+  <td>${otherwise}</td>
+  <td>${finalizationTime}</td>
+  <td>${details}</td>
+</tr>
+`);
+    }
   }
 
-  return content.join("\n");
+  return `<table data-full-width="true">
+${header}
+<tbody>
+${rows.join("\n")}
+</tbody>
+</table>`;
 }
 
 export function generateAllContractsTable(

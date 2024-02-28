@@ -38,6 +38,15 @@
 - [Development Environment](reference/dev-env/README.md)
   - [Tilt](reference/dev-env/tilt.md)
   - [Tooling](reference/dev-env/tooling.md)
+- [Blockchain Platforms](blockchain-environments/README.md)
+  - [Algorand](blockchain-environments/algorand/README.md)
+  - [Aptos](blockchain-environments/aptos/README.md)
+  - [CosmWasm](blockchain-environments/cosmwasm/README.md)
+  - [EVM](blockchain-environments/evm/README.md)
+    - [Relayer](blockchain-environments/evm/relayer.md)
+  - [Near](blockchain-environments/near/README.md)
+  - [Solana](blockchain-environments/solana/README.md)
+  - [Sui](blockchain-environments/sui/README.md)
 - [API Docs](reference/api-docs/README.md)
   - [Wormholescan API](reference/api-docs/swagger.md)
 - [SDK Docs](reference/sdk-docs/README.md)
@@ -45,23 +54,13 @@
 - [CLI Docs](reference/cli-docs/README.md)
 - [Glossary](reference/glossary.md)
 
-## Blockchain Environments
-
-- [Overview](blockchain-environments/README.md)
-- [Algorand](blockchain-environments/algorand/README.md)
-- [Aptos](blockchain-environments/aptos/README.md)
-- [CosmWasm](blockchain-environments/cosmwasm/README.md)
-- [EVM](blockchain-environments/evm/README.md)
-  - [Relayer](blockchain-environments/evm/relayer.md)
-- [Near](blockchain-environments/near/README.md)
-- [Solana](blockchain-environments/solana/README.md)
-- [Sui](blockchain-environments/sui/README.md)
-
 ## Queries
 
 - [Overview](queries/overview.md)
 - [Getting Started](queries/getting-started.md)
 - [FAQs](queries/faqs.md)
+
+
 
 ## External Links
 

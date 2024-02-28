@@ -183,3 +183,14 @@ This will run until the process is killed or it encounters an unrecoverable erro
 ## Advanced Example
 
 For a more advanced example that details other middleware and more complex configuration and actions including a built in UI, see the [Advanced Tutorial](./advanced-example.md)
+
+{% hint style="info" %}
+
+## Wormhole integration complete?
+
+Let us know so we can list your project in our ecosystem directory and introduce you to our global, multichain community!
+
+[Reach out now!](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)
+
+{% endhint %}
+
