@@ -101,3 +101,5 @@ Need some examples?
   - [Contract](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryDemo.sol)
   - [UI](https://vaa.dev/#/ccq)
 - [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool)
+- [Solana PDA / Token Account Balance](https://github.com/wormholelabs-xyz/example-queries-solana-pda)
+- [Solana Queries Verification](https://github.com/wormholelabs-xyz/example-queries-solana-verify)
