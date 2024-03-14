@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-echo "Grab connect-sdk README content"
-FILE_PATH="../../../docs/reference/sdk-docs/connect-sdk.md"
-REPO_DIR="connect-sdk"
+echo "Grab sdk README content"
+FILE_PATH="../../../docs/reference/sdk-docs/README.md"
+REPO_DIR="wormhole-sdk-ts"
 BRANCH="main"
 
 if [ -d $REPO_DIR ]
@@ -12,7 +12,7 @@ then
     rm -rf $REPO_DIR
 fi
 
-git clone git@github.com:wormhole-foundation/connect-sdk.git
+git clone git@github.com:wormhole-foundation/wormhole-sdk-ts.git
 
 cd $REPO_DIR
 git checkout $BRANCH 
