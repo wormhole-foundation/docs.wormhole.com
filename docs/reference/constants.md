@@ -57,6 +57,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
 <tr><td>optimism_sepolia</td><td>10005</td><td></td><td><code>Optimism Sepolia</code> - <code>11155420</code></td></tr>
 <tr><td>holesky</td><td>10006</td><td><code>N/A</code></td><td><code>Holesky</code> - <code>17000</code></td></tr>
+<tr><td>polygon_sepolia</td><td>10007</td><td></td><td><code>Sepolia</code> - <code>10007</code></td></tr>
 </tbody>
 </table>
 <!--CHAIN_IDS-->
@@ -265,7 +266,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>mantle</td>
       <td><code>-</code></td>
-      <td><code>0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35</code></td>
+      <td><code>0x376428e7f26D5867e69201b275553C45B09EE090</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -289,7 +290,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>neutron</td>
       <td><code>neutron16rerygcpahqcxx5t8vjla46ym8ccn7xz7rtc6ju5ujcd36cmc7zs9zrunh</code></td>
-      <td><code>neutron1rhqgnak5z0pla5sgqq7ykqh8glckk4h67fe0hgjfcyulx2nqa0yqaswtnp</code></td>
+      <td><code>neutron1enf63k37nnv9cugggpm06mg70emcnxgj9p64v2s8yx7a2yhhzk2q6xesk4</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -344,6 +345,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td>holesky</td>
       <td><code>-</code></td>
       <td><code>0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>polygon_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -550,7 +557,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>mantle</td>
       <td><code>-</code></td>
-      <td><code>0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e</code></td>
+      <td><code>0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -629,6 +636,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td>holesky</td>
       <td><code>-</code></td>
       <td><code>0x76d093BbaE4529a342080546cAFEec4AcbA59EC6</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>polygon_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -835,7 +848,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>mantle</td>
       <td><code>-</code></td>
-      <td><code>0x23908A62110e21C04F3A4e011d24F901F911744A</code></td>
+      <td><code>0xD7D732C8Bf5eBF620EA55b5828eae20418eEF083</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -914,6 +927,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td>holesky</td>
       <td><code>-</code></td>
       <td><code>0xc8941d483c45eF8FB72E4d1F9dDE089C95fF8171</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>polygon_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>0x23908A62110e21C04F3A4e011d24F901F911744A</code></td>
       <td><code>-</code></td> 
     </tr>
 </tbody>
@@ -1201,6 +1220,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
+<tr>
+      <td>polygon_sepolia</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
 </tbody>
 </table>
 <!--RELAYER_BRIDGE_ADDRESS-->
@@ -1482,6 +1507,12 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>holesky</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>polygon_sepolia</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 

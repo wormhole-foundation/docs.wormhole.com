@@ -3,14 +3,14 @@ import * as cfg from "./config";
 import {
   ChainConfig as SdkChainConfig,
   Contracts as SdkContracts,
-  ChainName,
   Network,
   chains,
   CONFIG as newconf,
   toChainId,
-} from "@wormhole-foundation/connect-sdk";
+} from "@wormhole-foundation/sdk";
 import {
   CHAINS as whchains,
+  ChainName,
   relayer,
   CONTRACTS as whcontracts,
 } from "@certusone/wormhole-sdk";

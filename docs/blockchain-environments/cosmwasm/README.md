@@ -490,7 +490,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 |Type|Contract|
 |----|--------|
-|Core|`neutron1rhqgnak5z0pla5sgqq7ykqh8glckk4h67fe0hgjfcyulx2nqa0yqaswtnp`|
+|Core|`neutron1enf63k37nnv9cugggpm06mg70emcnxgj9p64v2s8yx7a2yhhzk2q6xesk4`|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 

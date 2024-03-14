@@ -190,6 +190,11 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/polygon.svg">polygon</a></td>
 </tr>
 <tr>
+    <td><strong>Polygon Sepolia</strong></td>
+    <td><a href="../blockchain-environments/evm/README.md#polygon_sepolia">evm</a></td>
+    <td><a href="../.gitbook/assets/chain-icons/polygon_sepolia.svg">polygon_sepolia</a></td>
+</tr>
+<tr>
     <td><strong>pythnet</strong></td>
     <td><a href="../blockchain-environments/solana/README.md#pythnet">solana</a></td>
     <td><a href="../.gitbook/assets/chain-icons/pythnet.svg">pythnet</a></td>
