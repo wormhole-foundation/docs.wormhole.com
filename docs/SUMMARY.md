@@ -50,7 +50,7 @@
 - [API Docs](reference/api-docs/README.md)
   - [Wormholescan API](reference/api-docs/swagger.md)
 - [SDK Docs](reference/sdk-docs/README.md)
-  - [Connect SDK](reference/sdk-docs/connect-sdk.md)
+  - [Legacy SDK](reference/sdk-docs/legacy-sdk.md)
 - [CLI Docs](reference/cli-docs/README.md)
 - [Glossary](reference/glossary.md)
 
