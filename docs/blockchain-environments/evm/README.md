@@ -1391,6 +1391,62 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 |Type|Contract|
 |----|--------|
+|Core|`0x376428e7f26D5867e69201b275553C45B09EE090`|
+|Token Bridge|`0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D`|
+|NFT Bridge|`0xD7D732C8Bf5eBF620EA55b5828eae20418eEF083`|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--MANTLE_CHAIN_DETAILS-->
+
+<!--POLYGON_SEPOLIA_CHAIN_DETAILS-->
+
+# Polygon Sepolia
+
+## Ecosystem
+
+- [Web site](https://polygon.technology/)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/polygon_sepolia.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/polygon_sepolia.json)
+
+## Wormhole Details
+
+- **Name**: `polygon_sepolia`
+- **Chain ID**: `10007`
+- **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
+
+### Consistency Levels
+
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
+
+
+For more information see [https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/](https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/)
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>Sepolia</code> - <code>10007</code>)
+
+|Type|Contract|
+|----|--------|
 |Core|`0x6b9C8671cdDC8dEab9c719bB87cBd3e782bA6a35`|
 |Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
 |NFT Bridge|`0x23908A62110e21C04F3A4e011d24F901F911744A`|
@@ -1404,4 +1460,4 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |NFT Bridge|**N/A**|
   
 
-<!--MANTLE_CHAIN_DETAILS-->
+<!--POLYGON_SEPOLIA_CHAIN_DETAILS-->

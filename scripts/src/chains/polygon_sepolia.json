@@ -1,0 +1,14 @@
+{
+    "title": "Polygon Sepolia",
+    "homepage": "https://polygon.technology/",
+    "testnet":{
+      "name":"Sepolia",
+      "id":"10007"
+    },
+    "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+    "finality": {
+      "details":"https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/",
+      "instant": 200,
+      "otherwise": "finalized"
+    }
+  }

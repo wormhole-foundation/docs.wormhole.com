@@ -1,4 +1,4 @@
-import { Chain, finality, toChain } from "@wormhole-foundation/connect-sdk";
+import { Chain, finality, toChain } from "@wormhole-foundation/sdk";
 import * as cfg from "./config";
 import { fmtNum, fmtStr, fmtCodeStr } from "./util";
 
