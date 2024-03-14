@@ -5,12 +5,12 @@ import {
   Contracts as SdkContracts,
   Network,
   chains,
+  Chain,
   CONFIG as newconf,
   toChainId,
 } from "@wormhole-foundation/sdk";
 import {
   CHAINS as whchains,
-  ChainName,
   relayer,
   CONTRACTS as whcontracts,
 } from "@certusone/wormhole-sdk";
@@ -28,7 +28,7 @@ function mapnet(network: string): Network {
   }
 }
 
-const idToChainName = new Map<number, ChainName>();
+const idToChainName = new Map<number, Chain>();
 for (const c of chains) {
   idToChainName.set(toChainId(c), c);
 }
