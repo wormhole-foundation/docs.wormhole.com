@@ -1,4 +1,6 @@
-# Wormhole: A Versatile Message Passing Protocol for Blockchain Interoperability
+![A Developer's Intro to Wormhole and Product Ideas](https://github.com/anggagilang11/docs.wormhole.com/assets/62389945/e1bb96d4-8f63-4684-82c3-cadb819e070b)
+
+# A Developer's Intro to Wormhole and Product Ideas
 
 Wormhole represents a significant leap forward in the world of blockchain technology, serving as a versatile message passing protocol that allows for seamless communication across different blockchains. This capability opens up a myriad of possibilities for developers looking to create cross-chain applications, enhance liquidity, and explore new dimensions of blockchain interoperability.
 
@@ -6,15 +8,22 @@ Wormhole represents a significant leap forward in the world of blockchain techno
 
 ### What is Wormhole?
 
+![What is Wormhole](https://github.com/anggagilang11/docs.wormhole.com/assets/62389945/2eb02b55-1e46-475b-a90e-e4e573a10ba1)
+
 At its core, Wormhole is not a blockchain or a token bridge in the traditional sense. Instead, it's a sophisticated infrastructure layer that facilitates the exchange of messages — essentially information or commands — between various blockchain networks. This cross-communication capability enables developers to harness the unique strengths of multiple blockchains, creating applications that are more scalable, flexible, and user-friendly.
 
 ### How Wormhole Works?
 
 Wormhole leverages a network of guardians that validate and secure the cross-chain communication, ensuring messages are transferred accurately and securely from one blockchain to another. This is achieved without the need for a central authority, preserving the decentralized ethos of blockchain technology.
 
+![image](https://github.com/anggagilang11/docs.wormhole.com/assets/62389945/00b2b728-679d-4ed1-ac05-ff3c4449abb3)
+
 *How Wormhole works* - Source: [Wormhole Documentation](https://docs.wormhole.com/wormhole)
 
 ## Key Features of Wormhole
+
+![Purple and White Modern Welcome to My Channel YouTube Intro Video (3)](https://github.com/anggagilang11/docs.wormhole.com/assets/62389945/1810ef16-0037-4869-8967-b394051b8678)
+
 
 - **Cross-Chain Exchange**: Developers can build decentralized exchanges (DEXs) that allow users to access liquidity across different blockchains, dramatically increasing the available assets for trading.
   
