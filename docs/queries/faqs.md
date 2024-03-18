@@ -4,11 +4,11 @@
 
 The [Query TypeScript SDK](https://npmjs.com/package/@wormhole-foundation/wormhole-query-sdk) can be used to create query requests, mock query responses for testing, and parse query responses along with some utilities for posting query responses.
 
-The [Solidity QueryResponse Abstract Contract](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryResponse.sol) can be used to parse and verify query responses on EVM chains.
+The [Solidity QueryResponse Abstract Contract](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/main/src/QueryResponse.sol) can be used to parse and verify query responses on EVM chains. Simply `forge install wormhole-foundation/wormhole-solidity-sdk`. See the [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool) repo as an example use case. The SDK also contains [`QueryTest.sol`](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/main/src/testing/helpers/QueryTest.sol) for mocking query requests and responses in forge tests.
 
 The [Go query package](https://github.com/wormhole-foundation/wormhole/tree/main/node/pkg/query) can also be used to create query requests and parse query responses.
 
-> 💡 A Rust SDK for Solana is being actively investigated by the Wormhole Contributors.
+> 💡 A Rust SDK for Solana is being actively investigated by the Wormhole Contributors. See the [Solana Queries Verification](https://github.com/wormholelabs-xyz/example-queries-solana-verify) repo as a proof of concept.
 
 ## Are there any examples?
 
@@ -16,7 +16,7 @@ There sure are!
 
 - [Getting Started](./getting-started.md)
 - Basic Demo
-  - [Contract](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryDemo.sol)
+  - [Contract](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol)
   - [UI](https://vaa.dev/#/ccq)
 - [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool)
 - [Solana PDA / Token Account Balance](https://github.com/wormholelabs-xyz/example-queries-solana-pda)
