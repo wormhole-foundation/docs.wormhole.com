@@ -1,7 +1,7 @@
 {
     "homepage": "https://seda.xyz/",
     "title": "Seda",
-    "mainnet":{
+    "testnet":{
       "name":"Testnet",
       "id":"seda-1-testnet"
     },
