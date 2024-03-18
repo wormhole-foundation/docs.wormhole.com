@@ -1,6 +1,6 @@
 # Getting Started
 
-> 💡There is a basic demo interacting with the [QueryDemo](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryDemo.sol) contract hosted at [https://vaa.dev/#/ccq](https://vaa.dev/#/ccq)
+> 💡There is a basic demo interacting with the [QueryDemo](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol) contract hosted at [https://vaa.dev/#/ccq](https://vaa.dev/#/ccq)
 
 To get started, we will look at a simple `eth_call` request to get the total supply of WETH on Ethereum.
 
@@ -233,7 +233,7 @@ A mainnet Query Proxy is available at `https://api.wormholelabs.xyz/v1/query`
 
 ## Verify a QueryResponse On-Chain
 
-A [QueryResponse abstract contract](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryResponse.sol) is provided to assist with verifying query responses. Broadly, using a query response on-chain comes down to 3 steps.
+A [QueryResponse abstract contract](https://github.com/wormhole-foundation/wormhole-solidity-sdk/blob/main/src/QueryResponse.sol) is provided to assist with verifying query responses. Simply `forge install wormhole-foundation/wormhole-solidity-sdk`. Broadly, using a query response on-chain comes down to 3 steps.
 
 1. Parse and verify the query response.
    1. The `parseAndVerifyQueryResponse` handles verifying the Guardian signatures against the current guardian set stored in the Core bridge contract.
@@ -245,7 +245,7 @@ A [QueryResponse abstract contract](https://github.com/wormhole-foundation/wormh
    5. Is the result of the expected length for the expected result type?
 3. `abi.decode` the result.
 
-See the [QueryDemo](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/query/QueryDemo.sol#L86-L135) contract for an example and read the docstrings of the above methods for detailed usage instructions.
+See the [QueryDemo](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol#L86-L135) contract for an example and read the docstrings of the above methods for detailed usage instructions.
 
 ## Submit a QueryResponse On-Chain
 
