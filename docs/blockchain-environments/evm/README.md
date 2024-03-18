@@ -1443,7 +1443,7 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>Sepolia</code> - <code>10007</code>)
+### Testnet Contracts (<code>Sepolia</code> - <code>80002</code>)
 
 |Type|Contract|
 |----|--------|
