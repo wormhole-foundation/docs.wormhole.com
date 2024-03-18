@@ -50,7 +50,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>neutron</td><td>4003</td><td><code>neutron-1</code></td><td><code>pion-1</code></td></tr>
 <tr><td>celestia</td><td>4004</td><td><code>celestia</code></td><td><code>mocha-4</code></td></tr>
 <tr><td>stargaze</td><td>4005</td><td><code>stargaze-1</code></td><td></td></tr>
-<tr><td>seda</td><td>4006</td><td><code>seda-1-testnet</code></td><td></td></tr>
+<tr><td>seda</td><td>4006</td><td></td><td><code>seda-1-testnet</code></td></tr>
 <tr><td>dymension</td><td>4007</td><td><code>dymension_1100-1</code></td><td></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>

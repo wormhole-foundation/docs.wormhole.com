@@ -674,7 +674,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 
 
 
-### Mainnet Contracts (<code>seda-1-testnet</code>)
+### Mainnet Contracts 
 
 |Type|Contract|
 |----|--------|
@@ -682,7 +682,7 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts 
+### Testnet Contracts (<code>seda-1-testnet</code>)
 
 |Type|Contract|
 |----|--------|
