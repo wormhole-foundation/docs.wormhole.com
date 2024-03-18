@@ -651,3 +651,52 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
   
 
 <!--STARGAZE_CHAIN_DETAILS-->
+
+<!--SEDA_CHAIN_DETAILS-->
+
+# Seda
+
+## Ecosystem
+
+- [Web site](https://seda.xyz/)
+- 
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seda.json)
+
+## Wormhole Details
+
+- **Name**: `seda`
+- **Chain ID**: `4006`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seda.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>seda-1-testnet</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--SEDA_CHAIN_DETAILS-->

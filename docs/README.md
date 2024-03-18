@@ -252,7 +252,7 @@ Wormhole supports a growing number of blockchains
     <td><a href="./.gitbook/assets/chain-icons/scroll.svg">scroll</a></td>
 </tr>
 <tr>
-    <td><strong>seda</strong></td>
+    <td><strong>Seda</strong></td>
     <td><a href="./blockchain-environments/cosmwasm/README.md#seda">cosmwasm</a></td>
     <td><a href="./.gitbook/assets/chain-icons/seda.svg">seda</a></td>
 </tr>

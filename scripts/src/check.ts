@@ -146,15 +146,20 @@ function checkWhSdk() {
         continue;
       }
 
-      if (
-        nativeChainId &&
-        "id" in nativeChainId &&
-        nativeChainId.id !== "N/A" &&
-        nativeChainId.id.toString() !== sdkChain.nativeChainId.toString()
-      )
+      const nativeChainIdVal =
+        nativeChainId && "id" in nativeChainId && nativeChainId.id !== "N/A"
+          ? nativeChainId.id.toString()
+          : undefined;
+
+      const sdkNativeChainId = sdkChain.nativeChainId
+        ? sdkChain.nativeChainId.toString()
+        : undefined;
+
+      if (nativeChainIdVal !== sdkNativeChainId) {
         console.log(
           `Native chain id mismatch for ${sdkName} ${network}: ${nativeChainId.id} vs ${sdkChain.nativeChainId}`
         );
+      }
     }
   }
 })();

@@ -3,7 +3,7 @@
     "homepage": "https://polygon.technology/",
     "testnet":{
       "name":"Sepolia",
-      "id":"10007"
+      "id":"80002"
     },
     "contractSource": "ethereum/contracts/bridge/Bridge.sol",
     "finality": {

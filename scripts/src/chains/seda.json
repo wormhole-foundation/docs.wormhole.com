@@ -1,0 +1,9 @@
+{
+    "homepage": "https://seda.xyz/",
+    "title": "Seda",
+    "mainnet":{
+      "name":"Testnet",
+      "id":"seda-1-testnet"
+    },
+    "explorer": [ ]
+  }
