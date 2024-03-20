@@ -4,7 +4,6 @@
 
 ## Quick Start
 
-- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wormhole-connect/wh-connect.md)
 - [Developing Cross Chain Dapps](tutorials/quick-start/cross-chain-dev/README.md)
   - [Standard Relayer](tutorials/quick-start/cross-chain-dev/standard-relayer.md)
   - [Specialized Relayer](tutorials/quick-start/cross-chain-dev/specialized-relayer.md)
