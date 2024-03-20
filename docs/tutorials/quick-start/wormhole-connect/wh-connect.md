@@ -14,6 +14,14 @@ Or, check out the [Github repository](https://github.com/wormhole-foundation/wor
 The [Wormhole Typescript SDK](../../../reference/sdk-docs/README.md) allows you to implement the same functionality as the Connect widget, but in your own UI. For more information on using the SDK instead of Connect [check out the docs](../../../reference/sdk-docs/README.md).
 {% endhint %}
 
+## Demo
+
+Wormhole Connect is deployed live in several production apps. Here are a few:
+
+- [Portal Bridge](https://portalbridge.com/)
+- [Jupiter](https://jup.ag/bridge/wormhole)
+- [Pancake Swap](https://bridge.pancakeswap.finance/wormhole)
+
 ## Functionality in Connect
 
 1. **Gasless Txns:** Users can bridge without paying gas on the destination chain. 
@@ -25,20 +33,14 @@ The [Wormhole Typescript SDK](../../../reference/sdk-docs/README.md) allows you 
 
 ## Bridges in Connect
 
-Connect and the corresponding SDK will have 4 primary routes:
+Connect offers multiple bridging routes:
 
+- Token bridge - wrapped asset bridging
 - USDC Bridge - USDC gaslessly and quickly bridged between any CCTP supported chains
 - Portal - WH wrapped asset bridging
     - Users can bridge any token between WH supported chains via the TokenBridge contracts that power Portal bridge today
 - **NEW** CCTP Based Liquidity Bridge - New price-efficient, fast transfer solution built atop CCTP x WH Messaging
 - **NEW** Uni V3 Based Liquidity Bridge - New solution built atop seeded liquidity for WH wrapped assets against native assets in Uni V3 pools
-
-
-Connect can be integrated directly as a customizable, drop-in widget or a developer can choose to utilize all or some of the functionality via a fully customized integration through the Wormhole SDK.
-
-- **Connect UI**: A customizable frontend that takes in the necessary input from the user, published as React library on NPM.
-- **Wormhole SDK**: Typescript SDK to directly call the functions powering the Connect widget, all connect functionality will live in a specific interface within the general WH SDK
-    - The routing logic and contract calls will be built into the Connect Interface in the Wormhole SDK (formerly, this was a distinct, Connect SDK, the interface has been merged in to maintain a single WH SDK).
 
 ## Getting Started
 
@@ -128,7 +130,7 @@ If using the hosted version, provide `config` and `theme` as JSON-serialized str
 <details>
 <summary>Theme Options</summary>
 
-More [here](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect-loader/src/theme.ts)
+More [here](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect/src/theme.ts)
 
 ```ts
 export type Theme = {
@@ -185,7 +187,7 @@ export type Theme = {
 <details>
 <summary>Configuration Options</summary>
 
-More [here](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect-loader/src/types.ts)
+More [here](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect/src/config/types.ts)
 
 ```ts
 export type Rpcs = {
