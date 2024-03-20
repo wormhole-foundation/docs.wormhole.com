@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-- [Connect: Asset Bridging Made Simple](tutorials/quick-start/wormhole-connect/wh-connect.md)
+- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wormhole-connect/wh-connect.md)
 - [Developing Cross Chain Dapps](tutorials/quick-start/cross-chain-dev/README.md)
   - [Standard Relayer](tutorials/quick-start/cross-chain-dev/standard-relayer.md)
   - [Specialized Relayer](tutorials/quick-start/cross-chain-dev/specialized-relayer.md)
@@ -54,13 +54,15 @@
 - [CLI Docs](reference/cli-docs/README.md)
 - [Glossary](reference/glossary.md)
 
+## Wormhole Connect
+
+- [Overview](tutorials/quick-start/wormhole-connect/wh-connect.md)
+
 ## Queries
 
 - [Overview](queries/overview.md)
 - [Getting Started](queries/getting-started.md)
 - [FAQs](queries/faqs.md)
-
-
 
 ## External Links
 
