@@ -1,14 +1,17 @@
 
 ## Summary
 
-Wormhole Connect is a frontend-embeddable widget that lets developers support easy, customized access to Wormhole powered bridges directly from within a platform or Dapp. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
+
+Wormhole Connect is a React widget that lets developers offer easy, customized access to Wormhole powered bridges directly in a web application. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
 
 Wormhole Connect makes integration with Wormhole-powered services easier than ever. [Try out the no-code customizer now!](https://connect-in-style.wormhole.com/)
 
 Or, check out the [Github repository](https://github.com/wormhole-foundation/wormhole-connect)
 
+![Wormhole Connect Screenshot](https://camo.githubusercontent.com/fda29f71df76f388a4e579624e538c876f89c396d2dd6d9486657aa8f9a3a19c/68747470733a2f2f692e696d6775722e636f6d2f735a4a4b7738652e706e67)
+
 {% hint style="success" %}
-The Wormhole SDK (a separate product from the embeddable Connect Widget) allows you to custom integrate the same functionality that the Connect widget offers you with just a bit more work. For more information on using the SDK instead of Connect check out the docs [here](../../../reference/sdk-docs/connect-sdk.md)
+The [Wormhole Typescript SDK](../../../reference/sdk-docs/README.md) allows you to implement the same functionality as the Connect widget, but in your own UI. For more information on using the SDK instead of Connect [check out the docs](../../../reference/sdk-docs/README.md).
 {% endhint %}
 
 ## Functionality in Connect
@@ -33,62 +36,46 @@ Connect and the corresponding SDK will have 4 primary routes:
 
 Connect can be integrated directly as a customizable, drop-in widget or a developer can choose to utilize all or some of the functionality via a fully customized integration through the Wormhole SDK.
 
-- **Connect UI**: A customizable frontend that takes in the necessary input from the user, integrated via an NPM package
+- **Connect UI**: A customizable frontend that takes in the necessary input from the user, published as React library on NPM.
 - **Wormhole SDK**: Typescript SDK to directly call the functions powering the Connect widget, all connect functionality will live in a specific interface within the general WH SDK
     - The routing logic and contract calls will be built into the Connect Interface in the Wormhole SDK (formerly, this was a distinct, Connect SDK, the interface has been merged in to maintain a single WH SDK).
 
+## Getting Started
 
-## Ultra Quick Start
+It's very easy to add Wormhole Connect to an existing React app.
 
-For the zero config quick start, simply include the script and style tags in the HTML of your web app.
+First, install the npm package.
 
-1) Include the following html tags in the `<head>` of the html
+[![npm version](https://img.shields.io/npm/v/@wormhole-foundation/wormhole-connect.svg)](https://www.npmjs.com/package/@wormhole-foundation/wormhole-connect) 
 
-```html
-<script src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.0.1-beta.2/dist/main.js" defer></script>
-<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.0.1-beta.2/dist/main.css" />
+```bash
+npm i @wormhole-foundation/wormhole-connect
 ```
 
-2) Include the following div tag in the `<body>` of the html where the plugin should be rendered:
+Now you can use the React component:
 
-```html
-<div id="wormhole-connect"></div>
-```
+```javascript
+import WormholeConnect from '@wormhole-foundation/wormhole-connect';
 
-3) **(Optional)** Touch Grass
-
-
-## React App Integration 
-
-
-Getting Wormhole Connect added to your existing React app is straight forward.
-
-First, install the npm package
-
-```sh
-npm install @wormhole-foundation/wormhole-connect
-```
-
-Next, import the component
-
-```ts
-import WormholeBridge from '@wormhole-foundation/wormhole-connect';
-```
-
-Finally, add the component to your app
-
-```tsx
 function App() {
-    return (
-        <WormholeBridge />
-    )
+  return (
+    <WormholeConnect />
+  );
 }
 ```
 
-If your app is running, you should see something like this
+### Alternative: hosted version via CDN (for any website)
 
-![Wormhole Connect Screenshot](../../../.gitbook/assets/wh-connect-default.png)
+If you're not using React, you can still embed Connect on your website by using the hosted version. Simply copy and paste the following code into your HTML body:
 
+```html
+<!-- Mounting point. Include in <body> -->
+<div id="wormhole-connect"></div>
+
+<!-- Dependencies -->
+<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0/dist/main.js" defer></script>
+<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0/dist/main.css" />
+```
 
 ## Configuration
 
@@ -104,13 +91,12 @@ More details on configuration options available is [here](https://github.com/wor
 Configure the Wormhole Connect React component by passing a `WormholeConnectConfig` object as the `config` attribute
 
 ```tsx
-import { WormholeConnectConfig } from '@wormhole-foundation/wormhole-connect';
+import WormholeConnect, { WormholeConnectConfig } from '@wormhole-foundation/wormhole-connect';
 
 const config: WormholeConnectConfig = {
-  env: "mainnet",
   networks: ["ethereum", "polygon", "solana"],
   tokens: ["ETH", "WETH", "MATIC", "WMATIC"],
-  rpc: {
+  rpcs: {
     ethereum: "https://rpc.ankr.com/eth",
     solana: "https://rpc.ankr.com/solana",
   }
@@ -118,17 +104,21 @@ const config: WormholeConnectConfig = {
 
 // ...
 
-<WormholeBridge config={config} />
+<WormholeConnect config={config} />
 
 ```
 {% endtab %}
 
 {% tab title="HTML Tags" %}
 
-The same config parameters that are available for the React component can be passed as a json string to the `config` attribute of the `wormhole-connect` container.
+If using the hosted version, provide `config` and `theme` as JSON-serialized strings on the mount point:
 
 ```html
-<div id="wormhole-connect" config='{"env":"mainnet","tokens":["ETH","WETH","WBTC","USDCeth"]}' />
+<div
+  id="wormhole-connect"
+  data-config='{"tokens":["ETH","WETH","WBTC","USDCeth"]}'
+  data-theme='{"background":{"default": "#81c784"}}'
+/>
 ```
 {% endtab %}
 
