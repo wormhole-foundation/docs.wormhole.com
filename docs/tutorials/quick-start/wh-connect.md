@@ -61,4 +61,4 @@ If you're not using React, you can still embed Connect on your website by using 
 
 ## Configuration
 
-Read about configuring Connect and more [in the Connect docs](../../reference/connect/overview.md)!
+Read about configuring Connect and more [in the Connect docs](../../connect/overview.md)!
