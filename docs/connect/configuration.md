@@ -265,7 +265,7 @@ You can provide a whietlist of routes under `routes`. By default, Connect will o
 
 ### Wallet Connect Project ID
 
-Required in order to display Wallet Connect as a wallet option. You can get a project ID on https://cloud.walletconnect.com/. Refer to the wallet connect [documentation](https://docs.walletconnect.com/advanced/migration-from-v1.x/overview) for more information on v2.
+Required in order to display Wallet Connect as a wallet option. You can get a project ID on https://cloud.walletconnect.com/.
 
 ### Toggle Hamburguer Menu
 
