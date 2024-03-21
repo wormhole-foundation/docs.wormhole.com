@@ -4,7 +4,6 @@
 
 ## Quick Start
 
-- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wh-connect.md)
 - [Developing Cross Chain Dapps](tutorials/quick-start/cross-chain-dev/README.md)
   - [Standard Relayer](tutorials/quick-start/cross-chain-dev/standard-relayer.md)
   - [Specialized Relayer](tutorials/quick-start/cross-chain-dev/specialized-relayer.md)
@@ -18,6 +17,7 @@
     - [USDC Transfers With Connect SDK](tutorials/quick-start/cctp/sdk.md)
   - [Simple Relayer](tutorials/quick-start/relayer/README.md)
     - [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)
+- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wh-connect.md)
 - [Demos](tutorials/demos.md)
 
 ## Explore Wormhole
