@@ -1,11 +1,10 @@
-# Wormhole Connect
+## Examples
 
-## Configuration
+Below are some examples of different ways you can configure Connect.
 
 See `WormholeConnectConfig` in [src/config/index.ts](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect/src/config/index.ts)
 for a full view of the supported config parameters.
 
-### Examples
 
 (Optional) Specify supported networks/tokens and custom RPC endpoints. Your users may encounter rate limits using public RPC endpoints if you do not provide your own
 
@@ -94,7 +93,7 @@ export default function App() {
 }
 ```
 
-## Environment
+### Environment
 
 This shows how to run Connect on testnet.
 
@@ -104,7 +103,7 @@ This shows how to run Connect on testnet.
 }
 ```
 
-## Custom RPC Endpoint
+### Custom RPC Endpoint
 
 This shows how to change which RPC provider Connect uses for a particular network.
 
@@ -116,7 +115,7 @@ This shows how to change which RPC provider Connect uses for a particular networ
 }
 ```
 
-## Arbitrary Token
+### Arbitrary Token
 
 This shows how to add an arbitrary token to your deployment of Connect.
 Please note you will need to [register](https://portalbridge.com/advanced-tools/#/register)
