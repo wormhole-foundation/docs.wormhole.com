@@ -56,7 +56,7 @@
 
 ## Wormhole Connect
 
-- [Overview](connect/overview.md)
+- [Wormhole Connect](connect/overview.md)
 - [Configuration](connect/configuration.md)
 
 ## Queries
