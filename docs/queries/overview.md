@@ -28,7 +28,7 @@ Up to 255 queries can be batched together, with certain types allowing for batch
 
 ## Supported Query Types
 
-There are currently 4 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md) for more details on each.
+There are currently 5 supported types of queries. See [the whitepaper](https://github.com/wormhole-foundation/wormhole/blob/main/whitepapers/0013_ccq.md) for more details on each.
 
 ### eth_call
 
@@ -57,6 +57,10 @@ This query type is similar to `eth_call` but ensures that the specified block ha
 ### sol_account
 
 This query is used to read data for one or more accounts on Solana, akin to [getMultipleAccounts](https://solana.com/docs/rpc/http/getmultipleaccounts).
+
+### sol_pda
+
+This query is used to read data for one or more [Program Derived Addresses](https://www.anchor-lang.com/docs/pdas) on Solana, akin to calling [getMultipleAccounts](https://solana.com/docs/rpc/http/getmultipleaccounts) on the result of `PublicKey.findProgramAddressSync(seeds, programId)`. This is useful for times when you want to more generally read accounts owned by a program and verify the derivation on another chain, like how associated token accounts are all derived from the [Associated Token Account Program](https://spl.solana.com/associated-token-account).
 
 ## Supported Chains
 
