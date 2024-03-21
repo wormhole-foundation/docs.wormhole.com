@@ -17,8 +17,8 @@
     - [USDC Transfers With Connect SDK](tutorials/quick-start/cctp/sdk.md)
   - [Simple Relayer](tutorials/quick-start/relayer/README.md)
     - [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)
-- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wh-connect.md)
 - [Demos](tutorials/demos.md)
+- [Wormhole Connect: Bridging Made Easy](tutorials/quick-start/wh-connect.md)
 
 ## Explore Wormhole
 
