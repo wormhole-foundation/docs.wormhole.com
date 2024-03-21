@@ -1,6 +1,6 @@
 # Getting Started
 
-> 💡There is a basic demo interacting with the [QueryDemo](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol) contract hosted at [https://vaa.dev/#/ccq](https://vaa.dev/#/ccq)
+> 💡There is a basic demo interacting with the [QueryDemo](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol) contract hosted at [https://wormholelabs-xyz.github.io/example-queries-demo/](https://wormholelabs-xyz.github.io/example-queries-demo/)
 
 To get started, we will look at a simple `eth_call` request to get the total supply of WETH on Ethereum.
 

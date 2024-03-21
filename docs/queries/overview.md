@@ -97,9 +97,7 @@ Ready to dive in? Check out [Getting Started](./getting-started.md).
 
 Need some examples?
 
-- Basic Demo
-  - [Contract](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol)
-  - [UI](https://vaa.dev/#/ccq)
+- [Basic Demo](https://github.com/wormholelabs-xyz/example-queries-demo/)
 - [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool)
 - [Solana PDA / Token Account Balance](https://github.com/wormholelabs-xyz/example-queries-solana-pda)
 - [Solana Queries Verification](https://github.com/wormholelabs-xyz/example-queries-solana-verify)
