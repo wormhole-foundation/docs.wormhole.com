@@ -1,4 +1,4 @@
-## Overview
+## Summary
 
 
 Wormhole Connect is a React widget that lets developers offer easy, customized access to Wormhole powered bridges directly in a web application. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
