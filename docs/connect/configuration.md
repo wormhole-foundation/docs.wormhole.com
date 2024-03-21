@@ -6,7 +6,9 @@ See `WormholeConnectConfig` in [src/config/index.ts](https://github.com/wormhole
 for a full view of the supported config parameters.
 
 
-(Optional) Specify supported networks/tokens and custom RPC endpoints. Your users may encounter rate limits using public RPC endpoints if you do not provide your own
+### Custom networks and RPC endpoints
+
+Specify supported networks/tokens and custom RPC endpoints. Your users may encounter rate limits using public RPC endpoints if you do not provide your own
 
 ```jsx
 import WormholeConnect, {
@@ -28,7 +30,7 @@ function App() {
 }
 ```
 
-Create fully customized theme
+### Fully customized theme
 
 ```jsx
 import WormholeConnect, {
@@ -98,7 +100,7 @@ export default function App() {
 This shows how to run Connect on testnet.
 
 ```json
-{
+const config: WormholeConnectConfig = {
   "env": "testnet"
 }
 ```
@@ -108,7 +110,7 @@ This shows how to run Connect on testnet.
 This shows how to change which RPC provider Connect uses for a particular network.
 
 ```json
-{
+const config: WormholeConnectConfig = {
   "rpcs": {
     "solana": "https://rpc.ankr.com/solana/ee827255553bb0fa9e0aaeab27e988707e60ea06ae36be0658b778072e94979e"
   }
@@ -129,7 +131,7 @@ See [src/config/types.ts](https://github.com/wormhole-foundation/wormhole-connec
 for the type definition of `TokensConfig`.
 
 ```json
-{
+const config: WormholeConnectConfig = {
   "networks": ["solana", "ethereum"],
   "tokens": ["ETH", "WETH", "MATIC", "WMATIC", "BSKT"],
   "tokensConfig": {
