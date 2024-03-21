@@ -13,7 +13,6 @@
     - [Beyond Hello Wormhole](tutorials/quick-start/hello-wormhole/beyond-hello-wormhole.md)
   - [Hello Token](tutorials/quick-start/hello-token/README.md)
   - [CCTP](tutorials/quick-start/cctp/README.md)
-    - [USDC Transfers With Wormhole Connect](tutorials/quick-start/cctp/wh-connect.md)
     - [USDC Transfers With Connect SDK](tutorials/quick-start/cctp/sdk.md)
   - [Simple Relayer](tutorials/quick-start/relayer/README.md)
     - [Advanced Relayer Example](tutorials/quick-start/relayer/advanced-example.md)

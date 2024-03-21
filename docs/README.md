@@ -20,7 +20,7 @@ Wormhole is _not_ a token bridge, though there are [protocols built on Wormhole]
 
 Consider the following examples of potential applications that are now possible with Wormhole:
 
-1. **Cross Chain Exchange**: Using [Wormhole Connect](./tutorials/quick-start/wormhole-connect/wh-connect.md), a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access.
+1. **Cross Chain Exchange**: Using [Wormhole Connect](./tutorials/quick-start/wh-connect.md), a developer can build an exchange that allows deposits from any Wormhole connected chain, massively increasing the liquidity their users can access.
 2. **Cross Chain Governance**: If a group of NFT collections on different networks wanted their holders to vote on a combined proposal, they could pick a "voting" chain, and use Wormhole to communicate votes cast on their disparate chains to the voting chain.
 3. **Cross Chain Game**: A game could be built and played on a performant network like Solana, and it's rewards issued as NFTs on a different network, for example Ethereum.
 
