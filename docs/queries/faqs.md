@@ -15,9 +15,7 @@ The [Go query package](https://github.com/wormhole-foundation/wormhole/tree/main
 There sure are!
 
 - [Getting Started](./getting-started.md)
-- Basic Demo
-  - [Contract](https://github.com/wormholelabs-xyz/example-queries-demo/blob/main/src/QueryDemo.sol)
-  - [UI](https://vaa.dev/#/ccq)
+- [Basic Demo](https://github.com/wormholelabs-xyz/example-queries-demo/)
 - [Solana Stake Pool](https://github.com/wormholelabs-xyz/example-queries-solana-stake-pool)
 - [Solana PDA / Token Account Balance](https://github.com/wormholelabs-xyz/example-queries-solana-pda)
 - [Solana Queries Verification](https://github.com/wormholelabs-xyz/example-queries-solana-verify)
