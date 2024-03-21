@@ -17,7 +17,7 @@ Different approaches to development and testing are recommended at different sta
 During initial development of an on-chain application, the best option is to use the _native tools_ available in the environment.
 
 {% hint style="info" %}
-For the specific native tools recommended, see the page for the [Environment](../../blockchain-environments/environments.md) you're interested in.
+For the specific native tools recommended, see the page for the [Environment](../../blockchain-environments/README.md) you're interested in.
 {% endhint %}
 
 For any methods the program that require some message be sent or received, it's recommended to set up some Mock Guardian or Emitter to provide signed VAAs.

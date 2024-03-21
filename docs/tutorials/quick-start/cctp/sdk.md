@@ -1,48 +1,35 @@
-The Connect SDK enables fast, cheap, native USDC bridging powered by Circle's Cross Chain Transfer Protocol. Using [CCTP](./README.md) to transfer native USDC across chains with the [Connect SDK](../../../reference/sdk-docs/connect-sdk.md) works very much like a standard Token Transfer with the SDK.
+The Connect SDK enables fast, cheap, native USDC bridging powered by Circle's Cross Chain Transfer Protocol. Using [CCTP](./README.md) to transfer native USDC across chains with the [Connect SDK](../../../reference/sdk-docs/README.md) works very much like a standard Token Transfer with the SDK.
 
 ## Installation 
 
-First install the required packages to use CCTP on EVM compatible platforms (or others as they're supported) 
+First install the SDK package 
 
 ```sh
-npm install \
-    @wormhole-foundation/connect-sdk \
-    @wormhole-foundation/connect-sdk-evm \
-    @wormhole-foundation/connect-sdk-evm-cctp
+npm install @wormhole-foundation/sdk
 ```
 
 
 ## Usage
 
-To use the CCTP bridge, the platform must be imported and the protocol must be registered.
+To use the CCTP bridge, the platform must be imported and registered 
 
 ```ts
-import { Wormhole } from "@wormhole-foundation/connect-sdk";
-import { EvmPlatform } from "@wormhole-foundation/connect-sdk-evm";
+import { Wormhole } from "@wormhole-foundation/sdk";
+import evm from "@wormhole-foundation/sdk/evm";
 
-// register the protocol by importing the module
-import "@wormhole-foundation/connect-sdk-evm-cctp";
-```
+// ...
 
-With this done, we can create the Wormhole instance that can be used to create a Chain Context object.
-
-```ts
-  // init Wormhole object, passing config for which network
-  // to use (e.g. Mainnet/Testnet) and what Platforms to support
-  const wh = new Wormhole("Testnet", [EvmPlatform]);
+const wh = await wormhole("Testnet", [evm]);
 ```
 
 ## Manual Transfer
 
 ```ts
-  // 1.0 USDC in base units 
-  const amt = normalizeAmount("1.0", 6)
-
   const srcAddress = Wormhole.chainAddress("Ethereum", "0xdeadbeef...") 
   const dstAddress = Wormhole.chainAddress("Avalanche", "0xbeefdead...") 
 
   const xfer = await wh.circleTransfer(
-    amt, // 
+    1_000_000n, // 
     srcAddress,
     dstAddress
   );
@@ -51,7 +38,7 @@ With this done, we can create the Wormhole instance that can be used to create a
 
 A Manual transfer has 3 steps:
 
-1) Initiate The transfer by calling `initiateTransfer` and passing a [Signer](../../../reference/sdk-docs/connect-sdk.md#signers) to sign the transactions. 
+1) Initiate The transfer by calling `initiateTransfer` and passing a [Signer](../../../reference/sdk-docs/README.md#signers) to sign the transactions. 
 
 ```ts
   console.log("Starting Transfer");
@@ -119,4 +106,4 @@ This is especially useful in cases where a user has terminated their session pri
   console.log("Completed transfer: ", dstTxIds);
 ```
 
-The full source of a working example is available [here](https://github.com/wormhole-foundation/connect-sdk/blob/develop/examples/src/cctp.ts)
+The full source of a working example is available [here](https://github.com/wormhole-foundation/wormhole-sdk-ts/blob/develop/examples/src/cctp.ts)
