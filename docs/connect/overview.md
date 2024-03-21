@@ -83,7 +83,7 @@ The default configuration of Wormhole Connect may not be what you want to use.  
 
 One important set of configuration parameters you should consider changing are the RPC URLs. By default public RPCs are used but they're heavily throttled, so for best user experience, these should be set to custom URLs.
 
-More details on configuration options available is [here](https://github.com/wormhole-foundation/wormhole-connect/blob/development/wormhole-connect-loader/README.md)
+More details on configuration options available is [here](../../connect/overview.md#configuration)
 
 {% tabs %}
 {% tab title="React" %}
