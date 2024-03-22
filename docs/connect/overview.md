@@ -72,8 +72,8 @@ If you're not using React, you can still embed Connect on your website by using 
 <div id="wormhole-connect"></div>
 
 <!-- Dependencies -->
-<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0/dist/main.js" defer></script>
-<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0/dist/main.css" />
+<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0-beta.9-development/dist/main.js" defer></script>
+<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0-beta.9-development/dist/main.css" />
 ```
 
 ## Configuration
