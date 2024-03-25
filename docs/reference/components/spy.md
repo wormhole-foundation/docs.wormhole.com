@@ -33,6 +33,13 @@ docker run --platform=linux/amd64 \
     --env testnet
 ```
 
+Optionally, add the flags to skip any VAAs with invalid signatures
+
+```sh
+--ethRPC https://sepolia.drpc.org/
+--ethContract 0x4a8bc80Ed5a4067f1CCf107057b8270E0cC11A78
+```
+
 {% endtab %}
 {% tab title="Mainnet" %} 
 
@@ -44,6 +51,13 @@ docker run --platform=linux/amd64 \
     --nodeKey /node.key \
     --spyRPC "[::]:7073" \
     --env mainnet
+```
+
+Optionally add the flags to skip any VAAs with invalid signatures
+
+```sh
+--ethRPC https://eth.drpc.org
+--ethContract 0x98f3c9e6E3fAce36bAAd05FE09d375Ef1464288B
 ```
 
 {% endtab %}
