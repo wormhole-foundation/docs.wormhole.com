@@ -20,7 +20,7 @@ info@wormhole.com
 **License:** [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 ---
-### /api/v1/address/{address}
+### /api/v1/address/:address
 
 #### GET
 ##### Description
@@ -44,7 +44,7 @@ Lookup an address
 | 404 | Not Found |  |
 | 500 | Internal Server Error |  |
 
-### /api/v1/global-tx/{chain_id}/{emitter}/{seq}
+### /api/v1/global-tx/:chain_id/:emitter/:seq
 
 #### GET
 ##### Description
@@ -335,7 +335,7 @@ Health check
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"status"**: string } |
+| 200 | OK | { **"status"**: string } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -476,6 +476,67 @@ Find a specific observation.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
+### /api/v1/operations
+
+#### GET
+##### Description
+
+Find all operations.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| address | query | address of the emitter | No | string |
+| txHash | query | hash of the transaction | No | string |
+| page | query | page number | No | integer |
+| pageSize | query | pageSize | No | integer |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [ [operations.OperationResponse](#operationsoperationresponse) ] |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
+### /api/v1/operations/{chain_id}/{emitter}/{seq}
+
+#### GET
+##### Description
+
+Find operations by ID (chainID/emitter/sequence).
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| chain_id | path | id of the blockchain | Yes | integer |
+| emitter | path | address of the emitter | Yes | string |
+| seq | path | sequence of the VAA | Yes | integer |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [operations.OperationResponse](#operationsoperationresponse) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
+### /api/v1/protocols/stats
+
+#### GET
+##### Description
+
+Returns the representative stats for the top protocols
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [ [protocols.ProtocolTotalValuesDTO](#protocolsprotocoltotalvaluesdto) ] |
+| 500 | Internal Server Error | [ [protocols.ProtocolTotalValuesDTO](#protocolsprotocoltotalvaluesdto) ] |
+
 ### /api/v1/ready
 
 #### GET
@@ -487,7 +548,7 @@ Ready check
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"ready"**: string } |
+| 200 | OK | { **"ready"**: string } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -526,7 +587,7 @@ Total messages is the number of VAAs emitted since the creation of the network (
 | 200 | OK | [transactions.ScorecardsResponse](#transactionsscorecardsresponse) |
 | 500 | Internal Server Error |  |
 
-### /api/v1/token/{chain_id}/{token_address}
+### /api/v1/token/:chain_id/:token_address
 
 #### GET
 ##### Description
@@ -547,6 +608,27 @@ Returns a token symbol, coingecko id and address by chain and token address.
 | 200 | OK | [transactions.Token](#transactionstoken) |
 | 400 | Bad Request |  |
 | 404 | Not Found |  |
+
+### /api/v1/top-100-corridors
+
+#### GET
+##### Description
+
+Returns a list of the top 100 tokens, sorted in descending order by the number of transactions.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| timeSpan | query | Time span, supported values: 2d and 7d (default is 2d). | No | string |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [stats.TopCorridorsResult](#statstopcorridorsresult) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
 
 ### /api/v1/top-assets-by-volume
 
@@ -589,6 +671,28 @@ Returns a list of the emitter_chain and destination_chain pair ordered by transf
 | 200 | OK | [transactions.TopChainPairsResponse](#transactionstopchainpairsresponse) |
 | 500 | Internal Server Error |  |
 
+### /api/v1/top-symbols-by-volume
+
+#### GET
+##### Description
+
+Returns a list of symbols by origin chain and tokens.
+The volume is calculated using the notional price of the symbol at the day the VAA was emitted.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| timeSpan | query | Time span, supported values: 7d, 15d and 30d (default is 7d). | No | string |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [stats.TopSymbolByVolumeResult](#statstopsymbolbyvolumeresult) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
 ### /api/v1/transactions/
 
 #### GET
@@ -613,7 +717,7 @@ Returns transactions. Output is paginated.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /api/v1/transactions/{chain_id}/{emitter}/{seq}
+### /api/v1/transactions/:chain_id/:emitter/:seq
 
 #### GET
 ##### Description
@@ -662,7 +766,7 @@ Returns all VAAs. Output is paginated and can also be be sorted.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /api/v1/vaas/{chain_id}
+### /api/v1/vaas/:chain_id
 
 #### GET
 ##### Description
@@ -686,7 +790,7 @@ Returns all the VAAs generated in specific blockchain.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /api/v1/vaas/{chain_id}/{emitter}
+### /api/v1/vaas/:chain_id/:emitter
 
 #### GET
 ##### Description
@@ -712,7 +816,7 @@ Returns all all the VAAs generated by a specific emitter address.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /api/v1/vaas/{chain_id}/{emitter}/{seq}
+### /api/v1/vaas/:chain_id/:emitter/:seq
 
 #### GET
 ##### Description
@@ -857,7 +961,7 @@ Get enqueued VAAs
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /v1/governor/is_vaa_enqueued/{chain_id}/{emitter}/{seq}
+### /v1/governor/is_vaa_enqueued/:chain_id/:emitter/:seq
 
 #### GET
 ##### Description
@@ -929,7 +1033,7 @@ Get heartbeats for guardians
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /v1/signed_batch_vaa/{chain_id}/{emitter}/sequence/{seq}
+### /v1/signed_batch_vaa/:chain_id/:emitter/sequence/:seq
 
 #### GET
 ##### Description
@@ -948,11 +1052,11 @@ get a batch of VAA []byte from a chainID, emitter address and sequence.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"vaaBytes"**: [ integer ] } |
+| 200 | OK | { **"vaaBytes"**: [ integer ] } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
-### /v1/signed_vaa/{chain_id}/{emitter}/{seq}
+### /v1/signed_vaa/:chain_id/:emitter/:seq
 
 #### GET
 ##### Description
@@ -971,7 +1075,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
-| 200 | OK | object & { **"vaaBytes"**: [ integer ] } |
+| 200 | OK | { **"vaaBytes"**: [ integer ] } |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -1248,12 +1352,106 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | txHash | [ integer ] |  | No |
 | updatedAt | string |  | No |
 
+#### operations.Content
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| payload | object |  | No |
+| standarizedProperties | [operations.StandardizedProperties](#operationsstandardizedproperties) |  | No |
+
+#### operations.Data
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| type | string |  | No |
+| value | object |  | No |
+
+#### operations.EmitterAddress
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| hex | string |  | No |
+| native | string |  | No |
+
+#### operations.OperationResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| content | [operations.Content](#operationscontent) |  | No |
+| data | object |  | No |
+| emitterAddress | [operations.EmitterAddress](#operationsemitteraddress) |  | No |
+| emitterChain | [vaa.ChainID](#vaachainid) |  | No |
+| id | string |  | No |
+| sequence | string |  | No |
+| sourceChain | [operations.SourceChain](#operationssourcechain) |  | No |
+| targetChain | [operations.TargetChain](#operationstargetchain) |  | No |
+| vaa | [operations.Vaa](#operationsvaa) |  | No |
+
+#### operations.SourceChain
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| attribute | [operations.Data](#operationsdata) |  | No |
+| chainId | [vaa.ChainID](#vaachainid) |  | No |
+| from | string |  | No |
+| status | string |  | No |
+| timestamp | string |  | No |
+| transaction | [operations.Transaction](#operationstransaction) |  | No |
+
+#### operations.StandardizedProperties
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| amount | string |  | No |
+| appIds | [ string ] |  | No |
+| fee | string |  | No |
+| feeAddress | string |  | No |
+| feeChain | [vaa.ChainID](#vaachainid) |  | No |
+| fromAddress | string |  | No |
+| fromChain | [vaa.ChainID](#vaachainid) |  | No |
+| toAddress | string |  | No |
+| toChain | [vaa.ChainID](#vaachainid) |  | No |
+| tokenAddress | string |  | No |
+| tokenChain | [vaa.ChainID](#vaachainid) |  | No |
+
+#### operations.TargetChain
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| chainId | [vaa.ChainID](#vaachainid) |  | No |
+| from | string |  | No |
+| status | string |  | No |
+| timestamp | string |  | No |
+| to | string |  | No |
+| transaction | [operations.Transaction](#operationstransaction) |  | No |
+
+#### operations.Transaction
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| secondTxHash | string |  | No |
+| txHash | string |  | No |
+
+#### operations.Vaa
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| guardianSetIndex | integer |  | No |
+| raw | [ integer ] |  | No |
+
 #### parser.ParseVaaWithStandarizedPropertiesdResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| parsedPayload |  |  | No |
+| parsedPayload | [parser.ParsedPayload](#parserparsedpayload) |  | No |
 | standardizedProperties | [parser.StandardizedProperties](#parserstandardizedproperties) |  | No |
+
+#### parser.ParsedPayload
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| tokenAddress | string |  | No |
+| tokenChain | integer |  | No |
 
 #### parser.StandardizedProperties
 
@@ -1271,11 +1469,77 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | tokenAddress | string |  | No |
 | tokenChain | [vaa.ChainID](#vaachainid) |  | No |
 
+#### protocols.ProtocolTotalValuesDTO
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| error | string |  | No |
+| last_day_diff_percentage | string |  | No |
+| last_day_messages | integer |  | No |
+| protocol | string |  | No |
+| total_messages | integer |  | No |
+| total_value_locked | number |  | No |
+| total_value_secured | number |  | No |
+| total_value_transferred | number |  | No |
+
+#### relays.DeliveryReponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| budget | string |  | No |
+| execution | [relays.ResultExecutionResponse](#relaysresultexecutionresponse) |  | No |
+| maxRefund | string |  | No |
+| relayGasUsed | integer |  | No |
+| targetChainDecimals | integer |  | No |
+
+#### relays.InstructionsResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| encodedExecutionInfo | string |  | No |
+| extraReceiverValue | { **"_hex"**: string, **"_isBigNumber"**: boolean } |  | No |
+| refundAddress | string |  | No |
+| refundChainId | integer |  | No |
+| refundDeliveryProvider | string |  | No |
+| requestedReceiverValue | { **"_hex"**: string, **"_isBigNumber"**: boolean } |  | No |
+| senderAddress | string |  | No |
+| sourceDeliveryProvider | string |  | No |
+| targetAddress | string |  | No |
+| targetChainId | integer |  | No |
+| vaaKeys | [  ] |  | No |
+
+#### relays.RelayDataResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| delivery | [relays.DeliveryReponse](#relaysdeliveryreponse) |  | No |
+| fromTxHash | string |  | No |
+| instructions | [relays.InstructionsResponse](#relaysinstructionsresponse) |  | No |
+| maxAttempts | integer |  | No |
+| toTxHash | string |  | No |
+
 #### relays.RelayResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| relays.RelayResponse | object |  |  |
+| completedAt | string |  | No |
+| data | [relays.RelayDataResponse](#relaysrelaydataresponse) |  | No |
+| failedAt | string |  | No |
+| id | string |  | No |
+| receivedAt | string |  | No |
+| relayer | string |  | No |
+| status | string |  | No |
+
+#### relays.ResultExecutionResponse
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| detail | string |  | No |
+| gasUsed | string |  | No |
+| refundStatus | string |  | No |
+| revertString | string |  | No |
+| status | string |  | No |
+| transactionHash | string |  | No |
 
 #### response.Response-address_AddressOverview
 
@@ -1374,6 +1638,47 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | ---- | ---- | ----------- | -------- |
 | next | string |  | No |
 
+#### stats.TokenResult
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| emitter_chain | [vaa.ChainID](#vaachainid) |  | No |
+| token_address | string |  | No |
+| token_chain | [vaa.ChainID](#vaachainid) |  | No |
+| txs | number |  | No |
+| volume | number |  | No |
+
+#### stats.TopCorridor
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| emitter_chain | [vaa.ChainID](#vaachainid) |  | No |
+| target_chain | [vaa.ChainID](#vaachainid) |  | No |
+| token_address | string |  | No |
+| token_chain | [vaa.ChainID](#vaachainid) |  | No |
+| txs | integer |  | No |
+
+#### stats.TopCorridorsResult
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| corridors | [ [stats.TopCorridor](#statstopcorridor) ] |  | No |
+
+#### stats.TopSymbolByVolumeResult
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| symbols | [ [stats.TopSymbolResult](#statstopsymbolresult) ] |  | No |
+
+#### stats.TopSymbolResult
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| symbol | string |  | No |
+| tokens | [ [stats.TokenResult](#statstokenresult) ] |  | No |
+| txs | number |  | No |
+| volume | number |  | No |
+
 #### transactions.AssetWithVolume
 
 | Name | Type | Description | Required |
@@ -1457,6 +1762,7 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | 24h_messages | string | Number of VAAs emitted in the last 24 hours (includes Pyth messages). | No |
 | 24h_tx_count | string | Number of VAAs emitted in the last 24 hours (does not include Pyth messages). | No |
 | 24h_volume | string | Volume transferred through the token bridge in the last 24 hours, in USD. | No |
+| total_messages | string | Number of VAAs emitted since the creation of the network (includes Pyth messages). | No |
 | total_tx_count | string | Number of VAAs emitted since the creation of the network (does not include Pyth messages) | No |
 | total_volume | string |  | No |
 | tvl | string | Total value locked in USD. | No |
