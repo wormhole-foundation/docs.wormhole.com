@@ -4,7 +4,7 @@ This tool is a command line interface to Wormhole.
 
 ## Installation
 
-Pull down the repo if you dont already have it and cd to the appropriate directory:
+Pull down the repo if you don't already have it and cd to the appropriate directory:
 
     git clone https://github.com/wormhole-foundation/wormhole
     cd wormhole/clients/js
@@ -28,16 +28,14 @@ Commands:
   worm edit-vaa                      Edits or generates a VAA
   worm evm                           EVM utilities
   worm generate                      generate VAAs (devnet and testnet only)
-  worm info                          Contract, chain, rpc and address informatio
-                                     n utilities
+  worm info                          Contract, chain, rpc and address information utilities
   worm near                          NEAR utilities
   worm parse <vaa>                   Parse a VAA (can be in either hex or base64
                                       format)
   worm recover <digest> <signature>  Recover an address from a signature
   worm submit <vaa>                  Execute a VAA
   worm sui                           Sui utilities
-  worm verify-vaa                    Verifies a VAA by querying the core contrac
-                                     t on Ethereum
+  worm verify-vaa                    Verifies a VAA by querying the core contract on Ethereum
 
 Options:
   --help     Show help                                                 [boolean]
@@ -255,8 +253,10 @@ Options:
         "avalanche", "oasis", "algorand", "aurora", "fantom", "karura", "acala",
             "klaytn", "celo", "near", "moonbeam", "neon", "terra2", "injective",
          "osmosis", "sui", "aptos", "arbitrum", "optimism", "gnosis", "pythnet",
-   "xpla", "btc", "base", "sei", "rootstock", "wormchain", "cosmoshub", "evmos",
-                                                            "kujira", "sepolia"]
+     "xpla", "btc", "base", "sei", "rootstock", "scroll", "mantle", "wormchain",
+      "cosmoshub", "evmos", "kujira", "neutron", "celestia", "stargaze", "seda",
+                     "dymension", "sepolia", "arbitrum_sepolia", "base_sepolia",
+                               "optimism_sepolia", "holesky", "polygon_sepolia"]
   -n, --network           Network
                             [required] [choices: "mainnet", "testnet", "devnet"]
   -a, --contract-address  Contract to submit VAA to (override config)   [string]
@@ -311,15 +311,19 @@ Options:
         "avalanche", "oasis", "algorand", "aurora", "fantom", "karura", "acala",
             "klaytn", "celo", "near", "moonbeam", "neon", "terra2", "injective",
          "osmosis", "sui", "aptos", "arbitrum", "optimism", "gnosis", "pythnet",
-   "xpla", "btc", "base", "sei", "rootstock", "wormchain", "cosmoshub", "evmos",
-                                                            "kujira", "sepolia"]
+     "xpla", "btc", "base", "sei", "rootstock", "scroll", "mantle", "wormchain",
+      "cosmoshub", "evmos", "kujira", "neutron", "celestia", "stargaze", "seda",
+                     "dymension", "sepolia", "arbitrum_sepolia", "base_sepolia",
+                               "optimism_sepolia", "holesky", "polygon_sepolia"]
       --dst-chain   destination chain
            [required] [choices: "solana", "ethereum", "terra", "bsc", "polygon",
         "avalanche", "oasis", "algorand", "aurora", "fantom", "karura", "acala",
             "klaytn", "celo", "near", "moonbeam", "neon", "terra2", "injective",
          "osmosis", "sui", "aptos", "arbitrum", "optimism", "gnosis", "pythnet",
-   "xpla", "btc", "base", "sei", "rootstock", "wormchain", "cosmoshub", "evmos",
-                                                            "kujira", "sepolia"]
+     "xpla", "btc", "base", "sei", "rootstock", "scroll", "mantle", "wormchain",
+      "cosmoshub", "evmos", "kujira", "neutron", "celestia", "stargaze", "seda",
+                     "dymension", "sepolia", "arbitrum_sepolia", "base_sepolia",
+                               "optimism_sepolia", "holesky", "polygon_sepolia"]
       --dst-addr    destination address                      [string] [required]
       --token-addr  token address               [string] [default: native token]
       --amount      token amount                             [string] [required]
@@ -351,8 +355,10 @@ Positionals:
         "avalanche", "oasis", "algorand", "aurora", "fantom", "karura", "acala",
             "klaytn", "celo", "near", "moonbeam", "neon", "terra2", "injective",
          "osmosis", "sui", "aptos", "arbitrum", "optimism", "gnosis", "pythnet",
-   "xpla", "btc", "base", "sei", "rootstock", "wormchain", "cosmoshub", "evmos",
-                                                            "kujira", "sepolia"]
+     "xpla", "btc", "base", "sei", "rootstock", "scroll", "mantle", "wormchain",
+      "cosmoshub", "evmos", "kujira", "neutron", "celestia", "stargaze", "seda",
+                     "dymension", "sepolia", "arbitrum_sepolia", "base_sepolia",
+                               "optimism_sepolia", "holesky", "polygon_sepolia"]
   tx       Source transaction hash                                      [string]
 
 Options:
