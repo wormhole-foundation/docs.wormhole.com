@@ -8,15 +8,9 @@ Wormhole is comprised of several noteworthy components. Before we go into each c
 
 - **Emitter** - A contract that calls the publish message method on the Core Contract. The core contract will write an event to the Transaction Logs with details about the emitter and sequence number to identify the message.  This may be your [xDapp](../glossary.md#xdapp) or an existing ecosystem protocol.
 
-  Some existing contracts that are Emitters:
-
-  - **xAsset Contracts** - Contracts that allow normal tokens to be converted to [xAssets](../glossary.md#xassets) and enable these xAssets to be bridged.
-  - **Relay Contracts** - Contracts that allow cross chain applications to send messages to a specific blockchain via the decentralized Generic Relayer network.
-  - **Worm Router Contracts** - Contracts that allow developers to make their Dapp an cross chain application that users on any Wormhole supported chain can interact with purely through client-side code.
-
 - [**Wormhole Core Contract**](./core-contracts.md) - Primary contract, this is the contract which the Guardians observe and which fundamentally allow for cross-chain communication. 
-- **Transaction Logs** - Blockchain specific logs that allow the Guardians to observe messages emitted by the core contract.
 
+- **Transaction Logs** - Blockchain specific logs that allow the Guardians to observe messages emitted by the core contract.
 
 
 # Off-Chain Components
