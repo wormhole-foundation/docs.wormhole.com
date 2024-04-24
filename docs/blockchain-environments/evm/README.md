@@ -793,9 +793,9 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 
 |Type|Contract|
 |----|--------|
-|Core|`0x268557122Ffd64c85750d630b716471118F323c8`|
-|Token Bridge|`0xEe3dB83916Ccdc3593b734F7F2d16D630F39F1D0`|
-|NFT Bridge|`0x66E5BcFD45D2F3f166c567ADa663f9d2ffb292B4`|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
 
 ### Local Network Contract
 
@@ -1344,7 +1344,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |----|--------|
 |Core|`0x055F47F1250012C6B20c436570a76e52c17Af2D5`|
 |Token Bridge|`0x22427d90B7dA3fA4642F7025A854c7254E4e45BF`|
-|NFT Bridge|`0x47B9a1406BEe29a3001BFEB7e45aE45fFFB40c18`|
+|NFT Bridge|**N/A**|
 
 ### Local Network Contract
 
@@ -1393,7 +1393,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |----|--------|
 |Core|`0x376428e7f26D5867e69201b275553C45B09EE090`|
 |Token Bridge|`0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D`|
-|NFT Bridge|`0xD7D732C8Bf5eBF620EA55b5828eae20418eEF083`|
+|NFT Bridge|**N/A**|
 
 ### Local Network Contract
 
