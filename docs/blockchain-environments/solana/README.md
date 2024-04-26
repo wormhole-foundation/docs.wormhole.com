@@ -95,7 +95,7 @@ For more information see [https://docs.solana.com/cluster/commitments](https://d
 
 <!--PYTHNET_CHAIN_DETAILS-->
 
-# pythnet
+# Pythnet
 
 ## Ecosystem
 

@@ -1334,8 +1334,8 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 |Type|Contract|
 |----|--------|
-|Core|**N/A**|
-|Token Bridge|**N/A**|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|`0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d`|
 |NFT Bridge|**N/A**|
 
 ### Testnet Contracts (<code>Sepolia</code> - <code>534351</code>)
