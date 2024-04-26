@@ -1,4 +1,5 @@
 import * as wh from "@certusone/wormhole-sdk";
+import { nativeChainIds, toChain } from "@wormhole-foundation/sdk";
 import fs from "fs";
 
 // Many chains have the same underlying runtime
@@ -100,6 +101,36 @@ function getChainDetails(name: string): ExtraDetails {
     return JSON.parse(details.toString()) as ExtraDetails;
   } catch (e) {
     console.error("No detail file for ", name);
+
+    const chain = toChain(wh.coalesceChainId(name as wh.ChainName));
+    const testnetId = nativeChainIds.networkChainToNativeChainId.get(
+      "Testnet",
+      chain
+    );
+    const testnet = testnetId
+      ? {
+          name: "Testnet",
+          id: testnetId.toString(),
+        }
+      : undefined;
+
+    const mainnetId = nativeChainIds.networkChainToNativeChainId.get(
+      "Mainnet",
+      chain
+    );
+    const mainnet = mainnetId
+      ? {
+          name: "Mainnet",
+          id: mainnetId.toString(),
+        }
+      : undefined;
+
+    const deets: ExtraDetails = {
+      title: chain,
+      testnet,
+      mainnet,
+    };
+    fs.writeFileSync(`./src/chains/${name}.json`, JSON.stringify(deets));
   }
   return {} as ExtraDetails;
 }

@@ -70,12 +70,12 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/base_sepolia.svg">base_sepolia</a></td>
 </tr>
 <tr>
-    <td><strong>berachain</strong></td>
+    <td><strong>Berachain</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#berachain">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/berachain.svg">berachain</a></td>
 </tr>
 <tr>
-    <td><strong>blast</strong></td>
+    <td><strong>Blast</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#blast">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/blast.svg">blast</a></td>
 </tr>
@@ -150,7 +150,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/kujira.svg">kujira</a></td>
 </tr>
 <tr>
-    <td><strong>linea</strong></td>
+    <td><strong>Linea</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#linea">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/linea.svg">linea</a></td>
 </tr>
@@ -210,12 +210,12 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/polygon_sepolia.svg">polygon_sepolia</a></td>
 </tr>
 <tr>
-    <td><strong>provenance</strong></td>
+    <td><strong>Provenance</strong></td>
     <td><a href="../blockchain-environments/cosmwasm/README.md#provenance">cosmwasm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/provenance.svg">provenance</a></td>
 </tr>
 <tr>
-    <td><strong>pythnet</strong></td>
+    <td><strong>Pythnet</strong></td>
     <td><a href="../blockchain-environments/solana/README.md#pythnet">solana</a></td>
     <td><a href="../.gitbook/assets/chain-icons/pythnet.svg">pythnet</a></td>
 </tr>
@@ -240,7 +240,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/sei.svg">sei</a></td>
 </tr>
 <tr>
-    <td><strong>seievm</strong></td>
+    <td><strong>Seievm</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#seievm">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/seievm.svg">seievm</a></td>
 </tr>
@@ -275,7 +275,7 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/terra2.svg">terra2</a></td>
 </tr>
 <tr>
-    <td><strong>xlayer</strong></td>
+    <td><strong>Xlayer</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#xlayer">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/xlayer.svg">xlayer</a></td>
 </tr>

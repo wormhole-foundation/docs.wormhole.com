@@ -44,10 +44,10 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>rootstock</td><td>33</td><td><code>30</code></td><td><code>31</code></td></tr>
 <tr><td>scroll</td><td>34</td><td><code>534352</code></td><td><code>Sepolia</code> - <code>534351</code></td></tr>
 <tr><td>mantle</td><td>35</td><td><code>5000</code></td><td><code>Sepolia</code> - <code>5003</code></td></tr>
-<tr><td>blast</td><td>36</td><td></td><td></td></tr>
-<tr><td>xlayer</td><td>37</td><td></td><td></td></tr>
-<tr><td>linea</td><td>38</td><td></td><td></td></tr>
-<tr><td>berachain</td><td>39</td><td></td><td></td></tr>
+<tr><td>blast</td><td>36</td><td><code>81457</code></td><td><code>168587773</code></td></tr>
+<tr><td>xlayer</td><td>37</td><td></td><td><code>195</code></td></tr>
+<tr><td>linea</td><td>38</td><td><code>59144</code></td><td><code>59141</code></td></tr>
+<tr><td>berachain</td><td>39</td><td></td><td><code>80085</code></td></tr>
 <tr><td>seievm</td><td>40</td><td></td><td></td></tr>
 <tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
@@ -57,7 +57,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>stargaze</td><td>4005</td><td><code>stargaze-1</code></td><td></td></tr>
 <tr><td>seda</td><td>4006</td><td></td><td><code>seda-1-testnet</code></td></tr>
 <tr><td>dymension</td><td>4007</td><td><code>dymension_1100-1</code></td><td></td></tr>
-<tr><td>provenance</td><td>4008</td><td></td><td></td></tr>
+<tr><td>provenance</td><td>4008</td><td><code>pio-mainnet-1</code></td><td></td></tr>
 <tr><td>sepolia</td><td>10002</td><td><code>N/A</code></td><td><code>Sepolia</code> - <code>11155111</code></td></tr>
 <tr><td>arbitrum_sepolia</td><td>10003</td><td></td><td><code>Sepolia</code> - <code>421614</code></td></tr>
 <tr><td>base_sepolia</td><td>10004</td><td></td><td><code>Base Sepolia</code> - <code>84532</code></td></tr>
@@ -265,7 +265,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>scroll</td>
-      <td><code>-</code></td>
+      <td><code>0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6</code></td>
       <td><code>0x055F47F1250012C6B20c436570a76e52c17Af2D5</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -277,7 +277,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>blast</td>
-      <td><code>-</code></td>
+      <td><code>0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6</code></td>
       <td><code>0x473e002D7add6fB67a4964F13bFd61280Ca46886</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -592,7 +592,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>scroll</td>
-      <td><code>-</code></td>
+      <td><code>0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d</code></td>
       <td><code>0x22427d90B7dA3fA4642F7025A854c7254E4e45BF</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -604,7 +604,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>blast</td>
-      <td><code>-</code></td>
+      <td><code>0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d</code></td>
       <td><code>0x430855B4D43b8AEB9D2B9869B74d58dda79C0dB2</code></td>
       <td><code>-</code></td> 
     </tr>
