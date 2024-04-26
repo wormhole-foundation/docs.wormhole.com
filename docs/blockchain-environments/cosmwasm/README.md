@@ -700,3 +700,53 @@ The emitter address on CosmWasm chains is the canonical address of the contract,
   
 
 <!--SEDA_CHAIN_DETAILS-->
+
+<!--PROVENANCE_CHAIN_DETAILS-->
+
+# Provenance
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/provenance.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/provenance.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/provenance.json)
+
+## Wormhole Details
+
+- **Name**: `provenance`
+- **Chain ID**: `4008`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/provenance.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>pio-mainnet-1</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--PROVENANCE_CHAIN_DETAILS-->
+

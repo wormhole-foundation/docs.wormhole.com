@@ -1461,3 +1461,248 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
   
 
 <!--POLYGON_SEPOLIA_CHAIN_DETAILS-->
+
+<!--BERACHAIN_CHAIN_DETAILS-->
+
+# Berachain
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/berachain.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/berachain.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/berachain.json)
+
+## Wormhole Details
+
+- **Name**: `berachain`
+- **Chain ID**: `39`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/berachain.json)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>80085</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0xBB73cB66C26740F31d1FabDC6b7A46a038A300dd`|
+|Token Bridge|`0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a`|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--BERACHAIN_CHAIN_DETAILS-->
+
+<!--BLAST_CHAIN_DETAILS-->
+
+# Blast
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/blast.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/blast.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/blast.json)
+
+## Wormhole Details
+
+- **Name**: `blast`
+- **Chain ID**: `36`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/blast.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>81457</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|`0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d`|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>168587773</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x473e002D7add6fB67a4964F13bFd61280Ca46886`|
+|Token Bridge|`0x430855B4D43b8AEB9D2B9869B74d58dda79C0dB2`|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--BLAST_CHAIN_DETAILS-->
+
+<!--LINEA_CHAIN_DETAILS-->
+
+# Linea
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/linea.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/linea.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/linea.json)
+
+## Wormhole Details
+
+- **Name**: `linea`
+- **Chain ID**: `38`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/linea.json)
+
+
+
+
+
+
+
+### Mainnet Contracts (<code>59144</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>59141</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0x79A1027a6A159502049F10906D333EC57E95F083`|
+|Token Bridge|`0xC7A204bDBFe983FCD8d8E61D02b475D4073fF97e`|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--LINEA_CHAIN_DETAILS-->
+
+<!--SEIEVM_CHAIN_DETAILS-->
+
+# Seievm
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seievm.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seievm.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seievm.json)
+
+## Wormhole Details
+
+- **Name**: `seievm`
+- **Chain ID**: `40`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/seievm.json)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|`0x07782FCe991dAb4DE7a3124032E534A0D059B4d8`|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--SEIEVM_CHAIN_DETAILS-->
+
+<!--XLAYER_CHAIN_DETAILS-->
+
+# Xlayer
+
+## Ecosystem
+
+- No webpage, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/xlayer.json)
+- No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/xlayer.json)
+- No dev docs, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/xlayer.json)
+
+## Wormhole Details
+
+- **Name**: `xlayer`
+- **Chain ID**: `37`
+- **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/xlayer.json)
+
+
+
+
+
+
+
+### Mainnet Contracts 
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+
+### Testnet Contracts (<code>195</code>)
+
+|Type|Contract|
+|----|--------|
+|Core|`0xA31aa3FDb7aF7Db93d18DDA4e19F811342EDF780`|
+|Token Bridge|`0xdA91a06299BBF302091B053c6B9EF86Eff0f930D`|
+|NFT Bridge|**N/A**|
+
+### Local Network Contract
+
+|Type|Contract|
+|----|--------|
+|Core|**N/A**|
+|Token Bridge|**N/A**|
+|NFT Bridge|**N/A**|
+  
+
+<!--XLAYER_CHAIN_DETAILS-->
