@@ -6,7 +6,7 @@
   "scripts": {
     "generate": "npx tsx src/index.ts",
     "check:consts": "tsx src/check.ts",
-    "check:links":"find ../docs -name \\*.md -print0 | xargs -0 -n1 npx markdown-link-check"
+    "check:links": "find ../docs -name \\*.md -print0 | xargs -0 -n1 npx markdown-link-check"
   },
   "keywords": [],
   "author": "",
@@ -17,8 +17,9 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "@wormhole-foundation/sdk": "0.6.2",
     "@certusone/wormhole-sdk": "^0.10.15",
+    "@wormhole-foundation/sdk": "0.6.2",
+    "@wormhole-foundation/sdk-icons": "file:../../wormhole-sdk-ts/wormhole-foundation-sdk-icons-0.6.3.tgz",
     "swagger-markdown": "^2.3.0"
   }
 }
