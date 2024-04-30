@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "npx tsx src/index.ts",
     "check:consts": "tsx src/check.ts",
-    "check:links": "find ../docs -name \\*.md -print0 | xargs -0 -n1 npx markdown-link-check"
+    "check:links": "find ../docs -name \\*.md -print0 | xargs -0 -n1 npx markdown-link-check",
+    "icons":"tsx src/icons.ts"
   },
   "keywords": [],
   "author": "",
