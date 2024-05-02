@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "@certusone/wormhole-sdk": "^0.10.15",
-    "@wormhole-foundation/sdk": "0.6.2",
-    "@wormhole-foundation/sdk-icons": "file:../../wormhole-sdk-ts/wormhole-foundation-sdk-icons-0.6.3.tgz",
+    "@wormhole-foundation/sdk": "0.6.6-beta.1",
+    "@wormhole-foundation/sdk-icons": "0.6.6-beta.1",
     "swagger-markdown": "^2.3.0"
   }
 }
