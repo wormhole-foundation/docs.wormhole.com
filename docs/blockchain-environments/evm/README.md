@@ -952,7 +952,7 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 |Token Bridge|`0x5a58505a96D1dbf8dF91cB21B54419FC36e93fdE`|
 |NFT Bridge|`0x90BBd86a6Fe93D3bc3ed6335935447E75fAb7fCf`|
 |Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
-|CCTP|`0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c`|
+|CCTP|`0x0FF28217dCc90372345954563486528aa865cDd6`|
 
 ### Testnet Contracts (<code>Mumbai</code> - <code>80001</code>)
 
