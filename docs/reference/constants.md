@@ -1417,7 +1417,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>polygon</td>
-      <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
+      <td><code>0x0FF28217dCc90372345954563486528aa865cDd6</code></td>
       <td><code>0x2703483B1a5a7c577e8680de9Df8Be03c6f30e3c</code></td>
       <td><code>-</code></td> 
     </tr>
