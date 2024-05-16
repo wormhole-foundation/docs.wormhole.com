@@ -71,5 +71,5 @@
 - [Guardian Dashboard](https://wormhole-foundation.github.io/wormhole-dashboard/)
 - [Portal Bridge Docs](https://www.portalbridge.com/docs/)
 - [Discord](https://discord.gg/hJfuptmg6b)
-- [Twitter](https://twitter.com/wormholecrypto)
+- [Twitter](https://twitter.com/wormhole)
 - [Github](https://github.com/wormhole-foundation)
