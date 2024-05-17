@@ -20,7 +20,6 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>avalanche</td><td>6</td><td><code>C-Chain</code> - <code>43114</code></td><td><code>Fuji</code> - <code>43113</code></td></tr>
 <tr><td>oasis</td><td>7</td><td><code>42262</code></td><td><code>42261</code></td></tr>
 <tr><td>algorand</td><td>8</td><td><code>mainnet-v1.0</code></td><td><code>testnet-v1.0</code></td></tr>
-<tr><td>aurora</td><td>9</td><td><code>1313161554</code></td><td><code>1313161555</code></td></tr>
 <tr><td>fantom</td><td>10</td><td><code>250</code></td><td><code>4002</code></td></tr>
 <tr><td>karura</td><td>11</td><td><code>686</code></td><td><code>596</code></td></tr>
 <tr><td>acala</td><td>12</td><td><code>787</code></td><td><code>597</code></td></tr>
@@ -130,12 +129,6 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>842125965</code></td>
       <td><code>86525623</code></td>
       <td><code>1004</code></td> 
-    </tr>
-<tr>
-      <td>aurora</td>
-      <td><code>0xa321448d90d4e5b0A732867c18eA198e75CAC48E</code></td>
-      <td><code>0xBd07292de7b505a4E803CEe286184f7Acf908F5e</code></td>
-      <td><code>-</code></td> 
     </tr>
 <tr>
       <td>fantom</td>
@@ -459,12 +452,6 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>1006</code></td> 
     </tr>
 <tr>
-      <td>aurora</td>
-      <td><code>0x51b5123a7b0F9b2bA265f9c4C8de7D78D52f510F</code></td>
-      <td><code>0xD05eD3ad637b890D68a854d607eEAF11aF456fba</code></td>
-      <td><code>-</code></td> 
-    </tr>
-<tr>
       <td>fantom</td>
       <td><code>0x7C9Fc5741288cDFdD83CeB07f3ea7e22618D79D2</code></td>
       <td><code>0x599CEa2204B4FaECd584Ab1F2b6aCA137a0afbE8</code></td>
@@ -783,12 +770,6 @@ The following tables document the deployed contract addresses for contracts on e
       <td>algorand</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
-      <td><code>-</code></td> 
-    </tr>
-<tr>
-      <td>aurora</td>
-      <td><code>0x6dcC0484472523ed9Cdc017F711Bcbf909789284</code></td>
-      <td><code>0x8F399607E9BA2405D87F5f3e1B78D950b44b2e24</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -1113,12 +1094,6 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td> 
     </tr>
 <tr>
-      <td>aurora</td>
-      <td><code>-</code></td>
-      <td><code>-</code></td>
-      <td><code>-</code></td> 
-    </tr>
-<tr>
       <td>fantom</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>-</code></td>
@@ -1435,12 +1410,6 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>algorand</td>
-      <td><code>-</code></td>
-      <td><code>-</code></td>
-      <td><code>-</code></td> 
-    </tr>
-<tr>
-      <td>aurora</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 

@@ -166,6 +166,7 @@ export function getDocChains(): DocChain[] {
   const skipChains = {
     wormchain: true,
     btc: true,
+    aurora: true,
   };
 
   const chains: DocChain[] = [];

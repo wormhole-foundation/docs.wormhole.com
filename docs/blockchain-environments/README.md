@@ -50,11 +50,6 @@ Wormhole supports a number of different blockchains and environments. Since many
     <td><a href="../.gitbook/assets/chain-icons/arbitrum_sepolia.svg">arbitrum_sepolia</a></td>
 </tr>
 <tr>
-    <td><strong>Aurora</strong></td>
-    <td><a href="../blockchain-environments/evm/README.md#aurora">evm</a></td>
-    <td><a href="../.gitbook/assets/chain-icons/aurora.svg">aurora</a></td>
-</tr>
-<tr>
     <td><strong>Avalanche</strong></td>
     <td><a href="../blockchain-environments/evm/README.md#avalanche">evm</a></td>
     <td><a href="../.gitbook/assets/chain-icons/avalanche.svg">avalanche</a></td>
