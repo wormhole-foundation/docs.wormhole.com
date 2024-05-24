@@ -229,7 +229,7 @@ const proxyResponse =
 
 A testnet Query Proxy is available at `https://testnet.ccq.vaa.dev/v1/query`
 
-A mainnet Query Proxy is available at `https://api.wormholelabs.xyz/v1/query`
+A mainnet Query Proxy is available at ` https://query.wormhole.com/v1/query`
 
 ## Verify a QueryResponse On-Chain
 
