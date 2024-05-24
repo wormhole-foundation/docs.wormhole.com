@@ -491,6 +491,10 @@ Find all operations.
 | txHash | query | hash of the transaction | No | string |
 | page | query | page number | No | integer |
 | pageSize | query | pageSize | No | integer |
+| sourceChain | query | source chains of the operation, separated by comma | No | string |
+| targetChain | query | target chains of the operation, separated by comma | No | string |
+| appId | query | appID of the operation | No | string |
+| exclusiveAppId | query | single appId of the operation | No | boolean |
 
 ##### Responses
 
@@ -840,6 +844,29 @@ Find a VAA by ID.
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
+### /api/v1/vaas/:chain_id/:emitter/:seq/duplicated
+
+#### GET
+##### Description
+
+Find duplicated VAA by ID.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| chain_id | path | id of the blockchain | Yes | integer |
+| emitter | path | address of the emitter | Yes | string |
+| seq | path | sequence of the VAA | Yes | integer |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [response.Response-array_vaa_VaaDoc](#responseresponse-array_vaa_vaadoc) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
 ### /api/v1/vaas/parse
 
 #### POST
@@ -908,6 +935,32 @@ The volume is calculated using the notional price of the symbol at the day the V
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | 200 | OK | [transactions.ChainActivity](#transactionschainactivity) |
+| 400 | Bad Request |  |
+| 500 | Internal Server Error |  |
+
+### /api/v1/x-chain-activity/tops
+
+#### GET
+##### Description
+
+Search for a specific period of time the number of transactions and the volume.
+
+##### Parameters
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ------ |
+| timespan | query | Time span, supported values: 1d, 1mo and 1y | Yes | string |
+| from | query | From date, supported format 2006-01-02T15:04:05Z07:00 | Yes | string |
+| to | query | To date, supported format 2006-01-02T15:04:05Z07:00 | Yes | string |
+| appId | query | Search by appId | No | string |
+| sourceChain | query | Search by sourceChain | No | string |
+| targetChain | query | Search by targetChain | No | string |
+
+##### Responses
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| 200 | OK | [ [transactions.ChainActivityTopResult](#transactionschainactivitytopresult) ] |
 | 400 | Bad Request |  |
 | 500 | Internal Server Error |  |
 
@@ -1437,21 +1490,15 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | guardianSetIndex | integer |  | No |
+| isDuplicated | boolean |  | No |
 | raw | [ integer ] |  | No |
 
 #### parser.ParseVaaWithStandarizedPropertiesdResponse
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| parsedPayload | [parser.ParsedPayload](#parserparsedpayload) |  | No |
+| parsedPayload |  |  | No |
 | standardizedProperties | [parser.StandardizedProperties](#parserstandardizedproperties) |  | No |
-
-#### parser.ParsedPayload
-
-| Name | Type | Description | Required |
-| ---- | ---- | ----------- | -------- |
-| tokenAddress | string |  | No |
-| tokenChain | integer |  | No |
 
 #### parser.StandardizedProperties
 
@@ -1702,6 +1749,17 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | ---- | ---- | ----------- | -------- |
 | txs | [ [transactions.Tx](#transactionstx) ] |  | No |
 
+#### transactions.ChainActivityTopResult
+
+| Name | Type | Description | Required |
+| ---- | ---- | ----------- | -------- |
+| count | integer |  | No |
+| destination_chain | string |  | No |
+| emitter_chain | string |  | No |
+| from | string |  | No |
+| to | string |  | No |
+| volume | integer |  | No |
+
 #### transactions.ChainPair
 
 | Name | Type | Description | Required |
@@ -1831,12 +1889,14 @@ get a VAA []byte from a chainID, emitter address and sequence.
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
 | appId | string | AppId is an extension field - it is not present in the guardian API. | No |
+| digest | string |  | No |
 | emitterAddr | string |  | No |
 | emitterChain | [vaa.ChainID](#vaachainid) |  | No |
 | emitterNativeAddr | string |  | No |
 | guardianSetIndex | integer |  | No |
 | id | string |  | No |
 | indexedAt | string |  | No |
+| isDuplicated | boolean |  | No |
 | payload | object | Payload is an extension field - it is not present in the guardian API. | No |
 | timestamp | string |  | No |
 | txHash | string | TxHash is an extension field - it is not present in the guardian API. | No |
