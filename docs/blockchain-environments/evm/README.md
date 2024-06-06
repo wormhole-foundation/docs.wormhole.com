@@ -1684,8 +1684,8 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 
 |Type|Contract|
 |----|--------|
-|Core|**N/A**|
-|Token Bridge|**N/A**|
+|Core|`0x194B123c5E96B9b2E49763619985790Dc241CAC0`|
+|Token Bridge|`0x5537857664B0f9eFe38C9f320F75fEf23234D904`|
 |NFT Bridge|**N/A**|
 
 ### Testnet Contracts (<code>195</code>)

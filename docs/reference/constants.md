@@ -276,7 +276,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>xlayer</td>
-      <td><code>-</code></td>
+      <td><code>0x194B123c5E96B9b2E49763619985790Dc241CAC0</code></td>
       <td><code>0xA31aa3FDb7aF7Db93d18DDA4e19F811342EDF780</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -597,7 +597,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>xlayer</td>
-      <td><code>-</code></td>
+      <td><code>0x5537857664B0f9eFe38C9f320F75fEf23234D904</code></td>
       <td><code>0xdA91a06299BBF302091B053c6B9EF86Eff0f930D</code></td>
       <td><code>-</code></td> 
     </tr>
