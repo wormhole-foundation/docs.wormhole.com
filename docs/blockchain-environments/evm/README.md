@@ -80,7 +80,7 @@ For more information see [https://www.alchemy.com/overviews/ethereum-commitment-
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
-|Relayer|`0xE66C1Bc1b369EF4F376b84373E3Aa004E8F4C083`|
+|Relayer|`0xb98F46E96cb1F519C333FdFB5CCe0B13E0300ED4`|
 |MockProvider|`0x1ef9e15c3bbf0555860b5009B51722027134d53a`|
 |MockIntegration|`0x0eb0dD3aa41bD15C706BC09bC03C002b7B85aeAC`|
   
@@ -425,7 +425,7 @@ For more information see [https://docs.bnbchain.org/docs/learn/consensus](https:
 |Core|`0xC89Ce4735882C9F0f0FE26686c53074E09B0D550`|
 |Token Bridge|`0x0290FB167208Af455bB137780163b7B7a9a10C16`|
 |NFT Bridge|`0x26b4afb60d6c903165150c6f0aa14f8016be4aec`|
-|Relayer|`0xE66C1Bc1b369EF4F376b84373E3Aa004E8F4C083`|
+|Relayer|`0xb98F46E96cb1F519C333FdFB5CCe0B13E0300ED4`|
 |MockProvider|`0x1ef9e15c3bbf0555860b5009B51722027134d53a`|
 |MockIntegration|`0x0eb0dD3aa41bD15C706BC09bC03C002b7B85aeAC`|
   
@@ -1337,6 +1337,7 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 |Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 |Token Bridge|`0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d`|
 |NFT Bridge|**N/A**|
+|Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
 ### Testnet Contracts (<code>Sepolia</code> - <code>534351</code>)
 
@@ -1383,8 +1384,8 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 
 |Type|Contract|
 |----|--------|
-|Core|**N/A**|
-|Token Bridge|**N/A**|
+|Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
+|Token Bridge|`0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d`|
 |NFT Bridge|**N/A**|
 
 ### Testnet Contracts (<code>Sepolia</code> - <code>5003</code>)
@@ -1540,6 +1541,7 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 |Core|`0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6`|
 |Token Bridge|`0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d`|
 |NFT Bridge|**N/A**|
+|Relayer|`0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`|
 
 ### Testnet Contracts (<code>168587773</code>)
 

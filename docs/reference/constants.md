@@ -264,7 +264,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>mantle</td>
-      <td><code>-</code></td>
+      <td><code>0xbebdb6C8ddC678FfA9f8748f85C815C556Dd8ac6</code></td>
       <td><code>0x376428e7f26D5867e69201b275553C45B09EE090</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -585,7 +585,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>mantle</td>
-      <td><code>-</code></td>
+      <td><code>0x24850c6f61C438823F01B7A3BF2B89B72174Fa9d</code></td>
       <td><code>0x75Bfa155a9D7A3714b0861c8a8aF0C4633c45b5D</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -1055,7 +1055,7 @@ The following tables document the deployed contract addresses for contracts on e
       <td>ethereum</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>0x28D8F1Be96f97C1387e94A53e00eCcFb4E75175a</code></td>
-      <td><code>0xE66C1Bc1b369EF4F376b84373E3Aa004E8F4C083</code></td> 
+      <td><code>0xb98F46E96cb1F519C333FdFB5CCe0B13E0300ED4</code></td> 
     </tr>
 <tr>
       <td>terra</td>
@@ -1067,7 +1067,7 @@ The following tables document the deployed contract addresses for contracts on e
       <td>bsc</td>
       <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>0x80aC94316391752A193C1c47E27D382b507c93F3</code></td>
-      <td><code>0xE66C1Bc1b369EF4F376b84373E3Aa004E8F4C083</code></td> 
+      <td><code>0xb98F46E96cb1F519C333FdFB5CCe0B13E0300ED4</code></td> 
     </tr>
 <tr>
       <td>polygon</td>
@@ -1221,7 +1221,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>scroll</td>
-      <td><code>-</code></td>
+      <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
@@ -1233,7 +1233,7 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>blast</td>
-      <td><code>-</code></td>
+      <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
