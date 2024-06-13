@@ -74,6 +74,7 @@ If using JavaScript/TypeScript, the [Spydk](https://www.npmjs.com/package/@certu
 
 ## See Also
 
+The [Pyth Beacon](https://github.com/pyth-network/beacon) provides an alternate Spy implementation that is highly available for improved performance and reliability.
 
 The [relayer engine](https://github.com/wormhole-foundation/relayer-engine) implements a client and persistence layer for messages received from a Spy subscription. 
 
