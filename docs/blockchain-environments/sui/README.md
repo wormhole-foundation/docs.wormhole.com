@@ -52,7 +52,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 This field is may be ignored since the chain provides instant finality.
 
 
-For more information see [https://docs.sui.io/learn/architecture/consensus](https://docs.sui.io/concepts/sui-architecture/consensus)
+For more information see [https://docs.sui.io/concepts/sui-architecture/consensus](https://docs.sui.io/concepts/sui-architecture/consensus)
 
 
 ### Mainnet Contracts (<code>35834a8a</code>)
