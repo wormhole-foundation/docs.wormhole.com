@@ -6,9 +6,9 @@ The WormholeRelayer module allows developers to deliver their VAAs via an untrus
 
 There are three relevant interfaces to discuss when utilizing the WormholeRelayer module:
 
-- [IWormholeRelayer](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol) - the primary interface by which you interact with the module. It allows you to request the sending of messages and VAAs.
-- [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeReceiver.sol) - this is the interface you are responsible for implementing. It allows the selected Delivery Provider to deliver messages/VAAs to your contract.
-- [IDeliveryProvider](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IDeliveryProvider.sol) - this interface represents the delivery pricing information for a given relayer network. Each delivery provider implements this on every blockchain they support delivering from.
+- [IWormholeRelayer](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol) - the primary interface by which you interact with the module. It allows you to request the sending of messages and VAAs.
+- [IWormholeReceiver](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeReceiver.sol) - this is the interface you are responsible for implementing. It allows the selected Delivery Provider to deliver messages/VAAs to your contract.
+- [IDeliveryProvider](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IDeliveryProvider.sol) - this interface represents the delivery pricing information for a given relayer network. Each delivery provider implements this on every blockchain they support delivering from.
 
 Check the [EVM page](../evm/README.md) for contract addresses on each supported blockchain.
 
