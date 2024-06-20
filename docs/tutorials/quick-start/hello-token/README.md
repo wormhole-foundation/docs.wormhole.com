@@ -314,7 +314,7 @@ function transferTokens(
 }
 ```
 
-Now, it is our task to get the signed VAA corresponding to this published token bridge wormhole message to be delivered to our target chain HelloToken contract. To do this, we make use of the [sendVaasToEvm](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L149) endpoint in the IWormholeRelayer interface.
+Now, it is our task to get the signed VAA corresponding to this published token bridge wormhole message to be delivered to our target chain HelloToken contract. To do this, we make use of the [sendVaasToEvm](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L144) endpoint in the IWormholeRelayer interface.
 
 ```solidity
 function sendVaasToEvm(

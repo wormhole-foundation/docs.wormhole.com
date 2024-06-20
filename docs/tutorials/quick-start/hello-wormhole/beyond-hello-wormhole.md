@@ -85,7 +85,7 @@ Often, you cannot predict exactly how much gas your contract will use. To avoid 
 
 However, this means if, e.g. we expect HelloWormhole to take somewhere (uniformly random) between 10000 and 50000 units of gas, we are losing on expectation the cost of 20000 units of gas if we request 50000 units of gas for every request!
 
-Fortunately, the `IWormholeRelayer` interface [allows you to receive refunds](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L89) for any gas you do not end up using in your target contract!
+Fortunately, the `IWormholeRelayer` interface [allows you to receive refunds](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L76) for any gas you do not end up using in your target contract!
 
 ```solidity
 
@@ -152,7 +152,7 @@ Included in the HelloWormhole repository is an [example contract](https://github
 
 Often times, we wish to deliver a wormhole message that has already been published (by a different contract).
 
-To do this, use the [sendVaasToEvm](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L149) function, which lets you specify additional published wormhole messages for which the corresponding signed VAAs will be pass in as a parameter in the call to `targetAddress`
+To do this, use the [sendVaasToEvm](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L144) function, which lets you specify additional published wormhole messages for which the corresponding signed VAAs will be pass in as a parameter in the call to `targetAddress`
 
 ```solidity
 /**
