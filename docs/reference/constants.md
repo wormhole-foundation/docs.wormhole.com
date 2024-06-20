@@ -1929,7 +1929,7 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td>0</td>
   <td>finalized</td>
   <td>~ 3s</td>
-  <td><a href="https://docs.sui.io/learn/architecture/consensus">Details</a></td>
+  <td><a href="https://docs.sui.io/concepts/sui-architecture/consensus">Details</a></td>
 </tr>
 
 

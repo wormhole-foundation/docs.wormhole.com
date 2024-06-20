@@ -25,7 +25,7 @@
     {"url":"https://docs.sui.io/build/faucet", "description":"Faucet"}
   ],
   "finality": {
-    "details":"https://docs.sui.io/learn/architecture/consensus",
+    "details":"https://docs.sui.io/concepts/sui-architecture/consensus",
     "finalized": 0
   }
 }
