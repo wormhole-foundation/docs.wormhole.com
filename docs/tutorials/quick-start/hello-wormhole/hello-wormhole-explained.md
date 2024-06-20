@@ -2,7 +2,7 @@
 
 In Part 1 ([HelloWormhole](./README.md)), we wrote a fully functioning cross-chain application that allows users to request, from one contract, that a `GreetingReceived` event to be emitted from one of the other contracts on a different chain. 
 
-To do this, we made use of the **Wormhole Relayer** contract ([full interface](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol), [implementation](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/relayer/wormholeRelayer/WormholeRelayer.sol)). 
+To do this, we made use of the **Wormhole Relayer** contract ([full interface](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol), [implementation](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/relayer/wormholeRelayer/WormholeRelayer.sol)). 
 
 Specifically we used the following functions:
 
@@ -70,7 +70,7 @@ The method `sendPayloadToEvm` works by publishing a wormhole message (simply an 
 
 Delivery Providers are permissionless entities that help power the Wormhole Relayer network. If left unspecified, your delivery request will be assigned to the default delivery provider. Each delivery provider is allowed to set it's own pricing for relaying to a specific chain with a specific receiverValue and gasLimit. 
 
-The [full Wormhole Relayer interface](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol) provides endpoints where you can specify the delivery provider you wish to use
+The [full Wormhole Relayer interface](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol) provides endpoints where you can specify the delivery provider you wish to use
 
 > **In our scenario,** 
 >
@@ -95,7 +95,7 @@ Each Guardian watches the wormhole-connected blockchains and signs Wormhole even
 
 The Delivery Provider is likely running some form of the [Relayer Engine](https://github.com/wormhole-foundation/relayer-engine), watching the guardian network for signed VAAs containing wormhole messages from the Wormhole Relayer contract that indicate delivery instructions for them to execute on. 
 
-> The delivery instructions can even indicate fetching other VAAs ([see the sendVaasToEvm endpoint](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L119)!) This feature is useful for composing with other Wormhole protocols, such as TokenBridge
+> The delivery instructions can even indicate fetching other VAAs ([see the sendVaasToEvm endpoint](https://github.com/wormhole-foundation/wormhole/blob/main/relayer/ethereum/contracts/interfaces/relayer/IWormholeRelayer.sol#L144)!) This feature is useful for composing with other Wormhole protocols, such as TokenBridge
 
 The Delivery Provider parses the delivery instruction it sees and obtains the following information:
 
