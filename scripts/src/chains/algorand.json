@@ -11,12 +11,12 @@
   },
   "explorer": [
     {
-      "url": "https://algoexplorer.io/",
-      "description": "Algoexplorer"
+      "url": "https://allo.info/",
+      "description": "Allo"
     },
     {
-      "url": "https://algoscan.app",
-      "description": "AlgoScan"
+      "url": "https://explorer.perawallet.app/",
+      "description": "Pera Explorer"
     }
   ],
   "developer": [
