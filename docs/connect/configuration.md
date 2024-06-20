@@ -358,7 +358,7 @@ Enable explorer button to allow users to search for his transactions on a given 
 |Property|description||
 |:--|:--|:--:|
 |`explorer.label`| Display text | optional, defaults to `Transactions`|
-|`explorer.href`| URL of the explorer, for instance https://wormholescan.com/. If present, the values `{:address}` is replaced with the connected wallet address| mandatory|
+|`explorer.href`| URL of the explorer, for instance https://wormholescan.io/. If present, the values `{:address}` is replaced with the connected wallet address| mandatory|
 |`explorer.target`| href target | optional, defaults to `_blank`
 
 
