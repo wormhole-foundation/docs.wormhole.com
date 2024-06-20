@@ -550,7 +550,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 - [Web site](https://www.gnosis.io/)
 - No explorer, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/gnosis.json)
-- [Developer docs](https://www.gnosis.io/developers) | [Faucet](https://www.gnosisfaucet.com/)
+- [Developer docs](https://docs.gnosischain.com/developers/overview) | [Faucet](https://faucet.gnosischain.com/)
 
 ## Wormhole Details
 

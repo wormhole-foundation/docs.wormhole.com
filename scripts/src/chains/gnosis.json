@@ -12,11 +12,11 @@
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "developer":  [
       {
-        "url": "https://www.gnosis.io/developers",
+        "url": "https://docs.gnosischain.com/developers/overview",
         "description":"Developer docs"
       },
       {
-        "url":"https://www.gnosisfaucet.com/",
+        "url":"https://faucet.gnosischain.com/",
         "description":"Faucet"
       }
     ]
