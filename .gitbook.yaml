@@ -4,7 +4,7 @@ ignore:
   
 redirects:
   blockchain-environments/constants: reference/constants.md
-  quick-start/connect: tutorials/quick-start/wormhole-connect/wh-connect.md
+  quick-start/connect: tutorials/quick-start/wh-connect.md
   blockchain-environments/blockchain-environments: blockchain-environments/README.md
   blockchain-environments/evm: blockchain-environments/evm/README.md
   blockchain-environments/evm/relayer: blockchain-environments/evm/relayer.md

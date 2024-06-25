@@ -1,7 +1,7 @@
 Documentation Generation Scripts
 --------------------------------
 
-A config file for tracking chain specific details is [here](./src/configuration.json)
+Config files for chain specific details are [here](./src/chains)
 
 ### Generating chain specific content
 
