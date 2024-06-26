@@ -29,6 +29,7 @@
   "finality": {
     "instant": 200,
     "otherwise": "finalized",
+    "safe":201,
     "details":"https://docs.bnbchain.org/docs/learn/consensus"
   }
 }
