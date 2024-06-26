@@ -1760,7 +1760,7 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
 <tr>
   <td>BNB Smart Chain</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 48s</td>

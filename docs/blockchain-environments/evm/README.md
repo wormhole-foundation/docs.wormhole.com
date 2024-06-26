@@ -392,6 +392,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
