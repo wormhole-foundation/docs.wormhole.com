@@ -11,7 +11,7 @@ The [Wormhole Typescript SDK](../reference/sdk-docs/README.md) allows you to imp
 {% endhint %}
 
 ## Features
-{% hint style="info" %}This is just an overview of what features are available. For details about each, check [here](./features.md).{% endhint %}
+{% hint style="info" %}This is just an overview of what features are available. For details about each, check [here](../features.md).{% endhint %}
 
 - multiple ways to bridge assets ("[routes](./routes.md)")
 - extensive ways to style the UI (also try the [codeless styler interface](https://connect-in-style.wormhole.com/)!)
@@ -82,7 +82,7 @@ It is important to periodically update your Wormhole Connect instance to the lat
 {% endhint %}
 
 ## Configuration
-{% hint style="info" %}This is just an overview of what's possible. For details about all the configuration options, check [here](./configuration.md).{% endhint %}
+{% hint style="info" %}This is just an overview of what's possible. For details about all the configuration options, check [here](../configuration.md).{% endhint %}
 
 The default configuration of Wormhole Connect may not be what you want to use.  You may want to:
 
@@ -90,6 +90,6 @@ The default configuration of Wormhole Connect may not be what you want to use.  
 - restrict the chains that you allow in your app
 - add support for your project's token, and eliminate tokens you don't want to reduce "noise"
 - configuring custom RPC URLs (do this - default public RPCs are heavily throttled)
-- restrict the [routes](.routes.md) that are available
+- restrict the [routes](./routes.md) that are available
 
 Check the [configuration options](./configuration.md) and customize your widget however you like!
