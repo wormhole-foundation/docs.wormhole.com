@@ -392,7 +392,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
-If a value is passed that is _not_ in the set above it's assumed to mean number of blocks
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 For more information see [https://docs.bnbchain.org/docs/learn/consensus](https://docs.bnbchain.org/docs/learn/consensus)
