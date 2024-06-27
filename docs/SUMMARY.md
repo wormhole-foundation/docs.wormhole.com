@@ -56,8 +56,8 @@
 ## Wormhole Connect
 
 - [Overview](connect/overview.md)
-- [Features](connect/features.md)
 - [Routes](connect/routes.md)
+- [Features](connect/features.md)
 - [Configuration](connect/configuration.md)
 
 ## Queries
