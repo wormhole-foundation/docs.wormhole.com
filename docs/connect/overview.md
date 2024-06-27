@@ -1,7 +1,6 @@
 ## Summary
 
-
-Wormhole Connect is a React widget that lets developers offer easy, customized access to Wormhole powered bridges directly in a web application. Connect supports multiple forms of bridging including native asset bridge, Portal wrapped asset bridge, CCTP USDC bridge, and many others. Connect augments each bridge with gas dropoff (a transaction that leaves a user with extra native token so they can pay gas for subsequent on chain interactions) and gasless transactions (Connect relayers pay gas on behalf of users).
+Wormhole Connect is a React widget that lets developers offer an easy to use interface to facilitate cross-chain asset transfers via Wormhole, directly in a web application.
 
 Check out the [Github repository](https://github.com/wormhole-foundation/wormhole-connect)!
 
@@ -11,6 +10,17 @@ Check out the [Github repository](https://github.com/wormhole-foundation/wormhol
 The [Wormhole Typescript SDK](../reference/sdk-docs/README.md) allows you to implement the same functionality as the Connect widget, but in your own UI. For more information on using the SDK instead of Connect [check out the docs](../reference/sdk-docs/README.md).
 {% endhint %}
 
+## Features
+{% hint style="info" %}
+This is just an overview of what features are available. For details about each, check [here](../connect/features.md).
+{% endhint %}
+
+- multiple ways to bridge assets ("[routes](./routes.md)")
+- extensive ways to style the UI (also try the [codeless styler interface](https://connect-in-style.wormhole.com/)!)
+- ways to [configure](./configuration.md) what feature set to offer
+- ability to configure any token to bridge via Wormhole
+- [drop off some gas](./features.md) at the destination
+
 ## Demo
 
 Wormhole Connect is deployed live in several production apps. Here are a few:
@@ -19,29 +29,9 @@ Wormhole Connect is deployed live in several production apps. Here are a few:
 - [Jupiter](https://jup.ag/bridge/wormhole)
 - [Pancake Swap](https://bridge.pancakeswap.finance/wormhole)
 
-## Functionality in Connect
+## Integrate Connect
 
-1. **Gasless Txns:** Users can bridge without paying gas on the destination chain. 
-    1. ETH on Ethereum → whETH on Solana, only pays gas in ETH on Ethereum (covers both send and redeem)
-
-2. **Gas Dropoff:** User can bridge while only paying gas on the source chain and swap some of the transferred asset into the destination gas token. 
-    1. ETH on Ethereum → whETH on Avalanche + AVAX on Avalanche, only pays gas in ETH on Ethereum (covers both send and redeem)
-
-
-## Bridges in Connect
-
-Connect offers multiple bridging routes:
-
-- Token bridge - wrapped asset bridging
-- USDC Bridge - USDC gaslessly and quickly bridged between any CCTP supported chains
-- Portal - WH wrapped asset bridging
-    - Users can bridge any token between WH supported chains via the TokenBridge contracts that power Portal bridge today
-- **NEW** CCTP Based Liquidity Bridge - New price-efficient, fast transfer solution built atop CCTP x WH Messaging
-- **NEW** Uni V3 Based Liquidity Bridge - New solution built atop seeded liquidity for WH wrapped assets against native assets in Uni V3 pools
-
-## Getting Started
-
-It's very easy to add Wormhole Connect to an existing React app.
+### Option 1: import directly into a React app
 
 First, install the npm package.
 
@@ -51,7 +41,7 @@ First, install the npm package.
 npm i @wormhole-foundation/wormhole-connect
 ```
 
-Now you can use the React component:
+Now you can import the React component:
 
 ```javascript
 import WormholeConnect from '@wormhole-foundation/wormhole-connect';
@@ -63,85 +53,47 @@ function App() {
 }
 ```
 
-### Alternative: hosted version via CDN (for any website)
+### Option 2: hosted version via CDN (for any website)
 
-If you're not using React, you can still embed Connect on your website by using the hosted version. Simply copy and paste the following code into your HTML body:
+If you're not using React, you can still embed Connect on your website by using the hosted version. The sample code below uses the popular and free unpkg.com CDN from which your app will load the widget.
+
+Simply copy and paste the following into your HTML body, and replace the ```{WORMHOLE_CONNECT_VERSION}``` in the links with the most recent production version of Wormhole Connect. You can check what the most recent version is on [NPM](https://www.npmjs.com/package/@wormhole-foundation/wormhole-connect/v/latest).
 
 ```html
 <!-- Mounting point. Include in <body> -->
 <div id="wormhole-connect"></div>
 
 <!-- Dependencies -->
-<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0-beta.9-development/dist/main.js" defer></script>
-<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.0-beta.9-development/dist/main.css" />
+<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@{WORMHOLE_CONNECT_VERSION}/dist/main.js" defer></script>
+<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@{WORMHOLE_CONNECT_VERSION}/dist/main.css" />
 ```
 
-## Configuration
-
-The default configuration of Wormhole Connect may not be what you want to use.  You may want to provide custom styles or restrict the chains that you allow in your app.
-
-One important set of configuration parameters you should consider changing are the RPC URLs. By default public RPCs are used but they're heavily throttled, so for best user experience, these should be set to custom URLs.
-
-More details on configuration options available is [here](./configuration.md)
-
-{% tabs %}
-{% tab title="React" %}
-
-Configure the Wormhole Connect React component by passing a `WormholeConnectConfig` object as the `config` attribute
-
-```tsx
-import WormholeConnect, { WormholeConnectConfig } from '@wormhole-foundation/wormhole-connect';
-
-const config: WormholeConnectConfig = {
-  networks: ["ethereum", "polygon", "solana"],
-  tokens: ["ETH", "WETH", "MATIC", "WMATIC"],
-  rpcs: {
-    ethereum: "https://rpc.ankr.com/eth",
-    solana: "https://rpc.ankr.com/solana",
-  }
-}
-
-// ...
-
-<WormholeConnect config={config} />
-
-```
-{% endtab %}
-
-{% tab title="HTML Tags" %}
-
-If using the hosted version, provide `config` and `theme` as JSON-serialized strings on the mount point:
+For example, for [0.3.13](https://www.npmjs.com/package/@wormhole-foundation/wormhole-connect/v/0.3.13):
 
 ```html
-<div
-  id="wormhole-connect"
-  data-config='{"tokens":["ETH","WETH","WBTC","USDCeth"]}'
-  data-theme='{"background":{"default": "#81c784"}}'
-/>
+<!-- Mounting point. Include in <body> -->
+<div id="wormhole-connect"></div>
+
+<!-- Dependencies -->
+<script type="module" src="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.13/dist/main.js" defer></script>
+<link rel="https://www.unpkg.com/@wormhole-foundation/wormhole-connect@0.3.13/dist/main.css" />
 ```
-{% endtab %}
 
-{% endtabs %}
+{% hint style="info" %}
+It is important to periodically update your Wormhole Connect instance to the latest version, as there are frequent functionality and security releases.
+{% endhint %}
 
-## Feature Support Matrix
+## Configuration
+{% hint style="info" %}
+This is just an overview of what's possible. For details about all the configuration options, check [here](../connect/configuration.md).
+{% endhint %}
 
-| **Network** | **Native Asset Bridge** | **Portal Wrapped Asset Bridge** | **0 Slippage CCTP USDC Bridge** | **Gas Dropoff** | **Gasless Transactions**|
-| --- | --- | --- | --- | --- | --- |
-| Ethereum | 11/30 | ✅​ | ✅​ | ✅​ | ✅​ |
-| Arbitrum | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge) |
-| Optimism | 11/30 | ✅​ | ✅​ | ✅ | ✅ (USDC Bridge)|
-| Avalanche | 1/30 | ✅​ | ✅​ | ✅​ | ✅​|
-| Base | 11/30 | ✅​ | ✅​ | ✅​ | ✅​|
-| Solana | 1/30 | ✅​ | 12/30​ | ✅​ | ✅​|
-| BSC | 1/30 | ✅​ | N | ✅​ | ✅​|
-| Polygon | 1/30 | ✅​ | N | ✅​ | ✅​|
-| Fantom | TBD | ✅​ | N | ✅​ | ✅​ | 
-| Celo | TBD | ✅​ | N | ✅​ | ✅​ |
-| Moonbeam | TBD | ✅​ | N | ✅​ | ✅​ |
-| Sui | TBD | ✅​ | N | ✅​ | ✅​|
-| Aptos | TBD | ✅​ | N | N | N|
-| Sei | TBD | ✅​ | N | N | N|
-| Osmosis | TBD | ✅​ | N | N | Y (only destination)|
-| Evmos | TBD | ✅​ | N | N | Y (only destination)|
-| Kujira | TBD | ✅​ | N | N | Y (only destination)|
-| CosmosHub | TBD | ✅​ | N | N | Y (only destination)|
+The default configuration of Wormhole Connect may not be what you want to use.  You may want to:
+
+- use custom styles 
+- restrict the chains that you allow in your app
+- add support for your project's token, and eliminate tokens you don't want to reduce "noise"
+- configuring custom RPC URLs (do this - default public RPCs are heavily throttled)
+- restrict the [routes](./routes.md) that are available
+
+Check the [configuration options](./configuration.md) and customize your widget however you like!
