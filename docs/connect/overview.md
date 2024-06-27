@@ -84,7 +84,9 @@ It is important to periodically update your Wormhole Connect instance to the lat
 {% endhint %}
 
 ## Configuration
-{% hint style="info" %}This is just an overview of what's possible. For details about all the configuration options, check [here](../configuration.md).{% endhint %}
+{% hint style="info" %}
+This is just an overview of what's possible. For details about all the configuration options, check [here](../connect/configuration.md).
+{% endhint %}
 
 The default configuration of Wormhole Connect may not be what you want to use.  You may want to:
 
