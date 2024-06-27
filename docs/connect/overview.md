@@ -11,7 +11,9 @@ The [Wormhole Typescript SDK](../reference/sdk-docs/README.md) allows you to imp
 {% endhint %}
 
 ## Features
-{% hint style="info" %}This is just an overview of what features are available. For details about each, check [here](../features.md).{% endhint %}
+{% hint style="info" %}
+This is just an overview of what features are available. For details about each, check [here](../connect/features.md).
+{% endhint %}
 
 - multiple ways to bridge assets ("[routes](./routes.md)")
 - extensive ways to style the UI (also try the [codeless styler interface](https://connect-in-style.wormhole.com/)!)
