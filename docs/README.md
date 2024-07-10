@@ -8,7 +8,7 @@ Wormhole is a generic **message passing protocol** that enables communication be
 The above is an _oversimplified_ illustration of the protocol, details about the architecture and components are available [here](./reference/components/README.md)
 {% endhint %}
 
-This simple **message passing protocol** enables developers and users of [cross chain applications](./reference/glossary.md#xdapps) built by developers to leverage the advantages of multiple ecosystems.
+This simple **message passing protocol** enables developers and users of [cross chain applications](./reference/glossary.md#xdapp) built by developers to leverage the advantages of multiple ecosystems.
 
 ### What Isn't Wormhole?
 
