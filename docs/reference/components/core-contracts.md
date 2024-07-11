@@ -87,7 +87,7 @@ Because the VAA creation is separate from relaying, there is _no additional cost
 Before a token transfer can be made, the token being transfered must exist as a wrapped asset on the target chain. This is done by [Attesting](./vaa.md) the token details on the target chain. 
 {% endhint %}
 
-The Token Bridge contract allows token transfers between blockchains through a lock and mint mechanism, using the [Core Contract](#core-contract) with a [specific payload](./vaa.md#transfer) to pass information about the transfer.
+The Token Bridge contract allows token transfers between blockchains through a lock and mint mechanism, using the [Core Contract](#core-contract) with a [specific payload](./vaa.md#token-transfer) to pass information about the transfer.
 
 The Token Bridge also supports sending tokens with some additional data in the form of arbitrary byte payload attached to the token transfer. This type of transfer is referred to as a [Contract Controlled Transfer](./vaa.md#token--message).
 
