@@ -60,6 +60,25 @@
 - [Features](connect/features.md)
 - [Configuration](connect/configuration.md)
 
+## Native Token Transfers
+
+- [Overview](native-token-transfers/overview/README.md)
+  - [System Components](native-token-transfers/overview/system-components.md)
+  - [Deployment Models](native-token-transfers/overview/deployment-models.md)
+- [Deployment](native-token-transfers/deployment/README.md)
+  - [Installation](native-token-transfers/deployment/installation.md)
+  - [Deploy to EVM](native-token-transfers/deployment/deploy-to-evm.md)
+  - [Deploy to Solana](native-token-transfers/deployment/deploy-to-solana.md)
+  - [Post Deployment](native-token-transfers/deployment/post-deployment.md)
+- [Configuration](native-token-transfers/configuration/README.md)
+  - [Rate Limiting](native-token-transfers/configuration/rate-limiting.md)
+  - [Access Control](native-token-transfers/configuration/access-control.md)
+- [Security](native-token-transfers/security/README.md)
+- [Custom Transceivers](native-token-transfers/custom-transceivers/README.md)
+- [Architecture](native-token-transfers/architecture/README.md)
+  - [EVM Message Lifecycle](native-token-transfers/architecture/evm-message-lifecycle.md)
+  - [Solana Message Lifecycle](native-token-transfers/architecture/solana-message-lifecycle.md)
+
 ## Queries
 
 - [Overview](queries/overview.md)
