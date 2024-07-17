@@ -15,7 +15,7 @@ If you haven't already, deploy your SPL token to Solana.
 NTT versions `>=v2.0.0+solana` support SPL tokens with transfer hooks.
 {% endhint %}
 
-#### Deploy NTT
+#### Generate NTT Program Keypair
 
 When you deploy a Solana program, you need to hardcode the program ID (which is itself a pubkey) into the program code. The NTT CLI allows you to do this seamlessly.
 
@@ -23,6 +23,12 @@ Generate a new NTT program keypair using:
 ```bash
 solana-keygen grind --starts-with ntt:1 --ignore-case
 ```
+
+#### Set SPL token Mint Authority to NTT Program
+
+If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program you have deployed on Solana before deploying NTT.
+
+#### Deploy NTT
 
 Generate or export your payer keypair then run:
 ```bash
@@ -44,10 +50,6 @@ As with other deployments, run the following commands to ensure that the on-chai
 - `ntt status`
 - `ntt pull`
 - `ntt push`
-
-#### Set SPL token Mint Authority to NTT Program
-
-If deploying to Solana in `burning` mode, the final step is to set the mint authority for your SPL token to the NTT program you have deployed on Solana.
 
 {% hint style="info" %}
 By default, NTT transfers to Solana support manual relaying, which requires the user to perform a transaction on Solana to complete the transfer. UI components such as Wormhole Connect support this out of the box. For automatic relaying support on Solana, **[contact](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)** Wormhole contributors.
