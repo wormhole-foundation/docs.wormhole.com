@@ -26,13 +26,13 @@ solana-keygen grind --starts-with ntt:1 --ignore-case
 
 #### Set SPL token Mint Authority to NTT Program
 
-If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program you have deployed on Solana before deploying NTT.
+If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program ID you have just generated before deploying NTT.
 
 #### Deploy NTT
 
-Generate or export your payer keypair then run:
+Generate or export your payer keypair, then run:
 ```bash
-ntt add-chain Solana --latest --mode burning --token <your-SPL-token> --payer <your-keypair.json> --program-key <your-ntt-program-keypair.json>
+ntt add-chain Solana --latest --mode <burning or locking> --token <your-SPL-token> --payer <your-keypair.json> --program-key <your-ntt-program-keypair.json>
 ```
 
 You will be prompted to update the program ID in the existing `Anchor.toml` and `lib.rs` files to the NTT program keypair you just generated:
