@@ -27,7 +27,7 @@ solana-keygen grind --starts-with ntt:1 --ignore-case
 
 #### Set SPL token Mint Authority to NTT Program
 
-If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program you have deployed on Solana before deploying NTT.
+If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program ID you generated in the previous step.
 
 #### Deploy NTT
 
