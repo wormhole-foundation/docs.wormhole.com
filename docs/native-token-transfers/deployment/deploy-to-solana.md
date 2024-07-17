@@ -35,14 +35,7 @@ Generate or export your payer keypair, then run:
 ntt add-chain Solana --latest --mode <burning or locking> --token <your-SPL-token> --payer <your-keypair.json> --program-key <your-ntt-program-keypair.json>
 ```
 
-You will be prompted to update the program ID in the existing `Anchor.toml` and `lib.rs` files to the NTT program keypair you just generated:
-
-```bash
-Program keypair does not match the existing program ID: nttiK1SepaQt6sZ4WGW5whvc9tEnGXGxuKeptcQPCcS
-Do you want to update the program ID in the Anchor.toml file and the lib.rs file to <your-ntt-program-keypair>? [y/n]
-```
-
-When you answer yes to the prompt above, the NTT Solana program will compile and deploy.
+The Solana NTT program will then compile and deploy.
 
 #### Configure NTT
 
