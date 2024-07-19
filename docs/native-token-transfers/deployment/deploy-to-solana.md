@@ -28,9 +28,11 @@ ntt init Mainnet
 If you haven't already, deploy your SPL token to Solana.
 
 <details>
+<summary>Deploy your SPL Token</summary>
 1. Generate a new Solana keypair in order to create a wallet:
+
 ```bash
-solana-keygen grind --starts-with w:1 &
+solana-keygen grind --starts-with w:1 --ignore-case
 ```
 
 2. Set Solana config to use the new keypair:
@@ -83,7 +85,7 @@ Generate a new NTT program keypair using:
 solana-keygen grind --starts-with ntt:1 --ignore-case
 ```
 #### Derive the 'token-authority' PDA of the newly generated NTT Program id
-[Example](https://github.com/wormhole-foundation/example-native-token-transfers/blob/main/solana/ts/lib/ntt.ts#L103) 
+[Example derivation](https://github.com/wormhole-foundation/example-native-token-transfers/blob/main/solana/ts/lib/ntt.ts#L103) 
 
 #### Set SPL token Mint Authority to newly generated 'token authority' PDA
 
