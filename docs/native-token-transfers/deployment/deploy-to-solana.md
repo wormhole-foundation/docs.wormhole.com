@@ -7,9 +7,67 @@ Ensure you have the following dependencies installed:
 2. [Solana](https://docs.solanalabs.com/cli/install) v1.18.10
 3. [Anchor](https://www.anchor-lang.com/docs/installation) v0.29.0
 
+#### Deploy NTT
+
+Create a new NTT project (or use an existing NTT project):
+```bash
+ntt new my-ntt-deployment
+cd my-ntt-deployment
+```
+
+Initialize a new `deployment.json` file, specifying the network.
+```bash
+# Testnet Deployment
+ntt init Testnet
+# Or, Mainnet Deployment
+ntt init Mainnet
+```
+
 #### Deploy your SPL Token
 
 If you haven't already, deploy your SPL token to Solana.
+
+<details>
+1. Generate a new Solana keypair in order to create a wallet:
+```bash
+solana-keygen grind --starts-with w:1 &
+```
+
+2. Set Solana config to use the new keypair:
+```bash
+solana config set --keypair <PATH_TO_KEYPAIR_STEP1>
+```
+
+3. Set the Solana configuration to use the default RPC URL for devnet:
+```bash
+solana config set -ud
+```
+
+4. Request an airdrop of 2 SOL and check the balance:
+```bash
+solana airdrop 2 & solana balance
+```
+
+5. Install or update the SPL Token CLI:
+```bash
+cargo install spl-token-cli
+```
+
+6. Create a new token with the SPL Token CLI using the token-2022 program:
+```bash
+spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb 
+```
+
+7. Create a new account for the token:
+```bash
+spl-token create-account <ADDRESS_CREATED_TOKEN_STEP6> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+```
+
+8. Mint 1000 tokens to the created account:
+```bash
+spl-token mint <ADDRESS_CREATED_TOKEN_STEP6> 1000
+```
+</details>
 
 {% hint style="info" %}
 NTT versions `>=v2.0.0+solana` support SPL tokens with transfer hooks.
@@ -24,8 +82,14 @@ Generate a new NTT program keypair using:
 ```bash
 solana-keygen grind --starts-with ntt:1 --ignore-case
 ```
+#### Derive the 'token-authority' PDA of the newly generated NTT Program id
+[Example](https://github.com/wormhole-foundation/example-native-token-transfers/blob/main/solana/ts/lib/ntt.ts#L103) 
 
-#### Set SPL token Mint Authority to NTT Program
+#### Set SPL token Mint Authority to newly generated 'token authority' PDA
+
+```bash
+spl-token authorize <TOKEN_ADDRESS> mint <DERIVED_PDA>
+```
 
 If deploying to Solana in `burning` mode, set the mint authority for your SPL token to the NTT program ID you generated in the previous step.
 
