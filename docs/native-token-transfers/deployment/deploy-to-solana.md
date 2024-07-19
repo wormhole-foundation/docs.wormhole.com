@@ -85,7 +85,9 @@ Generate a new NTT program keypair using:
 solana-keygen grind --starts-with ntt:1 --ignore-case
 ```
 #### Derive the 'token-authority' PDA of the newly generated NTT Program id
-[Example derivation](https://github.com/wormhole-foundation/example-native-token-transfers/blob/main/solana/ts/lib/ntt.ts#L103) 
+```bash
+ntt solana token-authority <your-ntt-program-keypair>
+```
 
 #### Set SPL token Mint Authority to newly generated 'token authority' PDA
 
