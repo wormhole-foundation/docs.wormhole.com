@@ -19,7 +19,7 @@ This is just an overview of what features are available. For details about each,
 - extensive ways to style the UI (also try the [codeless styler interface](https://connect-in-style.wormhole.com/)!)
 - ways to [configure](./configuration.md) what feature set to offer
 - ability to configure any token to bridge via Wormhole
-- [drop off some gas](./features.md) at the destination
+- [drop off some gas](./features.md#gas-dropoff) at the destination
 
 ## Demo
 
