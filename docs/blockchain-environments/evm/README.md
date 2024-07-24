@@ -577,7 +577,7 @@ If a value is passed that is _not_ in the set above it's assumed to mean finaliz
 
 |Type|Contract|
 |----|--------|
-|Core|`0xE4eacc10990ba3308DdCC72d985f2a27D20c7d03`|
+|Core|`0xBB73cB66C26740F31d1FabDC6b7A46a038A300dd`|
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
