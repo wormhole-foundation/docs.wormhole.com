@@ -263,11 +263,13 @@ You can provide a whietlist of routes under `routes`. By default, Connect will o
 | relay | relay |
 | cctpManual | cctpManual |
 | cctpRelay | cctpRelay |
-| cosmosGateway | cosmosGateway |
-| tbtc | tbtc |
+| nttManual | |
+| nttRelay | |
 | ethBridge | |
 | wstETHBridge | |
-
+| usdtBridge | |
+| cosmosGateway | cosmosGateway |
+| tbtc | tbtc |
 
 
 ### Wallet Connect Project ID
