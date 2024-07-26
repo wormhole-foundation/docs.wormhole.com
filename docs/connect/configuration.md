@@ -263,8 +263,8 @@ You can provide a whietlist of routes under `routes`. By default, Connect will o
 | relay | relay |
 | cctpManual | cctpManual |
 | cctpRelay | cctpRelay |
-| nttManual | |
-| nttRelay | |
+| nttManual | nttManual |
+| nttRelay | nttRelay |
 | ethBridge | |
 | wstETHBridge | |
 | usdtBridge | |
