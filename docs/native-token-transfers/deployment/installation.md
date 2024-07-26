@@ -7,7 +7,7 @@ The fastest way to deploy NTT is using the NTT CLI.
 
 Install the NTT CLI:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/wormholelabs-xyz/example-native-token-transfers/cli/cli/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/wormhole-foundation/example-native-token-transfers/cli/cli/install.sh | bash
 ```
 
 Verify the NTT CLI is installed:
