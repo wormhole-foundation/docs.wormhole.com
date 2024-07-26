@@ -112,7 +112,12 @@ The NTT Solana program will then compile and deploy.
 As with other deployments, run the following commands to ensure that the on-chain configuration is correct and your local `deployment.json` file is synced with the on-chain state:
 - `ntt status`
 - `ntt pull`
-- `ntt push`
+
+#### "Push deployment to Solana, specifying the Keypair that will cover the gas fees"
+
+```bash
+ntt push --payer <your-keypair.json>
+```
 
 {% hint style="info" %}
 By default, NTT transfers to Solana support manual relaying, which requires the user to perform a transaction on Solana to complete the transfer. UI components such as Wormhole Connect support this out of the box. For automatic relaying support on Solana, **[contact](https://forms.clickup.com/45049775/f/1aytxf-10244/JKYWRUQ70AUI99F32Q)** Wormhole contributors.
