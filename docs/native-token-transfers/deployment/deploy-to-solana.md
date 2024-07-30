@@ -113,7 +113,7 @@ As with other deployments, run the following commands to ensure that the on-chai
 - `ntt status`
 - `ntt pull`
 
-#### "Push deployment to Solana, specifying the Keypair that will cover the gas fees"
+#### Push deployment to Solana, specifying the Keypair that will cover the gas fees
 
 ```bash
 ntt push --payer <your-keypair.json>
