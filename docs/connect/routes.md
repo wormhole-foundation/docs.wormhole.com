@@ -40,12 +40,19 @@ This transfer method needs 2 transactions: one on the origin chain to burn or lo
 #### Automatic route
 Trustless relayers are able to execute the second transaction on behalf of the user, so that the user only needs to execute 1 transaction on the origin chain and have the tokens delivered to the destination automatically - for a small fee. Wormhole Connect automatically detects whether a token is supported by the relayer, and will display the option if the `nttRelay` route is enabled in the configuration.
 
-## ETH Bridge route
+## ETH Bridge route (for native ETH and wstETH)
 
 [Powered by Uniswap liquidity pools](https://github.com/wormhole-foundation/example-uniswap-liquidity-layer), this route can transfer native ETH or wstETH between certain EVMs without going through the native bridges. For example, you can transfer native ETH from Arbitrum to Optimism and end up with Optimism ETH all in one go. Supported chains are: Ethereum, Arbitrum, Optimism, Base, Polygon (canonical wETH), BSC (canonical wETH), Avalanche (canonical wETH)
 
 #### Automatic route
-Due to the complexity of the transaction that need to be executed on the destination, only the relayed route is available. To offer this option, enable the `ethBridge` and/or `wstETHBridge` route in the configuration.
+Due to the complexity of the transaction that needs to be executed on the destination, only the relayed route is available. To offer this option, enable the `ethBridge` and/or `wstETHBridge` route in the configuration.
+
+## USDT Bridge route (for USDT only)
+
+Operating on the same technology as the ETH Bridge, this route can transfer USDT between certain EVMs without going through the native bridges. The resulting token will be the canonical USDT token on the destination, as opposed to the wormhole-wrapped variant. Supported chains are: Ethereum, Polygon, Avalanche, Arbitrum, Optimism, BSC, Base.
+
+#### Automatic route
+Due to the complexity of the transaction that needs to be executed on the destination, only the relayed route is available. To offer this option, enable the `usdtBridge` route in the configuration.
 
 ## Cosmos Gateway route
 
