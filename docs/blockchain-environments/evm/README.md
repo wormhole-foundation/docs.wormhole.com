@@ -1494,7 +1494,7 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 |Token Bridge|**N/A**|
 |NFT Bridge|**N/A**|
 
-### Testnet Contracts (<code>80085</code>)
+### Testnet Contracts (<code>80084</code>)
 
 |Type|Contract|
 |----|--------|
