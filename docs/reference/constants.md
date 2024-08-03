@@ -46,7 +46,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>blast</td><td>36</td><td><code>81457</code></td><td><code>168587773</code></td></tr>
 <tr><td>xlayer</td><td>37</td><td></td><td><code>195</code></td></tr>
 <tr><td>linea</td><td>38</td><td><code>59144</code></td><td><code>59141</code></td></tr>
-<tr><td>berachain</td><td>39</td><td></td><td><code>80085</code></td></tr>
+<tr><td>berachain</td><td>39</td><td></td><td><code>80084</code></td></tr>
 <tr><td>seievm</td><td>40</td><td></td><td></td></tr>
 <tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
