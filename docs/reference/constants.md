@@ -223,7 +223,7 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>gnosis</td>
       <td><code>0xa321448d90d4e5b0A732867c18eA198e75CAC48E</code></td>
-      <td><code>0xBB73cB66C26740F31d1FabDC6b7A46a038A300dd</code></td>
+      <td><code>0xE4eacc10990ba3308DdCC72d985f2a27D20c7d03</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
