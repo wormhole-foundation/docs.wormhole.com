@@ -6,7 +6,7 @@ There are three primary types of relayers discussed:
 
 - [Client-side Relaying](#client-side-relaying): A cost-efficient, no-backend-infrastructure approach relying on user-facing front ends. It provides a simple solution, although it can complicate the user experience due to the manual steps involved.
 
-- [Specialized Relayers](#specialized-relayers): They are backend components that handle parts of the cross-chain process, offering a smoother user experience and allowing off-chain calculations to reduce gas costs. These relayers could operate through direct listening to the Guardian Network (Spy Relaying) or by providing a REST endpoint to accept VAAs to be relayed (REST Relaying).
+- [Specialized Relayers](#specialized-relayers): They are backend components that handle parts of the cross-chain process, offering a smoother user experience and allowing off-chain calculations to reduce gas costs. These relayers could operate through direct listening to the Guardian Network (Spy Relaying).
 
 - [Standard Relayers](#standard-relayers): A decentralized relayer network that can deliver arbitrary VAAs, reducing the developer's need to develop, host, or maintain relayers. However, they require all calculations to be done on-chain and might be less gas-efficient.
 
@@ -57,10 +57,7 @@ Specialized relayers are purpose-built components within the Wormhole protocol, 
 To make the development of specialized relayers easier, a plugin relayer is available in the [main Wormhole repository](https://github.com/wormhole-foundation/wormhole/tree/main/relayer). This sets up the basic infrastructure for relaying, allowing developers to focus on implementing the specific logic for their application.
 {% endhint %}
 
-There are two main methods of setting up a specialized relayer:
-
-- **Spy Relaying:** Involves listening directly to the Guardian Network via a spy.
-- **REST Relaying:** Provides a REST endpoint to accept a VAA that should be relayed.
+The main method of setting up a specialized relayer is by listening to the Guardian Network via a [Spy](./spy.md).
 
 ### Considerations
 
