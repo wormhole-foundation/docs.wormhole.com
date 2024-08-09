@@ -41,7 +41,7 @@ Though simple, this type of relaying is generally not recommended if your aim is
 
 ## Specialized Relayers
 
-Specialized relayers are purpose-built components within the Wormhole protocol, designed to relay messages for specific applications. They are capable of performing off-chain computations and can be customized to suit a variety of use-cases.
+Specialized relayers are purpose-built components within the Wormhole protocol, designed to relay messages for specific applications. They listen to the Guardian Network via a [Spy](./spy.md), perform off-chain computation, and can be customized to suit a variety of use-cases.
 
 ### Key Features
 
@@ -56,8 +56,6 @@ Specialized relayers are purpose-built components within the Wormhole protocol, 
 {% hint style="info" %}
 To make the development of specialized relayers easier, a plugin relayer is available in the [main Wormhole repository](https://github.com/wormhole-foundation/wormhole/tree/main/relayer). This sets up the basic infrastructure for relaying, allowing developers to focus on implementing the specific logic for their application.
 {% endhint %}
-
-The main method of setting up a specialized relayer is by listening to the Guardian Network via a [Spy](./spy.md).
 
 ### Considerations
 
