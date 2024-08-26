@@ -57,12 +57,12 @@ cargo install spl-token-cli
 
 6. Create a new token with the SPL Token CLI using the token-2022 program:
 ```bash
-spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb 
+spl-token create-token 
 ```
 
 7. Create a new account for the token:
 ```bash
-spl-token create-account <ADDRESS_CREATED_TOKEN_STEP6> --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+spl-token create-account <ADDRESS_CREATED_TOKEN_STEP6>
 ```
 
 8. Mint 1000 tokens to the created account:
