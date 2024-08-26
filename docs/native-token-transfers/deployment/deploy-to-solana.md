@@ -28,7 +28,7 @@ ntt init Mainnet
 If you haven't already, deploy a token to Solana.
 
 <details>
-<summary>Deploy an SPL Token</summary>
+<summary>Deploy an SPL Token (Basic)</summary>
 1. Generate a new Solana keypair in order to create a wallet:
 
 ```bash
@@ -72,7 +72,7 @@ spl-token mint <ADDRESS_CREATED_TOKEN_STEP6> 1000
 </details>
 
 <details>
-<summary>Deploy a token with the Token-2022 Program</summary>
+<summary>Deploy a token with the Token-2022 Program (Advanced)</summary>
 1. Generate a new Solana keypair in order to create a wallet:
 
 ```bash
