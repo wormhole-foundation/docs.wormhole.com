@@ -48,6 +48,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>linea</td><td>38</td><td><code>59144</code></td><td><code>59141</code></td></tr>
 <tr><td>berachain</td><td>39</td><td></td><td><code>80084</code></td></tr>
 <tr><td>seievm</td><td>40</td><td></td><td></td></tr>
+<tr><td>snaxchain</td><td>43</td><td><code>2192</code></td><td><code>13001</code></td></tr>
 <tr><td>cosmoshub</td><td>4000</td><td><code>cosmoshub-4</code></td><td><code>theta-testnet-001</code></td></tr>
 <tr><td>evmos</td><td>4001</td><td><code>evmos_9001-2</code></td><td><code>evmos_9000-4</code></td></tr>
 <tr><td>kujira</td><td>4002</td><td><code>kaiyo-1</code></td><td><code>harpoon-4</code></td></tr>
@@ -296,6 +297,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td>seievm</td>
       <td><code>-</code></td>
       <td><code>0x07782FCe991dAb4DE7a3124032E534A0D059B4d8</code></td>
+      <td><code>-</code></td> 
+    </tr>
+  <tr>
+      <td>snaxchain</td>
+      <td><code>0xc1BA3CC4bFE724A08FbbFbF64F8db196738665f4</code></td>
+      <td><code>0xBB73cB66C26740F31d1FabDC6b7A46a038A300dd</code></td>
       <td><code>-</code></td> 
     </tr>
 <tr>
@@ -619,6 +626,12 @@ The following tables document the deployed contract addresses for contracts on e
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
+  <tr>
+      <td>snaxchain</td>
+      <td><code>-</code></td>
+      <td><code>0xa10f2eF61dE1f19f586ab8B6F2EbA89bACE63F7a</code></td>
+      <td><code>-</code></td> 
+    </tr>
 <tr>
       <td>cosmoshub</td>
       <td><code>-</code></td>
@@ -936,6 +949,12 @@ The following tables document the deployed contract addresses for contracts on e
     </tr>
 <tr>
       <td>seievm</td>
+      <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+  <tr>
+      <td>snaxchain</td>
       <td><code>-</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
@@ -1258,6 +1277,12 @@ The following tables document the deployed contract addresses for contracts on e
 <tr>
       <td>seievm</td>
       <td><code>-</code></td>
+      <td><code>-</code></td>
+      <td><code>-</code></td> 
+    </tr>
+<tr>
+      <td>snaxchain</td>
+      <td><code>0x27428DD2d3DD32A4D7f7C497eAaa23130d894911</code></td>
       <td><code>-</code></td>
       <td><code>-</code></td> 
     </tr>
