@@ -25,7 +25,7 @@ ntt init Mainnet
 
 #### Deploy your Solana Token
 
-If you haven't already, deploy your SPL token to Solana.
+If you haven't already, deploy a token to Solana.
 
 <details>
 <summary>Deploy an SPL Token</summary>
