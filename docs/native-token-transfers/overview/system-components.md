@@ -39,7 +39,7 @@ Manage the token and the transceivers, handle rate limiting, and message attesta
 
 #### Transceivers
 Responsible for sending NTT transfers forwarded through the manager on the source chain and delivered to a corresponding peer manager on the recipient chain. These contracts are responsible for encoding, sending, receiving, and decoding messages across chains, ensuring the seamless transfer of tokens. Transceivers can be defined independently of Wormhole core and can be modified to support any verification backend. Key functions:
-- `sendMessage`: This external function is used to send messages to a specified recipient chain. It encodes the token transfer details into a message format recognized by the system.
+- `sendMessage`: This external function is used to send token transfer messages to a specified recipient chain. It encodes the token transfer details into a message format recognized by the system.
 ```solidity
     function sendMessage(
         uint16 recipientChain,   // chain ID (Wormhole formatted)
