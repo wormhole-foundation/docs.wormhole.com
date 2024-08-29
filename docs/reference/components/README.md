@@ -1,8 +1,11 @@
 # Architecture
+Wormhole is a cross-chain communication protocol designed to enable seamless interaction between different blockchain networks. The architecture is composed of both on-chain and off-chain components working together to ensure secure and efficient message passing.
 
 Wormhole is comprised of several noteworthy components. Before we go into each component in depth, let's talk about the names of the major pieces and how they fit together.
 
 ![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.jpg)
+
+Wormhole's architecture consists of several key components. This section provides an overview of these components, their roles, and how they interact within the protocol.
 
 ## On-Chain Components
 
