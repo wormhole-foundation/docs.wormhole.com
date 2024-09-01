@@ -1,14 +1,24 @@
 {
-    "title": "Polygon Sepolia",
-    "homepage": "https://polygon.technology/",
-    "testnet":{
-      "name":"Sepolia",
-      "id":"80002"
+  "title": "Polygon Polygon Amoy Testnet",
+  "homepage": "https://polygon.technology/",
+  "testnet": {
+    "name": "Polygon Amoy Testnet",
+    "id": "80002"
+  },
+  "explorer": [
+    {
+      "url": "https://amoy.polygonscan.com/",
+      "description": "Etherscan"
     },
-    "contractSource": "ethereum/contracts/bridge/Bridge.sol",
-    "finality": {
-      "details":"https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/",
-      "instant": 200,
-      "otherwise": "finalized"
+    {
+      "url": "https://www.oklink.com/amoy",
+      "description": "Oklink"
     }
+  ],
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "details": "https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/",
+    "instant": 200,
+    "otherwise": "finalized"
   }
+}
