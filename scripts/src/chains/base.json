@@ -1,28 +1,32 @@
 {
   "title": "Base",
   "homepage": "https://base.org/",
-  "mainnet":{
-    "name":"Base",
-    "id":"8453"
+  "mainnet": {
+    "name": "Base",
+    "id": "8453"
   },
-  "testnet":{
-    "name":"Base Goerli",
-    "id":"84531"
+  "testnet": {
+    "name": "Base Sepolia",
+    "id": "84532"
   },
   "developer": [
-      {
-        "url": "https://docs.base.org/",
-        "description":"Developer docs"
-      }
-    ],
+    {
+      "url": "https://docs.base.org/",
+      "description": "Developer docs"
+    }
+  ],
   "explorer": [
     {
-      "url": "https://goerli.basescan.org/",
+      "url": "https://basescan.org/",
       "description": "Etherscan"
     },
     {
-      "url": "https://base-goerli.blockscout.com/",
+      "url": "https://base.blockscout.com/",
       "description": "Blockscout"
+    },
+    {
+      "url": "https://base.xangle.io/",
+      "description": "Xangle"
     }
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol"
