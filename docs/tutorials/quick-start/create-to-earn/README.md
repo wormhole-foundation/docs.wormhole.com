@@ -9,8 +9,8 @@ Your incredible projects and dedication have truly impressed us. As a token of a
 
 We’re offering a chance for you to earn more rewards by turning your hackathon projects into tutorials:
 
-- **Tutorial Submission Reward**: Receive **$50** for each accepted tutorial.
-- **Maximum Tutorials Accepted**: Up to **5 tutorials** per hackathon, totaling **$250** in additional prizes up for grabs!
+- **Tutorial Submission Reward**: Submit a tutorial based on your hackathon project and earn **$50** for each accepted tutorial.
+- **Maximum Tutorials Accepted**: To ensure high-quality content, we will accept up to 5 tutorials per hackathon. This means a total of **$250** in additional prizes for each hackathon.
 
 ## How to Submit Your Tutorial
 
