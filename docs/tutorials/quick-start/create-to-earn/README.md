@@ -1,13 +1,12 @@
 
 #### Disclaimer
 
-Please note that the prize amounts, total number of acceptable tutorials, and payment timelines mentioned are hypothetical and subject to adjustment based on Wormhole’s discretion.
+Prize amounts, tutorials accepted and payment timelines are hypothetical and may be adjusted by Wormhole. This process keeps tutorials up-to-date with the latest hackathons and helps new developers access a range of current examples, fostering community growth and innovation.
 
-This approach ensures that tutorials remain current with the latest hackathons and developments, providing new developers with a rich array of up-to-date examples. This not only fosters a vibrant community but also accelerates learning and innovation within the Wormhole ecosystem.
-
-Thank you for considering this suggestion and for your ongoing support in enhancing the developer experience with Wormhole! 🚀
+Thank you for considering this suggestion and for your dedication in enhancing the developer experience with Wormhole! 🚀
 
 ---
+
 
 # 🪐 Wormhole Tutorial Program 
 
