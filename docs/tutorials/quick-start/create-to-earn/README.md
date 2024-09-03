@@ -105,5 +105,12 @@ For detailed implementation, see the example provided in the `hello-token` repos
 
 Thank you for your contributions and for helping to expand the Wormhole Blockchain community. We look forward to your tutorials!
 
+---
 
-### **Please adjust the prize amount, total acceptable tutorials and payment timeline as decided. Thank you wormhole Team 🚀**
+#### Conclusion
+
+In closing, I want to highlight that the prize amounts, total number of acceptable tutorials, and payment timelines mentioned are hypothetical and open for adjustment based on Wormhole’s discretion.
+
+This approach ensures that tutorials remain current with the latest hackathons and developments, providing new developers with a rich array of up-to-date examples. This not only fosters a vibrant community but also accelerates learning and innovation within the Wormhole ecosystem.
+
+Thank you for considering this suggestion and for your ongoing support in enhancing the developer experience with Wormhole! 🚀
