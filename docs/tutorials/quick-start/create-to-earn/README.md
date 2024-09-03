@@ -1,4 +1,14 @@
 
+#### Disclaimer
+
+Please note that the prize amounts, total number of acceptable tutorials, and payment timelines mentioned are hypothetical and subject to adjustment based on Wormhole’s discretion.
+
+This approach ensures that tutorials remain current with the latest hackathons and developments, providing new developers with a rich array of up-to-date examples. This not only fosters a vibrant community but also accelerates learning and innovation within the Wormhole ecosystem.
+
+Thank you for considering this suggestion and for your ongoing support in enhancing the developer experience with Wormhole! 🚀
+
+---
+
 # 🪐 Wormhole Tutorial Program 
 
 Congratulations to all our dear Hackathon participants 🎉
@@ -38,13 +48,11 @@ Your tutorial should include the following sections:
 
 ### 3. **Example Tutorial**
 
-Here’s a brief example of how to structure your tutorial:
+Here’s a detailed example of how to structure your tutorial:
 
 #### HelloToken
 
-This tutorial demonstrates a Solidity contract that can be deployed on various EVM chains to create a cross-chain application. Users can request token transfers from one contract to an address on a different chain.
-
-**Example Project**: Cross-Chain Token Transfer Dapp. Project developed during the Encode x Wormhole Hackathon 2024.
+This tutorial demonstrates how to build a Solidity contract that enables cross-chain token transfers using Wormhole. This example is based on a project developed during the Encode x Wormhole Hackathon 2024.
 
 **Summary**: 
 Included in this repository are:
@@ -54,8 +62,8 @@ Included in this repository are:
 - Example Testnet testing setup
 
 **Environment Setup**:
-- Node 16.14.1 or later, npm 8.5.0 or later: [Install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- Forge 0.2.0 or later: [Install Forge](https://book.getfoundry.sh/getting-started/installation)
+- **Node.js**: 16.14.1 or later, npm 8.5.0 or later. [Install Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- **Forge**: 0.2.0 or later. [Install Forge](https://book.getfoundry.sh/getting-started/installation)
 
 **Testing Locally**:
 Clone the repository, navigate to it, build, and run unit tests:
@@ -88,9 +96,9 @@ EVM_PRIVATE_KEY=your_wallet_private_key npm run test
 ```
 
 **Getting Started**:
-Write a HelloToken contract that lets users send tokens to an address on another chain. Use the Wormhole TokenBridge for cross-chain transfers.
+Write a HelloToken contract that allows users to send tokens to an address on another chain. Use the Wormhole TokenBridge for cross-chain transfers.
 
-For detailed implementation, see the example provided in the `hello-token` repository.
+For detailed implementation, refer to the example provided in the `hello-token` repository.
 
 ### 4. **Review Process** 📝
 
@@ -106,11 +114,3 @@ For detailed implementation, see the example provided in the `hello-token` repos
 Thank you for your contributions and for helping to expand the Wormhole Blockchain community. We look forward to your tutorials!
 
 ---
-
-#### Conclusion
-
-In closing, I want to highlight that the prize amounts, total number of acceptable tutorials, and payment timelines mentioned are hypothetical and open for adjustment based on Wormhole’s discretion.
-
-This approach ensures that tutorials remain current with the latest hackathons and developments, providing new developers with a rich array of up-to-date examples. This not only fosters a vibrant community but also accelerates learning and innovation within the Wormhole ecosystem.
-
-Thank you for considering this suggestion and for your ongoing support in enhancing the developer experience with Wormhole! 🚀
