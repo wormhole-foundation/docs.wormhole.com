@@ -1,11 +1,11 @@
 
-# Wormhole Tutorial Program 🪐
+# 🪐 Wormhole Tutorial Program 
 
 Congratulations to all our dear Hackathon participants 🎉
 
 Your incredible projects and dedication have truly impressed us. As a token of appreciation and to encourage knowledge sharing within our community, we're excited to introduce the **Wormhole Tutorial Program**. 
 
-## Earn Additional Prizes! 💸
+## 💸 Earn Additional Prizes!
 
 We’re offering a chance for you to earn more rewards by turning your hackathon projects into tutorials:
 
@@ -32,7 +32,7 @@ Your tutorial should include the following sections:
 ### 2. **Format and Submission**
 
 - **Format**: Submit your tutorial in Markdown format (.md). Ensure clarity and proper organization with headings and subheadings.
-- **Repository**: Fork the [Wormhole Docs Repository](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main)) and add your tutorial as a new file in the `tutorials/quick-start` folder.
+- **Repository**: Fork the [Wormhole Docs Repository](https://github.com/wormhole-foundation/docs.wormhole.com/tree/main) and add your tutorial as a new file in the `tutorials/quick-start` folder.
 - **Naming Convention**: Name your file in the format `project-name-tutorial.md`. For example, if your project is named "CrossChainApp," name your file `crosschainapp-tutorial.md`.
 - **Pull Request**: Create a Pull Request (PR) with your tutorial. In the PR description, include a brief summary of the tutorial and mention the hackathon it was developed at.
 
