@@ -12,7 +12,7 @@ Find the complete list of EVM environment blockchains [here](../../../blockchain
 
 ## Tutorials
 
-* [Hello Wormhole](../../quick-start/) A tutorial that covers message passing across EVM environments
+* [Hello Wormhole](../../quick-start/hello-wormhole/README.md) A tutorial that covers message passing across EVM environments
 * [Hello Token](../../quick-start/hello-token/README.md) A tutorial that covers token transfer across EVM environments
 
 ## On Chain
