@@ -1,9 +1,9 @@
 
 # Wormhole Tutorial Program 🪐
 
-Congratulations to all participants of the Encode x Wormhole Hackathon 2024! 🎉
+Congratulations to all our dear Hackathon participants 🎉
 
-Your incredible projects and dedication have truly impressed us. As a token of appreciation and to encourage knowledge sharing within our community, we're excited to introduce the **Wormhole Blockchain Tutorial Program**. 
+Your incredible projects and dedication have truly impressed us. As a token of appreciation and to encourage knowledge sharing within our community, we're excited to introduce the **Wormhole Tutorial Program**. 
 
 ## Earn Additional Prizes! 💸
 
