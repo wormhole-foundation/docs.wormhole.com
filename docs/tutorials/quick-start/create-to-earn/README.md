@@ -1,7 +1,7 @@
 
 #### Disclaimer
 
-Prize amounts, tutorials accepted and payment timelines are hypothetical and may be adjusted by Wormhole. This process keeps tutorials up-to-date with the latest hackathons and helps new developers access a range of current examples, fostering community growth and innovation.
+Prize amounts, tutorials accepted, payment timelines and contact email are hypothetical and may be adjusted by Wormhole. This process keeps tutorials up-to-date with the latest hackathons and helps new developers access a range of current examples, fostering community growth and innovation.
 
 Thank you for considering this suggestion and for your dedication in enhancing the developer experience with Wormhole! 🚀
 
