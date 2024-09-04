@@ -29,7 +29,7 @@
 
 ## Feature Explanation
 
-**Token Bridge**
+### Token Bridge
 
 This is the transfer method that Wormhole is best known for. It locks assets on the source chain, and mints wormhole-wrapped "IOU" tokens on the destination chain. To transfer the assets back, the wormhole-wrapped tokens are burned, which unlocks the tokens on their original chain.
 
@@ -37,7 +37,7 @@ This route appears if
 - both the origin and destination chains support Token Bridge 
 - and if no non-Token Bridge routes are available for the selected token
 
-**Token Bridge Relayer**
+### Token Bridge Relayer
 
 {% hint style="info" %}
 On the [routes](../connect/routes.md) page, this is referred to the "automatic route" in the Token Bridge section.
@@ -51,7 +51,7 @@ This route appears if
 - if no non-Token Bridge routes are available for the selected token
 - the selected token on the origin chain is supported by the relayer
 
-**Circle CCTP**
+### Circle CCTP
 
 [Circle](https://www.circle.com/en/), issuer of USDC, provides a native way by which native USDC can be transferred between [CCTP enabled](https://www.circle.com/en/cross-chain-transfer-protocol) chains.
 
@@ -59,7 +59,7 @@ This route appears if
 - both the origin and destination chains support Circle CCTP
 - the selected token is native Circle-issued USDC
 
-**ETH Bridge**
+### ETH Bridge
 
 [Powered by Uniswap liquidity pools](https://github.com/wormhole-foundation/example-uniswap-liquidity-layer), this route can transfer native ETH or wstETH between certain EVMs without going through the native bridges.
 
@@ -67,7 +67,7 @@ This route appears if
 - both the origin and destination chains support the ETH Bridge
 - the selected token is native ETH or wstETH, or canonical wETH
 
-**Gas Dropoff**
+### Gas Dropoff
 
 Relayers are able to drop off some gas tokens on the destination chain by swapping some of the assets transferred to the native gas token. Useful if the user wishes to transfer assets to a chain where they don't already have gas. This way, they don't need to onboard into the ecosystem from a CEX.
 

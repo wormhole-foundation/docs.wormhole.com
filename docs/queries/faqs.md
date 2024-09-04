@@ -31,3 +31,6 @@ The guardian node calculates an ECDSA signature using [crypto.Sign](https://pkg.
 The Query Proxy is currently permissioned by the Guardians. The guardian nodes are configured to only listen to a set of allow-listed proxies. However, it is possible that this restriction may be lifted in the future and/or more proxies could be added.
 
 It is also important to note that the proxies do not impact the verifiability the request and result - i.e. their role in the process is trustless.
+
+## What does Queries offer over an RPC service?
+Wormhole Queries provides on-demand, attested, on-chain verifiable RPC results. Each guardian independently executes the specified query and returns the result and their signature - the proxy handles aggregating the results and signatures, giving you a single result (all within one REST call) with a quorum of signatures suitable for on-chain submission, parsing, and verification using one of our examples / SDKs.
