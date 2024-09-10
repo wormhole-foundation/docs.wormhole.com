@@ -1,9 +1,9 @@
 {
   "title": "Arbitrum Sepolia",
   "homepage": "https://arbitrum.io/",
-  "testnet":{
-    "name":"Sepolia",
-    "id":"421614"
+  "testnet": {
+    "name": "Sepolia",
+    "id": "421614"
   },
   "explorer": [
     {
@@ -11,5 +11,10 @@
       "description": "Arbitrum Explorer"
     }
   ],
-  "developer": [ ]
+  "developer": [
+    {
+      "url": "https://docs.arbitrum.io/build-decentralized-apps/quickstart-solidity-hardhat",
+      "description": "Developer docs"
+    }
+  ]
 }
