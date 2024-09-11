@@ -1,13 +1,17 @@
 {
   "title": "Oasis",
   "homepage": "https://oasisprotocol.org/",
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"42262"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "42262"
   },
-  "testnet":{
-    "name":"Testnet",
-    "id":"42261"
+  "testnet": {
+    "name": "Testnet",
+    "id": "42261"
   },
-  "contractSource": "ethereum/contracts/bridge/Bridge.sol"
+  "contractSource": "ethereum/contracts/bridge/Bridge.sol",
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
 }

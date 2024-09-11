@@ -2,17 +2,18 @@
   "title": "Karura",
   "homepage": "https://acala.network/karura",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"686"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "686"
   },
-  "testnet":{
-    "name":"Testnet",
-    "id":"596"
+  "testnet": {
+    "name": "Testnet",
+    "id": "596"
   },
   "finality": {
-    "details":"https://wiki.polkadot.network/docs/learn-consensus",
+    "details": "https://wiki.polkadot.network/docs/learn-consensus",
     "instant": 200,
+    "safe": 201,
     "otherwise": "finalized"
   }
 }

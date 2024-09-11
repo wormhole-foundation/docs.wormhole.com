@@ -2,7 +2,7 @@
 
 ## Chain Ids
 
-The following table documents the [chain ids](./glossary.md#chain-id) used by wormhole. 
+The following table documents the [chain ids](./glossary.md#chain-id) used by wormhole.
 
 {% hint style="warning" %}
 Note the Wormhole chain ids are different than the more commonly referenced chain ids (e.g. https://eips.ethereum.org/EIPS/eip-155)
@@ -44,7 +44,7 @@ Note the Wormhole chain ids are different than the more commonly referenced chai
 <tr><td>scroll</td><td>34</td><td><code>534352</code></td><td><code>Sepolia</code> - <code>534351</code></td></tr>
 <tr><td>mantle</td><td>35</td><td><code>5000</code></td><td><code>Sepolia</code> - <code>5003</code></td></tr>
 <tr><td>blast</td><td>36</td><td><code>81457</code></td><td><code>168587773</code></td></tr>
-<tr><td>xlayer</td><td>37</td><td></td><td><code>195</code></td></tr>
+<tr><td>xlayer</td><td>37</td><td><code>196</code></td><td><code>195</code></td></tr>
 <tr><td>linea</td><td>38</td><td><code>59144</code></td><td><code>59141</code></td></tr>
 <tr><td>berachain</td><td>39</td><td></td><td><code>80084</code></td></tr>
 <tr><td>seievm</td><td>40</td><td></td><td></td></tr>
@@ -1053,8 +1053,8 @@ The following tables document the deployed contract addresses for contracts on e
 </table>
 <!--NFT_BRIDGE_ADDRESS-->
 
-
 ### Standard Relayer
+
 <!--RELAYER_BRIDGE_ADDRESS-->
 <table data-full-width="true">
 <thead>
@@ -1701,7 +1701,6 @@ The following tables document the deployed contract addresses for contracts on e
 </table>
 <!--CCTP_ADDRESS-->
 
-
 ### Gateway
 
 <!--GATEWAY_ADDRESS-->
@@ -1724,16 +1723,41 @@ The following tables document the deployed contract addresses for contracts on e
 
 <!--GATEWAY_ADDRESS-->
 
-
-
-
 ## Consistency Levels
 
-The following tables document the [consistencyLevel](./glossary.md#consistency-level) values (i.e. finality reached before signing) or for each chain. 
+The following tables document the [consistencyLevel](./glossary.md#consistency-level) values (i.e. finality reached before signing) or for each chain.
 
-The consistency level defines how long the Guardians should wait before signing a VAA. The amount of time for finalization depends on the specific chain's consensus mechanism. 
+The consistency level defines how long the Guardians should wait before signing a VAA. The amount of time for finalization depends on the specific chain's consensus mechanism.
 
-Consistency level is a `u8` so any single byte may be used, however a small subset have specific meanings. If the `consistencyLevel` is not one of those specific values, the `Otherwise` column describes how its interpreted.
+Consistency level is a `u8` so any single byte may be used, however a subset have specific meanings. If the `consistencyLevel` is not one of those specific values, the `Otherwise` column describes how its interpreted.
+
+Broadly, each runtime has its own consistency level meanings.
+
+### EVM
+
+- `200` - publish immediately
+- `201` - `safe`, if available, otherwise falls back to `finalized`
+- anything else is treated as `finalized`
+
+Historically, the EVM watcher specified the consistency level as the block depth (from `latest`) the transaction
+should reach before publishing. However, since [The Merge](https://ethereum.org/en/roadmap/merge/), adoption of
+`safe` and `finalized` block tags have become widespread and offer a more exact measure of commitment.
+
+### Solana
+
+The Solana core contract provides an enum for `ConsistencyLevel` used by the instruction data:
+
+- `0` - Confirmed
+- `1` - Finalized
+
+However, the resulting account and subsequent VAA will have:
+
+- `1` - Confirmed
+- `32` - Finalized
+
+### Others
+
+All other chains do not offer configurable consistency levels and this field will be `0`.
 
 <!--CONSISTENCY_LEVELS-->
 <table data-full-width="true">
@@ -1754,11 +1778,10 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td> </td>
   <td>0</td>
   <td>1</td>
-  <td>finalized</td>
+  <td></td>
   <td>~ 14s</td>
   <td><a href="https://docs.solana.com/cluster/commitments">Details</a></td>
 </tr>
-
 
 <tr>
   <td>Ethereum</td>
@@ -1770,17 +1793,15 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td><a href="https://www.alchemy.com/overviews/ethereum-commitment-levels">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Terra</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 6s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>BNB Smart Chain</td>
@@ -1792,7 +1813,6 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td><a href="https://docs.bnbchain.org/docs/learn/consensus">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Polygon</td>
   <td>200</td>
@@ -1803,39 +1823,35 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td><a href="https://docs.polygon.technology/pos/architecture/heimdall/checkpoints/">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Avalanche</td>
+  <td>200</td>
   <td> </td>
   <td> </td>
-  <td>0</td>
   <td>finalized</td>
   <td>~ 2s</td>
   <td><a href="https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Oasis</td>
   <td>200</td>
-  <td>201</td>
+  <td> </td>
   <td> </td>
   <td>finalized</td>
   <td>~ 12s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Algorand</td>
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>finalized</td>
+  <td></td>
   <td>~ 4s</td>
   <td><a href="https://developer.algorand.org/docs/get-started/basics/why_algorand/#finality">Details</a></td>
 </tr>
-
 
 <tr>
   <td>Fantom</td>
@@ -1847,28 +1863,25 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Karura</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 24s</td>
   <td><a href="https://wiki.polkadot.network/docs/learn-consensus">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Acala</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 24s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>Klaytn</td>
@@ -1880,7 +1893,6 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Celo</td>
   <td>200</td>
@@ -1891,116 +1903,105 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td> </td>
 </tr>
 
-
 <tr>
   <td>NEAR</td>
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>finalized</td>
+  <td></td>
   <td>~ 2s</td>
   <td><a href="https://nomicon.io/ChainSpec/Consensus">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Moonbeam</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 24s</td>
   <td><a href="https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Terra2</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 6s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Injective</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 3s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Osmosis</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 6s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>Sui</td>
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>finalized</td>
+  <td></td>
   <td>~ 3s</td>
   <td><a href="https://docs.sui.io/concepts/sui-architecture/consensus">Details</a></td>
 </tr>
-
 
 <tr>
   <td>Aptos</td>
   <td> </td>
   <td> </td>
   <td>0</td>
-  <td>finalized</td>
+  <td></td>
   <td>~ 4s</td>
   <td><a href="https://aptos.dev/reference/glossary/#byzantine-fault-tolerance-bft">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Arbitrum</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 1066s</td>
   <td><a href="https://developer.arbitrum.io/tx-lifecycle">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Optimism</td>
   <td>200</td>
-  <td> </td>
+  <td>201</td>
   <td> </td>
   <td>finalized</td>
   <td>~ 1026s</td>
   <td><a href="https://community.optimism.io/docs/developers/bridge/comm-strategies/">Details</a></td>
 </tr>
 
-
 <tr>
   <td>Xpla</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>Base</td>
@@ -2012,90 +2013,82 @@ Consistency level is a `u8` so any single byte may be used, however a small subs
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Sei</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 1s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Cosmoshub</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Evmos</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 2s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Kujira</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 3s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Neutron</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>Celestia</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>
-
 
 <tr>
   <td>Stargaze</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>
 
-
 <tr>
   <td>Dymension</td>
-  <td>200</td>
-  <td>201</td>
   <td> </td>
-  <td>finalized</td>
+  <td> </td>
+  <td>0</td>
+  <td></td>
   <td>~ 5s</td>
   <td> </td>
 </tr>

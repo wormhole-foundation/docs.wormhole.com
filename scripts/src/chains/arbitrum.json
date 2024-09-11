@@ -1,13 +1,13 @@
 {
   "title": "Arbitrum",
   "homepage": "https://arbitrum.io/",
-  "mainnet":{
-    "name":"Arbitrum One",
-    "id":"42161"
+  "mainnet": {
+    "name": "Arbitrum One",
+    "id": "42161"
   },
-  "testnet":{
-    "name":"Goerli",
-    "id":"421613"
+  "testnet": {
+    "name": "Goerli",
+    "id": "421613"
   },
   "explorer": [
     {
@@ -22,8 +22,9 @@
     }
   ],
   "finality": {
-    "details":"https://developer.arbitrum.io/tx-lifecycle",
+    "details": "https://developer.arbitrum.io/tx-lifecycle",
     "instant": 200,
+    "safe": 201,
     "otherwise": "finalized"
   }
 }

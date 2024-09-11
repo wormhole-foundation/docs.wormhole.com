@@ -1,13 +1,13 @@
 {
   "title": "Moonbeam",
   "homepage": "https://moonbeam.network/",
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"1284"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "1284"
   },
-  "testnet":{
-    "name":"Moonbase-Alphanet",
-    "id":"1287"
+  "testnet": {
+    "name": "Moonbase-Alphanet",
+    "id": "1287"
   },
   "explorer": [
     {
@@ -16,19 +16,20 @@
     }
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
-  "developer":[
+  "developer": [
     {
-      "url":"https://docs.moonbeam.network/",
-      "description":"Developer docs"
+      "url": "https://docs.moonbeam.network/",
+      "description": "Developer docs"
     },
     {
-      "url":"https://faucet.moonbeam.network/",
-      "description":"Faucet"
+      "url": "https://faucet.moonbeam.network/",
+      "description": "Faucet"
     }
   ],
   "finality": {
     "instant": 200,
+    "safe": 201,
     "otherwise": "finalized",
-    "details":"https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints"
+    "details": "https://docs.moonbeam.network/builders/build/moonbeam-custom-api/#finality-rpc-endpoints"
   }
 }

@@ -115,6 +115,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
@@ -169,6 +170,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
@@ -276,9 +278,8 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 
 |Level|Value|
 |-----|-----|
-|Finalized|0|
-
-This field is may be ignored since the chain provides instant finality.
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 For more information see [https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality](https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality)
@@ -332,9 +333,15 @@ For more information see [https://docs.avax.network/build/dapp/advanced/integrat
 - **Chain ID**: `30`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+|Safe|201|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -614,6 +621,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
@@ -724,6 +732,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
@@ -824,9 +833,14 @@ For more information see [https://docs.moonbeam.network/builders/build/moonbeam-
 - **Chain ID**: `7`
 - **Contract Source**: [ethereum/contracts/bridge/Bridge.sol](https://github.com/wormhole-foundation/wormhole/blob/main/ethereum/contracts/bridge/Bridge.sol)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -879,6 +893,7 @@ The options for [consistencyLevel](../../reference/components/core-contracts.md#
 |Level|Value|
 |-----|-----|
 |Instant|200|
+|Safe|201|
 If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
@@ -1325,9 +1340,14 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 - **Chain ID**: `34`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/scroll.json)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -1375,9 +1395,15 @@ For more information see [https://community.optimism.io/docs/developers/bridge/c
 - **Chain ID**: `35`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/mantle.json)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+|Safe|201|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -1480,9 +1506,14 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 - **Chain ID**: `39`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/berachain.json)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -1529,9 +1560,15 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 - **Chain ID**: `36`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/blast.json)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+|Safe|201|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -1579,9 +1616,14 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 - **Chain ID**: `38`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/linea.json)
 
+### Consistency Levels
 
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
 
-
+|Level|Value|
+|-----|-----|
+|Instant|200|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
@@ -1677,13 +1719,19 @@ For more information see [https://docs.polygon.technology/pos/architecture/heimd
 - **Chain ID**: `37`
 - **Contract Source**: No source file, update [here](https://github.com/wormhole-foundation/docs.wormhole.com/blob/main/scripts/src/chains/xlayer.json)
 
+### Consistency Levels
+
+The options for [consistencyLevel](../../reference/components/core-contracts.md#consistencyLevel) (i.e finality) are:
+
+|Level|Value|
+|-----|-----|
+|Instant|200|
+|Safe|201|
+If a value is passed that is _not_ in the set above it's assumed to mean finalized
 
 
 
-
-
-
-### Mainnet Contracts 
+### Mainnet Contracts (<code>196</code>)
 
 |Type|Contract|
 |----|--------|

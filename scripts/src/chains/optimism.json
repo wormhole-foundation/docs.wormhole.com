@@ -1,18 +1,19 @@
 {
   "title": "Optimism",
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"10"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "10"
   },
-  "testnet":{
-    "name":"Optimism Goerli",
-    "id":"420"
+  "testnet": {
+    "name": "Optimism Goerli",
+    "id": "420"
   },
   "homepage": "https://www.optimism.io/",
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
-    "details":"https://community.optimism.io/docs/developers/bridge/comm-strategies/",
+    "details": "https://community.optimism.io/docs/developers/bridge/comm-strategies/",
     "instant": 200,
+    "safe": 201,
     "otherwise": "finalized"
   }
 }
