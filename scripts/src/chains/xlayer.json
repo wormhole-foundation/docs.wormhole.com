@@ -1,1 +1,10 @@
-{"title":"Xlayer","testnet":{"name":"Testnet","id":"195"}}
+{
+  "title": "Xlayer",
+  "testnet": { "name": "Testnet", "id": "195" },
+  "mainnet": { "name": "Mainnet", "id": "196" },
+  "finality": {
+    "instant": 200,
+    "safe": 201,
+    "otherwise": "finalized"
+  }
+}

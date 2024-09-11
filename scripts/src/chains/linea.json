@@ -1,1 +1,9 @@
-{"title":"Linea","testnet":{"name":"Testnet","id":"59141"},"mainnet":{"name":"Mainnet","id":"59144"}}
+{
+  "title": "Linea",
+  "testnet": { "name": "Testnet", "id": "59141" },
+  "mainnet": { "name": "Mainnet", "id": "59144" },
+  "finality": {
+    "instant": 200,
+    "otherwise": "finalized"
+  }
+}

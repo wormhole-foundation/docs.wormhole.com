@@ -229,9 +229,7 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
     const f =
       c.extraDetails?.finality === undefined
         ? {
-            instant: 200,
-            safe: 201,
-            otherwise: "finalized",
+            finalized: 0,
           }
         : c.extraDetails.finality;
 
@@ -246,7 +244,7 @@ export function generateAllConsistencyLevelsTable(dc: cfg.DocChain[]): string {
         : undefined
     );
     const finalized = fmtNum(f.finalized);
-    const otherwise = f.otherwise ? f.otherwise : "finalized";
+    const otherwise = f.otherwise ? f.otherwise : "";
     const details = f.details ? `<a href="${f.details}">Details</a>` : " ";
 
     let sdkChain: Chain;

@@ -1,13 +1,13 @@
 {
   "homepage": "https://www.avax.network/",
   "title": "Avalanche",
-  "mainnet":{
-    "name":"C-Chain",
-    "id":"43114"
+  "mainnet": {
+    "name": "C-Chain",
+    "id": "43114"
   },
-  "testnet":{
-    "name":"Fuji",
-    "id":"43113"
+  "testnet": {
+    "name": "Fuji",
+    "id": "43113"
   },
   "explorer": [
     {
@@ -30,7 +30,8 @@
   ],
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
-    "finalized": 0,
-    "details":"https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality"
+    "instant": 200,
+    "otherwise": "finalized",
+    "details": "https://docs.avax.network/build/dapp/advanced/integrate-exchange#determining-finality"
   }
 }

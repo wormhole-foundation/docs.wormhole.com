@@ -1,8 +1,8 @@
 {
   "title": "Sui",
   "homepage": "https://sui.io/",
-   "explorer": [
-      {
+  "explorer": [
+    {
       "url": "https://suiexplorer.com/",
       "description": "suiexplorer"
     },
@@ -10,22 +10,22 @@
       "url": "https://suiscan.xyz/",
       "description": "suiscan"
     }
-  
   ],
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"35834a8a"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "35834a8a"
   },
-  "testnet":{
-    "name":"Testnet",
-    "id":"4c78adac"
+  "testnet": {
+    "name": "Testnet",
+    "id": "4c78adac"
   },
-  "developer":[
-    {"url":"https://docs.sui.io/", "description":"Developer docs"},
-    {"url":"https://docs.sui.io/build/faucet", "description":"Faucet"}
+  "developer": [
+    { "url": "https://docs.sui.io/", "description": "Developer docs" },
+    { "url": "https://docs.sui.io/build/faucet", "description": "Faucet" }
   ],
   "finality": {
-    "details":"https://docs.sui.io/concepts/sui-architecture/consensus",
-    "finalized": 0
+    "details": "https://docs.sui.io/concepts/sui-architecture/consensus",
+    "finalized": 0,
+    "otherwise": ""
   }
 }

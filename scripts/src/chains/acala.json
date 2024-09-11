@@ -1,13 +1,13 @@
 {
   "homepage": "https://acala.network/",
   "title": "Acala",
-  "mainnet":{
-    "name":"Mainnet",
-    "id":"787"
+  "mainnet": {
+    "name": "Mainnet",
+    "id": "787"
   },
-  "testnet":{
-    "name":"Testnet",
-    "id":"597"
+  "testnet": {
+    "name": "Testnet",
+    "id": "597"
   },
   "explorer": [
     {
@@ -30,6 +30,7 @@
   "contractSource": "ethereum/contracts/bridge/Bridge.sol",
   "finality": {
     "instant": 200,
+    "safe": 201,
     "otherwise": "finalized"
   }
 }

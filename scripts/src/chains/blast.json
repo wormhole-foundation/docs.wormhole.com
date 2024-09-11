@@ -1,1 +1,10 @@
-{"title":"Blast","testnet":{"name":"Testnet","id":"168587773"},"mainnet":{"name":"Mainnet","id":"81457"}}
+{
+  "title": "Blast",
+  "testnet": { "name": "Testnet", "id": "168587773" },
+  "mainnet": { "name": "Mainnet", "id": "81457" },
+  "finality": {
+    "instant": 200,
+    "safe": 201,
+    "otherwise": "finalized"
+  }
+}
