@@ -4,7 +4,9 @@ Wormhole is a sophisticated cross-chain messaging protocol designed to facilitat
 
 In this section, we will introduce the major components of Wormhole's architecture and explain how they fit together to provide a robust framework for cross-chain communication.
 
+
 ![Detailed Flow](../../.gitbook/assets/core-concepts/detailed-flow.jpg)
+
 
 ## Components
 
