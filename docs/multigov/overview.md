@@ -5,7 +5,7 @@ Welcome to the MultiGov docs! This first section provides an overview of MultiGo
 ## Table of Contents
 1. [Overview](#Overview)
 2. [Getting Started](./getting-started.md)
-3. [Configuration](./deployment/configuration.md)
+3. [Deployment](./deployment/README.md)
 4. [Upgrading](./upgrading.md)
 5. [Architecture](./architecture.md)
 6. [Guides](./guides.md)
