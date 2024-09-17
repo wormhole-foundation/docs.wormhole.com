@@ -1,11 +1,11 @@
 # Upgrading
 
-Multi-Gov is designed to be flexible but stable. Upgrades should be rare and carefully considered due to the system's complexity and cross-chain nature. When upgrades are necessary, they must be meticulously planned and executed to ensure system integrity and continuity.
+MultiGov is designed to be flexible but stable. Upgrades should be rare and carefully considered due to the system's complexity and cross-chain nature. When upgrades are necessary, they must be meticulously planned and executed to ensure system integrity and continuity.
 
 ## Key Considerations for Upgrades
 
 1. **HubGovernor**:
-   - Not upgradeable. A new deployment requires redeploying several components of the Multi-Gov system.
+   - Not upgradeable. A new deployment requires redeploying several components of the MultiGov system.
 
 2. **HubVotePool**:
    - Can be replaced by setting a new HubVotePool on the HubGovernor.
