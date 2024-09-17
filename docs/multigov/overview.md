@@ -31,3 +31,7 @@ MultiGov is important because it:
 - **Cross-Chain Proposal Execution**: Approved proposals can be executed across multiple chains
 - **Wormhole Integration**: Secure and reliable cross-chain communication
 - **Flexible Architecture**: Can integrate with any Wormhole-supported blockchain
+
+### High-Level Architecture Diagram
+
+<figure><img src="../.gitbook/assets/multigov-high-level.svg" alt=""><figcaption></figcaption></figure>
