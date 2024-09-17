@@ -27,28 +27,31 @@ This **Wormhole Relayer** contract is deployed on both Mainnet and Testnets.
 
 ### Testnet
 
-- Chain ID 4: BSC Testnet `0x80aC94316391752A193C1c47E27D382b507c93F3`
-- Chain ID 5: Polygon Testnet `0x0591C25ebd0580E0d4F27A82Fc2e24E7489CB5e0`
-- Chain ID 6: Avalanche Testnet (Fuji) `0xA3cF45939bD6260bcFe3D66bc73d60f19e49a8BB`
-- Chain ID 14: Celo Testnet: `0x306B68267Deb7c5DfCDa3619E22E9Ca39C374f84`
-- Chain ID 16: Moonbeam Testnet  `0x0591C25ebd0580E0d4F27A82Fc2e24E7489CB5e0`
+Below are the relevant Chain IDs and contract addresses for the Wormhole Relayer deployed on various test networks. **Ensure you use the correct Wormhole Chain ID for Wormhole-specific interactions and the Standard Chain ID for blockchain-specific configurations.**
+ 
+| Network           | Wormhole Chain ID | Standard Chain ID | Wormhole Relayer Contract Address                         |
+|-------------------|-------------------|-------------------|-----------------------------------------------------------|
+| **BSC Testnet**    | 4                 | 97                | `0x80aC94316391752A193C1c47E27D382b507c93F3`              |
+| **Avalanche Testnet (Fuji)**| 6       | 43113             | `0xA3cF45939bD6260bcFe3D66bc73d60f19e49a8BB`              |
+| **Celo Testnet**   | 14                | 44787             | `0x306B68267Deb7c5DfCDa3619E22E9Ca39C374f84`              |
+| **Moonbeam Testnet**| 16               | 1287              | `0x0591C25ebd0580E0d4F27A82Fc2e24E7489CB5e0`              |
 
 ### Mainnet
 
 For all Mainnet deployments, the contract has the same address: `0x27428DD2d3DD32A4D7f7C497eAaa23130d894911`
 
 It is currently deployed to: 
-
-- Chain ID 2: Ethereum
-- Chain ID 4: Binance Smart Chain
-- Chain ID 5: Polygon
-- Chain ID 6: Avalanche
-- Chain ID 10: Fantom
-- Chain ID 13: Klaytn
-- Chain ID 14: Celo
-- Chain ID 16: Moonbeam
-- Chain ID 23: Arbitrum
-- Chain ID 24: Optimism
+| **Network**                | **Wormhole Chain ID** | **Standard Chain ID** |
+|----------------------------|-----------------------|------------------------|
+| **Ethereum**               | 2                     | 1                      |
+| **Binance Smart Chain**    | 4                     | 56                     |
+| **Avalanche**              | 6                     | 43114                  |
+| **Fantom**                 | 10                    | 250                    |
+| **Klaytn**                 | 13                    | 8217                   |
+| **Celo**                   | 14                    | 42220                  |
+| **Moonbeam**               | 16                    | 1284                   |
+| **Arbitrum**               | 23                    | 42161                  |
+| **Optimism**               | 24                    | 10                     |
 
 > Note: the `targetChain` input should be the number in front of your desired chain; e.g. 2 for Ethereum, 4 for Binance Smart Chain, 6 for Avalanche, etc...
 
