@@ -85,6 +85,17 @@
 - [Getting Started](queries/getting-started.md)
 - [FAQs](queries/faqs.md)
 
+## MultiGov
+
+- [Overview](multigov/overview.md)
+- [Getting Started](multigov/getting-started.md)
+- [Deployment](multigov/deployment/README.md)
+  - [Configuration](multigov/deployment/configuration.md)
+- [Upgrading](multigov/upgrading.md)
+- [Architecture](multigov/architecture.md)
+- [Guides](multigov/guides.md)
+- [FAQs](multigov/faqs.md)
+
 ## External Links
 
 - [Explorer](https://wormholescan.io/)
