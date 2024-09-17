@@ -1,4 +1,4 @@
-# Multi-Gov: Cross-Chain Governance with Wormhole
+# MultiGov: Cross-Chain Governance with Wormhole
 
 Welcome to the MultiGov docs! This first section provides an overview of MultiGov. Feel free to jump to any of the other sections in the table of contents below:
 
@@ -13,11 +13,11 @@ Welcome to the MultiGov docs! This first section provides an overview of MultiGo
 
 ## Overview
 
-### What is Multi-Gov and why is it important?
+### What is MultiGov and why is it important?
 
-Multi-Gov is a cross-chain governance system that extends traditional DAO governance across multiple blockchain networks. By leveraging Wormhole's interoperability infrastructure, Multi-Gov enables seamless voting and proposal mechanisms across various chains.
+MultiGov is a cross-chain governance system that extends traditional DAO governance across multiple blockchain networks. By leveraging Wormhole's interoperability infrastructure, MultiGov enables seamless voting and proposal mechanisms across various chains.
 
-Multi-Gov is important because it:
+MultiGov is important because it:
 - **Increases participation** by allowing token holders from multiple chains to engage in governance
 - **Enhances security** by leveraging Wormhole's robust cross-chain communication
 - **Improves scalability** by integrating any chain supported by Wormhole

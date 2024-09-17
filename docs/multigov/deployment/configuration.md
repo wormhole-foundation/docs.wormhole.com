@@ -1,6 +1,6 @@
 # Configuration
 
-When deploying Multi-Gov, several key parameters need to be set. Here are the most important configuration points:
+When deploying MultiGov, several key parameters need to be set. Here are the most important configuration points:
 
 ## `HubGovernor` Key Parameters
 
@@ -63,4 +63,4 @@ The following key parameters can be updated through governance proposals:
 
 These parameters can be queried using their respective getter functions on the applicable contract.
 
-To update these parameters, a governance proposal must be created, voted on, and executed through the standard Multi-Gov process.
+To update these parameters, a governance proposal must be created, voted on, and executed through the standard MultiGov process.

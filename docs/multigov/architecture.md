@@ -1,6 +1,6 @@
 # Architecture
 
-Multi-Gov employs a hub-and-spoke model to enable cross-chain governance, utilizing Wormhole's interoperability infrastructure for secure cross-chain communication. This architecture allows for coordinated decision-making across multiple blockchain networks while maintaining a central point of coordination.
+MultiGov employs a hub-and-spoke model to enable cross-chain governance, utilizing Wormhole's interoperability infrastructure for secure cross-chain communication. This architecture allows for coordinated decision-making across multiple blockchain networks while maintaining a central point of coordination.
 
 ## Key Components
 
@@ -107,4 +107,4 @@ flowchart TD
     W -.-> |Queries voting weight| C2
 ```   
 
-This architecture ensures that Multi-Gov can operate securely and efficiently across multiple chains, allowing for truly decentralized and cross-chain governance while maintaining a unified decision-making process.
+This architecture ensures that MultiGov can operate securely and efficiently across multiple chains, allowing for truly decentralized and cross-chain governance while maintaining a unified decision-making process.

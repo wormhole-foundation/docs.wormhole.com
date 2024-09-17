@@ -1,6 +1,6 @@
 # Development Setup
 
-For developers looking to set up a local Multi-Gov environment:
+For developers looking to set up a local MultiGov environment:
 
 1. Install prerequisites:
    - [Foundry](https://book.getfoundry.sh/getting-started/installation)
@@ -8,7 +8,7 @@ For developers looking to set up a local Multi-Gov environment:
 
 2. Clone the repository:
    ```bash
-   git clone [Multi-Gov Repository URL]
+   git clone [MultiGov Repository URL]
    cd evm # for evm testing/deploying
    ```
 

@@ -6,7 +6,7 @@ This guide walks through creating and executing a cross-chain governance proposa
 
 ### 1. Create a Proposal (Hub Chain - Ethereum Mainnet)
 
-```solidity=
+```solidity
 HubGovernor governor = HubGovernor(GOVERNOR_ADDRESS);
 
 

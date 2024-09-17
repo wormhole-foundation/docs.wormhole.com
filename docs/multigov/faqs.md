@@ -2,17 +2,17 @@
 
 ## General Questions
 
-### What is Multi-Gov?
+### What is MultiGov?
 
-Multi-Gov is a cross-chain governance system that extends traditional DAO governance across multiple blockchain networks. It leverages Wormhole's interoperability infrastructure to enable seamless voting and proposal mechanisms across various chains.
+MultiGov is a cross-chain governance system that extends traditional DAO governance across multiple blockchain networks. It leverages Wormhole's interoperability infrastructure to enable seamless voting and proposal mechanisms across various chains.
 
-### How does Multi-Gov differ from traditional DAO governance?
+### How does MultiGov differ from traditional DAO governance?
 
-Unlike traditional DAO governance that typically operates on a single blockchain, Multi-Gov allows for coordinated decision-making and execution of proposals across multiple chains. This enables more inclusive participation from token holders on different networks and allows for more complex, cross-chain governance actions.
+Unlike traditional DAO governance that typically operates on a single blockchain, MultiGov allows for coordinated decision-making and execution of proposals across multiple chains. This enables more inclusive participation from token holders on different networks and allows for more complex, cross-chain governance actions.
 
-### What are the main components of Multi-Gov?
+### What are the main components of MultiGov?
 
-The main components of Multi-Gov include:
+The main components of MultiGov include:
 
 - Hub Chain: Central coordination point for governance activities
 - Spoke Chains: Additional chains where token holders can participate in governance
@@ -21,18 +21,18 @@ The main components of Multi-Gov include:
 
 ## Technical Questions
 
-### How does Multi-Gov ensure security in cross-chain communication?
+### How does MultiGov ensure security in cross-chain communication?
 
-Multi-Gov leverages Wormhole's robust cross-chain communication protocol. It implements several security measures:
+MultiGov leverages Wormhole's robust cross-chain communication protocol. It implements several security measures:
 
 - Message origin verification to prevent unauthorized governance actions
 - Timely and consistent data checks to ensure vote aggregation is based on recent and synchronized chain states
 - Authorized participant validation to maintain the integrity of the governance process
 - Replay attack prevention by tracking executed messages
 
-### Can Multi-Gov integrate with any blockchain?
+### Can MultiGov integrate with any blockchain?
 
-Multi-Gov can potentially integrate with any blockchain supported by Wormhole. However, specific implementations may vary depending on the chain's compatibility with Ethereum Virtual Machine (EVM) and its smart contract capabilities. [Find all supported networks here](https://docs.wormhole.com/wormhole/reference/blockchain-environments). The current implementation of Multi-gov supports an EVM Hub and both the EVM and SVM for spokes.
+MultiGov can potentially integrate with any blockchain supported by Wormhole. However, specific implementations may vary depending on the chain's compatibility with Ethereum Virtual Machine (EVM) and its smart contract capabilities. [Find all supported networks here](https://docs.wormhole.com/wormhole/reference/blockchain-environments). The current implementation of MultiGov supports an EVM Hub and both the EVM and SVM for spokes.
 
 ### How are votes aggregated across different chains?
 
@@ -44,7 +44,7 @@ Yes! MultiGov can support progressively upgrading from a single-chain governance
 
 ## Usage Questions
 
-### How can I create a proposal in Multi-Gov?
+### How can I create a proposal in MultiGov?
 
 Proposals are created on the hub chain using the `HubEvmSpokeAggregateProposer` contract or by calling `propose` on the `HubGovernor`. You need to prepare the proposal details including targets, values, and calldatas. The proposer's voting weight is aggregated across chains using Wormhole queries to determine eligibility.
 
@@ -58,34 +58,34 @@ When a proposal is approved and the timelock period elapses, it's first executed
 
 ## Implementation Questions
 
-### What do I need to set up Multi-Gov for my project?
+### What do I need to set up MultiGov for my project?
 
 Get started by filling out the below form:
 
 https://www.tally.xyz/get-started
 
-Tally will reach out to help get your DAO set up with Multi-Gov.
+Tally will reach out to help get your DAO set up with MultiGov.
 
-To set up testing Multi-Gov for your DAO, you'll need:
+To set up testing MultiGov for your DAO, you'll need:
 
 - Foundry and Git installed
 - Test ETH on the testnets you plan to use (e.g., Sepolia for hub, Optimism Sepolia for spoke)
 - Modify and deploy the hub and spoke contracts using the provided scripts
 - Set up the necessary environment variables and configurations
 
-### Can Multi-Gov be used with non-EVM chains?
+### Can MultiGov be used with non-EVM chains?
 
 The current implementation is designed for EVM-compatible chains. However, Solana (non-EVM) voting is currently in development and expected to go live after the EVM contracts.
 
-### How can I customize voting parameters in Multi-Gov?
+### How can I customize voting parameters in MultiGov?
 
 Voting parameters such as voting delay, voting period, proposal threshold, and quorum (and others) can be customized in the deployment scripts (`DeployHubContractsSepolia.s.sol` and `DeploySpokeContractsOptimismSepolia.s.sol` as examples for their respective chains). Make sure to adjust these parameters according to your DAO's specific needs before deployment.
 
-Remember to thoroughly test your Multi-Gov implementation on testnets before deploying to mainnet, and have your contracts audited for additional security.
+Remember to thoroughly test your MultiGov implementation on testnets before deploying to mainnet, and have your contracts audited for additional security.
 
-### How does Multi-Gov handle potential network issues or temporary chain unavailability?
+### How does MultiGov handle potential network issues or temporary chain unavailability?
 
-Multi-Gov includes several mechanisms to handle network issues or temporary chain unavailability:
+MultiGov includes several mechanisms to handle network issues or temporary chain unavailability:
 
 1. Asynchronous vote aggregation: Votes are aggregated periodically, allowing the system to continue functioning even if one chain is temporarily unavailable.
 2. Proposal extension: The HubGovernorProposalExtender allows trusted actors to extend voting periods if needed, which can help mitigate issues caused by temporary network problems.
