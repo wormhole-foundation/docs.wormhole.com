@@ -53,58 +53,6 @@ MultiGov employs a hub-and-spoke model to enable cross-chain governance, utilizi
 
 ## Detailed Architecture Diagram
 
-```mermaid
-flowchart TD
-    subgraph Hub Chain
-    A(HubGovernor)
-    E(HubVotePool)
-    F(HubProposalMetadata)
-    J(TimelockController)
-    H(HubMessageDispatcher)
-    X(HubGovernorProposalExtender)
-    Y(HubEvmSpokeVoteDecoder)
-    Z(HubEvmSpokeAggregateProposer)
-    E ---> |Cast Vote| A
-    F ------> |Fetch Proposal| A
-    A ----> |Execute proposal| J
-    J ----> |Forwards cross-chain proposal| H
-    X --> |Extends proposal| A
-    Y ------> |Decodes query| E
-    Z --> |Proposes| A
-    end
-
-    W((Wormhole))
-
-    subgraph Spoke Chain 1
-    B(SpokeMetadataCollector)
-    C(SpokeVoteAggregator)
-    G(SpokeMessageExecutor)
-    I(Airlock)
-    B -----> |Fetch proposal metadata| C
-    G --> |Execute proposal| I
-    end
-
-    subgraph Spoke Chain 2
-    B2(SpokeMetadataCollector)
-    C2(SpokeVoteAggregator)
-    G2(SpokeMessageExecutor)
-    I2(Airlock)
-    B2 -----> |Fetch proposal metadata| C2
-    G2 --> |Execute proposal| I2
-    end
-
-    F -.-> |Queries proposal| W
-    W -.-> |Queries proposal| B
-    W -.-> |Queries proposal| B2
-    C -.-> |Send spoke vote| W
-    C2 -.-> |Send spoke vote| W
-    W -.-> |Send spoke vote| E
-    H -.-> |Send proposal| W
-    W -.-> |Send proposal| G
-    W -.-> |Send proposal| G2
-    Z -.-> |Queries voting weight| W
-    W -.-> |Queries voting weight| C
-    W -.-> |Queries voting weight| C2
-```   
+<figure><img src="../.gitbook/assets/multigov-detailed.svg" alt=""><figcaption></figcaption></figure>
 
 This architecture ensures that MultiGov can operate securely and efficiently across multiple chains, allowing for truly decentralized and cross-chain governance while maintaining a unified decision-making process.
