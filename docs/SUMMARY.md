@@ -4,6 +4,7 @@
 
 ## Quick Start
 
+- [Get stand](QuickStart/Getstand/Readme.md)
 - [Developing Cross Chain Dapps](tutorials/quick-start/cross-chain-dev/README.md)
   - [Standard Relayer](tutorials/quick-start/cross-chain-dev/standard-relayer.md)
   - [Specialized Relayer](tutorials/quick-start/cross-chain-dev/specialized-relayer.md)
