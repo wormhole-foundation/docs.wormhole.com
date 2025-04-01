@@ -38,7 +38,7 @@ In choosing which chains to use for integration testing, consider which chains i
 Find links for testnet faucets in the [blockchain details section](../../blockchain-environments/environments.md)
 {% endhint %}
 
-A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](./#tilt) is available to run local instances of all the chains Wormhole supports.
+A developer may prefer standing up a set of local validators instead of using the testnet. For this option, [Tilt](tilt.md) is available to run local instances of all the chains Wormhole supports.
 
 {% hint style="warning" %}
 The variation in host environments causing unique issues and the computational intensity of multiple simultaneous local validators can make it difficult or time consuming to setup. Prefer testnets for the simplest integration testing.
@@ -48,7 +48,7 @@ The variation in host environments causing unique issues and the computational i
 
 Once you've finished initial development of the application and performed integration testing, you may want to set up some CI test environment.
 
-For that, the best option is likely to be [Tilt](./#tilt) since it allows you to spin up any of the chains supported by Wormhole in a consistent environment.
+For that, the best option is likely to be [Tilt](tilt.md) since it allows you to spin up any of the chains supported by Wormhole in a consistent environment.
 
 ## Validator Setup
 
