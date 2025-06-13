@@ -1,3 +1,5 @@
+This documentation has been deprecated and replaced with https://github.com/wormhole-foundation/wormhole-docs.
+
 Wormhole Docs
 -------------
 
