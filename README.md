@@ -1,3 +1,5 @@
+This website has been deprecated. Please refer to https://github.com/wormhole-foundation/wormhole-docs for the current Wormhole Docs repository.
+
 Wormhole Docs
 -------------
 
